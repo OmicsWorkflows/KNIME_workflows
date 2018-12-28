@@ -3,7 +3,6 @@ KNIME_workflows repository contains workflows for [KNIME](https://www.knime.com/
 
 
 ## How to use the KNIME workflows
-
 In workflows we aim to provide the most important nodes for the processing of a particular experiment type, including nodes for data transformation, normalization, quality controls, statistical tests and subsequent visualization. At the same time, we encourage the users to accommodate the workflow according to their personal needs and specificity of the processed dataset. Additional nodes can be incorporated in any part of the given workflow. For the use of [metanodes ]( https://github.com/OmicsWorkflows/KNIME_metanodes) in the KNIME workflows please follow the respective readme file https://github.com/OmicsWorkflows/KNIME_metanodes/blob/master/README.md and metanodes description.
 
 
