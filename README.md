@@ -1,33 +1,59 @@
-# MQ_PGs_LFQ_general workflow
-
-## Description of the workflow and general remarks
-MQ_PGs_LFQ_general is a KNIME workflow developed for the general processing of label-free bottom-up mass spectrometry data.
-Please note, that you should understand e.g. data structure and experimental design used within the study to apply the correct processing approach! The processing may require consultation with (bio)statistician to achieve correct outputs.
+# KNIME_workflows
+KNIME_workflows repository contains workflows for [KNIME](https://www.knime.com/) analytics platform primarily for the processing of mass-spectrometry-based proteomics data.
 
 
-## Input data
-In this workflow, the proteinGroups.txt file, an output of [MaxQuant] (http://coxdocs.org/doku.php?id=maxquant:start) software  is used for the file input. 
-In general, the workflow is applicable also to other types of data in wide format data table; please note that additional adjustment of nodes settings may be required then (e.g. different column names, prefixes and suffixes, etc.).
+## How to use the KNIME workflows
+In workflows we aim to provide the most important nodes for the processing of a particular experiment type, including nodes for data transformation, normalization, quality controls, statistical tests and subsequent visualization. At the same time, we encourage the users to accommodate the workflow according to their personal needs and specificity of the processed dataset. Additional nodes can be incorporated in any part of the given workflow. For the use of [metanodes ]( https://github.com/OmicsWorkflows/KNIME_metanodes) in the KNIME workflows please follow the respective readme file https://github.com/OmicsWorkflows/KNIME_metanodes/blob/master/README.md and metanodes description.
 
-## Documentation of used nodes/metanodes
-The workflow contains several nodes for the data processing:
--	File input: proteinGroups.txt table from MaxQuant. The distribution of protein intensities can be visualized for all samples by violin plots and exported as .png file.
--	MQ PGs filtering (e.g. CRAP): metanode for removal of potential protein contaminants (e.g. identified only by site; reverse; potential contaminant; cRAP proteins; ”keratin” keyword containing proteins)
--	Log2 transformation: protein intensities columns undergo logarithmic transformation in order to acquire normal distribution. Columns containing transformed data are appended by default with _log2. The distribution of protein intensities can be visualized for chosen samples by violin plots and exported as .png file. Normalization: There are several normalization techniques which can be used for normalization of protein intensities (log2 transformed)
-o	normalization on median (linear)
-o	quantile normalization (non-linear)
-o	LoessF normalization (non-linear)
-o	vsn normalization (non-linear)
-Columns containing normalized data are appended by default with _norm. Prior to further processing of the normalized data, e.g. using statistical tests, we recommend visualizing the normalized data by different nodes, e.g. correlation clustermaps, hierarchical clustering, violin plots or scatter plot matrices in order to check the normalized data overall similarity and clustering and in general to choose the most appropriate normalization technique. The images can be subsequently exported as .png file.
--	Log2 back transformation node
--	Statistics: As default statistical test we provide the LIMMA test. Please, adjust the settings and design according to your experimental setup. 
--	Visualization: The results of the LIMMA test are visualized by the volcano plot node; the resulting image can be exported as .png.
--	CSV writer node: whole dataframe is exported as a .csv file
 
-## Additional nodes recommended to use with this workflow
-Previously described nodes are what we think is the basis of label-free bottom-up mass  spectrometry data processing. However, we recommend using also other nodes for more advanced data processing and evaluation. Here we provide a list of potentially utilized nodes:
--	Missing values imputation node: a strategy for the imputation of missing values by imp4p R package (https://cran.r-project.org/web/packages/imp4p/index.html) is provided. Otherwise, a Value imputation node can be used providing several imputation strategies. The node should be used on log transformed data, prior to data normalization.
--	Upset plot (static/interactive): a plot for displaying the intersections between particular datasets.
--	Volcano plot (interactive): volcano plot in interactive version allowing quick identification of displayed proteins.
+To use the KNIME workflow please follow these steps:
+1)	download the actual version of all workflows (folder ‘_Workflows templates’) or just individual workflow’s folder
+2)	move workflow(s) copy into your KNIME workspace folder (e.g. 'D:\knime-workspace\' on Windows or '/home/user/knime-workspace' on linux)
+3)	start KNIME; in case the KNIME is already running, refresh the KNIME workspace to refresh the workspace content (right click on the workspace in the KNIME Explorer sub-window and select Refresh)
+4)	double click on the workflow you want to use to open it
+5)	save the workflow under the new name
+6)	double click on the particular node/metanode to get form window, adjust individual settings and run it.
+7)	Use additional nodes/metanodes to adjust the workflow to meet yours and dataset requirements.
+
+## General workflows features
+- workflows are versioned individually
+    - current workflows versions are in “_Workflows templates” folder, older versions are in “_Workflows templates - older  ”
+-	Workflows  are optimized for usage in docker container running KNIME ([KNIME_docker_vnc](https://github.com/OmicsWorkflows/KNIME_docker_vnc)) that should make them reproducible
+
+
+## Workflows preparation guidelines
+We make KNIME workflows having the following guidelines in mind :
+-	Workflows should be easy to be used also by a user with no programming/scripting skills
+-	Workflows aim to make more complicated operations in KNIME easier and reproducible together with KNIME metanodes
+-	Workflows utilize preferably in-built KNIME metanodes but also in-house developed [metanodes](https://github.com/OmicsWorkflows/KNIME_metanodes)
+-	Workflows should contain   nodes or metanodes for all commonly used processing steps for a concrete type of proteomic data (e.g. bottom-up label-free data) and experimental design; at the same time the workflow should be easily modifiable according to user’s particular needs/requirements
+-	Workflows are built to facilitate interactive, flexible and not unsupervised  way of data processing pipelines
+-	Workflows should be well documented both within the KNIME and in respective readme files   of each workflow. The readme file should contain:
+-	Workflow description including the purpose of the whole pipeline
+-	Description of data which can be utilized within the workflow
+-	Documentation of all essential and recommended nodes and metanodes
+-	Image of the particular workflow
+
+## List  of used programs and extensions and the respective licenses
+Workflows are made within docker container running KNIME accessible via [VNC](https://github.com/OmicsWorkflows/KNIME_docker_vnc). Please, check the respective [readme file]( https://github.com/OmicsWorkflows/KNIME_docker_vnc/blob/master/README.md) for more information on the used programs and the respective licenses.
+
+## Do you have a question or want to get involved?
+The project is maintained by people from several laboratories (see below), but each workflow has a 'contact person' who should be contacted first in the case of any question. See readme file   for the concrete workflow or workflow annotation. You can also [create an issue here](https://github.com/OmicsWorkflows/KNIME_workflows/issues/new).
+
+If you want to contribute to the project, contact us at david.potesil@ceitec.muni.cz.
+
+### Code of Conduct
+This project and everyone participating in it is governed by the [Code of Conduct](../master/code-of-conduct.md). By participating, you are expected to uphold this code. Please report any unacceptable behavior.
+
+# Contributors
+
+The project is maintained by people from several laboratories (in alphabetical order):
+- [Laboratory of cellular communication](http://www.sci.muni.cz/bryjalab/), Department of Experimental Biology, Faculty of Science, Masaryk University, Brno, Czech Republic
+  - Kristína Gömöryová
+- [Proteomics Research group](https://www.ceitec.eu/proteomics-zbynek-zdrahal/rg49), Central European Institute of Technology, Masaryk University, Brno, Czech Republic
+  - David Potěšil
+
+# License
+Workflows are available under the GNU GPL 3.0 License (see the [LICENSE](../master/LICENSE) file for details), unless stated otherwise.
 
 
