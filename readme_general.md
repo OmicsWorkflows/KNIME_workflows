@@ -25,7 +25,7 @@ To use the KNIME workflow please follow these steps:
 We make KNIME workflows having the following guidelines in mind :
 -	Workflows should be easy to be used also by a user with no programming/scripting skills
 -	Workflows aim to make more complicated operations in KNIME easier and reproducible together with KNIME metanodes
--	Workflows utilize preferably in-built KNIME metanodes but also metanodes available at https://github.com/OmicsWorkflows/KNIME_metanodes
+-	Workflows utilize preferably in-built KNIME metanodes but also in-house developed [metanodes](https://github.com/OmicsWorkflows/KNIME_metanodes)
 -	Workflows should contain   nodes or metanodes for all commonly used processing steps for a concrete type of proteomic data (e.g. bottom-up label-free data) and experimental design; at the same time the workflow should be easily modifiable according to user’s particular needs/requirements
 -	Workflows are built to facilitate interactive, flexible and not unsupervised  way of data processing pipelines
 -	Workflows should be well documented both within the KNIME and in respective readme files   of each workflow. The readme file should contain:
@@ -35,7 +35,7 @@ We make KNIME workflows having the following guidelines in mind :
 -	Image of the particular workflow
 
 ## List  of used programs and extensions and the respective licenses
-Workflows are made within docker container running KNIME accessible via VNC (https://github.com/OmicsWorkflows/KNIME_docker_vnc). Please, check the respective [readme file]( https://github.com/OmicsWorkflows/KNIME_docker_vnc/blob/master/README.md) for more information on the used programs and the respective licenses.
+Workflows are made within docker container running KNIME accessible via [VNC](https://github.com/OmicsWorkflows/KNIME_docker_vnc). Please, check the respective [readme file]( https://github.com/OmicsWorkflows/KNIME_docker_vnc/blob/master/README.md) for more information on the used programs and the respective licenses.
 
 ## Do you have a question or want to get involved?
 The project is maintained by people from several laboratories (see below), but each workflow has a 'contact person' who should be contacted first in the case of any question. See readme file   for the concrete workflow or workflow annotation. You can also [create an issue here](https://github.com/OmicsWorkflows/KNIME_workflows/issues/new).
