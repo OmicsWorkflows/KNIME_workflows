@@ -17,7 +17,7 @@ To use the KNIME workflow please follow these steps:
 
 ## General workflows features
 - workflows are versioned individually
-    - current workflows versions are in “_Workflows templates” folder, older versions are in “_Workflows templates - older  ”
+    - current workflows versions are in “_Workflows templates” folder, older versions are in “_Workflows templates - older ”
 -	Workflows  are optimized for usage in docker container running KNIME ([KNIME_docker_vnc](https://github.com/OmicsWorkflows/KNIME_docker_vnc)) that should make them reproducible
 
 
