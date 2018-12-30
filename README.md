@@ -18,7 +18,7 @@ To use the KNIME workflow please follow these steps:
 ## General workflows features
 - workflows are versioned individually
     - current workflows versions are in “_Workflows templates” folder, older versions are in “_Workflows templates - older ”
--	Workflows  are optimized for usage in docker container running KNIME ([KNIME_docker_vnc](https://github.com/OmicsWorkflows/KNIME_docker_vnc)) that should make them reproducible
+- workflows  are optimized for usage in docker container running KNIME ([KNIME_docker_vnc](https://github.com/OmicsWorkflows/KNIME_docker_vnc)) that should make them reproducible
 
 
 ## Workflows preparation guidelines
@@ -28,10 +28,10 @@ We make KNIME workflows having the following guidelines in mind :
 -	Workflows utilize preferably in-built KNIME metanodes but also in-house developed [metanodes](https://github.com/OmicsWorkflows/KNIME_metanodes)
 -	Workflows should contain   nodes or metanodes for all commonly used processing steps for a concrete type of proteomic data (e.g. bottom-up label-free data) and experimental design; at the same time the workflow should be easily modifiable according to user’s particular needs/requirements
 -	Workflows are built to facilitate interactive, flexible and not unsupervised  way of data processing pipelines
--	Workflows should be well documented both within the KNIME and in respective readme files   of each workflow. The readme file should contain:
--	Workflow description including the purpose of the whole pipeline
--	Description of data which can be utilized within the workflow
--	Documentation of all essential and recommended nodes and metanodes
+-	Workflows should be well documented both within the KNIME and in respective readme files of each workflow. The readme file should contain:
+    -	Workflow description including the purpose of the whole pipeline
+    -	Description of data which can be utilized within the workflow
+    -	Documentation of all essential and recommended nodes and metanodes
 -	Image of the particular workflow
 
 ## List  of used programs and extensions and the respective licenses
