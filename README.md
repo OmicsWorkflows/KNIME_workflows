@@ -54,6 +54,6 @@ The project is maintained by people from several laboratories (in alphabetical o
   - David Potěšil
 
 # License
-Workflows are available under the GNU GPL 3.0 License (see the [LICENSE](../master/LICENSE) file for details), unless stated otherwise.
+Workflows are available under the GNU GPL 3.0 License (see the [LICENSE](../master/LICENSE.md) file for details), unless stated otherwise.
 
 
