@@ -13,7 +13,7 @@ To use the KNIME workflow please follow these steps:
 4)	double click on the workflow you want to use to open it
 5)	save the workflow under the new name
 6)	double click on the particular node/metanode to get form window, adjust individual settings and run it.
-7)	Use additional nodes/metanodes to adjust the workflow to meet yours and dataset requirements.
+7)	use additional nodes/metanodes to adjust the workflow to meet yours and dataset requirements.
 
 ## General workflows features
 - workflows are versioned individually
@@ -31,7 +31,7 @@ We make KNIME workflows having the following guidelines in mind :
 -	Workflows should be well documented both within the KNIME and in respective readme files of each workflow. The readme file should contain:
     -	Workflow description including the purpose of the whole pipeline
     -	Description of data which can be utilized within the workflow
-    -	Documentation of all essential and recommended nodes and metanodes
+    -	Documentation of all nodes and metanodes within the workflow
 -	Image of the particular workflow
 
 ## List  of used programs and extensions and the respective licenses
