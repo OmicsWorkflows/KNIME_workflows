@@ -13,7 +13,7 @@ The workflow contains several nodes for the data processing:
 -	File Reader
 -	MQ PGs filtering (e.g. CRAP)
 -   Columns Resorter
--	Log2 transformation of columns containing peptide intensities
+-	Log2 transformation of columns containing peptide intensities and LFQ intensities
 -	Normalization
 o	normalization on median (linear)
 o	quantile normalization (non-linear)
@@ -32,3 +32,5 @@ Previously described nodes are what we think is the basis of label-free bottom-u
 -	Upset plot (static/interactive): a plot for displaying the intersections between particular datasets.
 -	Volcano plot (interactive): volcano plot in interactive version allowing quick  identification of displayed proteins.
 
+# Image of the workflow 
+[Workflow image](https://github.com/OmicsWorkflows/KNIME_workflows/MQ_PGs_LFQ_general.svg)
