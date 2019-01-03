@@ -24,6 +24,7 @@ o	MaxLFQ normalization
 -   Statistics (e.g. LIMMA test)
 -   Sorter node and Column Filter node
 -   Excel Sheet Appender node (export as .xlsx file)
+
 In each step of the workflow data are visualized by several visualization nodes including Violin Plots, Correlation Clustermaps, Volcano plots, Scatter plot matrices and Hierarchical Clustering.
 
 ## Additional nodes recommended to use with this workflow
