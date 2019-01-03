@@ -32,7 +32,7 @@ Previously described nodes are what we think is the basis of label-free bottom-u
 -	Upset plot (static/interactive): a plot for displaying the intersections between particular datasets.
 -	Volcano plot (interactive): volcano plot in interactive version allowing quick  identification of displayed proteins.
 
-# Image of the workflow 
+## Image of the workflow 
 [Workflow image](https://github.com/OmicsWorkflows/KNIME_workflows/MQ_PGs_LFQ_general.svg) 
 
 ### Do you have a question?
