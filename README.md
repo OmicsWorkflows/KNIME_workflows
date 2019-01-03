@@ -33,7 +33,7 @@ Previously described nodes are what we think is the basis of label-free bottom-u
 -	Volcano plot (interactive): volcano plot in interactive version allowing quick  identification of displayed proteins.
 
 # Image of the workflow 
-[Workflow image](https://github.com/OmicsWorkflows/KNIME_workflows/MQ_PGs_LFQ_general.svg)
+[Workflow image](https://github.com/OmicsWorkflows/KNIME_workflows/MQ_PGs_LFQ_general.svg) 
 
 ### Do you have a question?
 In the case you have a question, please contact the [responsible person](mailto:david.potesil@ceitec.muni.cz) or create an issue [here](https://github.com/OmicsWorkflows/KNIME_workflows/issues/new)
