@@ -11,7 +11,7 @@ In general, the workflow is applicable also to other types of data in wide forma
 ## Documentation of used nodes/metanodes
 The workflow contains several nodes for the data processing:
 -	File Reader
--	MQ PGs filtering (e.g. CRAP)
+-	Contaminants filtering (e.g. cRAP)
 -   Columns Resorter
 -	Log2 transformation of columns containing peptide intensities and LFQ intensities
 -	Normalization
