@@ -37,4 +37,4 @@ Previously described nodes are what we think is the basis of label-free bottom-u
 ![workflow image](workflow_image.png)
 
 ### Do you have a question?
-In the case you have a question, please contact the [responsible person](mailto:david.potesil@ceitec.muni.cz) or create an issue [here](https://github.com/OmicsWorkflows/KNIME_workflows/issues/new)
+In the case you have a question, please contact the [contact person](mailto:423436@mail.muni.cz) or create an issue [here](https://github.com/OmicsWorkflows/KNIME_workflows/issues/new)
