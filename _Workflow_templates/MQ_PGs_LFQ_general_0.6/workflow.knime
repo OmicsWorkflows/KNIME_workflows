@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="workflow.knime">
+<entry key="created_by" type="xstring" value="3.6.1.v201809030900"/>
+<entry key="created_by_nightly" type="xboolean" value="false"/>
+<entry key="version" type="xstring" value="3.6.0Pre"/>
+<entry key="name" type="xstring" isnull="true" value=""/>
+<config key="authorInformation">
+<entry key="authored-by" type="xstring" value="knimeuser"/>
+<entry key="authored-when" type="xstring" value="2019-01-02 19:04:59 +0100"/>
+<entry key="lastEdited-by" type="xstring" value="knimeuser"/>
+<entry key="lastEdited-when" type="xstring" value="2019-01-04 15:03:15 +0100"/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="IDLE"/>
+<config key="workflow_credentials"/>
+<config key="annotations">
+<config key="annotation_0">
+<entry key="text" type="xstring" value="# MQ_PGs_LFQ_general workflow%%00010%%00010## Description of the workflow and general remarks%%00010MQ_PGs_LFQ_general is a KNIME workflow developed for the general processing of label-free bottom-up mass spectrometry data.%%00010Please note, that you should understand e.g. data structure and experimental design used within the study to apply the correct processing approach! The processing may require consultation with (bio)statistician to achieve correct outputs.%%00010%%00010## Input data%%00010In this workflow, the proteinGroups.txt file, an output of MaxQuant software  is used for the file input. %%00010In general, the workflow is applicable also to other types of data in wide format data table; please note that additional adjustment of nodes settings may be required then (e.g. different column names, prefixes and suffixes, etc.).%%00010%%00010## Documentation of used nodes/metanodes%%00010The workflow contains several nodes for the data processing:%%00010-%%00009File Reader%%00010-%%00009MQ PGs filtering (e.g. CRAP)%%00010-%%00009Columns Resorter%%00010-%%00009Log2 transformation of columns containing peptide intensities and LFQ intensities%%00010-%%00009Normalization%%00010%%00009o%%00009normalization on median (linear)%%00010%%00009o%%00009quantile normalization (non-linear)%%00010%%00009o%%00009LoessF normalization (non-linear)%%00010%%00009o%%00009vsn normalization (non-linear)%%00009%%00010%%00009o%%00009MaxLFQ normalization%%00010-   Median calculation from sample groups%%00010-   Statistics (e.g. LIMMA test)%%00010-   Sorter node and Column Filter node%%00010-   Excel Sheet Appender node (export as .xlsx file)%%00010In each step of the workflow data are visualized by several visualization nodes including Violin Plots, Correlation Clustermaps, Volcano plots, Scatter plot matrices and Hierarchical Clustering.%%00010%%00010## Additional nodes recommended to use with this workflow%%00010Previously described nodes are what we think is the basis of label-free bottom-up mass spectrometry data processing. However, we recommend using also other nodes for more advanced data processing and evaluation. Here we provide a list of potentially utilized nodes:%%00010-%%00009Missing values imputation node: a strategy for the imputation of missing values by imp4p R package is provided. Otherwise, a Value imputation node can be used.%%00010-%%00009Upset plot (static/interactive): a plot for displaying the intersections between particular datasets.%%00010-%%00009Volcano plot (interactive): volcano plot in interactive version allowing quick  identification of displayed proteins."/>
+<entry key="bgcolor" type="xint" value="16777215"/>
+<entry key="x-coordinate" type="xint" value="-60"/>
+<entry key="y-coordinate" type="xint" value="440"/>
+<entry key="width" type="xint" value="1201"/>
+<entry key="height" type="xint" value="661"/>
+<entry key="alignment" type="xstring" value="LEFT"/>
+<entry key="borderSize" type="xint" value="5"/>
+<entry key="borderColor" type="xint" value="16766976"/>
+<entry key="defFontSize" type="xint" value="10"/>
+<entry key="annotation-version" type="xint" value="20151123"/>
+<config key="styles"/>
+</config>
+</config>
+<config key="nodes">
+<config key="node_0">
+<entry key="id" type="xint" value="0"/>
+<entry key="node_settings_file" type="xstring" value="MQ PGs filte (#0)/workflow.knime"/>
+<entry key="node_is_meta" type="xboolean" value="true"/>
+<entry key="node_type" type="xstring" value="MetaNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="84"/>
+<entry key="1" type="xint" value="277"/>
+<entry key="2" type="xint" value="113"/>
+<entry key="3" type="xint" value="88"/>
+</config>
+</config>
+</config>
+<config key="node_231">
+<entry key="id" type="xint" value="231"/>
+<entry key="node_settings_file" type="xstring" value="File Reader (#231)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="node_type" type="xstring" value="NativeNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="-56"/>
+<entry key="1" type="xint" value="277"/>
+<entry key="2" type="xint" value="78"/>
+<entry key="3" type="xint" value="82"/>
+</config>
+</config>
+</config>
+<config key="node_291">
+<entry key="id" type="xint" value="291"/>
+<entry key="node_settings_file" type="xstring" value="Not normaliz (#291)/workflow.knime"/>
+<entry key="node_is_meta" type="xboolean" value="true"/>
+<entry key="node_type" type="xstring" value="MetaNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="324"/>
+<entry key="1" type="xint" value="137"/>
+<entry key="2" type="xint" value="111"/>
+<entry key="3" type="xint" value="88"/>
+</config>
+</config>
+</config>
+<config key="node_648">
+<entry key="id" type="xint" value="648"/>
+<entry key="node_settings_file" type="xstring" value="Median value (#648)/workflow.knime"/>
+<entry key="node_is_meta" type="xboolean" value="true"/>
+<entry key="node_type" type="xstring" value="MetaNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="844"/>
+<entry key="1" type="xint" value="277"/>
+<entry key="2" type="xint" value="177"/>
+<entry key="3" type="xint" value="88"/>
+</config>
+</config>
+</config>
+<config key="node_823">
+<entry key="id" type="xint" value="823"/>
+<entry key="node_settings_file" type="xstring" value="Excel Sheet Appender _XLS_ (#823)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="node_type" type="xstring" value="NativeNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="1444"/>
+<entry key="1" type="xint" value="277"/>
+<entry key="2" type="xint" value="108"/>
+<entry key="3" type="xint" value="101"/>
+</config>
+</config>
+</config>
+<config key="node_840">
+<entry key="id" type="xint" value="840"/>
+<entry key="node_settings_file" type="xstring" value="Sorter (#840)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="node_type" type="xstring" value="NativeNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="1124"/>
+<entry key="1" type="xint" value="277"/>
+<entry key="2" type="xint" value="50"/>
+<entry key="3" type="xint" value="82"/>
+</config>
+</config>
+</config>
+<config key="node_841">
+<entry key="id" type="xint" value="841"/>
+<entry key="node_settings_file" type="xstring" value="Column Filter (#841)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="node_type" type="xstring" value="NativeNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="1284"/>
+<entry key="1" type="xint" value="277"/>
+<entry key="2" type="xint" value="94"/>
+<entry key="3" type="xint" value="82"/>
+</config>
+</config>
+</config>
+<config key="node_844">
+<entry key="id" type="xint" value="844"/>
+<entry key="node_settings_file" type="xstring" value="Normalizatio (#844)/workflow.knime"/>
+<entry key="node_is_meta" type="xboolean" value="true"/>
+<entry key="node_type" type="xstring" value="MetaNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="664"/>
+<entry key="1" type="xint" value="277"/>
+<entry key="2" type="xint" value="137"/>
+<entry key="3" type="xint" value="98"/>
+</config>
+</config>
+</config>
+<config key="node_845">
+<entry key="id" type="xint" value="845"/>
+<entry key="node_settings_file" type="xstring" value="Math Formula _Multi Column_ (#845)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="node_type" type="xstring" value="NativeNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="344"/>
+<entry key="1" type="xint" value="277"/>
+<entry key="2" type="xint" value="102"/>
+<entry key="3" type="xint" value="101"/>
+</config>
+</config>
+</config>
+<config key="node_846">
+<entry key="id" type="xint" value="846"/>
+<entry key="node_settings_file" type="xstring" value="Math Formula _Multi Column_ (#846)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="node_type" type="xstring" value="NativeNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="484"/>
+<entry key="1" type="xint" value="277"/>
+<entry key="2" type="xint" value="102"/>
+<entry key="3" type="xint" value="101"/>
+</config>
+</config>
+</config>
+<config key="node_847">
+<entry key="id" type="xint" value="847"/>
+<entry key="node_settings_file" type="xstring" value="Column Resorter (#847)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="node_type" type="xstring" value="NativeNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="204"/>
+<entry key="1" type="xint" value="277"/>
+<entry key="2" type="xint" value="117"/>
+<entry key="3" type="xint" value="82"/>
+</config>
+</config>
+</config>
+<config key="node_850">
+<entry key="id" type="xint" value="850"/>
+<entry key="node_settings_file" type="xstring" value="Statistics (#850)/workflow.knime"/>
+<entry key="node_is_meta" type="xboolean" value="true"/>
+<entry key="node_type" type="xstring" value="MetaNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="984"/>
+<entry key="1" type="xint" value="277"/>
+<entry key="2" type="xint" value="62"/>
+<entry key="3" type="xint" value="69"/>
+</config>
+</config>
+</config>
+</config>
+<config key="connections">
+<config key="connection_0">
+<entry key="sourceID" type="xint" value="0"/>
+<entry key="destID" type="xint" value="847"/>
+<entry key="sourcePort" type="xint" value="0"/>
+<entry key="destPort" type="xint" value="1"/>
+</config>
+<config key="connection_1">
+<entry key="sourceID" type="xint" value="231"/>
+<entry key="destID" type="xint" value="0"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="0"/>
+</config>
+<config key="connection_2">
+<entry key="sourceID" type="xint" value="648"/>
+<entry key="destID" type="xint" value="850"/>
+<entry key="sourcePort" type="xint" value="0"/>
+<entry key="destPort" type="xint" value="0"/>
+</config>
+<config key="connection_3">
+<entry key="sourceID" type="xint" value="840"/>
+<entry key="destID" type="xint" value="841"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="1"/>
+</config>
+<config key="connection_4">
+<entry key="sourceID" type="xint" value="841"/>
+<entry key="destID" type="xint" value="823"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="1"/>
+</config>
+<config key="connection_5">
+<entry key="sourceID" type="xint" value="844"/>
+<entry key="destID" type="xint" value="648"/>
+<entry key="sourcePort" type="xint" value="0"/>
+<entry key="destPort" type="xint" value="0"/>
+</config>
+<config key="connection_6">
+<entry key="sourceID" type="xint" value="845"/>
+<entry key="destID" type="xint" value="846"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="1"/>
+</config>
+<config key="connection_7">
+<entry key="sourceID" type="xint" value="846"/>
+<entry key="destID" type="xint" value="844"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="0"/>
+</config>
+<config key="connection_8">
+<entry key="sourceID" type="xint" value="847"/>
+<entry key="destID" type="xint" value="845"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="1"/>
+</config>
+<config key="connection_9">
+<entry key="sourceID" type="xint" value="847"/>
+<entry key="destID" type="xint" value="291"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="0"/>
+</config>
+<config key="connection_10">
+<entry key="sourceID" type="xint" value="850"/>
+<entry key="destID" type="xint" value="840"/>
+<entry key="sourcePort" type="xint" value="0"/>
+<entry key="destPort" type="xint" value="1"/>
+</config>
+</config>
+<config key="workflow_editor_settings">
+<entry key="workflow.editor.snapToGrid" type="xboolean" value="true"/>
+<entry key="workflow.editor.ShowGrid" type="xboolean" value="true"/>
+<entry key="workflow.editor.gridX" type="xint" value="20"/>
+<entry key="workflow.editor.gridY" type="xint" value="20"/>
+<entry key="workflow.editor.zoomLevel" type="xdouble" value="1.0"/>
+<entry key="workflow.editor.curvedConnections" type="xboolean" value="true"/>
+<entry key="workflow.editor.connectionWidth" type="xint" value="1"/>
+</config>
+</config>
