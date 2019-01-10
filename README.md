@@ -38,7 +38,7 @@ Previously described nodes are what we think is the basis of label-free bottom-u
 -	Volcano plot (interactive): volcano plot in interactive version allowing quick  identification of displayed proteins.
 
 ## Image of the workflow 
-![workflow image](workflow_image.png)
+![workflow image](workflow.png)
 
 ### Do you have a question?
 In the case you have a question, please contact the [contact person](mailto:423436@mail.muni.cz) or create an issue [here](https://github.com/OmicsWorkflows/KNIME_workflows/issues/new)
