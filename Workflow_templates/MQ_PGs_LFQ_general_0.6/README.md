@@ -33,7 +33,7 @@ An example dataset (proteinGroups.txt file) is provided with the workflow. It ca
 
 ## Additional nodes recommended to use with this workflow
 Previously described nodes are what we think is the basis of label-free bottom-up mass spectrometry data processing. However, we recommend using also other nodes for more advanced data processing and evaluation. Here we provide a list of potentially utilized nodes:
--	Missing values imputation node: a strategy for the imputation of missing values by [imp4p](https://cran.r-project.org/web/packages/imp4p/index.html) R package is provided. Otherwise, a Value imputation node can be used providing several imputation strategies. The node should be used on log transformed data, prior to data normalization.
+-	Value imputation node: imputation of missing (NaN) or zero values. 
 -	Upset plot (static/interactive): a plot for displaying the intersections between particular datasets.
 -	Volcano plot (interactive): volcano plot in interactive version allowing quick  identification of displayed proteins.
 
