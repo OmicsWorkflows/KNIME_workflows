@@ -15,11 +15,11 @@ The workflow contains several nodes for the data processing:
 -   Columns Resorter
 -	Log2 transformation of columns containing peptide intensities and LFQ intensities
 -	Normalization
-o	normalization on median (linear)
-o	quantile normalization (non-linear)
-o	LoessF normalization (non-linear)
-o	vsn normalization (non-linear)
-o	MaxLFQ normalization
+    -   normalization on median (linear)
+    -   quantile normalization (non-linear)
+    -   LoessF normalization (non-linear)
+    -   vsn normalization (non-linear)
+    -   MaxLFQ normalization
 -   Statistics (LIMMA test)
 -   Sorter node and Column Filter node
 -   UniProt query and Values lookup node (appends the information from UniProt to original dataframe) 
