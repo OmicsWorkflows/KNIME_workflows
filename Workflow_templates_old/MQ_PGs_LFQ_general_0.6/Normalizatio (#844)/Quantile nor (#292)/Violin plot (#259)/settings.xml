@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<config key="column-filter-257">
+<config key="columns">
+<entry key="array-size" type="xint" value="36"/>
+<entry key="0" type="xstring" value="Intensity EPA7_log2_norm"/>
+<entry key="1" type="xstring" value="Intensity EPA8_log2_norm"/>
+<entry key="2" type="xstring" value="Intensity EPA9_log2_norm"/>
+<entry key="3" type="xstring" value="Intensity EPE4_log2_norm"/>
+<entry key="4" type="xstring" value="Intensity EPE5_log2_norm"/>
+<entry key="5" type="xstring" value="Intensity EPE6_log2_norm"/>
+<entry key="6" type="xstring" value="Intensity EPW1_log2_norm"/>
+<entry key="7" type="xstring" value="Intensity EPW2_log2_norm"/>
+<entry key="8" type="xstring" value="Intensity EPW3_log2_norm"/>
+<entry key="9" type="xstring" value="Intensity NPA7_log2_norm"/>
+<entry key="10" type="xstring" value="Intensity NPA8_log2_norm"/>
+<entry key="11" type="xstring" value="Intensity NPA9_log2_norm"/>
+<entry key="12" type="xstring" value="Intensity NPE4_log2_norm"/>
+<entry key="13" type="xstring" value="Intensity NPE5_log2_norm"/>
+<entry key="14" type="xstring" value="Intensity NPE6_log2_norm"/>
+<entry key="15" type="xstring" value="Intensity NPW1_log2_norm"/>
+<entry key="16" type="xstring" value="Intensity NPW2_log2_norm"/>
+<entry key="17" type="xstring" value="Intensity NPW3_log2_norm"/>
+<entry key="18" type="xstring" value="Intensity PPA7_log2_norm"/>
+<entry key="19" type="xstring" value="Intensity PPA8_log2_norm"/>
+<entry key="20" type="xstring" value="Intensity PPA9_log2_norm"/>
+<entry key="21" type="xstring" value="Intensity PPE4_log2_norm"/>
+<entry key="22" type="xstring" value="Intensity PPE5_log2_norm"/>
+<entry key="23" type="xstring" value="Intensity PPE6_log2_norm"/>
+<entry key="24" type="xstring" value="Intensity PPW1_log2_norm"/>
+<entry key="25" type="xstring" value="Intensity PPW2_log2_norm"/>
+<entry key="26" type="xstring" value="Intensity PPW3_log2_norm"/>
+<entry key="27" type="xstring" value="Intensity SPA7_log2_norm"/>
+<entry key="28" type="xstring" value="Intensity SPA8_log2_norm"/>
+<entry key="29" type="xstring" value="Intensity SPA9_log2_norm"/>
+<entry key="30" type="xstring" value="Intensity SPE4_log2_norm"/>
+<entry key="31" type="xstring" value="Intensity SPE5_log2_norm"/>
+<entry key="32" type="xstring" value="Intensity SPE6_log2_norm"/>
+<entry key="33" type="xstring" value="Intensity SPW1_log2_norm"/>
+<entry key="34" type="xstring" value="Intensity SPW2_log2_norm"/>
+<entry key="35" type="xstring" value="Intensity SPW3_log2_norm"/>
+</config>
+<config key="columnFilter">
+<config key="columnFilter">
+<entry key="filter-type" type="xstring" value="name_pattern"/>
+<config key="included_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="excluded_names">
+<entry key="array-size" type="xint" value="435"/>
+<entry key="0" type="xstring" value="Protein IDs"/>
+<entry key="1" type="xstring" value="Majority protein IDs"/>
+<entry key="2" type="xstring" value="Peptide counts (all)"/>
+<entry key="3" type="xstring" value="Peptide counts (razor+unique)"/>
+<entry key="4" type="xstring" value="Peptide counts (unique)"/>
+<entry key="5" type="xstring" value="Fasta headers"/>
+<entry key="6" type="xstring" value="Number of proteins"/>
+<entry key="7" type="xstring" value="Peptides"/>
+<entry key="8" type="xstring" value="Razor + unique peptides"/>
+<entry key="9" type="xstring" value="Unique peptides"/>
+<entry key="10" type="xstring" value="Peptides EPA7"/>
+<entry key="11" type="xstring" value="Peptides EPA8"/>
+<entry key="12" type="xstring" value="Peptides EPA9"/>
+<entry key="13" type="xstring" value="Peptides EPE4"/>
+<entry key="14" type="xstring" value="Peptides EPE5"/>
+<entry key="15" type="xstring" value="Peptides EPE6"/>
+<entry key="16" type="xstring" value="Peptides EPW1"/>
+<entry key="17" type="xstring" value="Peptides EPW2"/>
+<entry key="18" type="xstring" value="Peptides EPW3"/>
+<entry key="19" type="xstring" value="Peptides NPA7"/>
+<entry key="20" type="xstring" value="Peptides NPA8"/>
+<entry key="21" type="xstring" value="Peptides NPA9"/>
+<entry key="22" type="xstring" value="Peptides NPE4"/>
+<entry key="23" type="xstring" value="Peptides NPE5"/>
+<entry key="24" type="xstring" value="Peptides NPE6"/>
+<entry key="25" type="xstring" value="Peptides NPW1"/>
+<entry key="26" type="xstring" value="Peptides NPW2"/>
+<entry key="27" type="xstring" value="Peptides NPW3"/>
+<entry key="28" type="xstring" value="Peptides PPA7"/>
+<entry key="29" type="xstring" value="Peptides PPA8"/>
+<entry key="30" type="xstring" value="Peptides PPA9"/>
+<entry key="31" type="xstring" value="Peptides PPE4"/>
+<entry key="32" type="xstring" value="Peptides PPE5"/>
+<entry key="33" type="xstring" value="Peptides PPE6"/>
+<entry key="34" type="xstring" value="Peptides PPW1"/>
+<entry key="35" type="xstring" value="Peptides PPW2"/>
+<entry key="36" type="xstring" value="Peptides PPW3"/>
+<entry key="37" type="xstring" value="Peptides SPA7"/>
+<entry key="38" type="xstring" value="Peptides SPA8"/>
+<entry key="39" type="xstring" value="Peptides SPA9"/>
+<entry key="40" type="xstring" value="Peptides SPE4"/>
+<entry key="41" type="xstring" value="Peptides SPE5"/>
+<entry key="42" type="xstring" value="Peptides SPE6"/>
+<entry key="43" type="xstring" value="Peptides SPW1"/>
+<entry key="44" type="xstring" value="Peptides SPW2"/>
+<entry key="45" type="xstring" value="Peptides SPW3"/>
+<entry key="46" type="xstring" value="Razor + unique peptides EPA7"/>
+<entry key="47" type="xstring" value="Razor + unique peptides EPA8"/>
+<entry key="48" type="xstring" value="Razor + unique peptides EPA9"/>
+<entry key="49" type="xstring" value="Razor + unique peptides EPE4"/>
+<entry key="50" type="xstring" value="Razor + unique peptides EPE5"/>
+<entry key="51" type="xstring" value="Razor + unique peptides EPE6"/>
+<entry key="52" type="xstring" value="Razor + unique peptides EPW1"/>
+<entry key="53" type="xstring" value="Razor + unique peptides EPW2"/>
+<entry key="54" type="xstring" value="Razor + unique peptides EPW3"/>
+<entry key="55" type="xstring" value="Razor + unique peptides NPA7"/>
+<entry key="56" type="xstring" value="Razor + unique peptides NPA8"/>
+<entry key="57" type="xstring" value="Razor + unique peptides NPA9"/>
+<entry key="58" type="xstring" value="Razor + unique peptides NPE4"/>
+<entry key="59" type="xstring" value="Razor + unique peptides NPE5"/>
+<entry key="60" type="xstring" value="Razor + unique peptides NPE6"/>
+<entry key="61" type="xstring" value="Razor + unique peptides NPW1"/>
+<entry key="62" type="xstring" value="Razor + unique peptides NPW2"/>
+<entry key="63" type="xstring" value="Razor + unique peptides NPW3"/>
+<entry key="64" type="xstring" value="Razor + unique peptides PPA7"/>
+<entry key="65" type="xstring" value="Razor + unique peptides PPA8"/>
+<entry key="66" type="xstring" value="Razor + unique peptides PPA9"/>
+<entry key="67" type="xstring" value="Razor + unique peptides PPE4"/>
+<entry key="68" type="xstring" value="Razor + unique peptides PPE5"/>
+<entry key="69" type="xstring" value="Razor + unique peptides PPE6"/>
+<entry key="70" type="xstring" value="Razor + unique peptides PPW1"/>
+<entry key="71" type="xstring" value="Razor + unique peptides PPW2"/>
+<entry key="72" type="xstring" value="Razor + unique peptides PPW3"/>
+<entry key="73" type="xstring" value="Razor + unique peptides SPA7"/>
+<entry key="74" type="xstring" value="Razor + unique peptides SPA8"/>
+<entry key="75" type="xstring" value="Razor + unique peptides SPA9"/>
+<entry key="76" type="xstring" value="Razor + unique peptides SPE4"/>
+<entry key="77" type="xstring" value="Razor + unique peptides SPE5"/>
+<entry key="78" type="xstring" value="Razor + unique peptides SPE6"/>
+<entry key="79" type="xstring" value="Razor + unique peptides SPW1"/>
+<entry key="80" type="xstring" value="Razor + unique peptides SPW2"/>
+<entry key="81" type="xstring" value="Razor + unique peptides SPW3"/>
+<entry key="82" type="xstring" value="Unique peptides EPA7"/>
+<entry key="83" type="xstring" value="Unique peptides EPA8"/>
+<entry key="84" type="xstring" value="Unique peptides EPA9"/>
+<entry key="85" type="xstring" value="Unique peptides EPE4"/>
+<entry key="86" type="xstring" value="Unique peptides EPE5"/>
+<entry key="87" type="xstring" value="Unique peptides EPE6"/>
+<entry key="88" type="xstring" value="Unique peptides EPW1"/>
+<entry key="89" type="xstring" value="Unique peptides EPW2"/>
+<entry key="90" type="xstring" value="Unique peptides EPW3"/>
+<entry key="91" type="xstring" value="Unique peptides NPA7"/>
+<entry key="92" type="xstring" value="Unique peptides NPA8"/>
+<entry key="93" type="xstring" value="Unique peptides NPA9"/>
+<entry key="94" type="xstring" value="Unique peptides NPE4"/>
+<entry key="95" type="xstring" value="Unique peptides NPE5"/>
+<entry key="96" type="xstring" value="Unique peptides NPE6"/>
+<entry key="97" type="xstring" value="Unique peptides NPW1"/>
+<entry key="98" type="xstring" value="Unique peptides NPW2"/>
+<entry key="99" type="xstring" value="Unique peptides NPW3"/>
+<entry key="100" type="xstring" value="Unique peptides PPA7"/>
+<entry key="101" type="xstring" value="Unique peptides PPA8"/>
+<entry key="102" type="xstring" value="Unique peptides PPA9"/>
+<entry key="103" type="xstring" value="Unique peptides PPE4"/>
+<entry key="104" type="xstring" value="Unique peptides PPE5"/>
+<entry key="105" type="xstring" value="Unique peptides PPE6"/>
+<entry key="106" type="xstring" value="Unique peptides PPW1"/>
+<entry key="107" type="xstring" value="Unique peptides PPW2"/>
+<entry key="108" type="xstring" value="Unique peptides PPW3"/>
+<entry key="109" type="xstring" value="Unique peptides SPA7"/>
+<entry key="110" type="xstring" value="Unique peptides SPA8"/>
+<entry key="111" type="xstring" value="Unique peptides SPA9"/>
+<entry key="112" type="xstring" value="Unique peptides SPE4"/>
+<entry key="113" type="xstring" value="Unique peptides SPE5"/>
+<entry key="114" type="xstring" value="Unique peptides SPE6"/>
+<entry key="115" type="xstring" value="Unique peptides SPW1"/>
+<entry key="116" type="xstring" value="Unique peptides SPW2"/>
+<entry key="117" type="xstring" value="Unique peptides SPW3"/>
+<entry key="118" type="xstring" value="Sequence coverage [%]"/>
+<entry key="119" type="xstring" value="Unique + razor sequence coverage [%]"/>
+<entry key="120" type="xstring" value="Unique sequence coverage [%]"/>
+<entry key="121" type="xstring" value="Mol. weight [kDa]"/>
+<entry key="122" type="xstring" value="Sequence length"/>
+<entry key="123" type="xstring" value="Sequence lengths"/>
+<entry key="124" type="xstring" value="Fraction average"/>
+<entry key="125" type="xstring" value="Fraction 1"/>
+<entry key="126" type="xstring" value="Fraction 10"/>
+<entry key="127" type="xstring" value="Fraction 100"/>
+<entry key="128" type="xstring" value="Q-value"/>
+<entry key="129" type="xstring" value="Score"/>
+<entry key="130" type="xstring" value="Identification type EPA7"/>
+<entry key="131" type="xstring" value="Identification type EPA8"/>
+<entry key="132" type="xstring" value="Identification type EPA9"/>
+<entry key="133" type="xstring" value="Identification type EPE4"/>
+<entry key="134" type="xstring" value="Identification type EPE5"/>
+<entry key="135" type="xstring" value="Identification type EPE6"/>
+<entry key="136" type="xstring" value="Identification type EPW1"/>
+<entry key="137" type="xstring" value="Identification type EPW2"/>
+<entry key="138" type="xstring" value="Identification type EPW3"/>
+<entry key="139" type="xstring" value="Identification type NPA7"/>
+<entry key="140" type="xstring" value="Identification type NPA8"/>
+<entry key="141" type="xstring" value="Identification type NPA9"/>
+<entry key="142" type="xstring" value="Identification type NPE4"/>
+<entry key="143" type="xstring" value="Identification type NPE5"/>
+<entry key="144" type="xstring" value="Identification type NPE6"/>
+<entry key="145" type="xstring" value="Identification type NPW1"/>
+<entry key="146" type="xstring" value="Identification type NPW2"/>
+<entry key="147" type="xstring" value="Identification type NPW3"/>
+<entry key="148" type="xstring" value="Identification type PPA7"/>
+<entry key="149" type="xstring" value="Identification type PPA8"/>
+<entry key="150" type="xstring" value="Identification type PPA9"/>
+<entry key="151" type="xstring" value="Identification type PPE4"/>
+<entry key="152" type="xstring" value="Identification type PPE5"/>
+<entry key="153" type="xstring" value="Identification type PPE6"/>
+<entry key="154" type="xstring" value="Identification type PPW1"/>
+<entry key="155" type="xstring" value="Identification type PPW2"/>
+<entry key="156" type="xstring" value="Identification type PPW3"/>
+<entry key="157" type="xstring" value="Identification type SPA7"/>
+<entry key="158" type="xstring" value="Identification type SPA8"/>
+<entry key="159" type="xstring" value="Identification type SPA9"/>
+<entry key="160" type="xstring" value="Identification type SPE4"/>
+<entry key="161" type="xstring" value="Identification type SPE5"/>
+<entry key="162" type="xstring" value="Identification type SPE6"/>
+<entry key="163" type="xstring" value="Identification type SPW1"/>
+<entry key="164" type="xstring" value="Identification type SPW2"/>
+<entry key="165" type="xstring" value="Identification type SPW3"/>
+<entry key="166" type="xstring" value="Sequence coverage EPA7 [%]"/>
+<entry key="167" type="xstring" value="Sequence coverage EPA8 [%]"/>
+<entry key="168" type="xstring" value="Sequence coverage EPA9 [%]"/>
+<entry key="169" type="xstring" value="Sequence coverage EPE4 [%]"/>
+<entry key="170" type="xstring" value="Sequence coverage EPE5 [%]"/>
+<entry key="171" type="xstring" value="Sequence coverage EPE6 [%]"/>
+<entry key="172" type="xstring" value="Sequence coverage EPW1 [%]"/>
+<entry key="173" type="xstring" value="Sequence coverage EPW2 [%]"/>
+<entry key="174" type="xstring" value="Sequence coverage EPW3 [%]"/>
+<entry key="175" type="xstring" value="Sequence coverage NPA7 [%]"/>
+<entry key="176" type="xstring" value="Sequence coverage NPA8 [%]"/>
+<entry key="177" type="xstring" value="Sequence coverage NPA9 [%]"/>
+<entry key="178" type="xstring" value="Sequence coverage NPE4 [%]"/>
+<entry key="179" type="xstring" value="Sequence coverage NPE5 [%]"/>
+<entry key="180" type="xstring" value="Sequence coverage NPE6 [%]"/>
+<entry key="181" type="xstring" value="Sequence coverage NPW1 [%]"/>
+<entry key="182" type="xstring" value="Sequence coverage NPW2 [%]"/>
+<entry key="183" type="xstring" value="Sequence coverage NPW3 [%]"/>
+<entry key="184" type="xstring" value="Sequence coverage PPA7 [%]"/>
+<entry key="185" type="xstring" value="Sequence coverage PPA8 [%]"/>
+<entry key="186" type="xstring" value="Sequence coverage PPA9 [%]"/>
+<entry key="187" type="xstring" value="Sequence coverage PPE4 [%]"/>
+<entry key="188" type="xstring" value="Sequence coverage PPE5 [%]"/>
+<entry key="189" type="xstring" value="Sequence coverage PPE6 [%]"/>
+<entry key="190" type="xstring" value="Sequence coverage PPW1 [%]"/>
+<entry key="191" type="xstring" value="Sequence coverage PPW2 [%]"/>
+<entry key="192" type="xstring" value="Sequence coverage PPW3 [%]"/>
+<entry key="193" type="xstring" value="Sequence coverage SPA7 [%]"/>
+<entry key="194" type="xstring" value="Sequence coverage SPA8 [%]"/>
+<entry key="195" type="xstring" value="Sequence coverage SPA9 [%]"/>
+<entry key="196" type="xstring" value="Sequence coverage SPE4 [%]"/>
+<entry key="197" type="xstring" value="Sequence coverage SPE5 [%]"/>
+<entry key="198" type="xstring" value="Sequence coverage SPE6 [%]"/>
+<entry key="199" type="xstring" value="Sequence coverage SPW1 [%]"/>
+<entry key="200" type="xstring" value="Sequence coverage SPW2 [%]"/>
+<entry key="201" type="xstring" value="Sequence coverage SPW3 [%]"/>
+<entry key="202" type="xstring" value="Intensity"/>
+<entry key="203" type="xstring" value="Intensity EPA7"/>
+<entry key="204" type="xstring" value="Intensity EPA8"/>
+<entry key="205" type="xstring" value="Intensity EPA9"/>
+<entry key="206" type="xstring" value="Intensity EPE4"/>
+<entry key="207" type="xstring" value="Intensity EPE5"/>
+<entry key="208" type="xstring" value="Intensity EPE6"/>
+<entry key="209" type="xstring" value="Intensity EPW1"/>
+<entry key="210" type="xstring" value="Intensity EPW2"/>
+<entry key="211" type="xstring" value="Intensity EPW3"/>
+<entry key="212" type="xstring" value="Intensity NPA7"/>
+<entry key="213" type="xstring" value="Intensity NPA8"/>
+<entry key="214" type="xstring" value="Intensity NPA9"/>
+<entry key="215" type="xstring" value="Intensity NPE4"/>
+<entry key="216" type="xstring" value="Intensity NPE5"/>
+<entry key="217" type="xstring" value="Intensity NPE6"/>
+<entry key="218" type="xstring" value="Intensity NPW1"/>
+<entry key="219" type="xstring" value="Intensity NPW2"/>
+<entry key="220" type="xstring" value="Intensity NPW3"/>
+<entry key="221" type="xstring" value="Intensity PPA7"/>
+<entry key="222" type="xstring" value="Intensity PPA8"/>
+<entry key="223" type="xstring" value="Intensity PPA9"/>
+<entry key="224" type="xstring" value="Intensity PPE4"/>
+<entry key="225" type="xstring" value="Intensity PPE5"/>
+<entry key="226" type="xstring" value="Intensity PPE6"/>
+<entry key="227" type="xstring" value="Intensity PPW1"/>
+<entry key="228" type="xstring" value="Intensity PPW2"/>
+<entry key="229" type="xstring" value="Intensity PPW3"/>
+<entry key="230" type="xstring" value="Intensity SPA7"/>
+<entry key="231" type="xstring" value="Intensity SPA8"/>
+<entry key="232" type="xstring" value="Intensity SPA9"/>
+<entry key="233" type="xstring" value="Intensity SPE4"/>
+<entry key="234" type="xstring" value="Intensity SPE5"/>
+<entry key="235" type="xstring" value="Intensity SPE6"/>
+<entry key="236" type="xstring" value="Intensity SPW1"/>
+<entry key="237" type="xstring" value="Intensity SPW2"/>
+<entry key="238" type="xstring" value="Intensity SPW3"/>
+<entry key="239" type="xstring" value="iBAQ"/>
+<entry key="240" type="xstring" value="iBAQ EPA7"/>
+<entry key="241" type="xstring" value="iBAQ EPA8"/>
+<entry key="242" type="xstring" value="iBAQ EPA9"/>
+<entry key="243" type="xstring" value="iBAQ EPE4"/>
+<entry key="244" type="xstring" value="iBAQ EPE5"/>
+<entry key="245" type="xstring" value="iBAQ EPE6"/>
+<entry key="246" type="xstring" value="iBAQ EPW1"/>
+<entry key="247" type="xstring" value="iBAQ EPW2"/>
+<entry key="248" type="xstring" value="iBAQ EPW3"/>
+<entry key="249" type="xstring" value="iBAQ NPA7"/>
+<entry key="250" type="xstring" value="iBAQ NPA8"/>
+<entry key="251" type="xstring" value="iBAQ NPA9"/>
+<entry key="252" type="xstring" value="iBAQ NPE4"/>
+<entry key="253" type="xstring" value="iBAQ NPE5"/>
+<entry key="254" type="xstring" value="iBAQ NPE6"/>
+<entry key="255" type="xstring" value="iBAQ NPW1"/>
+<entry key="256" type="xstring" value="iBAQ NPW2"/>
+<entry key="257" type="xstring" value="iBAQ NPW3"/>
+<entry key="258" type="xstring" value="iBAQ PPA7"/>
+<entry key="259" type="xstring" value="iBAQ PPA8"/>
+<entry key="260" type="xstring" value="iBAQ PPA9"/>
+<entry key="261" type="xstring" value="iBAQ PPE4"/>
+<entry key="262" type="xstring" value="iBAQ PPE5"/>
+<entry key="263" type="xstring" value="iBAQ PPE6"/>
+<entry key="264" type="xstring" value="iBAQ PPW1"/>
+<entry key="265" type="xstring" value="iBAQ PPW2"/>
+<entry key="266" type="xstring" value="iBAQ PPW3"/>
+<entry key="267" type="xstring" value="iBAQ SPA7"/>
+<entry key="268" type="xstring" value="iBAQ SPA8"/>
+<entry key="269" type="xstring" value="iBAQ SPA9"/>
+<entry key="270" type="xstring" value="iBAQ SPE4"/>
+<entry key="271" type="xstring" value="iBAQ SPE5"/>
+<entry key="272" type="xstring" value="iBAQ SPE6"/>
+<entry key="273" type="xstring" value="iBAQ SPW1"/>
+<entry key="274" type="xstring" value="iBAQ SPW2"/>
+<entry key="275" type="xstring" value="iBAQ SPW3"/>
+<entry key="276" type="xstring" value="LFQ intensity EPA7"/>
+<entry key="277" type="xstring" value="LFQ intensity EPA8"/>
+<entry key="278" type="xstring" value="LFQ intensity EPA9"/>
+<entry key="279" type="xstring" value="LFQ intensity EPE4"/>
+<entry key="280" type="xstring" value="LFQ intensity EPE5"/>
+<entry key="281" type="xstring" value="LFQ intensity EPE6"/>
+<entry key="282" type="xstring" value="LFQ intensity EPW1"/>
+<entry key="283" type="xstring" value="LFQ intensity EPW2"/>
+<entry key="284" type="xstring" value="LFQ intensity EPW3"/>
+<entry key="285" type="xstring" value="LFQ intensity NPA7"/>
+<entry key="286" type="xstring" value="LFQ intensity NPA8"/>
+<entry key="287" type="xstring" value="LFQ intensity NPA9"/>
+<entry key="288" type="xstring" value="LFQ intensity NPE4"/>
+<entry key="289" type="xstring" value="LFQ intensity NPE5"/>
+<entry key="290" type="xstring" value="LFQ intensity NPE6"/>
+<entry key="291" type="xstring" value="LFQ intensity NPW1"/>
+<entry key="292" type="xstring" value="LFQ intensity NPW2"/>
+<entry key="293" type="xstring" value="LFQ intensity NPW3"/>
+<entry key="294" type="xstring" value="LFQ intensity PPA7"/>
+<entry key="295" type="xstring" value="LFQ intensity PPA8"/>
+<entry key="296" type="xstring" value="LFQ intensity PPA9"/>
+<entry key="297" type="xstring" value="LFQ intensity PPE4"/>
+<entry key="298" type="xstring" value="LFQ intensity PPE5"/>
+<entry key="299" type="xstring" value="LFQ intensity PPE6"/>
+<entry key="300" type="xstring" value="LFQ intensity PPW1"/>
+<entry key="301" type="xstring" value="LFQ intensity PPW2"/>
+<entry key="302" type="xstring" value="LFQ intensity PPW3"/>
+<entry key="303" type="xstring" value="LFQ intensity SPA7"/>
+<entry key="304" type="xstring" value="LFQ intensity SPA8"/>
+<entry key="305" type="xstring" value="LFQ intensity SPA9"/>
+<entry key="306" type="xstring" value="LFQ intensity SPE4"/>
+<entry key="307" type="xstring" value="LFQ intensity SPE5"/>
+<entry key="308" type="xstring" value="LFQ intensity SPE6"/>
+<entry key="309" type="xstring" value="LFQ intensity SPW1"/>
+<entry key="310" type="xstring" value="LFQ intensity SPW2"/>
+<entry key="311" type="xstring" value="LFQ intensity SPW3"/>
+<entry key="312" type="xstring" value="MS/MS count EPA7"/>
+<entry key="313" type="xstring" value="MS/MS count EPA8"/>
+<entry key="314" type="xstring" value="MS/MS count EPA9"/>
+<entry key="315" type="xstring" value="MS/MS count EPE4"/>
+<entry key="316" type="xstring" value="MS/MS count EPE5"/>
+<entry key="317" type="xstring" value="MS/MS count EPE6"/>
+<entry key="318" type="xstring" value="MS/MS count EPW1"/>
+<entry key="319" type="xstring" value="MS/MS count EPW2"/>
+<entry key="320" type="xstring" value="MS/MS count EPW3"/>
+<entry key="321" type="xstring" value="MS/MS count NPA7"/>
+<entry key="322" type="xstring" value="MS/MS count NPA8"/>
+<entry key="323" type="xstring" value="MS/MS count NPA9"/>
+<entry key="324" type="xstring" value="MS/MS count NPE4"/>
+<entry key="325" type="xstring" value="MS/MS count NPE5"/>
+<entry key="326" type="xstring" value="MS/MS count NPE6"/>
+<entry key="327" type="xstring" value="MS/MS count NPW1"/>
+<entry key="328" type="xstring" value="MS/MS count NPW2"/>
+<entry key="329" type="xstring" value="MS/MS count NPW3"/>
+<entry key="330" type="xstring" value="MS/MS count PPA7"/>
+<entry key="331" type="xstring" value="MS/MS count PPA8"/>
+<entry key="332" type="xstring" value="MS/MS count PPA9"/>
+<entry key="333" type="xstring" value="MS/MS count PPE4"/>
+<entry key="334" type="xstring" value="MS/MS count PPE5"/>
+<entry key="335" type="xstring" value="MS/MS count PPE6"/>
+<entry key="336" type="xstring" value="MS/MS count PPW1"/>
+<entry key="337" type="xstring" value="MS/MS count PPW2"/>
+<entry key="338" type="xstring" value="MS/MS count PPW3"/>
+<entry key="339" type="xstring" value="MS/MS count SPA7"/>
+<entry key="340" type="xstring" value="MS/MS count SPA8"/>
+<entry key="341" type="xstring" value="MS/MS count SPA9"/>
+<entry key="342" type="xstring" value="MS/MS count SPE4"/>
+<entry key="343" type="xstring" value="MS/MS count SPE5"/>
+<entry key="344" type="xstring" value="MS/MS count SPE6"/>
+<entry key="345" type="xstring" value="MS/MS count SPW1"/>
+<entry key="346" type="xstring" value="MS/MS count SPW2"/>
+<entry key="347" type="xstring" value="MS/MS count SPW3"/>
+<entry key="348" type="xstring" value="MS/MS count"/>
+<entry key="349" type="xstring" value="Only identified by site"/>
+<entry key="350" type="xstring" value="Reverse"/>
+<entry key="351" type="xstring" value="Potential contaminant"/>
+<entry key="352" type="xstring" value="id"/>
+<entry key="353" type="xstring" value="Peptide IDs"/>
+<entry key="354" type="xstring" value="Peptide is razor"/>
+<entry key="355" type="xstring" value="Mod. peptide IDs"/>
+<entry key="356" type="xstring" value="Evidence IDs"/>
+<entry key="357" type="xstring" value="MS/MS IDs"/>
+<entry key="358" type="xstring" value="Best MS/MS"/>
+<entry key="359" type="xstring" value="Deamidation (NQ) site IDs"/>
+<entry key="360" type="xstring" value="Oxidation (M) site IDs"/>
+<entry key="361" type="xstring" value="Deamidation (NQ) site positions"/>
+<entry key="362" type="xstring" value="Oxidation (M) site positions"/>
+<entry key="363" type="xstring" value="Intensity EPA7_log2"/>
+<entry key="364" type="xstring" value="Intensity EPA8_log2"/>
+<entry key="365" type="xstring" value="Intensity EPA9_log2"/>
+<entry key="366" type="xstring" value="Intensity EPE4_log2"/>
+<entry key="367" type="xstring" value="Intensity EPE5_log2"/>
+<entry key="368" type="xstring" value="Intensity EPE6_log2"/>
+<entry key="369" type="xstring" value="Intensity EPW1_log2"/>
+<entry key="370" type="xstring" value="Intensity EPW2_log2"/>
+<entry key="371" type="xstring" value="Intensity EPW3_log2"/>
+<entry key="372" type="xstring" value="Intensity NPA7_log2"/>
+<entry key="373" type="xstring" value="Intensity NPA8_log2"/>
+<entry key="374" type="xstring" value="Intensity NPA9_log2"/>
+<entry key="375" type="xstring" value="Intensity NPE4_log2"/>
+<entry key="376" type="xstring" value="Intensity NPE5_log2"/>
+<entry key="377" type="xstring" value="Intensity NPE6_log2"/>
+<entry key="378" type="xstring" value="Intensity NPW1_log2"/>
+<entry key="379" type="xstring" value="Intensity NPW2_log2"/>
+<entry key="380" type="xstring" value="Intensity NPW3_log2"/>
+<entry key="381" type="xstring" value="Intensity PPA7_log2"/>
+<entry key="382" type="xstring" value="Intensity PPA8_log2"/>
+<entry key="383" type="xstring" value="Intensity PPA9_log2"/>
+<entry key="384" type="xstring" value="Intensity PPE4_log2"/>
+<entry key="385" type="xstring" value="Intensity PPE5_log2"/>
+<entry key="386" type="xstring" value="Intensity PPE6_log2"/>
+<entry key="387" type="xstring" value="Intensity PPW1_log2"/>
+<entry key="388" type="xstring" value="Intensity PPW2_log2"/>
+<entry key="389" type="xstring" value="Intensity PPW3_log2"/>
+<entry key="390" type="xstring" value="Intensity SPA7_log2"/>
+<entry key="391" type="xstring" value="Intensity SPA8_log2"/>
+<entry key="392" type="xstring" value="Intensity SPA9_log2"/>
+<entry key="393" type="xstring" value="Intensity SPE4_log2"/>
+<entry key="394" type="xstring" value="Intensity SPE5_log2"/>
+<entry key="395" type="xstring" value="Intensity SPE6_log2"/>
+<entry key="396" type="xstring" value="Intensity SPW1_log2"/>
+<entry key="397" type="xstring" value="Intensity SPW2_log2"/>
+<entry key="398" type="xstring" value="Intensity SPW3_log2"/>
+<entry key="399" type="xstring" value="Intensity EPA7_log2_norm"/>
+<entry key="400" type="xstring" value="Intensity EPA8_log2_norm"/>
+<entry key="401" type="xstring" value="Intensity EPA9_log2_norm"/>
+<entry key="402" type="xstring" value="Intensity EPE4_log2_norm"/>
+<entry key="403" type="xstring" value="Intensity EPE5_log2_norm"/>
+<entry key="404" type="xstring" value="Intensity EPE6_log2_norm"/>
+<entry key="405" type="xstring" value="Intensity EPW1_log2_norm"/>
+<entry key="406" type="xstring" value="Intensity EPW2_log2_norm"/>
+<entry key="407" type="xstring" value="Intensity EPW3_log2_norm"/>
+<entry key="408" type="xstring" value="Intensity NPA7_log2_norm"/>
+<entry key="409" type="xstring" value="Intensity NPA8_log2_norm"/>
+<entry key="410" type="xstring" value="Intensity NPA9_log2_norm"/>
+<entry key="411" type="xstring" value="Intensity NPE4_log2_norm"/>
+<entry key="412" type="xstring" value="Intensity NPE5_log2_norm"/>
+<entry key="413" type="xstring" value="Intensity NPE6_log2_norm"/>
+<entry key="414" type="xstring" value="Intensity NPW1_log2_norm"/>
+<entry key="415" type="xstring" value="Intensity NPW2_log2_norm"/>
+<entry key="416" type="xstring" value="Intensity NPW3_log2_norm"/>
+<entry key="417" type="xstring" value="Intensity PPA7_log2_norm"/>
+<entry key="418" type="xstring" value="Intensity PPA8_log2_norm"/>
+<entry key="419" type="xstring" value="Intensity PPA9_log2_norm"/>
+<entry key="420" type="xstring" value="Intensity PPE4_log2_norm"/>
+<entry key="421" type="xstring" value="Intensity PPE5_log2_norm"/>
+<entry key="422" type="xstring" value="Intensity PPE6_log2_norm"/>
+<entry key="423" type="xstring" value="Intensity PPW1_log2_norm"/>
+<entry key="424" type="xstring" value="Intensity PPW2_log2_norm"/>
+<entry key="425" type="xstring" value="Intensity PPW3_log2_norm"/>
+<entry key="426" type="xstring" value="Intensity SPA7_log2_norm"/>
+<entry key="427" type="xstring" value="Intensity SPA8_log2_norm"/>
+<entry key="428" type="xstring" value="Intensity SPA9_log2_norm"/>
+<entry key="429" type="xstring" value="Intensity SPE4_log2_norm"/>
+<entry key="430" type="xstring" value="Intensity SPE5_log2_norm"/>
+<entry key="431" type="xstring" value="Intensity SPE6_log2_norm"/>
+<entry key="432" type="xstring" value="Intensity SPW1_log2_norm"/>
+<entry key="433" type="xstring" value="Intensity SPW2_log2_norm"/>
+<entry key="434" type="xstring" value="Intensity SPW3_log2_norm"/>
+</config>
+<entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
+<config key="name_pattern">
+<entry key="pattern" type="xstring" value="Intensity *_log2_norm"/>
+<entry key="type" type="xstring" value="Wildcard"/>
+<entry key="caseSensitive" type="xboolean" value="true"/>
+</config>
+<config key="datatype">
+<config key="typelist">
+<entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+</config>
+</config>
+</config>
+</config>
+</config>
+<config key="string-input-259">
+<entry key="string" type="xstring" value="Intensity (log2)"/>
+</config>
+<config key="string-input-260">
+<entry key="string" type="xstring" value="quantile normalized"/>
+</config>
+<config key="single-selection-261">
+<entry key="variable_value" type="xstring" value="width"/>
+</config>
+<config key="string-input-438">
+<entry key="string" type="xstring" value="Intensity "/>
+</config>
+<config key="string-input-439">
+<entry key="string" type="xstring" value="_log2_norm"/>
+</config>
+</config>
+<config key="nodeAnnotation">
+<entry key="text" type="xstring" value="normalized data %%00010(all samples)%%00010width same for all"/>
+<entry key="bgcolor" type="xint" value="16777215"/>
+<entry key="x-coordinate" type="xint" value="277"/>
+<entry key="y-coordinate" type="xint" value="359"/>
+<entry key="width" type="xint" value="126"/>
+<entry key="height" type="xint" value="51"/>
+<entry key="alignment" type="xstring" value="CENTER"/>
+<entry key="borderSize" type="xint" value="0"/>
+<entry key="borderColor" type="xint" value="16777215"/>
+<entry key="defFontSize" type="xint" value="10"/>
+<entry key="annotation-version" type="xint" value="20151123"/>
+<config key="styles"/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="IDLE"/>
+<entry key="virtual-in-ID" type="xint" value="217"/>
+<config key="inports">
+<config key="inport_0">
+<entry key="index" type="xint" value="0"/>
+<config key="type">
+<entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+</config>
+</config>
+</config>
+<entry key="virtual-out-ID" type="xint" value="219"/>
+<config key="outports">
+<config key="outport_0">
+<entry key="index" type="xint" value="0"/>
+<config key="type">
+<entry key="object_class" type="xstring" value="org.knime.core.node.port.image.ImagePortObject"/>
+</config>
+</config>
+</config>
+<config key="workflow_template_information">
+<entry key="role" type="xstring" value="Link"/>
+<entry key="timestamp" type="xstring" value="2018-06-05 09:51:13"/>
+<entry key="sourceURI" type="xstring" value="knime://LOCAL/_Metanodes%20templates/Graphs/Violin%20plot"/>
+</config>
+<entry key="layoutJSON" type="xstring" value=""/>
+<entry key="hideInWizard" type="xboolean" value="false"/>
+<entry key="customCSS" type="xstring" value=""/>
+</config>
