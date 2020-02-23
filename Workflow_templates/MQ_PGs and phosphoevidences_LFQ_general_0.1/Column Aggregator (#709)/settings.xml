@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<config key="aggregationColumns_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_columnfilter"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<config key="aggregationColumns">
+<entry key="filter-type" type="xstring" value="STANDARD"/>
+<config key="included_names">
+<entry key="array-size" type="xint" value="2"/>
+<entry key="0" type="xstring" value="Localization prob"/>
+<entry key="1" type="xstring" value="Positions_Amino acid"/>
+</config>
+<config key="excluded_names">
+<entry key="array-size" type="xint" value="290"/>
+<entry key="0" type="xstring" value="Proteins"/>
+<entry key="1" type="xstring" value="Positions within proteins"/>
+<entry key="2" type="xstring" value="Leading proteins"/>
+<entry key="3" type="xstring" value="Protein"/>
+<entry key="4" type="xstring" value="Protein names"/>
+<entry key="5" type="xstring" value="Gene names"/>
+<entry key="6" type="xstring" value="Fasta headers"/>
+<entry key="7" type="xstring" value="Score diff"/>
+<entry key="8" type="xstring" value="PEP"/>
+<entry key="9" type="xstring" value="Score"/>
+<entry key="10" type="xstring" value="Delta score"/>
+<entry key="11" type="xstring" value="Score for localization"/>
+<entry key="12" type="xstring" value="Localization prob ID"/>
+<entry key="13" type="xstring" value="Score diff ID"/>
+<entry key="14" type="xstring" value="PEP ID"/>
+<entry key="15" type="xstring" value="Score ID"/>
+<entry key="16" type="xstring" value="Localization prob P"/>
+<entry key="17" type="xstring" value="Score diff P"/>
+<entry key="18" type="xstring" value="PEP P"/>
+<entry key="19" type="xstring" value="Score P"/>
+<entry key="20" type="xstring" value="Diagnostic peak"/>
+<entry key="21" type="xstring" value="Number of Phospho (ST)"/>
+<entry key="22" type="xstring" value="Amino acid"/>
+<entry key="23" type="xstring" value="Sequence window"/>
+<entry key="24" type="xstring" value="Modification window"/>
+<entry key="25" type="xstring" value="Peptide window coverage"/>
+<entry key="26" type="xstring" value="Phospho (ST) Probabilities"/>
+<entry key="27" type="xstring" value="Phospho (ST) Score diffs"/>
+<entry key="28" type="xstring" value="Position in peptide"/>
+<entry key="29" type="xstring" value="Charge"/>
+<entry key="30" type="xstring" value="Mass error [ppm]"/>
+<entry key="31" type="xstring" value="Reporter intensity corrected 0___1"/>
+<entry key="32" type="xstring" value="Reporter intensity corrected 0___2"/>
+<entry key="33" type="xstring" value="Reporter intensity corrected 0___3"/>
+<entry key="34" type="xstring" value="Reporter intensity corrected 1___1"/>
+<entry key="35" type="xstring" value="Reporter intensity corrected 1___2"/>
+<entry key="36" type="xstring" value="Reporter intensity corrected 1___3"/>
+<entry key="37" type="xstring" value="Reporter intensity corrected 2___1"/>
+<entry key="38" type="xstring" value="Reporter intensity corrected 2___2"/>
+<entry key="39" type="xstring" value="Reporter intensity corrected 2___3"/>
+<entry key="40" type="xstring" value="Reporter intensity corrected 3___1"/>
+<entry key="41" type="xstring" value="Reporter intensity corrected 3___2"/>
+<entry key="42" type="xstring" value="Reporter intensity corrected 3___3"/>
+<entry key="43" type="xstring" value="Reporter intensity corrected 4___1"/>
+<entry key="44" type="xstring" value="Reporter intensity corrected 4___2"/>
+<entry key="45" type="xstring" value="Reporter intensity corrected 4___3"/>
+<entry key="46" type="xstring" value="Reporter intensity corrected 5___1"/>
+<entry key="47" type="xstring" value="Reporter intensity corrected 5___2"/>
+<entry key="48" type="xstring" value="Reporter intensity corrected 5___3"/>
+<entry key="49" type="xstring" value="Reporter intensity corrected 6___1"/>
+<entry key="50" type="xstring" value="Reporter intensity corrected 6___2"/>
+<entry key="51" type="xstring" value="Reporter intensity corrected 6___3"/>
+<entry key="52" type="xstring" value="Reporter intensity corrected 7___1"/>
+<entry key="53" type="xstring" value="Reporter intensity corrected 7___2"/>
+<entry key="54" type="xstring" value="Reporter intensity corrected 7___3"/>
+<entry key="55" type="xstring" value="Reporter intensity 0___1"/>
+<entry key="56" type="xstring" value="Reporter intensity 0___2"/>
+<entry key="57" type="xstring" value="Reporter intensity 0___3"/>
+<entry key="58" type="xstring" value="Reporter intensity 1___1"/>
+<entry key="59" type="xstring" value="Reporter intensity 1___2"/>
+<entry key="60" type="xstring" value="Reporter intensity 1___3"/>
+<entry key="61" type="xstring" value="Reporter intensity 2___1"/>
+<entry key="62" type="xstring" value="Reporter intensity 2___2"/>
+<entry key="63" type="xstring" value="Reporter intensity 2___3"/>
+<entry key="64" type="xstring" value="Reporter intensity 3___1"/>
+<entry key="65" type="xstring" value="Reporter intensity 3___2"/>
+<entry key="66" type="xstring" value="Reporter intensity 3___3"/>
+<entry key="67" type="xstring" value="Reporter intensity 4___1"/>
+<entry key="68" type="xstring" value="Reporter intensity 4___2"/>
+<entry key="69" type="xstring" value="Reporter intensity 4___3"/>
+<entry key="70" type="xstring" value="Reporter intensity 5___1"/>
+<entry key="71" type="xstring" value="Reporter intensity 5___2"/>
+<entry key="72" type="xstring" value="Reporter intensity 5___3"/>
+<entry key="73" type="xstring" value="Reporter intensity 6___1"/>
+<entry key="74" type="xstring" value="Reporter intensity 6___2"/>
+<entry key="75" type="xstring" value="Reporter intensity 6___3"/>
+<entry key="76" type="xstring" value="Reporter intensity 7___1"/>
+<entry key="77" type="xstring" value="Reporter intensity 7___2"/>
+<entry key="78" type="xstring" value="Reporter intensity 7___3"/>
+<entry key="79" type="xstring" value="Reporter intensity count 0___1"/>
+<entry key="80" type="xstring" value="Reporter intensity count 0___2"/>
+<entry key="81" type="xstring" value="Reporter intensity count 0___3"/>
+<entry key="82" type="xstring" value="Reporter intensity count 1___1"/>
+<entry key="83" type="xstring" value="Reporter intensity count 1___2"/>
+<entry key="84" type="xstring" value="Reporter intensity count 1___3"/>
+<entry key="85" type="xstring" value="Reporter intensity count 2___1"/>
+<entry key="86" type="xstring" value="Reporter intensity count 2___2"/>
+<entry key="87" type="xstring" value="Reporter intensity count 2___3"/>
+<entry key="88" type="xstring" value="Reporter intensity count 3___1"/>
+<entry key="89" type="xstring" value="Reporter intensity count 3___2"/>
+<entry key="90" type="xstring" value="Reporter intensity count 3___3"/>
+<entry key="91" type="xstring" value="Reporter intensity count 4___1"/>
+<entry key="92" type="xstring" value="Reporter intensity count 4___2"/>
+<entry key="93" type="xstring" value="Reporter intensity count 4___3"/>
+<entry key="94" type="xstring" value="Reporter intensity count 5___1"/>
+<entry key="95" type="xstring" value="Reporter intensity count 5___2"/>
+<entry key="96" type="xstring" value="Reporter intensity count 5___3"/>
+<entry key="97" type="xstring" value="Reporter intensity count 6___1"/>
+<entry key="98" type="xstring" value="Reporter intensity count 6___2"/>
+<entry key="99" type="xstring" value="Reporter intensity count 6___3"/>
+<entry key="100" type="xstring" value="Reporter intensity count 7___1"/>
+<entry key="101" type="xstring" value="Reporter intensity count 7___2"/>
+<entry key="102" type="xstring" value="Reporter intensity count 7___3"/>
+<entry key="103" type="xstring" value="Reporter intensity corrected 0 ID___1"/>
+<entry key="104" type="xstring" value="Reporter intensity corrected 0 ID___2"/>
+<entry key="105" type="xstring" value="Reporter intensity corrected 0 ID___3"/>
+<entry key="106" type="xstring" value="Reporter intensity corrected 1 ID___1"/>
+<entry key="107" type="xstring" value="Reporter intensity corrected 1 ID___2"/>
+<entry key="108" type="xstring" value="Reporter intensity corrected 1 ID___3"/>
+<entry key="109" type="xstring" value="Reporter intensity corrected 2 ID___1"/>
+<entry key="110" type="xstring" value="Reporter intensity corrected 2 ID___2"/>
+<entry key="111" type="xstring" value="Reporter intensity corrected 2 ID___3"/>
+<entry key="112" type="xstring" value="Reporter intensity corrected 3 ID___1"/>
+<entry key="113" type="xstring" value="Reporter intensity corrected 3 ID___2"/>
+<entry key="114" type="xstring" value="Reporter intensity corrected 3 ID___3"/>
+<entry key="115" type="xstring" value="Reporter intensity corrected 4 ID___1"/>
+<entry key="116" type="xstring" value="Reporter intensity corrected 4 ID___2"/>
+<entry key="117" type="xstring" value="Reporter intensity corrected 4 ID___3"/>
+<entry key="118" type="xstring" value="Reporter intensity corrected 5 ID___1"/>
+<entry key="119" type="xstring" value="Reporter intensity corrected 5 ID___2"/>
+<entry key="120" type="xstring" value="Reporter intensity corrected 5 ID___3"/>
+<entry key="121" type="xstring" value="Reporter intensity corrected 6 ID___1"/>
+<entry key="122" type="xstring" value="Reporter intensity corrected 6 ID___2"/>
+<entry key="123" type="xstring" value="Reporter intensity corrected 6 ID___3"/>
+<entry key="124" type="xstring" value="Reporter intensity corrected 7 ID___1"/>
+<entry key="125" type="xstring" value="Reporter intensity corrected 7 ID___2"/>
+<entry key="126" type="xstring" value="Reporter intensity corrected 7 ID___3"/>
+<entry key="127" type="xstring" value="Reporter intensity corrected 0 P___1"/>
+<entry key="128" type="xstring" value="Reporter intensity corrected 0 P___2"/>
+<entry key="129" type="xstring" value="Reporter intensity corrected 0 P___3"/>
+<entry key="130" type="xstring" value="Reporter intensity corrected 1 P___1"/>
+<entry key="131" type="xstring" value="Reporter intensity corrected 1 P___2"/>
+<entry key="132" type="xstring" value="Reporter intensity corrected 1 P___3"/>
+<entry key="133" type="xstring" value="Reporter intensity corrected 2 P___1"/>
+<entry key="134" type="xstring" value="Reporter intensity corrected 2 P___2"/>
+<entry key="135" type="xstring" value="Reporter intensity corrected 2 P___3"/>
+<entry key="136" type="xstring" value="Reporter intensity corrected 3 P___1"/>
+<entry key="137" type="xstring" value="Reporter intensity corrected 3 P___2"/>
+<entry key="138" type="xstring" value="Reporter intensity corrected 3 P___3"/>
+<entry key="139" type="xstring" value="Reporter intensity corrected 4 P___1"/>
+<entry key="140" type="xstring" value="Reporter intensity corrected 4 P___2"/>
+<entry key="141" type="xstring" value="Reporter intensity corrected 4 P___3"/>
+<entry key="142" type="xstring" value="Reporter intensity corrected 5 P___1"/>
+<entry key="143" type="xstring" value="Reporter intensity corrected 5 P___2"/>
+<entry key="144" type="xstring" value="Reporter intensity corrected 5 P___3"/>
+<entry key="145" type="xstring" value="Reporter intensity corrected 6 P___1"/>
+<entry key="146" type="xstring" value="Reporter intensity corrected 6 P___2"/>
+<entry key="147" type="xstring" value="Reporter intensity corrected 6 P___3"/>
+<entry key="148" type="xstring" value="Reporter intensity corrected 7 P___1"/>
+<entry key="149" type="xstring" value="Reporter intensity corrected 7 P___2"/>
+<entry key="150" type="xstring" value="Reporter intensity corrected 7 P___3"/>
+<entry key="151" type="xstring" value="Reporter intensity 0 ID___1"/>
+<entry key="152" type="xstring" value="Reporter intensity 0 ID___2"/>
+<entry key="153" type="xstring" value="Reporter intensity 0 ID___3"/>
+<entry key="154" type="xstring" value="Reporter intensity 1 ID___1"/>
+<entry key="155" type="xstring" value="Reporter intensity 1 ID___2"/>
+<entry key="156" type="xstring" value="Reporter intensity 1 ID___3"/>
+<entry key="157" type="xstring" value="Reporter intensity 2 ID___1"/>
+<entry key="158" type="xstring" value="Reporter intensity 2 ID___2"/>
+<entry key="159" type="xstring" value="Reporter intensity 2 ID___3"/>
+<entry key="160" type="xstring" value="Reporter intensity 3 ID___1"/>
+<entry key="161" type="xstring" value="Reporter intensity 3 ID___2"/>
+<entry key="162" type="xstring" value="Reporter intensity 3 ID___3"/>
+<entry key="163" type="xstring" value="Reporter intensity 4 ID___1"/>
+<entry key="164" type="xstring" value="Reporter intensity 4 ID___2"/>
+<entry key="165" type="xstring" value="Reporter intensity 4 ID___3"/>
+<entry key="166" type="xstring" value="Reporter intensity 5 ID___1"/>
+<entry key="167" type="xstring" value="Reporter intensity 5 ID___2"/>
+<entry key="168" type="xstring" value="Reporter intensity 5 ID___3"/>
+<entry key="169" type="xstring" value="Reporter intensity 6 ID___1"/>
+<entry key="170" type="xstring" value="Reporter intensity 6 ID___2"/>
+<entry key="171" type="xstring" value="Reporter intensity 6 ID___3"/>
+<entry key="172" type="xstring" value="Reporter intensity 7 ID___1"/>
+<entry key="173" type="xstring" value="Reporter intensity 7 ID___2"/>
+<entry key="174" type="xstring" value="Reporter intensity 7 ID___3"/>
+<entry key="175" type="xstring" value="Reporter intensity 0 P___1"/>
+<entry key="176" type="xstring" value="Reporter intensity 0 P___2"/>
+<entry key="177" type="xstring" value="Reporter intensity 0 P___3"/>
+<entry key="178" type="xstring" value="Reporter intensity 1 P___1"/>
+<entry key="179" type="xstring" value="Reporter intensity 1 P___2"/>
+<entry key="180" type="xstring" value="Reporter intensity 1 P___3"/>
+<entry key="181" type="xstring" value="Reporter intensity 2 P___1"/>
+<entry key="182" type="xstring" value="Reporter intensity 2 P___2"/>
+<entry key="183" type="xstring" value="Reporter intensity 2 P___3"/>
+<entry key="184" type="xstring" value="Reporter intensity 3 P___1"/>
+<entry key="185" type="xstring" value="Reporter intensity 3 P___2"/>
+<entry key="186" type="xstring" value="Reporter intensity 3 P___3"/>
+<entry key="187" type="xstring" value="Reporter intensity 4 P___1"/>
+<entry key="188" type="xstring" value="Reporter intensity 4 P___2"/>
+<entry key="189" type="xstring" value="Reporter intensity 4 P___3"/>
+<entry key="190" type="xstring" value="Reporter intensity 5 P___1"/>
+<entry key="191" type="xstring" value="Reporter intensity 5 P___2"/>
+<entry key="192" type="xstring" value="Reporter intensity 5 P___3"/>
+<entry key="193" type="xstring" value="Reporter intensity 6 P___1"/>
+<entry key="194" type="xstring" value="Reporter intensity 6 P___2"/>
+<entry key="195" type="xstring" value="Reporter intensity 6 P___3"/>
+<entry key="196" type="xstring" value="Reporter intensity 7 P___1"/>
+<entry key="197" type="xstring" value="Reporter intensity 7 P___2"/>
+<entry key="198" type="xstring" value="Reporter intensity 7 P___3"/>
+<entry key="199" type="xstring" value="Reporter intensity count 0 ID___1"/>
+<entry key="200" type="xstring" value="Reporter intensity count 0 ID___2"/>
+<entry key="201" type="xstring" value="Reporter intensity count 0 ID___3"/>
+<entry key="202" type="xstring" value="Reporter intensity count 1 ID___1"/>
+<entry key="203" type="xstring" value="Reporter intensity count 1 ID___2"/>
+<entry key="204" type="xstring" value="Reporter intensity count 1 ID___3"/>
+<entry key="205" type="xstring" value="Reporter intensity count 2 ID___1"/>
+<entry key="206" type="xstring" value="Reporter intensity count 2 ID___2"/>
+<entry key="207" type="xstring" value="Reporter intensity count 2 ID___3"/>
+<entry key="208" type="xstring" value="Reporter intensity count 3 ID___1"/>
+<entry key="209" type="xstring" value="Reporter intensity count 3 ID___2"/>
+<entry key="210" type="xstring" value="Reporter intensity count 3 ID___3"/>
+<entry key="211" type="xstring" value="Reporter intensity count 4 ID___1"/>
+<entry key="212" type="xstring" value="Reporter intensity count 4 ID___2"/>
+<entry key="213" type="xstring" value="Reporter intensity count 4 ID___3"/>
+<entry key="214" type="xstring" value="Reporter intensity count 5 ID___1"/>
+<entry key="215" type="xstring" value="Reporter intensity count 5 ID___2"/>
+<entry key="216" type="xstring" value="Reporter intensity count 5 ID___3"/>
+<entry key="217" type="xstring" value="Reporter intensity count 6 ID___1"/>
+<entry key="218" type="xstring" value="Reporter intensity count 6 ID___2"/>
+<entry key="219" type="xstring" value="Reporter intensity count 6 ID___3"/>
+<entry key="220" type="xstring" value="Reporter intensity count 7 ID___1"/>
+<entry key="221" type="xstring" value="Reporter intensity count 7 ID___2"/>
+<entry key="222" type="xstring" value="Reporter intensity count 7 ID___3"/>
+<entry key="223" type="xstring" value="Reporter intensity count 0 P___1"/>
+<entry key="224" type="xstring" value="Reporter intensity count 0 P___2"/>
+<entry key="225" type="xstring" value="Reporter intensity count 0 P___3"/>
+<entry key="226" type="xstring" value="Reporter intensity count 1 P___1"/>
+<entry key="227" type="xstring" value="Reporter intensity count 1 P___2"/>
+<entry key="228" type="xstring" value="Reporter intensity count 1 P___3"/>
+<entry key="229" type="xstring" value="Reporter intensity count 2 P___1"/>
+<entry key="230" type="xstring" value="Reporter intensity count 2 P___2"/>
+<entry key="231" type="xstring" value="Reporter intensity count 2 P___3"/>
+<entry key="232" type="xstring" value="Reporter intensity count 3 P___1"/>
+<entry key="233" type="xstring" value="Reporter intensity count 3 P___2"/>
+<entry key="234" type="xstring" value="Reporter intensity count 3 P___3"/>
+<entry key="235" type="xstring" value="Reporter intensity count 4 P___1"/>
+<entry key="236" type="xstring" value="Reporter intensity count 4 P___2"/>
+<entry key="237" type="xstring" value="Reporter intensity count 4 P___3"/>
+<entry key="238" type="xstring" value="Reporter intensity count 5 P___1"/>
+<entry key="239" type="xstring" value="Reporter intensity count 5 P___2"/>
+<entry key="240" type="xstring" value="Reporter intensity count 5 P___3"/>
+<entry key="241" type="xstring" value="Reporter intensity count 6 P___1"/>
+<entry key="242" type="xstring" value="Reporter intensity count 6 P___2"/>
+<entry key="243" type="xstring" value="Reporter intensity count 6 P___3"/>
+<entry key="244" type="xstring" value="Reporter intensity count 7 P___1"/>
+<entry key="245" type="xstring" value="Reporter intensity count 7 P___2"/>
+<entry key="246" type="xstring" value="Reporter intensity count 7 P___3"/>
+<entry key="247" type="xstring" value="Intensity"/>
+<entry key="248" type="xstring" value="Intensity___1"/>
+<entry key="249" type="xstring" value="Intensity___2"/>
+<entry key="250" type="xstring" value="Intensity___3"/>
+<entry key="251" type="xstring" value="Ratio mod/base"/>
+<entry key="252" type="xstring" value="Intensity ID"/>
+<entry key="253" type="xstring" value="Intensity P"/>
+<entry key="254" type="xstring" value="Ratio mod/base ID"/>
+<entry key="255" type="xstring" value="Ratio mod/base P"/>
+<entry key="256" type="xstring" value="Intensity ID___1"/>
+<entry key="257" type="xstring" value="Intensity ID___2"/>
+<entry key="258" type="xstring" value="Intensity ID___3"/>
+<entry key="259" type="xstring" value="Intensity P___1"/>
+<entry key="260" type="xstring" value="Intensity P___2"/>
+<entry key="261" type="xstring" value="Intensity P___3"/>
+<entry key="262" type="xstring" value="Occupancy ID"/>
+<entry key="263" type="xstring" value="Occupancy ratioID"/>
+<entry key="264" type="xstring" value="Occupancy error scale ID"/>
+<entry key="265" type="xstring" value="Occupancy P"/>
+<entry key="266" type="xstring" value="Occupancy ratioP"/>
+<entry key="267" type="xstring" value="Occupancy error scale P"/>
+<entry key="268" type="xstring" value="Reverse"/>
+<entry key="269" type="xstring" value="Potential contaminant"/>
+<entry key="270" type="xstring" value="id"/>
+<entry key="271" type="xstring" value="Protein group IDs"/>
+<entry key="272" type="xstring" value="Positions"/>
+<entry key="273" type="xstring" value="Position"/>
+<entry key="274" type="xstring" value="Peptide IDs"/>
+<entry key="275" type="xstring" value="Mod. peptide IDs"/>
+<entry key="276" type="xstring" value="Evidence IDs"/>
+<entry key="277" type="xstring" value="MS/MS IDs"/>
+<entry key="278" type="xstring" value="Best localization evidence ID"/>
+<entry key="279" type="xstring" value="Best localization MS/MS ID"/>
+<entry key="280" type="xstring" value="Best localization raw file"/>
+<entry key="281" type="xstring" value="Best localization scan number"/>
+<entry key="282" type="xstring" value="Best score evidence ID"/>
+<entry key="283" type="xstring" value="Best score MS/MS ID"/>
+<entry key="284" type="xstring" value="Best score raw file"/>
+<entry key="285" type="xstring" value="Best score scan number"/>
+<entry key="286" type="xstring" value="Best PEP evidence ID"/>
+<entry key="287" type="xstring" value="Best PEP MS/MS ID"/>
+<entry key="288" type="xstring" value="Best PEP raw file"/>
+<entry key="289" type="xstring" value="Best PEP scan number"/>
+</config>
+<entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
+<config key="name_pattern">
+<entry key="pattern" type="xstring" value=""/>
+<entry key="type" type="xstring" value="Wildcard"/>
+<entry key="caseSensitive" type="xboolean" value="true"/>
+</config>
+<config key="datatype">
+<config key="typelist">
+<entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+</config>
+</config>
+</config>
+<config key="removeRetainedColumns_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="removeRetainedColumns" type="xboolean" value="false"/>
+<config key="removeAggregationColumns_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="removeAggregationColumns" type="xboolean" value="false"/>
+<config key="valueDelimiter_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="valueDelimiter" type="xstring" value="_"/>
+<config key="maxNoneNumericalVals_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="maxNoneNumericalVals" type="xint" value="10000"/>
+<config key="aggregationMethods">
+<config key="resultColName">
+<entry key="array-size" type="xint" value="1"/>
+<entry key="0" type="xstring" value="Localization prob_Positions_Amino acid"/>
+</config>
+<config key="aggregationMethod">
+<entry key="array-size" type="xint" value="1"/>
+<entry key="0" type="xstring" value="Concatenate_V2.4"/>
+</config>
+<config key="inclMissingVals">
+<entry key="array-size" type="xint" value="1"/>
+<entry key="0" type="xboolean" value="false"/>
+</config>
+</config>
+<config key="nodeVersion_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="nodeVersion" type="xint" value="1"/>
+</config>
+<config key="nodeAnnotation">
+<entry key="text" type="xstring" value="combined position and %%00013%%00010aminoacid into a new column"/>
+<entry key="bgcolor" type="xint" value="16777215"/>
+<entry key="x-coordinate" type="xint" value="237"/>
+<entry key="y-coordinate" type="xint" value="799"/>
+<entry key="width" type="xint" value="169"/>
+<entry key="height" type="xint" value="34"/>
+<entry key="alignment" type="xstring" value="CENTER"/>
+<entry key="borderSize" type="xint" value="0"/>
+<entry key="borderColor" type="xint" value="16777215"/>
+<entry key="defFontSize" type="xint" value="9"/>
+<entry key="annotation-version" type="xint" value="20151123"/>
+<config key="styles"/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="IDLE"/>
+<entry key="factory" type="xstring" value="org.knime.base.node.preproc.columnaggregator.ColumnAggregatorNodeFactory"/>
+<entry key="node-name" type="xstring" value="Column Aggregator"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-bundle-version" type="xstring" value="3.6.1.v201808311359"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Core"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-feature-version" type="xstring" value="3.6.1.v201809030900"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="Column Aggregator"/>
+<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+</config>
+</config>

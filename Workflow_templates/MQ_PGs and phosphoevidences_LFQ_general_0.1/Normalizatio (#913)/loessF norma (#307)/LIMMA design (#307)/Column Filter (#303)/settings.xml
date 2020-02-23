@@ -1,0 +1,1424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<config key="column-filter">
+<entry key="filter-type" type="xstring" value="STANDARD"/>
+<config key="included_names">
+<entry key="array-size" type="xint" value="6"/>
+<entry key="0" type="xstring" value="P01+Intensity_log2_norm"/>
+<entry key="1" type="xstring" value="P03+Intensity_log2_norm"/>
+<entry key="2" type="xstring" value="P09+Intensity_log2_norm"/>
+<entry key="3" type="xstring" value="P11+Intensity_log2_norm"/>
+<entry key="4" type="xstring" value="P17+Intensity_log2_norm"/>
+<entry key="5" type="xstring" value="P19+Intensity_log2_norm"/>
+</config>
+<config key="excluded_names">
+<entry key="array-size" type="xint" value="1343"/>
+<entry key="0" type="xstring" value="Acetyl (Protein N-term)"/>
+<entry key="1" type="xstring" value="Deamidation (NQ)"/>
+<entry key="2" type="xstring" value="Gene names"/>
+<entry key="3" type="xstring" value="Leading proteins"/>
+<entry key="4" type="xstring" value="Leading razor protein"/>
+<entry key="5" type="xstring" value="Length"/>
+<entry key="6" type="xstring" value="Mass"/>
+<entry key="7" type="xstring" value="Missed cleavages"/>
+<entry key="8" type="xstring" value="Mod. peptide ID"/>
+<entry key="9" type="xstring" value="Modifications"/>
+<entry key="10" type="xstring" value="Oxidation (M)"/>
+<entry key="11" type="xstring" value="P01+AIF MS/MS IDs"/>
+<entry key="12" type="xstring" value="P01+Base peak fraction"/>
+<entry key="13" type="xstring" value="P01+Best MS/MS"/>
+<entry key="14" type="xstring" value="P01+Calibrated retention time"/>
+<entry key="15" type="xstring" value="P01+Calibrated retention time finish"/>
+<entry key="16" type="xstring" value="P01+Calibrated retention time start"/>
+<entry key="17" type="xstring" value="P01+Charge"/>
+<entry key="18" type="xstring" value="P01+Combinatorics"/>
+<entry key="19" type="xstring" value="P01+Deamidation (NQ) Probabilities"/>
+<entry key="20" type="xstring" value="P01+Deamidation (NQ) Score Diffs"/>
+<entry key="21" type="xstring" value="P01+Deamidation (NQ) site IDs"/>
+<entry key="22" type="xstring" value="P01+Delta score"/>
+<entry key="23" type="xstring" value="P01+Fraction"/>
+<entry key="24" type="xstring" value="P01+Fraction of total spectrum"/>
+<entry key="25" type="xstring" value="P01+Intensity"/>
+<entry key="26" type="xstring" value="P01+MS/MS IDs"/>
+<entry key="27" type="xstring" value="P01+MS/MS count"/>
+<entry key="28" type="xstring" value="P01+MS/MS m/z"/>
+<entry key="29" type="xstring" value="P01+MS/MS scan number"/>
+<entry key="30" type="xstring" value="P01+Mass error [Da]"/>
+<entry key="31" type="xstring" value="P01+Mass error [ppm]"/>
+<entry key="32" type="xstring" value="P01+Match m/z difference"/>
+<entry key="33" type="xstring" value="P01+Match q-value"/>
+<entry key="34" type="xstring" value="P01+Match score"/>
+<entry key="35" type="xstring" value="P01+Match time difference"/>
+<entry key="36" type="xstring" value="P01+Max intensity m/z 0"/>
+<entry key="37" type="xstring" value="P01+Modified sequence"/>
+<entry key="38" type="xstring" value="P01+Number of data points"/>
+<entry key="39" type="xstring" value="P01+Number of isotopic peaks"/>
+<entry key="40" type="xstring" value="P01+Number of scans"/>
+<entry key="41" type="xstring" value="P01+Oxidation (M) Probabilities"/>
+<entry key="42" type="xstring" value="P01+Oxidation (M) Score Diffs"/>
+<entry key="43" type="xstring" value="P01+Oxidation (M) site IDs"/>
+<entry key="44" type="xstring" value="P01+PEP"/>
+<entry key="45" type="xstring" value="P01+PIF"/>
+<entry key="46" type="xstring" value="P01+Phospho (ST) Probabilities"/>
+<entry key="47" type="xstring" value="P01+Phospho (ST) Score Diffs"/>
+<entry key="48" type="xstring" value="P01+Phospho (ST) site IDs"/>
+<entry key="49" type="xstring" value="P01+Raw file"/>
+<entry key="50" type="xstring" value="P01+Resolution"/>
+<entry key="51" type="xstring" value="P01+Retention length"/>
+<entry key="52" type="xstring" value="P01+Retention time"/>
+<entry key="53" type="xstring" value="P01+Retention time calibration"/>
+<entry key="54" type="xstring" value="P01+Score"/>
+<entry key="55" type="xstring" value="P01+Type"/>
+<entry key="56" type="xstring" value="P01+Uncalibrated - Calibrated m/z [Da]"/>
+<entry key="57" type="xstring" value="P01+Uncalibrated - Calibrated m/z [ppm]"/>
+<entry key="58" type="xstring" value="P01+Uncalibrated mass error [Da]"/>
+<entry key="59" type="xstring" value="P01+Uncalibrated mass error [ppm]"/>
+<entry key="60" type="xstring" value="P01+id"/>
+<entry key="61" type="xstring" value="P01+m/z"/>
+<entry key="62" type="xstring" value="P02+AIF MS/MS IDs"/>
+<entry key="63" type="xstring" value="P02+Base peak fraction"/>
+<entry key="64" type="xstring" value="P02+Best MS/MS"/>
+<entry key="65" type="xstring" value="P02+Calibrated retention time"/>
+<entry key="66" type="xstring" value="P02+Calibrated retention time finish"/>
+<entry key="67" type="xstring" value="P02+Calibrated retention time start"/>
+<entry key="68" type="xstring" value="P02+Charge"/>
+<entry key="69" type="xstring" value="P02+Combinatorics"/>
+<entry key="70" type="xstring" value="P02+Deamidation (NQ) Probabilities"/>
+<entry key="71" type="xstring" value="P02+Deamidation (NQ) Score Diffs"/>
+<entry key="72" type="xstring" value="P02+Deamidation (NQ) site IDs"/>
+<entry key="73" type="xstring" value="P02+Delta score"/>
+<entry key="74" type="xstring" value="P02+Fraction"/>
+<entry key="75" type="xstring" value="P02+Fraction of total spectrum"/>
+<entry key="76" type="xstring" value="P02+Intensity"/>
+<entry key="77" type="xstring" value="P02+MS/MS IDs"/>
+<entry key="78" type="xstring" value="P02+MS/MS count"/>
+<entry key="79" type="xstring" value="P02+MS/MS m/z"/>
+<entry key="80" type="xstring" value="P02+MS/MS scan number"/>
+<entry key="81" type="xstring" value="P02+Mass error [Da]"/>
+<entry key="82" type="xstring" value="P02+Mass error [ppm]"/>
+<entry key="83" type="xstring" value="P02+Match m/z difference"/>
+<entry key="84" type="xstring" value="P02+Match q-value"/>
+<entry key="85" type="xstring" value="P02+Match score"/>
+<entry key="86" type="xstring" value="P02+Match time difference"/>
+<entry key="87" type="xstring" value="P02+Max intensity m/z 0"/>
+<entry key="88" type="xstring" value="P02+Modified sequence"/>
+<entry key="89" type="xstring" value="P02+Number of data points"/>
+<entry key="90" type="xstring" value="P02+Number of isotopic peaks"/>
+<entry key="91" type="xstring" value="P02+Number of scans"/>
+<entry key="92" type="xstring" value="P02+Oxidation (M) Probabilities"/>
+<entry key="93" type="xstring" value="P02+Oxidation (M) Score Diffs"/>
+<entry key="94" type="xstring" value="P02+Oxidation (M) site IDs"/>
+<entry key="95" type="xstring" value="P02+PEP"/>
+<entry key="96" type="xstring" value="P02+PIF"/>
+<entry key="97" type="xstring" value="P02+Phospho (ST) Probabilities"/>
+<entry key="98" type="xstring" value="P02+Phospho (ST) Score Diffs"/>
+<entry key="99" type="xstring" value="P02+Phospho (ST) site IDs"/>
+<entry key="100" type="xstring" value="P02+Raw file"/>
+<entry key="101" type="xstring" value="P02+Resolution"/>
+<entry key="102" type="xstring" value="P02+Retention length"/>
+<entry key="103" type="xstring" value="P02+Retention time"/>
+<entry key="104" type="xstring" value="P02+Retention time calibration"/>
+<entry key="105" type="xstring" value="P02+Score"/>
+<entry key="106" type="xstring" value="P02+Type"/>
+<entry key="107" type="xstring" value="P02+Uncalibrated - Calibrated m/z [Da]"/>
+<entry key="108" type="xstring" value="P02+Uncalibrated - Calibrated m/z [ppm]"/>
+<entry key="109" type="xstring" value="P02+Uncalibrated mass error [Da]"/>
+<entry key="110" type="xstring" value="P02+Uncalibrated mass error [ppm]"/>
+<entry key="111" type="xstring" value="P02+id"/>
+<entry key="112" type="xstring" value="P02+m/z"/>
+<entry key="113" type="xstring" value="P03+AIF MS/MS IDs"/>
+<entry key="114" type="xstring" value="P03+Base peak fraction"/>
+<entry key="115" type="xstring" value="P03+Best MS/MS"/>
+<entry key="116" type="xstring" value="P03+Calibrated retention time"/>
+<entry key="117" type="xstring" value="P03+Calibrated retention time finish"/>
+<entry key="118" type="xstring" value="P03+Calibrated retention time start"/>
+<entry key="119" type="xstring" value="P03+Charge"/>
+<entry key="120" type="xstring" value="P03+Combinatorics"/>
+<entry key="121" type="xstring" value="P03+Deamidation (NQ) Probabilities"/>
+<entry key="122" type="xstring" value="P03+Deamidation (NQ) Score Diffs"/>
+<entry key="123" type="xstring" value="P03+Deamidation (NQ) site IDs"/>
+<entry key="124" type="xstring" value="P03+Delta score"/>
+<entry key="125" type="xstring" value="P03+Fraction"/>
+<entry key="126" type="xstring" value="P03+Fraction of total spectrum"/>
+<entry key="127" type="xstring" value="P03+Intensity"/>
+<entry key="128" type="xstring" value="P03+MS/MS IDs"/>
+<entry key="129" type="xstring" value="P03+MS/MS count"/>
+<entry key="130" type="xstring" value="P03+MS/MS m/z"/>
+<entry key="131" type="xstring" value="P03+MS/MS scan number"/>
+<entry key="132" type="xstring" value="P03+Mass error [Da]"/>
+<entry key="133" type="xstring" value="P03+Mass error [ppm]"/>
+<entry key="134" type="xstring" value="P03+Match m/z difference"/>
+<entry key="135" type="xstring" value="P03+Match q-value"/>
+<entry key="136" type="xstring" value="P03+Match score"/>
+<entry key="137" type="xstring" value="P03+Match time difference"/>
+<entry key="138" type="xstring" value="P03+Max intensity m/z 0"/>
+<entry key="139" type="xstring" value="P03+Modified sequence"/>
+<entry key="140" type="xstring" value="P03+Number of data points"/>
+<entry key="141" type="xstring" value="P03+Number of isotopic peaks"/>
+<entry key="142" type="xstring" value="P03+Number of scans"/>
+<entry key="143" type="xstring" value="P03+Oxidation (M) Probabilities"/>
+<entry key="144" type="xstring" value="P03+Oxidation (M) Score Diffs"/>
+<entry key="145" type="xstring" value="P03+Oxidation (M) site IDs"/>
+<entry key="146" type="xstring" value="P03+PEP"/>
+<entry key="147" type="xstring" value="P03+PIF"/>
+<entry key="148" type="xstring" value="P03+Phospho (ST) Probabilities"/>
+<entry key="149" type="xstring" value="P03+Phospho (ST) Score Diffs"/>
+<entry key="150" type="xstring" value="P03+Phospho (ST) site IDs"/>
+<entry key="151" type="xstring" value="P03+Raw file"/>
+<entry key="152" type="xstring" value="P03+Resolution"/>
+<entry key="153" type="xstring" value="P03+Retention length"/>
+<entry key="154" type="xstring" value="P03+Retention time"/>
+<entry key="155" type="xstring" value="P03+Retention time calibration"/>
+<entry key="156" type="xstring" value="P03+Score"/>
+<entry key="157" type="xstring" value="P03+Type"/>
+<entry key="158" type="xstring" value="P03+Uncalibrated - Calibrated m/z [Da]"/>
+<entry key="159" type="xstring" value="P03+Uncalibrated - Calibrated m/z [ppm]"/>
+<entry key="160" type="xstring" value="P03+Uncalibrated mass error [Da]"/>
+<entry key="161" type="xstring" value="P03+Uncalibrated mass error [ppm]"/>
+<entry key="162" type="xstring" value="P03+id"/>
+<entry key="163" type="xstring" value="P03+m/z"/>
+<entry key="164" type="xstring" value="P04+AIF MS/MS IDs"/>
+<entry key="165" type="xstring" value="P04+Base peak fraction"/>
+<entry key="166" type="xstring" value="P04+Best MS/MS"/>
+<entry key="167" type="xstring" value="P04+Calibrated retention time"/>
+<entry key="168" type="xstring" value="P04+Calibrated retention time finish"/>
+<entry key="169" type="xstring" value="P04+Calibrated retention time start"/>
+<entry key="170" type="xstring" value="P04+Charge"/>
+<entry key="171" type="xstring" value="P04+Combinatorics"/>
+<entry key="172" type="xstring" value="P04+Deamidation (NQ) Probabilities"/>
+<entry key="173" type="xstring" value="P04+Deamidation (NQ) Score Diffs"/>
+<entry key="174" type="xstring" value="P04+Deamidation (NQ) site IDs"/>
+<entry key="175" type="xstring" value="P04+Delta score"/>
+<entry key="176" type="xstring" value="P04+Fraction"/>
+<entry key="177" type="xstring" value="P04+Fraction of total spectrum"/>
+<entry key="178" type="xstring" value="P04+Intensity"/>
+<entry key="179" type="xstring" value="P04+MS/MS IDs"/>
+<entry key="180" type="xstring" value="P04+MS/MS count"/>
+<entry key="181" type="xstring" value="P04+MS/MS m/z"/>
+<entry key="182" type="xstring" value="P04+MS/MS scan number"/>
+<entry key="183" type="xstring" value="P04+Mass error [Da]"/>
+<entry key="184" type="xstring" value="P04+Mass error [ppm]"/>
+<entry key="185" type="xstring" value="P04+Match m/z difference"/>
+<entry key="186" type="xstring" value="P04+Match q-value"/>
+<entry key="187" type="xstring" value="P04+Match score"/>
+<entry key="188" type="xstring" value="P04+Match time difference"/>
+<entry key="189" type="xstring" value="P04+Max intensity m/z 0"/>
+<entry key="190" type="xstring" value="P04+Modified sequence"/>
+<entry key="191" type="xstring" value="P04+Number of data points"/>
+<entry key="192" type="xstring" value="P04+Number of isotopic peaks"/>
+<entry key="193" type="xstring" value="P04+Number of scans"/>
+<entry key="194" type="xstring" value="P04+Oxidation (M) Probabilities"/>
+<entry key="195" type="xstring" value="P04+Oxidation (M) Score Diffs"/>
+<entry key="196" type="xstring" value="P04+Oxidation (M) site IDs"/>
+<entry key="197" type="xstring" value="P04+PEP"/>
+<entry key="198" type="xstring" value="P04+PIF"/>
+<entry key="199" type="xstring" value="P04+Phospho (ST) Probabilities"/>
+<entry key="200" type="xstring" value="P04+Phospho (ST) Score Diffs"/>
+<entry key="201" type="xstring" value="P04+Phospho (ST) site IDs"/>
+<entry key="202" type="xstring" value="P04+Raw file"/>
+<entry key="203" type="xstring" value="P04+Resolution"/>
+<entry key="204" type="xstring" value="P04+Retention length"/>
+<entry key="205" type="xstring" value="P04+Retention time"/>
+<entry key="206" type="xstring" value="P04+Retention time calibration"/>
+<entry key="207" type="xstring" value="P04+Score"/>
+<entry key="208" type="xstring" value="P04+Type"/>
+<entry key="209" type="xstring" value="P04+Uncalibrated - Calibrated m/z [Da]"/>
+<entry key="210" type="xstring" value="P04+Uncalibrated - Calibrated m/z [ppm]"/>
+<entry key="211" type="xstring" value="P04+Uncalibrated mass error [Da]"/>
+<entry key="212" type="xstring" value="P04+Uncalibrated mass error [ppm]"/>
+<entry key="213" type="xstring" value="P04+id"/>
+<entry key="214" type="xstring" value="P04+m/z"/>
+<entry key="215" type="xstring" value="P05+AIF MS/MS IDs"/>
+<entry key="216" type="xstring" value="P05+Base peak fraction"/>
+<entry key="217" type="xstring" value="P05+Best MS/MS"/>
+<entry key="218" type="xstring" value="P05+Calibrated retention time"/>
+<entry key="219" type="xstring" value="P05+Calibrated retention time finish"/>
+<entry key="220" type="xstring" value="P05+Calibrated retention time start"/>
+<entry key="221" type="xstring" value="P05+Charge"/>
+<entry key="222" type="xstring" value="P05+Combinatorics"/>
+<entry key="223" type="xstring" value="P05+Deamidation (NQ) Probabilities"/>
+<entry key="224" type="xstring" value="P05+Deamidation (NQ) Score Diffs"/>
+<entry key="225" type="xstring" value="P05+Deamidation (NQ) site IDs"/>
+<entry key="226" type="xstring" value="P05+Delta score"/>
+<entry key="227" type="xstring" value="P05+Fraction"/>
+<entry key="228" type="xstring" value="P05+Fraction of total spectrum"/>
+<entry key="229" type="xstring" value="P05+Intensity"/>
+<entry key="230" type="xstring" value="P05+MS/MS IDs"/>
+<entry key="231" type="xstring" value="P05+MS/MS count"/>
+<entry key="232" type="xstring" value="P05+MS/MS m/z"/>
+<entry key="233" type="xstring" value="P05+MS/MS scan number"/>
+<entry key="234" type="xstring" value="P05+Mass error [Da]"/>
+<entry key="235" type="xstring" value="P05+Mass error [ppm]"/>
+<entry key="236" type="xstring" value="P05+Match m/z difference"/>
+<entry key="237" type="xstring" value="P05+Match q-value"/>
+<entry key="238" type="xstring" value="P05+Match score"/>
+<entry key="239" type="xstring" value="P05+Match time difference"/>
+<entry key="240" type="xstring" value="P05+Max intensity m/z 0"/>
+<entry key="241" type="xstring" value="P05+Modified sequence"/>
+<entry key="242" type="xstring" value="P05+Number of data points"/>
+<entry key="243" type="xstring" value="P05+Number of isotopic peaks"/>
+<entry key="244" type="xstring" value="P05+Number of scans"/>
+<entry key="245" type="xstring" value="P05+Oxidation (M) Probabilities"/>
+<entry key="246" type="xstring" value="P05+Oxidation (M) Score Diffs"/>
+<entry key="247" type="xstring" value="P05+Oxidation (M) site IDs"/>
+<entry key="248" type="xstring" value="P05+PEP"/>
+<entry key="249" type="xstring" value="P05+PIF"/>
+<entry key="250" type="xstring" value="P05+Phospho (ST) Probabilities"/>
+<entry key="251" type="xstring" value="P05+Phospho (ST) Score Diffs"/>
+<entry key="252" type="xstring" value="P05+Phospho (ST) site IDs"/>
+<entry key="253" type="xstring" value="P05+Raw file"/>
+<entry key="254" type="xstring" value="P05+Resolution"/>
+<entry key="255" type="xstring" value="P05+Retention length"/>
+<entry key="256" type="xstring" value="P05+Retention time"/>
+<entry key="257" type="xstring" value="P05+Retention time calibration"/>
+<entry key="258" type="xstring" value="P05+Score"/>
+<entry key="259" type="xstring" value="P05+Type"/>
+<entry key="260" type="xstring" value="P05+Uncalibrated - Calibrated m/z [Da]"/>
+<entry key="261" type="xstring" value="P05+Uncalibrated - Calibrated m/z [ppm]"/>
+<entry key="262" type="xstring" value="P05+Uncalibrated mass error [Da]"/>
+<entry key="263" type="xstring" value="P05+Uncalibrated mass error [ppm]"/>
+<entry key="264" type="xstring" value="P05+id"/>
+<entry key="265" type="xstring" value="P05+m/z"/>
+<entry key="266" type="xstring" value="P06+AIF MS/MS IDs"/>
+<entry key="267" type="xstring" value="P06+Base peak fraction"/>
+<entry key="268" type="xstring" value="P06+Best MS/MS"/>
+<entry key="269" type="xstring" value="P06+Calibrated retention time"/>
+<entry key="270" type="xstring" value="P06+Calibrated retention time finish"/>
+<entry key="271" type="xstring" value="P06+Calibrated retention time start"/>
+<entry key="272" type="xstring" value="P06+Charge"/>
+<entry key="273" type="xstring" value="P06+Combinatorics"/>
+<entry key="274" type="xstring" value="P06+Deamidation (NQ) Probabilities"/>
+<entry key="275" type="xstring" value="P06+Deamidation (NQ) Score Diffs"/>
+<entry key="276" type="xstring" value="P06+Deamidation (NQ) site IDs"/>
+<entry key="277" type="xstring" value="P06+Delta score"/>
+<entry key="278" type="xstring" value="P06+Fraction"/>
+<entry key="279" type="xstring" value="P06+Fraction of total spectrum"/>
+<entry key="280" type="xstring" value="P06+Intensity"/>
+<entry key="281" type="xstring" value="P06+MS/MS IDs"/>
+<entry key="282" type="xstring" value="P06+MS/MS count"/>
+<entry key="283" type="xstring" value="P06+MS/MS m/z"/>
+<entry key="284" type="xstring" value="P06+MS/MS scan number"/>
+<entry key="285" type="xstring" value="P06+Mass error [Da]"/>
+<entry key="286" type="xstring" value="P06+Mass error [ppm]"/>
+<entry key="287" type="xstring" value="P06+Match m/z difference"/>
+<entry key="288" type="xstring" value="P06+Match q-value"/>
+<entry key="289" type="xstring" value="P06+Match score"/>
+<entry key="290" type="xstring" value="P06+Match time difference"/>
+<entry key="291" type="xstring" value="P06+Max intensity m/z 0"/>
+<entry key="292" type="xstring" value="P06+Modified sequence"/>
+<entry key="293" type="xstring" value="P06+Number of data points"/>
+<entry key="294" type="xstring" value="P06+Number of isotopic peaks"/>
+<entry key="295" type="xstring" value="P06+Number of scans"/>
+<entry key="296" type="xstring" value="P06+Oxidation (M) Probabilities"/>
+<entry key="297" type="xstring" value="P06+Oxidation (M) Score Diffs"/>
+<entry key="298" type="xstring" value="P06+Oxidation (M) site IDs"/>
+<entry key="299" type="xstring" value="P06+PEP"/>
+<entry key="300" type="xstring" value="P06+PIF"/>
+<entry key="301" type="xstring" value="P06+Phospho (ST) Probabilities"/>
+<entry key="302" type="xstring" value="P06+Phospho (ST) Score Diffs"/>
+<entry key="303" type="xstring" value="P06+Phospho (ST) site IDs"/>
+<entry key="304" type="xstring" value="P06+Raw file"/>
+<entry key="305" type="xstring" value="P06+Resolution"/>
+<entry key="306" type="xstring" value="P06+Retention length"/>
+<entry key="307" type="xstring" value="P06+Retention time"/>
+<entry key="308" type="xstring" value="P06+Retention time calibration"/>
+<entry key="309" type="xstring" value="P06+Score"/>
+<entry key="310" type="xstring" value="P06+Type"/>
+<entry key="311" type="xstring" value="P06+Uncalibrated - Calibrated m/z [Da]"/>
+<entry key="312" type="xstring" value="P06+Uncalibrated - Calibrated m/z [ppm]"/>
+<entry key="313" type="xstring" value="P06+Uncalibrated mass error [Da]"/>
+<entry key="314" type="xstring" value="P06+Uncalibrated mass error [ppm]"/>
+<entry key="315" type="xstring" value="P06+id"/>
+<entry key="316" type="xstring" value="P06+m/z"/>
+<entry key="317" type="xstring" value="P07+AIF MS/MS IDs"/>
+<entry key="318" type="xstring" value="P07+Base peak fraction"/>
+<entry key="319" type="xstring" value="P07+Best MS/MS"/>
+<entry key="320" type="xstring" value="P07+Calibrated retention time"/>
+<entry key="321" type="xstring" value="P07+Calibrated retention time finish"/>
+<entry key="322" type="xstring" value="P07+Calibrated retention time start"/>
+<entry key="323" type="xstring" value="P07+Charge"/>
+<entry key="324" type="xstring" value="P07+Combinatorics"/>
+<entry key="325" type="xstring" value="P07+Deamidation (NQ) Probabilities"/>
+<entry key="326" type="xstring" value="P07+Deamidation (NQ) Score Diffs"/>
+<entry key="327" type="xstring" value="P07+Deamidation (NQ) site IDs"/>
+<entry key="328" type="xstring" value="P07+Delta score"/>
+<entry key="329" type="xstring" value="P07+Fraction"/>
+<entry key="330" type="xstring" value="P07+Fraction of total spectrum"/>
+<entry key="331" type="xstring" value="P07+Intensity"/>
+<entry key="332" type="xstring" value="P07+MS/MS IDs"/>
+<entry key="333" type="xstring" value="P07+MS/MS count"/>
+<entry key="334" type="xstring" value="P07+MS/MS m/z"/>
+<entry key="335" type="xstring" value="P07+MS/MS scan number"/>
+<entry key="336" type="xstring" value="P07+Mass error [Da]"/>
+<entry key="337" type="xstring" value="P07+Mass error [ppm]"/>
+<entry key="338" type="xstring" value="P07+Match m/z difference"/>
+<entry key="339" type="xstring" value="P07+Match q-value"/>
+<entry key="340" type="xstring" value="P07+Match score"/>
+<entry key="341" type="xstring" value="P07+Match time difference"/>
+<entry key="342" type="xstring" value="P07+Max intensity m/z 0"/>
+<entry key="343" type="xstring" value="P07+Modified sequence"/>
+<entry key="344" type="xstring" value="P07+Number of data points"/>
+<entry key="345" type="xstring" value="P07+Number of isotopic peaks"/>
+<entry key="346" type="xstring" value="P07+Number of scans"/>
+<entry key="347" type="xstring" value="P07+Oxidation (M) Probabilities"/>
+<entry key="348" type="xstring" value="P07+Oxidation (M) Score Diffs"/>
+<entry key="349" type="xstring" value="P07+Oxidation (M) site IDs"/>
+<entry key="350" type="xstring" value="P07+PEP"/>
+<entry key="351" type="xstring" value="P07+PIF"/>
+<entry key="352" type="xstring" value="P07+Phospho (ST) Probabilities"/>
+<entry key="353" type="xstring" value="P07+Phospho (ST) Score Diffs"/>
+<entry key="354" type="xstring" value="P07+Phospho (ST) site IDs"/>
+<entry key="355" type="xstring" value="P07+Raw file"/>
+<entry key="356" type="xstring" value="P07+Resolution"/>
+<entry key="357" type="xstring" value="P07+Retention length"/>
+<entry key="358" type="xstring" value="P07+Retention time"/>
+<entry key="359" type="xstring" value="P07+Retention time calibration"/>
+<entry key="360" type="xstring" value="P07+Score"/>
+<entry key="361" type="xstring" value="P07+Type"/>
+<entry key="362" type="xstring" value="P07+Uncalibrated - Calibrated m/z [Da]"/>
+<entry key="363" type="xstring" value="P07+Uncalibrated - Calibrated m/z [ppm]"/>
+<entry key="364" type="xstring" value="P07+Uncalibrated mass error [Da]"/>
+<entry key="365" type="xstring" value="P07+Uncalibrated mass error [ppm]"/>
+<entry key="366" type="xstring" value="P07+id"/>
+<entry key="367" type="xstring" value="P07+m/z"/>
+<entry key="368" type="xstring" value="P08+AIF MS/MS IDs"/>
+<entry key="369" type="xstring" value="P08+Base peak fraction"/>
+<entry key="370" type="xstring" value="P08+Best MS/MS"/>
+<entry key="371" type="xstring" value="P08+Calibrated retention time"/>
+<entry key="372" type="xstring" value="P08+Calibrated retention time finish"/>
+<entry key="373" type="xstring" value="P08+Calibrated retention time start"/>
+<entry key="374" type="xstring" value="P08+Charge"/>
+<entry key="375" type="xstring" value="P08+Combinatorics"/>
+<entry key="376" type="xstring" value="P08+Deamidation (NQ) Probabilities"/>
+<entry key="377" type="xstring" value="P08+Deamidation (NQ) Score Diffs"/>
+<entry key="378" type="xstring" value="P08+Deamidation (NQ) site IDs"/>
+<entry key="379" type="xstring" value="P08+Delta score"/>
+<entry key="380" type="xstring" value="P08+Fraction"/>
+<entry key="381" type="xstring" value="P08+Fraction of total spectrum"/>
+<entry key="382" type="xstring" value="P08+Intensity"/>
+<entry key="383" type="xstring" value="P08+MS/MS IDs"/>
+<entry key="384" type="xstring" value="P08+MS/MS count"/>
+<entry key="385" type="xstring" value="P08+MS/MS m/z"/>
+<entry key="386" type="xstring" value="P08+MS/MS scan number"/>
+<entry key="387" type="xstring" value="P08+Mass error [Da]"/>
+<entry key="388" type="xstring" value="P08+Mass error [ppm]"/>
+<entry key="389" type="xstring" value="P08+Match m/z difference"/>
+<entry key="390" type="xstring" value="P08+Match q-value"/>
+<entry key="391" type="xstring" value="P08+Match score"/>
+<entry key="392" type="xstring" value="P08+Match time difference"/>
+<entry key="393" type="xstring" value="P08+Max intensity m/z 0"/>
+<entry key="394" type="xstring" value="P08+Modified sequence"/>
+<entry key="395" type="xstring" value="P08+Number of data points"/>
+<entry key="396" type="xstring" value="P08+Number of isotopic peaks"/>
+<entry key="397" type="xstring" value="P08+Number of scans"/>
+<entry key="398" type="xstring" value="P08+Oxidation (M) Probabilities"/>
+<entry key="399" type="xstring" value="P08+Oxidation (M) Score Diffs"/>
+<entry key="400" type="xstring" value="P08+Oxidation (M) site IDs"/>
+<entry key="401" type="xstring" value="P08+PEP"/>
+<entry key="402" type="xstring" value="P08+PIF"/>
+<entry key="403" type="xstring" value="P08+Phospho (ST) Probabilities"/>
+<entry key="404" type="xstring" value="P08+Phospho (ST) Score Diffs"/>
+<entry key="405" type="xstring" value="P08+Phospho (ST) site IDs"/>
+<entry key="406" type="xstring" value="P08+Raw file"/>
+<entry key="407" type="xstring" value="P08+Resolution"/>
+<entry key="408" type="xstring" value="P08+Retention length"/>
+<entry key="409" type="xstring" value="P08+Retention time"/>
+<entry key="410" type="xstring" value="P08+Retention time calibration"/>
+<entry key="411" type="xstring" value="P08+Score"/>
+<entry key="412" type="xstring" value="P08+Type"/>
+<entry key="413" type="xstring" value="P08+Uncalibrated - Calibrated m/z [Da]"/>
+<entry key="414" type="xstring" value="P08+Uncalibrated - Calibrated m/z [ppm]"/>
+<entry key="415" type="xstring" value="P08+Uncalibrated mass error [Da]"/>
+<entry key="416" type="xstring" value="P08+Uncalibrated mass error [ppm]"/>
+<entry key="417" type="xstring" value="P08+id"/>
+<entry key="418" type="xstring" value="P08+m/z"/>
+<entry key="419" type="xstring" value="P09+AIF MS/MS IDs"/>
+<entry key="420" type="xstring" value="P09+Base peak fraction"/>
+<entry key="421" type="xstring" value="P09+Best MS/MS"/>
+<entry key="422" type="xstring" value="P09+Calibrated retention time"/>
+<entry key="423" type="xstring" value="P09+Calibrated retention time finish"/>
+<entry key="424" type="xstring" value="P09+Calibrated retention time start"/>
+<entry key="425" type="xstring" value="P09+Charge"/>
+<entry key="426" type="xstring" value="P09+Combinatorics"/>
+<entry key="427" type="xstring" value="P09+Deamidation (NQ) Probabilities"/>
+<entry key="428" type="xstring" value="P09+Deamidation (NQ) Score Diffs"/>
+<entry key="429" type="xstring" value="P09+Deamidation (NQ) site IDs"/>
+<entry key="430" type="xstring" value="P09+Delta score"/>
+<entry key="431" type="xstring" value="P09+Fraction"/>
+<entry key="432" type="xstring" value="P09+Fraction of total spectrum"/>
+<entry key="433" type="xstring" value="P09+Intensity"/>
+<entry key="434" type="xstring" value="P09+MS/MS IDs"/>
+<entry key="435" type="xstring" value="P09+MS/MS count"/>
+<entry key="436" type="xstring" value="P09+MS/MS m/z"/>
+<entry key="437" type="xstring" value="P09+MS/MS scan number"/>
+<entry key="438" type="xstring" value="P09+Mass error [Da]"/>
+<entry key="439" type="xstring" value="P09+Mass error [ppm]"/>
+<entry key="440" type="xstring" value="P09+Match m/z difference"/>
+<entry key="441" type="xstring" value="P09+Match q-value"/>
+<entry key="442" type="xstring" value="P09+Match score"/>
+<entry key="443" type="xstring" value="P09+Match time difference"/>
+<entry key="444" type="xstring" value="P09+Max intensity m/z 0"/>
+<entry key="445" type="xstring" value="P09+Modified sequence"/>
+<entry key="446" type="xstring" value="P09+Number of data points"/>
+<entry key="447" type="xstring" value="P09+Number of isotopic peaks"/>
+<entry key="448" type="xstring" value="P09+Number of scans"/>
+<entry key="449" type="xstring" value="P09+Oxidation (M) Probabilities"/>
+<entry key="450" type="xstring" value="P09+Oxidation (M) Score Diffs"/>
+<entry key="451" type="xstring" value="P09+Oxidation (M) site IDs"/>
+<entry key="452" type="xstring" value="P09+PEP"/>
+<entry key="453" type="xstring" value="P09+PIF"/>
+<entry key="454" type="xstring" value="P09+Phospho (ST) Probabilities"/>
+<entry key="455" type="xstring" value="P09+Phospho (ST) Score Diffs"/>
+<entry key="456" type="xstring" value="P09+Phospho (ST) site IDs"/>
+<entry key="457" type="xstring" value="P09+Raw file"/>
+<entry key="458" type="xstring" value="P09+Resolution"/>
+<entry key="459" type="xstring" value="P09+Retention length"/>
+<entry key="460" type="xstring" value="P09+Retention time"/>
+<entry key="461" type="xstring" value="P09+Retention time calibration"/>
+<entry key="462" type="xstring" value="P09+Score"/>
+<entry key="463" type="xstring" value="P09+Type"/>
+<entry key="464" type="xstring" value="P09+Uncalibrated - Calibrated m/z [Da]"/>
+<entry key="465" type="xstring" value="P09+Uncalibrated - Calibrated m/z [ppm]"/>
+<entry key="466" type="xstring" value="P09+Uncalibrated mass error [Da]"/>
+<entry key="467" type="xstring" value="P09+Uncalibrated mass error [ppm]"/>
+<entry key="468" type="xstring" value="P09+id"/>
+<entry key="469" type="xstring" value="P09+m/z"/>
+<entry key="470" type="xstring" value="P10+AIF MS/MS IDs"/>
+<entry key="471" type="xstring" value="P10+Base peak fraction"/>
+<entry key="472" type="xstring" value="P10+Best MS/MS"/>
+<entry key="473" type="xstring" value="P10+Calibrated retention time"/>
+<entry key="474" type="xstring" value="P10+Calibrated retention time finish"/>
+<entry key="475" type="xstring" value="P10+Calibrated retention time start"/>
+<entry key="476" type="xstring" value="P10+Charge"/>
+<entry key="477" type="xstring" value="P10+Combinatorics"/>
+<entry key="478" type="xstring" value="P10+Deamidation (NQ) Probabilities"/>
+<entry key="479" type="xstring" value="P10+Deamidation (NQ) Score Diffs"/>
+<entry key="480" type="xstring" value="P10+Deamidation (NQ) site IDs"/>
+<entry key="481" type="xstring" value="P10+Delta score"/>
+<entry key="482" type="xstring" value="P10+Fraction"/>
+<entry key="483" type="xstring" value="P10+Fraction of total spectrum"/>
+<entry key="484" type="xstring" value="P10+Intensity"/>
+<entry key="485" type="xstring" value="P10+MS/MS IDs"/>
+<entry key="486" type="xstring" value="P10+MS/MS count"/>
+<entry key="487" type="xstring" value="P10+MS/MS m/z"/>
+<entry key="488" type="xstring" value="P10+MS/MS scan number"/>
+<entry key="489" type="xstring" value="P10+Mass error [Da]"/>
+<entry key="490" type="xstring" value="P10+Mass error [ppm]"/>
+<entry key="491" type="xstring" value="P10+Match m/z difference"/>
+<entry key="492" type="xstring" value="P10+Match q-value"/>
+<entry key="493" type="xstring" value="P10+Match score"/>
+<entry key="494" type="xstring" value="P10+Match time difference"/>
+<entry key="495" type="xstring" value="P10+Max intensity m/z 0"/>
+<entry key="496" type="xstring" value="P10+Modified sequence"/>
+<entry key="497" type="xstring" value="P10+Number of data points"/>
+<entry key="498" type="xstring" value="P10+Number of isotopic peaks"/>
+<entry key="499" type="xstring" value="P10+Number of scans"/>
+<entry key="500" type="xstring" value="P10+Oxidation (M) Probabilities"/>
+<entry key="501" type="xstring" value="P10+Oxidation (M) Score Diffs"/>
+<entry key="502" type="xstring" value="P10+Oxidation (M) site IDs"/>
+<entry key="503" type="xstring" value="P10+PEP"/>
+<entry key="504" type="xstring" value="P10+PIF"/>
+<entry key="505" type="xstring" value="P10+Phospho (ST) Probabilities"/>
+<entry key="506" type="xstring" value="P10+Phospho (ST) Score Diffs"/>
+<entry key="507" type="xstring" value="P10+Phospho (ST) site IDs"/>
+<entry key="508" type="xstring" value="P10+Raw file"/>
+<entry key="509" type="xstring" value="P10+Resolution"/>
+<entry key="510" type="xstring" value="P10+Retention length"/>
+<entry key="511" type="xstring" value="P10+Retention time"/>
+<entry key="512" type="xstring" value="P10+Retention time calibration"/>
+<entry key="513" type="xstring" value="P10+Score"/>
+<entry key="514" type="xstring" value="P10+Type"/>
+<entry key="515" type="xstring" value="P10+Uncalibrated - Calibrated m/z [Da]"/>
+<entry key="516" type="xstring" value="P10+Uncalibrated - Calibrated m/z [ppm]"/>
+<entry key="517" type="xstring" value="P10+Uncalibrated mass error [Da]"/>
+<entry key="518" type="xstring" value="P10+Uncalibrated mass error [ppm]"/>
+<entry key="519" type="xstring" value="P10+id"/>
+<entry key="520" type="xstring" value="P10+m/z"/>
+<entry key="521" type="xstring" value="P11+AIF MS/MS IDs"/>
+<entry key="522" type="xstring" value="P11+Base peak fraction"/>
+<entry key="523" type="xstring" value="P11+Best MS/MS"/>
+<entry key="524" type="xstring" value="P11+Calibrated retention time"/>
+<entry key="525" type="xstring" value="P11+Calibrated retention time finish"/>
+<entry key="526" type="xstring" value="P11+Calibrated retention time start"/>
+<entry key="527" type="xstring" value="P11+Charge"/>
+<entry key="528" type="xstring" value="P11+Combinatorics"/>
+<entry key="529" type="xstring" value="P11+Deamidation (NQ) Probabilities"/>
+<entry key="530" type="xstring" value="P11+Deamidation (NQ) Score Diffs"/>
+<entry key="531" type="xstring" value="P11+Deamidation (NQ) site IDs"/>
+<entry key="532" type="xstring" value="P11+Delta score"/>
+<entry key="533" type="xstring" value="P11+Fraction"/>
+<entry key="534" type="xstring" value="P11+Fraction of total spectrum"/>
+<entry key="535" type="xstring" value="P11+Intensity"/>
+<entry key="536" type="xstring" value="P11+MS/MS IDs"/>
+<entry key="537" type="xstring" value="P11+MS/MS count"/>
+<entry key="538" type="xstring" value="P11+MS/MS m/z"/>
+<entry key="539" type="xstring" value="P11+MS/MS scan number"/>
+<entry key="540" type="xstring" value="P11+Mass error [Da]"/>
+<entry key="541" type="xstring" value="P11+Mass error [ppm]"/>
+<entry key="542" type="xstring" value="P11+Match m/z difference"/>
+<entry key="543" type="xstring" value="P11+Match q-value"/>
+<entry key="544" type="xstring" value="P11+Match score"/>
+<entry key="545" type="xstring" value="P11+Match time difference"/>
+<entry key="546" type="xstring" value="P11+Max intensity m/z 0"/>
+<entry key="547" type="xstring" value="P11+Modified sequence"/>
+<entry key="548" type="xstring" value="P11+Number of data points"/>
+<entry key="549" type="xstring" value="P11+Number of isotopic peaks"/>
+<entry key="550" type="xstring" value="P11+Number of scans"/>
+<entry key="551" type="xstring" value="P11+Oxidation (M) Probabilities"/>
+<entry key="552" type="xstring" value="P11+Oxidation (M) Score Diffs"/>
+<entry key="553" type="xstring" value="P11+Oxidation (M) site IDs"/>
+<entry key="554" type="xstring" value="P11+PEP"/>
+<entry key="555" type="xstring" value="P11+PIF"/>
+<entry key="556" type="xstring" value="P11+Phospho (ST) Probabilities"/>
+<entry key="557" type="xstring" value="P11+Phospho (ST) Score Diffs"/>
+<entry key="558" type="xstring" value="P11+Phospho (ST) site IDs"/>
+<entry key="559" type="xstring" value="P11+Raw file"/>
+<entry key="560" type="xstring" value="P11+Resolution"/>
+<entry key="561" type="xstring" value="P11+Retention length"/>
+<entry key="562" type="xstring" value="P11+Retention time"/>
+<entry key="563" type="xstring" value="P11+Retention time calibration"/>
+<entry key="564" type="xstring" value="P11+Score"/>
+<entry key="565" type="xstring" value="P11+Type"/>
+<entry key="566" type="xstring" value="P11+Uncalibrated - Calibrated m/z [Da]"/>
+<entry key="567" type="xstring" value="P11+Uncalibrated - Calibrated m/z [ppm]"/>
+<entry key="568" type="xstring" value="P11+Uncalibrated mass error [Da]"/>
+<entry key="569" type="xstring" value="P11+Uncalibrated mass error [ppm]"/>
+<entry key="570" type="xstring" value="P11+id"/>
+<entry key="571" type="xstring" value="P11+m/z"/>
+<entry key="572" type="xstring" value="P12+AIF MS/MS IDs"/>
+<entry key="573" type="xstring" value="P12+Base peak fraction"/>
+<entry key="574" type="xstring" value="P12+Best MS/MS"/>
+<entry key="575" type="xstring" value="P12+Calibrated retention time"/>
+<entry key="576" type="xstring" value="P12+Calibrated retention time finish"/>
+<entry key="577" type="xstring" value="P12+Calibrated retention time start"/>
+<entry key="578" type="xstring" value="P12+Charge"/>
+<entry key="579" type="xstring" value="P12+Combinatorics"/>
+<entry key="580" type="xstring" value="P12+Deamidation (NQ) Probabilities"/>
+<entry key="581" type="xstring" value="P12+Deamidation (NQ) Score Diffs"/>
+<entry key="582" type="xstring" value="P12+Deamidation (NQ) site IDs"/>
+<entry key="583" type="xstring" value="P12+Delta score"/>
+<entry key="584" type="xstring" value="P12+Fraction"/>
+<entry key="585" type="xstring" value="P12+Fraction of total spectrum"/>
+<entry key="586" type="xstring" value="P12+Intensity"/>
+<entry key="587" type="xstring" value="P12+MS/MS IDs"/>
+<entry key="588" type="xstring" value="P12+MS/MS count"/>
+<entry key="589" type="xstring" value="P12+MS/MS m/z"/>
+<entry key="590" type="xstring" value="P12+MS/MS scan number"/>
+<entry key="591" type="xstring" value="P12+Mass error [Da]"/>
+<entry key="592" type="xstring" value="P12+Mass error [ppm]"/>
+<entry key="593" type="xstring" value="P12+Match m/z difference"/>
+<entry key="594" type="xstring" value="P12+Match q-value"/>
+<entry key="595" type="xstring" value="P12+Match score"/>
+<entry key="596" type="xstring" value="P12+Match time difference"/>
+<entry key="597" type="xstring" value="P12+Max intensity m/z 0"/>
+<entry key="598" type="xstring" value="P12+Modified sequence"/>
+<entry key="599" type="xstring" value="P12+Number of data points"/>
+<entry key="600" type="xstring" value="P12+Number of isotopic peaks"/>
+<entry key="601" type="xstring" value="P12+Number of scans"/>
+<entry key="602" type="xstring" value="P12+Oxidation (M) Probabilities"/>
+<entry key="603" type="xstring" value="P12+Oxidation (M) Score Diffs"/>
+<entry key="604" type="xstring" value="P12+Oxidation (M) site IDs"/>
+<entry key="605" type="xstring" value="P12+PEP"/>
+<entry key="606" type="xstring" value="P12+PIF"/>
+<entry key="607" type="xstring" value="P12+Phospho (ST) Probabilities"/>
+<entry key="608" type="xstring" value="P12+Phospho (ST) Score Diffs"/>
+<entry key="609" type="xstring" value="P12+Phospho (ST) site IDs"/>
+<entry key="610" type="xstring" value="P12+Raw file"/>
+<entry key="611" type="xstring" value="P12+Resolution"/>
+<entry key="612" type="xstring" value="P12+Retention length"/>
+<entry key="613" type="xstring" value="P12+Retention time"/>
+<entry key="614" type="xstring" value="P12+Retention time calibration"/>
+<entry key="615" type="xstring" value="P12+Score"/>
+<entry key="616" type="xstring" value="P12+Type"/>
+<entry key="617" type="xstring" value="P12+Uncalibrated - Calibrated m/z [Da]"/>
+<entry key="618" type="xstring" value="P12+Uncalibrated - Calibrated m/z [ppm]"/>
+<entry key="619" type="xstring" value="P12+Uncalibrated mass error [Da]"/>
+<entry key="620" type="xstring" value="P12+Uncalibrated mass error [ppm]"/>
+<entry key="621" type="xstring" value="P12+id"/>
+<entry key="622" type="xstring" value="P12+m/z"/>
+<entry key="623" type="xstring" value="P13+AIF MS/MS IDs"/>
+<entry key="624" type="xstring" value="P13+Base peak fraction"/>
+<entry key="625" type="xstring" value="P13+Best MS/MS"/>
+<entry key="626" type="xstring" value="P13+Calibrated retention time"/>
+<entry key="627" type="xstring" value="P13+Calibrated retention time finish"/>
+<entry key="628" type="xstring" value="P13+Calibrated retention time start"/>
+<entry key="629" type="xstring" value="P13+Charge"/>
+<entry key="630" type="xstring" value="P13+Combinatorics"/>
+<entry key="631" type="xstring" value="P13+Deamidation (NQ) Probabilities"/>
+<entry key="632" type="xstring" value="P13+Deamidation (NQ) Score Diffs"/>
+<entry key="633" type="xstring" value="P13+Deamidation (NQ) site IDs"/>
+<entry key="634" type="xstring" value="P13+Delta score"/>
+<entry key="635" type="xstring" value="P13+Fraction"/>
+<entry key="636" type="xstring" value="P13+Fraction of total spectrum"/>
+<entry key="637" type="xstring" value="P13+Intensity"/>
+<entry key="638" type="xstring" value="P13+MS/MS IDs"/>
+<entry key="639" type="xstring" value="P13+MS/MS count"/>
+<entry key="640" type="xstring" value="P13+MS/MS m/z"/>
+<entry key="641" type="xstring" value="P13+MS/MS scan number"/>
+<entry key="642" type="xstring" value="P13+Mass error [Da]"/>
+<entry key="643" type="xstring" value="P13+Mass error [ppm]"/>
+<entry key="644" type="xstring" value="P13+Match m/z difference"/>
+<entry key="645" type="xstring" value="P13+Match q-value"/>
+<entry key="646" type="xstring" value="P13+Match score"/>
+<entry key="647" type="xstring" value="P13+Match time difference"/>
+<entry key="648" type="xstring" value="P13+Max intensity m/z 0"/>
+<entry key="649" type="xstring" value="P13+Modified sequence"/>
+<entry key="650" type="xstring" value="P13+Number of data points"/>
+<entry key="651" type="xstring" value="P13+Number of isotopic peaks"/>
+<entry key="652" type="xstring" value="P13+Number of scans"/>
+<entry key="653" type="xstring" value="P13+Oxidation (M) Probabilities"/>
+<entry key="654" type="xstring" value="P13+Oxidation (M) Score Diffs"/>
+<entry key="655" type="xstring" value="P13+Oxidation (M) site IDs"/>
+<entry key="656" type="xstring" value="P13+PEP"/>
+<entry key="657" type="xstring" value="P13+PIF"/>
+<entry key="658" type="xstring" value="P13+Phospho (ST) Probabilities"/>
+<entry key="659" type="xstring" value="P13+Phospho (ST) Score Diffs"/>
+<entry key="660" type="xstring" value="P13+Phospho (ST) site IDs"/>
+<entry key="661" type="xstring" value="P13+Raw file"/>
+<entry key="662" type="xstring" value="P13+Resolution"/>
+<entry key="663" type="xstring" value="P13+Retention length"/>
+<entry key="664" type="xstring" value="P13+Retention time"/>
+<entry key="665" type="xstring" value="P13+Retention time calibration"/>
+<entry key="666" type="xstring" value="P13+Score"/>
+<entry key="667" type="xstring" value="P13+Type"/>
+<entry key="668" type="xstring" value="P13+Uncalibrated - Calibrated m/z [Da]"/>
+<entry key="669" type="xstring" value="P13+Uncalibrated - Calibrated m/z [ppm]"/>
+<entry key="670" type="xstring" value="P13+Uncalibrated mass error [Da]"/>
+<entry key="671" type="xstring" value="P13+Uncalibrated mass error [ppm]"/>
+<entry key="672" type="xstring" value="P13+id"/>
+<entry key="673" type="xstring" value="P13+m/z"/>
+<entry key="674" type="xstring" value="P14+AIF MS/MS IDs"/>
+<entry key="675" type="xstring" value="P14+Base peak fraction"/>
+<entry key="676" type="xstring" value="P14+Best MS/MS"/>
+<entry key="677" type="xstring" value="P14+Calibrated retention time"/>
+<entry key="678" type="xstring" value="P14+Calibrated retention time finish"/>
+<entry key="679" type="xstring" value="P14+Calibrated retention time start"/>
+<entry key="680" type="xstring" value="P14+Charge"/>
+<entry key="681" type="xstring" value="P14+Combinatorics"/>
+<entry key="682" type="xstring" value="P14+Deamidation (NQ) Probabilities"/>
+<entry key="683" type="xstring" value="P14+Deamidation (NQ) Score Diffs"/>
+<entry key="684" type="xstring" value="P14+Deamidation (NQ) site IDs"/>
+<entry key="685" type="xstring" value="P14+Delta score"/>
+<entry key="686" type="xstring" value="P14+Fraction"/>
+<entry key="687" type="xstring" value="P14+Fraction of total spectrum"/>
+<entry key="688" type="xstring" value="P14+Intensity"/>
+<entry key="689" type="xstring" value="P14+MS/MS IDs"/>
+<entry key="690" type="xstring" value="P14+MS/MS count"/>
+<entry key="691" type="xstring" value="P14+MS/MS m/z"/>
+<entry key="692" type="xstring" value="P14+MS/MS scan number"/>
+<entry key="693" type="xstring" value="P14+Mass error [Da]"/>
+<entry key="694" type="xstring" value="P14+Mass error [ppm]"/>
+<entry key="695" type="xstring" value="P14+Match m/z difference"/>
+<entry key="696" type="xstring" value="P14+Match q-value"/>
+<entry key="697" type="xstring" value="P14+Match score"/>
+<entry key="698" type="xstring" value="P14+Match time difference"/>
+<entry key="699" type="xstring" value="P14+Max intensity m/z 0"/>
+<entry key="700" type="xstring" value="P14+Modified sequence"/>
+<entry key="701" type="xstring" value="P14+Number of data points"/>
+<entry key="702" type="xstring" value="P14+Number of isotopic peaks"/>
+<entry key="703" type="xstring" value="P14+Number of scans"/>
+<entry key="704" type="xstring" value="P14+Oxidation (M) Probabilities"/>
+<entry key="705" type="xstring" value="P14+Oxidation (M) Score Diffs"/>
+<entry key="706" type="xstring" value="P14+Oxidation (M) site IDs"/>
+<entry key="707" type="xstring" value="P14+PEP"/>
+<entry key="708" type="xstring" value="P14+PIF"/>
+<entry key="709" type="xstring" value="P14+Phospho (ST) Probabilities"/>
+<entry key="710" type="xstring" value="P14+Phospho (ST) Score Diffs"/>
+<entry key="711" type="xstring" value="P14+Phospho (ST) site IDs"/>
+<entry key="712" type="xstring" value="P14+Raw file"/>
+<entry key="713" type="xstring" value="P14+Resolution"/>
+<entry key="714" type="xstring" value="P14+Retention length"/>
+<entry key="715" type="xstring" value="P14+Retention time"/>
+<entry key="716" type="xstring" value="P14+Retention time calibration"/>
+<entry key="717" type="xstring" value="P14+Score"/>
+<entry key="718" type="xstring" value="P14+Type"/>
+<entry key="719" type="xstring" value="P14+Uncalibrated - Calibrated m/z [Da]"/>
+<entry key="720" type="xstring" value="P14+Uncalibrated - Calibrated m/z [ppm]"/>
+<entry key="721" type="xstring" value="P14+Uncalibrated mass error [Da]"/>
+<entry key="722" type="xstring" value="P14+Uncalibrated mass error [ppm]"/>
+<entry key="723" type="xstring" value="P14+id"/>
+<entry key="724" type="xstring" value="P14+m/z"/>
+<entry key="725" type="xstring" value="P15+AIF MS/MS IDs"/>
+<entry key="726" type="xstring" value="P15+Base peak fraction"/>
+<entry key="727" type="xstring" value="P15+Best MS/MS"/>
+<entry key="728" type="xstring" value="P15+Calibrated retention time"/>
+<entry key="729" type="xstring" value="P15+Calibrated retention time finish"/>
+<entry key="730" type="xstring" value="P15+Calibrated retention time start"/>
+<entry key="731" type="xstring" value="P15+Charge"/>
+<entry key="732" type="xstring" value="P15+Combinatorics"/>
+<entry key="733" type="xstring" value="P15+Deamidation (NQ) Probabilities"/>
+<entry key="734" type="xstring" value="P15+Deamidation (NQ) Score Diffs"/>
+<entry key="735" type="xstring" value="P15+Deamidation (NQ) site IDs"/>
+<entry key="736" type="xstring" value="P15+Delta score"/>
+<entry key="737" type="xstring" value="P15+Fraction"/>
+<entry key="738" type="xstring" value="P15+Fraction of total spectrum"/>
+<entry key="739" type="xstring" value="P15+Intensity"/>
+<entry key="740" type="xstring" value="P15+MS/MS IDs"/>
+<entry key="741" type="xstring" value="P15+MS/MS count"/>
+<entry key="742" type="xstring" value="P15+MS/MS m/z"/>
+<entry key="743" type="xstring" value="P15+MS/MS scan number"/>
+<entry key="744" type="xstring" value="P15+Mass error [Da]"/>
+<entry key="745" type="xstring" value="P15+Mass error [ppm]"/>
+<entry key="746" type="xstring" value="P15+Match m/z difference"/>
+<entry key="747" type="xstring" value="P15+Match q-value"/>
+<entry key="748" type="xstring" value="P15+Match score"/>
+<entry key="749" type="xstring" value="P15+Match time difference"/>
+<entry key="750" type="xstring" value="P15+Max intensity m/z 0"/>
+<entry key="751" type="xstring" value="P15+Modified sequence"/>
+<entry key="752" type="xstring" value="P15+Number of data points"/>
+<entry key="753" type="xstring" value="P15+Number of isotopic peaks"/>
+<entry key="754" type="xstring" value="P15+Number of scans"/>
+<entry key="755" type="xstring" value="P15+Oxidation (M) Probabilities"/>
+<entry key="756" type="xstring" value="P15+Oxidation (M) Score Diffs"/>
+<entry key="757" type="xstring" value="P15+Oxidation (M) site IDs"/>
+<entry key="758" type="xstring" value="P15+PEP"/>
+<entry key="759" type="xstring" value="P15+PIF"/>
+<entry key="760" type="xstring" value="P15+Phospho (ST) Probabilities"/>
+<entry key="761" type="xstring" value="P15+Phospho (ST) Score Diffs"/>
+<entry key="762" type="xstring" value="P15+Phospho (ST) site IDs"/>
+<entry key="763" type="xstring" value="P15+Raw file"/>
+<entry key="764" type="xstring" value="P15+Resolution"/>
+<entry key="765" type="xstring" value="P15+Retention length"/>
+<entry key="766" type="xstring" value="P15+Retention time"/>
+<entry key="767" type="xstring" value="P15+Retention time calibration"/>
+<entry key="768" type="xstring" value="P15+Score"/>
+<entry key="769" type="xstring" value="P15+Type"/>
+<entry key="770" type="xstring" value="P15+Uncalibrated - Calibrated m/z [Da]"/>
+<entry key="771" type="xstring" value="P15+Uncalibrated - Calibrated m/z [ppm]"/>
+<entry key="772" type="xstring" value="P15+Uncalibrated mass error [Da]"/>
+<entry key="773" type="xstring" value="P15+Uncalibrated mass error [ppm]"/>
+<entry key="774" type="xstring" value="P15+id"/>
+<entry key="775" type="xstring" value="P15+m/z"/>
+<entry key="776" type="xstring" value="P16+AIF MS/MS IDs"/>
+<entry key="777" type="xstring" value="P16+Base peak fraction"/>
+<entry key="778" type="xstring" value="P16+Best MS/MS"/>
+<entry key="779" type="xstring" value="P16+Calibrated retention time"/>
+<entry key="780" type="xstring" value="P16+Calibrated retention time finish"/>
+<entry key="781" type="xstring" value="P16+Calibrated retention time start"/>
+<entry key="782" type="xstring" value="P16+Charge"/>
+<entry key="783" type="xstring" value="P16+Combinatorics"/>
+<entry key="784" type="xstring" value="P16+Deamidation (NQ) Probabilities"/>
+<entry key="785" type="xstring" value="P16+Deamidation (NQ) Score Diffs"/>
+<entry key="786" type="xstring" value="P16+Deamidation (NQ) site IDs"/>
+<entry key="787" type="xstring" value="P16+Delta score"/>
+<entry key="788" type="xstring" value="P16+Fraction"/>
+<entry key="789" type="xstring" value="P16+Fraction of total spectrum"/>
+<entry key="790" type="xstring" value="P16+Intensity"/>
+<entry key="791" type="xstring" value="P16+MS/MS IDs"/>
+<entry key="792" type="xstring" value="P16+MS/MS count"/>
+<entry key="793" type="xstring" value="P16+MS/MS m/z"/>
+<entry key="794" type="xstring" value="P16+MS/MS scan number"/>
+<entry key="795" type="xstring" value="P16+Mass error [Da]"/>
+<entry key="796" type="xstring" value="P16+Mass error [ppm]"/>
+<entry key="797" type="xstring" value="P16+Match m/z difference"/>
+<entry key="798" type="xstring" value="P16+Match q-value"/>
+<entry key="799" type="xstring" value="P16+Match score"/>
+<entry key="800" type="xstring" value="P16+Match time difference"/>
+<entry key="801" type="xstring" value="P16+Max intensity m/z 0"/>
+<entry key="802" type="xstring" value="P16+Modified sequence"/>
+<entry key="803" type="xstring" value="P16+Number of data points"/>
+<entry key="804" type="xstring" value="P16+Number of isotopic peaks"/>
+<entry key="805" type="xstring" value="P16+Number of scans"/>
+<entry key="806" type="xstring" value="P16+Oxidation (M) Probabilities"/>
+<entry key="807" type="xstring" value="P16+Oxidation (M) Score Diffs"/>
+<entry key="808" type="xstring" value="P16+Oxidation (M) site IDs"/>
+<entry key="809" type="xstring" value="P16+PEP"/>
+<entry key="810" type="xstring" value="P16+PIF"/>
+<entry key="811" type="xstring" value="P16+Phospho (ST) Probabilities"/>
+<entry key="812" type="xstring" value="P16+Phospho (ST) Score Diffs"/>
+<entry key="813" type="xstring" value="P16+Phospho (ST) site IDs"/>
+<entry key="814" type="xstring" value="P16+Raw file"/>
+<entry key="815" type="xstring" value="P16+Resolution"/>
+<entry key="816" type="xstring" value="P16+Retention length"/>
+<entry key="817" type="xstring" value="P16+Retention time"/>
+<entry key="818" type="xstring" value="P16+Retention time calibration"/>
+<entry key="819" type="xstring" value="P16+Score"/>
+<entry key="820" type="xstring" value="P16+Type"/>
+<entry key="821" type="xstring" value="P16+Uncalibrated - Calibrated m/z [Da]"/>
+<entry key="822" type="xstring" value="P16+Uncalibrated - Calibrated m/z [ppm]"/>
+<entry key="823" type="xstring" value="P16+Uncalibrated mass error [Da]"/>
+<entry key="824" type="xstring" value="P16+Uncalibrated mass error [ppm]"/>
+<entry key="825" type="xstring" value="P16+id"/>
+<entry key="826" type="xstring" value="P16+m/z"/>
+<entry key="827" type="xstring" value="P17+AIF MS/MS IDs"/>
+<entry key="828" type="xstring" value="P17+Base peak fraction"/>
+<entry key="829" type="xstring" value="P17+Best MS/MS"/>
+<entry key="830" type="xstring" value="P17+Calibrated retention time"/>
+<entry key="831" type="xstring" value="P17+Calibrated retention time finish"/>
+<entry key="832" type="xstring" value="P17+Calibrated retention time start"/>
+<entry key="833" type="xstring" value="P17+Charge"/>
+<entry key="834" type="xstring" value="P17+Combinatorics"/>
+<entry key="835" type="xstring" value="P17+Deamidation (NQ) Probabilities"/>
+<entry key="836" type="xstring" value="P17+Deamidation (NQ) Score Diffs"/>
+<entry key="837" type="xstring" value="P17+Deamidation (NQ) site IDs"/>
+<entry key="838" type="xstring" value="P17+Delta score"/>
+<entry key="839" type="xstring" value="P17+Fraction"/>
+<entry key="840" type="xstring" value="P17+Fraction of total spectrum"/>
+<entry key="841" type="xstring" value="P17+Intensity"/>
+<entry key="842" type="xstring" value="P17+MS/MS IDs"/>
+<entry key="843" type="xstring" value="P17+MS/MS count"/>
+<entry key="844" type="xstring" value="P17+MS/MS m/z"/>
+<entry key="845" type="xstring" value="P17+MS/MS scan number"/>
+<entry key="846" type="xstring" value="P17+Mass error [Da]"/>
+<entry key="847" type="xstring" value="P17+Mass error [ppm]"/>
+<entry key="848" type="xstring" value="P17+Match m/z difference"/>
+<entry key="849" type="xstring" value="P17+Match q-value"/>
+<entry key="850" type="xstring" value="P17+Match score"/>
+<entry key="851" type="xstring" value="P17+Match time difference"/>
+<entry key="852" type="xstring" value="P17+Max intensity m/z 0"/>
+<entry key="853" type="xstring" value="P17+Modified sequence"/>
+<entry key="854" type="xstring" value="P17+Number of data points"/>
+<entry key="855" type="xstring" value="P17+Number of isotopic peaks"/>
+<entry key="856" type="xstring" value="P17+Number of scans"/>
+<entry key="857" type="xstring" value="P17+Oxidation (M) Probabilities"/>
+<entry key="858" type="xstring" value="P17+Oxidation (M) Score Diffs"/>
+<entry key="859" type="xstring" value="P17+Oxidation (M) site IDs"/>
+<entry key="860" type="xstring" value="P17+PEP"/>
+<entry key="861" type="xstring" value="P17+PIF"/>
+<entry key="862" type="xstring" value="P17+Phospho (ST) Probabilities"/>
+<entry key="863" type="xstring" value="P17+Phospho (ST) Score Diffs"/>
+<entry key="864" type="xstring" value="P17+Phospho (ST) site IDs"/>
+<entry key="865" type="xstring" value="P17+Raw file"/>
+<entry key="866" type="xstring" value="P17+Resolution"/>
+<entry key="867" type="xstring" value="P17+Retention length"/>
+<entry key="868" type="xstring" value="P17+Retention time"/>
+<entry key="869" type="xstring" value="P17+Retention time calibration"/>
+<entry key="870" type="xstring" value="P17+Score"/>
+<entry key="871" type="xstring" value="P17+Type"/>
+<entry key="872" type="xstring" value="P17+Uncalibrated - Calibrated m/z [Da]"/>
+<entry key="873" type="xstring" value="P17+Uncalibrated - Calibrated m/z [ppm]"/>
+<entry key="874" type="xstring" value="P17+Uncalibrated mass error [Da]"/>
+<entry key="875" type="xstring" value="P17+Uncalibrated mass error [ppm]"/>
+<entry key="876" type="xstring" value="P17+id"/>
+<entry key="877" type="xstring" value="P17+m/z"/>
+<entry key="878" type="xstring" value="P18+AIF MS/MS IDs"/>
+<entry key="879" type="xstring" value="P18+Base peak fraction"/>
+<entry key="880" type="xstring" value="P18+Best MS/MS"/>
+<entry key="881" type="xstring" value="P18+Calibrated retention time"/>
+<entry key="882" type="xstring" value="P18+Calibrated retention time finish"/>
+<entry key="883" type="xstring" value="P18+Calibrated retention time start"/>
+<entry key="884" type="xstring" value="P18+Charge"/>
+<entry key="885" type="xstring" value="P18+Combinatorics"/>
+<entry key="886" type="xstring" value="P18+Deamidation (NQ) Probabilities"/>
+<entry key="887" type="xstring" value="P18+Deamidation (NQ) Score Diffs"/>
+<entry key="888" type="xstring" value="P18+Deamidation (NQ) site IDs"/>
+<entry key="889" type="xstring" value="P18+Delta score"/>
+<entry key="890" type="xstring" value="P18+Fraction"/>
+<entry key="891" type="xstring" value="P18+Fraction of total spectrum"/>
+<entry key="892" type="xstring" value="P18+Intensity"/>
+<entry key="893" type="xstring" value="P18+MS/MS IDs"/>
+<entry key="894" type="xstring" value="P18+MS/MS count"/>
+<entry key="895" type="xstring" value="P18+MS/MS m/z"/>
+<entry key="896" type="xstring" value="P18+MS/MS scan number"/>
+<entry key="897" type="xstring" value="P18+Mass error [Da]"/>
+<entry key="898" type="xstring" value="P18+Mass error [ppm]"/>
+<entry key="899" type="xstring" value="P18+Match m/z difference"/>
+<entry key="900" type="xstring" value="P18+Match q-value"/>
+<entry key="901" type="xstring" value="P18+Match score"/>
+<entry key="902" type="xstring" value="P18+Match time difference"/>
+<entry key="903" type="xstring" value="P18+Max intensity m/z 0"/>
+<entry key="904" type="xstring" value="P18+Modified sequence"/>
+<entry key="905" type="xstring" value="P18+Number of data points"/>
+<entry key="906" type="xstring" value="P18+Number of isotopic peaks"/>
+<entry key="907" type="xstring" value="P18+Number of scans"/>
+<entry key="908" type="xstring" value="P18+Oxidation (M) Probabilities"/>
+<entry key="909" type="xstring" value="P18+Oxidation (M) Score Diffs"/>
+<entry key="910" type="xstring" value="P18+Oxidation (M) site IDs"/>
+<entry key="911" type="xstring" value="P18+PEP"/>
+<entry key="912" type="xstring" value="P18+PIF"/>
+<entry key="913" type="xstring" value="P18+Phospho (ST) Probabilities"/>
+<entry key="914" type="xstring" value="P18+Phospho (ST) Score Diffs"/>
+<entry key="915" type="xstring" value="P18+Phospho (ST) site IDs"/>
+<entry key="916" type="xstring" value="P18+Raw file"/>
+<entry key="917" type="xstring" value="P18+Resolution"/>
+<entry key="918" type="xstring" value="P18+Retention length"/>
+<entry key="919" type="xstring" value="P18+Retention time"/>
+<entry key="920" type="xstring" value="P18+Retention time calibration"/>
+<entry key="921" type="xstring" value="P18+Score"/>
+<entry key="922" type="xstring" value="P18+Type"/>
+<entry key="923" type="xstring" value="P18+Uncalibrated - Calibrated m/z [Da]"/>
+<entry key="924" type="xstring" value="P18+Uncalibrated - Calibrated m/z [ppm]"/>
+<entry key="925" type="xstring" value="P18+Uncalibrated mass error [Da]"/>
+<entry key="926" type="xstring" value="P18+Uncalibrated mass error [ppm]"/>
+<entry key="927" type="xstring" value="P18+id"/>
+<entry key="928" type="xstring" value="P18+m/z"/>
+<entry key="929" type="xstring" value="P19+AIF MS/MS IDs"/>
+<entry key="930" type="xstring" value="P19+Base peak fraction"/>
+<entry key="931" type="xstring" value="P19+Best MS/MS"/>
+<entry key="932" type="xstring" value="P19+Calibrated retention time"/>
+<entry key="933" type="xstring" value="P19+Calibrated retention time finish"/>
+<entry key="934" type="xstring" value="P19+Calibrated retention time start"/>
+<entry key="935" type="xstring" value="P19+Charge"/>
+<entry key="936" type="xstring" value="P19+Combinatorics"/>
+<entry key="937" type="xstring" value="P19+Deamidation (NQ) Probabilities"/>
+<entry key="938" type="xstring" value="P19+Deamidation (NQ) Score Diffs"/>
+<entry key="939" type="xstring" value="P19+Deamidation (NQ) site IDs"/>
+<entry key="940" type="xstring" value="P19+Delta score"/>
+<entry key="941" type="xstring" value="P19+Fraction"/>
+<entry key="942" type="xstring" value="P19+Fraction of total spectrum"/>
+<entry key="943" type="xstring" value="P19+Intensity"/>
+<entry key="944" type="xstring" value="P19+MS/MS IDs"/>
+<entry key="945" type="xstring" value="P19+MS/MS count"/>
+<entry key="946" type="xstring" value="P19+MS/MS m/z"/>
+<entry key="947" type="xstring" value="P19+MS/MS scan number"/>
+<entry key="948" type="xstring" value="P19+Mass error [Da]"/>
+<entry key="949" type="xstring" value="P19+Mass error [ppm]"/>
+<entry key="950" type="xstring" value="P19+Match m/z difference"/>
+<entry key="951" type="xstring" value="P19+Match q-value"/>
+<entry key="952" type="xstring" value="P19+Match score"/>
+<entry key="953" type="xstring" value="P19+Match time difference"/>
+<entry key="954" type="xstring" value="P19+Max intensity m/z 0"/>
+<entry key="955" type="xstring" value="P19+Modified sequence"/>
+<entry key="956" type="xstring" value="P19+Number of data points"/>
+<entry key="957" type="xstring" value="P19+Number of isotopic peaks"/>
+<entry key="958" type="xstring" value="P19+Number of scans"/>
+<entry key="959" type="xstring" value="P19+Oxidation (M) Probabilities"/>
+<entry key="960" type="xstring" value="P19+Oxidation (M) Score Diffs"/>
+<entry key="961" type="xstring" value="P19+Oxidation (M) site IDs"/>
+<entry key="962" type="xstring" value="P19+PEP"/>
+<entry key="963" type="xstring" value="P19+PIF"/>
+<entry key="964" type="xstring" value="P19+Phospho (ST) Probabilities"/>
+<entry key="965" type="xstring" value="P19+Phospho (ST) Score Diffs"/>
+<entry key="966" type="xstring" value="P19+Phospho (ST) site IDs"/>
+<entry key="967" type="xstring" value="P19+Raw file"/>
+<entry key="968" type="xstring" value="P19+Resolution"/>
+<entry key="969" type="xstring" value="P19+Retention length"/>
+<entry key="970" type="xstring" value="P19+Retention time"/>
+<entry key="971" type="xstring" value="P19+Retention time calibration"/>
+<entry key="972" type="xstring" value="P19+Score"/>
+<entry key="973" type="xstring" value="P19+Type"/>
+<entry key="974" type="xstring" value="P19+Uncalibrated - Calibrated m/z [Da]"/>
+<entry key="975" type="xstring" value="P19+Uncalibrated - Calibrated m/z [ppm]"/>
+<entry key="976" type="xstring" value="P19+Uncalibrated mass error [Da]"/>
+<entry key="977" type="xstring" value="P19+Uncalibrated mass error [ppm]"/>
+<entry key="978" type="xstring" value="P19+id"/>
+<entry key="979" type="xstring" value="P19+m/z"/>
+<entry key="980" type="xstring" value="P20+AIF MS/MS IDs"/>
+<entry key="981" type="xstring" value="P20+Base peak fraction"/>
+<entry key="982" type="xstring" value="P20+Best MS/MS"/>
+<entry key="983" type="xstring" value="P20+Calibrated retention time"/>
+<entry key="984" type="xstring" value="P20+Calibrated retention time finish"/>
+<entry key="985" type="xstring" value="P20+Calibrated retention time start"/>
+<entry key="986" type="xstring" value="P20+Charge"/>
+<entry key="987" type="xstring" value="P20+Combinatorics"/>
+<entry key="988" type="xstring" value="P20+Deamidation (NQ) Probabilities"/>
+<entry key="989" type="xstring" value="P20+Deamidation (NQ) Score Diffs"/>
+<entry key="990" type="xstring" value="P20+Deamidation (NQ) site IDs"/>
+<entry key="991" type="xstring" value="P20+Delta score"/>
+<entry key="992" type="xstring" value="P20+Fraction"/>
+<entry key="993" type="xstring" value="P20+Fraction of total spectrum"/>
+<entry key="994" type="xstring" value="P20+Intensity"/>
+<entry key="995" type="xstring" value="P20+MS/MS IDs"/>
+<entry key="996" type="xstring" value="P20+MS/MS count"/>
+<entry key="997" type="xstring" value="P20+MS/MS m/z"/>
+<entry key="998" type="xstring" value="P20+MS/MS scan number"/>
+<entry key="999" type="xstring" value="P20+Mass error [Da]"/>
+<entry key="1000" type="xstring" value="P20+Mass error [ppm]"/>
+<entry key="1001" type="xstring" value="P20+Match m/z difference"/>
+<entry key="1002" type="xstring" value="P20+Match q-value"/>
+<entry key="1003" type="xstring" value="P20+Match score"/>
+<entry key="1004" type="xstring" value="P20+Match time difference"/>
+<entry key="1005" type="xstring" value="P20+Max intensity m/z 0"/>
+<entry key="1006" type="xstring" value="P20+Modified sequence"/>
+<entry key="1007" type="xstring" value="P20+Number of data points"/>
+<entry key="1008" type="xstring" value="P20+Number of isotopic peaks"/>
+<entry key="1009" type="xstring" value="P20+Number of scans"/>
+<entry key="1010" type="xstring" value="P20+Oxidation (M) Probabilities"/>
+<entry key="1011" type="xstring" value="P20+Oxidation (M) Score Diffs"/>
+<entry key="1012" type="xstring" value="P20+Oxidation (M) site IDs"/>
+<entry key="1013" type="xstring" value="P20+PEP"/>
+<entry key="1014" type="xstring" value="P20+PIF"/>
+<entry key="1015" type="xstring" value="P20+Phospho (ST) Probabilities"/>
+<entry key="1016" type="xstring" value="P20+Phospho (ST) Score Diffs"/>
+<entry key="1017" type="xstring" value="P20+Phospho (ST) site IDs"/>
+<entry key="1018" type="xstring" value="P20+Raw file"/>
+<entry key="1019" type="xstring" value="P20+Resolution"/>
+<entry key="1020" type="xstring" value="P20+Retention length"/>
+<entry key="1021" type="xstring" value="P20+Retention time"/>
+<entry key="1022" type="xstring" value="P20+Retention time calibration"/>
+<entry key="1023" type="xstring" value="P20+Score"/>
+<entry key="1024" type="xstring" value="P20+Type"/>
+<entry key="1025" type="xstring" value="P20+Uncalibrated - Calibrated m/z [Da]"/>
+<entry key="1026" type="xstring" value="P20+Uncalibrated - Calibrated m/z [ppm]"/>
+<entry key="1027" type="xstring" value="P20+Uncalibrated mass error [Da]"/>
+<entry key="1028" type="xstring" value="P20+Uncalibrated mass error [ppm]"/>
+<entry key="1029" type="xstring" value="P20+id"/>
+<entry key="1030" type="xstring" value="P20+m/z"/>
+<entry key="1031" type="xstring" value="P21+AIF MS/MS IDs"/>
+<entry key="1032" type="xstring" value="P21+Base peak fraction"/>
+<entry key="1033" type="xstring" value="P21+Best MS/MS"/>
+<entry key="1034" type="xstring" value="P21+Calibrated retention time"/>
+<entry key="1035" type="xstring" value="P21+Calibrated retention time finish"/>
+<entry key="1036" type="xstring" value="P21+Calibrated retention time start"/>
+<entry key="1037" type="xstring" value="P21+Charge"/>
+<entry key="1038" type="xstring" value="P21+Combinatorics"/>
+<entry key="1039" type="xstring" value="P21+Deamidation (NQ) Probabilities"/>
+<entry key="1040" type="xstring" value="P21+Deamidation (NQ) Score Diffs"/>
+<entry key="1041" type="xstring" value="P21+Deamidation (NQ) site IDs"/>
+<entry key="1042" type="xstring" value="P21+Delta score"/>
+<entry key="1043" type="xstring" value="P21+Fraction"/>
+<entry key="1044" type="xstring" value="P21+Fraction of total spectrum"/>
+<entry key="1045" type="xstring" value="P21+Intensity"/>
+<entry key="1046" type="xstring" value="P21+MS/MS IDs"/>
+<entry key="1047" type="xstring" value="P21+MS/MS count"/>
+<entry key="1048" type="xstring" value="P21+MS/MS m/z"/>
+<entry key="1049" type="xstring" value="P21+MS/MS scan number"/>
+<entry key="1050" type="xstring" value="P21+Mass error [Da]"/>
+<entry key="1051" type="xstring" value="P21+Mass error [ppm]"/>
+<entry key="1052" type="xstring" value="P21+Match m/z difference"/>
+<entry key="1053" type="xstring" value="P21+Match q-value"/>
+<entry key="1054" type="xstring" value="P21+Match score"/>
+<entry key="1055" type="xstring" value="P21+Match time difference"/>
+<entry key="1056" type="xstring" value="P21+Max intensity m/z 0"/>
+<entry key="1057" type="xstring" value="P21+Modified sequence"/>
+<entry key="1058" type="xstring" value="P21+Number of data points"/>
+<entry key="1059" type="xstring" value="P21+Number of isotopic peaks"/>
+<entry key="1060" type="xstring" value="P21+Number of scans"/>
+<entry key="1061" type="xstring" value="P21+Oxidation (M) Probabilities"/>
+<entry key="1062" type="xstring" value="P21+Oxidation (M) Score Diffs"/>
+<entry key="1063" type="xstring" value="P21+Oxidation (M) site IDs"/>
+<entry key="1064" type="xstring" value="P21+PEP"/>
+<entry key="1065" type="xstring" value="P21+PIF"/>
+<entry key="1066" type="xstring" value="P21+Phospho (ST) Probabilities"/>
+<entry key="1067" type="xstring" value="P21+Phospho (ST) Score Diffs"/>
+<entry key="1068" type="xstring" value="P21+Phospho (ST) site IDs"/>
+<entry key="1069" type="xstring" value="P21+Raw file"/>
+<entry key="1070" type="xstring" value="P21+Resolution"/>
+<entry key="1071" type="xstring" value="P21+Retention length"/>
+<entry key="1072" type="xstring" value="P21+Retention time"/>
+<entry key="1073" type="xstring" value="P21+Retention time calibration"/>
+<entry key="1074" type="xstring" value="P21+Score"/>
+<entry key="1075" type="xstring" value="P21+Type"/>
+<entry key="1076" type="xstring" value="P21+Uncalibrated - Calibrated m/z [Da]"/>
+<entry key="1077" type="xstring" value="P21+Uncalibrated - Calibrated m/z [ppm]"/>
+<entry key="1078" type="xstring" value="P21+Uncalibrated mass error [Da]"/>
+<entry key="1079" type="xstring" value="P21+Uncalibrated mass error [ppm]"/>
+<entry key="1080" type="xstring" value="P21+id"/>
+<entry key="1081" type="xstring" value="P21+m/z"/>
+<entry key="1082" type="xstring" value="P22+AIF MS/MS IDs"/>
+<entry key="1083" type="xstring" value="P22+Base peak fraction"/>
+<entry key="1084" type="xstring" value="P22+Best MS/MS"/>
+<entry key="1085" type="xstring" value="P22+Calibrated retention time"/>
+<entry key="1086" type="xstring" value="P22+Calibrated retention time finish"/>
+<entry key="1087" type="xstring" value="P22+Calibrated retention time start"/>
+<entry key="1088" type="xstring" value="P22+Charge"/>
+<entry key="1089" type="xstring" value="P22+Combinatorics"/>
+<entry key="1090" type="xstring" value="P22+Deamidation (NQ) Probabilities"/>
+<entry key="1091" type="xstring" value="P22+Deamidation (NQ) Score Diffs"/>
+<entry key="1092" type="xstring" value="P22+Deamidation (NQ) site IDs"/>
+<entry key="1093" type="xstring" value="P22+Delta score"/>
+<entry key="1094" type="xstring" value="P22+Fraction"/>
+<entry key="1095" type="xstring" value="P22+Fraction of total spectrum"/>
+<entry key="1096" type="xstring" value="P22+Intensity"/>
+<entry key="1097" type="xstring" value="P22+MS/MS IDs"/>
+<entry key="1098" type="xstring" value="P22+MS/MS count"/>
+<entry key="1099" type="xstring" value="P22+MS/MS m/z"/>
+<entry key="1100" type="xstring" value="P22+MS/MS scan number"/>
+<entry key="1101" type="xstring" value="P22+Mass error [Da]"/>
+<entry key="1102" type="xstring" value="P22+Mass error [ppm]"/>
+<entry key="1103" type="xstring" value="P22+Match m/z difference"/>
+<entry key="1104" type="xstring" value="P22+Match q-value"/>
+<entry key="1105" type="xstring" value="P22+Match score"/>
+<entry key="1106" type="xstring" value="P22+Match time difference"/>
+<entry key="1107" type="xstring" value="P22+Max intensity m/z 0"/>
+<entry key="1108" type="xstring" value="P22+Modified sequence"/>
+<entry key="1109" type="xstring" value="P22+Number of data points"/>
+<entry key="1110" type="xstring" value="P22+Number of isotopic peaks"/>
+<entry key="1111" type="xstring" value="P22+Number of scans"/>
+<entry key="1112" type="xstring" value="P22+Oxidation (M) Probabilities"/>
+<entry key="1113" type="xstring" value="P22+Oxidation (M) Score Diffs"/>
+<entry key="1114" type="xstring" value="P22+Oxidation (M) site IDs"/>
+<entry key="1115" type="xstring" value="P22+PEP"/>
+<entry key="1116" type="xstring" value="P22+PIF"/>
+<entry key="1117" type="xstring" value="P22+Phospho (ST) Probabilities"/>
+<entry key="1118" type="xstring" value="P22+Phospho (ST) Score Diffs"/>
+<entry key="1119" type="xstring" value="P22+Phospho (ST) site IDs"/>
+<entry key="1120" type="xstring" value="P22+Raw file"/>
+<entry key="1121" type="xstring" value="P22+Resolution"/>
+<entry key="1122" type="xstring" value="P22+Retention length"/>
+<entry key="1123" type="xstring" value="P22+Retention time"/>
+<entry key="1124" type="xstring" value="P22+Retention time calibration"/>
+<entry key="1125" type="xstring" value="P22+Score"/>
+<entry key="1126" type="xstring" value="P22+Type"/>
+<entry key="1127" type="xstring" value="P22+Uncalibrated - Calibrated m/z [Da]"/>
+<entry key="1128" type="xstring" value="P22+Uncalibrated - Calibrated m/z [ppm]"/>
+<entry key="1129" type="xstring" value="P22+Uncalibrated mass error [Da]"/>
+<entry key="1130" type="xstring" value="P22+Uncalibrated mass error [ppm]"/>
+<entry key="1131" type="xstring" value="P22+id"/>
+<entry key="1132" type="xstring" value="P22+m/z"/>
+<entry key="1133" type="xstring" value="P23+AIF MS/MS IDs"/>
+<entry key="1134" type="xstring" value="P23+Base peak fraction"/>
+<entry key="1135" type="xstring" value="P23+Best MS/MS"/>
+<entry key="1136" type="xstring" value="P23+Calibrated retention time"/>
+<entry key="1137" type="xstring" value="P23+Calibrated retention time finish"/>
+<entry key="1138" type="xstring" value="P23+Calibrated retention time start"/>
+<entry key="1139" type="xstring" value="P23+Charge"/>
+<entry key="1140" type="xstring" value="P23+Combinatorics"/>
+<entry key="1141" type="xstring" value="P23+Deamidation (NQ) Probabilities"/>
+<entry key="1142" type="xstring" value="P23+Deamidation (NQ) Score Diffs"/>
+<entry key="1143" type="xstring" value="P23+Deamidation (NQ) site IDs"/>
+<entry key="1144" type="xstring" value="P23+Delta score"/>
+<entry key="1145" type="xstring" value="P23+Fraction"/>
+<entry key="1146" type="xstring" value="P23+Fraction of total spectrum"/>
+<entry key="1147" type="xstring" value="P23+Intensity"/>
+<entry key="1148" type="xstring" value="P23+MS/MS IDs"/>
+<entry key="1149" type="xstring" value="P23+MS/MS count"/>
+<entry key="1150" type="xstring" value="P23+MS/MS m/z"/>
+<entry key="1151" type="xstring" value="P23+MS/MS scan number"/>
+<entry key="1152" type="xstring" value="P23+Mass error [Da]"/>
+<entry key="1153" type="xstring" value="P23+Mass error [ppm]"/>
+<entry key="1154" type="xstring" value="P23+Match m/z difference"/>
+<entry key="1155" type="xstring" value="P23+Match q-value"/>
+<entry key="1156" type="xstring" value="P23+Match score"/>
+<entry key="1157" type="xstring" value="P23+Match time difference"/>
+<entry key="1158" type="xstring" value="P23+Max intensity m/z 0"/>
+<entry key="1159" type="xstring" value="P23+Modified sequence"/>
+<entry key="1160" type="xstring" value="P23+Number of data points"/>
+<entry key="1161" type="xstring" value="P23+Number of isotopic peaks"/>
+<entry key="1162" type="xstring" value="P23+Number of scans"/>
+<entry key="1163" type="xstring" value="P23+Oxidation (M) Probabilities"/>
+<entry key="1164" type="xstring" value="P23+Oxidation (M) Score Diffs"/>
+<entry key="1165" type="xstring" value="P23+Oxidation (M) site IDs"/>
+<entry key="1166" type="xstring" value="P23+PEP"/>
+<entry key="1167" type="xstring" value="P23+PIF"/>
+<entry key="1168" type="xstring" value="P23+Phospho (ST) Probabilities"/>
+<entry key="1169" type="xstring" value="P23+Phospho (ST) Score Diffs"/>
+<entry key="1170" type="xstring" value="P23+Phospho (ST) site IDs"/>
+<entry key="1171" type="xstring" value="P23+Raw file"/>
+<entry key="1172" type="xstring" value="P23+Resolution"/>
+<entry key="1173" type="xstring" value="P23+Retention length"/>
+<entry key="1174" type="xstring" value="P23+Retention time"/>
+<entry key="1175" type="xstring" value="P23+Retention time calibration"/>
+<entry key="1176" type="xstring" value="P23+Score"/>
+<entry key="1177" type="xstring" value="P23+Type"/>
+<entry key="1178" type="xstring" value="P23+Uncalibrated - Calibrated m/z [Da]"/>
+<entry key="1179" type="xstring" value="P23+Uncalibrated - Calibrated m/z [ppm]"/>
+<entry key="1180" type="xstring" value="P23+Uncalibrated mass error [Da]"/>
+<entry key="1181" type="xstring" value="P23+Uncalibrated mass error [ppm]"/>
+<entry key="1182" type="xstring" value="P23+id"/>
+<entry key="1183" type="xstring" value="P23+m/z"/>
+<entry key="1184" type="xstring" value="P24+AIF MS/MS IDs"/>
+<entry key="1185" type="xstring" value="P24+Base peak fraction"/>
+<entry key="1186" type="xstring" value="P24+Best MS/MS"/>
+<entry key="1187" type="xstring" value="P24+Calibrated retention time"/>
+<entry key="1188" type="xstring" value="P24+Calibrated retention time finish"/>
+<entry key="1189" type="xstring" value="P24+Calibrated retention time start"/>
+<entry key="1190" type="xstring" value="P24+Charge"/>
+<entry key="1191" type="xstring" value="P24+Combinatorics"/>
+<entry key="1192" type="xstring" value="P24+Deamidation (NQ) Probabilities"/>
+<entry key="1193" type="xstring" value="P24+Deamidation (NQ) Score Diffs"/>
+<entry key="1194" type="xstring" value="P24+Deamidation (NQ) site IDs"/>
+<entry key="1195" type="xstring" value="P24+Delta score"/>
+<entry key="1196" type="xstring" value="P24+Fraction"/>
+<entry key="1197" type="xstring" value="P24+Fraction of total spectrum"/>
+<entry key="1198" type="xstring" value="P24+Intensity"/>
+<entry key="1199" type="xstring" value="P24+MS/MS IDs"/>
+<entry key="1200" type="xstring" value="P24+MS/MS count"/>
+<entry key="1201" type="xstring" value="P24+MS/MS m/z"/>
+<entry key="1202" type="xstring" value="P24+MS/MS scan number"/>
+<entry key="1203" type="xstring" value="P24+Mass error [Da]"/>
+<entry key="1204" type="xstring" value="P24+Mass error [ppm]"/>
+<entry key="1205" type="xstring" value="P24+Match m/z difference"/>
+<entry key="1206" type="xstring" value="P24+Match q-value"/>
+<entry key="1207" type="xstring" value="P24+Match score"/>
+<entry key="1208" type="xstring" value="P24+Match time difference"/>
+<entry key="1209" type="xstring" value="P24+Max intensity m/z 0"/>
+<entry key="1210" type="xstring" value="P24+Modified sequence"/>
+<entry key="1211" type="xstring" value="P24+Number of data points"/>
+<entry key="1212" type="xstring" value="P24+Number of isotopic peaks"/>
+<entry key="1213" type="xstring" value="P24+Number of scans"/>
+<entry key="1214" type="xstring" value="P24+Oxidation (M) Probabilities"/>
+<entry key="1215" type="xstring" value="P24+Oxidation (M) Score Diffs"/>
+<entry key="1216" type="xstring" value="P24+Oxidation (M) site IDs"/>
+<entry key="1217" type="xstring" value="P24+PEP"/>
+<entry key="1218" type="xstring" value="P24+PIF"/>
+<entry key="1219" type="xstring" value="P24+Phospho (ST) Probabilities"/>
+<entry key="1220" type="xstring" value="P24+Phospho (ST) Score Diffs"/>
+<entry key="1221" type="xstring" value="P24+Phospho (ST) site IDs"/>
+<entry key="1222" type="xstring" value="P24+Raw file"/>
+<entry key="1223" type="xstring" value="P24+Resolution"/>
+<entry key="1224" type="xstring" value="P24+Retention length"/>
+<entry key="1225" type="xstring" value="P24+Retention time"/>
+<entry key="1226" type="xstring" value="P24+Retention time calibration"/>
+<entry key="1227" type="xstring" value="P24+Score"/>
+<entry key="1228" type="xstring" value="P24+Type"/>
+<entry key="1229" type="xstring" value="P24+Uncalibrated - Calibrated m/z [Da]"/>
+<entry key="1230" type="xstring" value="P24+Uncalibrated - Calibrated m/z [ppm]"/>
+<entry key="1231" type="xstring" value="P24+Uncalibrated mass error [Da]"/>
+<entry key="1232" type="xstring" value="P24+Uncalibrated mass error [ppm]"/>
+<entry key="1233" type="xstring" value="P24+id"/>
+<entry key="1234" type="xstring" value="P24+m/z"/>
+<entry key="1235" type="xstring" value="Peptide ID"/>
+<entry key="1236" type="xstring" value="Phospho (ST)"/>
+<entry key="1237" type="xstring" value="Phospho (ST)Sites_Localization prob"/>
+<entry key="1238" type="xstring" value="Phospho (ST)Sites_Localization prob 3P17"/>
+<entry key="1239" type="xstring" value="Phospho (ST)Sites_Localization prob 3P18"/>
+<entry key="1240" type="xstring" value="Phospho (ST)Sites_Localization prob 3P19"/>
+<entry key="1241" type="xstring" value="Phospho (ST)Sites_Localization prob 3P20"/>
+<entry key="1242" type="xstring" value="Phospho (ST)Sites_Localization prob 3P21"/>
+<entry key="1243" type="xstring" value="Phospho (ST)Sites_Localization prob 3P22"/>
+<entry key="1244" type="xstring" value="Phospho (ST)Sites_Localization prob 3P23"/>
+<entry key="1245" type="xstring" value="Phospho (ST)Sites_Localization prob 3P24"/>
+<entry key="1246" type="xstring" value="Phospho (ST)Sites_Localization prob ID01"/>
+<entry key="1247" type="xstring" value="Phospho (ST)Sites_Localization prob ID02"/>
+<entry key="1248" type="xstring" value="Phospho (ST)Sites_Localization prob ID03"/>
+<entry key="1249" type="xstring" value="Phospho (ST)Sites_Localization prob ID04"/>
+<entry key="1250" type="xstring" value="Phospho (ST)Sites_Localization prob ID05"/>
+<entry key="1251" type="xstring" value="Phospho (ST)Sites_Localization prob ID06"/>
+<entry key="1252" type="xstring" value="Phospho (ST)Sites_Localization prob ID07"/>
+<entry key="1253" type="xstring" value="Phospho (ST)Sites_Localization prob ID08"/>
+<entry key="1254" type="xstring" value="Phospho (ST)Sites_Localization prob ID09"/>
+<entry key="1255" type="xstring" value="Phospho (ST)Sites_Localization prob ID10"/>
+<entry key="1256" type="xstring" value="Phospho (ST)Sites_Localization prob ID11"/>
+<entry key="1257" type="xstring" value="Phospho (ST)Sites_Localization prob ID12"/>
+<entry key="1258" type="xstring" value="Phospho (ST)Sites_Localization prob ID13"/>
+<entry key="1259" type="xstring" value="Phospho (ST)Sites_Localization prob ID14"/>
+<entry key="1260" type="xstring" value="Phospho (ST)Sites_Localization prob ID15"/>
+<entry key="1261" type="xstring" value="Phospho (ST)Sites_Localization prob ID16"/>
+<entry key="1262" type="xstring" value="Phospho (ST)Sites_Localization prob ID17"/>
+<entry key="1263" type="xstring" value="Phospho (ST)Sites_Localization prob ID18"/>
+<entry key="1264" type="xstring" value="Phospho (ST)Sites_Localization prob ID19"/>
+<entry key="1265" type="xstring" value="Phospho (ST)Sites_Localization prob ID20"/>
+<entry key="1266" type="xstring" value="Phospho (ST)Sites_Localization prob ID21"/>
+<entry key="1267" type="xstring" value="Phospho (ST)Sites_Localization prob ID22"/>
+<entry key="1268" type="xstring" value="Phospho (ST)Sites_Localization prob ID23"/>
+<entry key="1269" type="xstring" value="Phospho (ST)Sites_Localization prob ID24"/>
+<entry key="1270" type="xstring" value="Phospho (ST)Sites_Localization prob P01"/>
+<entry key="1271" type="xstring" value="Phospho (ST)Sites_Localization prob P02"/>
+<entry key="1272" type="xstring" value="Phospho (ST)Sites_Localization prob P03"/>
+<entry key="1273" type="xstring" value="Phospho (ST)Sites_Localization prob P04"/>
+<entry key="1274" type="xstring" value="Phospho (ST)Sites_Localization prob P05"/>
+<entry key="1275" type="xstring" value="Phospho (ST)Sites_Localization prob P06"/>
+<entry key="1276" type="xstring" value="Phospho (ST)Sites_Localization prob P07"/>
+<entry key="1277" type="xstring" value="Phospho (ST)Sites_Localization prob P08"/>
+<entry key="1278" type="xstring" value="Phospho (ST)Sites_Localization prob P09"/>
+<entry key="1279" type="xstring" value="Phospho (ST)Sites_Localization prob P10"/>
+<entry key="1280" type="xstring" value="Phospho (ST)Sites_Localization prob P11"/>
+<entry key="1281" type="xstring" value="Phospho (ST)Sites_Localization prob P12"/>
+<entry key="1282" type="xstring" value="Phospho (ST)Sites_Localization prob P13"/>
+<entry key="1283" type="xstring" value="Phospho (ST)Sites_Localization prob P14"/>
+<entry key="1284" type="xstring" value="Phospho (ST)Sites_Localization prob P15"/>
+<entry key="1285" type="xstring" value="Phospho (ST)Sites_Localization prob P16"/>
+<entry key="1286" type="xstring" value="Phospho (ST)Sites_Localization prob_Positions_Amino acid"/>
+<entry key="1287" type="xstring" value="Phospho (ST)Sites_Modification window"/>
+<entry key="1288" type="xstring" value="Phospho (ST)Sites_Peptide window coverage"/>
+<entry key="1289" type="xstring" value="Phospho (ST)Sites_Positions_Amino acid"/>
+<entry key="1290" type="xstring" value="Phospho (ST)Sites_Proteins"/>
+<entry key="1291" type="xstring" value="Phospho (ST)Sites_Sequence window"/>
+<entry key="1292" type="xstring" value="Potential contaminant"/>
+<entry key="1293" type="xstring" value="Protein group IDs"/>
+<entry key="1294" type="xstring" value="Protein names"/>
+<entry key="1295" type="xstring" value="Proteins"/>
+<entry key="1296" type="xstring" value="Reverse"/>
+<entry key="1297" type="xstring" value="Sequence"/>
+<entry key="1298" type="xstring" value="Sequence_Modifications"/>
+<entry key="1299" type="xstring" value="proteinGroups_Fasta headers"/>
+<entry key="1300" type="xstring" value="proteinGroups_Majority protein IDs"/>
+<entry key="1301" type="xstring" value="P01+Intensity_log2"/>
+<entry key="1302" type="xstring" value="P02+Intensity_log2"/>
+<entry key="1303" type="xstring" value="P03+Intensity_log2"/>
+<entry key="1304" type="xstring" value="P04+Intensity_log2"/>
+<entry key="1305" type="xstring" value="P05+Intensity_log2"/>
+<entry key="1306" type="xstring" value="P06+Intensity_log2"/>
+<entry key="1307" type="xstring" value="P07+Intensity_log2"/>
+<entry key="1308" type="xstring" value="P08+Intensity_log2"/>
+<entry key="1309" type="xstring" value="P09+Intensity_log2"/>
+<entry key="1310" type="xstring" value="P10+Intensity_log2"/>
+<entry key="1311" type="xstring" value="P11+Intensity_log2"/>
+<entry key="1312" type="xstring" value="P12+Intensity_log2"/>
+<entry key="1313" type="xstring" value="P13+Intensity_log2"/>
+<entry key="1314" type="xstring" value="P14+Intensity_log2"/>
+<entry key="1315" type="xstring" value="P15+Intensity_log2"/>
+<entry key="1316" type="xstring" value="P16+Intensity_log2"/>
+<entry key="1317" type="xstring" value="P17+Intensity_log2"/>
+<entry key="1318" type="xstring" value="P18+Intensity_log2"/>
+<entry key="1319" type="xstring" value="P19+Intensity_log2"/>
+<entry key="1320" type="xstring" value="P20+Intensity_log2"/>
+<entry key="1321" type="xstring" value="P21+Intensity_log2"/>
+<entry key="1322" type="xstring" value="P22+Intensity_log2"/>
+<entry key="1323" type="xstring" value="P23+Intensity_log2"/>
+<entry key="1324" type="xstring" value="P24+Intensity_log2"/>
+<entry key="1325" type="xstring" value="P02+Intensity_log2_norm"/>
+<entry key="1326" type="xstring" value="P04+Intensity_log2_norm"/>
+<entry key="1327" type="xstring" value="P05+Intensity_log2_norm"/>
+<entry key="1328" type="xstring" value="P06+Intensity_log2_norm"/>
+<entry key="1329" type="xstring" value="P07+Intensity_log2_norm"/>
+<entry key="1330" type="xstring" value="P08+Intensity_log2_norm"/>
+<entry key="1331" type="xstring" value="P10+Intensity_log2_norm"/>
+<entry key="1332" type="xstring" value="P12+Intensity_log2_norm"/>
+<entry key="1333" type="xstring" value="P13+Intensity_log2_norm"/>
+<entry key="1334" type="xstring" value="P14+Intensity_log2_norm"/>
+<entry key="1335" type="xstring" value="P15+Intensity_log2_norm"/>
+<entry key="1336" type="xstring" value="P16+Intensity_log2_norm"/>
+<entry key="1337" type="xstring" value="P18+Intensity_log2_norm"/>
+<entry key="1338" type="xstring" value="P20+Intensity_log2_norm"/>
+<entry key="1339" type="xstring" value="P21+Intensity_log2_norm"/>
+<entry key="1340" type="xstring" value="P22+Intensity_log2_norm"/>
+<entry key="1341" type="xstring" value="P23+Intensity_log2_norm"/>
+<entry key="1342" type="xstring" value="P24+Intensity_log2_norm"/>
+</config>
+<entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
+<config key="name_pattern">
+<entry key="pattern" type="xstring" value=""/>
+<entry key="type" type="xstring" value="Wildcard"/>
+<entry key="caseSensitive" type="xboolean" value="true"/>
+</config>
+<config key="datatype">
+<config key="typelist">
+<entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+</config>
+</config>
+</config>
+</config>
+<config key="nodeAnnotation">
+<entry key="text" type="xstring" value="selects only specific columns"/>
+<entry key="bgcolor" type="xint" value="16777215"/>
+<entry key="x-coordinate" type="xint" value="74"/>
+<entry key="y-coordinate" type="xint" value="439"/>
+<entry key="width" type="xint" value="172"/>
+<entry key="height" type="xint" value="17"/>
+<entry key="alignment" type="xstring" value="CENTER"/>
+<entry key="borderSize" type="xint" value="0"/>
+<entry key="borderColor" type="xint" value="16777215"/>
+<entry key="defFontSize" type="xint" value="11"/>
+<entry key="annotation-version" type="xint" value="20151123"/>
+<config key="styles"/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="IDLE"/>
+<entry key="factory" type="xstring" value="org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory"/>
+<entry key="node-name" type="xstring" value="Column Filter"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-bundle-version" type="xstring" value="3.6.1.v201808311359"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Core"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-feature-version" type="xstring" value="3.6.1.v201809030900"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="Column Filter"/>
+<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+</config>
+</config>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<entry key="sourceCode" type="xstring" value="import numpy%%00010import pandas%%00010%%00010# extracts columns for ratio calculation%%00010all_data = input_table%%00010ratio_data = input_table.loc[:,[flow_variables['numerator_column'], flow_variables['denominator_column']]]%%00010%%00010# dictionaries to store information how to map flow varaibles settings to missing values handling%%00010qual_up = {%%00010    'number': flow_variables['qual_up_double'],%%00010    'text': flow_variables['qual_up_text'],%%00010    'NaN': numpy.NaN,%%00010    'use minimum': 'use minimum',%%00010    }%%00010%%00010qual_down = {%%00010    'number': flow_variables['qual_down_double'],%%00010    'text': flow_variables['qual_down_text'],%%00010    'NaN': numpy.NaN,%%00010    'use minimum': 'use minimum',%%00010    }%%00010%%00010no_value = {%%00010    'number': flow_variables['no_value_double'],%%00010    'NaN': numpy.NaN,%%00010    }%%00010%%00010# assigns concrete value for missing values variables based on flow varaibles using the abovementioned dictionaries%%00010missing_numerator_ratio = qual_down[flow_variables['qual_format']]%%00010missing_denominator_ratio = qual_up[flow_variables['qual_format']]%%00010missing_numerator_and_denominator_ratio = no_value[flow_variables['no_value_format']]%%00010%%00010# replaces zero values by NaN prior ratio calculation%%00010ratio_data.replace(to_replace = 0, value=numpy.NaN, inplace = True)%%00010%%00010# creates dataframe where one can find which values were missing in the beginning%%00010# this information can be used to monitor missing data imputation during the whole data processing%%00010missing_values = ratio_data.isnull()%%00010%%00010# adds new column to the ratio_data containing calculated ratios from cases where both columns contain some number%%00010ratio_data[flow_variables['ratio_name']] = ratio_data.iloc[:,0].div(ratio_data.iloc[:,1])%%00010%%00010# creates empty dataframe to be filled with numerical and/or categorical ratios%%00010final_ratios = pandas.DataFrame()%%00010final_ratios[flow_variables['ratio_name'] + '_all'] = ratio_data[flow_variables['ratio_name']]%%00010%%00010#print(ratio_data[flow_variables['numerator_column']])%%00010numerator_minimum = ratio_data[flow_variables['numerator_column']].min()%%00010denominator_minimum = ratio_data[flow_variables['denominator_column']].min()%%00010%%00010# loops thouth the data table with numerical ratios and fills NaN ratio values by predefined values %%00010# based on the concrete scenario: both or one of the initial values are missing%%00010for row in ratio_data.itertuples():%%00010%%00009if numpy.isnan(row[3]):%%00010%%00009%%00009if numpy.isnan(row[1]) and numpy.isnan(row[2]):%%00010%%00009%%00009%%00009final_ratios.loc[row[0], flow_variables['ratio_name'] + '_all'] = missing_numerator_and_denominator_ratio%%00010%%00009%%00009elif numpy.isnan(row[1]):%%00010%%00009%%00009%%00009if flow_variables['qual_format'] == 'use minimum':%%00010%%00009%%00009%%00009%%00009final_ratios.loc[row[0], flow_variables['ratio_name'] + '_all'] = numerator_minimum / row[2]%%00010%%00009%%00009%%00009else:%%00010%%00009%%00009%%00009%%00009final_ratios.loc[row[0], flow_variables['ratio_name'] + '_all'] = missing_numerator_ratio%%00010%%00009%%00009elif numpy.isnan(row[2]):%%00010%%00009%%00009%%00009if flow_variables['qual_format'] == 'use minimum':%%00010%%00009%%00009%%00009%%00009final_ratios.loc[row[0], flow_variables['ratio_name'] + '_all'] = row[1] / denominator_minimum%%00010%%00009%%00009%%00009else:%%00010%%00009%%00009%%00009%%00009final_ratios.loc[row[0], flow_variables['ratio_name'] + '_all'] = missing_denominator_ratio%%00010%%00009%%00009else:%%00010%%00009%%00009%%00009final_ratios.loc[row[0], flow_variables['ratio_name'] + '_all'] = row[3]%%00010%%00010# creates new dataframe for the final output%%00010output = pandas.DataFrame()%%00010%%00010# adds column with numerical and/or categorical ratios into the final data dataframe%%00010# ratio column is appended to original table or used columns table only based on the metanode setting%%00010if flow_variables['remove_all_but_used'] == 1:%%00010%%00009output = pandas.concat([ratio_data.iloc[:,:2], final_ratios], axis = 1)%%00010elif flow_variables['remove_all_but_used'] == 0:%%00010%%00009output = pandas.concat([all_data, ratio_data[flow_variables['ratio_name']]], axis = 1)%%00010%%00009output = pandas.concat([output, final_ratios], axis = 1)%%00010%%00010#output.replace(to_replace = 'NaN', value = numpy.NaN, inplace = True)%%00010%%00010if flow_variables['qual_format'] == 'text':%%00010%%00009output[flow_variables['ratio_name'] + '_all'] = output[flow_variables['ratio_name'] + '_all'].astype('str')%%00010%%00010%%00010%%00010# outputs%%00010output_table_1 = output%%00010output_table_2 = missing_values%%00010%%00010"/>
+<entry key="rowLimit" type="xint" value="1000"/>
+<entry key="pythonVersionOption" type="xstring" value="PYTHON3"/>
+<entry key="convertMissingToPython" type="xboolean" value="false"/>
+<entry key="convertMissingFromPython" type="xboolean" value="false"/>
+<entry key="sentinelOption" type="xstring" value="MIN_VAL"/>
+<entry key="sentinelValue" type="xint" value="0"/>
+<entry key="chunkSize" type="xint" value="500000"/>
+</config>
+<config key="nodeAnnotation">
+<entry key="text" type="xstring" value="ratio calculation script"/>
+<entry key="bgcolor" type="xint" value="16777215"/>
+<entry key="x-coordinate" type="xint" value="377"/>
+<entry key="y-coordinate" type="xint" value="599"/>
+<entry key="width" type="xint" value="127"/>
+<entry key="height" type="xint" value="17"/>
+<entry key="alignment" type="xstring" value="CENTER"/>
+<entry key="borderSize" type="xint" value="0"/>
+<entry key="borderColor" type="xint" value="16777215"/>
+<entry key="defFontSize" type="xint" value="9"/>
+<entry key="annotation-version" type="xint" value="20151123"/>
+<config key="styles"/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="IDLE"/>
+<entry key="factory" type="xstring" value="org.knime.python2.nodes.script1in2out.Python2Script1In2OutNodeFactory"/>
+<entry key="node-name" type="xstring" value="Python Script (1⇒2)"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME Python nodes"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python2.nodes"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-bundle-version" type="xstring" value="3.6.1.v201808311614"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Python Integration"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python2.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-feature-version" type="xstring" value="3.6.1.v201808311614"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="Python Script (1⇒2)"/>
+<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+<config key="port_2">
+<entry key="index" type="xint" value="2"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+</config>
+</config>
