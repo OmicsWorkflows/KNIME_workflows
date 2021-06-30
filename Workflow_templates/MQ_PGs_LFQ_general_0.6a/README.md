@@ -3,11 +3,6 @@
 ## Description of the workflow and general remarks
 MQ_PGs_LFQ_general is a KNIME workflow developed for the general processing of label-free bottom-up mass spectrometry data.
 Please note, that you should understand e.g. data structure and experimental design used within the study to apply the correct processing approach! The processing may require consultation with (bio)statistician to achieve correct outputs.
-
-## Input data
-In this workflow, the proteinGroups.txt file, an output of [MaxQuant](http://coxdocs.org/doku.php?id=maxquant:start) software  is used for the file input. 
-In general, the workflow is applicable also to other types of data in wide format data table; please note that additional adjustment of nodes settings may be required then (e.g. different column names, prefixes and suffixes, etc.).
-
 ## Documentation of used nodes/metanodes
 The workflow contains several nodes for the data processing:
 -	File Reader
