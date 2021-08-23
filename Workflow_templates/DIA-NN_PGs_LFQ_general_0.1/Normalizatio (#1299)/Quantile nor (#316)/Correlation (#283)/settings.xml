@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<config key="column-filter-257">
+<config key="columns">
+<entry key="array-size" type="xint" value="6"/>
+<entry key="0" type="xstring" value="PG.Quantity+lowT1_log2_norm"/>
+<entry key="1" type="xstring" value="PG.Quantity+normT1_log2_norm"/>
+<entry key="2" type="xstring" value="PG.Quantity+highT1_log2_norm"/>
+<entry key="3" type="xstring" value="PG.Quantity+lowT2_log2_norm"/>
+<entry key="4" type="xstring" value="PG.Quantity+normT2_log2_norm"/>
+<entry key="5" type="xstring" value="PG.Quantity+highT2_log2_norm"/>
+</config>
+<config key="columnFilter">
+<config key="columnFilter">
+<entry key="filter-type" type="xstring" value="name_pattern"/>
+<config key="included_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="excluded_names">
+<entry key="array-size" type="xint" value="82"/>
+<entry key="0" type="xstring" value="Lib.PG.Q.Value (Min*)+lowT1 (Concatenate*)"/>
+<entry key="1" type="xstring" value="Lib.PG.Q.Value (Min*)+lowT1 (Min*)"/>
+<entry key="2" type="xstring" value="Lib.PG.Q.Value (Min*)+normT1 (Concatenate*)"/>
+<entry key="3" type="xstring" value="Lib.PG.Q.Value (Min*)+normT1 (Min*)"/>
+<entry key="4" type="xstring" value="Lib.PG.Q.Value (Min*)+highT1 (Concatenate*)"/>
+<entry key="5" type="xstring" value="Lib.PG.Q.Value (Min*)+highT1 (Min*)"/>
+<entry key="6" type="xstring" value="Lib.PG.Q.Value (Min*)+lowT2 (Concatenate*)"/>
+<entry key="7" type="xstring" value="Lib.PG.Q.Value (Min*)+lowT2 (Min*)"/>
+<entry key="8" type="xstring" value="Lib.PG.Q.Value (Min*)+normT2 (Concatenate*)"/>
+<entry key="9" type="xstring" value="Lib.PG.Q.Value (Min*)+normT2 (Min*)"/>
+<entry key="10" type="xstring" value="Lib.PG.Q.Value (Min*)+highT2 (Concatenate*)"/>
+<entry key="11" type="xstring" value="Lib.PG.Q.Value (Min*)+highT2 (Min*)"/>
+<entry key="12" type="xstring" value="Protein.Group"/>
+<entry key="13" type="xstring" value="Proteotypic (Min*)+lowT1 (Sum)"/>
+<entry key="14" type="xstring" value="Proteotypic (Min*)+normT1 (Sum)"/>
+<entry key="15" type="xstring" value="Proteotypic (Min*)+highT1 (Sum)"/>
+<entry key="16" type="xstring" value="Proteotypic (Min*)+lowT2 (Sum)"/>
+<entry key="17" type="xstring" value="Proteotypic (Min*)+normT2 (Sum)"/>
+<entry key="18" type="xstring" value="Proteotypic (Min*)+highT2 (Sum)"/>
+<entry key="19" type="xstring" value="Stripped.Sequence (Concatenate)"/>
+<entry key="20" type="xstring" value="Stripped.Sequence (Count)"/>
+<entry key="21" type="xstring" value="UniProt_Protein ID"/>
+<entry key="22" type="xstring" value="UniProt_Entry"/>
+<entry key="23" type="xstring" value="UniProt_Entry name"/>
+<entry key="24" type="xstring" value="UniProt_Status"/>
+<entry key="25" type="xstring" value="UniProt_Protein names"/>
+<entry key="26" type="xstring" value="UniProt_Gene names  (primary )"/>
+<entry key="27" type="xstring" value="UniProt_Organism"/>
+<entry key="28" type="xstring" value="UniProt_Gene ontology (GO)"/>
+<entry key="29" type="xstring" value="UniProt_Gene ontology (biological process)"/>
+<entry key="30" type="xstring" value="UniProt_Gene ontology (molecular function)"/>
+<entry key="31" type="xstring" value="UniProt_Gene ontology (cellular component)"/>
+<entry key="32" type="xstring" value="UniProt_Gene ontology IDs"/>
+<entry key="33" type="xstring" value="UniProt_Subcellular location [CC]"/>
+<entry key="34" type="xstring" value="UniProt_Protein families"/>
+<entry key="35" type="xstring" value="UniProt_Interacts with"/>
+<entry key="36" type="xstring" value="UniProt_Sequence"/>
+<entry key="37" type="xstring" value="UniProt_Cross-reference (InterPro)"/>
+<entry key="38" type="xstring" value="UniProt_Cross-reference (Pfam)"/>
+<entry key="39" type="xstring" value="UniProt_Cross-reference (IntAct)"/>
+<entry key="40" type="xstring" value="PG.MaxLFQ+lowT1"/>
+<entry key="41" type="xstring" value="PG.MaxLFQ+normT1"/>
+<entry key="42" type="xstring" value="PG.MaxLFQ+highT1"/>
+<entry key="43" type="xstring" value="PG.MaxLFQ+lowT2"/>
+<entry key="44" type="xstring" value="PG.MaxLFQ+normT2"/>
+<entry key="45" type="xstring" value="PG.MaxLFQ+highT2"/>
+<entry key="46" type="xstring" value="PG.Normalised+lowT1"/>
+<entry key="47" type="xstring" value="PG.Normalised+normT1"/>
+<entry key="48" type="xstring" value="PG.Normalised+highT1"/>
+<entry key="49" type="xstring" value="PG.Normalised+lowT2"/>
+<entry key="50" type="xstring" value="PG.Normalised+normT2"/>
+<entry key="51" type="xstring" value="PG.Normalised+highT2"/>
+<entry key="52" type="xstring" value="PG.Quantity+lowT1"/>
+<entry key="53" type="xstring" value="PG.Quantity+normT1"/>
+<entry key="54" type="xstring" value="PG.Quantity+highT1"/>
+<entry key="55" type="xstring" value="PG.Quantity+lowT2"/>
+<entry key="56" type="xstring" value="PG.Quantity+normT2"/>
+<entry key="57" type="xstring" value="PG.Quantity+highT2"/>
+<entry key="58" type="xstring" value="PG.MaxLFQ+lowT1_log2"/>
+<entry key="59" type="xstring" value="PG.MaxLFQ+normT1_log2"/>
+<entry key="60" type="xstring" value="PG.MaxLFQ+highT1_log2"/>
+<entry key="61" type="xstring" value="PG.MaxLFQ+lowT2_log2"/>
+<entry key="62" type="xstring" value="PG.MaxLFQ+normT2_log2"/>
+<entry key="63" type="xstring" value="PG.MaxLFQ+highT2_log2"/>
+<entry key="64" type="xstring" value="PG.Normalised+lowT1_log2"/>
+<entry key="65" type="xstring" value="PG.Normalised+normT1_log2"/>
+<entry key="66" type="xstring" value="PG.Normalised+highT1_log2"/>
+<entry key="67" type="xstring" value="PG.Normalised+lowT2_log2"/>
+<entry key="68" type="xstring" value="PG.Normalised+normT2_log2"/>
+<entry key="69" type="xstring" value="PG.Normalised+highT2_log2"/>
+<entry key="70" type="xstring" value="PG.Quantity+lowT1_log2"/>
+<entry key="71" type="xstring" value="PG.Quantity+normT1_log2"/>
+<entry key="72" type="xstring" value="PG.Quantity+highT1_log2"/>
+<entry key="73" type="xstring" value="PG.Quantity+lowT2_log2"/>
+<entry key="74" type="xstring" value="PG.Quantity+normT2_log2"/>
+<entry key="75" type="xstring" value="PG.Quantity+highT2_log2"/>
+<entry key="76" type="xstring" value="PG.Quantity+lowT1_log2_norm"/>
+<entry key="77" type="xstring" value="PG.Quantity+normT1_log2_norm"/>
+<entry key="78" type="xstring" value="PG.Quantity+highT1_log2_norm"/>
+<entry key="79" type="xstring" value="PG.Quantity+lowT2_log2_norm"/>
+<entry key="80" type="xstring" value="PG.Quantity+normT2_log2_norm"/>
+<entry key="81" type="xstring" value="PG.Quantity+highT2_log2_norm"/>
+</config>
+<entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
+<config key="name_pattern">
+<entry key="pattern" type="xstring" value="PG.Quantity+*_log2_norm"/>
+<entry key="type" type="xstring" value="Wildcard"/>
+<entry key="caseSensitive" type="xboolean" value="true"/>
+</config>
+<config key="datatype">
+<config key="typelist">
+<entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+</config>
+</config>
+</config>
+</config>
+</config>
+<config key="string-input-409">
+<entry key="string" type="xstring" value="normalized data - quantile"/>
+</config>
+<config key="single-selection-423">
+<entry key="variable_value" type="xstring" value="RdBu"/>
+</config>
+<config key="boolean-input-429">
+<entry key="boolean" type="xboolean" value="true"/>
+</config>
+<config key="double-input-430">
+<entry key="double" type="xdouble" value="0.0"/>
+</config>
+<config key="boolean-input-435">
+<entry key="boolean" type="xboolean" value="true"/>
+</config>
+<config key="single-selection-436">
+<entry key="variable_value" type="xstring" value="euclidean"/>
+</config>
+<config key="single-selection-437">
+<entry key="variable_value" type="xstring" value="average"/>
+</config>
+<config key="string-input-438">
+<entry key="string" type="xstring" value="PG.Quantity+"/>
+</config>
+<config key="string-input-439">
+<entry key="string" type="xstring" value="_log2_norm"/>
+</config>
+</config>
+<config key="nodeAnnotation">
+<entry key="text" type="xstring" value="quantile normalized data%%00010correlation (all samples)"/>
+<entry key="bgcolor" type="xint" value="16777215"/>
+<entry key="x-coordinate" type="xint" value="736"/>
+<entry key="y-coordinate" type="xint" value="319"/>
+<entry key="width" type="xint" value="168"/>
+<entry key="height" type="xint" value="34"/>
+<entry key="alignment" type="xstring" value="CENTER"/>
+<entry key="borderSize" type="xint" value="0"/>
+<entry key="borderColor" type="xint" value="16777215"/>
+<entry key="defFontSize" type="xint" value="10"/>
+<entry key="annotation-version" type="xint" value="20151123"/>
+<config key="styles">
+<config key="style_0">
+<entry key="start" type="xint" value="0"/>
+<entry key="length" type="xint" value="8"/>
+<entry key="fontname" type="xstring" value="Sans"/>
+<entry key="fontstyle" type="xint" value="0"/>
+<entry key="fontsize" type="xint" value="10"/>
+<entry key="fgcolor" type="xint" value="0"/>
+</config>
+</config>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="IDLE"/>
+<entry key="virtual-in-ID" type="xint" value="217"/>
+<config key="inports">
+<config key="inport_0">
+<entry key="index" type="xint" value="0"/>
+<config key="type">
+<entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+</config>
+</config>
+</config>
+<entry key="virtual-out-ID" type="xint" value="219"/>
+<config key="outports">
+<config key="outport_0">
+<entry key="index" type="xint" value="0"/>
+<config key="type">
+<entry key="object_class" type="xstring" value="org.knime.core.node.port.image.ImagePortObject"/>
+</config>
+</config>
+</config>
+<config key="metadata">
+<entry key="description" type="xstring" value="Metanode creates correlation coefficients clustermap (hierarchically-clustered heatmap) on selected columns. The central part consists of correlation coefficients for each column pair displayed as heatmap. Plus coefficiennts are clustered using hierarchical clustering where columns with highest correlation should cluster together.%%00010%%00010You can select correlation coefficient type to be computed.%%00010%%00010Correlation coefficients can be displayed using different colormaps to highlight the differences. Colormap center (e.g. what number should be visualized as centered color in the concrete colormap) can be manually selected, otherwise it will be computed automaticaly and colormap will start at minmum and end at maximum number. Used colormap names can be checked here: https://matplotlib.org/users/colormaps.html.%%00010%%00010Cluster analysis has these two settings:%%00010- distance metric - how the distance between the two columns should be calculated, e.g. euclidian, cityblock see e.g. https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.pdist.html for more details%%00010%%00010- cluster method - method for calculating the distances between clusters, e.g. complete, average; see e.g. https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.linkage.html for more details%%00010%%00010Note: any data preprocessing (like transformation, normalization) should be done prior the metanode usage!%%00010%%00010=================%%00010%%00010Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.%%00010%%00010KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)%%00010Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3.6/license.html)%%00010Python package Seaborn (The Seaborn consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)%%00010Python package Matplotlib (The Matplotlib consists of the following Python Software Foundation License (BSD compatible). Licence terms are available here: https://matplotlib.org/users/license.html)%%00010Python package Pandas (The Pandas consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)%%00010%%00010The metanode was created in KNIME 4.1.3 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 4.1.3a.%%00010%%00010=================%%00010%%00010This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.%%00010Version: 0.3.2 from 2021-06-24%%00010Contact person: David Potesil (david.potesil@ceitec.muni.cz)%%00010More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes"/>
+<config key="inports">
+<config key="inport_0">
+<entry key="name" type="xstring" value="input data"/>
+<entry key="description" type="xstring" value="input table containing columns to be selected for visualization"/>
+<entry key="index" type="xint" value="0"/>
+</config>
+</config>
+<config key="outports">
+<config key="outport_0">
+<entry key="name" type="xstring" value="Correlation coefficient clustermap"/>
+<entry key="description" type="xstring" value="clustermap of correlation coefficients"/>
+<entry key="index" type="xint" value="0"/>
+</config>
+</config>
+</config>
+<config key="workflow_template_information">
+<entry key="role" type="xstring" value="Link"/>
+<entry key="timestamp" type="xstring" value="2021-06-24 10:51:58"/>
+<entry key="sourceURI" type="xstring" value="knime://LOCAL/gitfolders/KNIME_metanodes/Metanodes%20templates/Graphs/Correlation%20clustermap"/>
+</config>
+<entry key="layoutJSON" type="xstring" value="{&quot;rows&quot;:[{&quot;type&quot;:&quot;row&quot;,&quot;columns&quot;:[{&quot;content&quot;:[{&quot;type&quot;:&quot;view&quot;,&quot;nodeID&quot;:&quot;257&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;autoResize&quot;:true,&quot;scrolling&quot;:false}],&quot;widthMD&quot;:12}]},{&quot;type&quot;:&quot;row&quot;,&quot;columns&quot;:[{&quot;content&quot;:[{&quot;type&quot;:&quot;view&quot;,&quot;nodeID&quot;:&quot;409&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;autoResize&quot;:true,&quot;scrolling&quot;:false},{&quot;type&quot;:&quot;view&quot;,&quot;nodeID&quot;:&quot;419&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;autoResize&quot;:true,&quot;scrolling&quot;:false}],&quot;widthMD&quot;:12}]},{&quot;type&quot;:&quot;row&quot;},{&quot;type&quot;:&quot;row&quot;,&quot;columns&quot;:[{&quot;content&quot;:[{&quot;type&quot;:&quot;view&quot;,&quot;nodeID&quot;:&quot;410&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;autoResize&quot;:true,&quot;scrolling&quot;:false}],&quot;widthMD&quot;:12}]},{&quot;type&quot;:&quot;row&quot;,&quot;columns&quot;:[{&quot;content&quot;:[{&quot;type&quot;:&quot;view&quot;,&quot;nodeID&quot;:&quot;411&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;autoResize&quot;:true,&quot;scrolling&quot;:false}],&quot;widthMD&quot;:12}]},{&quot;type&quot;:&quot;row&quot;,&quot;columns&quot;:[{&quot;content&quot;:[{&quot;type&quot;:&quot;view&quot;,&quot;nodeID&quot;:&quot;412&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;autoResize&quot;:true,&quot;scrolling&quot;:false}],&quot;widthMD&quot;:12}]},{&quot;type&quot;:&quot;row&quot;,&quot;columns&quot;:[{&quot;content&quot;:[{&quot;type&quot;:&quot;view&quot;,&quot;nodeID&quot;:&quot;413&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;autoResize&quot;:true,&quot;scrolling&quot;:false}],&quot;widthMD&quot;:12}]},{&quot;type&quot;:&quot;row&quot;,&quot;columns&quot;:[{&quot;content&quot;:[{&quot;type&quot;:&quot;view&quot;,&quot;nodeID&quot;:&quot;414&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;autoResize&quot;:true,&quot;scrolling&quot;:false}],&quot;widthMD&quot;:12}]},{&quot;type&quot;:&quot;row&quot;,&quot;columns&quot;:[{&quot;content&quot;:[{&quot;type&quot;:&quot;view&quot;,&quot;nodeID&quot;:&quot;415&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;autoResize&quot;:true,&quot;scrolling&quot;:false}],&quot;widthMD&quot;:12}]},{&quot;type&quot;:&quot;row&quot;,&quot;columns&quot;:[{&quot;content&quot;:[{&quot;type&quot;:&quot;view&quot;,&quot;nodeID&quot;:&quot;416&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;autoResize&quot;:true,&quot;scrolling&quot;:false}],&quot;widthMD&quot;:12}]},{&quot;type&quot;:&quot;row&quot;,&quot;columns&quot;:[{&quot;content&quot;:[{&quot;type&quot;:&quot;view&quot;,&quot;nodeID&quot;:&quot;417&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;autoResize&quot;:true,&quot;scrolling&quot;:false}],&quot;widthMD&quot;:12}]},{&quot;type&quot;:&quot;row&quot;,&quot;columns&quot;:[{&quot;content&quot;:[{&quot;type&quot;:&quot;view&quot;,&quot;nodeID&quot;:&quot;418&quot;,&quot;resizeMethod&quot;:&quot;viewLowestElement&quot;,&quot;sizeWidth&quot;:false,&quot;sizeHeight&quot;:true,&quot;autoResize&quot;:true,&quot;scrolling&quot;:false}],&quot;widthMD&quot;:12}]}]}"/>
+<entry key="hideInWizard" type="xboolean" value="false"/>
+<entry key="customCSS" type="xstring" value=""/>
+</config>
