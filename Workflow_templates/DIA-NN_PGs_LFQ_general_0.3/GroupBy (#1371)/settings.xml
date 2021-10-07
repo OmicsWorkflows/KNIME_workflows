@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<config key="grouByColumns_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_filterString"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<config key="grouByColumns">
+<config key="InclList">
+<entry key="array-size" type="xint" value="2"/>
+<entry key="0" type="xstring" value="Protein.Group"/>
+<entry key="1" type="xstring" value="Global.PG.Q.Value"/>
+</config>
+<config key="ExclList">
+<entry key="array-size" type="xint" value="266"/>
+<entry key="0" type="xstring" value="Stripped.Sequence"/>
+<entry key="1" type="xstring" value="Global.Q.Value"/>
+<entry key="2" type="xstring" value="Precursor.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_10_KO1-1_1_demulti"/>
+<entry key="3" type="xstring" value="Precursor.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_10_KO1-1_1_demulti"/>
+<entry key="4" type="xstring" value="PG.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_10_KO1-1_1_demulti"/>
+<entry key="5" type="xstring" value="PG.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_10_KO1-1_1_demulti"/>
+<entry key="6" type="xstring" value="PG.MaxLFQ (Max*)+4666_Exp2_104IS_DIA_400-800_10_KO1-1_1_demulti"/>
+<entry key="7" type="xstring" value="Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_10_KO1-1_1_demulti"/>
+<entry key="8" type="xstring" value="PEP (Min*)+4666_Exp2_104IS_DIA_400-800_10_KO1-1_1_demulti"/>
+<entry key="9" type="xstring" value="Protein.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_10_KO1-1_1_demulti"/>
+<entry key="10" type="xstring" value="PG.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_10_KO1-1_1_demulti"/>
+<entry key="11" type="xstring" value="Proteotypic (Min*)+4666_Exp2_104IS_DIA_400-800_10_KO1-1_1_demulti"/>
+<entry key="12" type="xstring" value="Precursor.Id (Count)+4666_Exp2_104IS_DIA_400-800_10_KO1-1_1_demulti"/>
+<entry key="13" type="xstring" value="Precursor.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_11_KO1-2_1_demulti"/>
+<entry key="14" type="xstring" value="Precursor.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_11_KO1-2_1_demulti"/>
+<entry key="15" type="xstring" value="PG.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_11_KO1-2_1_demulti"/>
+<entry key="16" type="xstring" value="PG.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_11_KO1-2_1_demulti"/>
+<entry key="17" type="xstring" value="PG.MaxLFQ (Max*)+4666_Exp2_104IS_DIA_400-800_11_KO1-2_1_demulti"/>
+<entry key="18" type="xstring" value="Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_11_KO1-2_1_demulti"/>
+<entry key="19" type="xstring" value="PEP (Min*)+4666_Exp2_104IS_DIA_400-800_11_KO1-2_1_demulti"/>
+<entry key="20" type="xstring" value="Protein.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_11_KO1-2_1_demulti"/>
+<entry key="21" type="xstring" value="PG.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_11_KO1-2_1_demulti"/>
+<entry key="22" type="xstring" value="Proteotypic (Min*)+4666_Exp2_104IS_DIA_400-800_11_KO1-2_1_demulti"/>
+<entry key="23" type="xstring" value="Precursor.Id (Count)+4666_Exp2_104IS_DIA_400-800_11_KO1-2_1_demulti"/>
+<entry key="24" type="xstring" value="Precursor.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_12_KO1-3_1_demulti"/>
+<entry key="25" type="xstring" value="Precursor.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_12_KO1-3_1_demulti"/>
+<entry key="26" type="xstring" value="PG.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_12_KO1-3_1_demulti"/>
+<entry key="27" type="xstring" value="PG.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_12_KO1-3_1_demulti"/>
+<entry key="28" type="xstring" value="PG.MaxLFQ (Max*)+4666_Exp2_104IS_DIA_400-800_12_KO1-3_1_demulti"/>
+<entry key="29" type="xstring" value="Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_12_KO1-3_1_demulti"/>
+<entry key="30" type="xstring" value="PEP (Min*)+4666_Exp2_104IS_DIA_400-800_12_KO1-3_1_demulti"/>
+<entry key="31" type="xstring" value="Protein.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_12_KO1-3_1_demulti"/>
+<entry key="32" type="xstring" value="PG.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_12_KO1-3_1_demulti"/>
+<entry key="33" type="xstring" value="Proteotypic (Min*)+4666_Exp2_104IS_DIA_400-800_12_KO1-3_1_demulti"/>
+<entry key="34" type="xstring" value="Precursor.Id (Count)+4666_Exp2_104IS_DIA_400-800_12_KO1-3_1_demulti"/>
+<entry key="35" type="xstring" value="Precursor.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_13_WT3-1_1_demulti"/>
+<entry key="36" type="xstring" value="Precursor.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_13_WT3-1_1_demulti"/>
+<entry key="37" type="xstring" value="PG.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_13_WT3-1_1_demulti"/>
+<entry key="38" type="xstring" value="PG.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_13_WT3-1_1_demulti"/>
+<entry key="39" type="xstring" value="PG.MaxLFQ (Max*)+4666_Exp2_104IS_DIA_400-800_13_WT3-1_1_demulti"/>
+<entry key="40" type="xstring" value="Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_13_WT3-1_1_demulti"/>
+<entry key="41" type="xstring" value="PEP (Min*)+4666_Exp2_104IS_DIA_400-800_13_WT3-1_1_demulti"/>
+<entry key="42" type="xstring" value="Protein.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_13_WT3-1_1_demulti"/>
+<entry key="43" type="xstring" value="PG.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_13_WT3-1_1_demulti"/>
+<entry key="44" type="xstring" value="Proteotypic (Min*)+4666_Exp2_104IS_DIA_400-800_13_WT3-1_1_demulti"/>
+<entry key="45" type="xstring" value="Precursor.Id (Count)+4666_Exp2_104IS_DIA_400-800_13_WT3-1_1_demulti"/>
+<entry key="46" type="xstring" value="Precursor.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_14_WT3-2_1_demulti"/>
+<entry key="47" type="xstring" value="Precursor.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_14_WT3-2_1_demulti"/>
+<entry key="48" type="xstring" value="PG.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_14_WT3-2_1_demulti"/>
+<entry key="49" type="xstring" value="PG.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_14_WT3-2_1_demulti"/>
+<entry key="50" type="xstring" value="PG.MaxLFQ (Max*)+4666_Exp2_104IS_DIA_400-800_14_WT3-2_1_demulti"/>
+<entry key="51" type="xstring" value="Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_14_WT3-2_1_demulti"/>
+<entry key="52" type="xstring" value="PEP (Min*)+4666_Exp2_104IS_DIA_400-800_14_WT3-2_1_demulti"/>
+<entry key="53" type="xstring" value="Protein.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_14_WT3-2_1_demulti"/>
+<entry key="54" type="xstring" value="PG.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_14_WT3-2_1_demulti"/>
+<entry key="55" type="xstring" value="Proteotypic (Min*)+4666_Exp2_104IS_DIA_400-800_14_WT3-2_1_demulti"/>
+<entry key="56" type="xstring" value="Precursor.Id (Count)+4666_Exp2_104IS_DIA_400-800_14_WT3-2_1_demulti"/>
+<entry key="57" type="xstring" value="Precursor.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_15_WT3-3_1_demulti"/>
+<entry key="58" type="xstring" value="Precursor.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_15_WT3-3_1_demulti"/>
+<entry key="59" type="xstring" value="PG.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_15_WT3-3_1_demulti"/>
+<entry key="60" type="xstring" value="PG.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_15_WT3-3_1_demulti"/>
+<entry key="61" type="xstring" value="PG.MaxLFQ (Max*)+4666_Exp2_104IS_DIA_400-800_15_WT3-3_1_demulti"/>
+<entry key="62" type="xstring" value="Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_15_WT3-3_1_demulti"/>
+<entry key="63" type="xstring" value="PEP (Min*)+4666_Exp2_104IS_DIA_400-800_15_WT3-3_1_demulti"/>
+<entry key="64" type="xstring" value="Protein.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_15_WT3-3_1_demulti"/>
+<entry key="65" type="xstring" value="PG.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_15_WT3-3_1_demulti"/>
+<entry key="66" type="xstring" value="Proteotypic (Min*)+4666_Exp2_104IS_DIA_400-800_15_WT3-3_1_demulti"/>
+<entry key="67" type="xstring" value="Precursor.Id (Count)+4666_Exp2_104IS_DIA_400-800_15_WT3-3_1_demulti"/>
+<entry key="68" type="xstring" value="Precursor.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_16_KO3-1_1_demulti"/>
+<entry key="69" type="xstring" value="Precursor.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_16_KO3-1_1_demulti"/>
+<entry key="70" type="xstring" value="PG.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_16_KO3-1_1_demulti"/>
+<entry key="71" type="xstring" value="PG.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_16_KO3-1_1_demulti"/>
+<entry key="72" type="xstring" value="PG.MaxLFQ (Max*)+4666_Exp2_104IS_DIA_400-800_16_KO3-1_1_demulti"/>
+<entry key="73" type="xstring" value="Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_16_KO3-1_1_demulti"/>
+<entry key="74" type="xstring" value="PEP (Min*)+4666_Exp2_104IS_DIA_400-800_16_KO3-1_1_demulti"/>
+<entry key="75" type="xstring" value="Protein.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_16_KO3-1_1_demulti"/>
+<entry key="76" type="xstring" value="PG.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_16_KO3-1_1_demulti"/>
+<entry key="77" type="xstring" value="Proteotypic (Min*)+4666_Exp2_104IS_DIA_400-800_16_KO3-1_1_demulti"/>
+<entry key="78" type="xstring" value="Precursor.Id (Count)+4666_Exp2_104IS_DIA_400-800_16_KO3-1_1_demulti"/>
+<entry key="79" type="xstring" value="Precursor.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_17_KO3-2_1_demulti"/>
+<entry key="80" type="xstring" value="Precursor.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_17_KO3-2_1_demulti"/>
+<entry key="81" type="xstring" value="PG.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_17_KO3-2_1_demulti"/>
+<entry key="82" type="xstring" value="PG.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_17_KO3-2_1_demulti"/>
+<entry key="83" type="xstring" value="PG.MaxLFQ (Max*)+4666_Exp2_104IS_DIA_400-800_17_KO3-2_1_demulti"/>
+<entry key="84" type="xstring" value="Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_17_KO3-2_1_demulti"/>
+<entry key="85" type="xstring" value="PEP (Min*)+4666_Exp2_104IS_DIA_400-800_17_KO3-2_1_demulti"/>
+<entry key="86" type="xstring" value="Protein.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_17_KO3-2_1_demulti"/>
+<entry key="87" type="xstring" value="PG.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_17_KO3-2_1_demulti"/>
+<entry key="88" type="xstring" value="Proteotypic (Min*)+4666_Exp2_104IS_DIA_400-800_17_KO3-2_1_demulti"/>
+<entry key="89" type="xstring" value="Precursor.Id (Count)+4666_Exp2_104IS_DIA_400-800_17_KO3-2_1_demulti"/>
+<entry key="90" type="xstring" value="Precursor.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_18_KO3-3_1_demulti"/>
+<entry key="91" type="xstring" value="Precursor.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_18_KO3-3_1_demulti"/>
+<entry key="92" type="xstring" value="PG.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_18_KO3-3_1_demulti"/>
+<entry key="93" type="xstring" value="PG.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_18_KO3-3_1_demulti"/>
+<entry key="94" type="xstring" value="PG.MaxLFQ (Max*)+4666_Exp2_104IS_DIA_400-800_18_KO3-3_1_demulti"/>
+<entry key="95" type="xstring" value="Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_18_KO3-3_1_demulti"/>
+<entry key="96" type="xstring" value="PEP (Min*)+4666_Exp2_104IS_DIA_400-800_18_KO3-3_1_demulti"/>
+<entry key="97" type="xstring" value="Protein.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_18_KO3-3_1_demulti"/>
+<entry key="98" type="xstring" value="PG.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_18_KO3-3_1_demulti"/>
+<entry key="99" type="xstring" value="Proteotypic (Min*)+4666_Exp2_104IS_DIA_400-800_18_KO3-3_1_demulti"/>
+<entry key="100" type="xstring" value="Precursor.Id (Count)+4666_Exp2_104IS_DIA_400-800_18_KO3-3_1_demulti"/>
+<entry key="101" type="xstring" value="Precursor.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_19_WT5-1_1_demulti"/>
+<entry key="102" type="xstring" value="Precursor.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_19_WT5-1_1_demulti"/>
+<entry key="103" type="xstring" value="PG.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_19_WT5-1_1_demulti"/>
+<entry key="104" type="xstring" value="PG.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_19_WT5-1_1_demulti"/>
+<entry key="105" type="xstring" value="PG.MaxLFQ (Max*)+4666_Exp2_104IS_DIA_400-800_19_WT5-1_1_demulti"/>
+<entry key="106" type="xstring" value="Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_19_WT5-1_1_demulti"/>
+<entry key="107" type="xstring" value="PEP (Min*)+4666_Exp2_104IS_DIA_400-800_19_WT5-1_1_demulti"/>
+<entry key="108" type="xstring" value="Protein.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_19_WT5-1_1_demulti"/>
+<entry key="109" type="xstring" value="PG.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_19_WT5-1_1_demulti"/>
+<entry key="110" type="xstring" value="Proteotypic (Min*)+4666_Exp2_104IS_DIA_400-800_19_WT5-1_1_demulti"/>
+<entry key="111" type="xstring" value="Precursor.Id (Count)+4666_Exp2_104IS_DIA_400-800_19_WT5-1_1_demulti"/>
+<entry key="112" type="xstring" value="Precursor.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_1_WT0-1_1_demulti"/>
+<entry key="113" type="xstring" value="Precursor.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_1_WT0-1_1_demulti"/>
+<entry key="114" type="xstring" value="PG.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_1_WT0-1_1_demulti"/>
+<entry key="115" type="xstring" value="PG.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_1_WT0-1_1_demulti"/>
+<entry key="116" type="xstring" value="PG.MaxLFQ (Max*)+4666_Exp2_104IS_DIA_400-800_1_WT0-1_1_demulti"/>
+<entry key="117" type="xstring" value="Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_1_WT0-1_1_demulti"/>
+<entry key="118" type="xstring" value="PEP (Min*)+4666_Exp2_104IS_DIA_400-800_1_WT0-1_1_demulti"/>
+<entry key="119" type="xstring" value="Protein.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_1_WT0-1_1_demulti"/>
+<entry key="120" type="xstring" value="PG.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_1_WT0-1_1_demulti"/>
+<entry key="121" type="xstring" value="Proteotypic (Min*)+4666_Exp2_104IS_DIA_400-800_1_WT0-1_1_demulti"/>
+<entry key="122" type="xstring" value="Precursor.Id (Count)+4666_Exp2_104IS_DIA_400-800_1_WT0-1_1_demulti"/>
+<entry key="123" type="xstring" value="Precursor.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_20_WT5-2_1_demulti"/>
+<entry key="124" type="xstring" value="Precursor.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_20_WT5-2_1_demulti"/>
+<entry key="125" type="xstring" value="PG.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_20_WT5-2_1_demulti"/>
+<entry key="126" type="xstring" value="PG.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_20_WT5-2_1_demulti"/>
+<entry key="127" type="xstring" value="PG.MaxLFQ (Max*)+4666_Exp2_104IS_DIA_400-800_20_WT5-2_1_demulti"/>
+<entry key="128" type="xstring" value="Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_20_WT5-2_1_demulti"/>
+<entry key="129" type="xstring" value="PEP (Min*)+4666_Exp2_104IS_DIA_400-800_20_WT5-2_1_demulti"/>
+<entry key="130" type="xstring" value="Protein.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_20_WT5-2_1_demulti"/>
+<entry key="131" type="xstring" value="PG.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_20_WT5-2_1_demulti"/>
+<entry key="132" type="xstring" value="Proteotypic (Min*)+4666_Exp2_104IS_DIA_400-800_20_WT5-2_1_demulti"/>
+<entry key="133" type="xstring" value="Precursor.Id (Count)+4666_Exp2_104IS_DIA_400-800_20_WT5-2_1_demulti"/>
+<entry key="134" type="xstring" value="Precursor.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_21_WT5-3_1_demulti"/>
+<entry key="135" type="xstring" value="Precursor.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_21_WT5-3_1_demulti"/>
+<entry key="136" type="xstring" value="PG.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_21_WT5-3_1_demulti"/>
+<entry key="137" type="xstring" value="PG.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_21_WT5-3_1_demulti"/>
+<entry key="138" type="xstring" value="PG.MaxLFQ (Max*)+4666_Exp2_104IS_DIA_400-800_21_WT5-3_1_demulti"/>
+<entry key="139" type="xstring" value="Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_21_WT5-3_1_demulti"/>
+<entry key="140" type="xstring" value="PEP (Min*)+4666_Exp2_104IS_DIA_400-800_21_WT5-3_1_demulti"/>
+<entry key="141" type="xstring" value="Protein.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_21_WT5-3_1_demulti"/>
+<entry key="142" type="xstring" value="PG.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_21_WT5-3_1_demulti"/>
+<entry key="143" type="xstring" value="Proteotypic (Min*)+4666_Exp2_104IS_DIA_400-800_21_WT5-3_1_demulti"/>
+<entry key="144" type="xstring" value="Precursor.Id (Count)+4666_Exp2_104IS_DIA_400-800_21_WT5-3_1_demulti"/>
+<entry key="145" type="xstring" value="Precursor.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_22_KO5-1_1_demulti"/>
+<entry key="146" type="xstring" value="Precursor.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_22_KO5-1_1_demulti"/>
+<entry key="147" type="xstring" value="PG.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_22_KO5-1_1_demulti"/>
+<entry key="148" type="xstring" value="PG.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_22_KO5-1_1_demulti"/>
+<entry key="149" type="xstring" value="PG.MaxLFQ (Max*)+4666_Exp2_104IS_DIA_400-800_22_KO5-1_1_demulti"/>
+<entry key="150" type="xstring" value="Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_22_KO5-1_1_demulti"/>
+<entry key="151" type="xstring" value="PEP (Min*)+4666_Exp2_104IS_DIA_400-800_22_KO5-1_1_demulti"/>
+<entry key="152" type="xstring" value="Protein.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_22_KO5-1_1_demulti"/>
+<entry key="153" type="xstring" value="PG.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_22_KO5-1_1_demulti"/>
+<entry key="154" type="xstring" value="Proteotypic (Min*)+4666_Exp2_104IS_DIA_400-800_22_KO5-1_1_demulti"/>
+<entry key="155" type="xstring" value="Precursor.Id (Count)+4666_Exp2_104IS_DIA_400-800_22_KO5-1_1_demulti"/>
+<entry key="156" type="xstring" value="Precursor.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_23_KO5-2_1_demulti"/>
+<entry key="157" type="xstring" value="Precursor.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_23_KO5-2_1_demulti"/>
+<entry key="158" type="xstring" value="PG.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_23_KO5-2_1_demulti"/>
+<entry key="159" type="xstring" value="PG.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_23_KO5-2_1_demulti"/>
+<entry key="160" type="xstring" value="PG.MaxLFQ (Max*)+4666_Exp2_104IS_DIA_400-800_23_KO5-2_1_demulti"/>
+<entry key="161" type="xstring" value="Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_23_KO5-2_1_demulti"/>
+<entry key="162" type="xstring" value="PEP (Min*)+4666_Exp2_104IS_DIA_400-800_23_KO5-2_1_demulti"/>
+<entry key="163" type="xstring" value="Protein.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_23_KO5-2_1_demulti"/>
+<entry key="164" type="xstring" value="PG.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_23_KO5-2_1_demulti"/>
+<entry key="165" type="xstring" value="Proteotypic (Min*)+4666_Exp2_104IS_DIA_400-800_23_KO5-2_1_demulti"/>
+<entry key="166" type="xstring" value="Precursor.Id (Count)+4666_Exp2_104IS_DIA_400-800_23_KO5-2_1_demulti"/>
+<entry key="167" type="xstring" value="Precursor.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_24_KO5-3_1_demulti"/>
+<entry key="168" type="xstring" value="Precursor.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_24_KO5-3_1_demulti"/>
+<entry key="169" type="xstring" value="PG.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_24_KO5-3_1_demulti"/>
+<entry key="170" type="xstring" value="PG.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_24_KO5-3_1_demulti"/>
+<entry key="171" type="xstring" value="PG.MaxLFQ (Max*)+4666_Exp2_104IS_DIA_400-800_24_KO5-3_1_demulti"/>
+<entry key="172" type="xstring" value="Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_24_KO5-3_1_demulti"/>
+<entry key="173" type="xstring" value="PEP (Min*)+4666_Exp2_104IS_DIA_400-800_24_KO5-3_1_demulti"/>
+<entry key="174" type="xstring" value="Protein.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_24_KO5-3_1_demulti"/>
+<entry key="175" type="xstring" value="PG.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_24_KO5-3_1_demulti"/>
+<entry key="176" type="xstring" value="Proteotypic (Min*)+4666_Exp2_104IS_DIA_400-800_24_KO5-3_1_demulti"/>
+<entry key="177" type="xstring" value="Precursor.Id (Count)+4666_Exp2_104IS_DIA_400-800_24_KO5-3_1_demulti"/>
+<entry key="178" type="xstring" value="Precursor.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_2_WT0-2_1_demulti"/>
+<entry key="179" type="xstring" value="Precursor.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_2_WT0-2_1_demulti"/>
+<entry key="180" type="xstring" value="PG.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_2_WT0-2_1_demulti"/>
+<entry key="181" type="xstring" value="PG.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_2_WT0-2_1_demulti"/>
+<entry key="182" type="xstring" value="PG.MaxLFQ (Max*)+4666_Exp2_104IS_DIA_400-800_2_WT0-2_1_demulti"/>
+<entry key="183" type="xstring" value="Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_2_WT0-2_1_demulti"/>
+<entry key="184" type="xstring" value="PEP (Min*)+4666_Exp2_104IS_DIA_400-800_2_WT0-2_1_demulti"/>
+<entry key="185" type="xstring" value="Protein.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_2_WT0-2_1_demulti"/>
+<entry key="186" type="xstring" value="PG.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_2_WT0-2_1_demulti"/>
+<entry key="187" type="xstring" value="Proteotypic (Min*)+4666_Exp2_104IS_DIA_400-800_2_WT0-2_1_demulti"/>
+<entry key="188" type="xstring" value="Precursor.Id (Count)+4666_Exp2_104IS_DIA_400-800_2_WT0-2_1_demulti"/>
+<entry key="189" type="xstring" value="Precursor.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_3_WT0-3_1_demulti"/>
+<entry key="190" type="xstring" value="Precursor.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_3_WT0-3_1_demulti"/>
+<entry key="191" type="xstring" value="PG.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_3_WT0-3_1_demulti"/>
+<entry key="192" type="xstring" value="PG.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_3_WT0-3_1_demulti"/>
+<entry key="193" type="xstring" value="PG.MaxLFQ (Max*)+4666_Exp2_104IS_DIA_400-800_3_WT0-3_1_demulti"/>
+<entry key="194" type="xstring" value="Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_3_WT0-3_1_demulti"/>
+<entry key="195" type="xstring" value="PEP (Min*)+4666_Exp2_104IS_DIA_400-800_3_WT0-3_1_demulti"/>
+<entry key="196" type="xstring" value="Protein.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_3_WT0-3_1_demulti"/>
+<entry key="197" type="xstring" value="PG.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_3_WT0-3_1_demulti"/>
+<entry key="198" type="xstring" value="Proteotypic (Min*)+4666_Exp2_104IS_DIA_400-800_3_WT0-3_1_demulti"/>
+<entry key="199" type="xstring" value="Precursor.Id (Count)+4666_Exp2_104IS_DIA_400-800_3_WT0-3_1_demulti"/>
+<entry key="200" type="xstring" value="Precursor.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_4_KO0-1_1_demulti"/>
+<entry key="201" type="xstring" value="Precursor.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_4_KO0-1_1_demulti"/>
+<entry key="202" type="xstring" value="PG.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_4_KO0-1_1_demulti"/>
+<entry key="203" type="xstring" value="PG.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_4_KO0-1_1_demulti"/>
+<entry key="204" type="xstring" value="PG.MaxLFQ (Max*)+4666_Exp2_104IS_DIA_400-800_4_KO0-1_1_demulti"/>
+<entry key="205" type="xstring" value="Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_4_KO0-1_1_demulti"/>
+<entry key="206" type="xstring" value="PEP (Min*)+4666_Exp2_104IS_DIA_400-800_4_KO0-1_1_demulti"/>
+<entry key="207" type="xstring" value="Protein.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_4_KO0-1_1_demulti"/>
+<entry key="208" type="xstring" value="PG.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_4_KO0-1_1_demulti"/>
+<entry key="209" type="xstring" value="Proteotypic (Min*)+4666_Exp2_104IS_DIA_400-800_4_KO0-1_1_demulti"/>
+<entry key="210" type="xstring" value="Precursor.Id (Count)+4666_Exp2_104IS_DIA_400-800_4_KO0-1_1_demulti"/>
+<entry key="211" type="xstring" value="Precursor.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_5_KO0-2_1_demulti"/>
+<entry key="212" type="xstring" value="Precursor.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_5_KO0-2_1_demulti"/>
+<entry key="213" type="xstring" value="PG.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_5_KO0-2_1_demulti"/>
+<entry key="214" type="xstring" value="PG.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_5_KO0-2_1_demulti"/>
+<entry key="215" type="xstring" value="PG.MaxLFQ (Max*)+4666_Exp2_104IS_DIA_400-800_5_KO0-2_1_demulti"/>
+<entry key="216" type="xstring" value="Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_5_KO0-2_1_demulti"/>
+<entry key="217" type="xstring" value="PEP (Min*)+4666_Exp2_104IS_DIA_400-800_5_KO0-2_1_demulti"/>
+<entry key="218" type="xstring" value="Protein.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_5_KO0-2_1_demulti"/>
+<entry key="219" type="xstring" value="PG.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_5_KO0-2_1_demulti"/>
+<entry key="220" type="xstring" value="Proteotypic (Min*)+4666_Exp2_104IS_DIA_400-800_5_KO0-2_1_demulti"/>
+<entry key="221" type="xstring" value="Precursor.Id (Count)+4666_Exp2_104IS_DIA_400-800_5_KO0-2_1_demulti"/>
+<entry key="222" type="xstring" value="Precursor.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_6_KO0-3_1_demulti"/>
+<entry key="223" type="xstring" value="Precursor.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_6_KO0-3_1_demulti"/>
+<entry key="224" type="xstring" value="PG.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_6_KO0-3_1_demulti"/>
+<entry key="225" type="xstring" value="PG.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_6_KO0-3_1_demulti"/>
+<entry key="226" type="xstring" value="PG.MaxLFQ (Max*)+4666_Exp2_104IS_DIA_400-800_6_KO0-3_1_demulti"/>
+<entry key="227" type="xstring" value="Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_6_KO0-3_1_demulti"/>
+<entry key="228" type="xstring" value="PEP (Min*)+4666_Exp2_104IS_DIA_400-800_6_KO0-3_1_demulti"/>
+<entry key="229" type="xstring" value="Protein.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_6_KO0-3_1_demulti"/>
+<entry key="230" type="xstring" value="PG.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_6_KO0-3_1_demulti"/>
+<entry key="231" type="xstring" value="Proteotypic (Min*)+4666_Exp2_104IS_DIA_400-800_6_KO0-3_1_demulti"/>
+<entry key="232" type="xstring" value="Precursor.Id (Count)+4666_Exp2_104IS_DIA_400-800_6_KO0-3_1_demulti"/>
+<entry key="233" type="xstring" value="Precursor.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_7_WT1-1_1_demulti"/>
+<entry key="234" type="xstring" value="Precursor.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_7_WT1-1_1_demulti"/>
+<entry key="235" type="xstring" value="PG.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_7_WT1-1_1_demulti"/>
+<entry key="236" type="xstring" value="PG.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_7_WT1-1_1_demulti"/>
+<entry key="237" type="xstring" value="PG.MaxLFQ (Max*)+4666_Exp2_104IS_DIA_400-800_7_WT1-1_1_demulti"/>
+<entry key="238" type="xstring" value="Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_7_WT1-1_1_demulti"/>
+<entry key="239" type="xstring" value="PEP (Min*)+4666_Exp2_104IS_DIA_400-800_7_WT1-1_1_demulti"/>
+<entry key="240" type="xstring" value="Protein.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_7_WT1-1_1_demulti"/>
+<entry key="241" type="xstring" value="PG.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_7_WT1-1_1_demulti"/>
+<entry key="242" type="xstring" value="Proteotypic (Min*)+4666_Exp2_104IS_DIA_400-800_7_WT1-1_1_demulti"/>
+<entry key="243" type="xstring" value="Precursor.Id (Count)+4666_Exp2_104IS_DIA_400-800_7_WT1-1_1_demulti"/>
+<entry key="244" type="xstring" value="Precursor.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_8_WT1-2_1_demulti"/>
+<entry key="245" type="xstring" value="Precursor.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_8_WT1-2_1_demulti"/>
+<entry key="246" type="xstring" value="PG.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_8_WT1-2_1_demulti"/>
+<entry key="247" type="xstring" value="PG.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_8_WT1-2_1_demulti"/>
+<entry key="248" type="xstring" value="PG.MaxLFQ (Max*)+4666_Exp2_104IS_DIA_400-800_8_WT1-2_1_demulti"/>
+<entry key="249" type="xstring" value="Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_8_WT1-2_1_demulti"/>
+<entry key="250" type="xstring" value="PEP (Min*)+4666_Exp2_104IS_DIA_400-800_8_WT1-2_1_demulti"/>
+<entry key="251" type="xstring" value="Protein.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_8_WT1-2_1_demulti"/>
+<entry key="252" type="xstring" value="PG.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_8_WT1-2_1_demulti"/>
+<entry key="253" type="xstring" value="Proteotypic (Min*)+4666_Exp2_104IS_DIA_400-800_8_WT1-2_1_demulti"/>
+<entry key="254" type="xstring" value="Precursor.Id (Count)+4666_Exp2_104IS_DIA_400-800_8_WT1-2_1_demulti"/>
+<entry key="255" type="xstring" value="Precursor.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_9_WT1-3_1_demulti"/>
+<entry key="256" type="xstring" value="Precursor.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_9_WT1-3_1_demulti"/>
+<entry key="257" type="xstring" value="PG.Quantity (Max*)+4666_Exp2_104IS_DIA_400-800_9_WT1-3_1_demulti"/>
+<entry key="258" type="xstring" value="PG.Normalised (Max*)+4666_Exp2_104IS_DIA_400-800_9_WT1-3_1_demulti"/>
+<entry key="259" type="xstring" value="PG.MaxLFQ (Max*)+4666_Exp2_104IS_DIA_400-800_9_WT1-3_1_demulti"/>
+<entry key="260" type="xstring" value="Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_9_WT1-3_1_demulti"/>
+<entry key="261" type="xstring" value="PEP (Min*)+4666_Exp2_104IS_DIA_400-800_9_WT1-3_1_demulti"/>
+<entry key="262" type="xstring" value="Protein.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_9_WT1-3_1_demulti"/>
+<entry key="263" type="xstring" value="PG.Q.Value (Min*)+4666_Exp2_104IS_DIA_400-800_9_WT1-3_1_demulti"/>
+<entry key="264" type="xstring" value="Proteotypic (Min*)+4666_Exp2_104IS_DIA_400-800_9_WT1-3_1_demulti"/>
+<entry key="265" type="xstring" value="Precursor.Id (Count)+4666_Exp2_104IS_DIA_400-800_9_WT1-3_1_demulti"/>
+</config>
+<entry key="keep_all_columns_selected" type="xboolean" value="false"/>
+</config>
+<config key="maxNoneNumericalVals_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="maxNoneNumericalVals" type="xint" value="10000"/>
+<config key="enableHilite_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="enableHilite" type="xboolean" value="false"/>
+<config key="sortInMemory_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="sortInMemory" type="xboolean" value="false"/>
+<config key="aggregationColumn">
+<config key="columnNames">
+<entry key="array-size" type="xint" value="2"/>
+<entry key="0" type="xstring" value="Stripped.Sequence"/>
+<entry key="1" type="xstring" value="Stripped.Sequence"/>
+</config>
+<config key="columnTypes">
+<entry key="array-size" type="xint" value="2"/>
+<config key="0">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<entry key="is_null" type="xboolean" value="false"/>
+</config>
+<config key="1">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<entry key="is_null" type="xboolean" value="false"/>
+</config>
+</config>
+<config key="aggregationMethod">
+<entry key="array-size" type="xint" value="2"/>
+<entry key="0" type="xstring" value="Count"/>
+<entry key="1" type="xstring" value="Concatenate_V2.4"/>
+</config>
+<config key="inclMissingVals">
+<entry key="array-size" type="xint" value="2"/>
+<entry key="0" type="xboolean" value="true"/>
+<entry key="1" type="xboolean" value="true"/>
+</config>
+</config>
+<config key="aggregationOperatorSettings"/>
+<config key="patternAggregators">
+<config key="f_0">
+<entry key="inputPattern" type="xstring" value="PG.Quantity (Max*)+*"/>
+<entry key="isRegularExpression" type="xboolean" value="false"/>
+<entry key="inclMissingVals" type="xboolean" value="false"/>
+<entry key="aggregationMethod" type="xstring" value="Maximum"/>
+</config>
+<config key="f_1">
+<entry key="inputPattern" type="xstring" value="PG.Normalised (Max*)+*"/>
+<entry key="isRegularExpression" type="xboolean" value="false"/>
+<entry key="inclMissingVals" type="xboolean" value="false"/>
+<entry key="aggregationMethod" type="xstring" value="Maximum"/>
+</config>
+<config key="f_2">
+<entry key="inputPattern" type="xstring" value="PG.MaxLFQ (Max*)+*"/>
+<entry key="isRegularExpression" type="xboolean" value="false"/>
+<entry key="inclMissingVals" type="xboolean" value="false"/>
+<entry key="aggregationMethod" type="xstring" value="Maximum"/>
+</config>
+<config key="f_3">
+<entry key="inputPattern" type="xstring" value="Proteotypic (Min*)+*"/>
+<entry key="isRegularExpression" type="xboolean" value="false"/>
+<entry key="inclMissingVals" type="xboolean" value="false"/>
+<entry key="aggregationMethod" type="xstring" value="Sum_V2.5.2"/>
+</config>
+</config>
+<config key="dataTypeAggregators"/>
+<config key="columnNamePolicy_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="columnNamePolicy" type="xstring" value="Column name (aggregation method)"/>
+<config key="retainOrder_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="retainOrder" type="xboolean" value="false"/>
+<config key="inMemory_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="inMemory" type="xboolean" value="false"/>
+<config key="valueDelimiter_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="valueDelimiter" type="xstring" value=";"/>
+<config key="nodeVersion_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="nodeVersion" type="xint" value="1"/>
+<entry key="typeMatch" type="xbyte" value="0"/>
+</config>
+<config key="nodeAnnotation">
+<entry key="text" type="xstring" value="grouping on the %%00010PG level"/>
+<entry key="bgcolor" type="xint" value="16777215"/>
+<entry key="x-coordinate" type="xint" value="69"/>
+<entry key="y-coordinate" type="xint" value="379"/>
+<entry key="width" type="xint" value="142"/>
+<entry key="height" type="xint" value="34"/>
+<entry key="alignment" type="xstring" value="CENTER"/>
+<entry key="borderSize" type="xint" value="0"/>
+<entry key="borderColor" type="xint" value="16777215"/>
+<entry key="defFontSize" type="xint" value="10"/>
+<entry key="annotation-version" type="xint" value="20151123"/>
+<config key="styles"/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="IDLE"/>
+<entry key="factory" type="xstring" value="org.knime.base.node.preproc.groupby.GroupByNodeFactory"/>
+<entry key="node-name" type="xstring" value="GroupBy"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-bundle-version" type="xstring" value="4.1.3.v202005112252"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Core"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-feature-version" type="xstring" value="4.1.3.v202005121100"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="GroupBy"/>
+<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+</config>
+</config>
