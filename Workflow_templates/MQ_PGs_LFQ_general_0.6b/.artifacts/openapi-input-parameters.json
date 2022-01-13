@@ -1,0 +1,4660 @@
+
+{
+    "type": "object",
+    "properties": {
+        "column-filter-956:291:281:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity 1-1_1_log2"
+                    }
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity 1-1_1_log2",
+                    "Intensity 1-1_2_log2",
+                    "Intensity 1-1_3_log2",
+                    "Intensity 10-1_1_log2",
+                    "Intensity 10-1_2_log2",
+                    "Intensity 10-1_3_log2",
+                    "Intensity 100-1_1_log2",
+                    "Intensity 100-1_2_log2",
+                    "Intensity 100-1_3_log2"
+                ]
+            }
+        },
+        "double-input-956:293:294:444": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "double-input-956:292:288:430": {
+            "type": "number",
+            "default": 0.0,
+            "description": "value that will be used as a center to color individual cluster data",
+            "example": 0.0
+        },
+        "boolean-input-956:291:284:487": {
+            "type": "boolean",
+            "default": "true",
+            "description": "plot 'x-y' (M) on '(x+y)/2' (A) instead of 'y' on 'x'?",
+            "example": true
+        },
+        "boolean-input-943:960:328": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to use manually set y axis limits (ckecked) or use automatic limits (unchecked)",
+            "example": false
+        },
+        "column-filter-956:309:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity WT_1_log2"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity WT_1_log2",
+                    "Intensity WT_2_log2",
+                    "Intensity WT_3_log2",
+                    "Intensity WT_4_log2",
+                    "Intensity KO_1_log2",
+                    "Intensity KO_2_log2",
+                    "Intensity KO_3_log2",
+                    "Intensity KO_4_log2"
+                ]
+            }
+        },
+        "string-input-956:290:259": {
+            "type": "string",
+            "default": "Intensity (log2)",
+            "description": "how the graph y axis should be titled",
+            "example": "Intensity (log2)"
+        },
+        "boolean-input-943:960:326": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to use manually set x axis limits (ckecked) or use automatic limits (unchecked)",
+            "example": false
+        },
+        "string-input-956:300:292:409": {
+            "type": "string",
+            "default": "normalized data - MaxLFQ",
+            "description": "additional information that should be present as the graph subtitle",
+            "example": "normalized data - MaxLFQ"
+        },
+        "string-input-956:290:258": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled",
+            "example": ""
+        },
+        "boolean-input-956:291:283:435": {
+            "type": "boolean",
+            "default": "true",
+            "description": "whether to show or not the raw values in each heatmap cell",
+            "example": true
+        },
+        "string-input-943:962:274:489": {
+            "type": "string",
+            "default": "None",
+            "description": "limits of x axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "None"
+        },
+        "double-input-943:959:316": {
+            "type": "number",
+            "default": 0.001,
+            "description": "number that should be used instead of zero p value to compute -log value; if it will be 0, cases with zero p value will not be plotted",
+            "example": 0.001
+        },
+        "string-input-956:290:260": {
+            "type": "string",
+            "default": "normalized data - median",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "normalized data - median"
+        },
+        "string-input-943:962:274:494": {
+            "type": "string",
+            "default": "",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": ""
+        },
+        "string-input-943:962:274:493": {
+            "type": "string",
+            "default": "",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": ""
+        },
+        "string-input-943:962:274:492": {
+            "type": "string",
+            "default": "None",
+            "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "None"
+        },
+        "double-input-956:291:283:430": {
+            "type": "number",
+            "default": 0.0,
+            "description": "value that will be used as a center to color individual cluster data",
+            "example": 0.0
+        },
+        "single-selection-956:312:258": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "vsn"
+                }
+            },
+            "description": "normalization method that should be used",
+            "example": {
+                "variable_value": "vsn"
+            }
+        },
+        "boolean-input-956:290:285:412": {
+            "type": "boolean",
+            "default": "true",
+            "description": "whether to show unity line (x=y) or not",
+            "example": true
+        },
+        "boolean-input-956:292:290:487": {
+            "type": "boolean",
+            "default": "false",
+            "description": "plot 'x-y' (M) on '(x+y)/2' (A) instead of 'y' on 'x'?",
+            "example": false
+        },
+        "logFC_threshold-943:937:317": {
+            "type": "number",
+            "default": 1.0,
+            "description": "absolute threshold on axis x (logFC) that will be used for volcano plot points categorization, visualization and summary; value of same type as logFC column should be used (e.g. log2 transformed ratio)",
+            "example": 1.0
+        },
+        "string-input-956:297:295:482": {
+            "type": "string",
+            "default": "None",
+            "description": "enter the value for imputation of missing values; default value is \"None\" for no imputation",
+            "example": "None"
+        },
+        "boolean-input-956:293:295:487": {
+            "type": "boolean",
+            "default": "true",
+            "description": "plot 'x-y' (M) on '(x+y)/2' (A) instead of 'y' on 'x'?",
+            "example": true
+        },
+        "column-filter-956:310:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity WT_1_log2"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity WT_1_log2",
+                    "Intensity WT_2_log2",
+                    "Intensity WT_3_log2",
+                    "Intensity WT_4_log2",
+                    "Intensity KO_1_log2",
+                    "Intensity KO_2_log2",
+                    "Intensity KO_3_log2",
+                    "Intensity KO_4_log2"
+                ]
+            }
+        },
+        "string-input-956:297:294:439": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2_norm"
+        },
+        "double-input-956:297:292:430": {
+            "type": "number",
+            "default": 0.0,
+            "description": "value that will be used as a center to color individual cluster data",
+            "example": 0.0
+        },
+        "boolean-input-943:959:326": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to use manually set x axis limits (ckecked) or use automatic limits (unchecked)",
+            "example": false
+        },
+        "string-input-956:300:259": {
+            "type": "string",
+            "default": "LFQ intensity (log2)",
+            "description": "how the graph y axis should be titled",
+            "example": "LFQ intensity (log2)"
+        },
+        "boolean-input-943:959:328": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to use manually set y axis limits (ckecked) or use automatic limits (unchecked)",
+            "example": false
+        },
+        "string-input-956:300:293:441": {
+            "type": "string",
+            "default": "8;6",
+            "description": "set figure size in inches (format: \"width;height\"); default size is \"8;6\"",
+            "example": "8;6"
+        },
+        "string-input-956:297:294:438": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "boolean-input-956:293:294:328": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to use manually set y axis limits (checked) or use automatic limits (unchecked)",
+            "example": false
+        },
+        "double-input-943:960:316": {
+            "type": "number",
+            "default": 0.001,
+            "description": "number that should be used instead of zero p value to compute -log value; if it will be 0, cases with zero p value will not be plotted",
+            "example": 0.001
+        },
+        "boolean-input-956:292:288:435": {
+            "type": "boolean",
+            "default": "true",
+            "description": "whether to show or not the raw values in each heatmap cell",
+            "example": true
+        },
+        "string-input-956:291:285:438": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "string-input-956:300:293:438": {
+            "type": "string",
+            "default": "LFQ intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "LFQ intensity "
+        },
+        "string-input-956:300:258": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled",
+            "example": ""
+        },
+        "boolean-input-956:312:276": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "string-input-956:300:293:439": {
+            "type": "string",
+            "default": "_log2",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2"
+        },
+        "column-filter-956:290:283:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity WT_1_log2_norm"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity WT_1_log2_norm",
+                    "Intensity WT_2_log2_norm",
+                    "Intensity WT_3_log2_norm",
+                    "Intensity WT_4_log2_norm",
+                    "Intensity KO_1_log2_norm",
+                    "Intensity KO_2_log2_norm",
+                    "Intensity KO_3_log2_norm",
+                    "Intensity KO_4_log2_norm"
+                ]
+            }
+        },
+        "column-filter-956:300:296:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "LFQ intensity 1-1_1_log2"
+                    }
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                    "LFQ intensity 1-1_1_log2",
+                    "LFQ intensity 1-1_2_log2",
+                    "LFQ intensity 1-1_3_log2",
+                    "LFQ intensity 10-1_1_log2",
+                    "LFQ intensity 10-1_2_log2",
+                    "LFQ intensity 10-1_3_log2",
+                    "LFQ intensity 100-1_1_log2",
+                    "LFQ intensity 100-1_2_log2",
+                    "LFQ intensity 100-1_3_log2"
+                ]
+            }
+        },
+        "single-selection-956:293:293:436": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "cityblock"
+                }
+            },
+            "description": "select the distance metric for cluster analysis",
+            "example": {
+                "variable_value": "cityblock"
+            }
+        },
+        "single-selection-956:293:293:437": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "average"
+                }
+            },
+            "description": "select the clustering method used during cluster analysis",
+            "example": {
+                "variable_value": "average"
+            }
+        },
+        "single-line-943:958:308": {
+            "type": "string",
+            "default": "ten,ten,ten,one,one,one",
+            "description": "provide design for limma test - order of columns based on sample type",
+            "example": "ten,ten,ten,one,one,one"
+        },
+        "string-input-956:297:295:492": {
+            "type": "string",
+            "default": "-7;7",
+            "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "-7;7"
+        },
+        "string-input-956:297:295:493": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "single-selection-956:291:283:423": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "RdBu"
+                }
+            },
+            "description": "what colormap (palette) should be used for clustermap",
+            "example": {
+                "variable_value": "RdBu"
+            }
+        },
+        "boolean-input-948:850": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns; checked -> dataframe of processed columns will be returned only together with the input table 1 (top) IDs column",
+            "example": false
+        },
+        "string-input-956:297:295:494": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2_norm"
+        },
+        "string-input-956:297:294:329": {
+            "type": "string",
+            "default": "-10;10",
+            "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
+            "example": "-10;10"
+        },
+        "int-input-956:291:284:495": {
+            "type": "integer",
+            "default": 250,
+            "description": "set height of individual plot in pixels (aspect ratio is set to 1); default value is 250",
+            "example": 250
+        },
+        "string-input-956:290:282:489": {
+            "type": "string",
+            "default": "None",
+            "description": "limits of x axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "None"
+        },
+        "single-selection-943:962:261": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "count"
+                }
+            },
+            "description": "sets the violin plot scale settings\n- count - violin plot scale (width) will reflect the number of values\n- width - all violin graphs will have the same width irrespective the number of values",
+            "example": {
+                "variable_value": "count"
+            }
+        },
+        "string-input-956:290:282:482": {
+            "type": "string",
+            "default": "15",
+            "description": "enter the value for imputation of missing values; default value is \"None\" for no imputation",
+            "example": "15"
+        },
+        "string-input-956:293:295:409": {
+            "type": "string",
+            "default": "normalized data - loessF",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "normalized data - loessF"
+        },
+        "column-filter-943:962:961:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "LIMMA_MJ_DRG-MJ_CTR.logFC"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "LIMMA_MJ_DRG-MJ_CTR.logFC",
+                    "LIMMA_MJ_DRG-MJ_DRG_MEKi.logFC",
+                    "LIMMA_MJ_CTR-MJ_MEKi.logFC",
+                    "LIMMA_A375_DRG-A375_CTR.logFC",
+                    "LIMMA_A375_DRG-A375_DRG_MEKi.logFC",
+                    "LIMMA_A375_CTR-A375_MEKi.logFC"
+                ]
+            }
+        },
+        "double-input-956:293:444": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "column-selection-943:959:295": {
+            "type": "object",
+            "properties": {
+                "column": {
+                    "type": "string",
+                    "default": "LIMMA_A375_CTR-A375_MEKi.logFC"
+                }
+            },
+            "description": "select the column with logged fold changes to be plotted",
+            "example": {
+                "column": "LIMMA_A375_CTR-A375_MEKi.logFC"
+            }
+        },
+        "boolean-input-956:292:328": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to use manually set y axis limits (checked) or use automatic limits (unchecked)",
+            "example": false
+        },
+        "single-selection-956:292:288:436": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "euclidean"
+                }
+            },
+            "description": "select the distance metric for cluster analysis",
+            "example": {
+                "variable_value": "euclidean"
+            }
+        },
+        "column-selection-943:959:297": {
+            "type": "object",
+            "properties": {
+                "column": {
+                    "type": "string",
+                    "default": "LIMMA_A375_CTR-A375_MEKi.adj.P.Val"
+                }
+            },
+            "description": "select the column with p-value or adj.P value",
+            "example": {
+                "column": "LIMMA_A375_CTR-A375_MEKi.adj.P.Val"
+            }
+        },
+        "single-selection-956:292:288:437": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "average"
+                }
+            },
+            "description": "select the clustering method used during cluster analysis",
+            "example": {
+                "variable_value": "average"
+            }
+        },
+        "boolean-input-956:292:288:429": {
+            "type": "boolean",
+            "default": "true",
+            "description": "unchecked - clustermap interval and center will be based on the calculated correlation coefficients; checked - entered value will be used as the center",
+            "example": true
+        },
+        "column-filter-956:293:292:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity WT_1_log2_norm"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity WT_1_log2_norm",
+                    "Intensity WT_2_log2_norm",
+                    "Intensity WT_3_log2_norm",
+                    "Intensity WT_4_log2_norm",
+                    "Intensity KO_1_log2_norm",
+                    "Intensity KO_2_log2_norm",
+                    "Intensity KO_3_log2_norm",
+                    "Intensity KO_4_log2_norm"
+                ]
+            }
+        },
+        "string-input-956:300:260": {
+            "type": "string",
+            "default": "normalized data - MaxLFQ",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "normalized data - MaxLFQ"
+        },
+        "string-input-956:297:295:489": {
+            "type": "string",
+            "default": "None",
+            "description": "limits of x axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "None"
+        },
+        "single-selection-956:291:283:437": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "average"
+                }
+            },
+            "description": "select the clustering method used during cluster analysis",
+            "example": {
+                "variable_value": "average"
+            }
+        },
+        "single-selection-956:291:283:436": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "euclidean"
+                }
+            },
+            "description": "select the distance metric for cluster analysis",
+            "example": {
+                "variable_value": "euclidean"
+            }
+        },
+        "boolean-input-943:959:306": {
+            "type": "boolean",
+            "default": "true",
+            "description": "apply additional -log10 transformation on p-value column?",
+            "example": true
+        },
+        "boolean-input-956:291:283:429": {
+            "type": "boolean",
+            "default": "true",
+            "description": "unchecked - clustermap interval and center will be based on the calculated correlation coefficients; checked - entered value will be used as the center",
+            "example": true
+        },
+        "string-input-956:290:282:494": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2_norm"
+        },
+        "string-input-956:290:282:493": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "string-input-956:290:282:492": {
+            "type": "string",
+            "default": "None",
+            "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "None"
+        },
+        "boolean-input-948:849": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to return only set of unique values instead of full list of values including duplicates; beware that the order of returned values will not correspond to the IDs order in the top table IDs column!",
+            "example": false
+        },
+        "string-input-943:962:274:482": {
+            "type": "string",
+            "default": "None",
+            "description": "enter the value for imputation of missing values; default value is \"None\" for no imputation",
+            "example": "None"
+        },
+        "single-selection-956:292:288:423": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "RdBu"
+                }
+            },
+            "description": "what colormap (palette) should be used for clustermap",
+            "example": {
+                "variable_value": "RdBu"
+            }
+        },
+        "single-selection-956:293:443": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "the name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        },
+        "boolean-input-948:848": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to remove empty strings from the returned list of looked up values; beware that the order of returned values will not correspond to the IDs order in the top table IDs column!",
+            "example": false
+        },
+        "single-selection-956:291:285:261": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "width"
+                }
+            },
+            "description": "sets the violin plot scale settings\n- count - violin plot scale (width) will reflect the number of values\n- width - all violin graphs will have the same width irrespective the number of values",
+            "example": {
+                "variable_value": "width"
+            }
+        },
+        "single-selection-956:297:294:261": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "width"
+                }
+            },
+            "description": "sets the violin plot scale settings\n- count - violin plot scale (width) will reflect the number of values\n- width - all violin graphs will have the same width irrespective the number of values",
+            "example": {
+                "variable_value": "width"
+            }
+        },
+        "single-selection-956:297:292:419": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "pearson"
+                }
+            },
+            "description": "select the method used for correlation of data columns",
+            "example": {
+                "variable_value": "pearson"
+            }
+        },
+        "string-input-956:300:329": {
+            "type": "string",
+            "default": "-10;10",
+            "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
+            "example": "-10;10"
+        },
+        "single-selection-956:311:258": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "loess (fast)"
+                }
+            },
+            "description": "normalization method that should be used",
+            "example": {
+                "variable_value": "loess (fast)"
+            }
+        },
+        "P_threshold-943:959:318": {
+            "type": "number",
+            "default": 0.05,
+            "description": "y axis (P (or adj. P) value) threshold that will be used for volcano plot points categorization, visualization and summary; not log transformed value should be provided, e.g. 0.05",
+            "example": 0.05
+        },
+        "single-selection-956:290:284:436": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "cityblock"
+                }
+            },
+            "description": "select the distance metric for cluster analysis",
+            "example": {
+                "variable_value": "cityblock"
+            }
+        },
+        "single-selection-956:290:284:437": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "average"
+                }
+            },
+            "description": "select the clustering method used during cluster analysis",
+            "example": {
+                "variable_value": "average"
+            }
+        },
+        "string-input-947:649": {
+            "type": "string",
+            "default": "",
+            "description": "column names as strings with comma \",\" used as a delimiter; eg. genes,entry name,interactor; if empty, column names retrieved from uniprot will be used",
+            "example": ""
+        },
+        "string-input-943:962:961:260": {
+            "type": "string",
+            "default": "logFC from LIMMA tests - all tests",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "logFC from LIMMA tests - all tests"
+        },
+        "string-input-947:647": {
+            "type": "string",
+            "default": "id,entry name,reviewed,protein names,genes(PREFERRED),organism,go,go(biological process),go(molecular function),go(cellular component),go-id,comment(SUBCELLULAR LOCATION),families,interactor,sequence,database(InterPro),database(Pfam),database(IntAct)",
+            "description": "list of columns to retrieve from uniprot via their API provided as a list separated by comma \",\".\n(you can use whitespaces, they are replaced by %20 later with string replacer node)",
+            "example": "id,entry name,reviewed,protein names,genes(PREFERRED),organism,go,go(biological process),go(molecular function),go(cellular component),go-id,comment(SUBCELLULAR LOCATION),families,interactor,sequence,database(InterPro),database(Pfam),database(IntAct)"
+        },
+        "string-input-947:648": {
+            "type": "string",
+            "default": "Protein ID",
+            "description": "column name to set for proteinID column after processing input column with protein ids",
+            "example": "Protein ID"
+        },
+        "string-input-947:645": {
+            "type": "string",
+            "default": "",
+            "description": "common prefix to be removed from all accessions, letters size matters; leave empty for no removal",
+            "example": ""
+        },
+        "single-selection-956:292:288:419": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "pearson"
+                }
+            },
+            "description": "select the method used for correlation of data columns",
+            "example": {
+                "variable_value": "pearson"
+            }
+        },
+        "string-input-947:646": {
+            "type": "string",
+            "default": "",
+            "description": "common suffix to be removed from all accessions, letters size matters; leave empty for no removal",
+            "example": ""
+        },
+        "string-input-956:293:296:489": {
+            "type": "string",
+            "default": "None",
+            "description": "limits of x axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "None"
+        },
+        "column-selection-943:937:297": {
+            "type": "object",
+            "properties": {
+                "column": {
+                    "type": "string",
+                    "default": "LIMMA_MJ_DRG-MJ_CTR.adj.P.Val"
+                }
+            },
+            "description": "select the column with p-value or adj.P value",
+            "example": {
+                "column": "LIMMA_MJ_DRG-MJ_CTR.adj.P.Val"
+            }
+        },
+        "string-input-956:300:292:438": {
+            "type": "string",
+            "default": "LFQ intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "LFQ intensity "
+        },
+        "string-input-947:629": {
+            "type": "string",
+            "default": ";",
+            "description": "delimiter used to divide individual IDs in Protein IDs column",
+            "example": ";"
+        },
+        "string-input-956:300:292:439": {
+            "type": "string",
+            "default": "_log2",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2"
+        },
+        "single-selection-956:292:289:443": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "the name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        },
+        "column-selection-943:937:295": {
+            "type": "object",
+            "properties": {
+                "column": {
+                    "type": "string",
+                    "default": "LIMMA_MJ_DRG-MJ_CTR.logFC"
+                }
+            },
+            "description": "select the column with logged fold changes to be plotted",
+            "example": {
+                "column": "LIMMA_MJ_DRG-MJ_CTR.logFC"
+            }
+        },
+        "column-filter-956:297:296:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity 1-1_1_log2_norm"
+                    }
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity 1-1_1_log2_norm",
+                    "Intensity 1-1_2_log2_norm",
+                    "Intensity 1-1_3_log2_norm",
+                    "Intensity 10-1_1_log2_norm",
+                    "Intensity 10-1_2_log2_norm",
+                    "Intensity 10-1_3_log2_norm",
+                    "Intensity 100-1_1_log2_norm",
+                    "Intensity 100-1_2_log2_norm",
+                    "Intensity 100-1_3_log2_norm"
+                ]
+            }
+        },
+        "single-selection-956:297:292:423": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "RdBu"
+                }
+            },
+            "description": "what colormap (palette) should be used for clustermap",
+            "example": {
+                "variable_value": "RdBu"
+            }
+        },
+        "string-input-956:293:296:482": {
+            "type": "string",
+            "default": "15",
+            "description": "enter the value for imputation of missing values; default value is \"None\" for no imputation",
+            "example": "15"
+        },
+        "P_threshold-943:960:318": {
+            "type": "number",
+            "default": 0.01,
+            "description": "y axis (P (or adj. P) value) threshold that will be used for volcano plot points categorization, visualization and summary; not log transformed value should be provided, e.g. 0.05",
+            "example": 0.01
+        },
+        "column-filter-956:291:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array"
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                ]
+            }
+        },
+        "single-selection-956:290:286:261": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "width"
+                }
+            },
+            "description": "sets the violin plot scale settings\n- count - violin plot scale (width) will reflect the number of values\n- width - all violin graphs will have the same width irrespective the number of values",
+            "example": {
+                "variable_value": "width"
+            }
+        },
+        "string-input-943:962:961:258": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled",
+            "example": ""
+        },
+        "string-input-956:292:291:409": {
+            "type": "string",
+            "default": "normalized data - quantile",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "normalized data - quantile"
+        },
+        "string-input-943:962:961:259": {
+            "type": "string",
+            "default": "fold-change (log2)",
+            "description": "how the graph y axis should be titled",
+            "example": "fold-change (log2)"
+        },
+        "column-filter-956:300:295:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "LFQ intensity 1-1_1_log2"
+                    }
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                    "LFQ intensity 1-1_1_log2",
+                    "LFQ intensity 1-1_2_log2",
+                    "LFQ intensity 1-1_3_log2",
+                    "LFQ intensity 10-1_1_log2",
+                    "LFQ intensity 10-1_2_log2",
+                    "LFQ intensity 10-1_3_log2",
+                    "LFQ intensity 100-1_1_log2",
+                    "LFQ intensity 100-1_2_log2",
+                    "LFQ intensity 100-1_3_log2"
+                ]
+            }
+        },
+        "int-input-956:292:290:495": {
+            "type": "integer",
+            "default": 250,
+            "description": "set height of individual plot in pixels (aspect ratio is set to 1); default value is 250",
+            "example": 250
+        },
+        "boolean-input-956:290:286:328": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to use manually set y axis limits (checked) or use automatic limits (unchecked)",
+            "example": false
+        },
+        "column-filter-956:290:282:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity 1-1_1_log2_norm"
+                    }
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity 1-1_1_log2_norm",
+                    "Intensity 1-1_2_log2_norm",
+                    "Intensity 1-1_3_log2_norm",
+                    "Intensity 10-1_1_log2_norm",
+                    "Intensity 10-1_2_log2_norm",
+                    "Intensity 10-1_3_log2_norm",
+                    "Intensity 100-1_1_log2_norm",
+                    "Intensity 100-1_2_log2_norm",
+                    "Intensity 100-1_3_log2_norm"
+                ]
+            }
+        },
+        "column-filter-956:311:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity WT_1_log2"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity WT_1_log2",
+                    "Intensity WT_2_log2",
+                    "Intensity WT_3_log2",
+                    "Intensity WT_4_log2",
+                    "Intensity KO_1_log2",
+                    "Intensity KO_2_log2",
+                    "Intensity KO_3_log2",
+                    "Intensity KO_4_log2"
+                ]
+            }
+        },
+        "boolean-input-956:292:291:487": {
+            "type": "boolean",
+            "default": "true",
+            "description": "plot 'x-y' (M) on '(x+y)/2' (A) instead of 'y' on 'x'?",
+            "example": true
+        },
+        "string-input-956:300:292:441": {
+            "type": "string",
+            "default": "Auto",
+            "description": "set figure size in inches (format: \"width;height\"); for automatic size value use \"Auto\"; default size is \"10;10\"",
+            "example": "Auto"
+        },
+        "single-selection-956:297:292:436": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "euclidean"
+                }
+            },
+            "description": "select the distance metric for cluster analysis",
+            "example": {
+                "variable_value": "euclidean"
+            }
+        },
+        "single-selection-956:297:292:437": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "average"
+                }
+            },
+            "description": "select the clustering method used during cluster analysis",
+            "example": {
+                "variable_value": "average"
+            }
+        },
+        "string-input-956:292:290:409": {
+            "type": "string",
+            "default": "normalized data - quantile",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "normalized data - quantile"
+        },
+        "column-filter-956:292:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array"
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                ]
+            }
+        },
+        "boolean-input-943:960:306": {
+            "type": "boolean",
+            "default": "true",
+            "description": "apply additional -log10 transformation on p-value column?",
+            "example": true
+        },
+        "column-filter-956:293:293:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity WT_1_log2_norm"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity WT_1_log2_norm",
+                    "Intensity WT_2_log2_norm",
+                    "Intensity WT_3_log2_norm",
+                    "Intensity WT_4_log2_norm",
+                    "Intensity KO_1_log2_norm",
+                    "Intensity KO_2_log2_norm",
+                    "Intensity KO_3_log2_norm",
+                    "Intensity KO_4_log2_norm"
+                ]
+            }
+        },
+        "string-input-956:293:296:492": {
+            "type": "string",
+            "default": "None",
+            "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "None"
+        },
+        "string-input-956:293:296:493": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "string-input-956:293:296:494": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2_norm"
+        },
+        "double-input-956:290:286:444": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "string-input-956:297:260": {
+            "type": "string",
+            "default": "normalized data - vsn",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "normalized data - vsn"
+        },
+        "single-selection-956:293:294:443": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "the name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        },
+        "string-input-956:297:294:258": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled",
+            "example": ""
+        },
+        "single-selection-956:291:281:411": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "none"
+                }
+            },
+            "description": "whether to show linear or lowess regression curve, default is \"none\" for no regression line",
+            "example": {
+                "variable_value": "none"
+            }
+        },
+        "column-selection-943:960:297": {
+            "type": "object",
+            "properties": {
+                "column": {
+                    "type": "string",
+                    "default": "LIMMA_A375_CTR-A375_MEKi.P.Value"
+                }
+            },
+            "description": "select the column with p-value or adj.P value",
+            "example": {
+                "column": "LIMMA_A375_CTR-A375_MEKi.P.Value"
+            }
+        },
+        "column-selection-943:960:295": {
+            "type": "object",
+            "properties": {
+                "column": {
+                    "type": "string",
+                    "default": "LIMMA_A375_CTR-A375_MEKi.logFC"
+                }
+            },
+            "description": "select the column with logged fold changes to be plotted",
+            "example": {
+                "column": "LIMMA_A375_CTR-A375_MEKi.logFC"
+            }
+        },
+        "boolean-input-956:293:292:429": {
+            "type": "boolean",
+            "default": "true",
+            "description": "unchecked - clustermap interval and center will be based on the calculated correlation coefficients; checked - entered value will be used as the center",
+            "example": true
+        },
+        "boolean-input-956:293:328": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to use manually set y axis limits (checked) or use automatic limits (unchecked)",
+            "example": false
+        },
+        "boolean-input-943:937:326": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to use manually set x axis limits (ckecked) or use automatic limits (unchecked)",
+            "example": false
+        },
+        "boolean-input-943:937:328": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to use manually set y axis limits (ckecked) or use automatic limits (unchecked)",
+            "example": false
+        },
+        "string-input-956:300:294:260": {
+            "type": "string",
+            "default": "normalized data - MaxLFQ",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "normalized data - MaxLFQ"
+        },
+        "single-selection-956:290:283:419": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "pearson"
+                }
+            },
+            "description": "select the method used for correlation of data columns",
+            "example": {
+                "variable_value": "pearson"
+            }
+        },
+        "string-input-956:297:294:259": {
+            "type": "string",
+            "default": "Intensity (log2)",
+            "description": "how the graph y axis should be titled",
+            "example": "Intensity (log2)"
+        },
+        "boolean-input-956:293:292:435": {
+            "type": "boolean",
+            "default": "true",
+            "description": "whether to show or not the raw values in each heatmap cell",
+            "example": true
+        },
+        "boolean-input-956:291:284:412": {
+            "type": "boolean",
+            "default": "true",
+            "description": "whether to show unity line (x=y) or not",
+            "example": true
+        },
+        "single-selection-956:291:282:436": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "cityblock"
+                }
+            },
+            "description": "select the distance metric for cluster analysis",
+            "example": {
+                "variable_value": "cityblock"
+            }
+        },
+        "string-input-956:297:294:260": {
+            "type": "string",
+            "default": "normalized data - vsn",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "normalized data - vsn"
+        },
+        "string-input-956:300:294:258": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled",
+            "example": ""
+        },
+        "single-selection-956:300:296:411": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "none"
+                }
+            },
+            "description": "whether to show linear or lowess regression curve, default is \"none\" for no regression line",
+            "example": {
+                "variable_value": "none"
+            }
+        },
+        "string-input-956:300:294:259": {
+            "type": "string",
+            "default": "LFQ intensity (log2)",
+            "description": "how the graph y axis should be titled",
+            "example": "LFQ intensity (log2)"
+        },
+        "single-selection-956:291:282:437": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "average"
+                }
+            },
+            "description": "select the clustering method used during cluster analysis",
+            "example": {
+                "variable_value": "average"
+            }
+        },
+        "string-input-956:297:258": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled",
+            "example": ""
+        },
+        "string-input-956:297:259": {
+            "type": "string",
+            "default": "Intensity (log2)",
+            "description": "how the graph y axis should be titled",
+            "example": "Intensity (log2)"
+        },
+        "boolean-input-956:291:285:328": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to use manually set y axis limits (checked) or use automatic limits (unchecked)",
+            "example": false
+        },
+        "int-input-956:293:296:495": {
+            "type": "integer",
+            "default": 250,
+            "description": "set height of individual plot in pixels (aspect ratio is set to 1); default value is 250",
+            "example": 250
+        },
+        "string-input-956:291:281:489": {
+            "type": "string",
+            "default": "None",
+            "description": "limits of x axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "None"
+        },
+        "single-selection-956:290:283:423": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "RdBu"
+                }
+            },
+            "description": "what colormap (palette) should be used for clustermap",
+            "example": {
+                "variable_value": "RdBu"
+            }
+        },
+        "boolean-input-956:292:290:412": {
+            "type": "boolean",
+            "default": "true",
+            "description": "whether to show unity line (x=y) or not",
+            "example": true
+        },
+        "string-input-956:291:281:482": {
+            "type": "string",
+            "default": "15",
+            "description": "enter the value for imputation of missing values; default value is \"None\" for no imputation",
+            "example": "15"
+        },
+        "single-selection-956:300:295:411": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "lowess"
+                }
+            },
+            "description": "whether to show linear or lowess regression curve, default is \"none\" for no regression line",
+            "example": {
+                "variable_value": "lowess"
+            }
+        },
+        "double-input-956:293:292:430": {
+            "type": "number",
+            "default": 0.0,
+            "description": "value that will be used as a center to color individual cluster data",
+            "example": 0.0
+        },
+        "column-filter-943:962:274:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "LIMMA_MJ_DRG-MJ_CTR.logFC"
+                    }
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                    "LIMMA_MJ_DRG-MJ_CTR.logFC",
+                    "LIMMA_MJ_DRG-MJ_DRG_MEKi.logFC",
+                    "LIMMA_MJ_CTR-MJ_MEKi.logFC",
+                    "LIMMA_A375_DRG-A375_CTR.logFC",
+                    "LIMMA_A375_DRG-A375_DRG_MEKi.logFC",
+                    "LIMMA_A375_CTR-A375_MEKi.logFC"
+                ]
+            }
+        },
+        "single-selection-956:292:261": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "count"
+                }
+            },
+            "description": "sets the violin plot scale settings\n- count - violin plot scale (width) will reflect the number of values\n- width - all violin graphs will have the same width irrespective the number of values",
+            "example": {
+                "variable_value": "count"
+            }
+        },
+        "column-selection-943:938:297": {
+            "type": "object",
+            "properties": {
+                "column": {
+                    "type": "string",
+                    "default": "LIMMA_MJ_DRG-MJ_CTR.P.Value"
+                }
+            },
+            "description": "select the column with p-value or adj.P value",
+            "example": {
+                "column": "LIMMA_MJ_DRG-MJ_CTR.P.Value"
+            }
+        },
+        "column-filter-956:290:285:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity 1-1_1_log2_norm"
+                    }
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity 1-1_1_log2_norm",
+                    "Intensity 1-1_2_log2_norm",
+                    "Intensity 1-1_3_log2_norm",
+                    "Intensity 10-1_1_log2_norm",
+                    "Intensity 10-1_2_log2_norm",
+                    "Intensity 10-1_3_log2_norm",
+                    "Intensity 100-1_1_log2_norm",
+                    "Intensity 100-1_2_log2_norm",
+                    "Intensity 100-1_3_log2_norm"
+                ]
+            }
+        },
+        "column-selection-943:938:295": {
+            "type": "object",
+            "properties": {
+                "column": {
+                    "type": "string",
+                    "default": "LIMMA_MJ_DRG-MJ_CTR.logFC"
+                }
+            },
+            "description": "select the column with logged fold changes to be plotted",
+            "example": {
+                "column": "LIMMA_MJ_DRG-MJ_CTR.logFC"
+            }
+        },
+        "boolean-input-956:300:292:435": {
+            "type": "boolean",
+            "default": "true",
+            "description": "whether to show or not the raw values in each heatmap cell",
+            "example": true
+        },
+        "single-selection-943:958:907": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "no"
+                }
+            },
+            "description": "whether to use only cases quantified in at least specified number of replicates in at least one sample, i.e. whether to filter out cases where there is lower number of replicates quantified (as per the \"Limma design\" box) than specified threshold(s); threshold can be set globally for all samples or for individual samples; threhold(s) should be set in the following box",
+            "example": {
+                "variable_value": "no"
+            }
+        },
+        "string-input-956:292:288:409": {
+            "type": "string",
+            "default": "normalized data - quantile",
+            "description": "additional information that should be present as the graph subtitle",
+            "example": "normalized data - quantile"
+        },
+        "column-filter-956:300:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "LFQ intensity WT_1_log2"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "LFQ intensity WT_1_log2",
+                    "LFQ intensity WT_2_log2",
+                    "LFQ intensity WT_3_log2",
+                    "LFQ intensity KO_1_log2",
+                    "LFQ intensity KO_2_log2",
+                    "LFQ intensity KO_3_log2"
+                ]
+            }
+        },
+        "single-selection-956:290:283:436": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "euclidean"
+                }
+            },
+            "description": "select the distance metric for cluster analysis",
+            "example": {
+                "variable_value": "euclidean"
+            }
+        },
+        "string-input-956:292:259": {
+            "type": "string",
+            "default": "Intensity (log2)",
+            "description": "how the graph y axis should be titled",
+            "example": "Intensity (log2)"
+        },
+        "string-input-943:938:327": {
+            "type": "string",
+            "default": "-10;10",
+            "description": "limits of x axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
+            "example": "-10;10"
+        },
+        "string-input-956:291:281:493": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "string-input-956:291:281:494": {
+            "type": "string",
+            "default": "_log2",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2"
+        },
+        "string-input-943:938:329": {
+            "type": "string",
+            "default": "-10;10",
+            "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
+            "example": "-10;10"
+        },
+        "single-selection-956:290:283:437": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "average"
+                }
+            },
+            "description": "select the clustering method used during cluster analysis",
+            "example": {
+                "variable_value": "average"
+            }
+        },
+        "boolean-input-943:962:328": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to use manually set y axis limits (checked) or use automatic limits (unchecked)",
+            "example": false
+        },
+        "string-input-956:292:258": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled",
+            "example": ""
+        },
+        "string-input-943:938:320": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled; column name will be used if blank",
+            "example": ""
+        },
+        "boolean-input-956:297:294:328": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to use manually set y axis limits (checked) or use automatic limits (unchecked)",
+            "example": false
+        },
+        "string-input-948:632": {
+            "type": "string",
+            "default": "",
+            "description": "suffix to add to added column names",
+            "example": ""
+        },
+        "string-input-943:938:321": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph y axis should be titled; column name will be used if blank",
+            "example": ""
+        },
+        "string-input-948:633": {
+            "type": "string",
+            "default": ";",
+            "description": "delimiter to be used to divide individual looked up values",
+            "example": ";"
+        },
+        "single-line-943:931:297": {
+            "type": "string",
+            "default": "LIMMA_",
+            "description": "enter LIMMA test name which will be used as computed column prefix to differentiate it from other tests if needed",
+            "example": "LIMMA_"
+        },
+        "single-selection-956:309:259": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "median"
+                }
+            },
+            "description": "what value from all columns should be used as a reference (e.g. maximal value)",
+            "example": {
+                "variable_value": "median"
+            }
+        },
+        "single-selection-956:309:258": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "median"
+                }
+            },
+            "description": "on what value within each data column the normalization should be done",
+            "example": {
+                "variable_value": "median"
+            }
+        },
+        "string-input-956:297:292:409": {
+            "type": "string",
+            "default": "normalized data - vsn",
+            "description": "additional information that should be present as the graph subtitle",
+            "example": "normalized data - vsn"
+        },
+        "string-input-956:292:260": {
+            "type": "string",
+            "default": "normalized data - quantile",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "normalized data - quantile"
+        },
+        "string-input-948:629": {
+            "type": "string",
+            "default": "",
+            "description": "prefix to add to added column names",
+            "example": ""
+        },
+        "single-selection-943:958:917": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "Benjamini & Hochberg"
+                }
+            },
+            "description": "select p-value adjustment method; method is used by p.adjust R function, see its documentation for more details",
+            "example": {
+                "variable_value": "Benjamini & Hochberg"
+            }
+        },
+        "string-input-956:293:295:489": {
+            "type": "string",
+            "default": "None",
+            "description": "limits of x axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "None"
+        },
+        "string-input-956:291:281:492": {
+            "type": "string",
+            "default": "None",
+            "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "None"
+        },
+        "string-input-956:293:295:482": {
+            "type": "string",
+            "default": "None",
+            "description": "enter the value for imputation of missing values; default value is \"None\" for no imputation",
+            "example": "None"
+        },
+        "string-input-956:290:284:259": {
+            "type": "string",
+            "default": "samples",
+            "description": "how the graph y axis should be titled",
+            "example": "samples"
+        },
+        "string-input-956:290:282:409": {
+            "type": "string",
+            "default": "normalized data - median",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "normalized data - median"
+        },
+        "string-input-956:290:284:258": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled",
+            "example": ""
+        },
+        "column-filter-956:293:294:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity WT_1_log2_norm"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity WT_1_log2_norm",
+                    "Intensity WT_2_log2_norm",
+                    "Intensity WT_3_log2_norm",
+                    "Intensity WT_4_log2_norm",
+                    "Intensity KO_1_log2_norm",
+                    "Intensity KO_2_log2_norm",
+                    "Intensity KO_3_log2_norm",
+                    "Intensity KO_4_log2_norm"
+                ]
+            }
+        },
+        "string-input-956:297:293:441": {
+            "type": "string",
+            "default": "8;6",
+            "description": "set figure size in inches (format: \"width;height\"); default size is \"8;6\"",
+            "example": "8;6"
+        },
+        "string-input-956:290:439": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2_norm"
+        },
+        "string-input-956:290:438": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "string-input-943:938:319": {
+            "type": "string",
+            "default": "",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": ""
+        },
+        "string-input-948:625": {
+            "type": "string",
+            "default": ";",
+            "description": "delimiter used to divide individual IDs in top Input table IDs column",
+            "example": ";"
+        },
+        "string-input-956:292:289:439": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2_norm"
+        },
+        "string-input-956:292:289:438": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "string-input-956:300:295:482": {
+            "type": "string",
+            "default": "None",
+            "description": "enter the value for imputation of missing values; default value is \"None\" for no imputation",
+            "example": "None"
+        },
+        "boolean-input-956:297:295:487": {
+            "type": "boolean",
+            "default": "true",
+            "description": "plot 'x-y' (M) on '(x+y)/2' (A) instead of 'y' on 'x'?",
+            "example": true
+        },
+        "string-input-956:297:295:409": {
+            "type": "string",
+            "default": "normalized data - vsn",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "normalized data - vsn"
+        },
+        "single-selection-956:291:443": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "the name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        },
+        "boolean-input-956:310:276": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "column-filter-956:293:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity WT_1_log2_norm"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity WT_1_log2_norm",
+                    "Intensity WT_2_log2_norm",
+                    "Intensity WT_3_log2_norm",
+                    "Intensity WT_4_log2_norm",
+                    "Intensity KO_1_log2_norm",
+                    "Intensity KO_2_log2_norm",
+                    "Intensity KO_3_log2_norm",
+                    "Intensity KO_4_log2_norm"
+                ]
+            }
+        },
+        "string-input-956:297:293:439": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2_norm"
+        },
+        "string-input-956:293:295:494": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2_norm"
+        },
+        "string-input-956:297:293:438": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "logFC_threshold-943:938:317": {
+            "type": "number",
+            "default": 1.0,
+            "description": "absolute threshold on axis x (logFC) that will be used for volcano plot points categorization, visualization and summary; value of same type as logFC column should be used (e.g. log2 transformed ratio)",
+            "example": 1.0
+        },
+        "string-input-956:293:295:492": {
+            "type": "string",
+            "default": "-7;7",
+            "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "-7;7"
+        },
+        "string-input-956:293:295:493": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "logFC_threshold-943:959:317": {
+            "type": "number",
+            "default": 1.0,
+            "description": "absolute threshold on axis x (logFC) that will be used for volcano plot points categorization, visualization and summary; value of same type as logFC column should be used (e.g. log2 transformed ratio)",
+            "example": 1.0
+        },
+        "string-input-956:290:329": {
+            "type": "string",
+            "default": "-10;10",
+            "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
+            "example": "-10;10"
+        },
+        "int-input-956:300:296:495": {
+            "type": "integer",
+            "default": 250,
+            "description": "set height of individual plot in pixels (aspect ratio is set to 1); default value is 250",
+            "example": 250
+        },
+        "single-selection-956:290:282:411": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "none"
+                }
+            },
+            "description": "whether to show linear or lowess regression curve, default is \"none\" for no regression line",
+            "example": {
+                "variable_value": "none"
+            }
+        },
+        "string-input-956:292:289:329": {
+            "type": "string",
+            "default": "-10;10",
+            "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
+            "example": "-10;10"
+        },
+        "string-input-956:300:295:489": {
+            "type": "string",
+            "default": "None",
+            "description": "limits of x axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "None"
+        },
+        "string-input-956:300:295:493": {
+            "type": "string",
+            "default": "LFQ intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "LFQ intensity "
+        },
+        "string-input-956:300:295:494": {
+            "type": "string",
+            "default": "_log2",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2"
+        },
+        "string-input-956:300:295:492": {
+            "type": "string",
+            "default": "-7;7",
+            "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "-7;7"
+        },
+        "single-selection-956:297:293:437": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "average"
+                }
+            },
+            "description": "select the clustering method used during cluster analysis",
+            "example": {
+                "variable_value": "average"
+            }
+        },
+        "double-input-956:291:444": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "column-filter-956:291:282:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array"
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                ]
+            }
+        },
+        "single-selection-956:297:293:436": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "cityblock"
+                }
+            },
+            "description": "select the distance metric for cluster analysis",
+            "example": {
+                "variable_value": "cityblock"
+            }
+        },
+        "string-input-956:290:283:441": {
+            "type": "string",
+            "default": "Auto",
+            "description": "set figure size in inches (format: \"width;height\"); for automatic size value use \"Auto\"; default size is \"10;10\"",
+            "example": "Auto"
+        },
+        "string-input-956:291:260": {
+            "type": "string",
+            "default": "not normalized",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "not normalized"
+        },
+        "single-selection-956:300:443": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "the name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        },
+        "string-input-956:297:329": {
+            "type": "string",
+            "default": "-10;10",
+            "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
+            "example": "-10;10"
+        },
+        "string-input-956:292:289:259": {
+            "type": "string",
+            "default": "Intensity (log2)",
+            "description": "how the graph y axis should be titled",
+            "example": "Intensity (log2)"
+        },
+        "string-input-956:292:289:258": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled",
+            "example": ""
+        },
+        "string-input-956:292:287:409": {
+            "type": "string",
+            "default": "normalized data - quantile",
+            "description": "additional information that should be present as the graph subtitle",
+            "example": "normalized data - quantile"
+        },
+        "single-selection-956:293:294:261": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "width"
+                }
+            },
+            "description": "sets the violin plot scale settings\n- count - violin plot scale (width) will reflect the number of values\n- width - all violin graphs will have the same width irrespective the number of values",
+            "example": {
+                "variable_value": "width"
+            }
+        },
+        "string-input-956:297:296:482": {
+            "type": "string",
+            "default": "15",
+            "description": "enter the value for imputation of missing values; default value is \"None\" for no imputation",
+            "example": "15"
+        },
+        "int-input-956:293:295:495": {
+            "type": "integer",
+            "default": 250,
+            "description": "set height of individual plot in pixels (aspect ratio is set to 1); default value is 250",
+            "example": 250
+        },
+        "column-filter-943:962:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "LIMMA_MJ_DRG-MJ_CTR.logFC"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "LIMMA_MJ_DRG-MJ_CTR.logFC",
+                    "LIMMA_MJ_DRG-MJ_DRG_MEKi.logFC",
+                    "LIMMA_MJ_CTR-MJ_MEKi.logFC",
+                    "LIMMA_A375_DRG-A375_CTR.logFC",
+                    "LIMMA_A375_DRG-A375_DRG_MEKi.logFC",
+                    "LIMMA_A375_CTR-A375_MEKi.logFC"
+                ]
+            }
+        },
+        "string-input-956:309:281": {
+            "type": "string",
+            "default": "_norm",
+            "description": "suffix to add to processed column names (original data will be replaced if blank)",
+            "example": "_norm"
+        },
+        "double-input-956:292:289:444": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "string-input-956:300:294:329": {
+            "type": "string",
+            "default": "-10;10",
+            "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
+            "example": "-10;10"
+        },
+        "string-input-956:300:293:409": {
+            "type": "string",
+            "default": "normalized data - MaxLFQ",
+            "description": "additional information that should be present as the graph subtitle",
+            "example": "normalized data - MaxLFQ"
+        },
+        "boolean-input-956:292:291:412": {
+            "type": "boolean",
+            "default": "true",
+            "description": "whether to show unity line (x=y) or not",
+            "example": true
+        },
+        "string-input-956:291:282:258": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled",
+            "example": ""
+        },
+        "string-input-956:291:259": {
+            "type": "string",
+            "default": "Intensity (log2)",
+            "description": "how the graph y axis should be titled",
+            "example": "Intensity (log2)"
+        },
+        "double-input-956:300:444": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "string-input-956:291:282:259": {
+            "type": "string",
+            "default": "samples",
+            "description": "how the graph y axis should be titled",
+            "example": "samples"
+        },
+        "string-input-956:291:258": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled",
+            "example": ""
+        },
+        "string-input-956:292:289:260": {
+            "type": "string",
+            "default": "normalized data - quantile",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "normalized data - quantile"
+        },
+        "single-selection-956:293:292:419": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "pearson"
+                }
+            },
+            "description": "select the method used for correlation of data columns",
+            "example": {
+                "variable_value": "pearson"
+            }
+        },
+        "string-input-956:292:288:441": {
+            "type": "string",
+            "default": "Auto",
+            "description": "set figure size in inches (format: \"width;height\"); for automatic size value use \"Auto\"; default size is \"10;10\"",
+            "example": "Auto"
+        },
+        "string-input-956:297:438": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "string-input-956:297:439": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2_norm"
+        },
+        "column-filter-956:290:284:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity WT_1_log2_norm"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity WT_1_log2_norm",
+                    "Intensity WT_2_log2_norm",
+                    "Intensity WT_3_log2_norm",
+                    "Intensity WT_4_log2_norm",
+                    "Intensity KO_1_log2_norm",
+                    "Intensity KO_2_log2_norm",
+                    "Intensity KO_3_log2_norm",
+                    "Intensity KO_4_log2_norm"
+                ]
+            }
+        },
+        "boolean-input-956:311:276": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "string-input-943:937:327": {
+            "type": "string",
+            "default": "-10;10",
+            "description": "limits of x axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
+            "example": "-10;10"
+        },
+        "string-input-956:293:293:258": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled",
+            "example": ""
+        },
+        "single-selection-956:293:292:423": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "RdBu"
+                }
+            },
+            "description": "what colormap (palette) should be used for clustermap",
+            "example": {
+                "variable_value": "RdBu"
+            }
+        },
+        "string-input-956:293:293:259": {
+            "type": "string",
+            "default": "samples",
+            "description": "how the graph y axis should be titled",
+            "example": "samples"
+        },
+        "string-input-943:937:329": {
+            "type": "string",
+            "default": "-10;10",
+            "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
+            "example": "-10;10"
+        },
+        "int-input-956:290:285:495": {
+            "type": "integer",
+            "default": 250,
+            "description": "set height of individual plot in pixels (aspect ratio is set to 1); default value is 250",
+            "example": 250
+        },
+        "string-input-956:300:294:438": {
+            "type": "string",
+            "default": "LFQ intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "LFQ intensity "
+        },
+        "string-input-956:292:288:438": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "string-input-956:300:294:439": {
+            "type": "string",
+            "default": "_log2",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2"
+        },
+        "string-input-956:297:293:409": {
+            "type": "string",
+            "default": "normalized data - vsn",
+            "description": "additional information that should be present as the graph subtitle",
+            "example": "normalized data - vsn"
+        },
+        "string-input-943:937:320": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled; column name will be used if blank",
+            "example": ""
+        },
+        "column-filter-943:931:306": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array"
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                ]
+            }
+        },
+        "single-selection-956:293:261": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "count"
+                }
+            },
+            "description": "sets the violin plot scale settings\n- count - violin plot scale (width) will reflect the number of values\n- width - all violin graphs will have the same width irrespective the number of values",
+            "example": {
+                "variable_value": "count"
+            }
+        },
+        "string-input-943:937:321": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph y axis should be titled; column name will be used if blank",
+            "example": ""
+        },
+        "string-input-956:292:288:439": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2_norm"
+        },
+        "double-input-956:292:444": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "boolean-input-956:297:292:429": {
+            "type": "boolean",
+            "default": "true",
+            "description": "unchecked - clustermap interval and center will be based on the calculated correlation coefficients; checked - entered value will be used as the center",
+            "example": true
+        },
+        "single-selection-956:297:294:443": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "the name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        },
+        "string-input-956:300:296:482": {
+            "type": "string",
+            "default": "15",
+            "description": "enter the value for imputation of missing values; default value is \"None\" for no imputation",
+            "example": "15"
+        },
+        "single-selection-956:292:443": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "the name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        },
+        "single-selection-956:293:292:436": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "euclidean"
+                }
+            },
+            "description": "select the distance metric for cluster analysis",
+            "example": {
+                "variable_value": "euclidean"
+            }
+        },
+        "single-selection-956:293:292:437": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "average"
+                }
+            },
+            "description": "select the clustering method used during cluster analysis",
+            "example": {
+                "variable_value": "average"
+            }
+        },
+        "string-input-956:293:292:441": {
+            "type": "string",
+            "default": "Auto",
+            "description": "set figure size in inches (format: \"width;height\"); for automatic size value use \"Auto\"; default size is \"10;10\"",
+            "example": "Auto"
+        },
+        "string-input-943:937:319": {
+            "type": "string",
+            "default": "",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": ""
+        },
+        "column-filter-948:627": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Gene ontology (GO)"
+                    }
+                }
+            },
+            "description": "select columns which should be added from bottom Input table",
+            "example": {
+                "columns": [
+                    "Gene ontology (GO)",
+                    "Gene ontology (biological process)",
+                    "Gene ontology (molecular function)",
+                    "Gene ontology (cellular component)",
+                    "Gene ontology IDs",
+                    "Subcellular location [CC]",
+                    "Protein families",
+                    "Interacts with",
+                    "Sequence",
+                    "Cross-reference (InterPro)",
+                    "Cross-reference (Pfam)",
+                    "Cross-reference (IntAct)",
+                    "Cross-reference (Araport)",
+                    "Cross-reference (TAIR)"
+                ]
+            }
+        },
+        "double-input-956:290:283:430": {
+            "type": "number",
+            "default": 0.0,
+            "description": "value that will be used as a center to color individual cluster data",
+            "example": 0.0
+        },
+        "single-selection-956:292:289:261": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "width"
+                }
+            },
+            "description": "sets the violin plot scale settings\n- count - violin plot scale (width) will reflect the number of values\n- width - all violin graphs will have the same width irrespective the number of values",
+            "example": {
+                "variable_value": "width"
+            }
+        },
+        "string-input-943:959:320": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled; column name will be used if blank",
+            "example": ""
+        },
+        "string-input-956:300:296:494": {
+            "type": "string",
+            "default": "_log2",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2"
+        },
+        "string-input-943:959:321": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph y axis should be titled; column name will be used if blank",
+            "example": ""
+        },
+        "string-input-956:300:296:492": {
+            "type": "string",
+            "default": "None",
+            "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "None"
+        },
+        "string-input-956:300:296:493": {
+            "type": "string",
+            "default": "LFQ intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "LFQ intensity "
+        },
+        "string-input-943:959:327": {
+            "type": "string",
+            "default": "-10;10",
+            "description": "limits of x axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
+            "example": "-10;10"
+        },
+        "string-input-956:297:296:489": {
+            "type": "string",
+            "default": "None",
+            "description": "limits of x axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "None"
+        },
+        "string-input-943:959:329": {
+            "type": "string",
+            "default": "-10;10",
+            "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
+            "example": "-10;10"
+        },
+        "boolean-input-943:931:918": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to remove not used columns or not; unchecked -> original dataframe will be returned with imputed values; checked -> dataframe of processed columns plus optional grouping column",
+            "example": false
+        },
+        "single-selection-956:292:287:436": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "cityblock"
+                }
+            },
+            "description": "select the distance metric for cluster analysis",
+            "example": {
+                "variable_value": "cityblock"
+            }
+        },
+        "column-filter-956:291:283:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array"
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                ]
+            }
+        },
+        "boolean-input-956:297:292:435": {
+            "type": "boolean",
+            "default": "true",
+            "description": "whether to show or not the raw values in each heatmap cell",
+            "example": true
+        },
+        "single-selection-956:292:287:437": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "average"
+                }
+            },
+            "description": "select the clustering method used during cluster analysis",
+            "example": {
+                "variable_value": "average"
+            }
+        },
+        "boolean-input-943:931:916": {
+            "type": "boolean",
+            "default": "true",
+            "description": "whether to evaluate and report each comparison separately or all together as one factor (i.e. one-way ANOVA) - see the note on missing values handling!",
+            "example": true
+        },
+        "string-input-956:297:296:493": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "boolean-input-956:300:292:429": {
+            "type": "boolean",
+            "default": "true",
+            "description": "unchecked - clustermap interval and center will be based on the calculated correlation coefficients; checked - entered value will be used as the center",
+            "example": true
+        },
+        "string-input-956:297:296:494": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2_norm"
+        },
+        "column-filter-956:293:295:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity 1-1_1_log2_norm"
+                    }
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity 1-1_1_log2_norm",
+                    "Intensity 1-1_2_log2_norm",
+                    "Intensity 1-1_3_log2_norm",
+                    "Intensity 10-1_1_log2_norm",
+                    "Intensity 10-1_2_log2_norm",
+                    "Intensity 10-1_3_log2_norm",
+                    "Intensity 100-1_1_log2_norm",
+                    "Intensity 100-1_2_log2_norm",
+                    "Intensity 100-1_3_log2_norm"
+                ]
+            }
+        },
+        "string-input-956:297:296:492": {
+            "type": "string",
+            "default": "None",
+            "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "None"
+        },
+        "string-input-956:293:292:438": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "string-input-956:300:296:489": {
+            "type": "string",
+            "default": "None",
+            "description": "limits of x axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "None"
+        },
+        "string-input-956:293:292:439": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2_norm"
+        },
+        "string-input-956:290:284:439": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2_norm"
+        },
+        "single-selection-943:962:961:261": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "width"
+                }
+            },
+            "description": "sets the violin plot scale settings\n- count - violin plot scale (width) will reflect the number of values\n- width - all violin graphs will have the same width irrespective the number of values",
+            "example": {
+                "variable_value": "width"
+            }
+        },
+        "column-filter-956:300:292:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "LFQ intensity WT_1_log2"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "LFQ intensity WT_1_log2",
+                    "LFQ intensity WT_2_log2",
+                    "LFQ intensity WT_3_log2",
+                    "LFQ intensity KO_1_log2",
+                    "LFQ intensity KO_2_log2",
+                    "LFQ intensity KO_3_log2"
+                ]
+            }
+        },
+        "string-input-956:290:284:438": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "column-selection-947:628": {
+            "type": "object",
+            "properties": {
+                "column": {
+                    "type": "string",
+                    "default": "Majority protein IDs"
+                }
+            },
+            "description": "column containing protein IDs to be searched for on UniProt",
+            "example": {
+                "column": "Majority protein IDs"
+            }
+        },
+        "string-input-956:291:281:409": {
+            "type": "string",
+            "default": "not normalized data",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "not normalized data"
+        },
+        "string-input-943:960:321": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph y axis should be titled; column name will be used if blank",
+            "example": ""
+        },
+        "string-input-943:959:319": {
+            "type": "string",
+            "default": "",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": ""
+        },
+        "boolean-input-956:300:295:487": {
+            "type": "boolean",
+            "default": "true",
+            "description": "plot 'x-y' (M) on '(x+y)/2' (A) instead of 'y' on 'x'?",
+            "example": true
+        },
+        "string-input-956:293:294:260": {
+            "type": "string",
+            "default": "normalized data - loessF",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "normalized data - loessF"
+        },
+        "string-input-943:960:320": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled; column name will be used if blank",
+            "example": ""
+        },
+        "string-input-956:290:285:489": {
+            "type": "string",
+            "default": "None",
+            "description": "limits of x axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "None"
+        },
+        "string-input-943:960:329": {
+            "type": "string",
+            "default": "-10;10",
+            "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
+            "example": "-10;10"
+        },
+        "boolean-input-956:300:294:328": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to use manually set y axis limits (checked) or use automatic limits (unchecked)",
+            "example": false
+        },
+        "string-input-943:960:327": {
+            "type": "string",
+            "default": "-10;10",
+            "description": "limits of x axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
+            "example": "-10;10"
+        },
+        "string-input-956:290:285:482": {
+            "type": "string",
+            "default": "None",
+            "description": "enter the value for imputation of missing values; default value is \"None\" for no imputation",
+            "example": "None"
+        },
+        "string-input-956:293:294:259": {
+            "type": "string",
+            "default": "Intensity (log2)",
+            "description": "how the graph y axis should be titled",
+            "example": "Intensity (log2)"
+        },
+        "string-input-956:293:292:409": {
+            "type": "string",
+            "default": "normalized data - loessF",
+            "description": "additional information that should be present as the graph subtitle",
+            "example": "normalized data - loessF"
+        },
+        "string-input-956:293:294:258": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled",
+            "example": ""
+        },
+        "P_threshold-943:938:318": {
+            "type": "number",
+            "default": 0.01,
+            "description": "y axis (P (or adj. P) value) threshold that will be used for volcano plot points categorization, visualization and summary; not log transformed value should be provided, e.g. 0.05",
+            "example": 0.01
+        },
+        "string-input-956:292:287:439": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2_norm"
+        },
+        "string-input-956:292:287:438": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "string-input-943:960:319": {
+            "type": "string",
+            "default": "",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": ""
+        },
+        "string-input-956:291:282:441": {
+            "type": "string",
+            "default": "8;6",
+            "description": "set figure size in inches (format: \"width;height\"); default size is \"8;6\"",
+            "example": "8;6"
+        },
+        "string-input-956:292:287:441": {
+            "type": "string",
+            "default": "8;6",
+            "description": "set figure size in inches (format: \"width;height\"); default size is \"8;6\"",
+            "example": "8;6"
+        },
+        "string-input-956:290:285:492": {
+            "type": "string",
+            "default": "-7;7",
+            "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "-7;7"
+        },
+        "string-input-956:290:285:493": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "single-selection-956:300:294:443": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "the name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        },
+        "string-input-956:290:285:494": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2_norm"
+        },
+        "single-selection-956:297:261": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "count"
+                }
+            },
+            "description": "sets the violin plot scale settings\n- count - violin plot scale (width) will reflect the number of values\n- width - all violin graphs will have the same width irrespective the number of values",
+            "example": {
+                "variable_value": "count"
+            }
+        },
+        "string-input-956:292:329": {
+            "type": "string",
+            "default": "-10;10",
+            "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
+            "example": "-10;10"
+        },
+        "boolean-input-943:962:274:412": {
+            "type": "boolean",
+            "default": "true",
+            "description": "whether to show unity line (x=y) or not",
+            "example": true
+        },
+        "string-input-956:293:293:441": {
+            "type": "string",
+            "default": "8;6",
+            "description": "set figure size in inches (format: \"width;height\"); default size is \"8;6\"",
+            "example": "8;6"
+        },
+        "column-filter-956:291:284:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity 1-1_1_log2"
+                    }
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity 1-1_1_log2",
+                    "Intensity 1-1_2_log2",
+                    "Intensity 1-1_3_log2",
+                    "Intensity 10-1_1_log2",
+                    "Intensity 10-1_2_log2",
+                    "Intensity 10-1_3_log2",
+                    "Intensity 100-1_1_log2",
+                    "Intensity 100-1_2_log2",
+                    "Intensity 100-1_3_log2"
+                ]
+            }
+        },
+        "single-selection-956:297:295:411": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "lowess"
+                }
+            },
+            "description": "whether to show linear or lowess regression curve, default is \"none\" for no regression line",
+            "example": {
+                "variable_value": "lowess"
+            }
+        },
+        "string-input-956:290:284:409": {
+            "type": "string",
+            "default": "normalized data - median",
+            "description": "additional information that should be present as the graph subtitle",
+            "example": "normalized data - median"
+        },
+        "string-input-956:292:439": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2_norm"
+        },
+        "column-filter-956:293:296:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity 1-1_1_log2_norm"
+                    }
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity 1-1_1_log2_norm",
+                    "Intensity 1-1_2_log2_norm",
+                    "Intensity 1-1_3_log2_norm",
+                    "Intensity 10-1_1_log2_norm",
+                    "Intensity 10-1_2_log2_norm",
+                    "Intensity 10-1_3_log2_norm",
+                    "Intensity 100-1_1_log2_norm",
+                    "Intensity 100-1_2_log2_norm",
+                    "Intensity 100-1_3_log2_norm"
+                ]
+            }
+        },
+        "column-filter-956:292:291:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity 1-1_1_log2_norm"
+                    }
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity 1-1_1_log2_norm",
+                    "Intensity 1-1_2_log2_norm",
+                    "Intensity 1-1_3_log2_norm",
+                    "Intensity 10-1_1_log2_norm",
+                    "Intensity 10-1_2_log2_norm",
+                    "Intensity 10-1_3_log2_norm",
+                    "Intensity 100-1_1_log2_norm",
+                    "Intensity 100-1_2_log2_norm",
+                    "Intensity 100-1_3_log2_norm"
+                ]
+            }
+        },
+        "string-input-956:300:295:409": {
+            "type": "string",
+            "default": "normalized data - MaxLFQ",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "normalized data - MaxLFQ"
+        },
+        "string-input-956:292:438": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "single-selection-956:300:293:437": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "average"
+                }
+            },
+            "description": "select the clustering method used during cluster analysis",
+            "example": {
+                "variable_value": "average"
+            }
+        },
+        "single-selection-956:300:293:436": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "cityblock"
+                }
+            },
+            "description": "select the distance metric for cluster analysis",
+            "example": {
+                "variable_value": "cityblock"
+            }
+        },
+        "boolean-input-956:290:282:487": {
+            "type": "boolean",
+            "default": "false",
+            "description": "plot 'x-y' (M) on '(x+y)/2' (A) instead of 'y' on 'x'?",
+            "example": false
+        },
+        "single-selection-956:290:261": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "count"
+                }
+            },
+            "description": "sets the violin plot scale settings\n- count - violin plot scale (width) will reflect the number of values\n- width - all violin graphs will have the same width irrespective the number of values",
+            "example": {
+                "variable_value": "count"
+            }
+        },
+        "column-filter-956:297:294:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity WT_1_log2_norm"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity WT_1_log2_norm",
+                    "Intensity WT_2_log2_norm",
+                    "Intensity WT_3_log2_norm",
+                    "Intensity WT_4_log2_norm",
+                    "Intensity KO_1_log2_norm",
+                    "Intensity KO_2_log2_norm",
+                    "Intensity KO_3_log2_norm",
+                    "Intensity KO_4_log2_norm"
+                ]
+            }
+        },
+        "single-selection-943:962:274:411": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "lowess"
+                }
+            },
+            "description": "whether to show linear or lowess regression curve, default is \"none\" for no regression line",
+            "example": {
+                "variable_value": "lowess"
+            }
+        },
+        "string-input-956:293:293:438": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "string-input-956:293:293:439": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2_norm"
+        },
+        "boolean-input-956:297:295:412": {
+            "type": "boolean",
+            "default": "true",
+            "description": "whether to show unity line (x=y) or not",
+            "example": true
+        },
+        "int-input-956:297:296:495": {
+            "type": "integer",
+            "default": 250,
+            "description": "set height of individual plot in pixels (aspect ratio is set to 1); default value is 250",
+            "example": 250
+        },
+        "string-input-956:291:282:409": {
+            "type": "string",
+            "default": "PG intensities cluster analysis - not normalized",
+            "description": "additional information that should be present as the graph subtitle",
+            "example": "PG intensities cluster analysis - not normalized"
+        },
+        "column-filter-956:290:286:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity WT_1_log2_norm"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity WT_1_log2_norm",
+                    "Intensity WT_2_log2_norm",
+                    "Intensity WT_3_log2_norm",
+                    "Intensity WT_4_log2_norm",
+                    "Intensity KO_1_log2_norm",
+                    "Intensity KO_2_log2_norm",
+                    "Intensity KO_3_log2_norm",
+                    "Intensity KO_4_log2_norm"
+                ]
+            }
+        },
+        "boolean-input-956:290:282:412": {
+            "type": "boolean",
+            "default": "true",
+            "description": "whether to show unity line (x=y) or not",
+            "example": true
+        },
+        "string-input-956:291:284:494": {
+            "type": "string",
+            "default": "_log2",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2"
+        },
+        "string-input-956:291:284:492": {
+            "type": "string",
+            "default": "-7;7",
+            "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "-7;7"
+        },
+        "string-input-956:291:284:493": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "int-input-956:297:295:495": {
+            "type": "integer",
+            "default": 250,
+            "description": "set height of individual plot in pixels (aspect ratio is set to 1); default value is 250",
+            "example": 250
+        },
+        "string-input-956:292:287:259": {
+            "type": "string",
+            "default": "samples",
+            "description": "how the graph y axis should be titled",
+            "example": "samples"
+        },
+        "string-input-956:292:287:258": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled",
+            "example": ""
+        },
+        "string-input-956:290:283:439": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2_norm"
+        },
+        "string-input-956:290:283:438": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "boolean-input-956:297:328": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to use manually set y axis limits (checked) or use automatic limits (unchecked)",
+            "example": false
+        },
+        "single-selection-956:291:261": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "count"
+                }
+            },
+            "description": "sets the violin plot scale settings\n- count - violin plot scale (width) will reflect the number of values\n- width - all violin graphs will have the same width irrespective the number of values",
+            "example": {
+                "variable_value": "count"
+            }
+        },
+        "double-input-943:962:961:444": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "string-input-956:297:293:259": {
+            "type": "string",
+            "default": "samples",
+            "description": "how the graph y axis should be titled",
+            "example": "samples"
+        },
+        "int-input-956:291:281:495": {
+            "type": "integer",
+            "default": 250,
+            "description": "set height of individual plot in pixels (aspect ratio is set to 1); default value is 250",
+            "example": 250
+        },
+        "string-input-956:297:293:258": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled",
+            "example": ""
+        },
+        "single-line-943:958:913": {
+            "type": "string",
+            "default": "none",
+            "description": "provide an information about the paired samples",
+            "example": "none"
+        },
+        "string-input-956:291:284:489": {
+            "type": "string",
+            "default": "None",
+            "description": "limits of x axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "None"
+        },
+        "string-input-956:293:260": {
+            "type": "string",
+            "default": "normalized data - loessF",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "normalized data - loessF"
+        },
+        "string-input-956:291:283:441": {
+            "type": "string",
+            "default": "Auto",
+            "description": "set figure size in inches (format: \"width;height\"); for automatic size value use \"Auto\"; default size is \"10;10\"",
+            "example": "Auto"
+        },
+        "single-selection-956:290:443": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "the name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        },
+        "boolean-input-943:962:961:328": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to use manually set y axis limits (checked) or use automatic limits (unchecked)",
+            "example": false
+        },
+        "string-input-956:290:286:259": {
+            "type": "string",
+            "default": "Intensity (log2)",
+            "description": "how the graph y axis should be titled",
+            "example": "Intensity (log2)"
+        },
+        "string-input-956:293:293:409": {
+            "type": "string",
+            "default": "normalized data - loessF",
+            "description": "additional information that should be present as the graph subtitle",
+            "example": "normalized data - loessF"
+        },
+        "single-line-943:958:915": {
+            "type": "string",
+            "default": "B-A, C-A",
+            "description": "provide comparisons (i.e. contrasts for limma) separated by comma; in case you would like to get ratio A and B and you provide log transformed data, comparison ('ratio' calculation) should be made as 'B-A'",
+            "example": "B-A, C-A"
+        },
+        "column-filter-956:292:289:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity WT_1_log2_norm"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity WT_1_log2_norm",
+                    "Intensity WT_2_log2_norm",
+                    "Intensity WT_3_log2_norm",
+                    "Intensity WT_4_log2_norm",
+                    "Intensity KO_1_log2_norm",
+                    "Intensity KO_2_log2_norm",
+                    "Intensity KO_3_log2_norm",
+                    "Intensity KO_4_log2_norm"
+                ]
+            }
+        },
+        "string-input-956:291:284:482": {
+            "type": "string",
+            "default": "None",
+            "description": "enter the value for imputation of missing values; default value is \"None\" for no imputation",
+            "example": "None"
+        },
+        "string-input-956:290:286:258": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled",
+            "example": ""
+        },
+        "single-line-943:958:914": {
+            "type": "string",
+            "default": "none",
+            "description": "provide an information about the blocks of samples",
+            "example": "none"
+        },
+        "string-input-956:293:258": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled",
+            "example": ""
+        },
+        "string-input-956:293:259": {
+            "type": "string",
+            "default": "Intensity (log2)",
+            "description": "how the graph y axis should be titled",
+            "example": "Intensity (log2)"
+        },
+        "single-selection-956:292:291:411": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "lowess"
+                }
+            },
+            "description": "whether to show linear or lowess regression curve, default is \"none\" for no regression line",
+            "example": {
+                "variable_value": "lowess"
+            }
+        },
+        "string-input-956:293:294:329": {
+            "type": "string",
+            "default": "-10;10",
+            "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
+            "example": "-10;10"
+        },
+        "single-selection-956:300:261": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "count"
+                }
+            },
+            "description": "sets the violin plot scale settings\n- count - violin plot scale (width) will reflect the number of values\n- width - all violin graphs will have the same width irrespective the number of values",
+            "example": {
+                "variable_value": "count"
+            }
+        },
+        "string-input-956:290:286:260": {
+            "type": "string",
+            "default": "normalized data - median",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "normalized data - median"
+        },
+        "boolean-input-956:297:296:487": {
+            "type": "boolean",
+            "default": "false",
+            "description": "plot 'x-y' (M) on '(x+y)/2' (A) instead of 'y' on 'x'?",
+            "example": false
+        },
+        "string-input-956:297:292:441": {
+            "type": "string",
+            "default": "Auto",
+            "description": "set figure size in inches (format: \"width;height\"); for automatic size value use \"Auto\"; default size is \"10;10\"",
+            "example": "Auto"
+        },
+        "double-input-943:938:316": {
+            "type": "number",
+            "default": 0.001,
+            "description": "number that should be used instead of zero p value to compute -log value; if it will be 0, cases with zero p value will not be plotted",
+            "example": 0.001
+        },
+        "single-selection-956:300:292:419": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "pearson"
+                }
+            },
+            "description": "select the method used for correlation of data columns",
+            "example": {
+                "variable_value": "pearson"
+            }
+        },
+        "single-selection-956:297:296:411": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "none"
+                }
+            },
+            "description": "whether to show linear or lowess regression curve, default is \"none\" for no regression line",
+            "example": {
+                "variable_value": "none"
+            }
+        },
+        "column-filter-956:291:285:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array"
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                ]
+            }
+        },
+        "string-input-956:290:283:409": {
+            "type": "string",
+            "default": "normalized data - median",
+            "description": "additional information that should be present as the graph subtitle",
+            "example": "normalized data - median"
+        },
+        "string-input-956:312:281": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "suffix to add to processed column names (original data will be replaced if blank)",
+            "example": "_log2_norm"
+        },
+        "single-selection-956:300:292:423": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "RdBu"
+                }
+            },
+            "description": "what colormap (palette) should be used for clustermap",
+            "example": {
+                "variable_value": "RdBu"
+            }
+        },
+        "string-input-956:297:292:438": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "boolean-input-956:291:281:487": {
+            "type": "boolean",
+            "default": "false",
+            "description": "plot 'x-y' (M) on '(x+y)/2' (A) instead of 'y' on 'x'?",
+            "example": false
+        },
+        "string-input-956:297:292:439": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2_norm"
+        },
+        "string-input-956:291:439": {
+            "type": "string",
+            "default": "_log2",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2"
+        },
+        "string-input-956:291:438": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "P_threshold-943:937:318": {
+            "type": "number",
+            "default": 0.05,
+            "description": "y axis (P (or adj. P) value) threshold that will be used for volcano plot points categorization, visualization and summary; not log transformed value should be provided, e.g. 0.05",
+            "example": 0.05
+        },
+        "int-input-943:962:274:495": {
+            "type": "integer",
+            "default": 250,
+            "description": "set height of individual plot in pixels (aspect ratio is set to 1); default value is 250",
+            "example": 250
+        },
+        "double-input-956:300:294:444": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "string-input-956:293:294:439": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2_norm"
+        },
+        "string-input-956:291:282:438": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "column-filter-956:297:295:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity 1-1_1_log2_norm"
+                    }
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity 1-1_1_log2_norm",
+                    "Intensity 1-1_2_log2_norm",
+                    "Intensity 1-1_3_log2_norm",
+                    "Intensity 10-1_1_log2_norm",
+                    "Intensity 10-1_2_log2_norm",
+                    "Intensity 10-1_3_log2_norm",
+                    "Intensity 100-1_1_log2_norm",
+                    "Intensity 100-1_2_log2_norm",
+                    "Intensity 100-1_3_log2_norm"
+                ]
+            }
+        },
+        "string-input-956:291:282:439": {
+            "type": "string",
+            "default": "_log2",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2"
+        },
+        "column-filter-956:292:288:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity WT_1_log2_norm"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity WT_1_log2_norm",
+                    "Intensity WT_2_log2_norm",
+                    "Intensity WT_3_log2_norm",
+                    "Intensity WT_4_log2_norm",
+                    "Intensity KO_1_log2_norm",
+                    "Intensity KO_2_log2_norm",
+                    "Intensity KO_3_log2_norm",
+                    "Intensity KO_4_log2_norm"
+                ]
+            }
+        },
+        "string-input-956:297:296:409": {
+            "type": "string",
+            "default": "normalized data - vsn",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "normalized data - vsn"
+        },
+        "string-input-956:293:294:438": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "int-input-956:290:282:495": {
+            "type": "integer",
+            "default": 250,
+            "description": "set height of individual plot in pixels (aspect ratio is set to 1); default value is 250",
+            "example": 250
+        },
+        "double-input-956:290:444": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "string-input-956:290:284:441": {
+            "type": "string",
+            "default": "8;6",
+            "description": "set figure size in inches (format: \"width;height\"); default size is \"8;6\"",
+            "example": "8;6"
+        },
+        "single-selection-956:300:292:436": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "euclidean"
+                }
+            },
+            "description": "select the distance metric for cluster analysis",
+            "example": {
+                "variable_value": "euclidean"
+            }
+        },
+        "double-input-956:297:294:444": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "int-input-956:300:295:495": {
+            "type": "integer",
+            "default": 250,
+            "description": "set height of individual plot in pixels (aspect ratio is set to 1); default value is 250",
+            "example": 250
+        },
+        "single-selection-956:300:292:437": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "average"
+                }
+            },
+            "description": "select the clustering method used during cluster analysis",
+            "example": {
+                "variable_value": "average"
+            }
+        },
+        "column-filter-956:292:290:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity 1-1_1_log2_norm"
+                    }
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity 1-1_1_log2_norm",
+                    "Intensity 1-1_2_log2_norm",
+                    "Intensity 1-1_3_log2_norm",
+                    "Intensity 10-1_1_log2_norm",
+                    "Intensity 10-1_2_log2_norm",
+                    "Intensity 10-1_3_log2_norm",
+                    "Intensity 100-1_1_log2_norm",
+                    "Intensity 100-1_2_log2_norm",
+                    "Intensity 100-1_3_log2_norm"
+                ]
+            }
+        },
+        "string-input-956:300:296:409": {
+            "type": "string",
+            "default": "normalized data - MaxLFQ",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "normalized data - MaxLFQ"
+        },
+        "single-selection-956:300:294:261": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "width"
+                }
+            },
+            "description": "sets the violin plot scale settings\n- count - violin plot scale (width) will reflect the number of values\n- width - all violin graphs will have the same width irrespective the number of values",
+            "example": {
+                "variable_value": "width"
+            }
+        },
+        "boolean-input-956:293:296:412": {
+            "type": "boolean",
+            "default": "true",
+            "description": "whether to show unity line (x=y) or not",
+            "example": true
+        },
+        "string-input-956:291:329": {
+            "type": "string",
+            "default": "-10;10",
+            "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
+            "example": "-10;10"
+        },
+        "single-line-943:931:308": {
+            "type": "string",
+            "default": "hundred,hundred,hundred,one,one,one",
+            "description": "provide design for limma test - order of columns based on sample type",
+            "example": "hundred,hundred,hundred,one,one,one"
+        },
+        "boolean-input-956:300:296:487": {
+            "type": "boolean",
+            "default": "false",
+            "description": "plot 'x-y' (M) on '(x+y)/2' (A) instead of 'y' on 'x'?",
+            "example": false
+        },
+        "single-selection-956:310:258": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "quantile"
+                }
+            },
+            "description": "normalization method that should be used",
+            "example": {
+                "variable_value": "quantile"
+            }
+        },
+        "string-input-943:958:908": {
+            "type": "string",
+            "default": "A: 1, B: 2, C: 2",
+            "description": "Set threshold(s); use \"sample1: threshold1, sample2: threshold2\" format for separate thresholds for individual samples or single number for one threshold for all samples",
+            "example": "A: 1, B: 2, C: 2"
+        },
+        "column-filter-956:297:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity WT_1_log2_norm"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity WT_1_log2_norm",
+                    "Intensity WT_2_log2_norm",
+                    "Intensity WT_3_log2_norm",
+                    "Intensity WT_4_log2_norm",
+                    "Intensity KO_1_log2_norm",
+                    "Intensity KO_2_log2_norm",
+                    "Intensity KO_3_log2_norm",
+                    "Intensity KO_4_log2_norm"
+                ]
+            }
+        },
+        "boolean-input-956:293:295:412": {
+            "type": "boolean",
+            "default": "true",
+            "description": "whether to show unity line (x=y) or not",
+            "example": true
+        },
+        "string-input-943:962:274:409": {
+            "type": "string",
+            "default": "logFC from LIMMA tests - all tests",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "logFC from LIMMA tests - all tests"
+        },
+        "string-input-943:931:908": {
+            "type": "string",
+            "default": "A: 1, B: 2, C: 2",
+            "description": "Set threshold(s); use \"sample1: threshold1, sample2: threshold2\" format for separate thresholds for individual samples or single number for one threshold for all samples",
+            "example": "A: 1, B: 2, C: 2"
+        },
+        "single-selection-943:962:443": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "the name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        },
+        "double-input-956:291:285:444": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "string-input-956:291:283:409": {
+            "type": "string",
+            "default": "not normalized data",
+            "description": "additional information that should be present as the graph subtitle",
+            "example": "not normalized data"
+        },
+        "double-input-943:962:444": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "boolean-input-943:958:918": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to remove not used columns or not; unchecked -> original dataframe will be returned with imputed values; checked -> dataframe of processed columns plus optional grouping column",
+            "example": false
+        },
+        "single-selection-943:931:907": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "no"
+                }
+            },
+            "description": "whether to use only cases quantified in at least specified number of replicates in at least one sample, i.e. whether to filter out cases where there is lower number of replicates quantified (as per the \"Limma design\" box) than specified threshold(s); threshold can be set globally for all samples or for individual samples; threhold(s) should be set in the following box",
+            "example": {
+                "variable_value": "no"
+            }
+        },
+        "string-input-956:290:286:439": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2_norm"
+        },
+        "single-selection-956:291:284:411": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "lowess"
+                }
+            },
+            "description": "whether to show linear or lowess regression curve, default is \"none\" for no regression line",
+            "example": {
+                "variable_value": "lowess"
+            }
+        },
+        "int-input-956:292:291:495": {
+            "type": "integer",
+            "default": 250,
+            "description": "set height of individual plot in pixels (aspect ratio is set to 1); default value is 250",
+            "example": 250
+        },
+        "single-line-943:958:297": {
+            "type": "string",
+            "default": "LIMMA_",
+            "description": "enter LIMMA test name which will be used as computed column prefix to differentiate it from other tests if needed",
+            "example": "LIMMA_"
+        },
+        "double-input-956:300:292:430": {
+            "type": "number",
+            "default": 0.0,
+            "description": "value that will be used as a center to color individual cluster data",
+            "example": 0.0
+        },
+        "boolean-input-943:958:916": {
+            "type": "boolean",
+            "default": "true",
+            "description": "whether to evaluate and report each comparison separately or all together as one factor (i.e. one-way ANOVA) - see the note on missing values handling!",
+            "example": true
+        },
+        "string-input-956:291:285:260": {
+            "type": "string",
+            "default": "not normalized",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "not normalized"
+        },
+        "column-filter-956:300:294:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "LFQ intensity WT_1_log2"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "LFQ intensity WT_1_log2",
+                    "LFQ intensity WT_2_log2",
+                    "LFQ intensity WT_3_log2",
+                    "LFQ intensity KO_1_log2",
+                    "LFQ intensity KO_2_log2",
+                    "LFQ intensity KO_3_log2"
+                ]
+            }
+        },
+        "boolean-input-956:290:283:429": {
+            "type": "boolean",
+            "default": "true",
+            "description": "unchecked - clustermap interval and center will be based on the calculated correlation coefficients; checked - entered value will be used as the center",
+            "example": true
+        },
+        "single-selection-956:291:285:443": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "the name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        },
+        "single-selection-956:293:295:411": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "lowess"
+                }
+            },
+            "description": "whether to show linear or lowess regression curve, default is \"none\" for no regression line",
+            "example": {
+                "variable_value": "lowess"
+            }
+        },
+        "boolean-input-943:937:306": {
+            "type": "boolean",
+            "default": "true",
+            "description": "apply additional -log10 transformation on p-value column?",
+            "example": true
+        },
+        "single-selection-956:292:290:411": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "none"
+                }
+            },
+            "description": "whether to show linear or lowess regression curve, default is \"none\" for no regression line",
+            "example": {
+                "variable_value": "none"
+            }
+        },
+        "string-input-956:290:285:409": {
+            "type": "string",
+            "default": "normalized data - median",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "normalized data - median"
+        },
+        "column-filter-956:290:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity WT_1_log2_norm"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity WT_1_log2_norm",
+                    "Intensity WT_2_log2_norm",
+                    "Intensity WT_3_log2_norm",
+                    "Intensity WT_4_log2_norm",
+                    "Intensity KO_1_log2_norm",
+                    "Intensity KO_2_log2_norm",
+                    "Intensity KO_3_log2_norm",
+                    "Intensity KO_4_log2_norm"
+                ]
+            }
+        },
+        "boolean-input-956:291:281:412": {
+            "type": "boolean",
+            "default": "true",
+            "description": "whether to show unity line (x=y) or not",
+            "example": true
+        },
+        "single-selection-943:931:917": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "Benjamini & Hochberg"
+                }
+            },
+            "description": "select p-value adjustment method; method is used by p.adjust R function, see its documentation for more details",
+            "example": {
+                "variable_value": "Benjamini & Hochberg"
+            }
+        },
+        "string-input-956:290:286:329": {
+            "type": "string",
+            "default": "-10;10",
+            "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
+            "example": "-10;10"
+        },
+        "boolean-input-956:290:283:435": {
+            "type": "boolean",
+            "default": "true",
+            "description": "whether to show or not the raw values in each heatmap cell",
+            "example": true
+        },
+        "boolean-input-956:309:276": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "column-filter-956:297:292:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity WT_1_log2_norm"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity WT_1_log2_norm",
+                    "Intensity WT_2_log2_norm",
+                    "Intensity WT_3_log2_norm",
+                    "Intensity WT_4_log2_norm",
+                    "Intensity KO_1_log2_norm",
+                    "Intensity KO_2_log2_norm",
+                    "Intensity KO_3_log2_norm",
+                    "Intensity KO_4_log2_norm"
+                ]
+            }
+        },
+        "string-input-956:291:283:438": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "string-input-956:291:283:439": {
+            "type": "string",
+            "default": "_log2",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2"
+        },
+        "string-input-943:962:438": {
+            "type": "string",
+            "default": "LIMMA_",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "LIMMA_"
+        },
+        "boolean-input-943:938:328": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to use manually set y axis limits (ckecked) or use automatic limits (unchecked)",
+            "example": false
+        },
+        "column-filter-956:312:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity 40_log2_delog"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity 40_log2_delog",
+                    "Intensity 46_log2_delog",
+                    "Intensity 50_log2_delog"
+                ]
+            }
+        },
+        "boolean-input-943:938:326": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to use manually set x axis limits (ckecked) or use automatic limits (unchecked)",
+            "example": false
+        },
+        "string-input-943:962:439": {
+            "type": "string",
+            "default": ".logFC",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": ".logFC"
+        },
+        "double-input-943:937:316": {
+            "type": "number",
+            "default": 0.001,
+            "description": "number that should be used instead of zero p value to compute -log value; if it will be 0, cases with zero p value will not be plotted",
+            "example": 0.001
+        },
+        "string-input-956:300:438": {
+            "type": "string",
+            "default": "LFQ intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "LFQ intensity "
+        },
+        "boolean-input-956:300:295:412": {
+            "type": "boolean",
+            "default": "true",
+            "description": "whether to show unity line (x=y) or not",
+            "example": true
+        },
+        "boolean-input-943:962:274:487": {
+            "type": "boolean",
+            "default": "false",
+            "description": "plot 'x-y' (M) on '(x+y)/2' (A) instead of 'y' on 'x'?",
+            "example": false
+        },
+        "string-input-956:300:439": {
+            "type": "string",
+            "default": "_log2",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2"
+        },
+        "boolean-input-956:300:328": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to use manually set y axis limits (checked) or use automatic limits (unchecked)",
+            "example": false
+        },
+        "column-filter-956:292:287:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity WT_1_log2_norm"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity WT_1_log2_norm",
+                    "Intensity WT_2_log2_norm",
+                    "Intensity WT_3_log2_norm",
+                    "Intensity WT_4_log2_norm",
+                    "Intensity KO_1_log2_norm",
+                    "Intensity KO_2_log2_norm",
+                    "Intensity KO_3_log2_norm",
+                    "Intensity KO_4_log2_norm"
+                ]
+            }
+        },
+        "string-input-956:291:285:259": {
+            "type": "string",
+            "default": "Intensity (log2)",
+            "description": "how the graph y axis should be titled",
+            "example": "Intensity (log2)"
+        },
+        "string-input-956:300:293:258": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled",
+            "example": ""
+        },
+        "string-input-956:300:293:259": {
+            "type": "string",
+            "default": "samples",
+            "description": "how the graph y axis should be titled",
+            "example": "samples"
+        },
+        "string-input-943:962:329": {
+            "type": "string",
+            "default": "-10;10",
+            "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
+            "example": "-10;10"
+        },
+        "string-input-956:291:285:258": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled",
+            "example": ""
+        },
+        "string-input-956:311:281": {
+            "type": "string",
+            "default": "_norm",
+            "description": "suffix to add to processed column names (original data will be replaced if blank)",
+            "example": "_norm"
+        },
+        "logFC_threshold-943:960:317": {
+            "type": "number",
+            "default": 1.0,
+            "description": "absolute threshold on axis x (logFC) that will be used for volcano plot points categorization, visualization and summary; value of same type as logFC column should be used (e.g. log2 transformed ratio)",
+            "example": 1.0
+        },
+        "double-input-956:297:444": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "boolean-input-956:292:289:328": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to use manually set y axis limits (checked) or use automatic limits (unchecked)",
+            "example": false
+        },
+        "string-input-943:962:258": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled",
+            "example": ""
+        },
+        "boolean-input-943:938:306": {
+            "type": "boolean",
+            "default": "true",
+            "description": "apply additional -log10 transformation on p-value column?",
+            "example": true
+        },
+        "string-input-943:962:259": {
+            "type": "string",
+            "default": "fold-change (log2)",
+            "description": "how the graph y axis should be titled",
+            "example": "fold-change (log2)"
+        },
+        "column-filter-956:300:293:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "LFQ intensity WT_1_log2"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "LFQ intensity WT_1_log2",
+                    "LFQ intensity WT_2_log2",
+                    "LFQ intensity WT_3_log2",
+                    "LFQ intensity KO_1_log2",
+                    "LFQ intensity KO_2_log2",
+                    "LFQ intensity KO_3_log2"
+                ]
+            }
+        },
+        "column-selection-948:624": {
+            "type": "object",
+            "properties": {
+                "column": {
+                    "type": "string",
+                    "default": "Protein IDs"
+                }
+            },
+            "description": "Top Input table column containing IDs you want to look up in the bottom Input table",
+            "example": {
+                "column": "Protein IDs"
+            }
+        },
+        "single-line-943:931:914": {
+            "type": "string",
+            "default": "none",
+            "description": "provide an information about the blocks of samples",
+            "example": "none"
+        },
+        "single-line-943:931:913": {
+            "type": "string",
+            "default": "none",
+            "description": "provide an information about the paired samples",
+            "example": "none"
+        },
+        "string-input-956:291:284:409": {
+            "type": "string",
+            "default": "not normalized data",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "not normalized data"
+        },
+        "single-line-943:931:915": {
+            "type": "string",
+            "default": "B-A, C-A",
+            "description": "provide comparisons (i.e. contrasts for limma) separated by comma; in case you would like to get ratio A and B and you provide log transformed data, comparison ('ratio' calculation) should be made as 'B-A'",
+            "example": "B-A, C-A"
+        },
+        "boolean-input-956:300:296:412": {
+            "type": "boolean",
+            "default": "true",
+            "description": "whether to show unity line (x=y) or not",
+            "example": true
+        },
+        "column-selection-948:626": {
+            "type": "object",
+            "properties": {
+                "column": {
+                    "type": "string",
+                    "default": "id"
+                }
+            },
+            "description": "Bottom Input table column containing IDs you want to look up values for (one ID per row necessary!)",
+            "example": {
+                "column": "id"
+            }
+        },
+        "column-filter-943:958:306": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array"
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                ]
+            }
+        },
+        "string-input-943:962:260": {
+            "type": "string",
+            "default": "logFC from LIMMA tests - all tests",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "logFC from LIMMA tests - all tests"
+        },
+        "single-selection-956:293:296:411": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "none"
+                }
+            },
+            "description": "whether to show linear or lowess regression curve, default is \"none\" for no regression line",
+            "example": {
+                "variable_value": "none"
+            }
+        },
+        "single-selection-956:291:283:419": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "pearson"
+                }
+            },
+            "description": "select the method used for correlation of data columns",
+            "example": {
+                "variable_value": "pearson"
+            }
+        },
+        "string-input-956:292:290:494": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2_norm"
+        },
+        "string-input-956:292:290:493": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "string-input-956:292:290:492": {
+            "type": "string",
+            "default": "None",
+            "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "None"
+        },
+        "boolean-input-956:290:328": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to use manually set y axis limits (checked) or use automatic limits (unchecked)",
+            "example": false
+        },
+        "string-input-956:292:291:489": {
+            "type": "string",
+            "default": "None",
+            "description": "limits of x axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "None"
+        },
+        "string-input-956:292:291:482": {
+            "type": "string",
+            "default": "None",
+            "description": "enter the value for imputation of missing values; default value is \"None\" for no imputation",
+            "example": "None"
+        },
+        "single-selection-956:297:443": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "the name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        },
+        "string-input-956:292:291:492": {
+            "type": "string",
+            "default": "-7;7",
+            "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "-7;7"
+        },
+        "boolean-input-956:291:328": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to use manually set y axis limits (checked) or use automatic limits (unchecked)",
+            "example": false
+        },
+        "string-input-956:292:290:489": {
+            "type": "string",
+            "default": "None",
+            "description": "limits of x axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
+            "example": "None"
+        },
+        "string-input-956:291:285:439": {
+            "type": "string",
+            "default": "_log2",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2"
+        },
+        "boolean-input-956:293:296:487": {
+            "type": "boolean",
+            "default": "false",
+            "description": "plot 'x-y' (M) on '(x+y)/2' (A) instead of 'y' on 'x'?",
+            "example": false
+        },
+        "string-input-956:292:290:482": {
+            "type": "string",
+            "default": "15",
+            "description": "enter the value for imputation of missing values; default value is \"None\" for no imputation",
+            "example": "15"
+        },
+        "string-input-943:962:961:329": {
+            "type": "string",
+            "default": "-10;10",
+            "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
+            "example": "-10;10"
+        },
+        "string-input-956:293:329": {
+            "type": "string",
+            "default": "-10;10",
+            "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
+            "example": "-10;10"
+        },
+        "string-input-956:292:291:494": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2_norm"
+        },
+        "single-selection-956:290:285:411": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "lowess"
+                }
+            },
+            "description": "whether to show linear or lowess regression curve, default is \"none\" for no regression line",
+            "example": {
+                "variable_value": "lowess"
+            }
+        },
+        "string-input-956:293:296:409": {
+            "type": "string",
+            "default": "normalized data - loessF",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": "normalized data - loessF"
+        },
+        "string-input-956:292:291:493": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "boolean-input-956:290:285:487": {
+            "type": "boolean",
+            "default": "true",
+            "description": "plot 'x-y' (M) on '(x+y)/2' (A) instead of 'y' on 'x'?",
+            "example": true
+        },
+        "string-input-956:290:286:438": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "string-input-956:310:281": {
+            "type": "string",
+            "default": "_norm",
+            "description": "suffix to add to processed column names (original data will be replaced if blank)",
+            "example": "_norm"
+        },
+        "boolean-input-956:297:296:412": {
+            "type": "boolean",
+            "default": "true",
+            "description": "whether to show unity line (x=y) or not",
+            "example": true
+        },
+        "string-input-956:291:285:329": {
+            "type": "string",
+            "default": "-10;10",
+            "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
+            "example": "-10;10"
+        },
+        "single-selection-956:290:286:443": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "the name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        },
+        "string-input-943:962:961:438": {
+            "type": "string",
+            "default": "LIMMA_",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "LIMMA_"
+        },
+        "string-input-956:293:438": {
+            "type": "string",
+            "default": "Intensity ",
+            "description": "common data columns prefix to be removed prior plotting",
+            "example": "Intensity "
+        },
+        "string-input-943:962:961:439": {
+            "type": "string",
+            "default": ".logFC",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": ".logFC"
+        },
+        "string-input-956:293:439": {
+            "type": "string",
+            "default": "_log2_norm",
+            "description": "common data columns suffix to be removed prior plotting",
+            "example": "_log2_norm"
+        },
+        "column-filter-956:297:293:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Intensity WT_1_log2_norm"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "Intensity WT_1_log2_norm",
+                    "Intensity WT_2_log2_norm",
+                    "Intensity WT_3_log2_norm",
+                    "Intensity WT_4_log2_norm",
+                    "Intensity KO_1_log2_norm",
+                    "Intensity KO_2_log2_norm",
+                    "Intensity KO_3_log2_norm",
+                    "Intensity KO_4_log2_norm"
+                ]
+            }
+        },
+        "single-selection-943:962:961:443": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "the name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        }
+    }
+}
