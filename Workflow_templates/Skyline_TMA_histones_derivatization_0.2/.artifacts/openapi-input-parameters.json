@@ -1,0 +1,68 @@
+
+{
+    "type": "object",
+    "properties": {
+        "boolean-input-1357:94": {
+            "type": "boolean",
+            "default": "false",
+            "description": "If selected, for each peptide forms, the other forms are amalgamated (summed), ALR-transformed and compared by t-test.",
+            "example": false
+        },
+        "boolean-input-1357:93": {
+            "type": "boolean",
+            "default": "true",
+            "description": "If selected, Hotelling's T2 test is applied to compare means of ILR-transformed data",
+            "example": true
+        },
+        "string-input-1357:92": {
+            "type": "string",
+            "default": "wt",
+            "description": "Specify the control group or selected comparisons. Comparisons must be specified in the following form: A-B,A-C This compares group A to groups B and C. The number of comparisons is not limited. Comparisons are performed for all experiments. ",
+            "example": "wt"
+        },
+        "string-input-1377:45:47": {
+            "type": "string",
+            "default": "fasta_path",
+            "description": "",
+            "example": "fasta_path"
+        },
+        "boolean-input-1357:95": {
+            "type": "boolean",
+            "default": "false",
+            "description": "If selected, all pariwise ratios of peptide form are calculated and compared by t-test. ",
+            "example": false
+        },
+        "boolean-input-1357:89": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Should zero areas be replaced?",
+            "example": false
+        },
+        "single-selection-1357:96": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "all"
+                }
+            },
+            "description": "",
+            "example": {
+                "variable_value": "all"
+            }
+        },
+        "single-selection-1357:91": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "All pairwise"
+                }
+            },
+            "description": "Which comparisons should be performed?",
+            "example": {
+                "variable_value": "All pairwise"
+            }
+        }
+    }
+}
