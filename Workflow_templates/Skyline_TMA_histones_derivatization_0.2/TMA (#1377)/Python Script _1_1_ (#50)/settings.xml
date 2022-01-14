@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<entry key="sourceCode" type="xstring" value="import sys, os.path%%00010#import pandaws%%00010import ast%%00010%%00010column_protein_name = flow_variables['column_protein_name']%%00010column_protein_accession = flow_variables['column_protein_accession']%%00010column_peptite_modified_sequence_with_masses = flow_variables['column_peptite_modified_sequence_with_masses']%%00010fasta_initial_number = flow_variables['fasta_initial_number']%%00010protein_id_prefix_regex = flow_variables['protein_id_prefix_regex']%%00010if not protein_id_prefix_regex:%%00010%%00009protein_id_prefix_regex_template = flow_variables['protein_id_prefix_regex_template (index)']%%00010%%00009if protein_id_prefix_regex_template == 0:%%00010%%00009%%00009protein_id_prefix_regex = &quot;[^\|]*\|[^\|]*\|([^_]*)&quot;%%00010%%00009elif protein_id_prefix_regex_template == 1:%%00010%%00009%%00009protein_id_prefix_regex = &quot;([^_]*)&quot;%%00010%%00010%%00010my_scripts_path = os.path.join(flow_variables['context.workflow.absolute-path'], &quot;my_scripts&quot;)%%00010sys.path.append(my_scripts_path)%%00010%%00010from sequence_class import *%%00010from tma_functions import *%%00010%%00010%%00010# get seqeunces from fasta file%%00010proteins_dic = get_sequences_from_fasta_file(flow_variables['fasta_path'])%%00010%%00010%%00010# get modification dic%%00010modifications_dic = ast.literal_eval(flow_variables['modification_dic'])%%00010%%00010%%00010# get enabled sequences%%00010enabled_sequences = ast.literal_eval(flow_variables['enabled_sequences_dic'])%%00010%%00010# set enabled sequences to proteins%%00010for accession in enabled_sequences.keys():%%00010%%00009if accession in proteins_dic.keys():%%00010%%00009%%00009proteins_dic[accession][&quot;enabled_sequences&quot;] = enabled_sequences[accession]%%00010%%00010%%00010%%00010# dataframe to edit%%00010df = input_table.copy()%%00010%%00010# create new columns%%00010df[&quot;Sequence with modif&quot;] = None%%00010df[&quot;Sequence with natural modif&quot;] = None%%00010df[&quot;Sequence without modif&quot;] = None%%00010df[&quot;Sequence identifier&quot;] = None%%00010df[&quot;Protein segment&quot;] = None%%00010df[&quot;n_term_old&quot;] = None%%00010df[&quot;n_term&quot;] = None%%00010df[&quot;all_amino_labels&quot;] = None%%00010df[&quot;label_old&quot;] = None%%00010df[&quot;label&quot;] = None%%00010df[&quot;sequence&quot;] = None%%00010df[&quot;desired?&quot;] = None%%00010df[&quot;errors&quot;] = None%%00010%%00010for index, row in df.iterrows():%%00010%%00009accession = row[column_protein_accession]%%00010%%00009modif_peptide = row[column_peptite_modified_sequence_with_masses]%%00010%%00009%%00010%%00009# id_prefix = get_id_prefix_from_protein_name(row[column_protein_name])%%00010%%00009#id_prefix = get_id_prefix_from_protein_name_by_regex(row[column_protein_name], protein_id_prefix_regex)%%00010%%00009id_prefix = &quot;&quot;%%00010%%00009if protein_id_prefix_regex:%%00010%%00009%%00009match = re.search(protein_id_prefix_regex, row[column_protein_name])%%00010%%00009%%00009if match:%%00010%%00009%%00009%%00009if match.group(1):%%00010%%00009%%00009%%00009%%00009id_prefix = match.group(1)%%00010%%00009%%00010%%00009#print(&quot;id_prefix_regex: &quot; + protein_id_prefix_regex)%%00010%%00009#print(&quot;id_prefix: &quot; + id_prefix)%%00010%%00009%%00010%%00009s = Sequence(accession, modif_peptide, proteins_dic, modifications_dic, fasta_initial_number)%%00010%%00010%%00009# set values to new columns%%00010%%00009df.at[index, &quot;Sequence with modif&quot;] = s.get_sequence_with_modif()%%00010%%00009df.at[index, &quot;Sequence with natural modif&quot;] = s.get_sequence_with_natural_modif()%%00010%%00009df.at[index, &quot;Sequence without modif&quot;] = s.get_sequence_without_modif()%%00010%%00009df.at[index, &quot;Sequence identifier&quot;] = id_prefix + &quot;_&quot; + s.get_identificator()%%00010%%00009df.at[index, &quot;Protein segment&quot;] = id_prefix + &quot;_&quot; + s.get_protein_segment()%%00010%%00009df.at[index, &quot;n_term_old&quot;] = s.n_term_old%%00010%%00009df.at[index, &quot;n_term&quot;] = s.n_term%%00010%%00009df.at[index, &quot;all_amino_labels&quot;] = s.all_amino_labels%%00010%%00009df.at[index, &quot;label_old&quot;] = s.label_old%%00010%%00009df.at[index, &quot;label&quot;] = s.label%%00010%%00009df.at[index, &quot;sequence&quot;] = s.sequence_correct%%00010%%00009df.at[index, &quot;desired?&quot;] = s.desired%%00010%%00009df.at[index, &quot;errors&quot;] = s.get_errors()%%00010%%00009%%00010%%00009%%00010%%00010# Send edited dataframe to output%%00010output_table = df%%00010%%00010print(&quot;Das ist alles.&quot;)%%00010"/>
+<entry key="rowLimit" type="xint" value="1000"/>
+<entry key="pythonVersionOption" type="xstring" value="python3"/>
+<entry key="python2Command" type="xstring" value=""/>
+<entry key="python3Command" type="xstring" value=""/>
+<entry key="chunkSize" type="xint" value="500000"/>
+<entry key="convertMissingToPython" type="xboolean" value="false"/>
+<entry key="convertMissingFromPython" type="xboolean" value="false"/>
+<entry key="sentinelOption" type="xstring" value="MIN_VAL"/>
+<entry key="sentinelValue" type="xint" value="0"/>
+</config>
+<config key="nodeAnnotation">
+<entry key="text" type="xstring" value="MAIN SCRIPT%%00010Create output table"/>
+<entry key="bgcolor" type="xint" value="16777215"/>
+<entry key="x-coordinate" type="xint" value="530"/>
+<entry key="y-coordinate" type="xint" value="501"/>
+<entry key="width" type="xint" value="142"/>
+<entry key="height" type="xint" value="34"/>
+<entry key="alignment" type="xstring" value="CENTER"/>
+<entry key="borderSize" type="xint" value="0"/>
+<entry key="borderColor" type="xint" value="16777215"/>
+<entry key="defFontSize" type="xint" value="10"/>
+<entry key="annotation-version" type="xint" value="20151123"/>
+<config key="styles"/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="IDLE"/>
+<entry key="factory" type="xstring" value="org.knime.python2.nodes.script.Python2ScriptNodeFactory"/>
+<entry key="node-name" type="xstring" value="Python Script (1⇒1)"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME Python nodes"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python2.nodes"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-bundle-version" type="xstring" value="4.1.3.v202005112253"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Python Integration"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python2.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-feature-version" type="xstring" value="4.1.3.v202005112253"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="Python Script (1⇒1)"/>
+<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+</config>
+</config>
