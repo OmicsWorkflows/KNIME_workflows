@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<config key="variable-filter">
+<entry key="filter-type" type="xstring" value="STANDARD"/>
+<config key="included_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="excluded_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
+<config key="name_pattern">
+<entry key="pattern" type="xstring" value=""/>
+<entry key="type" type="xstring" value="Wildcard"/>
+<entry key="caseSensitive" type="xboolean" value="true"/>
+</config>
+</config>
+<entry key="variable-prefix" type="xstring" isnull="true" value=""/>
+<config key="port-names">
+<entry key="array-size" type="xint" value="1"/>
+<entry key="0" type="xstring" value="Input table"/>
+</config>
+<config key="port-descriptions">
+<entry key="array-size" type="xint" value="1"/>
+<entry key="0" type="xstring" value="input table containing data columns to be compared"/>
+</config>
+<entry key="sub-node-description" type="xstring" value="LIMMA (Linear Models for Microarray Data) test for selected experimental design usecases. Expected usecase is 'single-channel' design using lmFit with least square method fitting.%%00010%%00010See e.g. LIMMA useguide for more details on selected settings explanation (https://www.bioconductor.org/packages/release/bioc/vignettes/limma/inst/doc/usersguide.pdf).%%00010%%00010Missing values are treated row-wise, e.g. protein group wise. In case there is no non-missing value in any sample type name (i.e. in A, B or C columns), the whole row is excluded from the statistical evaluation during lmFit step!%%00010%%00010Several more or less connected inputs are needed for proper results:%%00010%%00010- data columns%%00010data columns to be used during the LIMMA test (e.g. columns A1,A2,A3,B1,B2,B3,C1,C2,C3); already normalized and log (any base relevant for further processing) transformed data are expected!%%00010%%00010- LIMMA design%%00010should be provided in the form of sample type names in the same order as data columns without replicate number specification (e.g. &quot;A,A,A,B,B,B,C,C,C&quot;)%%00010%%00010- Use only cases quantified in at least specified number of replicates in at least one sample?%%00010option to cover only cases quantified in at least specified number of replicates in at least one sample; one can use either single threshold for all samples or separate threshold for each sample%%00010%%00010- comparisons%%00010i.e. contrasts for LIMMA test to be tested for statistical difference separated by comma, e.g. B-A, C-A%%00010Please note that because data to be tested are log transformed, ratio of not log transformed data ('B/A') equals to subtraction of their log transformed data ('log(B)-log(A)'). Therefore the comparison should be provided in a form of subtraction of control sample type (A in the example usecase) from 'influenced' sample type (B in the example usecase).%%00010%%00010- treat comparisons separately?%%00010by default it is unchecked, i.e. all specified comparisons (e.g. B-A and C-A mentioned above) will be tested together as one 'factor' and you will get single table with statistics results like in case of one-way (one-factor) ANOVA. In case you want to get results for individual comparisons, check this option and all comparisons will be tested and reported separately%%00010!!!COMMENT TO MISSING DATA HANDLING!!!%%00010Complete data matrix is considered during initial LIMMA processing (lmFit), so you may experience missing statistical evaluation results ('NaN') even if you have no missing value for concrete comparison... This is because of less than 1 non missing missing value in other factor (i.e. in A, B or C). If you don't need to use all columns for the modeling step, perform LIMMA test for all comparisons separately not to introduce missing statistical evaluation results!%%00010%%00010- p-value adj. method%%00010method to adjust p-values on multiple hypothesis testing; p.adjust R function is used here, see its documentation for more details%%00010%%00010You can also set the name of the test to be used as newly created columns prefix.%%00010%%00010Metanode returns several statistics for each comparison including:%%00010%%00010- logFC%%00010mean values of input (log transformed) data subtracted based on the concrete comparion - e.g. average of three B column values minus average of three A column values for each row in case of B-A comparison%%00010i.e. log fold change of not log transformed data using log of the same base%%00010%%00010- P.value%%00010not adjusted raw p-value of moderated t-test statistics; this is not preferred p-value due to multiple hypothesis testing (each row represents one test) that needs to be addressed not to give to high false positive discovery rates%%00010%%00010- adj.P.Val%%00010adjusted p-value using the selected method%%00010%%00010%%00010=================%%00010%%00010Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.%%00010%%00010KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)%%00010Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3.6/license.html)%%00010R (The R consists of the following GNU General Public Licences. Licence terms are available here: https://www.r-project.org/Licenses/)%%00010R package limma (The limma consists of the following General Public License (GPL), version 2 license. Licence terms are available here: https://www.r-project.org/Licenses/GPL-2)%%00010%%00010The metanode was created in KNIME 4.1.3 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 4.1.3a.%%00010%%00010=================%%00010%%00010This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.%%00010Version: 0.3.1 from 2021-12-03%%00010Contact person: David Potesil (david.potesil@ceitec.muni.cz)%%00010More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes."/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="IDLE"/>
+<entry key="isDeletable" type="xboolean" value="false"/>
+<entry key="factory" type="xstring" value="org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeFactory"/>
+<entry key="node-name" type="xstring" value="Component Input"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME Core API"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.core"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-bundle-version" type="xstring" value="4.1.3.v202005121100"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Core"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-feature-version" type="xstring" value="4.1.3.v202005121100"/>
+<config key="factory_settings">
+<config key="port_0">
+<entry key="index" type="xint" value="0"/>
+<config key="type">
+<entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+</config>
+</config>
+</config>
+<entry key="name" type="xstring" value="Component Input"/>
+<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+</config>
+</config>
