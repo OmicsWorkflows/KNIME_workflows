@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack">
+<config key="Variable_0">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="search_string_column"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="Run"/>
+</config>
+<config key="Variable_1">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="search_string_column"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="Run"/>
+</config>
+</config>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<config key="defaultValue">
+<entry key="column" type="xstring" value="old"/>
+</config>
+<entry key="label" type="xstring" value="Search string (regexp)"/>
+<entry key="description" type="xstring" value="The search pattern, which may contain group patterns used in back references."/>
+<entry key="hideInWizard" type="xboolean" value="true"/>
+<entry key="hideInDialog" type="xboolean" value="false"/>
+<entry key="required" type="xboolean" value="true"/>
+<entry key="parameterName" type="xstring" value="column-selection"/>
+<entry key="customCSS" type="xstring" value=""/>
+<entry key="flowvariablename" type="xstring" value="search_string_column"/>
+<config key="possibleColumns">
+<entry key="array-size" type="xint" value="2"/>
+<entry key="0" type="xstring" value="old"/>
+<entry key="1" type="xstring" value="new"/>
+</config>
+<entry key="type" type="xstring" value="Dropdown"/>
+<entry key="limit_number_visible_options" type="xboolean" value="false"/>
+<entry key="number_visible_options" type="xint" value="10"/>
+</config>
+<config key="nodeAnnotation">
+<entry key="text" type="xstring" value="selection of the column%%00010with OLD names"/>
+<entry key="bgcolor" type="xint" value="16777215"/>
+<entry key="x-coordinate" type="xint" value="-56"/>
+<entry key="y-coordinate" type="xint" value="519"/>
+<entry key="width" type="xint" value="153"/>
+<entry key="height" type="xint" value="34"/>
+<entry key="alignment" type="xstring" value="CENTER"/>
+<entry key="borderSize" type="xint" value="0"/>
+<entry key="borderColor" type="xint" value="16777215"/>
+<entry key="defFontSize" type="xint" value="10"/>
+<entry key="annotation-version" type="xint" value="20151123"/>
+<config key="styles"/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="EXECUTED"/>
+<entry key="factory" type="xstring" value="org.knime.js.base.node.quickform.selection.column.ColumnSelectionQuickFormNodeFactory"/>
+<entry key="node-name" type="xstring" value="Column Selection"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.js.quickforms"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-bundle-version" type="xstring" value="4.1.3.v202005112253"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Quick Forms"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.js.quickforms.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-feature-version" type="xstring" value="4.1.3.v202005112253"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="Column Selection"/>
+<entry key="hasContent" type="xboolean" value="true"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_spec_class" type="xstring" value="org.knime.core.node.port.flowvariable.FlowVariablePortObjectSpec"/>
+<entry key="port_object_class" type="xstring" value="org.knime.core.node.port.flowvariable.FlowVariablePortObject"/>
+<entry key="port_object_summary" type="xstring" value="Variables connection"/>
+<entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
+<entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
+<entry key="port_dir_location" type="xstring" value="port_1"/>
+</config>
+</config>
+<config key="internalObjects">
+<entry key="location" type="xstring" value="internalTables"/>
+<config key="content">
+<config key="object_0">
+<entry key="index" type="xint" value="0"/>
+<entry key="type" type="xstring" value="table"/>
+<entry key="table_dir_location" type="xstring" value="object_0"/>
+</config>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" value="15be0892-48fd-42c9-9d29-30b4c867df49"/>
+</config>
+</config>
