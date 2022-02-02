@@ -17,7 +17,7 @@
 <entry key="string" type="xstring" value=""/>
 </config>
 <entry key="label" type="xstring" value="Subsets"/>
-<entry key="description" type="xstring" value="Enter Description"/>
+<entry key="description" type="xstring" value="Enter subsets separated by comma, e. g. &quot;A, B, C&quot;. If you want to plot two subset together enter their names separated by a plus sign. e. g. &quot;A+B&quot;. Subset names need to correspond to &quot;Experimental design&quot;."/>
 <entry key="hideInWizard" type="xboolean" value="false"/>
 <entry key="hideInDialog" type="xboolean" value="false"/>
 <entry key="required" type="xboolean" value="true"/>

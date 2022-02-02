@@ -3194,7 +3194,7 @@
         "string-input-1498:1573": {
             "type": "string",
             "default": "",
-            "description": "Enter Description",
+            "description": "Enter subsets separated by comma, e. g. \"A, B, C\". If you want to plot two subset together enter their names separated by a plus sign. e. g. \"A+B\". Subset names need to correspond to \"Experimental design\".",
             "example": ""
         },
         "string-input-1498:1566:282:438": {
