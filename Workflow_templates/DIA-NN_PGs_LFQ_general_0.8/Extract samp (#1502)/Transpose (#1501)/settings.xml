@@ -12,6 +12,29 @@
 </config>
 <entry key="chunk_size" type="xint" value="10"/>
 </config>
+<config key="nodeAnnotation">
+<entry key="text" type="xstring" value="transpose the table"/>
+<entry key="bgcolor" type="xint" value="16777215"/>
+<entry key="x-coordinate" type="xint" value="690"/>
+<entry key="y-coordinate" type="xint" value="259"/>
+<entry key="width" type="xint" value="142"/>
+<entry key="height" type="xint" value="17"/>
+<entry key="alignment" type="xstring" value="CENTER"/>
+<entry key="borderSize" type="xint" value="0"/>
+<entry key="borderColor" type="xint" value="16777215"/>
+<entry key="defFontSize" type="xint" value="11"/>
+<entry key="annotation-version" type="xint" value="20151123"/>
+<config key="styles">
+<config key="style_0">
+<entry key="start" type="xint" value="0"/>
+<entry key="length" type="xint" value="19"/>
+<entry key="fontname" type="xstring" value="Sans"/>
+<entry key="fontstyle" type="xint" value="0"/>
+<entry key="fontsize" type="xint" value="11"/>
+<entry key="fgcolor" type="xint" value="0"/>
+</config>
+</config>
+</config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
 <entry key="state" type="xstring" value="EXECUTED"/>
 <config key="nodecontainer_message">
@@ -43,6 +66,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="48d390c1-2a27-4b8a-8726-db3b5a6f9469"/>
+<entry key="file_store_id" type="xstring" value="0418b15c-1953-40b6-81b4-f9d6ed0ca2c1"/>
 </config>
 </config>

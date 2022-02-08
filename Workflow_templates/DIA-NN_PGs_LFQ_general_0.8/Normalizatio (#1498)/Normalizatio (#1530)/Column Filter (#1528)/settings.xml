@@ -183,7 +183,7 @@
 <entry key="number_visible_options" type="xint" value="10"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
-<entry key="state" type="xstring" value="IDLE"/>
+<entry key="state" type="xstring" value="CONFIGURED"/>
 <entry key="factory" type="xstring" value="org.knime.js.base.node.quickform.filter.column.ColumnFilterQuickFormNodeFactory"/>
 <entry key="node-name" type="xstring" value="Column Filter"/>
 <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>

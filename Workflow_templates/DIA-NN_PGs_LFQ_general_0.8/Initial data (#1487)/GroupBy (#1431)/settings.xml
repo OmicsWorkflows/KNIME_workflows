@@ -520,7 +520,7 @@
 <entry key="text" type="xstring" value="grouping on the %%00010PG level"/>
 <entry key="bgcolor" type="xint" value="16777215"/>
 <entry key="x-coordinate" type="xint" value="269"/>
-<entry key="y-coordinate" type="xint" value="259"/>
+<entry key="y-coordinate" type="xint" value="299"/>
 <entry key="width" type="xint" value="142"/>
 <entry key="height" type="xint" value="34"/>
 <entry key="alignment" type="xstring" value="CENTER"/>
@@ -557,6 +557,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="3f87b83c-04a7-4dfc-969f-6686c3cc62eb"/>
+<entry key="file_store_id" type="xstring" value="1c803f9a-695c-4593-8029-6b04888dd1a8"/>
 </config>
 </config>

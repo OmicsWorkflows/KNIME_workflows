@@ -612,9 +612,9 @@
         },
         "single-line-0:975": {
             "type": "string",
-            "default": "s1,s1,s1,\ns2,s2,s2",
+            "default": "s1,s1,s1,s1,s1,\ns2,s2,s2,s2,s2,\ns3,s3,s3,s3,s3",
             "description": "provide experimental design for the calculation of sample type and or biol. repl. summary",
-            "example": "s1,s1,s1,\ns2,s2,s2"
+            "example": "s1,s1,s1,s1,s1,\ns2,s2,s2,s2,s2,\ns3,s3,s3,s3,s3"
         },
         "single-line-0:977": {
             "type": "string",
@@ -972,18 +972,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_3_log2"
                 ]
             }
         },
@@ -1349,19 +1343,28 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+lowT1_log2"
+                        "default": "PG.Quantity+1_1_log2"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+lowT1_log2",
-                    "PG.Quantity+normT1_log2",
-                    "PG.Quantity+highT1_log2",
-                    "PG.Quantity+lowT2_log2",
-                    "PG.Quantity+normT2_log2",
-                    "PG.Quantity+highT2_log2"
+                    "PG.Quantity+1_1_log2",
+                    "PG.Quantity+1_2_log2",
+                    "PG.Quantity+1_3_log2",
+                    "PG.Quantity+1_4_log2",
+                    "PG.Quantity+1_5_log2",
+                    "PG.Quantity+2_1_log2",
+                    "PG.Quantity+2_2_log2",
+                    "PG.Quantity+2_3_log2",
+                    "PG.Quantity+2_4_log2",
+                    "PG.Quantity+2_5_log2",
+                    "PG.Quantity+3_1_log2",
+                    "PG.Quantity+3_2_log2",
+                    "PG.Quantity+3_3_log2",
+                    "PG.Quantity+3_4_log2",
+                    "PG.Quantity+3_5_log2"
                 ]
             }
         },
@@ -1638,9 +1641,18 @@
                     "PG.MaxLFQ+1_1_log2",
                     "PG.MaxLFQ+1_2_log2",
                     "PG.MaxLFQ+1_3_log2",
+                    "PG.MaxLFQ+1_4_log2",
+                    "PG.MaxLFQ+1_5_log2",
                     "PG.MaxLFQ+2_1_log2",
                     "PG.MaxLFQ+2_2_log2",
-                    "PG.MaxLFQ+2_3_log2"
+                    "PG.MaxLFQ+2_3_log2",
+                    "PG.MaxLFQ+2_4_log2",
+                    "PG.MaxLFQ+2_5_log2",
+                    "PG.MaxLFQ+3_1_log2",
+                    "PG.MaxLFQ+3_2_log2",
+                    "PG.MaxLFQ+3_3_log2",
+                    "PG.MaxLFQ+3_4_log2",
+                    "PG.MaxLFQ+3_5_log2"
                 ]
             }
         },
@@ -1781,12 +1793,6 @@
                 "variable_value": "quantile"
             }
         },
-        "boolean-input-1503:310:276": {
-            "type": "boolean",
-            "default": "false",
-            "description": "whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
-            "example": false
-        },
         "string-input-1498:1553:281:409": {
             "type": "string",
             "default": "normalized data - median",
@@ -1859,19 +1865,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.MaxLFQ+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.MaxLFQ+1_1_log2",
-                    "PG.MaxLFQ+1_2_log2",
-                    "PG.MaxLFQ+1_3_log2"
                 ]
             }
         },
@@ -1968,18 +1967,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_3_log2"
                 ]
             }
         },
@@ -2388,12 +2381,6 @@
             "default": "_log2",
             "description": "common data columns suffix to be removed prior plotting",
             "example": "_log2"
-        },
-        "string-input-1503:309:281": {
-            "type": "string",
-            "default": "_norm",
-            "description": "suffix to add to processed column names (original data will be replaced if blank)",
-            "example": "_norm"
         },
         "string-input-1498:1555:287:329": {
             "type": "string",
@@ -3031,7 +3018,6 @@
             "example": {
                 "columns": [
                     "PG.MaxLFQ+1_1_log2",
-                    "PG.MaxLFQ+1_2_log2",
                     "PG.MaxLFQ+1_3_log2",
                     "PG.MaxLFQ+2_1_log2",
                     "PG.MaxLFQ+2_2_log2"
@@ -3117,9 +3103,18 @@
                     "PG.Quantity+1_1_log2",
                     "PG.Quantity+1_2_log2",
                     "PG.Quantity+1_3_log2",
+                    "PG.Quantity+1_4_log2",
+                    "PG.Quantity+1_5_log2",
                     "PG.Quantity+2_1_log2",
                     "PG.Quantity+2_2_log2",
-                    "PG.Quantity+2_3_log2"
+                    "PG.Quantity+2_3_log2",
+                    "PG.Quantity+2_4_log2",
+                    "PG.Quantity+2_5_log2",
+                    "PG.Quantity+3_1_log2",
+                    "PG.Quantity+3_2_log2",
+                    "PG.Quantity+3_3_log2",
+                    "PG.Quantity+3_4_log2",
+                    "PG.Quantity+3_5_log2"
                 ]
             }
         },
@@ -3323,12 +3318,6 @@
             "description": "whether to use manually set x axis limits (ckecked) or use automatic limits (unchecked)",
             "example": false
         },
-        "boolean-input-1503:311:276": {
-            "type": "boolean",
-            "default": "false",
-            "description": "whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
-            "example": false
-        },
         "string-input-1498:1555:259": {
             "type": "string",
             "default": "Intensity (log2)",
@@ -3501,6 +3490,12 @@
             "default": 0.0,
             "description": "value that will be used as a center to color individual cluster data",
             "example": 0.0
+        },
+        "boolean-input-1503:1519": {
+            "type": "boolean",
+            "default": "true",
+            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data. Checked -> dataframe of processed columns will be returned only.",
+            "example": true
         },
         "single-selection-1498:1563:285:443": {
             "type": "object",
@@ -3736,6 +3731,12 @@
             "description": "common data columns prefix to be removed prior plotting",
             "example": "PG.MaxLFQ+"
         },
+        "string-input-1503:1514": {
+            "type": "string",
+            "default": "_norm",
+            "description": "Enter the suffix which will be added to all normalized columns. No suffix will be added if \"no normalization\" is selected.",
+            "example": "_norm"
+        },
         "column-filter-1498:1553:284:257": {
             "type": "object",
             "properties": {
@@ -3827,21 +3828,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Quantity+1_1_log2_norm"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_2_log2_norm",
-                    "PG.Quantity+1_3_log2_norm",
-                    "PG.Quantity+2_1_log2_norm",
-                    "PG.Quantity+2_2_log2_norm"
                 ]
             }
         },
@@ -3959,12 +3951,6 @@
             "default": "false",
             "description": "whether to return only set of unique values instead of full list of values including duplicates; beware that the order of returned values will not correspond to the IDs order in the top table IDs column!",
             "example": false
-        },
-        "string-input-1503:310:281": {
-            "type": "string",
-            "default": "_norm",
-            "description": "suffix to add to processed column names (original data will be replaced if blank)",
-            "example": "_norm"
         },
         "string-input-1498:1553:286:260": {
             "type": "string",
@@ -4158,12 +4144,12 @@
             "properties": {
                 "variable_value": {
                     "type": "string",
-                    "default": "quantile (non-linear)"
+                    "default": "median (linear)"
                 }
             },
             "description": "Pick which normalization method do you want to use for further data processing",
             "example": {
-                "variable_value": "quantile (non-linear)"
+                "variable_value": "median (linear)"
             }
         },
         "string-input-1498:1534:286:441": {
@@ -4471,7 +4457,6 @@
             "example": {
                 "columns": [
                     "PG.MaxLFQ+1_1_log2",
-                    "PG.MaxLFQ+1_2_log2",
                     "PG.MaxLFQ+1_3_log2",
                     "PG.MaxLFQ+2_1_log2",
                     "PG.MaxLFQ+2_2_log2"
@@ -4538,8 +4523,7 @@
                     "1_2",
                     "1_3",
                     "2_1",
-                    "2_2",
-                    "2_3"
+                    "2_2"
                 ]
             }
         },
@@ -4733,12 +4717,6 @@
             "example": {
                 "variable_value": "scott"
             }
-        },
-        "string-input-1503:311:281": {
-            "type": "string",
-            "default": "_norm",
-            "description": "suffix to add to processed column names (original data will be replaced if blank)",
-            "example": "_norm"
         },
         "double-input-1498:1559:444": {
             "type": "number",
@@ -4991,7 +4969,6 @@
             "example": {
                 "columns": [
                     "PG.MaxLFQ+1_1_log2",
-                    "PG.MaxLFQ+1_2_log2",
                     "PG.MaxLFQ+1_3_log2",
                     "PG.MaxLFQ+2_1_log2",
                     "PG.MaxLFQ+2_2_log2"
@@ -6116,7 +6093,6 @@
             "example": {
                 "columns": [
                     "PG.MaxLFQ+1_1_log2",
-                    "PG.MaxLFQ+1_2_log2",
                     "PG.MaxLFQ+1_3_log2",
                     "PG.MaxLFQ+2_1_log2",
                     "PG.MaxLFQ+2_2_log2"
@@ -6318,7 +6294,6 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_2_log2_norm",
                     "PG.Quantity+1_3_log2_norm",
                     "PG.Quantity+2_1_log2_norm",
                     "PG.Quantity+2_2_log2_norm"
@@ -6364,9 +6339,9 @@
         },
         "single-line-1311:931:308": {
             "type": "string",
-            "default": "s1,s1,s1,\ns2,s2,s2",
+            "default": "s1,s1,s1,s1,s1,\ns2,s2,s2,s2,s2,\ns3,s3,s3,s3,s3",
             "description": "provide design for limma test - order of columns based on sample type",
-            "example": "s1,s1,s1,\ns2,s2,s2"
+            "example": "s1,s1,s1,s1,s1,\ns2,s2,s2,s2,s2,\ns3,s3,s3,s3,s3"
         },
         "string-input-1498:1532:283:409": {
             "type": "string",
@@ -6387,17 +6362,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+lowT1_log2"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
+                    "PG.Quantity+lowT1_log2",
+                    "PG.Quantity+normT1_log2",
+                    "PG.Quantity+highT1_log2",
+                    "PG.Quantity+lowT2_log2",
+                    "PG.Quantity+normT2_log2",
+                    "PG.Quantity+highT2_log2"
                 ]
             }
         },
@@ -6799,21 +6776,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Quantity+1_1_log2_norm"
-                    }
+                    "type": "array"
                 }
             },
             "description": "Enter Description",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_2_log2_norm",
-                    "PG.Quantity+1_3_log2_norm",
-                    "PG.Quantity+2_1_log2_norm",
-                    "PG.Quantity+2_2_log2_norm"
                 ]
             }
         },
@@ -6821,20 +6789,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Quantity+1_1_log2_norm"
-                    }
+                    "type": "array"
                 }
             },
             "description": "Enter Description",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_3_log2_norm",
-                    "PG.Quantity+2_1_log2_norm",
-                    "PG.Quantity+2_2_log2_norm"
                 ]
             }
         },
@@ -6848,20 +6808,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Quantity+1_1_log2_norm"
-                    }
+                    "type": "array"
                 }
             },
             "description": "Enter Description",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_3_log2_norm",
-                    "PG.Quantity+2_1_log2_norm",
-                    "PG.Quantity+2_2_log2_norm"
                 ]
             }
         },
@@ -7034,7 +6986,6 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_2_log2_norm",
                     "PG.Quantity+1_3_log2_norm",
                     "PG.Quantity+2_1_log2_norm",
                     "PG.Quantity+2_2_log2_norm"
@@ -7513,7 +7464,6 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_2_log2_norm",
                     "PG.Quantity+1_3_log2_norm",
                     "PG.Quantity+2_1_log2_norm",
                     "PG.Quantity+2_2_log2_norm"
@@ -8029,19 +7979,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.MaxLFQ+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.MaxLFQ+1_1_log2",
-                    "PG.MaxLFQ+1_2_log2",
-                    "PG.MaxLFQ+1_3_log2"
                 ]
             }
         },
@@ -8061,22 +8004,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.MaxLFQ+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select columns to be processed",
             "example": {
                 "columns": [
-                    "PG.MaxLFQ+1_1_log2",
-                    "PG.MaxLFQ+1_2_log2",
-                    "PG.MaxLFQ+1_3_log2",
-                    "PG.MaxLFQ+2_1_log2",
-                    "PG.MaxLFQ+2_2_log2",
-                    "PG.MaxLFQ+2_3_log2"
                 ]
             }
         },
@@ -8108,7 +8041,6 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_2_log2_norm",
                     "PG.Quantity+1_3_log2_norm",
                     "PG.Quantity+2_1_log2_norm",
                     "PG.Quantity+2_2_log2_norm"
@@ -8159,21 +8091,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Quantity+1_1_log2_norm"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_2_log2_norm",
-                    "PG.Quantity+1_3_log2_norm",
-                    "PG.Quantity+2_1_log2_norm",
-                    "PG.Quantity+2_2_log2_norm"
                 ]
             }
         },
@@ -8252,7 +8175,6 @@
             "example": {
                 "columns": [
                     "PG.MaxLFQ+1_1_log2",
-                    "PG.MaxLFQ+1_2_log2",
                     "PG.MaxLFQ+1_3_log2",
                     "PG.MaxLFQ+2_1_log2",
                     "PG.MaxLFQ+2_2_log2"
@@ -8288,12 +8210,6 @@
             "default": "PG.Quantity+",
             "description": "common data columns prefix to be removed prior plotting",
             "example": "PG.Quantity+"
-        },
-        "boolean-input-1503:309:276": {
-            "type": "boolean",
-            "default": "false",
-            "description": "whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
-            "example": false
         },
         "string-input-1498:291:283:439": {
             "type": "string",
@@ -8645,18 +8561,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_3_log2"
                 ]
             }
         },
@@ -8709,9 +8619,18 @@
                     "PG.Quantity+1_1_log2",
                     "PG.Quantity+1_2_log2",
                     "PG.Quantity+1_3_log2",
+                    "PG.Quantity+1_4_log2",
+                    "PG.Quantity+1_5_log2",
                     "PG.Quantity+2_1_log2",
                     "PG.Quantity+2_2_log2",
-                    "PG.Quantity+2_3_log2"
+                    "PG.Quantity+2_3_log2",
+                    "PG.Quantity+2_4_log2",
+                    "PG.Quantity+2_5_log2",
+                    "PG.Quantity+3_1_log2",
+                    "PG.Quantity+3_2_log2",
+                    "PG.Quantity+3_3_log2",
+                    "PG.Quantity+3_4_log2",
+                    "PG.Quantity+3_5_log2"
                 ]
             }
         },
@@ -8894,7 +8813,6 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_2_log2_norm",
                     "PG.Quantity+1_3_log2_norm",
                     "PG.Quantity+2_1_log2_norm",
                     "PG.Quantity+2_2_log2_norm"
@@ -8958,18 +8876,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+lowT1_log2"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
+                    "PG.Quantity+lowT1_log2",
+                    "PG.Quantity+normT1_log2",
+                    "PG.Quantity+highT1_log2",
+                    "PG.Quantity+lowT2_log2",
+                    "PG.Quantity+normT2_log2",
+                    "PG.Quantity+highT2_log2"
                 ]
             }
         },
@@ -9090,18 +9009,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_3_log2"
                 ]
             }
         },
@@ -9352,9 +9265,9 @@
         },
         "single-line-1311:931:915": {
             "type": "string",
-            "default": "s2-s1",
+            "default": "s2-s1, s3-s1",
             "description": "provide comparisons (i.e. contrasts for limma) separated by comma; in case you would like to get ratio A and B and you provide log transformed data, comparison ('ratio' calculation) should be made as 'B-A'",
-            "example": "s2-s1"
+            "example": "s2-s1, s3-s1"
         },
         "single-line-1311:931:913": {
             "type": "string",

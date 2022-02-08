@@ -70,6 +70,20 @@
 </config>
 </config>
 </config>
+<config key="nodeAnnotation">
+<entry key="text" type="xstring" value="only take columns which %%00010contain the &quot;Precursor.Id&quot;%%00010suffix"/>
+<entry key="bgcolor" type="xint" value="16777215"/>
+<entry key="x-coordinate" type="xint" value="155"/>
+<entry key="y-coordinate" type="xint" value="259"/>
+<entry key="width" type="xint" value="171"/>
+<entry key="height" type="xint" value="51"/>
+<entry key="alignment" type="xstring" value="CENTER"/>
+<entry key="borderSize" type="xint" value="0"/>
+<entry key="borderColor" type="xint" value="16777215"/>
+<entry key="defFontSize" type="xint" value="11"/>
+<entry key="annotation-version" type="xint" value="20151123"/>
+<config key="styles"/>
+</config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
 <entry key="state" type="xstring" value="EXECUTED"/>
 <entry key="factory" type="xstring" value="org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory"/>
@@ -91,12 +105,12 @@
 <entry key="index" type="xint" value="1"/>
 <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
 <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-<entry key="port_object_summary" type="xstring" value="Rows: 971, Cols: 6"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 967, Cols: 6"/>
 <entry key="port_dir_location" type="xstring" value="port_1"/>
 </config>
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="0d52a8ad-c676-4607-9d78-9ac399bc518a"/>
+<entry key="file_store_id" type="xstring" value="ad99c85f-83f3-438e-b572-93e12ff6e9c8"/>
 </config>
 </config>

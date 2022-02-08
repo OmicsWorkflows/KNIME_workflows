@@ -6,7 +6,7 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="design"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="s1,s1,s1,%%00010s2,s2,s2"/>
+<entry key="value" type="xstring" value="s1,s1,s1,s1,s1,%%00010s2,s2,s2,s2,s2,%%00010s3,s3,s3,s3,s3"/>
 </config>
 </config>
 <config key="internal_node_subsettings">

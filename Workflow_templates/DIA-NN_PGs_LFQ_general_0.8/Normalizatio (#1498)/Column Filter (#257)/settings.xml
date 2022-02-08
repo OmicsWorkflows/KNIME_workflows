@@ -6,7 +6,13 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="samples"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="1_1,1_2,1_3,2_1,2_2,2_3"/>
+<entry key="value" type="xstring" value="1_1,1_2,1_3,2_1,2_2"/>
+</config>
+<config key="Variable_1">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="samples"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="1_1,1_2,1_3,2_1,2_2"/>
 </config>
 </config>
 <config key="internal_node_subsettings">
@@ -19,7 +25,7 @@
 </config>
 <config key="columnFilter">
 <config key="columnFilter">
-<entry key="filter-type" type="xstring" value="STANDARD"/>
+<entry key="filter-type" type="xstring" value="name_pattern"/>
 <config key="included_names">
 <entry key="array-size" type="xint" value="6"/>
 <entry key="0" type="xstring" value="1_1"/>
@@ -30,11 +36,20 @@
 <entry key="5" type="xstring" value="2_3"/>
 </config>
 <config key="excluded_names">
-<entry key="array-size" type="xint" value="0"/>
+<entry key="array-size" type="xint" value="9"/>
+<entry key="0" type="xstring" value="1_4"/>
+<entry key="1" type="xstring" value="1_5"/>
+<entry key="2" type="xstring" value="2_4"/>
+<entry key="3" type="xstring" value="2_5"/>
+<entry key="4" type="xstring" value="3_1"/>
+<entry key="5" type="xstring" value="3_2"/>
+<entry key="6" type="xstring" value="3_3"/>
+<entry key="7" type="xstring" value="3_4"/>
+<entry key="8" type="xstring" value="3_5"/>
 </config>
 <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
 <config key="name_pattern">
-<entry key="pattern" type="xstring" value=""/>
+<entry key="pattern" type="xstring" value="*"/>
 <entry key="type" type="xstring" value="Wildcard"/>
 <entry key="caseSensitive" type="xboolean" value="true"/>
 </config>
@@ -60,13 +75,22 @@
 <entry key="customCSS" type="xstring" value=""/>
 <entry key="flowvariablename" type="xstring" value="samples"/>
 <config key="possibleColumns">
-<entry key="array-size" type="xint" value="6"/>
+<entry key="array-size" type="xint" value="15"/>
 <entry key="0" type="xstring" value="1_1"/>
 <entry key="1" type="xstring" value="1_2"/>
 <entry key="2" type="xstring" value="1_3"/>
-<entry key="3" type="xstring" value="2_1"/>
-<entry key="4" type="xstring" value="2_2"/>
-<entry key="5" type="xstring" value="2_3"/>
+<entry key="3" type="xstring" value="1_4"/>
+<entry key="4" type="xstring" value="1_5"/>
+<entry key="5" type="xstring" value="2_1"/>
+<entry key="6" type="xstring" value="2_2"/>
+<entry key="7" type="xstring" value="2_3"/>
+<entry key="8" type="xstring" value="2_4"/>
+<entry key="9" type="xstring" value="2_5"/>
+<entry key="10" type="xstring" value="3_1"/>
+<entry key="11" type="xstring" value="3_2"/>
+<entry key="12" type="xstring" value="3_3"/>
+<entry key="13" type="xstring" value="3_4"/>
+<entry key="14" type="xstring" value="3_5"/>
 </config>
 <entry key="type" type="xstring" value="Twinlist"/>
 <entry key="limit_number_visible_options" type="xboolean" value="false"/>
@@ -87,7 +111,11 @@
 <config key="styles"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
-<entry key="state" type="xstring" value="CONFIGURED"/>
+<entry key="state" type="xstring" value="EXECUTED"/>
+<config key="nodecontainer_message">
+<entry key="type" type="xstring" value="WARNING"/>
+<entry key="message" type="xstring" value="Node created an empty data table."/>
+</config>
 <entry key="factory" type="xstring" value="org.knime.js.base.node.quickform.filter.column.ColumnFilterQuickFormNodeFactory"/>
 <entry key="node-name" type="xstring" value="Column Filter"/>
 <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
@@ -100,16 +128,29 @@
 <entry key="node-feature-version" type="xstring" value="4.1.3.v202005112253"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="Column Filter"/>
-<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="hasContent" type="xboolean" value="true"/>
 <entry key="isInactive" type="xboolean" value="false"/>
 <config key="ports">
 <config key="port_1">
 <entry key="index" type="xint" value="1"/>
-<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+<entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+<entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 0, Cols: 5"/>
+<entry key="port_dir_location" type="xstring" value="port_1"/>
+</config>
+</config>
+<config key="internalObjects">
+<entry key="location" type="xstring" value="internalTables"/>
+<config key="content">
+<config key="object_0">
+<entry key="index" type="xint" value="0"/>
+<entry key="type" type="xstring" value="table"/>
+<entry key="table_dir_location" type="xstring" value="object_0"/>
+</config>
 </config>
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" value="5d77aaa1-9f5c-418e-b859-b3fdffdef01b"/>
 </config>
 </config>

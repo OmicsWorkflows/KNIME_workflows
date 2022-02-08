@@ -6,7 +6,7 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="columns_to_process"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="LIMMA_DIA_s2-s1.logFC"/>
+<entry key="value" type="xstring" value="LIMMA_DIA_s2-s1.logFC,LIMMA_DIA_s3-s1.logFC"/>
 </config>
 </config>
 <config key="internal_node_subsettings">
