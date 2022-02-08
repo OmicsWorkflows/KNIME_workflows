@@ -38,10 +38,6 @@
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
 <entry key="state" type="xstring" value="IDLE"/>
-<config key="nodecontainer_message">
-<entry key="type" type="xstring" value="WARNING"/>
-<entry key="message" type="xstring" value="IF Switch 0:1503:0:1508: Errors overwriting node settings with flow variables: Unknown variable &quot;switch1&quot;"/>
-</config>
 <entry key="virtual-in-ID" type="xint" value="1300"/>
 <config key="inports">
 <config key="inport_0">

@@ -49,7 +49,7 @@
 </config>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
-<entry key="state" type="xstring" value="CONFIGURED"/>
+<entry key="state" type="xstring" value="IDLE"/>
 <entry key="factory" type="xstring" value="org.knime.js.base.node.quickform.input.bool.BooleanInputQuickFormNodeFactory"/>
 <entry key="node-name" type="xstring" value="Boolean Input"/>
 <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
