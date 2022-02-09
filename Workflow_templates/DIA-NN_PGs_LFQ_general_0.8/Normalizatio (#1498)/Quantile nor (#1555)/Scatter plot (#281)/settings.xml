@@ -39,7 +39,7 @@
 </config>
 </config>
 <config key="string-input-409">
-<entry key="string" type="xstring" value="normalized data - quantile"/>
+<entry key="string" type="xstring" value=""/>
 </config>
 <config key="single-selection-411">
 <entry key="variable_value" type="xstring" value="none"/>
@@ -52,6 +52,17 @@
 </config>
 <config key="string-input-494">
 <entry key="string" type="xstring" value="_log2"/>
+</config>
+</config>
+<config key="variables">
+<entry key="version" type="xstring" value="V_2019_09_13"/>
+<config key="tree">
+<config key="string-input-409">
+<config key="string">
+<entry key="used_variable" type="xstring" value="graph_subtitle"/>
+<entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+</config>
+</config>
 </config>
 </config>
 <config key="nodeAnnotation">

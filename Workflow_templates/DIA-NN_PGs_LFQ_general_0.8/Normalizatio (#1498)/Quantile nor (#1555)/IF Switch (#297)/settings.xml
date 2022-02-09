@@ -21,7 +21,7 @@
 <entry key="version" type="xstring" value="V_2019_09_13"/>
 <config key="tree">
 <config key="PortChoice">
-<entry key="used_variable" type="xstring" value="subset_hierarchy"/>
+<entry key="used_variable" type="xstring" value="subset_scatter"/>
 <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
 </config>
 </config>

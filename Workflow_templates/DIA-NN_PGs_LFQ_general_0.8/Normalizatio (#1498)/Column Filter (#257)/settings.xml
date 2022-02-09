@@ -6,13 +6,13 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="samples"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="1_1,1_2,1_3,2_1,2_2"/>
+<entry key="value" type="xstring" value="1_1,IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti,IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti"/>
 </config>
 <config key="Variable_1">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="samples"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="1_1,1_2,1_3,2_1,2_2"/>
+<entry key="value" type="xstring" value="1_1,IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti,IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti"/>
 </config>
 </config>
 <config key="internal_node_subsettings">
@@ -36,16 +36,12 @@
 <entry key="5" type="xstring" value="2_3"/>
 </config>
 <config key="excluded_names">
-<entry key="array-size" type="xint" value="9"/>
-<entry key="0" type="xstring" value="1_4"/>
-<entry key="1" type="xstring" value="1_5"/>
-<entry key="2" type="xstring" value="2_4"/>
-<entry key="3" type="xstring" value="2_5"/>
-<entry key="4" type="xstring" value="3_1"/>
-<entry key="5" type="xstring" value="3_2"/>
-<entry key="6" type="xstring" value="3_3"/>
-<entry key="7" type="xstring" value="3_4"/>
-<entry key="8" type="xstring" value="3_5"/>
+<entry key="array-size" type="xint" value="5"/>
+<entry key="0" type="xstring" value="IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti"/>
+<entry key="1" type="xstring" value="IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti"/>
+<entry key="2" type="xstring" value="IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti"/>
+<entry key="3" type="xstring" value="IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti"/>
+<entry key="4" type="xstring" value="IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti"/>
 </config>
 <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
 <config key="name_pattern">
@@ -75,22 +71,13 @@
 <entry key="customCSS" type="xstring" value=""/>
 <entry key="flowvariablename" type="xstring" value="samples"/>
 <config key="possibleColumns">
-<entry key="array-size" type="xint" value="15"/>
+<entry key="array-size" type="xint" value="6"/>
 <entry key="0" type="xstring" value="1_1"/>
-<entry key="1" type="xstring" value="1_2"/>
-<entry key="2" type="xstring" value="1_3"/>
-<entry key="3" type="xstring" value="1_4"/>
-<entry key="4" type="xstring" value="1_5"/>
-<entry key="5" type="xstring" value="2_1"/>
-<entry key="6" type="xstring" value="2_2"/>
-<entry key="7" type="xstring" value="2_3"/>
-<entry key="8" type="xstring" value="2_4"/>
-<entry key="9" type="xstring" value="2_5"/>
-<entry key="10" type="xstring" value="3_1"/>
-<entry key="11" type="xstring" value="3_2"/>
-<entry key="12" type="xstring" value="3_3"/>
-<entry key="13" type="xstring" value="3_4"/>
-<entry key="14" type="xstring" value="3_5"/>
+<entry key="1" type="xstring" value="IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti"/>
+<entry key="2" type="xstring" value="IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti"/>
+<entry key="3" type="xstring" value="IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti"/>
+<entry key="4" type="xstring" value="IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti"/>
+<entry key="5" type="xstring" value="IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti"/>
 </config>
 <entry key="type" type="xstring" value="Twinlist"/>
 <entry key="limit_number_visible_options" type="xboolean" value="false"/>

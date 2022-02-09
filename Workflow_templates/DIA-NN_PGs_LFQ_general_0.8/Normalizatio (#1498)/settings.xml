@@ -6,49 +6,6 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<config key="column-filter-257">
-<config key="columns">
-<entry key="array-size" type="xint" value="5"/>
-<entry key="0" type="xstring" value="1_1"/>
-<entry key="1" type="xstring" value="1_2"/>
-<entry key="2" type="xstring" value="1_3"/>
-<entry key="3" type="xstring" value="2_1"/>
-<entry key="4" type="xstring" value="2_2"/>
-</config>
-<config key="columnFilter">
-<config key="columnFilter">
-<entry key="filter-type" type="xstring" value="STANDARD"/>
-<config key="included_names">
-<entry key="array-size" type="xint" value="5"/>
-<entry key="0" type="xstring" value="1_1"/>
-<entry key="1" type="xstring" value="1_2"/>
-<entry key="2" type="xstring" value="1_3"/>
-<entry key="3" type="xstring" value="2_1"/>
-<entry key="4" type="xstring" value="2_2"/>
-</config>
-<config key="excluded_names">
-<entry key="array-size" type="xint" value="1"/>
-<entry key="0" type="xstring" value="2_3"/>
-</config>
-<entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
-<config key="name_pattern">
-<entry key="pattern" type="xstring" value=""/>
-<entry key="type" type="xstring" value="Wildcard"/>
-<entry key="caseSensitive" type="xboolean" value="true"/>
-</config>
-<config key="datatype">
-<config key="typelist">
-<entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
-<entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
-<entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
-<entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
-<entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
-<entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
-</config>
-</config>
-</config>
-</config>
-</config>
 <config key="methods-1575">
 <config key="variable_value">
 <entry key="array-size" type="xint" value="0"/>

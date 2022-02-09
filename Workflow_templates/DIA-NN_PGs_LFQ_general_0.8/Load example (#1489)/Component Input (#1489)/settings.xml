@@ -31,7 +31,7 @@
 <entry key="sub-node-description" type="xstring" value=""/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
-<entry key="state" type="xstring" value="EXECUTED"/>
+<entry key="state" type="xstring" value="CONFIGURED"/>
 <entry key="isDeletable" type="xboolean" value="false"/>
 <entry key="factory" type="xstring" value="org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeFactory"/>
 <entry key="node-name" type="xstring" value="Component Input"/>
@@ -45,11 +45,11 @@
 <entry key="node-feature-version" type="xstring" value="4.1.3.v202005121100"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="Component Input"/>
-<entry key="hasContent" type="xboolean" value="true"/>
+<entry key="hasContent" type="xboolean" value="false"/>
 <entry key="isInactive" type="xboolean" value="false"/>
 <config key="ports"/>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="093ebdd9-c0a7-4ad3-b7e7-897a812e8467"/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
 </config>
 </config>

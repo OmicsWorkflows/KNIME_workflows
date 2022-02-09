@@ -10,12 +10,21 @@
 <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
-<entry key="PortChoice" type="xstring" value=""/>
+<entry key="PortChoice" type="xstring" value="both"/>
 <config key="activate_all_outputs_during_configure_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
 <entry key="activate_all_outputs_during_configure" type="xboolean" value="true"/>
+</config>
+<config key="variables">
+<entry key="version" type="xstring" value="V_2019_09_13"/>
+<config key="tree">
+<config key="PortChoice">
+<entry key="used_variable" type="xstring" value="graph_hierarchy"/>
+<entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+</config>
+</config>
 </config>
 <config key="nodeAnnotation">
 <entry key="text" type="xstring" value=""/>

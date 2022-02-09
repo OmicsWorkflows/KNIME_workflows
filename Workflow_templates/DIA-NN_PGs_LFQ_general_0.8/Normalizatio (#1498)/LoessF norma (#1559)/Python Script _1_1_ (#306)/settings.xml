@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
 <entry key="node_file" type="xstring" value="settings.xml"/>
-<config key="flow_stack">
-<config key="Variable_0">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="filename_violinwidthcount"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="knime://knime.workflow/__outputs__/figures/loessf-norm_violins-width-count_s1-s2.png"/>
-</config>
-</config>
+<config key="flow_stack"/>
 <config key="internal_node_subsettings">
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="sourceCode" type="xstring" value="# create a flow variable for filename%%00010flow_variables['filename_violinwidthcount'] = 'knime://knime.workflow/__outputs__/figures/' + flow_variables['normalization_filename'] + '_violins-width-count_' + flow_variables['subset_filename'] + '.png'%%00010%%00010# copy input to output%%00010output_table = input_table.copy()%%00010"/>
+<entry key="sourceCode" type="xstring" value="# create a flow variable for filename%%00010flow_variables['filename_violinwidthcount'] = 'knime://knime.workflow/__outputs__/figures/' + flow_variables['subset_filename'] + '_violins-width-count_' + flow_variables['normalization_filename'] + '.png'%%00010%%00010# copy input to output%%00010output_table = input_table.copy()%%00010"/>
 <entry key="rowLimit" type="xint" value="1000"/>
 <entry key="pythonVersionOption" type="xstring" value="python3"/>
 <entry key="python2Command" type="xstring" value=""/>

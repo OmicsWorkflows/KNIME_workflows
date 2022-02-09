@@ -140,10 +140,6 @@
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
 <entry key="state" type="xstring" value="IDLE"/>
-<config key="nodecontainer_message">
-<entry key="type" type="xstring" value="WARNING"/>
-<entry key="message" type="xstring" value="Single Selection 0:1498:0:1530:311:0:258: Component does not have input data, execute upstream nodes first"/>
-</config>
 <entry key="virtual-in-ID" type="xint" value="266"/>
 <config key="inports">
 <config key="inport_0">

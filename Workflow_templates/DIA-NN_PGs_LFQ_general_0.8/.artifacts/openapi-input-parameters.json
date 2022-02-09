@@ -16,9 +16,9 @@
         },
         "string-input-1498:1531:286:260": {
             "type": "string",
-            "default": "normalized data - median",
+            "default": "normalized data (median)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - median"
+            "example": "normalized data (median)"
         },
         "double-input-1311:938:316": {
             "type": "number",
@@ -79,28 +79,20 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Quantity+1_1_log2_norm"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_3_log2_norm",
-                    "PG.Quantity+2_1_log2_norm",
-                    "PG.Quantity+2_2_log2_norm"
                 ]
             }
         },
         "string-input-1498:1534:260": {
             "type": "string",
-            "default": "normalized data - DIA-NN MaxLFQ",
+            "default": "normalized data (DIA-NN MaxLFQ)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - DIA-NN MaxLFQ"
+            "example": "normalized data (DIA-NN MaxLFQ)"
         },
         "string-input-1311:962:274:409": {
             "type": "string",
@@ -178,9 +170,9 @@
         },
         "string-input-1498:1559:283:409": {
             "type": "string",
-            "default": "normalized data - loessF",
+            "default": "normalized data (loessF)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data - loessF"
+            "example": "normalized data (loessF)"
         },
         "string-input-1498:291:285:438": {
             "type": "string",
@@ -198,12 +190,19 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2_norm"
+                    }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2_norm"
                 ]
             }
         },
@@ -215,15 +214,15 @@
         },
         "string-input-1498:1559:285:260": {
             "type": "string",
-            "default": "normalized data - loessF",
+            "default": "normalized data (loessF)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - loessF"
+            "example": "normalized data (loessF)"
         },
         "string-input-1498:1534:284:409": {
             "type": "string",
-            "default": "normalized data - DIA-NN MaxLFQ",
+            "default": "normalized data (DIA-NN MaxLFQ)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - DIA-NN MaxLFQ"
+            "example": "normalized data (DIA-NN MaxLFQ)"
         },
         "single-selection-1498:1563:282:436": {
             "type": "object",
@@ -278,9 +277,9 @@
         },
         "string-input-1498:1553:282:409": {
             "type": "string",
-            "default": "PG intensities cluster analysis - normalized data - median",
+            "default": "normalized data (median)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "PG intensities cluster analysis - normalized data - median"
+            "example": "normalized data (median)"
         },
         "single-selection-1498:1555:283:423": {
             "type": "object",
@@ -353,9 +352,11 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"
                 ]
             }
         },
@@ -437,9 +438,9 @@
         },
         "string-input-1498:1534:287:260": {
             "type": "string",
-            "default": "normalized data - DIA-NN MaxLFQ",
+            "default": "normalized data (DIA-NN MaxLFQ)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - DIA-NN MaxLFQ"
+            "example": "normalized data (DIA-NN MaxLFQ)"
         },
         "column-filter-1498:1535:282:257": {
             "type": "object",
@@ -456,9 +457,11 @@
             "example": {
                 "columns": [
                     "PG.Normalised+1_1_log2",
-                    "PG.Normalised+1_3_log2",
-                    "PG.Normalised+2_1_log2",
-                    "PG.Normalised+2_2_log2"
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2",
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2",
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2",
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"
                 ]
             }
         },
@@ -563,9 +566,9 @@
         },
         "string-input-1498:291:286:260": {
             "type": "string",
-            "default": "not normalized",
+            "default": "not normalized data",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "not normalized"
+            "example": "not normalized data"
         },
         "string-input-1498:1555:286:329": {
             "type": "string",
@@ -577,18 +580,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select columns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_3_log2"
                 ]
             }
         },
@@ -655,28 +652,20 @@
         },
         "string-input-1498:1531:283:409": {
             "type": "string",
-            "default": "normalized data - median",
+            "default": "normalized data (median)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data - median"
+            "example": "normalized data (median)"
         },
         "column-filter-1498:291:283:257": {
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
                 ]
             }
         },
@@ -694,9 +683,9 @@
         },
         "string-input-1498:1531:287:260": {
             "type": "string",
-            "default": "normalized data - median",
+            "default": "normalized data (median)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - median"
+            "example": "normalized data (median)"
         },
         "single-selection-1498:1566:283:419": {
             "type": "object",
@@ -721,12 +710,22 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Quantity+1_1_log2_norm"
+                    }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2_norm"
                 ]
             }
         },
@@ -769,9 +768,9 @@
         },
         "string-input-1498:1553:283:409": {
             "type": "string",
-            "default": "normalized data - median",
+            "default": "normalized data (median)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data - median"
+            "example": "normalized data (median)"
         },
         "string-input-1498:1531:287:258": {
             "type": "string",
@@ -818,9 +817,9 @@
         },
         "string-input-1498:1559:282:409": {
             "type": "string",
-            "default": "PG intensities cluster analysis - normalized data - loessF",
+            "default": "normalized data (loessF)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "PG intensities cluster analysis - normalized data - loessF"
+            "example": "normalized data (loessF)"
         },
         "string-input-1490:649": {
             "type": "string",
@@ -885,9 +884,9 @@
         },
         "string-input-1498:1534:283:409": {
             "type": "string",
-            "default": "normalized data - DIA-NN MaxLFQ",
+            "default": "normalized data (DIA-NN MaxLFQ)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data - DIA-NN MaxLFQ"
+            "example": "normalized data (DIA-NN MaxLFQ)"
         },
         "string-input-1498:1559:283:439": {
             "type": "string",
@@ -909,9 +908,9 @@
         },
         "string-input-1498:1533:260": {
             "type": "string",
-            "default": "normalized data - loessF",
+            "default": "normalized data (loessF)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - loessF"
+            "example": "normalized data (loessF)"
         },
         "string-input-1498:1559:283:438": {
             "type": "string",
@@ -958,26 +957,32 @@
         },
         "string-input-1498:1534:286:260": {
             "type": "string",
-            "default": "normalized data - DIA-NN MaxLFQ",
+            "default": "normalized data (DIA-NN MaxLFQ)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - DIA-NN MaxLFQ"
+            "example": "normalized data (DIA-NN MaxLFQ)"
         },
         "string-input-1498:1553:285:260": {
             "type": "string",
-            "default": "normalized data - median",
+            "default": "normalized data (median)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - median"
+            "example": "normalized data (median)"
         },
         "column-filter-1498:1546:282:257": {
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Quantity+1_1_log2"
+                    }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
+                    "PG.Quantity+1_1_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2"
                 ]
             }
         },
@@ -1009,9 +1014,11 @@
             "example": {
                 "columns": [
                     "PG.Normalised+1_1_log2",
-                    "PG.Normalised+1_3_log2",
-                    "PG.Normalised+2_1_log2",
-                    "PG.Normalised+2_2_log2"
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2",
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2",
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2",
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"
                 ]
             }
         },
@@ -1135,9 +1142,9 @@
         },
         "string-input-1498:291:287:260": {
             "type": "string",
-            "default": "not normalized",
+            "default": "not normalized data",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "not normalized"
+            "example": "not normalized data"
         },
         "string-input-1498:1553:285:259": {
             "type": "string",
@@ -1220,9 +1227,9 @@
         },
         "string-input-1498:1531:284:409": {
             "type": "string",
-            "default": "normalized data - median",
+            "default": "normalized data (median)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - median"
+            "example": "normalized data (median)"
         },
         "double-input-1498:1534:285:444": {
             "type": "number",
@@ -1252,12 +1259,22 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Quantity+1_1_log2_norm"
+                    }
                 }
             },
             "description": "select columns to be processed",
             "example": {
                 "columns": [
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2_norm"
                 ]
             }
         },
@@ -1351,20 +1368,11 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+1_4_log2",
-                    "PG.Quantity+1_5_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2",
-                    "PG.Quantity+2_3_log2",
-                    "PG.Quantity+2_4_log2",
-                    "PG.Quantity+2_5_log2",
-                    "PG.Quantity+3_1_log2",
-                    "PG.Quantity+3_2_log2",
-                    "PG.Quantity+3_3_log2",
-                    "PG.Quantity+3_4_log2",
-                    "PG.Quantity+3_5_log2"
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"
                 ]
             }
         },
@@ -1376,9 +1384,9 @@
         },
         "string-input-1498:1533:281:409": {
             "type": "string",
-            "default": "normalized data - loessF",
+            "default": "normalized data (loessF)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - loessF"
+            "example": "normalized data (loessF)"
         },
         "string-input-1498:1532:258": {
             "type": "string",
@@ -1432,9 +1440,11 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"
                 ]
             }
         },
@@ -1472,9 +1482,9 @@
         },
         "string-input-1498:1559:281:409": {
             "type": "string",
-            "default": "normalized data - loessF",
+            "default": "normalized data (loessF)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - loessF"
+            "example": "normalized data (loessF)"
         },
         "boolean-input-1498:1535:284:412": {
             "type": "boolean",
@@ -1496,9 +1506,9 @@
         },
         "string-input-1498:1532:260": {
             "type": "string",
-            "default": "normalized data - quantile",
+            "default": "normalized data (quantile)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - quantile"
+            "example": "normalized data (quantile)"
         },
         "string-input-1498:1531:439": {
             "type": "string",
@@ -1517,6 +1527,12 @@
             "default": "_log2",
             "description": "common data columns suffix to be removed prior plotting",
             "example": "_log2"
+        },
+        "boolean-input-1503:1533": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data. Checked -> dataframe of processed columns will be returned only.",
+            "example": false
         },
         "string-input-1498:1559:282:441": {
             "type": "string",
@@ -1553,12 +1569,18 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Quantity+1_1_log2_norm"
+                    }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm"
                 ]
             }
         },
@@ -1572,12 +1594,19 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2_norm"
+                    }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2_norm"
                 ]
             }
         },
@@ -1658,9 +1687,9 @@
         },
         "string-input-1498:1534:282:409": {
             "type": "string",
-            "default": "PG intensities cluster analysis - normalized data - DIA-NN MaxLFQ",
+            "default": "PG intensities cluster analysis - normalized data (DIA-NN MaxLFQ)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "PG intensities cluster analysis - normalized data - DIA-NN MaxLFQ"
+            "example": "PG intensities cluster analysis - normalized data (DIA-NN MaxLFQ)"
         },
         "string-input-1498:1531:286:440": {
             "type": "string",
@@ -1795,9 +1824,9 @@
         },
         "string-input-1498:1553:281:409": {
             "type": "string",
-            "default": "normalized data - median",
+            "default": "normalized data (median)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - median"
+            "example": "normalized data (median)"
         },
         "boolean-input-1498:1553:285:328": {
             "type": "boolean",
@@ -1934,9 +1963,9 @@
         },
         "string-input-1498:1534:285:260": {
             "type": "string",
-            "default": "normalized data - DIA-NN MaxLFQ",
+            "default": "normalized data (DIA-NN MaxLFQ)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - DIA-NN MaxLFQ"
+            "example": "normalized data (DIA-NN MaxLFQ)"
         },
         "boolean-input-0:973": {
             "type": "boolean",
@@ -1946,9 +1975,9 @@
         },
         "string-input-1498:1533:282:409": {
             "type": "string",
-            "default": "PG intensities cluster analysis - normalized data - loessF",
+            "default": "PG intensities cluster analysis - normalized data (loessF)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "PG intensities cluster analysis - normalized data - loessF"
+            "example": "PG intensities cluster analysis - normalized data (loessF)"
         },
         "single-selection-1311:931:917": {
             "type": "object",
@@ -1967,12 +1996,19 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2"
+                    }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"
                 ]
             }
         },
@@ -2021,9 +2057,9 @@
         },
         "string-input-1498:1553:260": {
             "type": "string",
-            "default": "normalized data - median",
+            "default": "normalized data (median)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - median"
+            "example": "normalized data (median)"
         },
         "string-input-1498:1533:283:441": {
             "type": "string",
@@ -2085,12 +2121,22 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Quantity+1_1_log2_norm"
+                    }
                 }
             },
             "description": "select columns to be processed",
             "example": {
                 "columns": [
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2_norm"
                 ]
             }
         },
@@ -2205,12 +2251,18 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Normalised+1_1_log2"
+                    }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
+                    "PG.Normalised+1_1_log2",
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2"
                 ]
             }
         },
@@ -2304,9 +2356,9 @@
         },
         "string-input-1498:1534:281:409": {
             "type": "string",
-            "default": "normalized data - DIA-NN MaxLFQ",
+            "default": "normalized data (DIA-NN MaxLFQ)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - DIA-NN MaxLFQ"
+            "example": "normalized data (DIA-NN MaxLFQ)"
         },
         "string-input-1498:1534:284:494": {
             "type": "string",
@@ -2322,9 +2374,9 @@
         },
         "string-input-1498:1531:260": {
             "type": "string",
-            "default": "normalized data - median",
+            "default": "normalized data (median)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - median"
+            "example": "normalized data (median)"
         },
         "single-selection-1498:291:443": {
             "type": "object",
@@ -2620,9 +2672,9 @@
         },
         "string-input-1498:1546:260": {
             "type": "string",
-            "default": "not normalized",
+            "default": "not normalized data",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "not normalized"
+            "example": "not normalized data"
         },
         "single-selection-1503:311:258": {
             "type": "object",
@@ -2740,9 +2792,9 @@
         },
         "string-input-1498:1533:285:260": {
             "type": "string",
-            "default": "normalized data - loessF",
+            "default": "normalized data (loessF)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - loessF"
+            "example": "normalized data (loessF)"
         },
         "double-input-1498:1553:285:444": {
             "type": "number",
@@ -3018,9 +3070,11 @@
             "example": {
                 "columns": [
                     "PG.MaxLFQ+1_1_log2",
-                    "PG.MaxLFQ+1_3_log2",
-                    "PG.MaxLFQ+2_1_log2",
-                    "PG.MaxLFQ+2_2_log2"
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2",
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2",
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2",
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"
                 ]
             }
         },
@@ -3093,13 +3147,146 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.ID"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
+                    "PG.ID",
+                    "Protein.Group",
+                    "Lib.PG.Q.Value",
+                    "Precursor.Id (Count)+1_1 (Count*)",
+                    "Precursor.Id (Count)+1_2 (Count*)",
+                    "Precursor.Id (Count)+1_3 (Count*)",
+                    "Precursor.Id (Count)+1_4 (Count*)",
+                    "Precursor.Id (Count)+1_5 (Count*)",
+                    "Precursor.Id (Count)+2_1 (Count*)",
+                    "Precursor.Id (Count)+2_2 (Count*)",
+                    "Precursor.Id (Count)+2_3 (Count*)",
+                    "Precursor.Id (Count)+2_4 (Count*)",
+                    "Precursor.Id (Count)+2_5 (Count*)",
+                    "Precursor.Id (Count)+3_1 (Count*)",
+                    "Precursor.Id (Count)+3_2 (Count*)",
+                    "Precursor.Id (Count)+3_3 (Count*)",
+                    "Precursor.Id (Count)+3_4 (Count*)",
+                    "Precursor.Id (Count)+3_5 (Count*)",
+                    "Proteotypic (Min*)+1_1 (Sum)",
+                    "Proteotypic (Min*)+1_2 (Sum)",
+                    "Proteotypic (Min*)+1_3 (Sum)",
+                    "Proteotypic (Min*)+1_4 (Sum)",
+                    "Proteotypic (Min*)+1_5 (Sum)",
+                    "Proteotypic (Min*)+2_1 (Sum)",
+                    "Proteotypic (Min*)+2_2 (Sum)",
+                    "Proteotypic (Min*)+2_3 (Sum)",
+                    "Proteotypic (Min*)+2_4 (Sum)",
+                    "Proteotypic (Min*)+2_5 (Sum)",
+                    "Proteotypic (Min*)+3_1 (Sum)",
+                    "Proteotypic (Min*)+3_2 (Sum)",
+                    "Proteotypic (Min*)+3_3 (Sum)",
+                    "Proteotypic (Min*)+3_4 (Sum)",
+                    "Proteotypic (Min*)+3_5 (Sum)",
+                    "Stripped.Sequence (Concatenate)",
+                    "Stripped.Sequence (Count)",
+                    "PG.MaxLFQ+1_1",
+                    "PG.MaxLFQ+1_2",
+                    "PG.MaxLFQ+1_3",
+                    "PG.MaxLFQ+1_4",
+                    "PG.MaxLFQ+1_5",
+                    "PG.MaxLFQ+2_1",
+                    "PG.MaxLFQ+2_2",
+                    "PG.MaxLFQ+2_3",
+                    "PG.MaxLFQ+2_4",
+                    "PG.MaxLFQ+2_5",
+                    "PG.MaxLFQ+3_1",
+                    "PG.MaxLFQ+3_2",
+                    "PG.MaxLFQ+3_3",
+                    "PG.MaxLFQ+3_4",
+                    "PG.MaxLFQ+3_5",
+                    "PG.Normalised+1_1",
+                    "PG.Normalised+1_2",
+                    "PG.Normalised+1_3",
+                    "PG.Normalised+1_4",
+                    "PG.Normalised+1_5",
+                    "PG.Normalised+2_1",
+                    "PG.Normalised+2_2",
+                    "PG.Normalised+2_3",
+                    "PG.Normalised+2_4",
+                    "PG.Normalised+2_5",
+                    "PG.Normalised+3_1",
+                    "PG.Normalised+3_2",
+                    "PG.Normalised+3_3",
+                    "PG.Normalised+3_4",
+                    "PG.Normalised+3_5",
+                    "PG.Quantity+1_1",
+                    "PG.Quantity+1_2",
+                    "PG.Quantity+1_3",
+                    "PG.Quantity+1_4",
+                    "PG.Quantity+1_5",
+                    "PG.Quantity+2_1",
+                    "PG.Quantity+2_2",
+                    "PG.Quantity+2_3",
+                    "PG.Quantity+2_4",
+                    "PG.Quantity+2_5",
+                    "PG.Quantity+3_1",
+                    "PG.Quantity+3_2",
+                    "PG.Quantity+3_3",
+                    "PG.Quantity+3_4",
+                    "PG.Quantity+3_5",
+                    "PG.Quantity_sum",
+                    "UniProt_Protein ID",
+                    "UniProt_Entry",
+                    "UniProt_Entry name",
+                    "UniProt_Status",
+                    "UniProt_Protein names",
+                    "UniProt_Gene names  (primary )",
+                    "UniProt_Mass",
+                    "UniProt_Length",
+                    "UniProt_Organism",
+                    "UniProt_Gene ontology (GO)",
+                    "UniProt_Gene ontology (biological process)",
+                    "UniProt_Gene ontology (molecular function)",
+                    "UniProt_Gene ontology (cellular component)",
+                    "UniProt_Gene ontology IDs",
+                    "UniProt_Subcellular location [CC]",
+                    "UniProt_Protein families",
+                    "UniProt_Interacts with",
+                    "UniProt_Sequence",
+                    "UniProt_Cross-reference (InterPro)",
+                    "UniProt_Cross-reference (Pfam)",
+                    "UniProt_Cross-reference (IntAct)",
+                    "PG.ID_log2",
+                    "PG.MaxLFQ+1_1_log2",
+                    "PG.MaxLFQ+1_2_log2",
+                    "PG.MaxLFQ+1_3_log2",
+                    "PG.MaxLFQ+1_4_log2",
+                    "PG.MaxLFQ+1_5_log2",
+                    "PG.MaxLFQ+2_1_log2",
+                    "PG.MaxLFQ+2_2_log2",
+                    "PG.MaxLFQ+2_3_log2",
+                    "PG.MaxLFQ+2_4_log2",
+                    "PG.MaxLFQ+2_5_log2",
+                    "PG.MaxLFQ+3_1_log2",
+                    "PG.MaxLFQ+3_2_log2",
+                    "PG.MaxLFQ+3_3_log2",
+                    "PG.MaxLFQ+3_4_log2",
+                    "PG.MaxLFQ+3_5_log2",
+                    "PG.Normalised+1_1_log2",
+                    "PG.Normalised+1_2_log2",
+                    "PG.Normalised+1_3_log2",
+                    "PG.Normalised+1_4_log2",
+                    "PG.Normalised+1_5_log2",
+                    "PG.Normalised+2_1_log2",
+                    "PG.Normalised+2_2_log2",
+                    "PG.Normalised+2_3_log2",
+                    "PG.Normalised+2_4_log2",
+                    "PG.Normalised+2_5_log2",
+                    "PG.Normalised+3_1_log2",
+                    "PG.Normalised+3_2_log2",
+                    "PG.Normalised+3_3_log2",
+                    "PG.Normalised+3_4_log2",
+                    "PG.Normalised+3_5_log2",
                     "PG.Quantity+1_1_log2",
                     "PG.Quantity+1_2_log2",
                     "PG.Quantity+1_3_log2",
@@ -3114,7 +3301,8 @@
                     "PG.Quantity+3_2_log2",
                     "PG.Quantity+3_3_log2",
                     "PG.Quantity+3_4_log2",
-                    "PG.Quantity+3_5_log2"
+                    "PG.Quantity+3_5_log2",
+                    "PG.Quantity_sum_log2"
                 ]
             }
         },
@@ -3164,12 +3352,18 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Quantity+1_1_log2_norm"
+                    }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm"
                 ]
             }
         },
@@ -3177,12 +3371,22 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Quantity+1_1_log2_norm"
+                    }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2_norm"
                 ]
             }
         },
@@ -3288,9 +3492,11 @@
             "example": {
                 "columns": [
                     "PG.MaxLFQ+1_1_log2",
-                    "PG.MaxLFQ+1_3_log2",
-                    "PG.MaxLFQ+2_1_log2",
-                    "PG.MaxLFQ+2_2_log2"
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2",
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2",
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2",
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"
                 ]
             }
         },
@@ -3439,9 +3645,9 @@
         },
         "string-input-1498:1566:281:409": {
             "type": "string",
-            "default": "normalized data - DIA-NN MaxLFQ",
+            "default": "normalized data (DIA-NN MaxLFQ)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - DIA-NN MaxLFQ"
+            "example": "normalized data (DIA-NN MaxLFQ)"
         },
         "string-input-1498:1546:281:493": {
             "type": "string",
@@ -3491,12 +3697,6 @@
             "description": "value that will be used as a center to color individual cluster data",
             "example": 0.0
         },
-        "boolean-input-1503:1519": {
-            "type": "boolean",
-            "default": "true",
-            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data. Checked -> dataframe of processed columns will be returned only.",
-            "example": true
-        },
         "single-selection-1498:1563:285:443": {
             "type": "object",
             "properties": {
@@ -3512,9 +3712,9 @@
         },
         "string-input-1498:1563:281:409": {
             "type": "string",
-            "default": "normalized data - DIA-NN",
+            "default": "normalized data (DIA-NN)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - DIA-NN"
+            "example": "normalized data (DIA-NN)"
         },
         "string-input-1498:1546:281:489": {
             "type": "string",
@@ -3524,9 +3724,9 @@
         },
         "string-input-1498:1555:260": {
             "type": "string",
-            "default": "normalized data - quantile",
+            "default": "normalized data (quantile)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - quantile"
+            "example": "normalized data (quantile)"
         },
         "string-input-1498:1546:281:482": {
             "type": "string",
@@ -3622,9 +3822,9 @@
         },
         "string-input-1498:1553:284:409": {
             "type": "string",
-            "default": "normalized data - median",
+            "default": "normalized data (median)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - median"
+            "example": "normalized data (median)"
         },
         "string-input-1498:1531:283:441": {
             "type": "string",
@@ -3659,20 +3859,26 @@
         },
         "string-input-1498:1531:282:409": {
             "type": "string",
-            "default": "PG intensities cluster analysis - normalized data - median",
+            "default": "PG intensities cluster analysis - normalized data (median)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "PG intensities cluster analysis - normalized data - median"
+            "example": "PG intensities cluster analysis - normalized data (median)"
         },
         "column-filter-1498:1566:282:257": {
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.MaxLFQ+1_1_log2"
+                    }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
+                    "PG.MaxLFQ+1_1_log2",
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2"
                 ]
             }
         },
@@ -3684,9 +3890,9 @@
         },
         "string-input-1498:1559:260": {
             "type": "string",
-            "default": "normalized data - loessF",
+            "default": "normalized data (loessF)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - loessF"
+            "example": "normalized data (loessF)"
         },
         "double-input-1498:1531:285:444": {
             "type": "number",
@@ -3696,9 +3902,9 @@
         },
         "string-input-1498:1555:283:409": {
             "type": "string",
-            "default": "normalized data - quantile",
+            "default": "normalized data (quantile)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data - quantile"
+            "example": "normalized data (quantile)"
         },
         "double-input-1498:1553:287:444": {
             "type": "number",
@@ -3730,12 +3936,6 @@
             "default": "PG.MaxLFQ+",
             "description": "common data columns prefix to be removed prior plotting",
             "example": "PG.MaxLFQ+"
-        },
-        "string-input-1503:1514": {
-            "type": "string",
-            "default": "_norm",
-            "description": "Enter the suffix which will be added to all normalized columns. No suffix will be added if \"no normalization\" is selected.",
-            "example": "_norm"
         },
         "column-filter-1498:1553:284:257": {
             "type": "object",
@@ -3808,9 +4008,9 @@
         },
         "string-input-1498:1566:285:260": {
             "type": "string",
-            "default": "normalized data - DIA-NN MaxLFQ",
+            "default": "normalized data (DIA-NN MaxLFQ)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - DIA-NN MaxLFQ"
+            "example": "normalized data (DIA-NN MaxLFQ)"
         },
         "boolean-input-1491:850": {
             "type": "boolean",
@@ -3828,12 +4028,19 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2_norm"
+                    }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2_norm"
                 ]
             }
         },
@@ -3841,12 +4048,22 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Quantity+1_1_log2_norm"
+                    }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2_norm"
                 ]
             }
         },
@@ -3858,9 +4075,9 @@
         },
         "string-input-1498:1566:282:409": {
             "type": "string",
-            "default": "PG intensities cluster analysis - normalized data - DIA-NN MaxLFQ",
+            "default": "normalized data (DIA-NN MaxLFQ)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "PG intensities cluster analysis - normalized data - DIA-NN MaxLFQ"
+            "example": "normalized data (DIA-NN MaxLFQ)"
         },
         "boolean-input-1498:1532:285:328": {
             "type": "boolean",
@@ -3883,9 +4100,11 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_3_log2_norm",
-                    "PG.Quantity+2_1_log2_norm",
-                    "PG.Quantity+2_2_log2_norm"
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2_norm"
                 ]
             }
         },
@@ -3893,20 +4112,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.MaxLFQ+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.MaxLFQ+1_1_log2",
-                    "PG.MaxLFQ+1_3_log2",
-                    "PG.MaxLFQ+2_1_log2",
-                    "PG.MaxLFQ+2_2_log2"
                 ]
             }
         },
@@ -3936,9 +4147,9 @@
         },
         "string-input-1498:1555:285:260": {
             "type": "string",
-            "default": "normalized data - quantile",
+            "default": "normalized data (quantile)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - quantile"
+            "example": "normalized data (quantile)"
         },
         "boolean-input-1491:848": {
             "type": "boolean",
@@ -3954,9 +4165,9 @@
         },
         "string-input-1498:1553:286:260": {
             "type": "string",
-            "default": "normalized data - median",
+            "default": "normalized data (median)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - median"
+            "example": "normalized data (median)"
         },
         "string-input-1311:962:274:493": {
             "type": "string",
@@ -4115,6 +4326,12 @@
             "description": "how the graph x axis should be titled",
             "example": ""
         },
+        "string-input-1503:1532": {
+            "type": "string",
+            "default": "_norm",
+            "description": "Enter the suffix which will be added to all normalized columns. No suffix will be added if \"no normalization\" is selected.",
+            "example": "_norm"
+        },
         "string-input-1498:1563:281:482": {
             "type": "string",
             "default": "5",
@@ -4138,19 +4355,6 @@
             "default": "Intensity (log2)",
             "description": "how the graph y axis should be titled",
             "example": "Intensity (log2)"
-        },
-        "single-selection-1503:1506": {
-            "type": "object",
-            "properties": {
-                "variable_value": {
-                    "type": "string",
-                    "default": "median (linear)"
-                }
-            },
-            "description": "Pick which normalization method do you want to use for further data processing",
-            "example": {
-                "variable_value": "median (linear)"
-            }
         },
         "string-input-1498:1534:286:441": {
             "type": "string",
@@ -4368,9 +4572,9 @@
         },
         "string-input-1498:1553:287:260": {
             "type": "string",
-            "default": "normalized data - median",
+            "default": "normalized data (median)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - median"
+            "example": "normalized data (median)"
         },
         "boolean-input-1498:1546:281:412": {
             "type": "boolean",
@@ -4386,9 +4590,9 @@
         },
         "string-input-1498:1531:285:260": {
             "type": "string",
-            "default": "normalized data - median",
+            "default": "normalized data (median)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - median"
+            "example": "normalized data (median)"
         },
         "single-selection-1498:1535:283:419": {
             "type": "object",
@@ -4411,9 +4615,9 @@
         },
         "string-input-1498:1531:281:409": {
             "type": "string",
-            "default": "normalized data - median",
+            "default": "normalized data (median)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - median"
+            "example": "normalized data (median)"
         },
         "column-filter-1498:1531:281:257": {
             "type": "object",
@@ -4430,9 +4634,11 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_3_log2_norm",
-                    "PG.Quantity+2_1_log2_norm",
-                    "PG.Quantity+2_2_log2_norm"
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2_norm"
                 ]
             }
         },
@@ -4446,20 +4652,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.MaxLFQ+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.MaxLFQ+1_1_log2",
-                    "PG.MaxLFQ+1_3_log2",
-                    "PG.MaxLFQ+2_1_log2",
-                    "PG.MaxLFQ+2_2_log2"
                 ]
             }
         },
@@ -4477,9 +4675,9 @@
         },
         "string-input-1498:1555:282:409": {
             "type": "string",
-            "default": "PG intensities cluster analysis - normalized data - quantile",
+            "default": "normalized data (quantile)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "PG intensities cluster analysis - normalized data - quantile"
+            "example": "normalized data (quantile)"
         },
         "boolean-input-1498:1546:284:487": {
             "type": "boolean",
@@ -4520,10 +4718,11 @@
             "example": {
                 "columns": [
                     "1_1",
-                    "1_2",
-                    "1_3",
-                    "2_1",
-                    "2_2"
+                    "IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti",
+                    "IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti",
+                    "IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti",
+                    "IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti",
+                    "IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti"
                 ]
             }
         },
@@ -4542,9 +4741,9 @@
         },
         "string-input-1498:1555:281:409": {
             "type": "string",
-            "default": "normalized data - quantile",
+            "default": "normalized data (quantile)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - quantile"
+            "example": "normalized data (quantile)"
         },
         "string-input-1498:1535:285:329": {
             "type": "string",
@@ -4566,9 +4765,9 @@
         },
         "string-input-1498:1566:286:260": {
             "type": "string",
-            "default": "normalized data - DIA-NN MaxLFQ",
+            "default": "normalized data (DIA-NN MaxLFQ)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - DIA-NN MaxLFQ"
+            "example": "normalized data (DIA-NN MaxLFQ)"
         },
         "string-input-1498:1546:287:329": {
             "type": "string",
@@ -4764,9 +4963,9 @@
         },
         "string-input-1498:1566:283:409": {
             "type": "string",
-            "default": "normalized data - DIA-NN MaxLFQ",
+            "default": "normalized data (DIA-NN MaxLFQ)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data - DIA-NN MaxLFQ"
+            "example": "normalized data (DIA-NN MaxLFQ)"
         },
         "single-selection-1498:1535:285:261": {
             "type": "object",
@@ -4779,6 +4978,19 @@
             "description": "sets the violin plot scale settings\n- count - violin plot scale (width) will reflect the number of values\n- width - all violin graphs will have the same width irrespective the number of values",
             "example": {
                 "variable_value": "width"
+            }
+        },
+        "single-selection-1503:1531": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "no normalization"
+                }
+            },
+            "description": "Pick which normalization method do you want to use for further data processing",
+            "example": {
+                "variable_value": "no normalization"
             }
         },
         "single-selection-1498:1546:284:411": {
@@ -4833,9 +5045,9 @@
         },
         "string-input-1498:1563:286:260": {
             "type": "string",
-            "default": "normalized data - DIA-NN",
+            "default": "normalized data (DIA-NN)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - DIA-NN"
+            "example": "normalized data (DIA-NN)"
         },
         "boolean-input-1498:291:284:487": {
             "type": "boolean",
@@ -4857,9 +5069,9 @@
         },
         "string-input-1498:1535:282:409": {
             "type": "string",
-            "default": "PG intensities cluster analysis - normalized data - DIA-NN",
+            "default": "PG intensities cluster analysis - normalized data (DIA-NN)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "PG intensities cluster analysis - normalized data - DIA-NN"
+            "example": "PG intensities cluster analysis - normalized data (DIA-NN)"
         },
         "string-input-1498:1546:282:441": {
             "type": "string",
@@ -4883,12 +5095,18 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Quantity+1_1_log2_norm"
+                    }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm"
                 ]
             }
         },
@@ -4969,9 +5187,11 @@
             "example": {
                 "columns": [
                     "PG.MaxLFQ+1_1_log2",
-                    "PG.MaxLFQ+1_3_log2",
-                    "PG.MaxLFQ+2_1_log2",
-                    "PG.MaxLFQ+2_2_log2"
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2",
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2",
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2",
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"
                 ]
             }
         },
@@ -5040,9 +5260,9 @@
         },
         "string-input-1498:1555:287:260": {
             "type": "string",
-            "default": "normalized data - quantile",
+            "default": "normalized data (quantile)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - quantile"
+            "example": "normalized data (quantile)"
         },
         "single-selection-1311:962:961:261": {
             "type": "object",
@@ -5065,9 +5285,9 @@
         },
         "string-input-1498:1563:284:409": {
             "type": "string",
-            "default": "normalized data - DIA-NN",
+            "default": "normalized data (DIA-NN)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - DIA-NN"
+            "example": "normalized data (DIA-NN)"
         },
         "string-input-1498:291:285:329": {
             "type": "string",
@@ -5157,9 +5377,11 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_3_log2_norm",
-                    "PG.Quantity+2_1_log2_norm",
-                    "PG.Quantity+2_2_log2_norm"
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2_norm"
                 ]
             }
         },
@@ -5261,9 +5483,9 @@
         },
         "string-input-1498:1566:284:409": {
             "type": "string",
-            "default": "normalized data - DIA-NN MaxLFQ",
+            "default": "normalized data (DIA-NN MaxLFQ)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - DIA-NN MaxLFQ"
+            "example": "normalized data (DIA-NN MaxLFQ)"
         },
         "string-input-1498:1532:282:439": {
             "type": "string",
@@ -5304,9 +5526,9 @@
         },
         "string-input-1498:1566:287:260": {
             "type": "string",
-            "default": "normalized data - DIA-NN MaxLFQ",
+            "default": "normalized data (DIA-NN MaxLFQ)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - DIA-NN MaxLFQ"
+            "example": "normalized data (DIA-NN MaxLFQ)"
         },
         "single-selection-1311:962:274:411": {
             "type": "object",
@@ -5354,9 +5576,9 @@
         },
         "string-input-1498:1532:281:409": {
             "type": "string",
-            "default": "normalized data - quantile",
+            "default": "normalized data (quantile)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - quantile"
+            "example": "normalized data (quantile)"
         },
         "single-selection-1498:1531:281:411": {
             "type": "object",
@@ -5434,9 +5656,9 @@
         },
         "string-input-1498:1535:285:260": {
             "type": "string",
-            "default": "normalized data - DIA-NN",
+            "default": "normalized data (DIA-NN)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - DIA-NN"
+            "example": "normalized data (DIA-NN)"
         },
         "single-selection-1498:1534:285:261": {
             "type": "object",
@@ -5523,20 +5745,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.MaxLFQ+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.MaxLFQ+1_1_log2",
-                    "PG.MaxLFQ+1_3_log2",
-                    "PG.MaxLFQ+2_1_log2",
-                    "PG.MaxLFQ+2_2_log2"
                 ]
             }
         },
@@ -5582,18 +5796,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_3_log2"
                 ]
             }
         },
@@ -5605,9 +5813,9 @@
         },
         "string-input-1498:1535:281:409": {
             "type": "string",
-            "default": "normalized data - DIA-NN",
+            "default": "normalized data (DIA-NN)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - DIA-NN"
+            "example": "normalized data (DIA-NN)"
         },
         "string-input-1498:1566:286:441": {
             "type": "string",
@@ -5623,9 +5831,9 @@
         },
         "string-input-1498:1555:284:409": {
             "type": "string",
-            "default": "normalized data - quantile",
+            "default": "normalized data (quantile)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - quantile"
+            "example": "normalized data (quantile)"
         },
         "double-input-1498:1533:287:444": {
             "type": "number",
@@ -5635,9 +5843,9 @@
         },
         "string-input-1498:1555:286:260": {
             "type": "string",
-            "default": "normalized data - quantile",
+            "default": "normalized data (quantile)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - quantile"
+            "example": "normalized data (quantile)"
         },
         "string-input-1498:1566:258": {
             "type": "string",
@@ -5840,9 +6048,11 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_3_log2_norm",
-                    "PG.Quantity+2_1_log2_norm",
-                    "PG.Quantity+2_2_log2_norm"
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2_norm"
                 ]
             }
         },
@@ -5860,9 +6070,9 @@
         },
         "string-input-1498:1566:260": {
             "type": "string",
-            "default": "normalized data - DIA-NN MaxLFQ",
+            "default": "normalized data (DIA-NN MaxLFQ)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - DIA-NN MaxLFQ"
+            "example": "normalized data (DIA-NN MaxLFQ)"
         },
         "single-selection-1498:1531:285:261": {
             "type": "object",
@@ -5921,9 +6131,9 @@
         },
         "string-input-1498:1532:282:409": {
             "type": "string",
-            "default": "PG intensities cluster analysis - normalized data - quantile",
+            "default": "PG intensities cluster analysis - normalized data (quantile)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "PG intensities cluster analysis - normalized data - quantile"
+            "example": "PG intensities cluster analysis - normalized data (quantile)"
         },
         "string-input-1498:1535:283:441": {
             "type": "string",
@@ -6002,9 +6212,9 @@
         },
         "string-input-1498:1532:285:260": {
             "type": "string",
-            "default": "normalized data - quantile",
+            "default": "normalized data (quantile)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - quantile"
+            "example": "normalized data (quantile)"
         },
         "string-input-1498:1532:283:439": {
             "type": "string",
@@ -6062,9 +6272,9 @@
         },
         "string-input-1498:1563:282:409": {
             "type": "string",
-            "default": "PG intensities cluster analysis - normalized data - DIA-NN",
+            "default": "normalized data (DIA-NN)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "PG intensities cluster analysis - normalized data - DIA-NN"
+            "example": "normalized data (DIA-NN)"
         },
         "string-input-1498:1546:285:259": {
             "type": "string",
@@ -6093,9 +6303,11 @@
             "example": {
                 "columns": [
                     "PG.MaxLFQ+1_1_log2",
-                    "PG.MaxLFQ+1_3_log2",
-                    "PG.MaxLFQ+2_1_log2",
-                    "PG.MaxLFQ+2_2_log2"
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2",
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2",
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2",
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"
                 ]
             }
         },
@@ -6120,9 +6332,11 @@
             "example": {
                 "columns": [
                     "PG.Normalised+1_1_log2",
-                    "PG.Normalised+1_3_log2",
-                    "PG.Normalised+2_1_log2",
-                    "PG.Normalised+2_2_log2"
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2",
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2",
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2",
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"
                 ]
             }
         },
@@ -6170,9 +6384,9 @@
         },
         "string-input-1498:1533:287:260": {
             "type": "string",
-            "default": "normalized data - loessF",
+            "default": "normalized data (loessF)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - loessF"
+            "example": "normalized data (loessF)"
         },
         "single-selection-1498:1533:443": {
             "type": "object",
@@ -6294,9 +6508,11 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_3_log2_norm",
-                    "PG.Quantity+2_1_log2_norm",
-                    "PG.Quantity+2_2_log2_norm"
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2_norm"
                 ]
             }
         },
@@ -6321,9 +6537,9 @@
         },
         "string-input-1498:1532:286:260": {
             "type": "string",
-            "default": "normalized data - quantile",
+            "default": "normalized data (quantile)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - quantile"
+            "example": "normalized data (quantile)"
         },
         "string-input-1498:1563:286:441": {
             "type": "string",
@@ -6345,9 +6561,9 @@
         },
         "string-input-1498:1532:283:409": {
             "type": "string",
-            "default": "normalized data - quantile",
+            "default": "normalized data (quantile)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data - quantile"
+            "example": "normalized data (quantile)"
         },
         "string-input-1498:1533:285:439": {
             "type": "string",
@@ -6362,19 +6578,16 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+lowT1_log2"
+                        "default": "PG.Quantity+1_1_log2"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+lowT1_log2",
-                    "PG.Quantity+normT1_log2",
-                    "PG.Quantity+highT1_log2",
-                    "PG.Quantity+lowT2_log2",
-                    "PG.Quantity+normT2_log2",
-                    "PG.Quantity+highT2_log2"
+                    "PG.Quantity+1_1_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2"
                 ]
             }
         },
@@ -6441,9 +6654,11 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_3_log2_norm",
-                    "PG.Quantity+2_1_log2_norm",
-                    "PG.Quantity+2_2_log2_norm"
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2_norm"
                 ]
             }
         },
@@ -6547,9 +6762,9 @@
         },
         "string-input-1498:1546:285:260": {
             "type": "string",
-            "default": "not normalized",
+            "default": "not normalized data",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "not normalized"
+            "example": "not normalized data"
         },
         "column-filter-1498:1531:286:257": {
             "type": "object",
@@ -6566,17 +6781,19 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_3_log2_norm",
-                    "PG.Quantity+2_1_log2_norm",
-                    "PG.Quantity+2_2_log2_norm"
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2_norm"
                 ]
             }
         },
         "string-input-1498:1563:285:260": {
             "type": "string",
-            "default": "normalized data - DIA-NN",
+            "default": "normalized data (DIA-NN)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - DIA-NN"
+            "example": "normalized data (DIA-NN)"
         },
         "string-input-1498:1563:283:439": {
             "type": "string",
@@ -6604,9 +6821,9 @@
         },
         "string-input-1498:1533:284:409": {
             "type": "string",
-            "default": "normalized data - loessF",
+            "default": "normalized data (loessF)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - loessF"
+            "example": "normalized data (loessF)"
         },
         "int-input-1498:1559:284:495": {
             "type": "integer",
@@ -6677,9 +6894,9 @@
         },
         "string-input-1498:1563:283:409": {
             "type": "string",
-            "default": "normalized data - DIA-NN",
+            "default": "normalized data (DIA-NN)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data - DIA-NN"
+            "example": "normalized data (DIA-NN)"
         },
         "string-input-1498:1546:284:494": {
             "type": "string",
@@ -6689,9 +6906,9 @@
         },
         "string-input-1498:1533:286:260": {
             "type": "string",
-            "default": "normalized data - loessF",
+            "default": "normalized data (loessF)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - loessF"
+            "example": "normalized data (loessF)"
         },
         "string-input-1498:1535:281:482": {
             "type": "string",
@@ -6701,15 +6918,15 @@
         },
         "string-input-1498:1563:287:260": {
             "type": "string",
-            "default": "normalized data - DIA-NN",
+            "default": "normalized data (DIA-NN)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - DIA-NN"
+            "example": "normalized data (DIA-NN)"
         },
         "string-input-1498:1546:282:409": {
             "type": "string",
-            "default": "PG intensities cluster analysis - not normalized",
+            "default": "not normalized data",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "PG intensities cluster analysis - not normalized"
+            "example": "not normalized data"
         },
         "boolean-input-1498:1555:281:412": {
             "type": "boolean",
@@ -6766,6 +6983,29 @@
             "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
             "example": 0.5
         },
+        "column-filter-1503:1530": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Quantity+1_1_log2"
+                    }
+                }
+            },
+            "description": "Select columns which contain values which will be normalized. By default, all not normalized columns after log2 transformation are selected.",
+            "example": {
+                "columns": [
+                    "PG.Quantity+1_1_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"
+                ]
+            }
+        },
         "string-input-1498:1546:284:482": {
             "type": "string",
             "default": "None",
@@ -6776,12 +7016,19 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Quantity+1_1_log2_norm"
+                    }
                 }
             },
             "description": "Enter Description",
             "example": {
                 "columns": [
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2_norm"
                 ]
             }
         },
@@ -6789,12 +7036,19 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Quantity+1_1_log2_norm"
+                    }
                 }
             },
             "description": "Enter Description",
             "example": {
                 "columns": [
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2_norm"
                 ]
             }
         },
@@ -6808,12 +7062,19 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Quantity+1_1_log2_norm"
+                    }
                 }
             },
             "description": "Enter Description",
             "example": {
                 "columns": [
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2_norm"
                 ]
             }
         },
@@ -6838,10 +7099,8 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2"
                 ]
             }
         },
@@ -6860,10 +7119,8 @@
             "example": {
                 "columns": [
                     "PG.MaxLFQ+1_1_log2",
-                    "PG.MaxLFQ+1_2_log2",
-                    "PG.MaxLFQ+1_3_log2",
-                    "PG.MaxLFQ+2_1_log2",
-                    "PG.MaxLFQ+2_2_log2"
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2"
                 ]
             }
         },
@@ -6895,10 +7152,8 @@
             "example": {
                 "columns": [
                     "PG.Normalised+1_1_log2",
-                    "PG.Normalised+1_2_log2",
-                    "PG.Normalised+1_3_log2",
-                    "PG.Normalised+2_1_log2",
-                    "PG.Normalised+2_2_log2"
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2"
                 ]
             }
         },
@@ -6961,9 +7216,9 @@
         },
         "string-input-1498:1532:284:409": {
             "type": "string",
-            "default": "normalized data - quantile",
+            "default": "normalized data (quantile)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - quantile"
+            "example": "normalized data (quantile)"
         },
         "string-input-1498:1555:287:438": {
             "type": "string",
@@ -6986,9 +7241,11 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_3_log2_norm",
-                    "PG.Quantity+2_1_log2_norm",
-                    "PG.Quantity+2_2_log2_norm"
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2_norm"
                 ]
             }
         },
@@ -7031,9 +7288,9 @@
         },
         "string-input-1498:1532:287:260": {
             "type": "string",
-            "default": "normalized data - quantile",
+            "default": "normalized data (quantile)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - quantile"
+            "example": "normalized data (quantile)"
         },
         "string-input-1498:1531:287:329": {
             "type": "string",
@@ -7056,9 +7313,11 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_3_log2_norm",
-                    "PG.Quantity+2_1_log2_norm",
-                    "PG.Quantity+2_2_log2_norm"
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2_norm"
                 ]
             }
         },
@@ -7217,9 +7476,9 @@
         },
         "string-input-1498:1546:287:260": {
             "type": "string",
-            "default": "not normalized",
+            "default": "not normalized data",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "not normalized"
+            "example": "not normalized data"
         },
         "int-input-1498:1532:284:495": {
             "type": "integer",
@@ -7248,17 +7507,19 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_3_log2_norm",
-                    "PG.Quantity+2_1_log2_norm",
-                    "PG.Quantity+2_2_log2_norm"
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2_norm"
                 ]
             }
         },
         "string-input-1498:1533:283:409": {
             "type": "string",
-            "default": "normalized data - loessF",
+            "default": "normalized data (loessF)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data - loessF"
+            "example": "normalized data (loessF)"
         },
         "single-selection-1498:1553:284:411": {
             "type": "object",
@@ -7453,20 +7714,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Quantity+1_1_log2_norm"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_3_log2_norm",
-                    "PG.Quantity+2_1_log2_norm",
-                    "PG.Quantity+2_2_log2_norm"
                 ]
             }
         },
@@ -7560,20 +7813,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Quantity+1_1_log2_norm"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_3_log2_norm",
-                    "PG.Quantity+2_1_log2_norm",
-                    "PG.Quantity+2_2_log2_norm"
                 ]
             }
         },
@@ -7604,9 +7849,11 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"
                 ]
             }
         },
@@ -7704,9 +7951,9 @@
         },
         "string-input-1498:1546:286:260": {
             "type": "string",
-            "default": "not normalized",
+            "default": "not normalized data",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "not normalized"
+            "example": "not normalized data"
         },
         "string-input-1311:938:327": {
             "type": "string",
@@ -7748,20 +7995,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Normalised+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Normalised+1_1_log2",
-                    "PG.Normalised+1_3_log2",
-                    "PG.Normalised+2_1_log2",
-                    "PG.Normalised+2_2_log2"
                 ]
             }
         },
@@ -7781,23 +8020,23 @@
                 "columns": [
                     "PG.ID",
                     "PG.MaxLFQ (Max*)+1_1 (Max*)",
-                    "PG.MaxLFQ (Max*)+1_2 (Max*)",
-                    "PG.MaxLFQ (Max*)+1_3 (Max*)",
-                    "PG.MaxLFQ (Max*)+2_1 (Max*)",
-                    "PG.MaxLFQ (Max*)+2_2 (Max*)",
-                    "PG.MaxLFQ (Max*)+2_3 (Max*)",
+                    "PG.MaxLFQ (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti (Max*)",
+                    "PG.MaxLFQ (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti (Max*)",
+                    "PG.MaxLFQ (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti (Max*)",
+                    "PG.MaxLFQ (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti (Max*)",
+                    "PG.MaxLFQ (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti (Max*)",
                     "PG.Normalised (Max*)+1_1 (Max*)",
-                    "PG.Normalised (Max*)+1_2 (Max*)",
-                    "PG.Normalised (Max*)+1_3 (Max*)",
-                    "PG.Normalised (Max*)+2_1 (Max*)",
-                    "PG.Normalised (Max*)+2_2 (Max*)",
-                    "PG.Normalised (Max*)+2_3 (Max*)",
+                    "PG.Normalised (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti (Max*)",
+                    "PG.Normalised (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti (Max*)",
+                    "PG.Normalised (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti (Max*)",
+                    "PG.Normalised (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti (Max*)",
+                    "PG.Normalised (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti (Max*)",
                     "PG.Quantity (Max*)+1_1 (Max*)",
-                    "PG.Quantity (Max*)+1_2 (Max*)",
-                    "PG.Quantity (Max*)+1_3 (Max*)",
-                    "PG.Quantity (Max*)+2_1 (Max*)",
-                    "PG.Quantity (Max*)+2_2 (Max*)",
-                    "PG.Quantity (Max*)+2_3 (Max*)",
+                    "PG.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti (Max*)",
+                    "PG.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti (Max*)",
+                    "PG.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti (Max*)",
+                    "PG.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti (Max*)",
+                    "PG.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti (Max*)",
                     "PG.Quantity_sum"
                 ]
             }
@@ -7979,12 +8218,19 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2"
+                    }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2",
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2",
+                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"
                 ]
             }
         },
@@ -8041,9 +8287,11 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_3_log2_norm",
-                    "PG.Quantity+2_1_log2_norm",
-                    "PG.Quantity+2_2_log2_norm"
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2_norm"
                 ]
             }
         },
@@ -8075,9 +8323,11 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"
                 ]
             }
         },
@@ -8122,20 +8372,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Normalised+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Normalised+1_1_log2",
-                    "PG.Normalised+1_3_log2",
-                    "PG.Normalised+2_1_log2",
-                    "PG.Normalised+2_2_log2"
                 ]
             }
         },
@@ -8154,9 +8396,11 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"
                 ]
             }
         },
@@ -8164,20 +8408,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.MaxLFQ+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.MaxLFQ+1_1_log2",
-                    "PG.MaxLFQ+1_3_log2",
-                    "PG.MaxLFQ+2_1_log2",
-                    "PG.MaxLFQ+2_2_log2"
                 ]
             }
         },
@@ -8221,12 +8457,19 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2"
+                    }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2",
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2",
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"
                 ]
             }
         },
@@ -8276,9 +8519,9 @@
         },
         "string-input-1498:1559:287:260": {
             "type": "string",
-            "default": "normalized data - loessF",
+            "default": "normalized data (loessF)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - loessF"
+            "example": "normalized data (loessF)"
         },
         "string-input-1498:1534:287:329": {
             "type": "string",
@@ -8288,9 +8531,9 @@
         },
         "string-input-1498:1535:286:260": {
             "type": "string",
-            "default": "normalized data - DIA-NN",
+            "default": "normalized data (DIA-NN)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - DIA-NN"
+            "example": "normalized data (DIA-NN)"
         },
         "string-input-1498:291:283:441": {
             "type": "string",
@@ -8308,20 +8551,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
                 ]
             }
         },
@@ -8390,18 +8625,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_3_log2"
                 ]
             }
         },
@@ -8480,9 +8709,8 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2"
                 ]
             }
         },
@@ -8572,9 +8800,9 @@
         },
         "string-input-1498:291:260": {
             "type": "string",
-            "default": "not normalized",
+            "default": "not normalized data",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "not normalized"
+            "example": "not normalized data"
         },
         "single-selection-1498:1553:283:437": {
             "type": "object",
@@ -8617,20 +8845,11 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+1_4_log2",
-                    "PG.Quantity+1_5_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2",
-                    "PG.Quantity+2_3_log2",
-                    "PG.Quantity+2_4_log2",
-                    "PG.Quantity+2_5_log2",
-                    "PG.Quantity+3_1_log2",
-                    "PG.Quantity+3_2_log2",
-                    "PG.Quantity+3_3_log2",
-                    "PG.Quantity+3_4_log2",
-                    "PG.Quantity+3_5_log2"
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"
                 ]
             }
         },
@@ -8674,9 +8893,11 @@
             "example": {
                 "columns": [
                     "PG.Normalised+1_1_log2",
-                    "PG.Normalised+1_3_log2",
-                    "PG.Normalised+2_1_log2",
-                    "PG.Normalised+2_2_log2"
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2",
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2",
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2",
+                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"
                 ]
             }
         },
@@ -8684,20 +8905,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Normalised+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Normalised+1_1_log2",
-                    "PG.Normalised+1_3_log2",
-                    "PG.Normalised+2_1_log2",
-                    "PG.Normalised+2_2_log2"
                 ]
             }
         },
@@ -8794,28 +9007,20 @@
         },
         "string-input-1498:1535:283:409": {
             "type": "string",
-            "default": "normalized data - DIA-NN",
+            "default": "normalized data (DIA-NN)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data - DIA-NN"
+            "example": "normalized data (DIA-NN)"
         },
         "column-filter-1498:1533:285:257": {
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Quantity+1_1_log2_norm"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_3_log2_norm",
-                    "PG.Quantity+2_1_log2_norm",
-                    "PG.Quantity+2_2_log2_norm"
                 ]
             }
         },
@@ -8853,9 +9058,9 @@
         },
         "string-input-1498:1559:284:409": {
             "type": "string",
-            "default": "normalized data - loessF",
+            "default": "normalized data (loessF)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - loessF"
+            "example": "normalized data (loessF)"
         },
         "string-input-1498:1559:286:258": {
             "type": "string",
@@ -8876,19 +9081,16 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+lowT1_log2"
+                        "default": "PG.Quantity+1_1_log2"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+lowT1_log2",
-                    "PG.Quantity+normT1_log2",
-                    "PG.Quantity+highT1_log2",
-                    "PG.Quantity+lowT2_log2",
-                    "PG.Quantity+normT2_log2",
-                    "PG.Quantity+highT2_log2"
+                    "PG.Quantity+1_1_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2"
                 ]
             }
         },
@@ -8967,9 +9169,9 @@
         },
         "string-input-1498:1535:260": {
             "type": "string",
-            "default": "normalized data - DIA-NN",
+            "default": "normalized data (DIA-NN)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - DIA-NN"
+            "example": "normalized data (DIA-NN)"
         },
         "column-filter-1498:1533:287:257": {
             "type": "object",
@@ -8986,9 +9188,11 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+1_3_log2_norm",
-                    "PG.Quantity+2_1_log2_norm",
-                    "PG.Quantity+2_2_log2_norm"
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2_norm"
                 ]
             }
         },
@@ -9058,9 +9262,11 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"
                 ]
             }
         },
@@ -9099,12 +9305,18 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Quantity+1_1_log2_norm"
+                    }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm"
                 ]
             }
         },
@@ -9123,15 +9335,15 @@
         },
         "string-input-1498:1563:260": {
             "type": "string",
-            "default": "normalized data - DIA-NN",
+            "default": "normalized data (DIA-NN)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - DIA-NN"
+            "example": "normalized data (DIA-NN)"
         },
         "string-input-1498:1559:286:260": {
             "type": "string",
-            "default": "normalized data - loessF",
+            "default": "normalized data (loessF)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - loessF"
+            "example": "normalized data (loessF)"
         },
         "string-input-1498:1563:258": {
             "type": "string",
@@ -9147,9 +9359,9 @@
         },
         "string-input-1498:291:285:260": {
             "type": "string",
-            "default": "not normalized",
+            "default": "not normalized data",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "not normalized"
+            "example": "not normalized data"
         },
         "boolean-input-1498:1534:284:487": {
             "type": "boolean",
@@ -9259,9 +9471,9 @@
         },
         "string-input-1498:1535:284:409": {
             "type": "string",
-            "default": "normalized data - DIA-NN",
+            "default": "normalized data (DIA-NN)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - DIA-NN"
+            "example": "normalized data (DIA-NN)"
         },
         "single-line-1311:931:915": {
             "type": "string",
@@ -9283,28 +9495,20 @@
         },
         "string-input-1498:1535:287:260": {
             "type": "string",
-            "default": "normalized data - DIA-NN",
+            "default": "normalized data (DIA-NN)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data - DIA-NN"
+            "example": "normalized data (DIA-NN)"
         },
         "column-filter-1498:1535:283:257": {
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Normalised+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Normalised+1_1_log2",
-                    "PG.Normalised+1_3_log2",
-                    "PG.Normalised+2_1_log2",
-                    "PG.Normalised+2_2_log2"
                 ]
             }
         },

@@ -6,13 +6,13 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="subset_list"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value=""/>
+<entry key="value" type="xstring" value="s1+s2"/>
 </config>
 <config key="Variable_1">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="subset_list"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value=""/>
+<entry key="value" type="xstring" value="s1+s2"/>
 </config>
 </config>
 <config key="internal_node_subsettings">

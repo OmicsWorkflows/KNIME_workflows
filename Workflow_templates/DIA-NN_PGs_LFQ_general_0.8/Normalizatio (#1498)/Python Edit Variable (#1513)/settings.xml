@@ -6,37 +6,37 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="method_no"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="bottom"/>
+<entry key="value" type="xstring" value="top"/>
 </config>
 <config key="Variable_1">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="method_linear"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="bottom"/>
+<entry key="value" type="xstring" value="top"/>
 </config>
 <config key="Variable_2">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="method_quant"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="bottom"/>
+<entry key="value" type="xstring" value="top"/>
 </config>
 <config key="Variable_3">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="method_loess"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="bottom"/>
+<entry key="value" type="xstring" value="top"/>
 </config>
 <config key="Variable_4">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="method_diann"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="bottom"/>
+<entry key="value" type="xstring" value="top"/>
 </config>
 <config key="Variable_5">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="method_maxlfq"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="bottom"/>
+<entry key="value" type="xstring" value="top"/>
 </config>
 <config key="Variable_6">
 <entry key="type" type="xstring" value="variable"/>

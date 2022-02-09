@@ -8,11 +8,13 @@
 <config key="model">
 <config key="column-filter-257">
 <config key="columns">
-<entry key="array-size" type="xint" value="4"/>
+<entry key="array-size" type="xint" value="6"/>
 <entry key="0" type="xstring" value="PG.Quantity+1_1_log2"/>
-<entry key="1" type="xstring" value="PG.Quantity+1_3_log2"/>
-<entry key="2" type="xstring" value="PG.Quantity+2_1_log2"/>
-<entry key="3" type="xstring" value="PG.Quantity+2_2_log2"/>
+<entry key="1" type="xstring" value="PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2"/>
+<entry key="2" type="xstring" value="PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2"/>
+<entry key="3" type="xstring" value="PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2"/>
+<entry key="4" type="xstring" value="PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2"/>
+<entry key="5" type="xstring" value="PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"/>
 </config>
 <config key="columnFilter">
 <config key="columnFilter">
@@ -21,11 +23,13 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="excluded_names">
-<entry key="array-size" type="xint" value="4"/>
+<entry key="array-size" type="xint" value="6"/>
 <entry key="0" type="xstring" value="PG.Quantity+1_1_log2"/>
-<entry key="1" type="xstring" value="PG.Quantity+1_3_log2"/>
-<entry key="2" type="xstring" value="PG.Quantity+2_1_log2"/>
-<entry key="3" type="xstring" value="PG.Quantity+2_2_log2"/>
+<entry key="1" type="xstring" value="PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2"/>
+<entry key="2" type="xstring" value="PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2"/>
+<entry key="3" type="xstring" value="PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2"/>
+<entry key="4" type="xstring" value="PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2"/>
+<entry key="5" type="xstring" value="PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"/>
 </config>
 <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
 <config key="name_pattern">
@@ -47,7 +51,7 @@
 </config>
 </config>
 <config key="string-input-409">
-<entry key="string" type="xstring" value="not normalized data"/>
+<entry key="string" type="xstring" value=""/>
 </config>
 <config key="single-selection-411">
 <entry key="variable_value" type="xstring" value="none"/>
@@ -60,6 +64,17 @@
 </config>
 <config key="string-input-494">
 <entry key="string" type="xstring" value="_log2"/>
+</config>
+</config>
+<config key="variables">
+<entry key="version" type="xstring" value="V_2019_09_13"/>
+<config key="tree">
+<config key="string-input-409">
+<config key="string">
+<entry key="used_variable" type="xstring" value="graph_subtitle"/>
+<entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+</config>
+</config>
 </config>
 </config>
 <config key="nodeAnnotation">
@@ -87,10 +102,6 @@
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
 <entry key="state" type="xstring" value="IDLE"/>
-<config key="nodecontainer_message">
-<entry key="type" type="xstring" value="WARNING"/>
-<entry key="message" type="xstring" value="Component Input 0:1498:0:291:281:0:217: Component does not have input data, execute upstream nodes first"/>
-</config>
 <entry key="virtual-in-ID" type="xint" value="217"/>
 <config key="inports">
 <config key="inport_0">
