@@ -39,7 +39,7 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="144"/>
 <entry key="1" type="xint" value="397"/>
-<entry key="2" type="xint" value="91"/>
+<entry key="2" type="xint" value="92"/>
 <entry key="3" type="xint" value="80"/>
 </config>
 </config>
@@ -55,7 +55,7 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="304"/>
 <entry key="1" type="xint" value="217"/>
-<entry key="2" type="xint" value="101"/>
+<entry key="2" type="xint" value="102"/>
 <entry key="3" type="xint" value="80"/>
 </config>
 </config>
@@ -71,7 +71,7 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="204"/>
 <entry key="1" type="xint" value="217"/>
-<entry key="2" type="xint" value="101"/>
+<entry key="2" type="xint" value="102"/>
 <entry key="3" type="xint" value="80"/>
 </config>
 </config>
@@ -87,7 +87,7 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="934"/>
 <entry key="1" type="xint" value="636"/>
-<entry key="2" type="xint" value="100"/>
+<entry key="2" type="xint" value="101"/>
 <entry key="3" type="xint" value="84"/>
 </config>
 </config>
@@ -154,7 +154,7 @@
 <config key="port_enum">
 <config key="outport_0">
 <entry key="index" type="xint" value="0"/>
-<entry key="name" type="xstring" value="Connected to: Output dataframe"/>
+<entry key="name" type="xstring" value="Connected to: Outport 1"/>
 <config key="type">
 <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
 </config>

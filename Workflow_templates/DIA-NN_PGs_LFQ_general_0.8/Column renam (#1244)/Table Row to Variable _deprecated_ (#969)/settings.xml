@@ -30,7 +30,7 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="Replacement"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti"/>
+<entry key="value" type="xstring" value="2_3"/>
 </config>
 <config key="Variable_5">
 <entry key="type" type="xstring" value="variable"/>

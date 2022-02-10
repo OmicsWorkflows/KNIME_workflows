@@ -6,13 +6,13 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="columns_to_process"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="PG.Quantity+1_1_log2,PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2,PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2"/>
+<entry key="value" type="xstring" value="PG.Quantity+1_1_log2,PG.Quantity+1_2_log2,PG.Quantity+1_3_log2,PG.Quantity+2_1_log2,PG.Quantity+2_2_log2,PG.Quantity+2_3_log2"/>
 </config>
 <config key="Variable_1">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="columns_to_process"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="PG.Quantity+1_1_log2,PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2,PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2"/>
+<entry key="value" type="xstring" value="PG.Quantity+1_1_log2,PG.Quantity+1_2_log2,PG.Quantity+1_3_log2,PG.Quantity+2_1_log2,PG.Quantity+2_2_log2,PG.Quantity+2_3_log2"/>
 </config>
 </config>
 <config key="internal_node_subsettings">

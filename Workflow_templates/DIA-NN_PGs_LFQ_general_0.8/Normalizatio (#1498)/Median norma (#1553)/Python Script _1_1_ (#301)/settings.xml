@@ -6,7 +6,7 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="sourceCode" type="xstring" value="# create a flow variable for filename%%00010flow_variables['filename_scatterplot'] = 'knime://knime.workflow/__outputs__/figures/' + flow_variables['subset_filename'] + '_scatter-plot_' + flow_variables['normalization_filename'] + '.png'%%00010%%00010# copy input to output%%00010output_table = input_table.copy()%%00010"/>
+<entry key="sourceCode" type="xstring" value="# create a flow variable for filename%%00010flow_variables['filename_scatterplot'] = 'knime://knime.workflow/__outputs__/figures/normalization tests/' + flow_variables['subset_filename'] + '_scatter-plot_' + flow_variables['normalization_filename'] + '.png'%%00010%%00010# copy input to output%%00010output_table = input_table.copy()%%00010"/>
 <entry key="rowLimit" type="xint" value="1000"/>
 <entry key="pythonVersionOption" type="xstring" value="python3"/>
 <entry key="python2Command" type="xstring" value=""/>

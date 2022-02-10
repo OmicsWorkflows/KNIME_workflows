@@ -1,103 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
 <entry key="node_file" type="xstring" value="settings.xml"/>
-<config key="flow_stack">
-<config key="Variable_0">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="method_no"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="top"/>
-</config>
-<config key="Variable_1">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="method_linear"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="top"/>
-</config>
-<config key="Variable_2">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="method_quant"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="top"/>
-</config>
-<config key="Variable_3">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="method_loess"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="top"/>
-</config>
-<config key="Variable_4">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="method_diann"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="top"/>
-</config>
-<config key="Variable_5">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="method_maxlfq"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="top"/>
-</config>
-<config key="Variable_6">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="graph_violin_widthcount"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="bottom"/>
-</config>
-<config key="Variable_7">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="graph_violin_widthsame"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="bottom"/>
-</config>
-<config key="Variable_8">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="graph_boxplot"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="bottom"/>
-</config>
-<config key="Variable_9">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="graph_density"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="bottom"/>
-</config>
-<config key="Variable_10">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="graph_correlation"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="bottom"/>
-</config>
-<config key="Variable_11">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="graph_hierarchy"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="bottom"/>
-</config>
-<config key="Variable_12">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="graph_scatter"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="bottom"/>
-</config>
-<config key="Variable_13">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="graph_ma"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="bottom"/>
-</config>
-<config key="Variable_14">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="subset_switch"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="bottom"/>
-</config>
-</config>
+<config key="flow_stack"/>
 <config key="internal_node_subsettings">
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="sourceCode" type="xstring" value="# create a list containing normalization tests%%00010method_list = flow_variables['methods'].split(',')%%00010%%00010# create a series of switch variables for every test%%00010if 'no normalization' in method_list:%%00010%%00009flow_variables['method_no'] = 'top'%%00010else:%%00010%%00009flow_variables['method_no'] = 'bottom'%%00010%%00009%%00010if 'median (linear)' in method_list:%%00010%%00009flow_variables['method_linear'] = 'top'%%00010else:%%00010%%00009flow_variables['method_linear'] = 'bottom'%%00010%%00009%%00010if 'quantile (non-linear)' in method_list:%%00010%%00009flow_variables['method_quant'] = 'top'%%00010else:%%00010%%00009flow_variables['method_quant'] = 'bottom'%%00010%%00009%%00010if 'loessF (non-linear)' in method_list:%%00010%%00009flow_variables['method_loess'] = 'top'%%00010else:%%00010%%00009flow_variables['method_loess'] = 'bottom'%%00010%%00010if 'DIA-NN' in method_list:%%00010%%00009flow_variables['method_diann'] = 'top'%%00010else:%%00010%%00009flow_variables['method_diann'] = 'bottom'%%00010%%00010if 'DIA-NN with MaxLFQ' in method_list:%%00010%%00009flow_variables['method_maxlfq'] = 'top'%%00010else:%%00010%%00009flow_variables['method_maxlfq'] = 'bottom'%%00010%%00010# create a list containing graphs%%00010graph_list = flow_variables['graphs'].split(',')%%00010%%00010# create a series of switch variables for every graph%%00010if 'violin plot (width based on count)' in graph_list:%%00010%%00009flow_variables['graph_violin_widthcount'] = 'top'%%00010else:%%00010%%00009flow_variables['graph_violin_widthcount'] = 'bottom'%%00010%%00009%%00010if 'violin plot (width same for all)' in graph_list:%%00010%%00009flow_variables['graph_violin_widthsame'] = 'top'%%00010else:%%00010%%00009flow_variables['graph_violin_widthsame'] = 'bottom'%%00010%%00009%%00010if 'box plot' in graph_list:%%00010%%00009flow_variables['graph_boxplot'] = 'top'%%00010else:%%00010%%00009flow_variables['graph_boxplot'] = 'bottom'%%00010%%00009%%00010if 'kernel density plot' in graph_list:%%00010%%00009flow_variables['graph_density'] = 'top'%%00010else:%%00010%%00009flow_variables['graph_density'] = 'bottom'%%00010%%00009%%00010if 'correlation clustermap' in graph_list:%%00010%%00009flow_variables['graph_correlation'] = 'top'%%00010else:%%00010%%00009flow_variables['graph_correlation'] = 'bottom'%%00010%%00010if 'hierarchical clustering' in graph_list:%%00010%%00009flow_variables['graph_hierarchy'] = 'top'%%00010else:%%00010%%00009flow_variables['graph_hierarchy'] = 'bottom'%%00010%%00010if 'scatter plot matrix' in graph_list:%%00010%%00009flow_variables['graph_scatter'] = 'top'%%00010else:%%00010%%00009flow_variables['graph_scatter'] = 'bottom'%%00010%%00010if 'scatter plot matrix (MA plots)' in graph_list:%%00010%%00009flow_variables['graph_ma'] = 'top'%%00010else:%%00010%%00009flow_variables['graph_ma'] = 'bottom'%%00010%%00010# subset switch, if a subset is going to be plotted individually%%00010if flow_variables['subset_bool'] == 1:%%00010%%00009flow_variables['subset_switch'] = 'top'%%00010else:%%00010%%00009flow_variables['subset_switch'] = 'bottom'%%00010%%00010# create a list of subset graphs%%00010if flow_variables['subset_bool'] == 1:%%00010%%00009subset_graphs_list = flow_variables['subset_graphs'].split(',')%%00010%%00010%%00009if 'violin plot (width based on count)' in subset_graphs_list:%%00010%%00009%%00009flow_variables['subset_violin_widthcount'] = 'top'%%00010%%00009else:%%00010%%00009%%00009flow_variables['subset_violin_widthcount'] = 'bottom'%%00010%%00009%%00010%%00009if 'violin plot (width same for all)' in subset_graphs_list:%%00010%%00009%%00009flow_variables['subset_violin_widthsame'] = 'top'%%00010%%00009else:%%00010%%00009%%00009flow_variables['subset_violin_widthsame'] = 'bottom'%%00010%%00009%%00009%%00010%%00009if 'box plot' in subset_graphs_list:%%00010%%00009%%00009flow_variables['subset_boxplot'] = 'top'%%00010%%00009else:%%00010%%00009%%00009flow_variables['subset_boxplot'] = 'bottom'%%00010%%00009%%00009%%00010%%00009if 'kernel density plot' in subset_graphs_list:%%00010%%00009%%00009flow_variables['subset_density'] = 'top'%%00010%%00009else:%%00010%%00009%%00009flow_variables['subset_density'] = 'bottom'%%00010%%00009%%00009%%00010%%00009if 'correlation clustermap' in subset_graphs_list:%%00010%%00009%%00009flow_variables['subset_correlation'] = 'top'%%00010%%00009else:%%00010%%00009%%00009flow_variables['subset_correlation'] = 'bottom'%%00010%%00009%%00010%%00009if 'hierarchical clustering' in subset_graphs_list:%%00010%%00009%%00009flow_variables['subset_hierarchy'] = 'top'%%00010%%00009else:%%00010%%00009%%00009flow_variables['subset_hierarchy'] = 'bottom'%%00010%%00009%%00010%%00009if 'scatter plot matrix' in subset_graphs_list:%%00010%%00009%%00009flow_variables['subset_scatter'] = 'top'%%00010%%00009else:%%00010%%00009%%00009flow_variables['subset_scatter'] = 'bottom'%%00010%%00009%%00010%%00009if 'scatter plot matrix (MA plots)' in subset_graphs_list:%%00010%%00009%%00009flow_variables['subset_ma'] = 'top'%%00010%%00009else:%%00010%%00009%%00009flow_variables['subset_ma'] = 'bottom'%%00010%%00010# create a counter for a counting loop%%00010if flow_variables['subset_bool'] == 1:%%00010%%00009subset_list = flow_variables['subset_list'].split(',')%%00010%%00009flow_variables['counting_loop'] = len(subset_list)"/>
+<entry key="sourceCode" type="xstring" value="# create an empty string for graph subtitle so errors aren't raised%%00010flow_variables['graph_subtitle'] = ''%%00010%%00010# create a list containing normalization tests%%00010method_list = flow_variables['methods'].split(',')%%00010%%00010# create a series of switch variables for every test%%00010if 'no normalization' in method_list:%%00010%%00009flow_variables['method_no'] = 'top'%%00010else:%%00010%%00009flow_variables['method_no'] = 'bottom'%%00010%%00009%%00010if 'median (linear)' in method_list:%%00010%%00009flow_variables['method_linear'] = 'top'%%00010else:%%00010%%00009flow_variables['method_linear'] = 'bottom'%%00010%%00009%%00010if 'quantile (non-linear)' in method_list:%%00010%%00009flow_variables['method_quant'] = 'top'%%00010else:%%00010%%00009flow_variables['method_quant'] = 'bottom'%%00010%%00009%%00010if 'loessF (non-linear)' in method_list:%%00010%%00009flow_variables['method_loess'] = 'top'%%00010else:%%00010%%00009flow_variables['method_loess'] = 'bottom'%%00010%%00010if 'DIA-NN' in method_list:%%00010%%00009flow_variables['method_diann'] = 'top'%%00010else:%%00010%%00009flow_variables['method_diann'] = 'bottom'%%00010%%00010if 'DIA-NN with MaxLFQ' in method_list:%%00010%%00009flow_variables['method_maxlfq'] = 'top'%%00010else:%%00010%%00009flow_variables['method_maxlfq'] = 'bottom'%%00010%%00010# create a list containing graphs%%00010graph_list = flow_variables['graphs'].split(',')%%00010%%00010# create a series of switch variables for every graph%%00010if 'violin plot (width based on count)' in graph_list:%%00010%%00009flow_variables['graph_violin_widthcount'] = 'top'%%00010else:%%00010%%00009flow_variables['graph_violin_widthcount'] = 'bottom'%%00010%%00009%%00010if 'violin plot (width same for all)' in graph_list:%%00010%%00009flow_variables['graph_violin_widthsame'] = 'top'%%00010else:%%00010%%00009flow_variables['graph_violin_widthsame'] = 'bottom'%%00010%%00009%%00010if 'box plot' in graph_list:%%00010%%00009flow_variables['graph_boxplot'] = 'top'%%00010else:%%00010%%00009flow_variables['graph_boxplot'] = 'bottom'%%00010%%00009%%00010if 'kernel density plot' in graph_list:%%00010%%00009flow_variables['graph_density'] = 'top'%%00010else:%%00010%%00009flow_variables['graph_density'] = 'bottom'%%00010%%00009%%00010if 'correlation clustermap' in graph_list:%%00010%%00009flow_variables['graph_correlation'] = 'top'%%00010else:%%00010%%00009flow_variables['graph_correlation'] = 'bottom'%%00010%%00010if 'hierarchical clustering' in graph_list:%%00010%%00009flow_variables['graph_hierarchy'] = 'top'%%00010else:%%00010%%00009flow_variables['graph_hierarchy'] = 'bottom'%%00010%%00010if 'scatter plot matrix' in graph_list:%%00010%%00009flow_variables['graph_scatter'] = 'top'%%00010else:%%00010%%00009flow_variables['graph_scatter'] = 'bottom'%%00010%%00010if 'scatter plot matrix (MA plots)' in graph_list:%%00010%%00009flow_variables['graph_ma'] = 'top'%%00010else:%%00010%%00009flow_variables['graph_ma'] = 'bottom'%%00010%%00010# subset switch, if a subset is going to be plotted individually%%00010if flow_variables['subset_bool'] == 1:%%00010%%00009flow_variables['subset_switch'] = 'top'%%00010else:%%00010%%00009flow_variables['subset_switch'] = 'bottom'%%00010%%00010# create a list of subset graphs%%00010if flow_variables['subset_bool'] == 1:%%00010%%00009subset_graphs_list = flow_variables['subset_graphs'].split(',')%%00010%%00010%%00009if 'violin plot (width based on count)' in subset_graphs_list:%%00010%%00009%%00009flow_variables['subset_violin_widthcount'] = 'top'%%00010%%00009else:%%00010%%00009%%00009flow_variables['subset_violin_widthcount'] = 'bottom'%%00010%%00009%%00010%%00009if 'violin plot (width same for all)' in subset_graphs_list:%%00010%%00009%%00009flow_variables['subset_violin_widthsame'] = 'top'%%00010%%00009else:%%00010%%00009%%00009flow_variables['subset_violin_widthsame'] = 'bottom'%%00010%%00009%%00009%%00010%%00009if 'box plot' in subset_graphs_list:%%00010%%00009%%00009flow_variables['subset_boxplot'] = 'top'%%00010%%00009else:%%00010%%00009%%00009flow_variables['subset_boxplot'] = 'bottom'%%00010%%00009%%00009%%00010%%00009if 'kernel density plot' in subset_graphs_list:%%00010%%00009%%00009flow_variables['subset_density'] = 'top'%%00010%%00009else:%%00010%%00009%%00009flow_variables['subset_density'] = 'bottom'%%00010%%00009%%00009%%00010%%00009if 'correlation clustermap' in subset_graphs_list:%%00010%%00009%%00009flow_variables['subset_correlation'] = 'top'%%00010%%00009else:%%00010%%00009%%00009flow_variables['subset_correlation'] = 'bottom'%%00010%%00009%%00010%%00009if 'hierarchical clustering' in subset_graphs_list:%%00010%%00009%%00009flow_variables['subset_hierarchy'] = 'top'%%00010%%00009else:%%00010%%00009%%00009flow_variables['subset_hierarchy'] = 'bottom'%%00010%%00009%%00010%%00009if 'scatter plot matrix' in subset_graphs_list:%%00010%%00009%%00009flow_variables['subset_scatter'] = 'top'%%00010%%00009else:%%00010%%00009%%00009flow_variables['subset_scatter'] = 'bottom'%%00010%%00009%%00010%%00009if 'scatter plot matrix (MA plots)' in subset_graphs_list:%%00010%%00009%%00009flow_variables['subset_ma'] = 'top'%%00010%%00009else:%%00010%%00009%%00009flow_variables['subset_ma'] = 'bottom'%%00010%%00010# create a counter for a counting loop%%00010if flow_variables['subset_bool'] == 1:%%00010%%00009subset_list = flow_variables['subset_list'].split(',')%%00010%%00009flow_variables['counting_loop'] = len(subset_list)"/>
 <entry key="rowLimit" type="xint" value="1000"/>
 <entry key="pythonVersionOption" type="xstring" value="python3"/>
 <entry key="python2Command" type="xstring" value=""/>

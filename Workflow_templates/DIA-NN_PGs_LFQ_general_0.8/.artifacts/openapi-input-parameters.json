@@ -16,9 +16,9 @@
         },
         "string-input-1498:1531:286:260": {
             "type": "string",
-            "default": "normalized data (median)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (median)"
+            "example": ""
         },
         "double-input-1311:938:316": {
             "type": "number",
@@ -90,9 +90,9 @@
         },
         "string-input-1498:1534:260": {
             "type": "string",
-            "default": "normalized data (DIA-NN MaxLFQ)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (DIA-NN MaxLFQ)"
+            "example": ""
         },
         "string-input-1311:962:274:409": {
             "type": "string",
@@ -170,9 +170,9 @@
         },
         "string-input-1498:1559:283:409": {
             "type": "string",
-            "default": "normalized data (loessF)",
+            "default": "",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data (loessF)"
+            "example": ""
         },
         "string-input-1498:291:285:438": {
             "type": "string",
@@ -214,15 +214,15 @@
         },
         "string-input-1498:1559:285:260": {
             "type": "string",
-            "default": "normalized data (loessF)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (loessF)"
+            "example": ""
         },
         "string-input-1498:1534:284:409": {
             "type": "string",
-            "default": "normalized data (DIA-NN MaxLFQ)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (DIA-NN MaxLFQ)"
+            "example": ""
         },
         "single-selection-1498:1563:282:436": {
             "type": "object",
@@ -277,9 +277,9 @@
         },
         "string-input-1498:1553:282:409": {
             "type": "string",
-            "default": "normalized data (median)",
+            "default": "",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data (median)"
+            "example": ""
         },
         "single-selection-1498:1555:283:423": {
             "type": "object",
@@ -321,9 +321,9 @@
         },
         "string-input-1498:291:284:409": {
             "type": "string",
-            "default": "not normalized data",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "not normalized data"
+            "example": ""
         },
         "string-input-1498:1534:258": {
             "type": "string",
@@ -438,9 +438,9 @@
         },
         "string-input-1498:1534:287:260": {
             "type": "string",
-            "default": "normalized data (DIA-NN MaxLFQ)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (DIA-NN MaxLFQ)"
+            "example": ""
         },
         "column-filter-1498:1535:282:257": {
             "type": "object",
@@ -566,9 +566,9 @@
         },
         "string-input-1498:291:286:260": {
             "type": "string",
-            "default": "not normalized data",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "not normalized data"
+            "example": ""
         },
         "string-input-1498:1555:286:329": {
             "type": "string",
@@ -652,9 +652,9 @@
         },
         "string-input-1498:1531:283:409": {
             "type": "string",
-            "default": "normalized data (median)",
+            "default": "",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data (median)"
+            "example": ""
         },
         "column-filter-1498:291:283:257": {
             "type": "object",
@@ -683,9 +683,9 @@
         },
         "string-input-1498:1531:287:260": {
             "type": "string",
-            "default": "normalized data (median)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (median)"
+            "example": ""
         },
         "single-selection-1498:1566:283:419": {
             "type": "object",
@@ -768,9 +768,9 @@
         },
         "string-input-1498:1553:283:409": {
             "type": "string",
-            "default": "normalized data (median)",
+            "default": "",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data (median)"
+            "example": ""
         },
         "string-input-1498:1531:287:258": {
             "type": "string",
@@ -817,9 +817,9 @@
         },
         "string-input-1498:1559:282:409": {
             "type": "string",
-            "default": "normalized data (loessF)",
+            "default": "",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data (loessF)"
+            "example": ""
         },
         "string-input-1490:649": {
             "type": "string",
@@ -884,9 +884,9 @@
         },
         "string-input-1498:1534:283:409": {
             "type": "string",
-            "default": "normalized data (DIA-NN MaxLFQ)",
+            "default": "",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data (DIA-NN MaxLFQ)"
+            "example": ""
         },
         "string-input-1498:1559:283:439": {
             "type": "string",
@@ -908,9 +908,9 @@
         },
         "string-input-1498:1533:260": {
             "type": "string",
-            "default": "normalized data (loessF)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (loessF)"
+            "example": ""
         },
         "string-input-1498:1559:283:438": {
             "type": "string",
@@ -957,15 +957,15 @@
         },
         "string-input-1498:1534:286:260": {
             "type": "string",
-            "default": "normalized data (DIA-NN MaxLFQ)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (DIA-NN MaxLFQ)"
+            "example": ""
         },
         "string-input-1498:1553:285:260": {
             "type": "string",
-            "default": "normalized data (median)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (median)"
+            "example": ""
         },
         "column-filter-1498:1546:282:257": {
             "type": "object",
@@ -1142,9 +1142,9 @@
         },
         "string-input-1498:291:287:260": {
             "type": "string",
-            "default": "not normalized data",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "not normalized data"
+            "example": ""
         },
         "string-input-1498:1553:285:259": {
             "type": "string",
@@ -1227,9 +1227,9 @@
         },
         "string-input-1498:1531:284:409": {
             "type": "string",
-            "default": "normalized data (median)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (median)"
+            "example": ""
         },
         "double-input-1498:1534:285:444": {
             "type": "number",
@@ -1357,22 +1357,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"
                 ]
             }
         },
@@ -1384,9 +1374,9 @@
         },
         "string-input-1498:1533:281:409": {
             "type": "string",
-            "default": "normalized data (loessF)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (loessF)"
+            "example": ""
         },
         "string-input-1498:1532:258": {
             "type": "string",
@@ -1482,9 +1472,9 @@
         },
         "string-input-1498:1559:281:409": {
             "type": "string",
-            "default": "normalized data (loessF)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (loessF)"
+            "example": ""
         },
         "boolean-input-1498:1535:284:412": {
             "type": "boolean",
@@ -1506,9 +1496,9 @@
         },
         "string-input-1498:1532:260": {
             "type": "string",
-            "default": "normalized data (quantile)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (quantile)"
+            "example": ""
         },
         "string-input-1498:1531:439": {
             "type": "string",
@@ -1824,9 +1814,9 @@
         },
         "string-input-1498:1553:281:409": {
             "type": "string",
-            "default": "normalized data (median)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (median)"
+            "example": ""
         },
         "boolean-input-1498:1553:285:328": {
             "type": "boolean",
@@ -1963,9 +1953,9 @@
         },
         "string-input-1498:1534:285:260": {
             "type": "string",
-            "default": "normalized data (DIA-NN MaxLFQ)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (DIA-NN MaxLFQ)"
+            "example": ""
         },
         "boolean-input-0:973": {
             "type": "boolean",
@@ -2057,9 +2047,9 @@
         },
         "string-input-1498:1553:260": {
             "type": "string",
-            "default": "normalized data (median)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (median)"
+            "example": ""
         },
         "string-input-1498:1533:283:441": {
             "type": "string",
@@ -2356,9 +2346,9 @@
         },
         "string-input-1498:1534:281:409": {
             "type": "string",
-            "default": "normalized data (DIA-NN MaxLFQ)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (DIA-NN MaxLFQ)"
+            "example": ""
         },
         "string-input-1498:1534:284:494": {
             "type": "string",
@@ -2374,9 +2364,9 @@
         },
         "string-input-1498:1531:260": {
             "type": "string",
-            "default": "normalized data (median)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (median)"
+            "example": ""
         },
         "single-selection-1498:291:443": {
             "type": "object",
@@ -2672,9 +2662,9 @@
         },
         "string-input-1498:1546:260": {
             "type": "string",
-            "default": "not normalized data",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "not normalized data"
+            "example": ""
         },
         "single-selection-1503:311:258": {
             "type": "object",
@@ -2792,9 +2782,9 @@
         },
         "string-input-1498:1533:285:260": {
             "type": "string",
-            "default": "normalized data (loessF)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (loessF)"
+            "example": ""
         },
         "double-input-1498:1553:285:444": {
             "type": "number",
@@ -2847,8 +2837,6 @@
                     "Status",
                     "Protein names",
                     "Gene names  (primary )",
-                    "Mass",
-                    "Length",
                     "Organism",
                     "Gene ontology (GO)",
                     "Gene ontology (biological process)",
@@ -3645,9 +3633,9 @@
         },
         "string-input-1498:1566:281:409": {
             "type": "string",
-            "default": "normalized data (DIA-NN MaxLFQ)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (DIA-NN MaxLFQ)"
+            "example": ""
         },
         "string-input-1498:1546:281:493": {
             "type": "string",
@@ -3712,9 +3700,9 @@
         },
         "string-input-1498:1563:281:409": {
             "type": "string",
-            "default": "normalized data (DIA-NN)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (DIA-NN)"
+            "example": ""
         },
         "string-input-1498:1546:281:489": {
             "type": "string",
@@ -3724,9 +3712,9 @@
         },
         "string-input-1498:1555:260": {
             "type": "string",
-            "default": "normalized data (quantile)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (quantile)"
+            "example": ""
         },
         "string-input-1498:1546:281:482": {
             "type": "string",
@@ -3822,9 +3810,9 @@
         },
         "string-input-1498:1553:284:409": {
             "type": "string",
-            "default": "normalized data (median)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (median)"
+            "example": ""
         },
         "string-input-1498:1531:283:441": {
             "type": "string",
@@ -3890,9 +3878,9 @@
         },
         "string-input-1498:1559:260": {
             "type": "string",
-            "default": "normalized data (loessF)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (loessF)"
+            "example": ""
         },
         "double-input-1498:1531:285:444": {
             "type": "number",
@@ -3902,9 +3890,9 @@
         },
         "string-input-1498:1555:283:409": {
             "type": "string",
-            "default": "normalized data (quantile)",
+            "default": "",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data (quantile)"
+            "example": ""
         },
         "double-input-1498:1553:287:444": {
             "type": "number",
@@ -4008,9 +3996,9 @@
         },
         "string-input-1498:1566:285:260": {
             "type": "string",
-            "default": "normalized data (DIA-NN MaxLFQ)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (DIA-NN MaxLFQ)"
+            "example": ""
         },
         "boolean-input-1491:850": {
             "type": "boolean",
@@ -4075,9 +4063,9 @@
         },
         "string-input-1498:1566:282:409": {
             "type": "string",
-            "default": "normalized data (DIA-NN MaxLFQ)",
+            "default": "",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data (DIA-NN MaxLFQ)"
+            "example": ""
         },
         "boolean-input-1498:1532:285:328": {
             "type": "boolean",
@@ -4147,9 +4135,9 @@
         },
         "string-input-1498:1555:285:260": {
             "type": "string",
-            "default": "normalized data (quantile)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (quantile)"
+            "example": ""
         },
         "boolean-input-1491:848": {
             "type": "boolean",
@@ -4165,9 +4153,9 @@
         },
         "string-input-1498:1553:286:260": {
             "type": "string",
-            "default": "normalized data (median)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (median)"
+            "example": ""
         },
         "string-input-1311:962:274:493": {
             "type": "string",
@@ -4572,9 +4560,9 @@
         },
         "string-input-1498:1553:287:260": {
             "type": "string",
-            "default": "normalized data (median)",
+            "default": "normalized data - median",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (median)"
+            "example": "normalized data - median"
         },
         "boolean-input-1498:1546:281:412": {
             "type": "boolean",
@@ -4590,9 +4578,9 @@
         },
         "string-input-1498:1531:285:260": {
             "type": "string",
-            "default": "normalized data (median)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (median)"
+            "example": ""
         },
         "single-selection-1498:1535:283:419": {
             "type": "object",
@@ -4615,9 +4603,9 @@
         },
         "string-input-1498:1531:281:409": {
             "type": "string",
-            "default": "normalized data (median)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (median)"
+            "example": ""
         },
         "column-filter-1498:1531:281:257": {
             "type": "object",
@@ -4675,9 +4663,9 @@
         },
         "string-input-1498:1555:282:409": {
             "type": "string",
-            "default": "normalized data (quantile)",
+            "default": "",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data (quantile)"
+            "example": ""
         },
         "boolean-input-1498:1546:284:487": {
             "type": "boolean",
@@ -4718,11 +4706,11 @@
             "example": {
                 "columns": [
                     "1_1",
-                    "IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti",
-                    "IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti",
-                    "IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti",
-                    "IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti",
-                    "IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti"
+                    "1_2",
+                    "1_3",
+                    "2_1",
+                    "2_2",
+                    "2_3"
                 ]
             }
         },
@@ -4741,9 +4729,9 @@
         },
         "string-input-1498:1555:281:409": {
             "type": "string",
-            "default": "normalized data (quantile)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (quantile)"
+            "example": ""
         },
         "string-input-1498:1535:285:329": {
             "type": "string",
@@ -4765,9 +4753,9 @@
         },
         "string-input-1498:1566:286:260": {
             "type": "string",
-            "default": "normalized data (DIA-NN MaxLFQ)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (DIA-NN MaxLFQ)"
+            "example": ""
         },
         "string-input-1498:1546:287:329": {
             "type": "string",
@@ -4963,9 +4951,9 @@
         },
         "string-input-1498:1566:283:409": {
             "type": "string",
-            "default": "normalized data (DIA-NN MaxLFQ)",
+            "default": "",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data (DIA-NN MaxLFQ)"
+            "example": ""
         },
         "single-selection-1498:1535:285:261": {
             "type": "object",
@@ -5045,9 +5033,9 @@
         },
         "string-input-1498:1563:286:260": {
             "type": "string",
-            "default": "normalized data (DIA-NN)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (DIA-NN)"
+            "example": ""
         },
         "boolean-input-1498:291:284:487": {
             "type": "boolean",
@@ -5260,9 +5248,9 @@
         },
         "string-input-1498:1555:287:260": {
             "type": "string",
-            "default": "normalized data (quantile)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (quantile)"
+            "example": ""
         },
         "single-selection-1311:962:961:261": {
             "type": "object",
@@ -5285,9 +5273,9 @@
         },
         "string-input-1498:1563:284:409": {
             "type": "string",
-            "default": "normalized data (DIA-NN)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (DIA-NN)"
+            "example": ""
         },
         "string-input-1498:291:285:329": {
             "type": "string",
@@ -5483,9 +5471,9 @@
         },
         "string-input-1498:1566:284:409": {
             "type": "string",
-            "default": "normalized data (DIA-NN MaxLFQ)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (DIA-NN MaxLFQ)"
+            "example": ""
         },
         "string-input-1498:1532:282:439": {
             "type": "string",
@@ -5526,9 +5514,9 @@
         },
         "string-input-1498:1566:287:260": {
             "type": "string",
-            "default": "normalized data (DIA-NN MaxLFQ)",
+            "default": "normalized data - DIA-NN MaxLFQ",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (DIA-NN MaxLFQ)"
+            "example": "normalized data - DIA-NN MaxLFQ"
         },
         "single-selection-1311:962:274:411": {
             "type": "object",
@@ -5576,9 +5564,9 @@
         },
         "string-input-1498:1532:281:409": {
             "type": "string",
-            "default": "normalized data (quantile)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (quantile)"
+            "example": ""
         },
         "single-selection-1498:1531:281:411": {
             "type": "object",
@@ -5656,9 +5644,9 @@
         },
         "string-input-1498:1535:285:260": {
             "type": "string",
-            "default": "normalized data (DIA-NN)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (DIA-NN)"
+            "example": ""
         },
         "single-selection-1498:1534:285:261": {
             "type": "object",
@@ -5813,9 +5801,9 @@
         },
         "string-input-1498:1535:281:409": {
             "type": "string",
-            "default": "normalized data (DIA-NN)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (DIA-NN)"
+            "example": ""
         },
         "string-input-1498:1566:286:441": {
             "type": "string",
@@ -5831,9 +5819,9 @@
         },
         "string-input-1498:1555:284:409": {
             "type": "string",
-            "default": "normalized data (quantile)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (quantile)"
+            "example": ""
         },
         "double-input-1498:1533:287:444": {
             "type": "number",
@@ -5843,9 +5831,9 @@
         },
         "string-input-1498:1555:286:260": {
             "type": "string",
-            "default": "normalized data (quantile)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (quantile)"
+            "example": ""
         },
         "string-input-1498:1566:258": {
             "type": "string",
@@ -6070,9 +6058,9 @@
         },
         "string-input-1498:1566:260": {
             "type": "string",
-            "default": "normalized data (DIA-NN MaxLFQ)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (DIA-NN MaxLFQ)"
+            "example": ""
         },
         "single-selection-1498:1531:285:261": {
             "type": "object",
@@ -6212,9 +6200,9 @@
         },
         "string-input-1498:1532:285:260": {
             "type": "string",
-            "default": "normalized data (quantile)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (quantile)"
+            "example": ""
         },
         "string-input-1498:1532:283:439": {
             "type": "string",
@@ -6266,15 +6254,15 @@
         },
         "string-input-1498:1546:283:409": {
             "type": "string",
-            "default": "not normalized data",
+            "default": "",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "not normalized data"
+            "example": ""
         },
         "string-input-1498:1563:282:409": {
             "type": "string",
-            "default": "normalized data (DIA-NN)",
+            "default": "",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data (DIA-NN)"
+            "example": ""
         },
         "string-input-1498:1546:285:259": {
             "type": "string",
@@ -6384,9 +6372,9 @@
         },
         "string-input-1498:1533:287:260": {
             "type": "string",
-            "default": "normalized data (loessF)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (loessF)"
+            "example": ""
         },
         "single-selection-1498:1533:443": {
             "type": "object",
@@ -6537,9 +6525,9 @@
         },
         "string-input-1498:1532:286:260": {
             "type": "string",
-            "default": "normalized data (quantile)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (quantile)"
+            "example": ""
         },
         "string-input-1498:1563:286:441": {
             "type": "string",
@@ -6561,9 +6549,9 @@
         },
         "string-input-1498:1532:283:409": {
             "type": "string",
-            "default": "normalized data (quantile)",
+            "default": "",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data (quantile)"
+            "example": ""
         },
         "string-input-1498:1533:285:439": {
             "type": "string",
@@ -6578,16 +6566,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+lowT1_log2"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2"
+                    "PG.Quantity+lowT1_log2",
+                    "PG.Quantity+normT1_log2",
+                    "PG.Quantity+highT1_log2",
+                    "PG.Quantity+lowT2_log2",
+                    "PG.Quantity+normT2_log2",
+                    "PG.Quantity+highT2_log2"
                 ]
             }
         },
@@ -6762,9 +6753,9 @@
         },
         "string-input-1498:1546:285:260": {
             "type": "string",
-            "default": "not normalized data",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "not normalized data"
+            "example": ""
         },
         "column-filter-1498:1531:286:257": {
             "type": "object",
@@ -6791,9 +6782,9 @@
         },
         "string-input-1498:1563:285:260": {
             "type": "string",
-            "default": "normalized data (DIA-NN)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (DIA-NN)"
+            "example": ""
         },
         "string-input-1498:1563:283:439": {
             "type": "string",
@@ -6821,9 +6812,9 @@
         },
         "string-input-1498:1533:284:409": {
             "type": "string",
-            "default": "normalized data (loessF)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (loessF)"
+            "example": ""
         },
         "int-input-1498:1559:284:495": {
             "type": "integer",
@@ -6894,9 +6885,9 @@
         },
         "string-input-1498:1563:283:409": {
             "type": "string",
-            "default": "normalized data (DIA-NN)",
+            "default": "",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data (DIA-NN)"
+            "example": ""
         },
         "string-input-1498:1546:284:494": {
             "type": "string",
@@ -6906,9 +6897,9 @@
         },
         "string-input-1498:1533:286:260": {
             "type": "string",
-            "default": "normalized data (loessF)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (loessF)"
+            "example": ""
         },
         "string-input-1498:1535:281:482": {
             "type": "string",
@@ -6918,15 +6909,15 @@
         },
         "string-input-1498:1563:287:260": {
             "type": "string",
-            "default": "normalized data (DIA-NN)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (DIA-NN)"
+            "example": ""
         },
         "string-input-1498:1546:282:409": {
             "type": "string",
-            "default": "not normalized data",
+            "default": "",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "not normalized data"
+            "example": ""
         },
         "boolean-input-1498:1555:281:412": {
             "type": "boolean",
@@ -6998,11 +6989,11 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"
+                    "PG.Quantity+1_2_log2",
+                    "PG.Quantity+1_3_log2",
+                    "PG.Quantity+2_1_log2",
+                    "PG.Quantity+2_2_log2",
+                    "PG.Quantity+2_3_log2"
                 ]
             }
         },
@@ -7016,19 +7007,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Quantity+1_1_log2_norm"
-                    }
+                    "type": "array"
                 }
             },
             "description": "Enter Description",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2_norm"
                 ]
             }
         },
@@ -7036,19 +7020,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Quantity+1_1_log2_norm"
-                    }
+                    "type": "array"
                 }
             },
             "description": "Enter Description",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2_norm"
                 ]
             }
         },
@@ -7062,19 +7039,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Quantity+1_1_log2_norm"
-                    }
+                    "type": "array"
                 }
             },
             "description": "Enter Description",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2_norm",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_norm",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2_norm"
                 ]
             }
         },
@@ -7088,19 +7058,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "Enter Description",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2"
                 ]
             }
         },
@@ -7108,19 +7071,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.MaxLFQ+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "Enter Description",
             "example": {
                 "columns": [
-                    "PG.MaxLFQ+1_1_log2",
-                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
-                    "PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2"
                 ]
             }
         },
@@ -7141,19 +7097,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Normalised+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "Enter Description",
             "example": {
                 "columns": [
-                    "PG.Normalised+1_1_log2",
-                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
-                    "PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2"
                 ]
             }
         },
@@ -7216,9 +7165,9 @@
         },
         "string-input-1498:1532:284:409": {
             "type": "string",
-            "default": "normalized data (quantile)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (quantile)"
+            "example": ""
         },
         "string-input-1498:1555:287:438": {
             "type": "string",
@@ -7288,9 +7237,9 @@
         },
         "string-input-1498:1532:287:260": {
             "type": "string",
-            "default": "normalized data (quantile)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (quantile)"
+            "example": ""
         },
         "string-input-1498:1531:287:329": {
             "type": "string",
@@ -7353,9 +7302,9 @@
         },
         "string-input-1498:1546:281:409": {
             "type": "string",
-            "default": "not normalized data",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "not normalized data"
+            "example": ""
         },
         "string-input-1498:1563:286:258": {
             "type": "string",
@@ -7476,9 +7425,9 @@
         },
         "string-input-1498:1546:287:260": {
             "type": "string",
-            "default": "not normalized data",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "not normalized data"
+            "example": ""
         },
         "int-input-1498:1532:284:495": {
             "type": "integer",
@@ -7517,9 +7466,9 @@
         },
         "string-input-1498:1533:283:409": {
             "type": "string",
-            "default": "normalized data (loessF)",
+            "default": "",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data (loessF)"
+            "example": ""
         },
         "single-selection-1498:1553:284:411": {
             "type": "object",
@@ -7662,9 +7611,9 @@
         },
         "string-input-1498:291:281:409": {
             "type": "string",
-            "default": "not normalized data",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "not normalized data"
+            "example": ""
         },
         "single-selection-1487:1489": {
             "type": "object",
@@ -7951,9 +7900,9 @@
         },
         "string-input-1498:1546:286:260": {
             "type": "string",
-            "default": "not normalized data",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "not normalized data"
+            "example": ""
         },
         "string-input-1311:938:327": {
             "type": "string",
@@ -8011,33 +7960,37 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.ID"
+                        "default": "PG.Quantity+S1_1 (Max*)"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.ID",
-                    "PG.MaxLFQ (Max*)+1_1 (Max*)",
-                    "PG.MaxLFQ (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti (Max*)",
-                    "PG.MaxLFQ (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti (Max*)",
-                    "PG.MaxLFQ (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti (Max*)",
-                    "PG.MaxLFQ (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti (Max*)",
-                    "PG.MaxLFQ (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti (Max*)",
-                    "PG.Normalised (Max*)+1_1 (Max*)",
-                    "PG.Normalised (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti (Max*)",
-                    "PG.Normalised (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti (Max*)",
-                    "PG.Normalised (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti (Max*)",
-                    "PG.Normalised (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti (Max*)",
-                    "PG.Normalised (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti (Max*)",
-                    "PG.Quantity (Max*)+1_1 (Max*)",
-                    "PG.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti (Max*)",
-                    "PG.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti (Max*)",
-                    "PG.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti (Max*)",
-                    "PG.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti (Max*)",
-                    "PG.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti (Max*)",
-                    "PG.Quantity_sum"
+                    "PG.Quantity+S1_1 (Max*)",
+                    "PG.Quantity+S1_1 (Count*)",
+                    "PG.Normalised+S1_1 (Max*)",
+                    "PG.Normalised+S1_1 (Count*)",
+                    "PG.MaxLFQ+S1_1 (Max*)",
+                    "PG.MaxLFQ+S1_1 (Count*)",
+                    "PG.Quantity+S1_2 (Max*)",
+                    "PG.Quantity+S1_2 (Count*)",
+                    "PG.Normalised+S1_2 (Max*)",
+                    "PG.Normalised+S1_2 (Count*)",
+                    "PG.MaxLFQ+S1_2 (Max*)",
+                    "PG.MaxLFQ+S1_2 (Count*)",
+                    "PG.Quantity+S2_1 (Max*)",
+                    "PG.Quantity+S2_1 (Count*)",
+                    "PG.Normalised+S2_1 (Max*)",
+                    "PG.Normalised+S2_1 (Count*)",
+                    "PG.MaxLFQ+S2_1 (Max*)",
+                    "PG.MaxLFQ+S2_1 (Count*)",
+                    "PG.Quantity+S2_2 (Max*)",
+                    "PG.Quantity+S2_2 (Count*)",
+                    "PG.Normalised+S2_2 (Max*)",
+                    "PG.Normalised+S2_2 (Count*)",
+                    "PG.MaxLFQ+S2_2 (Max*)",
+                    "PG.MaxLFQ+S2_2 (Count*)"
                 ]
             }
         },
@@ -8111,9 +8064,9 @@
         },
         "string-input-1498:1546:284:409": {
             "type": "string",
-            "default": "not normalized data",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "not normalized data"
+            "example": ""
         },
         "string-input-1498:1534:282:259": {
             "type": "string",
@@ -8250,12 +8203,31 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.MaxLFQ+1_1_log2"
+                    }
                 }
             },
             "description": "select columns to be processed",
             "example": {
                 "columns": [
+                    "PG.MaxLFQ+1_1_log2",
+                    "PG.MaxLFQ+1_2_log2",
+                    "PG.MaxLFQ+1_3_log2",
+                    "PG.MaxLFQ+1_4_log2",
+                    "PG.MaxLFQ+1_5_log2",
+                    "PG.MaxLFQ+2_1_log2",
+                    "PG.MaxLFQ+2_2_log2",
+                    "PG.MaxLFQ+2_3_log2",
+                    "PG.MaxLFQ+2_4_log2",
+                    "PG.MaxLFQ+2_5_log2",
+                    "PG.MaxLFQ+3_1_log2",
+                    "PG.MaxLFQ+3_2_log2",
+                    "PG.MaxLFQ+3_3_log2",
+                    "PG.MaxLFQ+3_4_log2",
+                    "PG.MaxLFQ+3_5_log2"
                 ]
             }
         },
@@ -8519,9 +8491,9 @@
         },
         "string-input-1498:1559:287:260": {
             "type": "string",
-            "default": "normalized data (loessF)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (loessF)"
+            "example": ""
         },
         "string-input-1498:1534:287:329": {
             "type": "string",
@@ -8531,9 +8503,9 @@
         },
         "string-input-1498:1535:286:260": {
             "type": "string",
-            "default": "normalized data (DIA-NN)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (DIA-NN)"
+            "example": ""
         },
         "string-input-1498:291:283:441": {
             "type": "string",
@@ -8709,8 +8681,9 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2"
+                    "PG.Quantity+1_3_log2",
+                    "PG.Quantity+2_1_log2",
+                    "PG.Quantity+2_2_log2"
                 ]
             }
         },
@@ -8800,9 +8773,9 @@
         },
         "string-input-1498:291:260": {
             "type": "string",
-            "default": "not normalized data",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "not normalized data"
+            "example": ""
         },
         "single-selection-1498:1553:283:437": {
             "type": "object",
@@ -8834,22 +8807,12 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
-                    }
+                    "type": "array"
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"
                 ]
             }
         },
@@ -9007,9 +8970,9 @@
         },
         "string-input-1498:1535:283:409": {
             "type": "string",
-            "default": "normalized data (DIA-NN)",
+            "default": "",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "normalized data (DIA-NN)"
+            "example": ""
         },
         "column-filter-1498:1533:285:257": {
             "type": "object",
@@ -9058,9 +9021,9 @@
         },
         "string-input-1498:1559:284:409": {
             "type": "string",
-            "default": "normalized data (loessF)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (loessF)"
+            "example": ""
         },
         "string-input-1498:1559:286:258": {
             "type": "string",
@@ -9081,16 +9044,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+lowT1_log2"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2"
+                    "PG.Quantity+lowT1_log2",
+                    "PG.Quantity+normT1_log2",
+                    "PG.Quantity+highT1_log2",
+                    "PG.Quantity+lowT2_log2",
+                    "PG.Quantity+normT2_log2",
+                    "PG.Quantity+highT2_log2"
                 ]
             }
         },
@@ -9151,27 +9117,27 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti (Max*)"
+                        "default": "PG.Quantity (Max*)+4408_TIMS1_090min_DIA_10_1_Slot1-19_1_1819 (Max*)"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti (Max*)",
-                    "PG.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti (Max*)",
-                    "PG.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti (Max*)",
-                    "PG.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti (Max*)",
-                    "PG.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti (Max*)",
-                    "PG.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti (Max*)"
+                    "PG.Quantity (Max*)+4408_TIMS1_090min_DIA_10_1_Slot1-19_1_1819 (Max*)",
+                    "PG.Quantity (Max*)+4408_TIMS1_090min_DIA_12_1_Slot1-21_1_1827 (Max*)",
+                    "PG.Quantity (Max*)+4408_TIMS1_090min_DIA_13_1_Slot1-22_1_1823 (Max*)",
+                    "PG.Quantity (Max*)+4408_TIMS1_090min_DIA_14_1_Slot1-23_1_1817 (Max*)",
+                    "PG.Quantity (Max*)+4408_TIMS1_090min_DIA_15_1_Slot1-24_1_1825 (Max*)",
+                    "PG.Quantity (Max*)+4408_TIMS1_090min_DIA_11_1_Slot1-20_1_1821 (Max*)"
                 ]
             }
         },
         "string-input-1498:1535:260": {
             "type": "string",
-            "default": "normalized data (DIA-NN)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (DIA-NN)"
+            "example": ""
         },
         "column-filter-1498:1533:287:257": {
             "type": "object",
@@ -9224,9 +9190,9 @@
         },
         "string-input-1498:291:283:409": {
             "type": "string",
-            "default": "not normalized data",
+            "default": "",
             "description": "additional information that should be present as the graph subtitle",
-            "example": "not normalized data"
+            "example": ""
         },
         "string-input-1498:1555:329": {
             "type": "string",
@@ -9335,15 +9301,15 @@
         },
         "string-input-1498:1563:260": {
             "type": "string",
-            "default": "normalized data (DIA-NN)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (DIA-NN)"
+            "example": ""
         },
         "string-input-1498:1559:286:260": {
             "type": "string",
-            "default": "normalized data (loessF)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (loessF)"
+            "example": ""
         },
         "string-input-1498:1563:258": {
             "type": "string",
@@ -9359,9 +9325,9 @@
         },
         "string-input-1498:291:285:260": {
             "type": "string",
-            "default": "not normalized data",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "not normalized data"
+            "example": ""
         },
         "boolean-input-1498:1534:284:487": {
             "type": "boolean",
@@ -9471,9 +9437,9 @@
         },
         "string-input-1498:1535:284:409": {
             "type": "string",
-            "default": "normalized data (DIA-NN)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (DIA-NN)"
+            "example": ""
         },
         "single-line-1311:931:915": {
             "type": "string",
@@ -9495,9 +9461,9 @@
         },
         "string-input-1498:1535:287:260": {
             "type": "string",
-            "default": "normalized data (DIA-NN)",
+            "default": "",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": "normalized data (DIA-NN)"
+            "example": ""
         },
         "column-filter-1498:1535:283:257": {
             "type": "object",
