@@ -142,7 +142,7 @@
 </config>
 <config key="node_278">
 <entry key="id" type="xint" value="278"/>
-<entry key="node_settings_file" type="xstring" value="loess normal (#278)/workflow.knime"/>
+<entry key="node_settings_file" type="xstring" value="Loess normal (#278)/workflow.knime"/>
 <entry key="node_is_meta" type="xboolean" value="true"/>
 <entry key="node_type" type="xstring" value="MetaNode"/>
 <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
