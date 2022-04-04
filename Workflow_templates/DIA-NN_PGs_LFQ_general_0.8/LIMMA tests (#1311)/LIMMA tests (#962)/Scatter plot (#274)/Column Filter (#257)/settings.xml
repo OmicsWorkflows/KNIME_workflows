@@ -8,12 +8,6 @@
 <entry key="class" type="xstring" value="STRING"/>
 <entry key="value" type="xstring" value="LIMMA_DIA_s2-s1.logFC,LIMMA_DIA_s1-s2.logFC"/>
 </config>
-<config key="Variable_1">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="columns_to_process"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="LIMMA_DIA_s2-s1.logFC,LIMMA_DIA_s1-s2.logFC"/>
-</config>
 </config>
 <config key="internal_node_subsettings">
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>

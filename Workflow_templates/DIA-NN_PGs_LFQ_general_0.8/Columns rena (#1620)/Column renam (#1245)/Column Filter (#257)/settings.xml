@@ -6,13 +6,13 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="columns_to_process"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="PG.ID,PG.MaxLFQ (Max*)+1_1 (Max*),PG.MaxLFQ (Max*)+1_2 (Max*),PG.MaxLFQ (Max*)+1_3 (Max*),PG.MaxLFQ (Max*)+2_1 (Max*),PG.MaxLFQ (Max*)+2_2 (Max*),PG.MaxLFQ (Max*)+2_3 (Max*),PG.Normalised (Max*)+1_1 (Max*),PG.Normalised (Max*)+1_2 (Max*),PG.Normalised (Max*)+1_3 (Max*),PG.Normalised (Max*)+2_1 (Max*),PG.Normalised (Max*)+2_2 (Max*),PG.Normalised (Max*)+2_3 (Max*),PG.Quantity (Max*)+1_1 (Max*),PG.Quantity (Max*)+1_2 (Max*),PG.Quantity (Max*)+1_3 (Max*),PG.Quantity (Max*)+2_1 (Max*),PG.Quantity (Max*)+2_2 (Max*),PG.Quantity (Max*)+2_3 (Max*),PG.Quantity_sum"/>
+<entry key="value" type="xstring" value="PG.ID,PG.Quantity_sum,PG.MaxLFQ (Max*)+1_1 (Max*),PG.MaxLFQ (Max*)+1_2 (Max*),PG.MaxLFQ (Max*)+1_3 (Max*),PG.MaxLFQ (Max*)+2_1 (Max*),PG.MaxLFQ (Max*)+2_2 (Max*),PG.MaxLFQ (Max*)+2_3 (Max*),PG.Normalised (Max*)+1_1 (Max*),PG.Normalised (Max*)+1_2 (Max*),PG.Normalised (Max*)+1_3 (Max*),PG.Normalised (Max*)+2_1 (Max*),PG.Normalised (Max*)+2_2 (Max*),PG.Normalised (Max*)+2_3 (Max*),PG.Quantity (Max*)+1_1 (Max*),PG.Quantity (Max*)+1_2 (Max*),PG.Quantity (Max*)+1_3 (Max*),PG.Quantity (Max*)+2_1 (Max*),PG.Quantity (Max*)+2_2 (Max*),PG.Quantity (Max*)+2_3 (Max*)"/>
 </config>
 <config key="Variable_1">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="columns_to_process"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="PG.ID,PG.MaxLFQ (Max*)+1_1 (Max*),PG.MaxLFQ (Max*)+1_2 (Max*),PG.MaxLFQ (Max*)+1_3 (Max*),PG.MaxLFQ (Max*)+2_1 (Max*),PG.MaxLFQ (Max*)+2_2 (Max*),PG.MaxLFQ (Max*)+2_3 (Max*),PG.Normalised (Max*)+1_1 (Max*),PG.Normalised (Max*)+1_2 (Max*),PG.Normalised (Max*)+1_3 (Max*),PG.Normalised (Max*)+2_1 (Max*),PG.Normalised (Max*)+2_2 (Max*),PG.Normalised (Max*)+2_3 (Max*),PG.Quantity (Max*)+1_1 (Max*),PG.Quantity (Max*)+1_2 (Max*),PG.Quantity (Max*)+1_3 (Max*),PG.Quantity (Max*)+2_1 (Max*),PG.Quantity (Max*)+2_2 (Max*),PG.Quantity (Max*)+2_3 (Max*),PG.Quantity_sum"/>
+<entry key="value" type="xstring" value="PG.ID,PG.Quantity_sum,PG.MaxLFQ (Max*)+1_1 (Max*),PG.MaxLFQ (Max*)+1_2 (Max*),PG.MaxLFQ (Max*)+1_3 (Max*),PG.MaxLFQ (Max*)+2_1 (Max*),PG.MaxLFQ (Max*)+2_2 (Max*),PG.MaxLFQ (Max*)+2_3 (Max*),PG.Normalised (Max*)+1_1 (Max*),PG.Normalised (Max*)+1_2 (Max*),PG.Normalised (Max*)+1_3 (Max*),PG.Normalised (Max*)+2_1 (Max*),PG.Normalised (Max*)+2_2 (Max*),PG.Normalised (Max*)+2_3 (Max*),PG.Quantity (Max*)+1_1 (Max*),PG.Quantity (Max*)+1_2 (Max*),PG.Quantity (Max*)+1_3 (Max*),PG.Quantity (Max*)+2_1 (Max*),PG.Quantity (Max*)+2_2 (Max*),PG.Quantity (Max*)+2_3 (Max*)"/>
 </config>
 </config>
 <config key="internal_node_subsettings">

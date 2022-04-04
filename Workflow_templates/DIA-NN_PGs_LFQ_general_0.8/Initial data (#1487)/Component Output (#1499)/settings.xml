@@ -24,9 +24,9 @@
 <entry key="variable-prefix" type="xstring" isnull="true" value=""/>
 <config key="port-names">
 <entry key="array-size" type="xint" value="3"/>
-<entry key="0" type="xstring" value="Output table"/>
-<entry key="1" type="xstring" value="Sample names"/>
-<entry key="2" type="xstring" value="Port 3"/>
+<entry key="0" type="xstring" value="Output protein groups table"/>
+<entry key="1" type="xstring" value="Output peptides table"/>
+<entry key="2" type="xstring" value="Sample names"/>
 </config>
 <config key="port-descriptions">
 <entry key="array-size" type="xint" value="3"/>

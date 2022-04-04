@@ -6,15 +6,27 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="switch1"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="top"/>
+<entry key="value" type="xstring" value="bottom"/>
 </config>
 <config key="Variable_1">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="switch2"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="bottom"/>
+</config>
+<config key="Variable_2">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="switch3"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="bottom"/>
+</config>
+<config key="Variable_3">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="remove_switch"/>
 <entry key="class" type="xstring" value="STRING"/>
 <entry key="value" type="xstring" value="bottom"/>
 </config>
-<config key="Variable_2">
+<config key="Variable_4">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="column_suffix"/>
 <entry key="class" type="xstring" value="STRING"/>
