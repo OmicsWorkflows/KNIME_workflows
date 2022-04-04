@@ -6,7 +6,7 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="DataURL" type="xstring" value="file:/home/knimeuser/knime-workspace/Playground/Issues&amp;Orders/4801_DIA-NN_PGs_LFQ_general_01/__inputs__/DIANN_folder/output.tsv"/>
+<entry key="DataURL" type="xstring" value="knime://knime.workflow/__inputs__/DIANN_folder/output.tsv"/>
 <config key="Delimiters">
 <config key="Delim0">
 <entry key="pattern" type="xstring" value="%%00010"/>
@@ -50,7 +50,7 @@
 <entry key="SkipFirstLines" type="xlong" value="0"/>
 <entry key="NewLineInQuotes" type="xboolean" value="false"/>
 <entry key="hasColHdr" type="xboolean" value="true"/>
-<entry key="hasRowHdr" type="xboolean" value="false"/>
+<entry key="hasRowHdr" type="xboolean" value="true"/>
 <entry key="ignoreEmptyLines" type="xboolean" value="true"/>
 <entry key="rowPrefix" type="xstring" value="Row"/>
 <config key="RowDelims">
@@ -694,7 +694,7 @@
 <entry key="SkipThisColumn" type="xboolean" value="false"/>
 <entry key="ColumnName" type="xstring" value="IM"/>
 <config key="ColumnClass">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
@@ -706,7 +706,7 @@
 <entry key="SkipThisColumn" type="xboolean" value="false"/>
 <entry key="ColumnName" type="xstring" value="iIM"/>
 <config key="ColumnClass">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
@@ -718,7 +718,7 @@
 <entry key="SkipThisColumn" type="xboolean" value="false"/>
 <entry key="ColumnName" type="xstring" value="Predicted.IM"/>
 <config key="ColumnClass">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
@@ -730,7 +730,7 @@
 <entry key="SkipThisColumn" type="xboolean" value="false"/>
 <entry key="ColumnName" type="xstring" value="Predicted.iIM"/>
 <config key="ColumnClass">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>

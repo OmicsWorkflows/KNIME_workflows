@@ -8,12 +8,12 @@
 <entry key="class" type="xstring" value="STRINGARRAY"/>
 <config key="value">
 <entry key="array-size" type="xint" value="6"/>
-<entry key="0" type="xstring" value="Precursor.Id+IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti"/>
-<entry key="1" type="xstring" value="Precursor.Id+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti"/>
-<entry key="2" type="xstring" value="Precursor.Id+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti"/>
-<entry key="3" type="xstring" value="Precursor.Id+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti"/>
-<entry key="4" type="xstring" value="Precursor.Id+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti"/>
-<entry key="5" type="xstring" value="Precursor.Id+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti"/>
+<entry key="0" type="xstring" value="Precursor.Id+1_1"/>
+<entry key="1" type="xstring" value="Precursor.Id+1_2"/>
+<entry key="2" type="xstring" value="Precursor.Id+1_3"/>
+<entry key="3" type="xstring" value="Precursor.Id+2_1"/>
+<entry key="4" type="xstring" value="Precursor.Id+2_2"/>
+<entry key="5" type="xstring" value="Precursor.Id+2_3"/>
 </config>
 </config>
 <config key="Variable_1">
@@ -22,12 +22,12 @@
 <entry key="class" type="xstring" value="STRINGARRAY"/>
 <config key="value">
 <entry key="array-size" type="xint" value="6"/>
-<entry key="0" type="xstring" value="Precursor.Id+IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti"/>
-<entry key="1" type="xstring" value="Precursor.Id+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti"/>
-<entry key="2" type="xstring" value="Precursor.Id+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti"/>
-<entry key="3" type="xstring" value="Precursor.Id+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti"/>
-<entry key="4" type="xstring" value="Precursor.Id+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti"/>
-<entry key="5" type="xstring" value="Precursor.Id+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti"/>
+<entry key="0" type="xstring" value="Precursor.Id+1_1"/>
+<entry key="1" type="xstring" value="Precursor.Id+1_2"/>
+<entry key="2" type="xstring" value="Precursor.Id+1_3"/>
+<entry key="3" type="xstring" value="Precursor.Id+2_1"/>
+<entry key="4" type="xstring" value="Precursor.Id+2_2"/>
+<entry key="5" type="xstring" value="Precursor.Id+2_3"/>
 </config>
 </config>
 </config>

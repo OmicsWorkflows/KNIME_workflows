@@ -6,7 +6,7 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="graph_subtitle"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="normalized data (quantile) - s1 subset"/>
+<entry key="value" type="xstring" value=""/>
 </config>
 </config>
 <config key="internal_node_subsettings">

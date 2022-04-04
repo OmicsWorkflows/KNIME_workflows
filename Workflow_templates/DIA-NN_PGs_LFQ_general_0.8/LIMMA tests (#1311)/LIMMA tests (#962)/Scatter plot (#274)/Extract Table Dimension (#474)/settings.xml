@@ -12,19 +12,19 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="Number Columns"/>
 <entry key="class" type="xstring" value="INTEGER"/>
-<entry key="value" type="xint" value="1"/>
+<entry key="value" type="xint" value="2"/>
 </config>
 <config key="Variable_2">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="Number Rows"/>
 <entry key="class" type="xstring" value="INTEGER"/>
-<entry key="value" type="xint" value="967"/>
+<entry key="value" type="xint" value="815"/>
 </config>
 <config key="Variable_3">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="Number Columns"/>
 <entry key="class" type="xstring" value="INTEGER"/>
-<entry key="value" type="xint" value="1"/>
+<entry key="value" type="xint" value="2"/>
 </config>
 </config>
 <config key="internal_node_subsettings">

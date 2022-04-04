@@ -39,8 +39,8 @@
 </config>
 <entry key="hideInDialog" type="xboolean" value="false"/>
 <entry key="parameterName" type="xstring" value="mbr"/>
-<entry key="label" type="xstring" value="Was MBR switched on during main DIA search?"/>
-<entry key="description" type="xstring" value="Check whether MBR was switched on during previous data processing in DIA-NN."/>
+<entry key="label" type="xstring" value="Was MBR switched on during DIA search?"/>
+<entry key="description" type="xstring" value="Check whether MBR was switched on during data processing in DIA-NN."/>
 <entry key="required" type="xboolean" value="true"/>
 <entry key="flowVariableName" type="xstring" value="mbr"/>
 <config key="possible_choices">

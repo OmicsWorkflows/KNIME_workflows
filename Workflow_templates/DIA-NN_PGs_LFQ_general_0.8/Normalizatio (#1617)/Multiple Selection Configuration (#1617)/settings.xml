@@ -6,7 +6,13 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="graphs"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="box plot,scatter plot matrix (MA plots)"/>
+<entry key="value" type="xstring" value="violin plot (width based on count),violin plot (width same for all),box plot,kernel density plot,correlation clustermap,hierarchical clustering,scatter plot matrix,scatter plot matrix (MA plots)"/>
+</config>
+<config key="Variable_1">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="graphs"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="violin plot (width based on count),violin plot (width same for all),box plot,kernel density plot,correlation clustermap,hierarchical clustering,scatter plot matrix,scatter plot matrix (MA plots)"/>
 </config>
 </config>
 <config key="internal_node_subsettings">

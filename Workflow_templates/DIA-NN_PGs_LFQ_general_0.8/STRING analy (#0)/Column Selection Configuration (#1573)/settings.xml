@@ -6,7 +6,13 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="protein_column"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="PG.ID"/>
+<entry key="value" type="xstring" value="Protein.Group"/>
+</config>
+<config key="Variable_1">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="protein_column"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="Protein.Group"/>
 </config>
 </config>
 <config key="internal_node_subsettings">

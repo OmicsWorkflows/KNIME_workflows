@@ -10,7 +10,7 @@
 <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
-<entry key="file_out_path" type="xstring" value="knime://knime.workflow/__outputs__/figures/LIMMA/LIMMA logFC_violins-width-same_all comparisons.png"/>
+<entry key="file_out_path" type="xstring" value="knime://knime.workflow/__outputs__/figures/LIMMA logFC_violins-width-same_all comparisons.png"/>
 <config key="overwrite_ok_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>

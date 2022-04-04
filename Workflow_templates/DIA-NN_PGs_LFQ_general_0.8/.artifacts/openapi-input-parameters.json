@@ -4,15 +4,15 @@
     "properties": {
         "string-input-1617:1657:1675:285:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1675:285:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1667:1665": {
             "type": "string",
@@ -82,21 +82,38 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "LIMMA_DDA_A47_pol-A44_pol.logFC"
+                        "default": "LIMMA_DIA_s2-s1.logFC"
                     }
                 }
             },
             "description": "select columns to be processed",
             "example": {
                 "columns": [
-                    "LIMMA_DDA_A47_pol-A44_pol.logFC",
-                    "LIMMA_DDA_A49_pol-A44_pol.logFC",
-                    "LIMMA_DDA_A47_pol-A48_pol.logFC",
-                    "LIMMA_DDA_A49_pol-A48_pol.logFC",
-                    "LIMMA_DDA_A47_PT-A44_PT.logFC",
-                    "LIMMA_DDA_A49_PT-A44_PT.logFC",
-                    "LIMMA_DDA_A47_PT-A48_PT.logFC",
-                    "LIMMA_DDA_A49_PT-A48_PT.logFC"
+                    "LIMMA_DIA_s2-s1.logFC",
+                    "LIMMA_DIA_s1-s2.logFC"
+                ]
+            }
+        },
+        "column-filter-1620:1246:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Precursor.Id (Count)+1_1 (Count*)"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "Precursor.Id (Count)+1_1 (Count*)",
+                    "Precursor.Id (Count)+1_2 (Count*)",
+                    "Precursor.Id (Count)+1_3 (Count*)",
+                    "Precursor.Id (Count)+2_1 (Count*)",
+                    "Precursor.Id (Count)+2_2 (Count*)",
+                    "Precursor.Id (Count)+2_3 (Count*)"
                 ]
             }
         },
@@ -127,15 +144,15 @@
         },
         "string-input-1617:1657:1671:281:493": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1671:281:494": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "column-filter-1617:1657:1670:284:257": {
             "type": "object",
@@ -214,15 +231,15 @@
         },
         "string-input-1617:1657:1669:282:441": {
             "type": "string",
-            "default": "Auto",
+            "default": "8;6",
             "description": "set figure size in inches (format: \"width;height\"); default size is \"8;6\"",
-            "example": "Auto"
+            "example": "8;6"
         },
         "string-input-1617:1657:1630:283:441": {
             "type": "string",
-            "default": "Auto",
+            "default": "10;10",
             "description": "set figure size in inches (format: \"width;height\"); for automatic size value use \"Auto\"; default size is \"10;10\"",
-            "example": "Auto"
+            "example": "10;10"
         },
         "string-input-1617:1657:1672:286:260": {
             "type": "string",
@@ -238,9 +255,9 @@
         },
         "string-input-1617:1657:1673:329": {
             "type": "string",
-            "default": "-10;10",
+            "default": "Auto",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
-            "example": "-10;10"
+            "example": "Auto"
         },
         "column-filter-1617:1657:1673:284:257": {
             "type": "object",
@@ -269,19 +286,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+1_1_log2_norm"
                     }
                 }
             },
             "description": "select columns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2",
-                    "PG.Quantity+2_3_log2"
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
@@ -339,9 +356,9 @@
         },
         "string-input-1617:1657:1669:281:409": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (DIA-NN MaxLFQ)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (DIA-NN MaxLFQ)"
         },
         "column-filter-1617:1657:1668:286:257": {
             "type": "object",
@@ -350,19 +367,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Normalised+1_1_log2"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2",
-                    "PG.Quantity+2_3_log2"
+                    "PG.Normalised+1_1_log2",
+                    "PG.Normalised+1_2_log2",
+                    "PG.Normalised+1_3_log2",
+                    "PG.Normalised+2_1_log2",
+                    "PG.Normalised+2_2_log2",
+                    "PG.Normalised+2_3_log2"
                 ]
             }
         },
@@ -393,9 +410,9 @@
         },
         "string-input-1617:1657:1666:281:409": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (quantile)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (quantile)"
         },
         "int-input-1617:1657:1673:284:495": {
             "type": "integer",
@@ -410,18 +427,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+1_1_log2_norm"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
@@ -442,6 +460,12 @@
             "default": 0.5,
             "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
             "example": 0.5
+        },
+        "string-input-1311:964:319": {
+            "type": "string",
+            "default": "",
+            "description": "additional information that should be present as the graphs subtitle",
+            "example": ""
         },
         "string-input-1538:632": {
             "type": "string",
@@ -469,9 +493,9 @@
         },
         "string-input-1617:1657:1672:285:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1537:629": {
             "type": "string",
@@ -481,9 +505,9 @@
         },
         "string-input-1617:1657:1674:281:494": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "boolean-input-1617:1657:1673:281:487": {
             "type": "boolean",
@@ -493,21 +517,21 @@
         },
         "string-input-1617:1657:1674:281:493": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1672:285:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1630:284:492": {
             "type": "string",
-            "default": "-7;7",
+            "default": "None",
             "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
-            "example": "-7;7"
+            "example": "None"
         },
         "string-input-1617:1657:1630:284:493": {
             "type": "string",
@@ -614,9 +638,9 @@
         },
         "string-input-1617:1657:1667:287:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "_log2_norm",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": "_log2_norm"
         },
         "single-selection-1617:1657:1668:443": {
             "type": "object",
@@ -639,9 +663,9 @@
         },
         "string-input-1617:1657:1666:282:441": {
             "type": "string",
-            "default": "Auto",
+            "default": "8;6",
             "description": "set figure size in inches (format: \"width;height\"); default size is \"8;6\"",
-            "example": "Auto"
+            "example": "8;6"
         },
         "boolean-input-1244:979": {
             "type": "boolean",
@@ -666,6 +690,12 @@
             "default": "Auto",
             "description": "Enter plot size in format \"width;height\" or leave at \"Auto\" for automatic size",
             "example": "Auto"
+        },
+        "single-line-1311:963:308": {
+            "type": "string",
+            "default": "s1, s1, s1,\ns2, s2, s2",
+            "description": "provide design for limma test - order of columns based on sample type",
+            "example": "s1, s1, s1,\ns2, s2, s2"
         },
         "string-input-1617:1657:1669:282:258": {
             "type": "string",
@@ -730,15 +760,15 @@
         },
         "string-input-1617:1657:1675:286:441": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1675:286:442": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1675:286:445": {
             "type": "string",
@@ -753,16 +783,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Normalised+1_1_log2"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2"
+                    "PG.Normalised+1_1_log2",
+                    "PG.Normalised+1_2_log2",
+                    "PG.Normalised+1_3_log2",
+                    "PG.Normalised+2_1_log2",
+                    "PG.Normalised+2_2_log2",
+                    "PG.Normalised+2_3_log2"
                 ]
             }
         },
@@ -815,9 +848,9 @@
         },
         "string-input-1617:1657:1672:329": {
             "type": "string",
-            "default": "-10;10",
+            "default": "Auto",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
-            "example": "-10;10"
+            "example": "Auto"
         },
         "string-input-1311:962:961:439": {
             "type": "string",
@@ -833,9 +866,9 @@
         },
         "string-input-1311:962:961:438": {
             "type": "string",
-            "default": "LIMMA_",
+            "default": "LIMMA_DIA_",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "LIMMA_"
+            "example": "LIMMA_DIA_"
         },
         "string-input-1538:625": {
             "type": "string",
@@ -1000,16 +1033,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+1_1_log2_norm"
                     }
                 }
             },
             "description": "select columns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2"
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
@@ -1084,9 +1120,9 @@
         },
         "string-input-1617:1657:1672:286:442": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "double-input-1617:1657:1670:287:444": {
             "type": "number",
@@ -1096,9 +1132,9 @@
         },
         "string-input-1617:1657:1672:286:441": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "boolean-input-1617:1657:1665:328": {
             "type": "boolean",
@@ -1157,9 +1193,9 @@
         },
         "string-input-1617:1657:1665:329": {
             "type": "string",
-            "default": "-10;10",
+            "default": "Auto",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
-            "example": "-10;10"
+            "example": "Auto"
         },
         "column-filter-1617:1657:1670:257": {
             "type": "object",
@@ -1198,9 +1234,9 @@
         },
         "string-input-1617:1657:1666:283:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "_log2_norm",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": "_log2_norm"
         },
         "string-input-1617:1657:1666:283:438": {
             "type": "string",
@@ -1216,15 +1252,38 @@
         },
         "string-input-1617:1657:1674:282:441": {
             "type": "string",
-            "default": "Auto",
+            "default": "8;6",
             "description": "set figure size in inches (format: \"width;height\"); default size is \"8;6\"",
-            "example": "Auto"
+            "example": "8;6"
         },
         "string-input-1617:1657:1669:281:492": {
             "type": "string",
             "default": "None",
             "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
             "example": "None"
+        },
+        "column-filter-1620:1248:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Proteotypic (Min*)+1_1 (Sum)"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "Proteotypic (Min*)+1_1 (Sum)",
+                    "Proteotypic (Min*)+1_2 (Sum)",
+                    "Proteotypic (Min*)+1_3 (Sum)",
+                    "Proteotypic (Min*)+2_1 (Sum)",
+                    "Proteotypic (Min*)+2_2 (Sum)",
+                    "Proteotypic (Min*)+2_3 (Sum)"
+                ]
+            }
         },
         "string-input-1617:1657:1530:309:281": {
             "type": "string",
@@ -1321,15 +1380,15 @@
         },
         "string-input-1617:1657:1669:281:493": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "PG.MaxLFQ+",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": "PG.MaxLFQ+"
         },
         "string-input-1617:1657:1671:329": {
             "type": "string",
-            "default": "-10;10",
+            "default": "Auto",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
-            "example": "-10;10"
+            "example": "Auto"
         },
         "string-input-1617:1657:1669:281:494": {
             "type": "string",
@@ -1339,9 +1398,9 @@
         },
         "string-input-1617:1657:1672:283:441": {
             "type": "string",
-            "default": "Auto",
+            "default": "10;10",
             "description": "set figure size in inches (format: \"width;height\"); for automatic size value use \"Auto\"; default size is \"10;10\"",
-            "example": "Auto"
+            "example": "10;10"
         },
         "string-input-1617:1657:1674:281:409": {
             "type": "string",
@@ -1351,9 +1410,9 @@
         },
         "string-input-1617:1657:1672:283:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "boolean-input-1617:1667:1673": {
             "type": "boolean",
@@ -1363,9 +1422,9 @@
         },
         "string-input-1617:1657:1672:283:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "column-filter-1617:1657:1667:283:257": {
             "type": "object",
@@ -1374,39 +1433,39 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+1_1_log2_norm"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2",
-                    "PG.Quantity+2_3_log2"
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
         "string-input-1617:1657:1666:284:492": {
             "type": "string",
-            "default": "-7;7",
+            "default": "None",
             "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
-            "example": "-7;7"
+            "example": "None"
         },
         "string-input-1617:1657:1675:287:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1675:287:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1630:285:445": {
             "type": "string",
@@ -1416,9 +1475,9 @@
         },
         "string-input-1617:1657:1630:284:409": {
             "type": "string",
-            "default": "",
+            "default": "not normalized data",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "not normalized data"
         },
         "int-input-1311:962:274:495": {
             "type": "integer",
@@ -1460,9 +1519,9 @@
         },
         "string-input-1617:1657:1666:284:494": {
             "type": "string",
-            "default": "_log2",
+            "default": "_log2_norm",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": "_log2_norm"
         },
         "string-input-1617:1657:1666:284:493": {
             "type": "string",
@@ -1503,15 +1562,21 @@
         },
         "string-input-1617:1657:1674:282:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
+        },
+        "single-line-1311:963:921": {
+            "type": "string",
+            "default": "none",
+            "description": "provide an information about the paired samples",
+            "example": "none"
         },
         "string-input-1617:1657:1674:282:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1669:281:489": {
             "type": "string",
@@ -1519,17 +1584,29 @@
             "description": "limits of x axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
             "example": "None"
         },
+        "single-line-1311:963:922": {
+            "type": "string",
+            "default": "none",
+            "description": "provide an information about the blocks of samples",
+            "example": "none"
+        },
+        "single-line-1311:963:923": {
+            "type": "string",
+            "default": "s1-s2",
+            "description": "provide comparisons (i.e. contrasts for limma) separated by comma; in case you would like to get ratio A and B and you provide log transformed data, comparison ('ratio' calculation) should be made as 'B-A'",
+            "example": "s1-s2"
+        },
         "string-input-1617:1657:1671:285:329": {
             "type": "string",
-            "default": "-10;10",
+            "default": "Auto",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
-            "example": "-10;10"
+            "example": "Auto"
         },
         "string-input-1617:1657:1630:286:260": {
             "type": "string",
-            "default": "",
+            "default": "not normalized data",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "not normalized data"
         },
         "string-input-1617:1657:1665:286:329": {
             "type": "string",
@@ -1553,7 +1630,7 @@
                 "columns": [
                     "PG.MaxLFQ+1_1_log2",
                     "PG.MaxLFQ+1_2_log2",
-                    "PG.MaxLFQ+1_2_3_log2",
+                    "PG.MaxLFQ+1_3_log2",
                     "PG.MaxLFQ+2_1_log2",
                     "PG.MaxLFQ+2_2_log2",
                     "PG.MaxLFQ+2_3_log2"
@@ -1662,15 +1739,15 @@
         },
         "string-input-1617:1657:1630:282:441": {
             "type": "string",
-            "default": "Auto",
+            "default": "8;6",
             "description": "set figure size in inches (format: \"width;height\"); default size is \"8;6\"",
-            "example": "Auto"
+            "example": "8;6"
         },
         "string-input-1617:1657:1630:281:409": {
             "type": "string",
-            "default": "",
+            "default": "not normalized data",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "not normalized data"
         },
         "single-selection-1617:1657:1674:443": {
             "type": "object",
@@ -1712,9 +1789,9 @@
         },
         "string-input-1617:1657:1666:283:409": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (quantile)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": ""
+            "example": "normalized data (quantile)"
         },
         "boolean-input-1617:1657:1671:283:435": {
             "type": "boolean",
@@ -1737,9 +1814,9 @@
         },
         "string-input-1617:1657:1672:284:494": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "boolean-input-1617:1657:1670:285:328": {
             "type": "boolean",
@@ -1768,15 +1845,15 @@
         },
         "string-input-1617:1657:1672:284:492": {
             "type": "string",
-            "default": "-7;7",
+            "default": "None",
             "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
-            "example": "-7;7"
+            "example": "None"
         },
         "string-input-1617:1657:1672:284:493": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "column-filter-1617:1657:1665:257": {
             "type": "object",
@@ -1785,18 +1862,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+1_1_log2_norm"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
@@ -1825,16 +1903,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+1_1_log2_norm"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2"
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
@@ -1884,9 +1965,9 @@
         },
         "string-input-1617:1657:1670:329": {
             "type": "string",
-            "default": "-10;10",
+            "default": "Auto",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
-            "example": "-10;10"
+            "example": "Auto"
         },
         "int-input-1617:1657:1670:284:495": {
             "type": "integer",
@@ -1896,9 +1977,9 @@
         },
         "string-input-1617:1657:1666:282:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "_log2_norm",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": "_log2_norm"
         },
         "string-input-1617:1657:1666:282:438": {
             "type": "string",
@@ -1912,12 +1993,6 @@
             "description": "how the graph y axis should be titled",
             "example": "Intensity (log2)"
         },
-        "boolean-input-1245:980": {
-            "type": "boolean",
-            "default": "true",
-            "description": "When this flag is specified then the search string is treated as a sequence of literal characters. Metacharacters or escape sequences in the input sequence will be given no special meaning.",
-            "example": true
-        },
         "string-input-1617:1657:1672:285:258": {
             "type": "string",
             "default": "",
@@ -1929,6 +2004,12 @@
             "default": 0.5,
             "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
             "example": 0.5
+        },
+        "string-input-1311:964:320": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph x axis should be titled; column name will be used if blank",
+            "example": ""
         },
         "single-selection-1617:1657:1669:283:423": {
             "type": "object",
@@ -1972,6 +2053,12 @@
                 ]
             }
         },
+        "string-input-1311:964:321": {
+            "type": "string",
+            "default": "",
+            "description": "how the graph y axis should be titled; column name will be used if blank",
+            "example": ""
+        },
         "int-input-1617:1657:1672:281:495": {
             "type": "integer",
             "default": 250,
@@ -1989,6 +2076,12 @@
             "default": "",
             "description": "how the graph x axis should be titled",
             "example": ""
+        },
+        "string-input-1311:964:327": {
+            "type": "string",
+            "default": "-10;10",
+            "description": "limits of x axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
+            "example": "-10;10"
         },
         "string-input-1617:1657:1671:286:329": {
             "type": "string",
@@ -2009,6 +2102,12 @@
                 "variable_value": "Benjamini & Hochberg"
             }
         },
+        "string-input-1311:964:329": {
+            "type": "string",
+            "default": "-10;10",
+            "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
+            "example": "-10;10"
+        },
         "boolean-input-1617:1657:1667:281:487": {
             "type": "boolean",
             "default": "false",
@@ -2023,9 +2122,9 @@
         },
         "string-input-1617:1657:1630:283:409": {
             "type": "string",
-            "default": "",
+            "default": "not normalized data",
             "description": "additional information that should be present as the graph subtitle",
-            "example": ""
+            "example": "not normalized data"
         },
         "column-filter-1617:1657:1667:282:257": {
             "type": "object",
@@ -2034,19 +2133,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+1_1_log2_norm"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2",
-                    "PG.Quantity+2_3_log2"
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
@@ -2057,18 +2156,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+1_1_log2_norm"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
@@ -2133,27 +2233,27 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+1_1_log2_norm"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2",
-                    "PG.Quantity+2_3_log2"
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
         "string-input-1617:1657:1668:281:493": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "PG.Normalised+",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": "PG.Normalised+"
         },
         "string-input-1617:1657:1668:281:492": {
             "type": "string",
@@ -2182,15 +2282,15 @@
         },
         "string-input-1617:1657:1665:285:329": {
             "type": "string",
-            "default": "-10;10",
+            "default": "Auto",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
-            "example": "-10;10"
+            "example": "Auto"
         },
         "string-input-1617:1657:1630:282:409": {
             "type": "string",
-            "default": "",
+            "default": "PG intensities cluster analysis - not normalized data",
             "description": "additional information that should be present as the graph subtitle",
-            "example": ""
+            "example": "PG intensities cluster analysis - not normalized data"
         },
         "string-input-1617:1657:1670:287:445": {
             "type": "string",
@@ -2218,9 +2318,9 @@
         },
         "string-input-1617:1657:1666:285:260": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (quantile)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (quantile)"
         },
         "column-filter-1617:1657:1672:257": {
             "type": "object",
@@ -2297,9 +2397,9 @@
         },
         "string-input-1617:1657:1666:283:441": {
             "type": "string",
-            "default": "Auto",
+            "default": "10;10",
             "description": "set figure size in inches (format: \"width;height\"); for automatic size value use \"Auto\"; default size is \"10;10\"",
-            "example": "Auto"
+            "example": "10;10"
         },
         "single-selection-1617:1657:1675:285:261": {
             "type": "object",
@@ -2316,9 +2416,9 @@
         },
         "string-input-1617:1657:1630:285:260": {
             "type": "string",
-            "default": "",
+            "default": "not normalized data",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "not normalized data"
         },
         "string-input-1617:1657:1668:281:489": {
             "type": "string",
@@ -2326,23 +2426,17 @@
             "description": "limits of x axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
             "example": "None"
         },
-        "boolean-input-1245:979": {
-            "type": "boolean",
-            "default": "false",
-            "description": "Enables case-insensitive matching\t",
-            "example": false
-        },
         "string-input-1617:1657:1666:282:409": {
             "type": "string",
-            "default": "",
+            "default": "PG intensities cluster analysis - normalized data (quantile)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": ""
+            "example": "PG intensities cluster analysis - normalized data (quantile)"
         },
         "string-input-1617:1657:1670:287:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1674:282:259": {
             "type": "string",
@@ -2352,9 +2446,9 @@
         },
         "string-input-1617:1657:1670:287:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1674:282:258": {
             "type": "string",
@@ -2389,9 +2483,9 @@
         },
         "string-input-1617:1657:1666:285:329": {
             "type": "string",
-            "default": "-10;10",
+            "default": "Auto",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
-            "example": "-10;10"
+            "example": "Auto"
         },
         "string-input-1617:1657:1670:287:260": {
             "type": "string",
@@ -2431,9 +2525,9 @@
         },
         "string-input-1617:1657:1665:287:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "_log2_norm",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": "_log2_norm"
         },
         "single-selection-1617:1657:1665:261": {
             "type": "object",
@@ -2488,9 +2582,22 @@
         },
         "string-input-1617:1657:1669:285:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "PG.MaxLFQ+",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": "PG.MaxLFQ+"
+        },
+        "column-selection-1620:1245:975": {
+            "type": "object",
+            "properties": {
+                "column": {
+                    "type": "string",
+                    "default": "new"
+                }
+            },
+            "description": "The replacement string. Use $1, $2, etc. to address the groups defined in the search pattern.",
+            "example": {
+                "column": "new"
+            }
         },
         "string-input-1617:1657:1630:287:438": {
             "type": "string",
@@ -2537,16 +2644,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+1_1_log2_norm"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2"
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
@@ -2558,27 +2668,27 @@
         },
         "string-input-1617:1657:1669:287:260": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (DIA-NN MaxLFQ)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (DIA-NN MaxLFQ)"
         },
         "string-input-1617:1657:1673:286:442": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1668:329": {
             "type": "string",
-            "default": "-10;10",
+            "default": "Auto",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
-            "example": "-10;10"
+            "example": "Auto"
         },
         "string-input-1617:1657:1673:286:441": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "int-input-1617:1657:1667:284:495": {
             "type": "integer",
@@ -2588,9 +2698,9 @@
         },
         "string-input-1617:1657:1667:283:441": {
             "type": "string",
-            "default": "Auto",
+            "default": "10;10",
             "description": "set figure size in inches (format: \"width;height\"); for automatic size value use \"Auto\"; default size is \"10;10\"",
-            "example": "Auto"
+            "example": "10;10"
         },
         "string-input-1617:1657:1673:286:440": {
             "type": "string",
@@ -2613,9 +2723,9 @@
         },
         "string-input-1617:1657:1667:282:409": {
             "type": "string",
-            "default": "",
+            "default": "PG intensities cluster analysis - normalized data (loessF)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": ""
+            "example": "PG intensities cluster analysis - normalized data (loessF)"
         },
         "string-input-1617:1657:1670:287:258": {
             "type": "string",
@@ -2636,19 +2746,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+1_1_log2_norm"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2",
-                    "PG.Quantity+2_3_log2"
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
@@ -2804,26 +2914,27 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+1_1_log2_norm"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
         "string-input-1617:1657:1667:282:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "_log2_norm",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": "_log2_norm"
         },
         "string-input-1617:1657:1667:282:438": {
             "type": "string",
@@ -2889,9 +3000,9 @@
         },
         "string-input-1617:1657:1675:282:441": {
             "type": "string",
-            "default": "Auto",
+            "default": "8;6",
             "description": "set figure size in inches (format: \"width;height\"); default size is \"8;6\"",
-            "example": "Auto"
+            "example": "8;6"
         },
         "string-input-1617:1657:1670:286:445": {
             "type": "string",
@@ -2934,27 +3045,27 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Normalised+1_1_log2"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2",
-                    "PG.Quantity+2_3_log2"
+                    "PG.Normalised+1_1_log2",
+                    "PG.Normalised+1_2_log2",
+                    "PG.Normalised+1_3_log2",
+                    "PG.Normalised+2_1_log2",
+                    "PG.Normalised+2_2_log2",
+                    "PG.Normalised+2_3_log2"
                 ]
             }
         },
         "string-input-1617:1657:1675:282:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1669:286:440": {
             "type": "string",
@@ -2970,15 +3081,15 @@
         },
         "string-input-1617:1657:1675:282:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1669:286:441": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "PG.MaxLFQ+",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": "PG.MaxLFQ+"
         },
         "string-input-1617:1657:1669:286:442": {
             "type": "string",
@@ -3029,9 +3140,9 @@
         },
         "string-input-1617:1657:1667:284:494": {
             "type": "string",
-            "default": "_log2",
+            "default": "_log2_norm",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": "_log2_norm"
         },
         "string-input-1617:1657:1673:287:259": {
             "type": "string",
@@ -3066,9 +3177,9 @@
         },
         "string-input-1617:1657:1667:284:492": {
             "type": "string",
-            "default": "-7;7",
+            "default": "None",
             "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
-            "example": "-7;7"
+            "example": "None"
         },
         "int-input-1617:1657:1630:281:495": {
             "type": "integer",
@@ -3078,15 +3189,15 @@
         },
         "string-input-1617:1657:1670:286:441": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1670:286:442": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "boolean-input-1617:1657:1665:285:328": {
             "type": "boolean",
@@ -3108,9 +3219,9 @@
         },
         "string-input-1617:1657:1630:260": {
             "type": "string",
-            "default": "",
+            "default": "not normalized data",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "not normalized data"
         },
         "string-input-1617:1657:1670:286:259": {
             "type": "string",
@@ -3164,9 +3275,9 @@
         },
         "string-input-1617:1657:1673:285:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "single-selection-1617:1669:1674": {
             "type": "object",
@@ -3183,34 +3294,21 @@
         },
         "string-input-1617:1657:1673:285:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1667:285:260": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (loessF)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (loessF)"
         },
         "string-input-1311:962:329": {
             "type": "string",
             "default": "-10;10",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
             "example": "-10;10"
-        },
-        "column-selection-1245:975": {
-            "type": "object",
-            "properties": {
-                "column": {
-                    "type": "string",
-                    "default": "new"
-                }
-            },
-            "description": "The replacement string. Use $1, $2, etc. to address the groups defined in the search pattern.",
-            "example": {
-                "column": "new"
-            }
         },
         "column-filter-1503:311:257": {
             "type": "object",
@@ -3406,9 +3504,9 @@
         },
         "string-input-1617:1657:1672:282:441": {
             "type": "string",
-            "default": "Auto",
+            "default": "8;6",
             "description": "set figure size in inches (format: \"width;height\"); default size is \"8;6\"",
-            "example": "Auto"
+            "example": "8;6"
         },
         "string-input-1617:1657:1670:284:409": {
             "type": "string",
@@ -3423,19 +3521,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Normalised+1_1_log2"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2",
-                    "PG.Quantity+2_3_log2"
+                    "PG.Normalised+1_1_log2",
+                    "PG.Normalised+1_2_log2",
+                    "PG.Normalised+1_3_log2",
+                    "PG.Normalised+2_1_log2",
+                    "PG.Normalised+2_2_log2",
+                    "PG.Normalised+2_3_log2"
                 ]
             }
         },
@@ -3515,9 +3613,9 @@
         },
         "string-input-1617:1657:1667:283:409": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (loessF)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": ""
+            "example": "normalized data (loessF)"
         },
         "string-input-1617:1657:1672:281:409": {
             "type": "string",
@@ -3527,9 +3625,9 @@
         },
         "string-input-1617:1657:1669:286:260": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (DIA-NN MaxLFQ)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (DIA-NN MaxLFQ)"
         },
         "single-selection-1617:1657:1674:283:436": {
             "type": "object",
@@ -3570,27 +3668,27 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+1_1_log2_norm"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2",
-                    "PG.Quantity+2_3_log2"
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
         "string-input-1617:1657:1675:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "column-filter-1617:1657:1666:286:257": {
             "type": "object",
@@ -3599,39 +3697,39 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+1_1_log2_norm"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2",
-                    "PG.Quantity+2_3_log2"
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
         "string-input-1617:1657:1672:282:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1675:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1672:282:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1673:284:409": {
             "type": "string",
@@ -3690,9 +3788,9 @@
         },
         "string-input-1617:1657:1669:329": {
             "type": "string",
-            "default": "-10;10",
+            "default": "Auto",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
-            "example": "-10;10"
+            "example": "Auto"
         },
         "column-filter-1538:627": {
             "type": "object",
@@ -3732,9 +3830,9 @@
         },
         "string-input-1617:1657:1667:283:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "_log2_norm",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": "_log2_norm"
         },
         "boolean-input-1311:937:328": {
             "type": "boolean",
@@ -3776,6 +3874,12 @@
                     "PG.Quantity+2_3_log2"
                 ]
             }
+        },
+        "single-line-1311:963:297": {
+            "type": "string",
+            "default": "LIMMA_DIA_",
+            "description": "enter LIMMA test name which will be used as computed column prefix to differentiate it from other tests if needed",
+            "example": "LIMMA_DIA_"
         },
         "string-input-1617:1657:1667:283:438": {
             "type": "string",
@@ -3840,9 +3944,9 @@
         },
         "string-input-1617:1657:1670:285:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "int-input-1617:1657:1670:281:495": {
             "type": "integer",
@@ -3852,9 +3956,9 @@
         },
         "string-input-1617:1657:1670:285:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "single-selection-1617:1657:1669:284:411": {
             "type": "object",
@@ -3871,9 +3975,9 @@
         },
         "string-input-1617:1657:1630:287:260": {
             "type": "string",
-            "default": "",
+            "default": "not normalized data",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "not normalized data"
         },
         "single-selection-1503:310:258": {
             "type": "object",
@@ -4016,9 +4120,9 @@
         },
         "string-input-1617:1657:1669:284:409": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (DIA-NN MaxLFQ)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (DIA-NN MaxLFQ)"
         },
         "column-filter-1617:1657:1673:281:257": {
             "type": "object",
@@ -4107,16 +4211,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Normalised+1_1_log2"
                     }
                 }
             },
             "description": "select columns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2"
+                    "PG.Normalised+1_1_log2",
+                    "PG.Normalised+1_2_log2",
+                    "PG.Normalised+1_3_log2",
+                    "PG.Normalised+2_1_log2",
+                    "PG.Normalised+2_2_log2",
+                    "PG.Normalised+2_3_log2"
                 ]
             }
         },
@@ -4183,15 +4290,15 @@
         },
         "string-input-1617:1657:1674:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1674:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "double-input-1617:1657:1630:444": {
             "type": "number",
@@ -4238,9 +4345,9 @@
         },
         "string-input-1617:1657:1669:285:260": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (DIA-NN MaxLFQ)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (DIA-NN MaxLFQ)"
         },
         "column-filter-1617:1657:1530:310:257": {
             "type": "object",
@@ -4257,9 +4364,11 @@
             "example": {
                 "columns": [
                     "PG.Quantity+1_1_log2",
+                    "PG.Quantity+1_2_log2",
                     "PG.Quantity+1_3_log2",
                     "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
+                    "PG.Quantity+2_2_log2",
+                    "PG.Quantity+2_3_log2"
                 ]
             }
         },
@@ -4291,9 +4400,9 @@
         },
         "string-input-1617:1657:1667:286:260": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (loessF)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (loessF)"
         },
         "string-input-1617:1657:1669:283:439": {
             "type": "string",
@@ -4309,9 +4418,9 @@
         },
         "string-input-1617:1657:1669:283:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "PG.MaxLFQ+",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": "PG.MaxLFQ+"
         },
         "boolean-input-1617:1657:1665:281:487": {
             "type": "boolean",
@@ -4339,15 +4448,15 @@
         },
         "string-input-1617:1657:1675:284:492": {
             "type": "string",
-            "default": "-7;7",
+            "default": "None",
             "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
-            "example": "-7;7"
+            "example": "None"
         },
         "string-input-1617:1657:1675:284:493": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1675:283:409": {
             "type": "string",
@@ -4380,15 +4489,15 @@
         },
         "string-input-1617:1657:1666:329": {
             "type": "string",
-            "default": "-10;10",
+            "default": "Auto",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
-            "example": "-10;10"
+            "example": "Auto"
         },
         "string-input-1617:1657:1675:284:494": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "boolean-input-1617:1657:1530:311:276": {
             "type": "boolean",
@@ -4557,9 +4666,9 @@
         },
         "string-input-1311:962:274:493": {
             "type": "string",
-            "default": "",
+            "default": "LIMMA_DIA_",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": ""
+            "example": "LIMMA_DIA_"
         },
         "boolean-input-1311:962:274:412": {
             "type": "boolean",
@@ -4588,9 +4697,9 @@
         },
         "string-input-1311:962:274:494": {
             "type": "string",
-            "default": "",
+            "default": ".logFC",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": ""
+            "example": ".logFC"
         },
         "single-selection-1617:1657:1672:284:411": {
             "type": "object",
@@ -4607,9 +4716,9 @@
         },
         "string-input-1617:1657:1669:283:409": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (DIA-NN MaxLFQ)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": ""
+            "example": "normalized data (DIA-NN MaxLFQ)"
         },
         "single-selection-1617:1657:1666:443": {
             "type": "object",
@@ -4624,6 +4733,29 @@
                 "variable_value": "scott"
             }
         },
+        "column-filter-1311:963:306": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.MaxLFQ+1_1_log2"
+                    }
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                    "PG.MaxLFQ+1_1_log2",
+                    "PG.MaxLFQ+1_2_log2",
+                    "PG.MaxLFQ+1_3_log2",
+                    "PG.MaxLFQ+2_1_log2",
+                    "PG.MaxLFQ+2_2_log2",
+                    "PG.MaxLFQ+2_3_log2"
+                ]
+            }
+        },
         "column-filter-1311:962:961:257": {
             "type": "object",
             "properties": {
@@ -4631,19 +4763,15 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "LIMMA_MJ_DRG-MJ_CTR.logFC"
+                        "default": "LIMMA_DIA_s2-s1.logFC"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "LIMMA_MJ_DRG-MJ_CTR.logFC",
-                    "LIMMA_MJ_DRG-MJ_DRG_MEKi.logFC",
-                    "LIMMA_MJ_CTR-MJ_MEKi.logFC",
-                    "LIMMA_A375_DRG-A375_CTR.logFC",
-                    "LIMMA_A375_DRG-A375_DRG_MEKi.logFC",
-                    "LIMMA_A375_CTR-A375_MEKi.logFC"
+                    "LIMMA_DIA_s2-s1.logFC",
+                    "LIMMA_DIA_s1-s2.logFC"
                 ]
             }
         },
@@ -4655,15 +4783,21 @@
         },
         "string-input-1617:1657:1667:284:409": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (loessF)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (loessF)"
         },
         "string-input-1617:1657:1666:281:492": {
             "type": "string",
             "default": "None",
             "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
             "example": "None"
+        },
+        "double-input-1311:964:316": {
+            "type": "number",
+            "default": 0.001,
+            "description": "number that should be used instead of zero p value to compute -log value; if it will be 0, cases with zero p value will not be plotted",
+            "example": 0.001
         },
         "string-input-1617:1657:1666:281:493": {
             "type": "string",
@@ -4673,9 +4807,9 @@
         },
         "string-input-1617:1657:1666:281:494": {
             "type": "string",
-            "default": "_log2",
+            "default": "_log2_norm",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": "_log2_norm"
         },
         "single-selection-1617:1657:1672:285:443": {
             "type": "object",
@@ -4710,9 +4844,9 @@
         },
         "string-input-1617:1657:1668:285:329": {
             "type": "string",
-            "default": "-10;10",
+            "default": "Auto",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
-            "example": "-10;10"
+            "example": "Auto"
         },
         "string-input-1617:1657:1670:284:489": {
             "type": "string",
@@ -4727,18 +4861,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Normalised+1_1_log2"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
+                    "PG.Normalised+1_1_log2",
+                    "PG.Normalised+1_2_log2",
+                    "PG.Normalised+1_3_log2",
+                    "PG.Normalised+2_1_log2",
+                    "PG.Normalised+2_2_log2",
+                    "PG.Normalised+2_3_log2"
                 ]
             }
         },
@@ -4755,33 +4890,51 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+1_1_log2_norm"
                     }
                 }
             },
             "description": "select columns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2",
-                    "PG.Quantity+2_3_log2"
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
         "string-input-1617:1657:1670:283:441": {
             "type": "string",
-            "default": "Auto",
+            "default": "10;10",
             "description": "set figure size in inches (format: \"width;height\"); for automatic size value use \"Auto\"; default size is \"10;10\"",
-            "example": "Auto"
+            "example": "10;10"
         },
         "boolean-input-1617:1657:1674:284:412": {
             "type": "boolean",
             "default": "true",
             "description": "whether to show unity line (x=y) or not",
             "example": true
+        },
+        "multiple-selection-1487:1502:854": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "sum"
+                    }
+                }
+            },
+            "description": "set of statistics to be computed from the provided columns",
+            "example": {
+                "variable_value": [
+                    "sum"
+                ]
+            }
         },
         "string-input-1537:649": {
             "type": "string",
@@ -4791,9 +4944,9 @@
         },
         "string-input-1617:1657:1669:282:409": {
             "type": "string",
-            "default": "",
+            "default": "PG intensities cluster analysis - normalized data (DIA-NN MaxLFQ)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": ""
+            "example": "PG intensities cluster analysis - normalized data (DIA-NN MaxLFQ)"
         },
         "string-input-1537:647": {
             "type": "string",
@@ -4837,6 +4990,43 @@
             "description": "enter the value for imputation of missing values; default value is \"None\" for no imputation",
             "example": "None"
         },
+        "column-filter-1620:1245:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.ID"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "PG.ID",
+                    "PG.MaxLFQ (Max*)+1_1 (Max*)",
+                    "PG.MaxLFQ (Max*)+1_2 (Max*)",
+                    "PG.MaxLFQ (Max*)+1_3 (Max*)",
+                    "PG.MaxLFQ (Max*)+2_1 (Max*)",
+                    "PG.MaxLFQ (Max*)+2_2 (Max*)",
+                    "PG.MaxLFQ (Max*)+2_3 (Max*)",
+                    "PG.Normalised (Max*)+1_1 (Max*)",
+                    "PG.Normalised (Max*)+1_2 (Max*)",
+                    "PG.Normalised (Max*)+1_3 (Max*)",
+                    "PG.Normalised (Max*)+2_1 (Max*)",
+                    "PG.Normalised (Max*)+2_2 (Max*)",
+                    "PG.Normalised (Max*)+2_3 (Max*)",
+                    "PG.Quantity (Max*)+1_1 (Max*)",
+                    "PG.Quantity (Max*)+1_2 (Max*)",
+                    "PG.Quantity (Max*)+1_3 (Max*)",
+                    "PG.Quantity (Max*)+2_1 (Max*)",
+                    "PG.Quantity (Max*)+2_2 (Max*)",
+                    "PG.Quantity (Max*)+2_3 (Max*)",
+                    "PG.Quantity_sum"
+                ]
+            }
+        },
         "string-input-1617:1664:1613": {
             "type": "string",
             "default": "Auto",
@@ -4863,19 +5053,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+lowT1_log2"
+                        "default": "PG.Quantity+1_1_log2"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+lowT1_log2",
-                    "PG.Quantity+normT1_log2",
-                    "PG.Quantity+highT1_log2",
-                    "PG.Quantity+lowT2_log2",
-                    "PG.Quantity+normT2_log2",
-                    "PG.Quantity+highT2_log2"
+                    "PG.Quantity+1_1_log2",
+                    "PG.Quantity+1_2_log2",
+                    "PG.Quantity+1_3_log2",
+                    "PG.Quantity+2_1_log2",
+                    "PG.Quantity+2_2_log2",
+                    "PG.Quantity+2_3_log2"
                 ]
             }
         },
@@ -4906,15 +5096,15 @@
         },
         "string-input-1617:1657:1667:287:260": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (loessF)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (loessF)"
         },
         "string-input-1617:1657:1667:285:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "_log2_norm",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": "_log2_norm"
         },
         "string-input-1617:1657:1670:282:409": {
             "type": "string",
@@ -4924,27 +5114,27 @@
         },
         "string-input-1617:1657:1670:283:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1670:283:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1673:287:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1673:287:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "boolean-input-1617:1657:1668:284:487": {
             "type": "boolean",
@@ -4990,9 +5180,9 @@
         },
         "string-input-1617:1657:1669:282:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "PG.MaxLFQ+",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": "PG.MaxLFQ+"
         },
         "boolean-input-1617:1657:1667:285:328": {
             "type": "boolean",
@@ -5069,9 +5259,9 @@
         },
         "string-input-1617:1657:1675:283:441": {
             "type": "string",
-            "default": "Auto",
+            "default": "10;10",
             "description": "set figure size in inches (format: \"width;height\"); for automatic size value use \"Auto\"; default size is \"10;10\"",
-            "example": "Auto"
+            "example": "10;10"
         },
         "string-input-1617:1657:1669:284:489": {
             "type": "string",
@@ -5110,15 +5300,15 @@
         },
         "string-input-1617:1657:1673:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1667:329": {
             "type": "string",
-            "default": "-10;10",
+            "default": "Auto",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
-            "example": "-10;10"
+            "example": "Auto"
         },
         "string-input-1617:1657:1630:439": {
             "type": "string",
@@ -5134,9 +5324,9 @@
         },
         "string-input-1617:1657:1669:283:441": {
             "type": "string",
-            "default": "Auto",
+            "default": "10;10",
             "description": "set figure size in inches (format: \"width;height\"); for automatic size value use \"Auto\"; default size is \"10;10\"",
-            "example": "Auto"
+            "example": "10;10"
         },
         "string-input-1617:1657:1630:438": {
             "type": "string",
@@ -5159,21 +5349,21 @@
         },
         "string-input-1617:1657:1673:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1672:281:493": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1672:281:494": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1669:284:494": {
             "type": "string",
@@ -5183,27 +5373,27 @@
         },
         "string-input-1617:1657:1675:283:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1669:284:492": {
             "type": "string",
-            "default": "-7;7",
+            "default": "None",
             "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
-            "example": "-7;7"
+            "example": "None"
         },
         "string-input-1617:1657:1675:283:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1669:284:493": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "PG.MaxLFQ+",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": "PG.MaxLFQ+"
         },
         "column-selection-1538:626": {
             "type": "object",
@@ -5224,6 +5414,12 @@
             "description": "additional information that should be present as the graphs subtitle",
             "example": ""
         },
+        "string-input-1487:1502:855": {
+            "type": "string",
+            "default": "Precursor.Quantity_",
+            "description": "base column name to be used for all new columns together with the individual statistics names",
+            "example": "Precursor.Quantity_"
+        },
         "boolean-input-1617:1657:1671:281:487": {
             "type": "boolean",
             "default": "false",
@@ -5238,9 +5434,9 @@
         },
         "string-input-1617:1657:1674:285:329": {
             "type": "string",
-            "default": "-10;10",
+            "default": "Auto",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
-            "example": "-10;10"
+            "example": "Auto"
         },
         "boolean-input-1617:1657:1667:328": {
             "type": "boolean",
@@ -5269,9 +5465,9 @@
         },
         "string-input-1617:1657:1667:286:442": {
             "type": "string",
-            "default": "_log2",
+            "default": "_log2_norm",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": "_log2_norm"
         },
         "string-input-1617:1657:1667:286:441": {
             "type": "string",
@@ -5347,9 +5543,9 @@
         },
         "string-input-1617:1657:1670:284:494": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1667:286:445": {
             "type": "string",
@@ -5372,15 +5568,15 @@
         },
         "string-input-1617:1657:1670:284:492": {
             "type": "string",
-            "default": "-7;7",
+            "default": "None",
             "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
-            "example": "-7;7"
+            "example": "None"
         },
         "string-input-1617:1657:1670:284:493": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "column-filter-1617:1657:1675:287:257": {
             "type": "object",
@@ -5428,15 +5624,15 @@
         },
         "string-input-1617:1657:1670:282:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1670:282:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "double-input-1617:1657:1668:283:430": {
             "type": "number",
@@ -5449,6 +5645,19 @@
             "default": "Auto",
             "description": "Enter plot size in format \"width;height\" or leave at \"Auto\" for automatic size",
             "example": "Auto"
+        },
+        "column-selection-1620:1245:295": {
+            "type": "object",
+            "properties": {
+                "column": {
+                    "type": "string",
+                    "default": "original"
+                }
+            },
+            "description": "The search pattern, which may contain group patterns used in back references.",
+            "example": {
+                "column": "original"
+            }
         },
         "boolean-input-1617:1657:1667:284:412": {
             "type": "boolean",
@@ -5513,9 +5722,9 @@
         },
         "string-input-1617:1657:1665:285:260": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (median)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (median)"
         },
         "column-selection-1311:938:295": {
             "type": "object",
@@ -5532,15 +5741,15 @@
         },
         "string-input-1617:1657:1675:285:329": {
             "type": "string",
-            "default": "-10;10",
+            "default": "Auto",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
-            "example": "-10;10"
+            "example": "Auto"
         },
         "string-input-1617:1657:1668:283:409": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (DIA-NN)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": ""
+            "example": "normalized data (DIA-NN)"
         },
         "boolean-input-1617:1657:1672:283:435": {
             "type": "boolean",
@@ -5560,11 +5769,23 @@
             "description": "how the graph x axis should be titled",
             "example": ""
         },
+        "boolean-input-1311:964:328": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to use manually set y axis limits (ckecked) or use automatic limits (unchecked)",
+            "example": false
+        },
         "string-input-1617:1657:1668:285:259": {
             "type": "string",
             "default": "Intensity (log2)",
             "description": "how the graph y axis should be titled",
             "example": "Intensity (log2)"
+        },
+        "boolean-input-1311:964:326": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to use manually set x axis limits (ckecked) or use automatic limits (unchecked)",
+            "example": false
         },
         "column-selection-1311:938:297": {
             "type": "object",
@@ -5593,9 +5814,9 @@
         },
         "string-input-1617:1657:1665:283:409": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (median)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": ""
+            "example": "normalized data (median)"
         },
         "string-input-1618:980": {
             "type": "string",
@@ -5627,7 +5848,8 @@
                     "PG.Quantity+1_2_log2",
                     "PG.Quantity+1_3_log2",
                     "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
+                    "PG.Quantity+2_2_log2",
+                    "PG.Quantity+2_3_log2"
                 ]
             }
         },
@@ -5645,9 +5867,9 @@
         },
         "string-input-1617:1657:1666:260": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (quantile)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (quantile)"
         },
         "int-input-1617:1657:1630:284:495": {
             "type": "integer",
@@ -5657,9 +5879,9 @@
         },
         "string-input-1617:1657:1670:282:441": {
             "type": "string",
-            "default": "Auto",
+            "default": "8;6",
             "description": "set figure size in inches (format: \"width;height\"); default size is \"8;6\"",
-            "example": "Auto"
+            "example": "8;6"
         },
         "boolean-input-1617:1657:1630:281:412": {
             "type": "boolean",
@@ -5694,15 +5916,15 @@
         },
         "string-input-1617:1657:1671:287:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1671:287:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1670:281:409": {
             "type": "string",
@@ -5738,15 +5960,27 @@
         },
         "string-input-1617:1657:1672:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1672:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
+        },
+        "boolean-input-1620:1246:979": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Enables case-insensitive matching\t",
+            "example": false
+        },
+        "logFC_threshold-1311:964:317": {
+            "type": "number",
+            "default": 1.0,
+            "description": "absolute threshold on axis x (logFC) that will be used for volcano plot points categorization, visualization and summary; value of same type as logFC column should be used (e.g. log2 transformed ratio)",
+            "example": 1.0
         },
         "string-input-1617:1657:1665:283:438": {
             "type": "string",
@@ -5756,15 +5990,15 @@
         },
         "string-input-1617:1657:1665:283:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "_log2_norm",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": "_log2_norm"
         },
         "string-input-1617:1657:1668:285:260": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (DIA-NN)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (DIA-NN)"
         },
         "column-filter-1617:1657:1669:283:257": {
             "type": "object",
@@ -5773,19 +6007,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.MaxLFQ+1_1_log2"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2",
-                    "PG.Quantity+2_3_log2"
+                    "PG.MaxLFQ+1_1_log2",
+                    "PG.MaxLFQ+1_2_log2",
+                    "PG.MaxLFQ+1_3_log2",
+                    "PG.MaxLFQ+2_1_log2",
+                    "PG.MaxLFQ+2_2_log2",
+                    "PG.MaxLFQ+2_3_log2"
                 ]
             }
         },
@@ -5803,9 +6037,9 @@
         },
         "string-input-1617:1657:1673:283:441": {
             "type": "string",
-            "default": "Auto",
+            "default": "10;10",
             "description": "set figure size in inches (format: \"width;height\"); for automatic size value use \"Auto\"; default size is \"10;10\"",
-            "example": "Auto"
+            "example": "10;10"
         },
         "double-input-1617:1657:1665:283:430": {
             "type": "number",
@@ -5827,9 +6061,9 @@
         },
         "string-input-1617:1657:1673:283:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1674:258": {
             "type": "string",
@@ -5839,9 +6073,9 @@
         },
         "string-input-1617:1657:1673:283:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "double-input-1311:962:444": {
             "type": "number",
@@ -5923,19 +6157,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+1_1_log2_norm"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2",
-                    "PG.Quantity+2_3_log2"
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
@@ -5944,6 +6178,12 @@
             "default": "2",
             "description": "Set threshold(s); use \"sample1: threshold1, sample2: threshold2\" format for separate thresholds for individual samples or single number for one threshold for all samples",
             "example": "2"
+        },
+        "boolean-input-1620:1246:980": {
+            "type": "boolean",
+            "default": "true",
+            "description": "When this flag is specified then the search string is treated as a sequence of literal characters. Metacharacters or escape sequences in the input sequence will be given no special meaning.",
+            "example": true
         },
         "double-input-1617:1657:1675:444": {
             "type": "number",
@@ -5959,9 +6199,9 @@
         },
         "string-input-1617:1657:1672:285:329": {
             "type": "string",
-            "default": "-10;10",
+            "default": "Auto",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
-            "example": "-10;10"
+            "example": "Auto"
         },
         "string-input-1617:1663:1668": {
             "type": "string",
@@ -6000,9 +6240,9 @@
         },
         "string-input-1617:1657:1668:283:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "PG.Normalised+",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": "PG.Normalised+"
         },
         "string-input-1617:1657:1668:284:482": {
             "type": "string",
@@ -6051,6 +6291,19 @@
             "description": "limits of x axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
             "example": "None"
         },
+        "column-selection-1620:1248:975": {
+            "type": "object",
+            "properties": {
+                "column": {
+                    "type": "string",
+                    "default": "new"
+                }
+            },
+            "description": "The replacement string. Use $1, $2, etc. to address the groups defined in the search pattern.",
+            "example": {
+                "column": "new"
+            }
+        },
         "string-input-1617:1657:1667:281:492": {
             "type": "string",
             "default": "None",
@@ -6085,28 +6338,15 @@
         },
         "string-input-1617:1657:1667:281:494": {
             "type": "string",
-            "default": "_log2",
+            "default": "_log2_norm",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": "_log2_norm"
         },
         "string-input-1617:1657:1667:281:493": {
             "type": "string",
             "default": "PG.Quantity+",
             "description": "common data columns prefix to be removed prior plotting",
             "example": "PG.Quantity+"
-        },
-        "column-selection-1245:295": {
-            "type": "object",
-            "properties": {
-                "column": {
-                    "type": "string",
-                    "default": "original"
-                }
-            },
-            "description": "The search pattern, which may contain group patterns used in back references.",
-            "example": {
-                "column": "original"
-            }
         },
         "string-input-1617:1657:1675:286:329": {
             "type": "string",
@@ -6122,9 +6362,9 @@
         },
         "string-input-1617:1657:1668:283:441": {
             "type": "string",
-            "default": "Auto",
+            "default": "10;10",
             "description": "set figure size in inches (format: \"width;height\"); for automatic size value use \"Auto\"; default size is \"10;10\"",
-            "example": "Auto"
+            "example": "10;10"
         },
         "single-selection-1617:1657:1668:281:411": {
             "type": "object",
@@ -6212,15 +6452,15 @@
         },
         "string-input-1617:1657:1668:284:492": {
             "type": "string",
-            "default": "-7;7",
+            "default": "None",
             "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
-            "example": "-7;7"
+            "example": "None"
         },
         "string-input-1617:1657:1668:284:493": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "PG.Normalised+",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": "PG.Normalised+"
         },
         "string-input-1617:1657:1668:284:494": {
             "type": "string",
@@ -6230,15 +6470,15 @@
         },
         "string-input-1617:1657:1667:260": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (loessF)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (loessF)"
         },
         "string-input-1617:1657:1665:283:441": {
             "type": "string",
-            "default": "Auto",
+            "default": "10;10",
             "description": "set figure size in inches (format: \"width;height\"); for automatic size value use \"Auto\"; default size is \"10;10\"",
-            "example": "Auto"
+            "example": "10;10"
         },
         "string-input-1617:1657:1673:258": {
             "type": "string",
@@ -6253,18 +6493,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.MaxLFQ+1_1_log2"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
+                    "PG.MaxLFQ+1_1_log2",
+                    "PG.MaxLFQ+1_2_log2",
+                    "PG.MaxLFQ+1_3_log2",
+                    "PG.MaxLFQ+2_1_log2",
+                    "PG.MaxLFQ+2_2_log2",
+                    "PG.MaxLFQ+2_3_log2"
                 ]
             }
         },
@@ -6307,9 +6548,9 @@
         },
         "string-input-1617:1657:1665:282:409": {
             "type": "string",
-            "default": "",
+            "default": "PG intensities cluster analysis - normalized data (median)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": ""
+            "example": "PG intensities cluster analysis - normalized data (median)"
         },
         "string-input-1617:1657:1667:258": {
             "type": "string",
@@ -6417,9 +6658,9 @@
         },
         "string-input-1617:1657:1665:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "_log2_norm",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": "_log2_norm"
         },
         "string-input-1617:1657:1665:282:438": {
             "type": "string",
@@ -6429,9 +6670,9 @@
         },
         "string-input-1617:1657:1665:282:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "_log2_norm",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": "_log2_norm"
         },
         "string-input-1617:1657:1672:286:329": {
             "type": "string",
@@ -6445,11 +6686,17 @@
             "description": "Enter plot size in format \"width;height\" or leave at \"Auto\" for automatic size",
             "example": "Auto"
         },
+        "boolean-input-1311:964:306": {
+            "type": "boolean",
+            "default": "true",
+            "description": "apply additional -log10 transformation on p-value column?",
+            "example": true
+        },
         "string-input-1617:1657:1674:287:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "double-input-1617:1657:1669:287:444": {
             "type": "number",
@@ -6465,9 +6712,9 @@
         },
         "string-input-1617:1657:1665:284:492": {
             "type": "string",
-            "default": "-7;7",
+            "default": "None",
             "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
-            "example": "-7;7"
+            "example": "None"
         },
         "string-input-1617:1657:1665:284:493": {
             "type": "string",
@@ -6477,9 +6724,9 @@
         },
         "string-input-1617:1657:1674:287:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "single-selection-1617:1657:1668:282:436": {
             "type": "object",
@@ -6496,9 +6743,9 @@
         },
         "string-input-1617:1657:1665:284:494": {
             "type": "string",
-            "default": "_log2",
+            "default": "_log2_norm",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": "_log2_norm"
         },
         "single-selection-1617:1657:1668:282:437": {
             "type": "object",
@@ -6528,9 +6775,9 @@
         },
         "string-input-1617:1657:1671:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "column-filter-1617:1657:1666:282:257": {
             "type": "object",
@@ -6539,19 +6786,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+1_1_log2_norm"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2",
-                    "PG.Quantity+2_3_log2"
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
@@ -6563,9 +6810,9 @@
         },
         "string-input-1617:1657:1671:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "boolean-input-1617:1657:1666:281:487": {
             "type": "boolean",
@@ -6586,18 +6833,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+1_1_log2_norm"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
@@ -6620,19 +6868,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+lowT1_log2"
+                        "default": "PG.Quantity+1_1_log2"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+lowT1_log2",
-                    "PG.Quantity+normT1_log2",
-                    "PG.Quantity+highT1_log2",
-                    "PG.Quantity+lowT2_log2",
-                    "PG.Quantity+normT2_log2",
-                    "PG.Quantity+highT2_log2"
+                    "PG.Quantity+1_1_log2",
+                    "PG.Quantity+1_2_log2",
+                    "PG.Quantity+1_3_log2",
+                    "PG.Quantity+2_1_log2",
+                    "PG.Quantity+2_2_log2",
+                    "PG.Quantity+2_3_log2"
                 ]
             }
         },
@@ -6670,12 +6918,22 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Quantity+1_1_log2_norm"
+                    }
                 }
             },
             "description": "Enter Description",
             "example": {
                 "columns": [
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
@@ -6689,12 +6947,22 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Quantity+1_1_log2_norm"
+                    }
                 }
             },
             "description": "Enter Description",
             "example": {
                 "columns": [
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
@@ -6702,12 +6970,22 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Quantity+1_1_log2"
+                    }
                 }
             },
             "description": "Enter Description",
             "example": {
                 "columns": [
+                    "PG.Quantity+1_1_log2",
+                    "PG.Quantity+1_2_log2",
+                    "PG.Quantity+1_3_log2",
+                    "PG.Quantity+2_1_log2",
+                    "PG.Quantity+2_2_log2",
+                    "PG.Quantity+2_3_log2"
                 ]
             }
         },
@@ -6715,12 +6993,22 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Quantity+1_1_log2_norm"
+                    }
                 }
             },
             "description": "Enter Description",
             "example": {
                 "columns": [
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
@@ -6751,15 +7039,15 @@
         },
         "string-input-1617:1657:1671:285:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1671:285:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "boolean-input-1617:1657:1630:284:487": {
             "type": "boolean",
@@ -6774,26 +7062,27 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Normalised+1_1_log2"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
+                    "PG.Normalised+1_1_log2",
+                    "PG.Normalised+1_2_log2",
+                    "PG.Normalised+1_3_log2",
+                    "PG.Normalised+2_1_log2",
+                    "PG.Normalised+2_2_log2",
+                    "PG.Normalised+2_3_log2"
                 ]
             }
         },
         "string-input-1617:1657:1630:285:329": {
             "type": "string",
-            "default": "-10;10",
+            "default": "Auto",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
-            "example": "-10;10"
+            "example": "Auto"
         },
         "string-input-1617:1657:1670:281:489": {
             "type": "string",
@@ -6805,12 +7094,22 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.Normalised+1_1_log2"
+                    }
                 }
             },
             "description": "Enter Description",
             "example": {
                 "columns": [
+                    "PG.Normalised+1_1_log2",
+                    "PG.Normalised+1_2_log2",
+                    "PG.Normalised+1_3_log2",
+                    "PG.Normalised+2_1_log2",
+                    "PG.Normalised+2_2_log2",
+                    "PG.Normalised+2_3_log2"
                 ]
             }
         },
@@ -6818,20 +7117,30 @@
             "type": "object",
             "properties": {
                 "columns": {
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "PG.MaxLFQ+1_1_log2"
+                    }
                 }
             },
             "description": "Enter Description",
             "example": {
                 "columns": [
+                    "PG.MaxLFQ+1_1_log2",
+                    "PG.MaxLFQ+1_2_log2",
+                    "PG.MaxLFQ+1_3_log2",
+                    "PG.MaxLFQ+2_1_log2",
+                    "PG.MaxLFQ+2_2_log2",
+                    "PG.MaxLFQ+2_3_log2"
                 ]
             }
         },
         "string-input-1617:1657:1675:281:493": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1675:281:492": {
             "type": "string",
@@ -6847,15 +7156,15 @@
         },
         "string-input-1617:1657:1665:285:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "_log2_norm",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": "_log2_norm"
         },
         "string-input-1617:1657:1675:281:494": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1670:281:482": {
             "type": "string",
@@ -6944,9 +7253,9 @@
         },
         "string-input-1617:1657:1665:287:260": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (median)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (median)"
         },
         "string-input-1617:1657:1671:286:259": {
             "type": "string",
@@ -7036,21 +7345,21 @@
         },
         "string-input-1617:1657:1665:286:442": {
             "type": "string",
-            "default": "_log2",
+            "default": "_log2_norm",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": "_log2_norm"
         },
         "string-input-1617:1657:1670:281:494": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1670:281:493": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1665:286:440": {
             "type": "string",
@@ -7082,7 +7391,8 @@
                     "PG.Quantity+1_2_log2",
                     "PG.Quantity+1_3_log2",
                     "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
+                    "PG.Quantity+2_2_log2",
+                    "PG.Quantity+2_3_log2"
                 ]
             }
         },
@@ -7142,11 +7452,23 @@
             "description": "how the graph y axis should be titled",
             "example": "Intensity (log2)"
         },
+        "boolean-input-1620:1248:980": {
+            "type": "boolean",
+            "default": "true",
+            "description": "When this flag is specified then the search string is treated as a sequence of literal characters. Metacharacters or escape sequences in the input sequence will be given no special meaning.",
+            "example": true
+        },
         "int-input-1617:1657:1666:281:495": {
             "type": "integer",
             "default": 250,
             "description": "set height of individual plot in pixels (aspect ratio is set to 1); default value is 250",
             "example": 250
+        },
+        "boolean-input-1620:1248:979": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Enables case-insensitive matching\t",
+            "example": false
         },
         "double-input-1617:1657:1673:283:430": {
             "type": "number",
@@ -7162,21 +7484,47 @@
         },
         "string-input-1617:1657:1670:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1670:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1311:962:438": {
             "type": "string",
-            "default": "LIMMA_",
+            "default": "LIMMA_DIA_",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "LIMMA_"
+            "example": "LIMMA_DIA_"
+        },
+        "column-selection-1311:964:295": {
+            "type": "object",
+            "properties": {
+                "column": {
+                    "type": "string",
+                    "default": "LIMMA_DIA_s1-s2.logFC"
+                }
+            },
+            "description": "select the column with logged fold changes to be plotted",
+            "example": {
+                "column": "LIMMA_DIA_s1-s2.logFC"
+            }
+        },
+        "column-selection-1311:964:297": {
+            "type": "object",
+            "properties": {
+                "column": {
+                    "type": "string",
+                    "default": "LIMMA_DIA_s1-s2.adj.P.Val"
+                }
+            },
+            "description": "select the column with p-value or adj.P value",
+            "example": {
+                "column": "LIMMA_DIA_s1-s2.adj.P.Val"
+            }
         },
         "string-input-1617:1657:1670:445": {
             "type": "string",
@@ -7217,9 +7565,9 @@
         },
         "string-input-1617:1657:1665:260": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (median)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (median)"
         },
         "string-input-1617:1657:1671:259": {
             "type": "string",
@@ -7273,11 +7621,24 @@
                 "variable_value": "RdBu"
             }
         },
+        "column-selection-1620:1246:975": {
+            "type": "object",
+            "properties": {
+                "column": {
+                    "type": "string",
+                    "default": "new"
+                }
+            },
+            "description": "The replacement string. Use $1, $2, etc. to address the groups defined in the search pattern.",
+            "example": {
+                "column": "new"
+            }
+        },
         "string-input-1617:1657:1665:286:260": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (median)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (median)"
         },
         "column-filter-1617:1657:1666:284:257": {
             "type": "object",
@@ -7286,16 +7647,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+1_1_log2_norm"
                     }
                 }
             },
             "description": "select columns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2"
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
@@ -7359,7 +7723,10 @@
                 "columns": [
                     "PG.Quantity+1_1_log2",
                     "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2"
+                    "PG.Quantity+1_3_log2",
+                    "PG.Quantity+2_1_log2",
+                    "PG.Quantity+2_2_log2",
+                    "PG.Quantity+2_3_log2"
                 ]
             }
         },
@@ -7370,19 +7737,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti_log2"
+                        "default": "PG.Quantity+1_1_log2"
                     }
                 }
             },
             "description": "Select columns which contain values which will be normalized. By default, all not normalized columns after log2 transformation are selected.",
             "example": {
                 "columns": [
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2",
-                    "PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"
+                    "PG.Quantity+1_1_log2",
+                    "PG.Quantity+1_2_log2",
+                    "PG.Quantity+1_3_log2",
+                    "PG.Quantity+2_1_log2",
+                    "PG.Quantity+2_2_log2",
+                    "PG.Quantity+2_3_log2"
                 ]
             }
         },
@@ -7394,9 +7761,9 @@
         },
         "string-input-1617:1657:1671:286:442": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1671:260": {
             "type": "string",
@@ -7498,21 +7865,21 @@
         },
         "string-input-1617:1657:1671:286:441": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1667:281:409": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (loessF)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (loessF)"
         },
         "string-input-1617:1657:1667:282:441": {
             "type": "string",
-            "default": "Auto",
+            "default": "8;6",
             "description": "set figure size in inches (format: \"width;height\"); default size is \"8;6\"",
-            "example": "Auto"
+            "example": "8;6"
         },
         "single-selection-1617:1657:1670:283:436": {
             "type": "object",
@@ -7567,15 +7934,15 @@
         },
         "string-input-1617:1657:1673:284:492": {
             "type": "string",
-            "default": "-7;7",
+            "default": "None",
             "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
-            "example": "-7;7"
+            "example": "None"
         },
         "string-input-1617:1657:1673:282:441": {
             "type": "string",
-            "default": "Auto",
+            "default": "8;6",
             "description": "set figure size in inches (format: \"width;height\"); default size is \"8;6\"",
-            "example": "Auto"
+            "example": "8;6"
         },
         "int-input-1617:1657:1675:284:495": {
             "type": "integer",
@@ -7585,15 +7952,15 @@
         },
         "string-input-1617:1657:1673:284:494": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1673:284:493": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1671:287:260": {
             "type": "string",
@@ -7619,6 +7986,12 @@
             "default": 250,
             "description": "set height of individual plot in pixels (aspect ratio is set to 1); default value is 250",
             "example": 250
+        },
+        "boolean-input-1311:963:924": {
+            "type": "boolean",
+            "default": "true",
+            "description": "whether to evaluate and report each comparison separately or all together as one factor (i.e. one-way ANOVA) - see the note on missing values handling!",
+            "example": true
         },
         "string-input-1617:1663:1611": {
             "type": "string",
@@ -7653,9 +8026,38 @@
         },
         "string-input-1617:1657:1665:284:409": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (median)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (median)"
+        },
+        "boolean-input-1311:963:926": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to remove not used columns or not; unchecked -> original dataframe will be returned with imputed values; checked -> dataframe of processed columns plus optional grouping column",
+            "example": false
+        },
+        "column-filter-1487:1502:257": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "Precursor.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti"
+                    }
+                }
+            },
+            "description": "select colomns to be processed",
+            "example": {
+                "columns": [
+                    "Precursor.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti",
+                    "Precursor.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti",
+                    "Precursor.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti",
+                    "Precursor.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti",
+                    "Precursor.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti",
+                    "Precursor.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti"
+                ]
+            }
         },
         "string-input-1617:1657:1673:281:409": {
             "type": "string",
@@ -7702,9 +8104,9 @@
         },
         "string-input-1617:1657:1673:282:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1671:287:259": {
             "type": "string",
@@ -7719,27 +8121,27 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Normalised+1_1_log2"
                     }
                 }
             },
             "description": "select columns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2",
-                    "PG.Quantity+2_3_log2"
+                    "PG.Normalised+1_1_log2",
+                    "PG.Normalised+1_2_log2",
+                    "PG.Normalised+1_3_log2",
+                    "PG.Normalised+2_1_log2",
+                    "PG.Normalised+2_2_log2",
+                    "PG.Normalised+2_3_log2"
                 ]
             }
         },
         "string-input-1617:1657:1673:282:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "column-filter-1617:1657:1672:285:257": {
             "type": "object",
@@ -7783,9 +8185,9 @@
         },
         "string-input-1617:1657:1669:287:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "PG.MaxLFQ+",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": "PG.MaxLFQ+"
         },
         "string-input-1617:1657:1674:285:258": {
             "type": "string",
@@ -7882,9 +8284,9 @@
         },
         "string-input-1617:1657:1668:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "PG.Normalised+",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": "PG.Normalised+"
         },
         "string-input-1617:1657:1665:281:482": {
             "type": "string",
@@ -7906,9 +8308,9 @@
         },
         "string-input-1617:1657:1666:284:409": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (quantile)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (quantile)"
         },
         "int-input-1617:1657:1665:281:495": {
             "type": "integer",
@@ -8110,9 +8512,9 @@
         },
         "string-input-1617:1657:1630:329": {
             "type": "string",
-            "default": "-10;10",
+            "default": "Auto",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
-            "example": "-10;10"
+            "example": "Auto"
         },
         "string-input-1617:1657:1665:281:492": {
             "type": "string",
@@ -8141,9 +8543,9 @@
         },
         "string-input-1617:1657:1665:281:494": {
             "type": "string",
-            "default": "_log2",
+            "default": "_log2_norm",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": "_log2_norm"
         },
         "string-input-1617:1657:1670:260": {
             "type": "string",
@@ -8298,16 +8700,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+1_1_log2_norm"
                     }
                 }
             },
             "description": "select columns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2"
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
@@ -8324,16 +8729,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.MaxLFQ+1_1_log2"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2"
+                    "PG.MaxLFQ+1_1_log2",
+                    "PG.MaxLFQ+1_2_log2",
+                    "PG.MaxLFQ+1_3_log2",
+                    "PG.MaxLFQ+2_1_log2",
+                    "PG.MaxLFQ+2_2_log2",
+                    "PG.MaxLFQ+2_3_log2"
                 ]
             }
         },
@@ -8345,9 +8753,9 @@
         },
         "string-input-1617:1657:1666:286:260": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (quantile)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (quantile)"
         },
         "boolean-input-1617:1657:1665:284:412": {
             "type": "boolean",
@@ -8412,9 +8820,9 @@
         },
         "string-input-1617:1657:1674:284:494": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "boolean-input-1617:1657:1670:284:487": {
             "type": "boolean",
@@ -8424,9 +8832,9 @@
         },
         "string-input-1617:1657:1674:284:493": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1666:287:259": {
             "type": "string",
@@ -8436,9 +8844,9 @@
         },
         "string-input-1617:1657:1674:284:492": {
             "type": "string",
-            "default": "-7;7",
+            "default": "None",
             "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
-            "example": "-7;7"
+            "example": "None"
         },
         "string-input-1617:1657:1666:287:258": {
             "type": "string",
@@ -8477,9 +8885,9 @@
         },
         "string-input-1617:1657:1673:281:493": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1674:282:409": {
             "type": "string",
@@ -8495,9 +8903,9 @@
         },
         "string-input-1617:1657:1673:281:494": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "boolean-input-1617:1657:1667:281:412": {
             "type": "boolean",
@@ -8520,65 +8928,15 @@
         },
         "string-input-1617:1657:1674:283:441": {
             "type": "string",
-            "default": "Auto",
+            "default": "10;10",
             "description": "set figure size in inches (format: \"width;height\"); for automatic size value use \"Auto\"; default size is \"10;10\"",
-            "example": "Auto"
+            "example": "10;10"
         },
         "string-input-1617:1657:1630:286:329": {
             "type": "string",
             "default": "Auto",
             "description": "limits of x axis in the form of two numbers separated by semicolon; use point (.) as decimal separator; use Auto for automatic limits",
             "example": "Auto"
-        },
-        "column-filter-1245:257": {
-            "type": "object",
-            "properties": {
-                "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.ID"
-                    }
-                }
-            },
-            "description": "select colomns to be processed",
-            "example": {
-                "columns": [
-                    "PG.ID",
-                    "Protein.Group",
-                    "PG.MaxLFQ (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti (Max*)",
-                    "PG.MaxLFQ (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti (Max*)",
-                    "PG.MaxLFQ (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti (Max*)",
-                    "PG.MaxLFQ (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti (Max*)",
-                    "PG.MaxLFQ (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti (Max*)",
-                    "PG.MaxLFQ (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti (Max*)",
-                    "PG.Normalised (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti (Max*)",
-                    "PG.Normalised (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti (Max*)",
-                    "PG.Normalised (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti (Max*)",
-                    "PG.Normalised (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti (Max*)",
-                    "PG.Normalised (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti (Max*)",
-                    "PG.Normalised (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti (Max*)",
-                    "PG.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti (Max*)",
-                    "PG.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti (Max*)",
-                    "PG.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti (Max*)",
-                    "PG.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti (Max*)",
-                    "PG.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti (Max*)",
-                    "PG.Quantity (Max*)+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti (Max*)",
-                    "PG.Quantity_sum",
-                    "Precursor.Id (Count)+IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti (Count*)",
-                    "Precursor.Id (Count)+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti (Count*)",
-                    "Precursor.Id (Count)+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti (Count*)",
-                    "Precursor.Id (Count)+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti (Count*)",
-                    "Precursor.Id (Count)+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti (Count*)",
-                    "Precursor.Id (Count)+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti (Count*)",
-                    "Proteotypic (Min*)+IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti (Sum)",
-                    "Proteotypic (Min*)+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti (Sum)",
-                    "Proteotypic (Min*)+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti (Sum)",
-                    "Proteotypic (Min*)+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti (Sum)",
-                    "Proteotypic (Min*)+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti (Sum)",
-                    "Proteotypic (Min*)+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti (Sum)"
-                ]
-            }
         },
         "boolean-input-1617:1657:1669:284:412": {
             "type": "boolean",
@@ -8594,9 +8952,9 @@
         },
         "string-input-1617:1657:1669:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "PG.MaxLFQ+",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": "PG.MaxLFQ+"
         },
         "column-filter-1617:1657:1670:281:257": {
             "type": "object",
@@ -8623,9 +8981,9 @@
         },
         "string-input-1617:1657:1674:283:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1668:287:445": {
             "type": "string",
@@ -8673,9 +9031,9 @@
         },
         "string-input-1617:1657:1673:285:329": {
             "type": "string",
-            "default": "-10;10",
+            "default": "Auto",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
-            "example": "-10;10"
+            "example": "Auto"
         },
         "boolean-input-1617:1657:1670:283:435": {
             "type": "boolean",
@@ -8691,27 +9049,27 @@
         },
         "string-input-1617:1657:1674:283:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1671:284:493": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1671:284:494": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1671:284:492": {
             "type": "string",
-            "default": "-7;7",
+            "default": "None",
             "description": "limits of y axis in the form of two numbers (point \".\" for decimal separator) separated by semicolon; for default value use \"None\"",
-            "example": "-7;7"
+            "example": "None"
         },
         "string-input-1617:1657:1669:445": {
             "type": "string",
@@ -8743,9 +9101,9 @@
         },
         "string-input-1617:1657:1666:286:442": {
             "type": "string",
-            "default": "_log2",
+            "default": "_log2_norm",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": "_log2_norm"
         },
         "boolean-input-1617:1657:1673:284:487": {
             "type": "boolean",
@@ -8773,9 +9131,9 @@
         },
         "string-input-1617:1657:1668:287:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "PG.Normalised+",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": "PG.Normalised+"
         },
         "string-input-1617:1657:1666:286:445": {
             "type": "string",
@@ -8796,27 +9154,27 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.MaxLFQ+1_1_log2"
                     }
                 }
             },
             "description": "select columns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2",
-                    "PG.Quantity+2_3_log2"
+                    "PG.MaxLFQ+1_1_log2",
+                    "PG.MaxLFQ+1_2_log2",
+                    "PG.MaxLFQ+1_3_log2",
+                    "PG.MaxLFQ+2_1_log2",
+                    "PG.MaxLFQ+2_2_log2",
+                    "PG.MaxLFQ+2_3_log2"
                 ]
             }
         },
         "string-input-1617:1657:1671:283:441": {
             "type": "string",
-            "default": "Auto",
+            "default": "10;10",
             "description": "set figure size in inches (format: \"width;height\"); for automatic size value use \"Auto\"; default size is \"10;10\"",
-            "example": "Auto"
+            "example": "10;10"
         },
         "column-filter-1617:1657:1675:282:257": {
             "type": "object",
@@ -8865,9 +9223,9 @@
         },
         "string-input-1617:1657:1669:285:329": {
             "type": "string",
-            "default": "-10;10",
+            "default": "Auto",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
-            "example": "-10;10"
+            "example": "Auto"
         },
         "boolean-input-1617:1657:1630:284:412": {
             "type": "boolean",
@@ -8907,18 +9265,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+1_1_log2_norm"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
@@ -8935,21 +9294,15 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "LIMMA_DDA_A47_pol-A44_pol.logFC"
+                        "default": "LIMMA_DIA_s2-s1.logFC"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "LIMMA_DDA_A47_pol-A44_pol.logFC",
-                    "LIMMA_DDA_A49_pol-A44_pol.logFC",
-                    "LIMMA_DDA_A47_pol-A48_pol.logFC",
-                    "LIMMA_DDA_A49_pol-A48_pol.logFC",
-                    "LIMMA_DDA_A47_PT-A44_PT.logFC",
-                    "LIMMA_DDA_A49_PT-A44_PT.logFC",
-                    "LIMMA_DDA_A47_PT-A48_PT.logFC",
-                    "LIMMA_DDA_A49_PT-A48_PT.logFC"
+                    "LIMMA_DIA_s2-s1.logFC",
+                    "LIMMA_DIA_s1-s2.logFC"
                 ]
             }
         },
@@ -8992,15 +9345,15 @@
         },
         "string-input-1617:1657:1668:282:441": {
             "type": "string",
-            "default": "Auto",
+            "default": "8;6",
             "description": "set figure size in inches (format: \"width;height\"); default size is \"8;6\"",
-            "example": "Auto"
+            "example": "8;6"
         },
         "string-input-1617:1657:1666:287:260": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (quantile)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (quantile)"
         },
         "string-input-1617:1657:1671:285:260": {
             "type": "string",
@@ -9039,9 +9392,9 @@
         },
         "string-input-1617:1657:1666:285:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "_log2_norm",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": "_log2_norm"
         },
         "string-input-1617:1657:1673:281:489": {
             "type": "string",
@@ -9074,19 +9427,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.MaxLFQ+1_1_log2"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2",
-                    "PG.Quantity+2_3_log2"
+                    "PG.MaxLFQ+1_1_log2",
+                    "PG.MaxLFQ+1_2_log2",
+                    "PG.MaxLFQ+1_3_log2",
+                    "PG.MaxLFQ+2_1_log2",
+                    "PG.MaxLFQ+2_2_log2",
+                    "PG.MaxLFQ+2_3_log2"
                 ]
             }
         },
@@ -9115,6 +9468,19 @@
                 "variable_value": "average"
             }
         },
+        "column-selection-1620:1248:295": {
+            "type": "object",
+            "properties": {
+                "column": {
+                    "type": "string",
+                    "default": "original"
+                }
+            },
+            "description": "The search pattern, which may contain group patterns used in back references.",
+            "example": {
+                "column": "original"
+            }
+        },
         "single-selection-1617:1657:1671:283:436": {
             "type": "object",
             "properties": {
@@ -9130,9 +9496,9 @@
         },
         "string-input-1617:1657:1670:285:329": {
             "type": "string",
-            "default": "-10;10",
+            "default": "Auto",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
-            "example": "-10;10"
+            "example": "Auto"
         },
         "string-input-1617:1657:1674:284:489": {
             "type": "string",
@@ -9173,21 +9539,21 @@
         },
         "string-input-1617:1657:1671:283:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1671:283:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1668:281:409": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (DIA-NN)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (DIA-NN)"
         },
         "boolean-input-1617:1657:1673:283:429": {
             "type": "boolean",
@@ -9215,9 +9581,9 @@
         },
         "string-input-1617:1657:1665:281:409": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (median)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (median)"
         },
         "string-input-1617:1657:1668:287:258": {
             "type": "string",
@@ -9239,9 +9605,22 @@
         },
         "string-input-1617:1657:1668:282:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "PG.Normalised+",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": "PG.Normalised+"
+        },
+        "single-selection-1311:963:907": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "yes, one threshold for all samples"
+                }
+            },
+            "description": "whether to use only cases quantified in at least specified number of replicates in at least one sample, i.e. whether to filter out cases where there is lower number of replicates quantified (as per the \"Limma design\" box) than specified threshold(s); threshold can be set globally for all samples or for individual samples; threhold(s) should be set in the following box",
+            "example": {
+                "variable_value": "yes, one threshold for all samples"
+            }
         },
         "double-input-1617:1657:1668:285:444": {
             "type": "number",
@@ -9271,7 +9650,10 @@
                 "columns": [
                     "PG.Quantity+1_1_log2",
                     "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2"
+                    "PG.Quantity+1_3_log2",
+                    "PG.Quantity+2_1_log2",
+                    "PG.Quantity+2_2_log2",
+                    "PG.Quantity+2_3_log2"
                 ]
             }
         },
@@ -9376,19 +9758,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.MaxLFQ+1_1_log2"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2",
-                    "PG.Quantity+2_3_log2"
+                    "PG.MaxLFQ+1_1_log2",
+                    "PG.MaxLFQ+1_2_log2",
+                    "PG.MaxLFQ+1_3_log2",
+                    "PG.MaxLFQ+2_1_log2",
+                    "PG.MaxLFQ+2_2_log2",
+                    "PG.MaxLFQ+2_3_log2"
                 ]
             }
         },
@@ -9448,9 +9830,9 @@
         },
         "string-input-1617:1657:1665:282:441": {
             "type": "string",
-            "default": "Auto",
+            "default": "8;6",
             "description": "set figure size in inches (format: \"width;height\"); default size is \"8;6\"",
-            "example": "Auto"
+            "example": "8;6"
         },
         "string-input-1617:1657:1668:286:445": {
             "type": "string",
@@ -9489,9 +9871,9 @@
         },
         "string-input-1617:1657:1668:286:441": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "PG.Normalised+",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": "PG.Normalised+"
         },
         "boolean-input-1617:1657:1666:285:328": {
             "type": "boolean",
@@ -9539,9 +9921,15 @@
         },
         "string-input-1617:1657:1667:285:329": {
             "type": "string",
-            "default": "-10;10",
+            "default": "Auto",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
-            "example": "-10;10"
+            "example": "Auto"
+        },
+        "string-input-1311:963:908": {
+            "type": "string",
+            "default": "2",
+            "description": "Set threshold(s); use \"sample1: threshold1, sample2: threshold2\" format for separate thresholds for individual samples or single number for one threshold for all samples",
+            "example": "2"
         },
         "string-input-1617:1657:1666:445": {
             "type": "string",
@@ -9551,9 +9939,9 @@
         },
         "string-input-1617:1657:1671:282:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "single-selection-1617:1657:1673:283:423": {
             "type": "object",
@@ -9570,9 +9958,9 @@
         },
         "string-input-1617:1657:1671:282:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "column-filter-1617:1657:1666:281:257": {
             "type": "object",
@@ -9581,19 +9969,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+1_1_log2_norm"
                     }
                 }
             },
             "description": "select columns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2",
-                    "PG.Quantity+2_3_log2"
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
@@ -9612,15 +10000,15 @@
         },
         "string-input-1617:1657:1674:286:442": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1674:286:441": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "string-input-1617:1657:1674:286:440": {
             "type": "string",
@@ -9649,9 +10037,9 @@
         },
         "string-input-1617:1657:1675:329": {
             "type": "string",
-            "default": "-10;10",
+            "default": "Auto",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
-            "example": "-10;10"
+            "example": "Auto"
         },
         "single-selection-1617:1657:1665:285:261": {
             "type": "object",
@@ -9668,9 +10056,9 @@
         },
         "string-input-1617:1657:1668:260": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (DIA-NN)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (DIA-NN)"
         },
         "string-input-1617:1657:1672:287:445": {
             "type": "string",
@@ -9680,9 +10068,9 @@
         },
         "string-input-1617:1657:1668:285:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "PG.Normalised+",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": "PG.Normalised+"
         },
         "single-selection-1617:1657:1670:443": {
             "type": "object",
@@ -9705,9 +10093,9 @@
         },
         "string-input-1617:1657:1666:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "_log2_norm",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": "_log2_norm"
         },
         "single-selection-1617:1657:1673:285:261": {
             "type": "object",
@@ -9762,9 +10150,9 @@
         },
         "string-input-1617:1657:1668:287:260": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (DIA-NN)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (DIA-NN)"
         },
         "column-filter-1617:1657:1670:285:257": {
             "type": "object",
@@ -9790,9 +10178,9 @@
         },
         "string-input-1617:1657:1668:282:409": {
             "type": "string",
-            "default": "",
+            "default": "PG intensities cluster analysis - normalized data (DIA-NN)",
             "description": "additional information that should be present as the graph subtitle",
-            "example": ""
+            "example": "PG intensities cluster analysis - normalized data (DIA-NN)"
         },
         "string-input-1617:1657:1666:438": {
             "type": "string",
@@ -9828,9 +10216,9 @@
         },
         "string-input-1617:1657:1672:287:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "single-selection-1617:1657:1665:283:419": {
             "type": "object",
@@ -9847,15 +10235,15 @@
         },
         "string-input-1617:1657:1672:287:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1671:282:441": {
             "type": "string",
-            "default": "Auto",
+            "default": "8;6",
             "description": "set figure size in inches (format: \"width;height\"); default size is \"8;6\"",
-            "example": "Auto"
+            "example": "8;6"
         },
         "column-filter-1617:1657:1669:285:257": {
             "type": "object",
@@ -9864,18 +10252,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.MaxLFQ+1_1_log2"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2"
+                    "PG.MaxLFQ+1_1_log2",
+                    "PG.MaxLFQ+1_2_log2",
+                    "PG.MaxLFQ+1_3_log2",
+                    "PG.MaxLFQ+2_1_log2",
+                    "PG.MaxLFQ+2_2_log2",
+                    "PG.MaxLFQ+2_3_log2"
                 ]
             }
         },
@@ -9886,19 +10275,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+1_1_log2_norm"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2",
-                    "PG.Quantity+2_1_log2",
-                    "PG.Quantity+2_2_log2",
-                    "PG.Quantity+2_3_log2"
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
@@ -10048,6 +10437,19 @@
             "description": "how the graph x axis should be titled",
             "example": ""
         },
+        "column-selection-1620:1246:295": {
+            "type": "object",
+            "properties": {
+                "column": {
+                    "type": "string",
+                    "default": "original"
+                }
+            },
+            "description": "The search pattern, which may contain group patterns used in back references.",
+            "example": {
+                "column": "original"
+            }
+        },
         "column-filter-1617:1657:1673:287:257": {
             "type": "object",
             "properties": {
@@ -10073,6 +10475,12 @@
             "default": "false",
             "description": "whether to use manually set y axis limits (checked) or use automatic limits (unchecked)",
             "example": false
+        },
+        "P_threshold-1311:964:318": {
+            "type": "number",
+            "default": 0.05,
+            "description": "y axis (P (or adj. P) value) threshold that will be used for volcano plot points categorization, visualization and summary; not log transformed value should be provided, e.g. 0.05",
+            "example": 0.05
         },
         "double-input-1617:1657:1666:444": {
             "type": "number",
@@ -10127,9 +10535,9 @@
         },
         "string-input-1617:1657:1668:284:409": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (DIA-NN)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (DIA-NN)"
         },
         "string-input-1617:1662:1668": {
             "type": "string",
@@ -10181,11 +10589,24 @@
             "description": "whether to show unity line (x=y) or not",
             "example": true
         },
+        "single-selection-1311:963:925": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "Benjamini & Hochberg"
+                }
+            },
+            "description": "select p-value adjustment method; method is used by p.adjust R function, see its documentation for more details",
+            "example": {
+                "variable_value": "Benjamini & Hochberg"
+            }
+        },
         "string-input-1617:1657:1674:329": {
             "type": "string",
-            "default": "-10;10",
+            "default": "Auto",
             "description": "limits of y axis in the form of two numbers separated by semicolon; use point (.) as decimal separator",
-            "example": "-10;10"
+            "example": "Auto"
         },
         "int-input-1617:1657:1668:281:495": {
             "type": "integer",
@@ -10195,15 +10616,15 @@
         },
         "string-input-1617:1657:1669:260": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (DIA-NN MaxLFQ)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (DIA-NN MaxLFQ)"
         },
         "string-input-1617:1657:1674:285:438": {
             "type": "string",
-            "default": "PG.Quantity+",
+            "default": "",
             "description": "common data columns prefix to be removed prior plotting",
-            "example": "PG.Quantity+"
+            "example": ""
         },
         "column-filter-1617:1657:1669:284:257": {
             "type": "object",
@@ -10212,16 +10633,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.MaxLFQ+1_1_log2"
                     }
                 }
             },
             "description": "select columns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2"
+                    "PG.MaxLFQ+1_1_log2",
+                    "PG.MaxLFQ+1_2_log2",
+                    "PG.MaxLFQ+1_3_log2",
+                    "PG.MaxLFQ+2_1_log2",
+                    "PG.MaxLFQ+2_2_log2",
+                    "PG.MaxLFQ+2_3_log2"
                 ]
             }
         },
@@ -10240,15 +10664,15 @@
         },
         "string-input-1617:1657:1666:287:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "_log2_norm",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": "_log2_norm"
         },
         "string-input-1617:1657:1674:285:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": ""
         },
         "string-input-1617:1657:1666:287:438": {
             "type": "string",
@@ -10331,6 +10755,12 @@
                 "variable_value": "euclidean"
             }
         },
+        "boolean-input-1620:1245:979": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Enables case-insensitive matching\t",
+            "example": false
+        },
         "string-input-1617:1657:1674:285:445": {
             "type": "string",
             "default": "Auto",
@@ -10355,6 +10785,12 @@
             "default": 250,
             "description": "set height of individual plot in pixels (aspect ratio is set to 1); default value is 250",
             "example": 250
+        },
+        "boolean-input-1620:1245:980": {
+            "type": "boolean",
+            "default": "true",
+            "description": "When this flag is specified then the search string is treated as a sequence of literal characters. Metacharacters or escape sequences in the input sequence will be given no special meaning.",
+            "example": true
         },
         "double-input-1617:1657:1671:283:430": {
             "type": "number",
@@ -10395,16 +10831,19 @@
                     "type": "array",
                     "items": {
                         "type": "string",
-                        "default": "PG.Quantity+1_1_log2"
+                        "default": "PG.Quantity+1_1_log2_norm"
                     }
                 }
             },
             "description": "select colomns to be processed",
             "example": {
                 "columns": [
-                    "PG.Quantity+1_1_log2",
-                    "PG.Quantity+1_2_log2",
-                    "PG.Quantity+1_3_log2"
+                    "PG.Quantity+1_1_log2_norm",
+                    "PG.Quantity+1_2_log2_norm",
+                    "PG.Quantity+1_3_log2_norm",
+                    "PG.Quantity+2_1_log2_norm",
+                    "PG.Quantity+2_2_log2_norm",
+                    "PG.Quantity+2_3_log2_norm"
                 ]
             }
         },
@@ -10422,9 +10861,9 @@
         },
         "string-input-1617:1657:1667:439": {
             "type": "string",
-            "default": "_log2",
+            "default": "_log2_norm",
             "description": "common data columns suffix to be removed prior plotting",
-            "example": "_log2"
+            "example": "_log2_norm"
         },
         "boolean-input-1617:1657:1669:281:412": {
             "type": "boolean",
@@ -10527,9 +10966,9 @@
         },
         "string-input-1617:1657:1668:286:260": {
             "type": "string",
-            "default": "",
+            "default": "normalized data (DIA-NN)",
             "description": "additional information that should be present as the graphs subtitle",
-            "example": ""
+            "example": "normalized data (DIA-NN)"
         }
     }
 }

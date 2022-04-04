@@ -144,9 +144,63 @@
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
 <config key="editorChanges">
-<entry key="numRows" type="xint" value="0"/>
+<entry key="numRows" type="xint" value="6"/>
+<config key="rowEntry0">
+<entry key="rowKey" type="xstring" value="Row83"/>
+<entry key="numCells" type="xint" value="1"/>
+<config key="cellEntry0">
+<entry key="colName" type="xstring" value="New"/>
+<entry key="type" type="xstring" value="string"/>
+<entry key="value" type="xstring" value="1_1"/>
 </config>
-<entry key="tableHash" type="xstring" isnull="true" value=""/>
+</config>
+<config key="rowEntry1">
+<entry key="rowKey" type="xstring" value="Row84"/>
+<entry key="numCells" type="xint" value="1"/>
+<config key="cellEntry0">
+<entry key="colName" type="xstring" value="New"/>
+<entry key="type" type="xstring" value="string"/>
+<entry key="value" type="xstring" value="1_2"/>
+</config>
+</config>
+<config key="rowEntry2">
+<entry key="rowKey" type="xstring" value="Row85"/>
+<entry key="numCells" type="xint" value="1"/>
+<config key="cellEntry0">
+<entry key="colName" type="xstring" value="New"/>
+<entry key="type" type="xstring" value="string"/>
+<entry key="value" type="xstring" value="1_3"/>
+</config>
+</config>
+<config key="rowEntry3">
+<entry key="rowKey" type="xstring" value="Row88"/>
+<entry key="numCells" type="xint" value="1"/>
+<config key="cellEntry0">
+<entry key="colName" type="xstring" value="New"/>
+<entry key="type" type="xstring" value="string"/>
+<entry key="value" type="xstring" value="2_1"/>
+</config>
+</config>
+<config key="rowEntry4">
+<entry key="rowKey" type="xstring" value="Row89"/>
+<entry key="numCells" type="xint" value="1"/>
+<config key="cellEntry0">
+<entry key="colName" type="xstring" value="New"/>
+<entry key="type" type="xstring" value="string"/>
+<entry key="value" type="xstring" value="2_2"/>
+</config>
+</config>
+<config key="rowEntry5">
+<entry key="rowKey" type="xstring" value="Row90"/>
+<entry key="numCells" type="xint" value="1"/>
+<config key="cellEntry0">
+<entry key="colName" type="xstring" value="New"/>
+<entry key="type" type="xstring" value="string"/>
+<entry key="value" type="xstring" value="2_3"/>
+</config>
+</config>
+</config>
+<entry key="tableHash" type="xstring" value="92fe81cf62e34a952e518d3b7e839d85"/>
 </config>
 <config key="nodeAnnotation">
 <entry key="text" type="xstring" value="Run this node before renaming%%00010%%00010MANUALLY edit sample %%00010names in Interactive View: %%00010JavaScript Table Editor%%00010%%00010After renaming press Apply"/>

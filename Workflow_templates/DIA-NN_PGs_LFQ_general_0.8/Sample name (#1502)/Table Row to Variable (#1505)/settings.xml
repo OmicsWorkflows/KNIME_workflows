@@ -60,43 +60,43 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="all_samples"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti,IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti,IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti,IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti,IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti,IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti"/>
+<entry key="value" type="xstring" value="1_1,1_2,1_3,2_1,2_2,2_3"/>
 </config>
 <config key="Variable_10">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="Column 5"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti"/>
+<entry key="value" type="xstring" value="2_3"/>
 </config>
 <config key="Variable_11">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="Column 4"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti"/>
+<entry key="value" type="xstring" value="2_2"/>
 </config>
 <config key="Variable_12">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="Column 3"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti"/>
+<entry key="value" type="xstring" value="2_1"/>
 </config>
 <config key="Variable_13">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="Column 2"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti"/>
+<entry key="value" type="xstring" value="1_3"/>
 </config>
 <config key="Variable_14">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="Column 1"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti"/>
+<entry key="value" type="xstring" value="1_2"/>
 </config>
 <config key="Variable_15">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="Column 0"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti"/>
+<entry key="value" type="xstring" value="1_1"/>
 </config>
 </config>
 <config key="internal_node_subsettings">

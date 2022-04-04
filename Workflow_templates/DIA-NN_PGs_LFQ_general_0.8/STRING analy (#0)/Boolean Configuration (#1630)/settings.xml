@@ -6,7 +6,13 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="open_link"/>
 <entry key="class" type="xstring" value="INTEGER"/>
-<entry key="value" type="xint" value="0"/>
+<entry key="value" type="xint" value="1"/>
+</config>
+<config key="Variable_1">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="open_link"/>
+<entry key="class" type="xstring" value="INTEGER"/>
+<entry key="value" type="xint" value="1"/>
 </config>
 </config>
 <config key="internal_node_subsettings">

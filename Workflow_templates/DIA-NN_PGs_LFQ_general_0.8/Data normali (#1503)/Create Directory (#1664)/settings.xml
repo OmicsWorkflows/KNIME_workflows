@@ -6,7 +6,7 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="directory"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="file:/home/knimeuser/knime-workspace/Playground/DIA-NN%20WF/DIA-NN_PGs_LFQ_general_0.8.6/__outputs__/figures/LIMMA/"/>
+<entry key="value" type="xstring" value="file:/home/knimeuser/knime-workspace/gitfolders/KNIME_workflows/Workflow_templates/DIA-NN_PGs_LFQ_general_0.8/__outputs__/figures/LIMMA/"/>
 </config>
 </config>
 <config key="internal_node_subsettings">

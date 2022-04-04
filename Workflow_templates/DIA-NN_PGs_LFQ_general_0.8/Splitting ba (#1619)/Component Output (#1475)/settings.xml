@@ -41,7 +41,7 @@
 <entry key="0" type="xstring" value="Selected set of proteins based on proteotypicality of its peptides"/>
 <entry key="1" type="xstring" value="Only proteins detected based on proteotypic peptides"/>
 <entry key="2" type="xstring" value="Only proteins detected based on shared peptides"/>
-<entry key="3" type="xstring" value="All proteins"/>
+<entry key="3" type="xstring" value="All proteins, i.e. the whole input table"/>
 </config>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>

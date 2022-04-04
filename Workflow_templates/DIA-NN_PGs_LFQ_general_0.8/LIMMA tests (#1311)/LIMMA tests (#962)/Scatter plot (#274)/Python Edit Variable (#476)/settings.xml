@@ -6,7 +6,7 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="total_width"/>
 <entry key="class" type="xstring" value="INTEGER"/>
-<entry key="value" type="xint" value="500"/>
+<entry key="value" type="xint" value="750"/>
 </config>
 </config>
 <config key="internal_node_subsettings">
