@@ -6,13 +6,13 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="columns_to_process"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="PG.MaxLFQ+1_1_log2,PG.MaxLFQ+1_2_log2,PG.MaxLFQ+1_3_log2,PG.MaxLFQ+2_1_log2,PG.MaxLFQ+2_2_log2,PG.MaxLFQ+2_3_log2"/>
+<entry key="value" type="xstring" value="PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti_log2,PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2,PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2,PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2,PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2,PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"/>
 </config>
 <config key="Variable_1">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="columns_to_process"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="PG.MaxLFQ+1_1_log2,PG.MaxLFQ+1_2_log2,PG.MaxLFQ+1_3_log2,PG.MaxLFQ+2_1_log2,PG.MaxLFQ+2_2_log2,PG.MaxLFQ+2_3_log2"/>
+<entry key="value" type="xstring" value="PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti_log2,PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2,PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2,PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2,PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2,PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"/>
 </config>
 </config>
 <config key="internal_node_subsettings">
@@ -31,17 +31,17 @@
 </config>
 <config key="excluded_names">
 <entry key="array-size" type="xint" value="11"/>
-<entry key="0" type="xstring" value="Protein IDs"/>
-<entry key="1" type="xstring" value="Protein names"/>
-<entry key="2" type="xstring" value="Intensity 1-1_1_log2_norm"/>
-<entry key="3" type="xstring" value="Intensity 1-1_2_log2_norm"/>
-<entry key="4" type="xstring" value="Intensity 1-1_3_log2_norm"/>
-<entry key="5" type="xstring" value="Intensity 10-1_1_log2_norm"/>
-<entry key="6" type="xstring" value="Intensity 10-1_2_log2_norm"/>
-<entry key="7" type="xstring" value="Intensity 10-1_3_log2_norm"/>
-<entry key="8" type="xstring" value="Intensity 100-1_1_log2_norm"/>
-<entry key="9" type="xstring" value="Intensity 100-1_2_log2_norm"/>
-<entry key="10" type="xstring" value="Intensity 100-1_3_log2_norm"/>
+<entry key="0" type="xstring" value="Majority protein IDs"/>
+<entry key="1" type="xstring" value="Gene names"/>
+<entry key="2" type="xstring" value="Intensity 1-1_1_log2"/>
+<entry key="3" type="xstring" value="Intensity 2-1_1_log2"/>
+<entry key="4" type="xstring" value="Intensity 5-1_1_log2"/>
+<entry key="5" type="xstring" value="Intensity 1-1_2_2x_log2"/>
+<entry key="6" type="xstring" value="Intensity 2-1_2_2x_log2"/>
+<entry key="7" type="xstring" value="Intensity 5-1_2_2x_log2"/>
+<entry key="8" type="xstring" value="Intensity 1-1_3_4x_log2"/>
+<entry key="9" type="xstring" value="Intensity 2-1_3_4x_log2"/>
+<entry key="10" type="xstring" value="Intensity 5-1_3_4x_log2"/>
 </config>
 <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
 <config key="name_pattern">
@@ -52,9 +52,9 @@
 <config key="datatype">
 <config key="typelist">
 <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
 <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
 <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
-<entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
 <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
 <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
 </config>
@@ -63,7 +63,7 @@
 </config>
 </config>
 <entry key="label" type="xstring" value="Columns to process"/>
-<entry key="description" type="xstring" value="select colomns to be processed"/>
+<entry key="description" type="xstring" value="select columns to be processed"/>
 <entry key="hideInWizard" type="xboolean" value="false"/>
 <entry key="hideInDialog" type="xboolean" value="false"/>
 <entry key="required" type="xboolean" value="true"/>
@@ -72,17 +72,17 @@
 <entry key="flowvariablename" type="xstring" value="columns_to_process"/>
 <config key="possibleColumns">
 <entry key="array-size" type="xint" value="11"/>
-<entry key="0" type="xstring" value="Protein IDs"/>
-<entry key="1" type="xstring" value="Protein names"/>
-<entry key="2" type="xstring" value="Intensity 1-1_1_log2_norm"/>
-<entry key="3" type="xstring" value="Intensity 1-1_2_log2_norm"/>
-<entry key="4" type="xstring" value="Intensity 1-1_3_log2_norm"/>
-<entry key="5" type="xstring" value="Intensity 10-1_1_log2_norm"/>
-<entry key="6" type="xstring" value="Intensity 10-1_2_log2_norm"/>
-<entry key="7" type="xstring" value="Intensity 10-1_3_log2_norm"/>
-<entry key="8" type="xstring" value="Intensity 100-1_1_log2_norm"/>
-<entry key="9" type="xstring" value="Intensity 100-1_2_log2_norm"/>
-<entry key="10" type="xstring" value="Intensity 100-1_3_log2_norm"/>
+<entry key="0" type="xstring" value="Majority protein IDs"/>
+<entry key="1" type="xstring" value="Gene names"/>
+<entry key="2" type="xstring" value="Intensity 1-1_1_log2"/>
+<entry key="3" type="xstring" value="Intensity 2-1_1_log2"/>
+<entry key="4" type="xstring" value="Intensity 5-1_1_log2"/>
+<entry key="5" type="xstring" value="Intensity 1-1_2_2x_log2"/>
+<entry key="6" type="xstring" value="Intensity 2-1_2_2x_log2"/>
+<entry key="7" type="xstring" value="Intensity 5-1_2_2x_log2"/>
+<entry key="8" type="xstring" value="Intensity 1-1_3_4x_log2"/>
+<entry key="9" type="xstring" value="Intensity 2-1_3_4x_log2"/>
+<entry key="10" type="xstring" value="Intensity 5-1_3_4x_log2"/>
 </config>
 <entry key="type" type="xstring" value="Twinlist"/>
 <entry key="limit_number_visible_options" type="xboolean" value="false"/>

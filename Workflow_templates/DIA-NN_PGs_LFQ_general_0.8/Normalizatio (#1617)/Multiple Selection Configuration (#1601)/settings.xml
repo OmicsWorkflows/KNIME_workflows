@@ -6,13 +6,7 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="column_selection"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="1_1,1_2,1_3,2_1,2_2"/>
-</config>
-<config key="Variable_1">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="column_selection"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="1_1,1_2,1_3,2_1,2_2"/>
+<entry key="value" type="xstring" value="1_1,1_2,1_2_3"/>
 </config>
 </config>
 <config key="internal_node_subsettings">
@@ -27,7 +21,7 @@
 <entry key="hideInDialog" type="xboolean" value="false"/>
 <entry key="parameterName" type="xstring" value="column_selection"/>
 <entry key="label" type="xstring" value="Select samples to be processed"/>
-<entry key="description" type="xstring" value="Enter Description"/>
+<entry key="description" type="xstring" value="Select names of the samples which should be normalized in the following steps. By default, all samples are selected"/>
 <entry key="required" type="xboolean" value="true"/>
 <entry key="flowVariableName" type="xstring" value="column_selection"/>
 <config key="possible_choices">

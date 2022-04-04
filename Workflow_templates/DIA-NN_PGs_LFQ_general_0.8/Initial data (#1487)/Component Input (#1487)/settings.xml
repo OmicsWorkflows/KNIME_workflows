@@ -30,10 +30,14 @@
 <entry key="array-size" type="xint" value="1"/>
 <entry key="0" type="xstring" value="Unprocessed DIA-NN output table"/>
 </config>
-<entry key="sub-node-description" type="xstring" value=""/>
+<entry key="sub-node-description" type="xstring" value="Initial processing of loaded data. First, low quality peptides are filtered out. Filtering occurs based on the q-values and values in the Quantity.Quality column. Next, peptides are grouped on PG level. The total quantity sum is calculated for every PG. Thusly processed table represents the first output of this metanode.%%00010The second output of this metanode are individual sample names. These names can be changed in the following steps, if necessary.%%00010%%00010=================%%00010%%00010Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.%%00010%%00010KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)%%00010Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3.6/license.html)%%00010Python package Pandas (The Pandas consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)%%00010%%00010The metanode was created in KNIME 4.1.3 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 4.1.3a.%%00010%%00010=================%%00010%%00010This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.%%00010Contact person: Karolina Krystofova (karolina.krystofova@ceitec.muni.cz)"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
 <entry key="state" type="xstring" value="IDLE"/>
+<config key="nodecontainer_message">
+<entry key="type" type="xstring" value="WARNING"/>
+<entry key="message" type="xstring" value="Component does not have input data, execute upstream nodes first"/>
+</config>
 <entry key="isDeletable" type="xboolean" value="false"/>
 <entry key="factory" type="xstring" value="org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeFactory"/>
 <entry key="node-name" type="xstring" value="Component Input"/>

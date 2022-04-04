@@ -156,22 +156,6 @@
 </config>
 </config>
 </config>
-<config key="node_466">
-<entry key="id" type="xint" value="466"/>
-<entry key="node_settings_file" type="xstring" value="Image Output (#466)/settings.xml"/>
-<entry key="node_is_meta" type="xboolean" value="false"/>
-<entry key="node_type" type="xstring" value="NativeNode"/>
-<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
-<config key="ui_settings">
-<config key="extrainfo.node.bounds">
-<entry key="array-size" type="xint" value="4"/>
-<entry key="0" type="xint" value="1044"/>
-<entry key="1" type="xint" value="617"/>
-<entry key="2" type="xint" value="113"/>
-<entry key="3" type="xint" value="80"/>
-</config>
-</config>
-</config>
 <config key="node_472">
 <entry key="id" type="xint" value="472"/>
 <entry key="node_settings_file" type="xstring" value="R View _Table_ (#472)/settings.xml"/>
@@ -453,16 +437,6 @@
 </config>
 </config>
 <config key="connection_9">
-<entry key="sourceID" type="xint" value="472"/>
-<entry key="destID" type="xint" value="466"/>
-<entry key="sourcePort" type="xint" value="1"/>
-<entry key="destPort" type="xint" value="1"/>
-<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.ConnectionUIInformation"/>
-<config key="ui_settings">
-<entry key="extrainfo.conn.bendpoints_size" type="xint" value="0"/>
-</config>
-</config>
-<config key="connection_10">
 <entry key="sourceID" type="xint" value="474"/>
 <entry key="destID" type="xint" value="475"/>
 <entry key="sourcePort" type="xint" value="1"/>
@@ -472,7 +446,7 @@
 <entry key="extrainfo.conn.bendpoints_size" type="xint" value="0"/>
 </config>
 </config>
-<config key="connection_11">
+<config key="connection_10">
 <entry key="sourceID" type="xint" value="475"/>
 <entry key="destID" type="xint" value="476"/>
 <entry key="sourcePort" type="xint" value="1"/>
@@ -482,7 +456,7 @@
 <entry key="extrainfo.conn.bendpoints_size" type="xint" value="0"/>
 </config>
 </config>
-<config key="connection_12">
+<config key="connection_11">
 <entry key="sourceID" type="xint" value="476"/>
 <entry key="destID" type="xint" value="427"/>
 <entry key="sourcePort" type="xint" value="1"/>
@@ -492,7 +466,7 @@
 <entry key="extrainfo.conn.bendpoints_size" type="xint" value="0"/>
 </config>
 </config>
-<config key="connection_13">
+<config key="connection_12">
 <entry key="sourceID" type="xint" value="480"/>
 <entry key="destID" type="xint" value="472"/>
 <entry key="sourcePort" type="xint" value="1"/>
@@ -502,13 +476,13 @@
 <entry key="extrainfo.conn.bendpoints_size" type="xint" value="0"/>
 </config>
 </config>
-<config key="connection_14">
+<config key="connection_13">
 <entry key="sourceID" type="xint" value="481"/>
 <entry key="destID" type="xint" value="257"/>
 <entry key="sourcePort" type="xint" value="1"/>
 <entry key="destPort" type="xint" value="0"/>
 </config>
-<config key="connection_15">
+<config key="connection_14">
 <entry key="sourceID" type="xint" value="482"/>
 <entry key="destID" type="xint" value="487"/>
 <entry key="sourcePort" type="xint" value="1"/>
@@ -518,7 +492,7 @@
 <entry key="extrainfo.conn.bendpoints_size" type="xint" value="0"/>
 </config>
 </config>
-<config key="connection_16">
+<config key="connection_15">
 <entry key="sourceID" type="xint" value="487"/>
 <entry key="destID" type="xint" value="489"/>
 <entry key="sourcePort" type="xint" value="1"/>
@@ -528,19 +502,19 @@
 <entry key="extrainfo.conn.bendpoints_size" type="xint" value="0"/>
 </config>
 </config>
-<config key="connection_17">
+<config key="connection_16">
 <entry key="sourceID" type="xint" value="489"/>
 <entry key="destID" type="xint" value="492"/>
 <entry key="sourcePort" type="xint" value="1"/>
 <entry key="destPort" type="xint" value="0"/>
 </config>
-<config key="connection_18">
+<config key="connection_17">
 <entry key="sourceID" type="xint" value="492"/>
 <entry key="destID" type="xint" value="493"/>
 <entry key="sourcePort" type="xint" value="1"/>
 <entry key="destPort" type="xint" value="0"/>
 </config>
-<config key="connection_19">
+<config key="connection_18">
 <entry key="sourceID" type="xint" value="493"/>
 <entry key="destID" type="xint" value="494"/>
 <entry key="sourcePort" type="xint" value="1"/>
@@ -550,7 +524,7 @@
 <entry key="extrainfo.conn.bendpoints_size" type="xint" value="0"/>
 </config>
 </config>
-<config key="connection_20">
+<config key="connection_19">
 <entry key="sourceID" type="xint" value="494"/>
 <entry key="destID" type="xint" value="495"/>
 <entry key="sourcePort" type="xint" value="1"/>
@@ -560,7 +534,7 @@
 <entry key="extrainfo.conn.bendpoints_size" type="xint" value="0"/>
 </config>
 </config>
-<config key="connection_21">
+<config key="connection_20">
 <entry key="sourceID" type="xint" value="495"/>
 <entry key="destID" type="xint" value="481"/>
 <entry key="sourcePort" type="xint" value="1"/>

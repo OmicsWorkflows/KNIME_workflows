@@ -8,6 +8,12 @@
 <entry key="class" type="xstring" value="STRING"/>
 <entry key="value" type="xstring" value="-10;10"/>
 </config>
+<config key="Variable_1">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="manual_x_axis_limits_values"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="-10;10"/>
+</config>
 </config>
 <config key="internal_node_subsettings">
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>

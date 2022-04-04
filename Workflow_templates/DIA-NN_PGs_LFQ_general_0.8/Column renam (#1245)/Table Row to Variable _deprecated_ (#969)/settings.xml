@@ -24,7 +24,7 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="RowID"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="Row0"/>
+<entry key="value" type="xstring" value="Row4"/>
 </config>
 <config key="Variable_4">
 <entry key="type" type="xstring" value="variable"/>
@@ -36,7 +36,7 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="Search_String"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value=" (Max*)"/>
+<entry key="value" type="xstring" value=" (Min*)"/>
 </config>
 </config>
 <config key="internal_node_subsettings">

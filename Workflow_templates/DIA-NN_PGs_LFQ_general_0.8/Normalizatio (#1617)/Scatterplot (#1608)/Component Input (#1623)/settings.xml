@@ -4,129 +4,129 @@
 <config key="flow_stack">
 <config key="Variable_0">
 <entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="show_raw_data"/>
+<entry key="name" type="xstring" value="hierarchy_size"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="true"/>
+<entry key="value" type="xstring" value="8;6"/>
 </config>
 <config key="Variable_1">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="manual_clustermap_center"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="false"/>
-</config>
-<config key="Variable_2">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="cluster_method_hierarchy"/>
 <entry key="class" type="xstring" value="STRING"/>
 <entry key="value" type="xstring" value="average"/>
 </config>
-<config key="Variable_3">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="cluster_method_correlation"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="average"/>
-</config>
-<config key="Variable_4">
+<config key="Variable_2">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="distance_metric_hierarchy"/>
 <entry key="class" type="xstring" value="STRING"/>
 <entry key="value" type="xstring" value="cityblock"/>
 </config>
-<config key="Variable_5">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="distance_metric_correlation"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="euclidean"/>
-</config>
-<config key="Variable_6">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="clustermap_center_value"/>
-<entry key="class" type="xstring" value="DOUBLE"/>
-<entry key="value" type="xdouble" value="98.0"/>
-</config>
-<config key="Variable_7">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="clustermap_colormap"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="RdBu"/>
-</config>
-<config key="Variable_8">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="correlation_method"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="pearson"/>
-</config>
-<config key="Variable_9">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="scatterplot_size_int"/>
-<entry key="class" type="xstring" value="INTEGER"/>
-<entry key="value" type="xint" value="250"/>
-</config>
-<config key="Variable_10">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="hierarchy_size"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="8;6"/>
-</config>
-<config key="Variable_11">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="correlation_size"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="10;10"/>
-</config>
-<config key="Variable_12">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="kde_size"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="Auto"/>
-</config>
-<config key="Variable_13">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="boxplot_size"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="Auto"/>
-</config>
-<config key="Variable_14">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="violin_size"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="Auto"/>
-</config>
-<config key="Variable_15">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="plots_manual_y"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="Auto"/>
-</config>
-<config key="Variable_16">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="plots_manual_x"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="Auto"/>
-</config>
-<config key="Variable_17">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="violin_kernel"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="scott"/>
-</config>
-<config key="Variable_18">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="violin_float"/>
-<entry key="class" type="xstring" value="DOUBLE"/>
-<entry key="value" type="xdouble" value="0.5"/>
-</config>
-<config key="Variable_19">
+<config key="Variable_3">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="kde_line"/>
 <entry key="class" type="xstring" value="STRING"/>
 <entry key="value" type="xstring" value="None"/>
 </config>
-<config key="Variable_20">
+<config key="Variable_4">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="plots_manual_x"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="Auto"/>
+</config>
+<config key="Variable_5">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="kde_size"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="Auto"/>
+</config>
+<config key="Variable_6">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="plot_manual_switch"/>
 <entry key="class" type="xstring" value="STRING"/>
 <entry key="value" type="xstring" value="false"/>
+</config>
+<config key="Variable_7">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="violin_float"/>
+<entry key="class" type="xstring" value="DOUBLE"/>
+<entry key="value" type="xdouble" value="0.5"/>
+</config>
+<config key="Variable_8">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="violin_kernel"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="scott"/>
+</config>
+<config key="Variable_9">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="plots_manual_y"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="Auto"/>
+</config>
+<config key="Variable_10">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="violin_size"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="Auto"/>
+</config>
+<config key="Variable_11">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="boxplot_size"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="Auto"/>
+</config>
+<config key="Variable_12">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="boxplot_manual_y"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="Auto"/>
+</config>
+<config key="Variable_13">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="boxplot_manual_switch"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="false"/>
+</config>
+<config key="Variable_14">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="correlation_method"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="pearson"/>
+</config>
+<config key="Variable_15">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="clustermap_colormap"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="RdBu"/>
+</config>
+<config key="Variable_16">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="clustermap_center_value"/>
+<entry key="class" type="xstring" value="DOUBLE"/>
+<entry key="value" type="xdouble" value="0.0"/>
+</config>
+<config key="Variable_17">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="distance_metric_correlation"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="euclidean"/>
+</config>
+<config key="Variable_18">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="cluster_method_correlation"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="average"/>
+</config>
+<config key="Variable_19">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="correlation_size"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="10;10"/>
+</config>
+<config key="Variable_20">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="manual_clustermap_center"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="true"/>
 </config>
 <config key="Variable_21">
 <entry key="type" type="xstring" value="variable"/>
@@ -136,9 +136,9 @@
 </config>
 <config key="Variable_22">
 <entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="manual_clustermap_center"/>
+<entry key="name" type="xstring" value="hierarchy_size"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="false"/>
+<entry key="value" type="xstring" value="8;6"/>
 </config>
 <config key="Variable_23">
 <entry key="type" type="xstring" value="variable"/>
@@ -148,111 +148,123 @@
 </config>
 <config key="Variable_24">
 <entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="cluster_method_correlation"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="average"/>
-</config>
-<config key="Variable_25">
-<entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="distance_metric_hierarchy"/>
 <entry key="class" type="xstring" value="STRING"/>
 <entry key="value" type="xstring" value="cityblock"/>
 </config>
-<config key="Variable_26">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="distance_metric_correlation"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="euclidean"/>
-</config>
-<config key="Variable_27">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="clustermap_center_value"/>
-<entry key="class" type="xstring" value="DOUBLE"/>
-<entry key="value" type="xdouble" value="98.0"/>
-</config>
-<config key="Variable_28">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="clustermap_colormap"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="RdBu"/>
-</config>
-<config key="Variable_29">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="correlation_method"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="pearson"/>
-</config>
-<config key="Variable_30">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="scatterplot_size_int"/>
-<entry key="class" type="xstring" value="INTEGER"/>
-<entry key="value" type="xint" value="250"/>
-</config>
-<config key="Variable_31">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="hierarchy_size"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="8;6"/>
-</config>
-<config key="Variable_32">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="correlation_size"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="10;10"/>
-</config>
-<config key="Variable_33">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="kde_size"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="Auto"/>
-</config>
-<config key="Variable_34">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="boxplot_size"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="Auto"/>
-</config>
-<config key="Variable_35">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="violin_size"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="Auto"/>
-</config>
-<config key="Variable_36">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="plots_manual_y"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="Auto"/>
-</config>
-<config key="Variable_37">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="plots_manual_x"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="Auto"/>
-</config>
-<config key="Variable_38">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="violin_kernel"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="scott"/>
-</config>
-<config key="Variable_39">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="violin_float"/>
-<entry key="class" type="xstring" value="DOUBLE"/>
-<entry key="value" type="xdouble" value="0.5"/>
-</config>
-<config key="Variable_40">
+<config key="Variable_25">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="kde_line"/>
 <entry key="class" type="xstring" value="STRING"/>
 <entry key="value" type="xstring" value="None"/>
 </config>
-<config key="Variable_41">
+<config key="Variable_26">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="plots_manual_x"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="Auto"/>
+</config>
+<config key="Variable_27">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="kde_size"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="Auto"/>
+</config>
+<config key="Variable_28">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="plot_manual_switch"/>
 <entry key="class" type="xstring" value="STRING"/>
 <entry key="value" type="xstring" value="false"/>
+</config>
+<config key="Variable_29">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="violin_float"/>
+<entry key="class" type="xstring" value="DOUBLE"/>
+<entry key="value" type="xdouble" value="0.5"/>
+</config>
+<config key="Variable_30">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="violin_kernel"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="scott"/>
+</config>
+<config key="Variable_31">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="plots_manual_y"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="Auto"/>
+</config>
+<config key="Variable_32">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="violin_size"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="Auto"/>
+</config>
+<config key="Variable_33">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="boxplot_size"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="Auto"/>
+</config>
+<config key="Variable_34">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="boxplot_manual_y"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="Auto"/>
+</config>
+<config key="Variable_35">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="boxplot_manual_switch"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="false"/>
+</config>
+<config key="Variable_36">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="correlation_method"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="pearson"/>
+</config>
+<config key="Variable_37">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="clustermap_colormap"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="RdBu"/>
+</config>
+<config key="Variable_38">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="clustermap_center_value"/>
+<entry key="class" type="xstring" value="DOUBLE"/>
+<entry key="value" type="xdouble" value="0.0"/>
+</config>
+<config key="Variable_39">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="distance_metric_correlation"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="euclidean"/>
+</config>
+<config key="Variable_40">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="cluster_method_correlation"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="average"/>
+</config>
+<config key="Variable_41">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="correlation_size"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="10;10"/>
+</config>
+<config key="Variable_42">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="manual_clustermap_center"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="true"/>
+</config>
+<config key="Variable_43">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="show_raw_data"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="true"/>
 </config>
 </config>
 <config key="internal_node_subsettings">
@@ -288,7 +300,7 @@
 <config key="excluded_names">
 <entry key="array-size" type="xint" value="0"/>
 </config>
-<entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
+<entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
 <config key="name_pattern">
 <entry key="pattern" type="xstring" value=""/>
 <entry key="type" type="xstring" value="Wildcard"/>
@@ -298,16 +310,20 @@
 <entry key="variable-prefix" type="xstring" isnull="true" value=""/>
 <config key="port-names">
 <entry key="array-size" type="xint" value="1"/>
-<entry key="0" type="xstring" value="Port 1"/>
+<entry key="0" type="xstring" value=""/>
 </config>
 <config key="port-descriptions">
 <entry key="array-size" type="xint" value="1"/>
 <entry key="0" type="xstring" value=""/>
 </config>
-<entry key="sub-node-description" type="xstring" value=""/>
+<entry key="sub-node-description" type="xstring" value="Custom plot settings for the scatterplot matrices."/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
 <entry key="state" type="xstring" value="IDLE"/>
+<config key="nodecontainer_message">
+<entry key="type" type="xstring" value="WARNING"/>
+<entry key="message" type="xstring" value="Component does not have input data, execute upstream nodes first"/>
+</config>
 <entry key="isDeletable" type="xboolean" value="false"/>
 <entry key="factory" type="xstring" value="org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeFactory"/>
 <entry key="node-name" type="xstring" value="Component Input"/>

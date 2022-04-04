@@ -10,6 +10,12 @@
 </config>
 <config key="Variable_1">
 <entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="split_if_switch"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="top"/>
+</config>
+<config key="Variable_2">
+<entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="if_switch"/>
 <entry key="class" type="xstring" value="STRING"/>
 <entry key="value" type="xstring" value="bottom"/>
@@ -19,7 +25,7 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="sourceCode" type="xstring" value="# create flow variable having the regex compatible name including specified prefix and suffix%%00010flow_variables['added_column_base_name'] = flow_variables['columns_prefix'] + &quot;$1&quot; + flow_variables['columns_suffix']%%00010%%00010# creates variable for not used columns removal IF switch%%00010if flow_variables['remove_not_used'] == 1:%%00010    flow_variables['if_switch'] = 'top'%%00010elif flow_variables['remove_not_used'] == 0:%%00010    flow_variables['if_switch'] = 'bottom'%%00010"/>
+<entry key="sourceCode" type="xstring" value="# create flow variable having the regex compatible name including specified prefix and suffix%%00010flow_variables['added_column_base_name'] = flow_variables['columns_prefix'] + &quot;$1&quot; + flow_variables['columns_suffix']%%00010%%00010# checks for the presence of the upper table delimiter for the if switch%%00010if flow_variables['top_input_IDs_delimiter'] == &quot;&quot;:%%00010    flow_variables['split_if_switch'] = 'bottom'%%00010else:%%00010    flow_variables['split_if_switch'] = 'top'%%00010%%00010# creates variable for not used columns removal IF switch%%00010if flow_variables['remove_not_used'] == 1:%%00010    flow_variables['if_switch'] = 'top'%%00010elif flow_variables['remove_not_used'] == 0:%%00010    flow_variables['if_switch'] = 'bottom'%%00010"/>
 <entry key="rowLimit" type="xint" value="1000"/>
 <entry key="pythonVersionOption" type="xstring" value="python3"/>
 <entry key="python2Command" type="xstring" value=""/>

@@ -28,7 +28,7 @@
 </config>
 <config key="port-descriptions">
 <entry key="array-size" type="xint" value="1"/>
-<entry key="0" type="xstring" value=""/>
+<entry key="0" type="xstring" value="Data after normalization"/>
 </config>
 </config>
 <config key="nodeAnnotation">

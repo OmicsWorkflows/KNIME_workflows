@@ -8,12 +8,6 @@
 <entry key="class" type="xstring" value="STRING"/>
 <entry key="value" type="xstring" value="LIMMA_DIA_s2-s1.adj.P.Val"/>
 </config>
-<config key="Variable_1">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="p_column"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="LIMMA_DIA_s2-s1.adj.P.Val"/>
-</config>
 </config>
 <config key="internal_node_subsettings">
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
@@ -25,7 +19,7 @@
 <entry key="hideInDialog" type="xboolean" value="false"/>
 <entry key="parameterName" type="xstring" value="p_column"/>
 <entry key="label" type="xstring" value="Select column containing p-values (or adjusted p-values)"/>
-<entry key="description" type="xstring" value="Enter Description"/>
+<entry key="description" type="xstring" value="Select the data table column in which p-values, or preferably adjusted p-values, are stored after running LIMMA test. The tested contrast needs to be the same as in the logFC column."/>
 <entry key="required" type="xboolean" value="true"/>
 <entry key="flowVariableName" type="xstring" value="p_column"/>
 <config key="possibleColumns">
@@ -37,82 +31,82 @@
 <entry key="4" type="xstring" value="UniProt_Gene names  (primary )"/>
 <entry key="5" type="xstring" value="UniProt_Protein names"/>
 <entry key="6" type="xstring" value="Lib.PG.Q.Value"/>
-<entry key="7" type="xstring" value="Precursor.Id (Count)+1_1 (Count*)"/>
-<entry key="8" type="xstring" value="Precursor.Id (Count)+1_2 (Count*)"/>
-<entry key="9" type="xstring" value="Precursor.Id (Count)+1_3 (Count*)"/>
-<entry key="10" type="xstring" value="Precursor.Id (Count)+2_1 (Count*)"/>
-<entry key="11" type="xstring" value="Precursor.Id (Count)+2_2 (Count*)"/>
-<entry key="12" type="xstring" value="Precursor.Id (Count)+2_3 (Count*)"/>
-<entry key="13" type="xstring" value="Proteotypic (Min*)+1_1 (Sum)"/>
-<entry key="14" type="xstring" value="Proteotypic (Min*)+1_2 (Sum)"/>
-<entry key="15" type="xstring" value="Proteotypic (Min*)+1_3 (Sum)"/>
-<entry key="16" type="xstring" value="Proteotypic (Min*)+2_1 (Sum)"/>
-<entry key="17" type="xstring" value="Proteotypic (Min*)+2_2 (Sum)"/>
-<entry key="18" type="xstring" value="Proteotypic (Min*)+2_3 (Sum)"/>
-<entry key="19" type="xstring" value="Stripped.Sequence (Concatenate)"/>
-<entry key="20" type="xstring" value="Stripped.Sequence (Count)"/>
-<entry key="21" type="xstring" value="UniProt_Protein ID"/>
-<entry key="22" type="xstring" value="UniProt_Status"/>
-<entry key="23" type="xstring" value="UniProt_Mass"/>
-<entry key="24" type="xstring" value="UniProt_Length"/>
-<entry key="25" type="xstring" value="UniProt_Organism"/>
-<entry key="26" type="xstring" value="UniProt_Gene ontology (GO)"/>
-<entry key="27" type="xstring" value="UniProt_Gene ontology (biological process)"/>
-<entry key="28" type="xstring" value="UniProt_Gene ontology (molecular function)"/>
-<entry key="29" type="xstring" value="UniProt_Gene ontology (cellular component)"/>
-<entry key="30" type="xstring" value="UniProt_Gene ontology IDs"/>
-<entry key="31" type="xstring" value="UniProt_Subcellular location [CC]"/>
-<entry key="32" type="xstring" value="UniProt_Protein families"/>
-<entry key="33" type="xstring" value="UniProt_Interacts with"/>
-<entry key="34" type="xstring" value="UniProt_Sequence"/>
-<entry key="35" type="xstring" value="UniProt_Cross-reference (InterPro)"/>
-<entry key="36" type="xstring" value="UniProt_Cross-reference (Pfam)"/>
-<entry key="37" type="xstring" value="UniProt_Cross-reference (IntAct)"/>
-<entry key="38" type="xstring" value="PG.MaxLFQ+1_1"/>
-<entry key="39" type="xstring" value="PG.MaxLFQ+1_2"/>
-<entry key="40" type="xstring" value="PG.MaxLFQ+1_3"/>
-<entry key="41" type="xstring" value="PG.MaxLFQ+2_1"/>
-<entry key="42" type="xstring" value="PG.MaxLFQ+2_2"/>
-<entry key="43" type="xstring" value="PG.MaxLFQ+2_3"/>
-<entry key="44" type="xstring" value="PG.Normalised+1_1"/>
-<entry key="45" type="xstring" value="PG.Normalised+1_2"/>
-<entry key="46" type="xstring" value="PG.Normalised+1_3"/>
-<entry key="47" type="xstring" value="PG.Normalised+2_1"/>
-<entry key="48" type="xstring" value="PG.Normalised+2_2"/>
-<entry key="49" type="xstring" value="PG.Normalised+2_3"/>
-<entry key="50" type="xstring" value="PG.Quantity+1_1"/>
-<entry key="51" type="xstring" value="PG.Quantity+1_2"/>
-<entry key="52" type="xstring" value="PG.Quantity+1_3"/>
-<entry key="53" type="xstring" value="PG.Quantity+2_1"/>
-<entry key="54" type="xstring" value="PG.Quantity+2_2"/>
-<entry key="55" type="xstring" value="PG.Quantity+2_3"/>
-<entry key="56" type="xstring" value="PG.Quantity_sum"/>
-<entry key="57" type="xstring" value="PG.ID_log2"/>
-<entry key="58" type="xstring" value="PG.MaxLFQ+1_1_log2"/>
-<entry key="59" type="xstring" value="PG.MaxLFQ+1_2_log2"/>
-<entry key="60" type="xstring" value="PG.MaxLFQ+1_3_log2"/>
-<entry key="61" type="xstring" value="PG.MaxLFQ+2_1_log2"/>
-<entry key="62" type="xstring" value="PG.MaxLFQ+2_2_log2"/>
-<entry key="63" type="xstring" value="PG.MaxLFQ+2_3_log2"/>
-<entry key="64" type="xstring" value="PG.Normalised+1_1_log2"/>
-<entry key="65" type="xstring" value="PG.Normalised+1_2_log2"/>
-<entry key="66" type="xstring" value="PG.Normalised+1_3_log2"/>
-<entry key="67" type="xstring" value="PG.Normalised+2_1_log2"/>
-<entry key="68" type="xstring" value="PG.Normalised+2_2_log2"/>
-<entry key="69" type="xstring" value="PG.Normalised+2_3_log2"/>
-<entry key="70" type="xstring" value="PG.Quantity_sum_log2"/>
-<entry key="71" type="xstring" value="PG.Quantity+1_1_log2"/>
-<entry key="72" type="xstring" value="PG.Quantity+1_2_log2"/>
-<entry key="73" type="xstring" value="PG.Quantity+1_3_log2"/>
-<entry key="74" type="xstring" value="PG.Quantity+2_1_log2"/>
-<entry key="75" type="xstring" value="PG.Quantity+2_2_log2"/>
-<entry key="76" type="xstring" value="PG.Quantity+2_3_log2"/>
-<entry key="77" type="xstring" value="PG.MaxLFQ+1_1_log2_bin"/>
-<entry key="78" type="xstring" value="PG.MaxLFQ+1_2_log2_bin"/>
-<entry key="79" type="xstring" value="PG.MaxLFQ+1_3_log2_bin"/>
-<entry key="80" type="xstring" value="PG.MaxLFQ+2_1_log2_bin"/>
-<entry key="81" type="xstring" value="PG.MaxLFQ+2_2_log2_bin"/>
-<entry key="82" type="xstring" value="PG.MaxLFQ+2_3_log2_bin"/>
+<entry key="7" type="xstring" value="Stripped.Sequence (Concatenate)"/>
+<entry key="8" type="xstring" value="Stripped.Sequence (Count)"/>
+<entry key="9" type="xstring" value="UniProt_Protein ID"/>
+<entry key="10" type="xstring" value="UniProt_Status"/>
+<entry key="11" type="xstring" value="UniProt_Mass"/>
+<entry key="12" type="xstring" value="UniProt_Length"/>
+<entry key="13" type="xstring" value="UniProt_Organism"/>
+<entry key="14" type="xstring" value="UniProt_Gene ontology (GO)"/>
+<entry key="15" type="xstring" value="UniProt_Gene ontology (biological process)"/>
+<entry key="16" type="xstring" value="UniProt_Gene ontology (molecular function)"/>
+<entry key="17" type="xstring" value="UniProt_Gene ontology (cellular component)"/>
+<entry key="18" type="xstring" value="UniProt_Gene ontology IDs"/>
+<entry key="19" type="xstring" value="UniProt_Subcellular location [CC]"/>
+<entry key="20" type="xstring" value="UniProt_Protein families"/>
+<entry key="21" type="xstring" value="UniProt_Interacts with"/>
+<entry key="22" type="xstring" value="UniProt_Sequence"/>
+<entry key="23" type="xstring" value="UniProt_Cross-reference (InterPro)"/>
+<entry key="24" type="xstring" value="UniProt_Cross-reference (Pfam)"/>
+<entry key="25" type="xstring" value="UniProt_Cross-reference (IntAct)"/>
+<entry key="26" type="xstring" value="PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti"/>
+<entry key="27" type="xstring" value="PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti"/>
+<entry key="28" type="xstring" value="PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti"/>
+<entry key="29" type="xstring" value="PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti"/>
+<entry key="30" type="xstring" value="PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti"/>
+<entry key="31" type="xstring" value="PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti"/>
+<entry key="32" type="xstring" value="PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti"/>
+<entry key="33" type="xstring" value="PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti"/>
+<entry key="34" type="xstring" value="PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti"/>
+<entry key="35" type="xstring" value="PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti"/>
+<entry key="36" type="xstring" value="PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti"/>
+<entry key="37" type="xstring" value="PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti"/>
+<entry key="38" type="xstring" value="PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti"/>
+<entry key="39" type="xstring" value="PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti"/>
+<entry key="40" type="xstring" value="PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti"/>
+<entry key="41" type="xstring" value="PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti"/>
+<entry key="42" type="xstring" value="PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti"/>
+<entry key="43" type="xstring" value="PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti"/>
+<entry key="44" type="xstring" value="PG.Quantity_sum"/>
+<entry key="45" type="xstring" value="Precursor.Id+IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti"/>
+<entry key="46" type="xstring" value="Precursor.Id+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti"/>
+<entry key="47" type="xstring" value="Precursor.Id+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti"/>
+<entry key="48" type="xstring" value="Precursor.Id+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti"/>
+<entry key="49" type="xstring" value="Precursor.Id+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti"/>
+<entry key="50" type="xstring" value="Precursor.Id+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti"/>
+<entry key="51" type="xstring" value="Proteotypic+IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti"/>
+<entry key="52" type="xstring" value="Proteotypic+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti"/>
+<entry key="53" type="xstring" value="Proteotypic+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti"/>
+<entry key="54" type="xstring" value="Proteotypic+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti"/>
+<entry key="55" type="xstring" value="Proteotypic+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti"/>
+<entry key="56" type="xstring" value="Proteotypic+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti"/>
+<entry key="57" type="xstring" value="PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti_log2"/>
+<entry key="58" type="xstring" value="PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2"/>
+<entry key="59" type="xstring" value="PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2"/>
+<entry key="60" type="xstring" value="PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2"/>
+<entry key="61" type="xstring" value="PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2"/>
+<entry key="62" type="xstring" value="PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"/>
+<entry key="63" type="xstring" value="PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti_log2"/>
+<entry key="64" type="xstring" value="PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2"/>
+<entry key="65" type="xstring" value="PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2"/>
+<entry key="66" type="xstring" value="PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2"/>
+<entry key="67" type="xstring" value="PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2"/>
+<entry key="68" type="xstring" value="PG.Normalised+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"/>
+<entry key="69" type="xstring" value="PG.Quantity_sum_log2"/>
+<entry key="70" type="xstring" value="Proteotypic_max"/>
+<entry key="71" type="xstring" value="PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti_log2"/>
+<entry key="72" type="xstring" value="PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2"/>
+<entry key="73" type="xstring" value="PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2"/>
+<entry key="74" type="xstring" value="PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2"/>
+<entry key="75" type="xstring" value="PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2"/>
+<entry key="76" type="xstring" value="PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"/>
+<entry key="77" type="xstring" value="PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti_log2_bin"/>
+<entry key="78" type="xstring" value="PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti_log2_bin"/>
+<entry key="79" type="xstring" value="PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti_log2_bin"/>
+<entry key="80" type="xstring" value="PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti_log2_bin"/>
+<entry key="81" type="xstring" value="PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti_log2_bin"/>
+<entry key="82" type="xstring" value="PG.MaxLFQ+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2_bin"/>
 <entry key="83" type="xstring" value="s1_sum"/>
 <entry key="84" type="xstring" value="s2_sum"/>
 <entry key="85" type="xstring" value="LIMMA_DIA_s2-s1.logFC"/>

@@ -28,7 +28,7 @@
 <config key="port-descriptions">
 <entry key="array-size" type="xint" value="0"/>
 </config>
-<entry key="sub-node-description" type="xstring" value=""/>
+<entry key="sub-node-description" type="xstring" value="Allows for loading an example DIA-NN .tsv file (included in the workflow). There are two options for an example dataset: the main output.tsv file and and -first-pass.tsv file."/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
 <entry key="state" type="xstring" value="CONFIGURED"/>

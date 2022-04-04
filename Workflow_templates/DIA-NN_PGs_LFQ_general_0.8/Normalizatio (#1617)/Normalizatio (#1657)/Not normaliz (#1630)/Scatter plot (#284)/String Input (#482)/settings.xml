@@ -11,7 +11,7 @@
 </config>
 <entry key="label" type="xstring" value="Value to impute missing values"/>
 <entry key="description" type="xstring" value="enter the value for imputation of missing values; default value is &quot;None&quot; for no imputation"/>
-<entry key="hideInWizard" type="xboolean" value="false"/>
+<entry key="hideInWizard" type="xboolean" value="true"/>
 <entry key="hideInDialog" type="xboolean" value="false"/>
 <entry key="required" type="xboolean" value="true"/>
 <entry key="parameterName" type="xstring" value="string-input"/>

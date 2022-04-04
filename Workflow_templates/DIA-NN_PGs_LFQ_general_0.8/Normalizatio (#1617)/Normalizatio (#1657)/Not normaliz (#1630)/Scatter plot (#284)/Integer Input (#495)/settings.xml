@@ -11,7 +11,7 @@
 </config>
 <entry key="label" type="xstring" value="Height"/>
 <entry key="description" type="xstring" value="set height of individual plot in pixels (aspect ratio is set to 1); default value is 250"/>
-<entry key="hideInWizard" type="xboolean" value="false"/>
+<entry key="hideInWizard" type="xboolean" value="true"/>
 <entry key="hideInDialog" type="xboolean" value="false"/>
 <entry key="required" type="xboolean" value="true"/>
 <entry key="parameterName" type="xstring" value="int-input"/>

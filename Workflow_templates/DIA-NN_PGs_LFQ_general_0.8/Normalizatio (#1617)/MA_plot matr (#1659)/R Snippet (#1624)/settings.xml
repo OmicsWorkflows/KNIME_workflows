@@ -8,12 +8,24 @@
 <entry key="class" type="xstring" value="STRING"/>
 <entry key="value" type="xstring" value="true"/>
 </config>
+<config key="Variable_1">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="ma_imp"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="None"/>
+</config>
+<config key="Variable_2">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="ma_size_int"/>
+<entry key="class" type="xstring" value="INTEGER"/>
+<entry key="value" type="xint" value="250"/>
+</config>
 </config>
 <config key="internal_node_subsettings">
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="script" type="xstring" value="knime.out &lt;- knime.in%%00010%%00010if (knime.flow.in[[&quot;ma_unity&quot;]] == 1) {%%00010%%00009unity &lt;- &quot;true&quot;%%00010} else {%%00010%%00009unity &lt;- &quot;false&quot;%%00010}%%00010%%00010knime.flow.out &lt;- list(ma_unity = unity)"/>
+<entry key="script" type="xstring" value="knime.out &lt;- knime.in%%00010%%00010if (knime.flow.in[[&quot;ma_unity&quot;]] == 1) {%%00010%%00009unity &lt;- &quot;true&quot;%%00010} else {%%00010%%00009unity &lt;- &quot;false&quot;%%00010}%%00010%%00010imp &lt;- trimws(knime.flow.in[[&quot;ma_imp&quot;]])%%00010if (imp == &quot;&quot;) {%%00010%%00009imp &lt;- &quot;None&quot;%%00010} else {%%00010%%00009imp &lt;- imp%%00010}%%00010%%00010z &lt;- as.integer(knime.flow.in[[&quot;ma_size&quot;]])%%00010%%00010knime.flow.out &lt;- list(ma_unity = unity,%%00010%%00009%%00009%%00009%%00009   ma_imp = imp,%%00010%%00009%%00009%%00009%%00009   ma_size_int = z)"/>
 <entry key="templateUUID" type="xstring" isnull="true" value=""/>
 <entry key="version" type="xstring" value="version 1.x"/>
 <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
