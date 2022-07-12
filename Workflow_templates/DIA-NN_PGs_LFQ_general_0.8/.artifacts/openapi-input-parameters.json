@@ -977,12 +977,6 @@
                 "variable_value": "width"
             }
         },
-        "single-line-1618:975": {
-            "type": "string",
-            "default": "s1,s1,s1,\ns2,s2,s2",
-            "description": "provide experimental design for the calculation of sample type and or biol. repl. summary",
-            "example": "s1,s1,s1,\ns2,s2,s2"
-        },
         "single-selection-1617:1657:1630:443": {
             "type": "object",
             "properties": {
@@ -995,12 +989,6 @@
             "example": {
                 "variable_value": "scott"
             }
-        },
-        "single-line-1618:977": {
-            "type": "string",
-            "default": "none",
-            "description": "provide biological replicate numbers for the calculation of biol. repl. summary",
-            "example": "none"
         },
         "string-input-1617:1657:1674:287:329": {
             "type": "string",
@@ -1325,6 +1313,12 @@
                 "columns": [
                 ]
             }
+        },
+        "double-input-1622:963": {
+            "type": "number",
+            "default": 0.1,
+            "description": "Set the default value (cut-off/threshold) which will all values of matrix be compared to",
+            "example": 0.1
         },
         "boolean-input-1617:1657:1672:285:328": {
             "type": "boolean",
@@ -2455,6 +2449,12 @@
             "description": "whether to show or not the raw values in each heatmap cell",
             "example": true
         },
+        "single-line-1622:975": {
+            "type": "string",
+            "default": "s1,s1,s1,\ns2,s2,s2",
+            "description": "provide experimental design for the calculation of sample type and or biol. repl. summary",
+            "example": "s1,s1,s1,\ns2,s2,s2"
+        },
         "single-selection-1617:1657:1666:285:261": {
             "type": "object",
             "properties": {
@@ -2485,6 +2485,12 @@
             "default": 0.5,
             "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
             "example": 0.5
+        },
+        "single-line-1622:977": {
+            "type": "string",
+            "default": "none",
+            "description": "provide biological replicate numbers for the calculation of biol. repl. summary",
+            "example": "none"
         },
         "string-input-1617:1657:1630:287:445": {
             "type": "string",
@@ -2879,12 +2885,6 @@
                 ]
             }
         },
-        "boolean-input-1618:973": {
-            "type": "boolean",
-            "default": "true",
-            "description": "check if you want to calculate sample type summary; design has to be provided for the processing",
-            "example": true
-        },
         "string-input-1617:1657:1667:284:489": {
             "type": "string",
             "default": "None",
@@ -2924,12 +2924,6 @@
             "default": "PG.Quantity+",
             "description": "common data columns prefix to be removed prior plotting",
             "example": "PG.Quantity+"
-        },
-        "boolean-input-1618:976": {
-            "type": "boolean",
-            "default": "false",
-            "description": "check if you want to calculate biological replicate summary; design and biol. replicates have to be provided for the processing",
-            "example": false
         },
         "single-selection-1617:1657:1530:310:258": {
             "type": "object",
@@ -3056,12 +3050,6 @@
             "description": "x axis value at which the center (control) line should be drawn; 'None' not to draw any extra line next to the KDE plots",
             "example": "None"
         },
-        "boolean-input-1618:981": {
-            "type": "boolean",
-            "default": "false",
-            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning binary matrix; checked -> dataframe of processed columns will be returned only (ie the binary matrix itself)",
-            "example": false
-        },
         "string-input-1617:1657:1675:282:439": {
             "type": "string",
             "default": "_log2",
@@ -3079,29 +3067,6 @@
             "default": "_log2",
             "description": "common data columns suffix to be removed prior plotting",
             "example": "_log2"
-        },
-        "column-filter-1618:911": {
-            "type": "object",
-            "properties": {
-                "columns": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "default": "PG.MaxLFQ+1_1_log2"
-                    }
-                }
-            },
-            "description": "select columns to be processed",
-            "example": {
-                "columns": [
-                    "PG.MaxLFQ+1_1_log2",
-                    "PG.MaxLFQ+1_2_log2",
-                    "PG.MaxLFQ+1_3_log2",
-                    "PG.MaxLFQ+2_1_log2",
-                    "PG.MaxLFQ+2_2_log2",
-                    "PG.MaxLFQ+2_3_log2"
-                ]
-            }
         },
         "string-input-1617:1657:1669:286:445": {
             "type": "string",
@@ -5051,19 +5016,6 @@
             "description": "common data columns prefix to be removed prior plotting",
             "example": "PG.Quantity+"
         },
-        "single-selection-1618:962": {
-            "type": "object",
-            "properties": {
-                "variable_value": {
-                    "type": "string",
-                    "default": ">"
-                }
-            },
-            "description": "Setting the logical operator for the comparison with values in the matrix",
-            "example": {
-                "variable_value": ">"
-            }
-        },
         "double-input-1617:1657:1675:285:444": {
             "type": "number",
             "default": 0.5,
@@ -5574,18 +5526,6 @@
                 ]
             }
         },
-        "string-input-1618:978": {
-            "type": "string",
-            "default": "_bin",
-            "description": "Common data columns suffix to be appended to the binary matrix columns",
-            "example": "_bin"
-        },
-        "string-input-1618:979": {
-            "type": "string",
-            "default": "PG.MaxLFQ_",
-            "description": "Common summary columns prefix to be appended prior the sample name based on the design, e.g. \"Peptides \"",
-            "example": "PG.MaxLFQ_"
-        },
         "boolean-input-1617:1657:1675:283:429": {
             "type": "boolean",
             "default": "true",
@@ -5793,12 +5733,6 @@
             "default": "",
             "description": "additional information that should be present as the graph subtitle",
             "example": ""
-        },
-        "string-input-1618:980": {
-            "type": "string",
-            "default": "_log2_bin_sum",
-            "description": "Common summary columns suffix to be appended after the sample name based on the design and suffix appended to the binary table",
-            "example": "_log2_bin_sum"
         },
         "boolean-input-1617:1657:1669:281:487": {
             "type": "boolean",
@@ -6279,6 +6213,12 @@
                 "column": "new"
             }
         },
+        "boolean-input-1622:973": {
+            "type": "boolean",
+            "default": "true",
+            "description": "check if you want to calculate sample type summary; design has to be provided for the processing",
+            "example": true
+        },
         "string-input-1617:1657:1667:281:492": {
             "type": "string",
             "default": "None",
@@ -6316,6 +6256,12 @@
             "default": "_log2",
             "description": "common data columns suffix to be removed prior plotting",
             "example": "_log2"
+        },
+        "boolean-input-1622:976": {
+            "type": "boolean",
+            "default": "false",
+            "description": "check if you want to calculate biological replicate summary; design and biol. replicates have to be provided for the processing",
+            "example": false
         },
         "string-input-1617:1657:1667:281:493": {
             "type": "string",
@@ -8472,6 +8418,12 @@
             "description": "how the graph y axis should be titled",
             "example": ""
         },
+        "string-input-1622:979": {
+            "type": "string",
+            "default": "PG.MaxLFQ_",
+            "description": "Common summary columns prefix to be appended prior the sample name based on the design, e.g. \"Peptides \"",
+            "example": "PG.MaxLFQ_"
+        },
         "column-filter-1617:1657:1675:283:257": {
             "type": "object",
             "properties": {
@@ -8500,6 +8452,12 @@
             "default": "true",
             "description": "whether to show or not the raw values in each heatmap cell",
             "example": true
+        },
+        "string-input-1622:978": {
+            "type": "string",
+            "default": "_bin",
+            "description": "Common data columns suffix to be appended to the binary matrix columns",
+            "example": "_bin"
         },
         "string-input-1617:1657:1630:281:482": {
             "type": "string",
@@ -8538,6 +8496,12 @@
             "default": "Auto",
             "description": "limits of x axis in the form of two numbers separated by semicolon; use point (.) as decimal separator; use Auto for automatic limits",
             "example": "Auto"
+        },
+        "string-input-1622:980": {
+            "type": "string",
+            "default": "_log2_bin_sum",
+            "description": "Common summary columns suffix to be appended after the sample name based on the design and suffix appended to the binary table",
+            "example": "_log2_bin_sum"
         },
         "string-input-1617:1657:1671:283:409": {
             "type": "string",
@@ -8929,6 +8893,19 @@
             "default": "false",
             "description": "plot 'x-y' (M) on '(x+y)/2' (A) instead of 'y' on 'x'?",
             "example": false
+        },
+        "single-selection-1622:962": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": ">"
+                }
+            },
+            "description": "Setting the logical operator for the comparison with values in the matrix",
+            "example": {
+                "variable_value": ">"
+            }
         },
         "string-input-1617:1657:1674:283:438": {
             "type": "string",
@@ -9950,6 +9927,12 @@
             "description": "common data columns prefix to be removed prior plotting",
             "example": "PG.Quantity+"
         },
+        "boolean-input-1622:981": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning binary matrix; checked -> dataframe of processed columns will be returned only (ie the binary matrix itself)",
+            "example": false
+        },
         "single-selection-1617:1657:1670:443": {
             "type": "object",
             "properties": {
@@ -10012,6 +9995,19 @@
             "default": "",
             "description": "additional information that should be present as the graphs subtitle",
             "example": ""
+        },
+        "column-filter-1622:911": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array"
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                ]
+            }
         },
         "single-selection-1617:1657:1673:283:437": {
             "type": "object",
@@ -10559,12 +10555,6 @@
             "default": "Intensity (log2)",
             "description": "how the graph y axis should be titled",
             "example": "Intensity (log2)"
-        },
-        "double-input-1618:963": {
-            "type": "number",
-            "default": 0.1,
-            "description": "Set the default value (cut-off/threshold) which will all values of matrix be compared to",
-            "example": 0.1
         },
         "string-input-1617:1657:1669:258": {
             "type": "string",

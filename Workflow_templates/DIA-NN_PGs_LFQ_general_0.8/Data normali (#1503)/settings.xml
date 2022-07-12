@@ -75,6 +75,10 @@
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
 <entry key="state" type="xstring" value="IDLE"/>
+<config key="nodecontainer_message">
+<entry key="type" type="xstring" value="WARNING"/>
+<entry key="message" type="xstring" value="Status: Error: Data normalization 3:1503%%00010  Status: Error: Normalization (nonlinear) 3:1503:0:311%%00010    Status: Error: Unable to load settings for node with ID suffix 278: Unable to read settings file /home/knimeuser/knime-workspace/gitfolders/KNIME_workflows/Workflow_templates/DIA-NN_PGs_LFQ_general_0.8/Data normali (#1503)/Normalizatio (#311)/Loess normal (#278)/workflow.knime"/>
+</config>
 <entry key="virtual-in-ID" type="xint" value="1300"/>
 <config key="inports">
 <config key="inport_0">

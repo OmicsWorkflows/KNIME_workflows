@@ -28,7 +28,7 @@
 <entry key="state" type="xstring" value="IDLE"/>
 <config key="nodecontainer_message">
 <entry key="type" type="xstring" value="WARNING"/>
-<entry key="message" type="xstring" value="End IF 6:1489:0:1494: The structures of both active input data tables are not compatible."/>
+<entry key="message" type="xstring" value="End IF 3:1489:0:1494: The structures of both active input data tables are not compatible."/>
 </config>
 <entry key="virtual-in-ID" type="xint" value="1489"/>
 <config key="inports"/>
