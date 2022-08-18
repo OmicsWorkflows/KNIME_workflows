@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="DecoyDatabase.version" type="xstring" value="2.6.0"/>
+        <entry key="DecoyDatabase.1.decoy_string" type="xstring" value="DECOY_"/>
+        <entry key="DecoyDatabase.1.decoy_string_position" type="xstring" value="prefix"/>
+        <entry key="DecoyDatabase.1.only_decoy" type="xstring" value="false"/>
+        <entry key="DecoyDatabase.1.type" type="xstring" value="protein"/>
+        <entry key="DecoyDatabase.1.method" type="xstring" value="reverse"/>
+        <entry key="DecoyDatabase.1.shuffle_max_attempts" type="xstring" value="30"/>
+        <entry key="DecoyDatabase.1.shuffle_sequence_identity_threshold" type="xstring" value="0.5"/>
+        <entry key="DecoyDatabase.1.seed" type="xstring" value="1"/>
+        <entry key="DecoyDatabase.1.enzyme" type="xstring" value="Trypsin/P"/>
+        <entry key="DecoyDatabase.1.log" type="xstring" isnull="true" value=""/>
+        <entry key="DecoyDatabase.1.debug" type="xstring" value="0"/>
+        <entry key="DecoyDatabase.1.threads" type="xstring" value="2"/>
+        <entry key="DecoyDatabase.1.no_progress" type="xstring" value="false"/>
+        <entry key="DecoyDatabase.1.force" type="xstring" value="false"/>
+        <entry key="DecoyDatabase.1.test" type="xstring" value="false"/>
+        <entry key="DecoyDatabase.1.Decoy.non_shuffle_pattern" type="xstring" isnull="true" value=""/>
+        <entry key="DecoyDatabase.1.Decoy.keepPeptideNTerm" type="xstring" value="true"/>
+        <entry key="DecoyDatabase.1.Decoy.keepPeptideCTerm" type="xstring" value="true"/>
+        <entry key="GENERIC_KNIME_NODES_outtype#0" type="xint" value="0"/>
+        <entry key="GENERIC_KNIME_NODES_active#0" type="xboolean" value="true"/>
+        <entry key="GENERIC_KNIME_NODES_linkedinput#0" type="xint" value="0"/>
+        <entry key="GENERIC_KNIME_NODES_custombasename#0" type="xstring" value=""/>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value=""/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="76"/>
+        <entry key="y-coordinate" type="xint" value="580"/>
+        <entry key="width" type="xint" value="142"/>
+        <entry key="height" type="xint" value="17"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="11"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="factory" type="xstring" value="de.openms.knime.nodes.DecoyDatabase.DecoyDatabaseNodeFactory"/>
+    <entry key="node-name" type="xstring" value="DecoyDatabase"/>
+    <entry key="node-bundle-name" type="xstring" value="Generic Workflow Nodes for KNIME: OpenMS"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="de.openms"/>
+    <entry key="node-bundle-vendor" type="xstring" value="Freie Universitaet Berlin, Universitaet Tuebingen, and the OpenMS Team"/>
+    <entry key="node-bundle-version" type="xstring" value="2.7.0.202109131426"/>
+    <entry key="node-feature-name" type="xstring" value="OpenMS"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="de.openms.feature.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" isnull="true" value=""/>
+    <entry key="node-feature-version" type="xstring" value="2.7.0.202109131426"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="DecoyDatabase"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.uri.URIPortObjectSpec"/>
+            <entry key="port_object_class" type="xstring" value="com.genericworkflownodes.knime.base.data.port.FileStoreURIPortObject"/>
+            <entry key="port_object_summary" type="xstring" value="1 file (extension: &quot;fasta&quot;)"/>
+            <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
+            <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" value="filestore"/>
+        <entry key="file_store_id" type="xstring" value="235830fa-18f8-455d-8af2-8ef9ef52f3e5"/>
+    </config>
+</config>

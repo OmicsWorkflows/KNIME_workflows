@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="MSGFPlusAdapter.version" type="xstring" value="2.6.0"/>
+        <entry key="MSGFPlusAdapter.1.add_decoys" type="xstring" value="false"/>
+        <entry key="MSGFPlusAdapter.1.precursor_mass_tolerance" type="xstring" value="10.0"/>
+        <entry key="MSGFPlusAdapter.1.precursor_error_units" type="xstring" value="ppm"/>
+        <entry key="MSGFPlusAdapter.1.isotope_error_range" type="xstring" value="0,1"/>
+        <entry key="MSGFPlusAdapter.1.fragment_method" type="xstring" value="from_spectrum"/>
+        <entry key="MSGFPlusAdapter.1.instrument" type="xstring" value="Q_Exactive"/>
+        <entry key="MSGFPlusAdapter.1.enzyme" type="xstring" value="Trypsin/P"/>
+        <entry key="MSGFPlusAdapter.1.protocol" type="xstring" value="automatic"/>
+        <entry key="MSGFPlusAdapter.1.tryptic" type="xstring" value="fully"/>
+        <entry key="MSGFPlusAdapter.1.min_precursor_charge" type="xstring" value="2"/>
+        <entry key="MSGFPlusAdapter.1.max_precursor_charge" type="xstring" value="3"/>
+        <entry key="MSGFPlusAdapter.1.min_peptide_length" type="xstring" value="6"/>
+        <entry key="MSGFPlusAdapter.1.max_peptide_length" type="xstring" value="40"/>
+        <entry key="MSGFPlusAdapter.1.matches_per_spec" type="xstring" value="1"/>
+        <entry key="MSGFPlusAdapter.1.add_features" type="xstring" value="true"/>
+        <entry key="MSGFPlusAdapter.1.max_mods" type="xstring" value="2"/>
+        <entry key="MSGFPlusAdapter.1.max_missed_cleavages" type="xstring" value="-1"/>
+        <entry key="MSGFPlusAdapter.1.tasks" type="xstring" value="0"/>
+        <entry key="MSGFPlusAdapter.1.fixed_modifications" type="xstring" value="Carbamidomethyl (C)@@@__@@@"/>
+        <entry key="MSGFPlusAdapter.1.variable_modifications" type="xstring" value="Oxidation (M)@@@__@@@Deamidated (N)@@@__@@@Deamidated (Q)@@@__@@@"/>
+        <entry key="MSGFPlusAdapter.1.legacy_conversion" type="xstring" value="false"/>
+        <entry key="MSGFPlusAdapter.1.java_memory" type="xstring" value="3500"/>
+        <entry key="MSGFPlusAdapter.1.java_permgen" type="xstring" value="0"/>
+        <entry key="MSGFPlusAdapter.1.log" type="xstring" isnull="true" value=""/>
+        <entry key="MSGFPlusAdapter.1.debug" type="xstring" value="0"/>
+        <entry key="MSGFPlusAdapter.1.threads" type="xstring" value="1"/>
+        <entry key="MSGFPlusAdapter.1.no_progress" type="xstring" value="false"/>
+        <entry key="MSGFPlusAdapter.1.force" type="xstring" value="false"/>
+        <entry key="MSGFPlusAdapter.1.test" type="xstring" value="false"/>
+        <entry key="GENERIC_KNIME_NODES_outtype#0" type="xint" value="0"/>
+        <entry key="GENERIC_KNIME_NODES_active#0" type="xboolean" value="true"/>
+        <entry key="GENERIC_KNIME_NODES_linkedinput#0" type="xint" value="0"/>
+        <entry key="GENERIC_KNIME_NODES_custombasename#0" type="xstring" value=""/>
+        <entry key="GENERIC_KNIME_NODES_outtype#1" type="xint" value="0"/>
+        <entry key="GENERIC_KNIME_NODES_active#1" type="xboolean" value="true"/>
+        <entry key="GENERIC_KNIME_NODES_linkedinput#1" type="xint" value="0"/>
+        <entry key="GENERIC_KNIME_NODES_custombasename#1" type="xstring" value=""/>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value=""/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="-110"/>
+        <entry key="y-coordinate" type="xint" value="431"/>
+        <entry key="width" type="xint" value="142"/>
+        <entry key="height" type="xint" value="17"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="11"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="de.openms.knime.nodes.MSGFPlusAdapter.MSGFPlusAdapterNodeFactory"/>
+    <entry key="node-name" type="xstring" value="MSGFPlusAdapter"/>
+    <entry key="node-bundle-name" type="xstring" value="Generic Workflow Nodes for KNIME: OpenMS"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="de.openms"/>
+    <entry key="node-bundle-vendor" type="xstring" value="Freie Universitaet Berlin, Universitaet Tuebingen, and the OpenMS Team"/>
+    <entry key="node-bundle-version" type="xstring" value="2.7.0.202109131426"/>
+    <entry key="node-feature-name" type="xstring" value="OpenMS"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="de.openms.feature.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" isnull="true" value=""/>
+    <entry key="node-feature-version" type="xstring" value="2.7.0.202109131426"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="MSGFPlusAdapter"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+        <config key="port_2">
+            <entry key="index" type="xint" value="2"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

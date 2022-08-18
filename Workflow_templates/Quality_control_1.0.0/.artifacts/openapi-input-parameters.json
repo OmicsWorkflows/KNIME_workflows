@@ -1,0 +1,142 @@
+
+{
+    "type": "object",
+    "properties": {
+        "column-filter-1013:1036:990:950": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array"
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                ]
+            }
+        },
+        "column-filter-1013:1043:990:950": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array"
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                ]
+            }
+        },
+        "column-filter-1013:1032:990:950": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array"
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                ]
+            }
+        },
+        "column-filter-1013:1044:990:950": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "default": "intensity"
+                    }
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                    "intensity",
+                    "accessions"
+                ]
+            }
+        },
+        "column-filter-1013:1041:990:950": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array"
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                ]
+            }
+        },
+        "column-filter-1013:1039:990:950": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array"
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                ]
+            }
+        },
+        "column-filter-1013:1038:990:950": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array"
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                ]
+            }
+        },
+        "column-filter-1013:1042:990:950": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array"
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                ]
+            }
+        },
+        "column-filter-1013:1040:990:950": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array"
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                ]
+            }
+        },
+        "column-filter-1013:1037:990:950": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "array"
+                }
+            },
+            "description": "select columns to be processed",
+            "example": {
+                "columns": [
+                ]
+            }
+        }
+    }
+}

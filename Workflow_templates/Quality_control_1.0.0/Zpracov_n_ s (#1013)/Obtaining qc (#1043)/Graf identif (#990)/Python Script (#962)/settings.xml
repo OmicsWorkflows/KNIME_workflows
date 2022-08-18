@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="sourceCode" type="xstring" value="# Copy input to output%%00010import pandas as pd%%00010output_table_1 = pd.DataFrame()%%00010%%00010if not input_table_1.empty:%%00010%%00009data = input_table_1%%00010%%00009data_sorted = data.sort_values(by = ['intensity'], ascending=False)%%00010%%00009identified = 1%%00010%%00009non_identified = 0%%00010%%00009%%00010%%00009identif = [None] * data.shape[0]%%00010%%00009for i in range(0, data.shape[0]):%%00010%%00009    if data_sorted['accessions'][i] == 'UNIDENTIFIED_PROTEIN':%%00010%%00009        identif[i] = 0%%00010%%00009    else:%%00010%%00009        identif[i] = 1%%00010%%00009data_sorted['identif'] = identif%%00010%%00009%%00010%%00009y_list_id = []%%00010%%00009y_list_no_id = []%%00010%%00009y_list_id = [data_sorted.intensity.sum()]%%00010%%00009y_list_no_id = [data_sorted.intensity.sum()]%%00010%%00009%%00010%%00009index_list = [*range(1, data.shape[0])]%%00010%%00009step_in_list = round(data.shape[0]/100)%%00010%%00009n_index_list = [*index_list[step_in_list:data.shape[0]: step_in_list]]%%00010%%00009for i in n_index_list:%%00010%%00009    part = data_sorted[0:i]%%00010%%00009#     print(part)%%00010%%00009    value_id = y_list_id[0] - sum(part.intensity[part.identif==identified])%%00010%%00009    value_no_id = y_list_no_id[0] - sum(part.intensity[part.identif==non_identified])%%00010%%00009    y_list_id.append(value_id)%%00010%%00009    %%00010%%00009    %%00010%%00009    y_list_no_id.append(value_no_id)%%00010%%00009%%00010%%00009%%00010%%00009output_table_1['y_list_id'] = y_list_id%%00010%%00009output_table_1['y_list_no_id'] = y_list_no_id%%00010%%00009var = 0%%00010%%00009x_axis = [var] + n_index_list%%00010%%00009output_table_1['x_axis'] = x_axis%%00010%%00009"/>
+        <entry key="rowLimit" type="xint" value="1000"/>
+        <entry key="convertMissingToPython" type="xboolean" value="false"/>
+        <entry key="convertMissingFromPython" type="xboolean" value="false"/>
+        <entry key="sentinelOption" type="xstring" value="MIN_VAL"/>
+        <entry key="sentinelValue" type="xint" value="0"/>
+        <entry key="chunkSize" type="xint" value="500000"/>
+        <entry key="pythonVersionOption" type="xstring" value="python3"/>
+        <entry key="python2Command" type="xstring" value=""/>
+        <entry key="python3Command" type="xstring" value="/usr/bin/python3.9"/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="python3Command">
+                <entry key="used_variable" type="xstring" value="python3command"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="org.knime.python2.nodes.script2.Python2ScriptNodeFactory2"/>
+    <entry key="node-name" type="xstring" value="Python Script"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Python nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python2.nodes"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.5.0.v202111232310"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Python Integration"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python2.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.5.2.v202203041212"/>
+    <config key="factory_settings"/>
+    <config key="node_creation_config">
+        <config key="Input object (pickled)"/>
+        <config key="Input table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output image"/>
+        <config key="Output object (pickled)"/>
+    </config>
+    <entry key="name" type="xstring" value="Python Script"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>
