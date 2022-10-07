@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="column-filter">
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
+            <config key="included_names">
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="id"/>
+            </config>
+            <config key="excluded_names">
+                <entry key="array-size" type="xint" value="73"/>
+                <entry key="0" type="xstring" value="Sequence"/>
+                <entry key="1" type="xstring" value="Length"/>
+                <entry key="2" type="xstring" value="Modifications"/>
+                <entry key="3" type="xstring" value="Modified sequence"/>
+                <entry key="4" type="xstring" value="Deamidation (NQ) Probabilities"/>
+                <entry key="5" type="xstring" value="Oxidation (M) Probabilities"/>
+                <entry key="6" type="xstring" value="Phospho (ST) Probabilities"/>
+                <entry key="7" type="xstring" value="Deamidation (NQ) Score Diffs"/>
+                <entry key="8" type="xstring" value="Oxidation (M) Score Diffs"/>
+                <entry key="9" type="xstring" value="Phospho (ST) Score Diffs"/>
+                <entry key="10" type="xstring" value="Acetyl (Protein N-term)"/>
+                <entry key="11" type="xstring" value="Deamidation (NQ)"/>
+                <entry key="12" type="xstring" value="Oxidation (M)"/>
+                <entry key="13" type="xstring" value="Phospho (ST)"/>
+                <entry key="14" type="xstring" value="Missed cleavages"/>
+                <entry key="15" type="xstring" value="Proteins"/>
+                <entry key="16" type="xstring" value="Leading proteins"/>
+                <entry key="17" type="xstring" value="Leading razor protein"/>
+                <entry key="18" type="xstring" value="Gene names"/>
+                <entry key="19" type="xstring" value="Protein names"/>
+                <entry key="20" type="xstring" value="Type"/>
+                <entry key="21" type="xstring" value="Raw file"/>
+                <entry key="22" type="xstring" value="Fraction"/>
+                <entry key="23" type="xstring" value="Experiment"/>
+                <entry key="24" type="xstring" value="MS/MS m/z"/>
+                <entry key="25" type="xstring" value="Charge"/>
+                <entry key="26" type="xstring" value="m/z"/>
+                <entry key="27" type="xstring" value="Mass"/>
+                <entry key="28" type="xstring" value="Resolution"/>
+                <entry key="29" type="xstring" value="Uncalibrated - Calibrated m/z [ppm]"/>
+                <entry key="30" type="xstring" value="Uncalibrated - Calibrated m/z [Da]"/>
+                <entry key="31" type="xstring" value="Mass error [ppm]"/>
+                <entry key="32" type="xstring" value="Mass error [Da]"/>
+                <entry key="33" type="xstring" value="Uncalibrated mass error [ppm]"/>
+                <entry key="34" type="xstring" value="Uncalibrated mass error [Da]"/>
+                <entry key="35" type="xstring" value="Max intensity m/z 0"/>
+                <entry key="36" type="xstring" value="Retention time"/>
+                <entry key="37" type="xstring" value="Retention length"/>
+                <entry key="38" type="xstring" value="Calibrated retention time"/>
+                <entry key="39" type="xstring" value="Calibrated retention time start"/>
+                <entry key="40" type="xstring" value="Calibrated retention time finish"/>
+                <entry key="41" type="xstring" value="Retention time calibration"/>
+                <entry key="42" type="xstring" value="Match time difference"/>
+                <entry key="43" type="xstring" value="Match m/z difference"/>
+                <entry key="44" type="xstring" value="Match q-value"/>
+                <entry key="45" type="xstring" value="Match score"/>
+                <entry key="46" type="xstring" value="Number of data points"/>
+                <entry key="47" type="xstring" value="Number of scans"/>
+                <entry key="48" type="xstring" value="Number of isotopic peaks"/>
+                <entry key="49" type="xstring" value="PIF"/>
+                <entry key="50" type="xstring" value="Fraction of total spectrum"/>
+                <entry key="51" type="xstring" value="Base peak fraction"/>
+                <entry key="52" type="xstring" value="PEP"/>
+                <entry key="53" type="xstring" value="MS/MS count"/>
+                <entry key="54" type="xstring" value="MS/MS scan number"/>
+                <entry key="55" type="xstring" value="Score"/>
+                <entry key="56" type="xstring" value="Delta score"/>
+                <entry key="57" type="xstring" value="Combinatorics"/>
+                <entry key="58" type="xstring" value="Intensity"/>
+                <entry key="59" type="xstring" value="Reporter PIF"/>
+                <entry key="60" type="xstring" value="Reporter fraction"/>
+                <entry key="61" type="xstring" value="Reverse"/>
+                <entry key="62" type="xstring" value="Potential contaminant"/>
+                <entry key="63" type="xstring" value="Protein group IDs"/>
+                <entry key="64" type="xstring" value="Peptide ID"/>
+                <entry key="65" type="xstring" value="Mod. peptide ID"/>
+                <entry key="66" type="xstring" value="MS/MS IDs"/>
+                <entry key="67" type="xstring" value="Best MS/MS"/>
+                <entry key="68" type="xstring" value="Deamidation (NQ) site IDs"/>
+                <entry key="69" type="xstring" value="Oxidation (M) site IDs"/>
+                <entry key="70" type="xstring" value="Phospho (ST) site IDs"/>
+                <entry key="71" type="xstring" value="proteinGroups_Majority protein IDs"/>
+                <entry key="72" type="xstring" value="proteinGroups_Fasta headers"/>
+            </config>
+            <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value=""/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+            </config>
+            <config key="datatype">
+                <config key="typelist">
+                    <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+                </config>
+            </config>
+        </config>
+    </config>
+    <config key="variables">
+        <config key="column-filter">
+            <config key="included_names">
+                <config key="0">
+                    <entry key="used_variable" type="xstring" value="top_input_ids_column"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
+        </config>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="outputs only %%00010top table ID column"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="329"/>
+        <entry key="y-coordinate" type="xint" value="479"/>
+        <entry key="width" type="xint" value="142"/>
+        <entry key="height" type="xint" value="32"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="10"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Column Filter"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.5.1.v202201171147"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.5.2.v202203141441"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Column Filter"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

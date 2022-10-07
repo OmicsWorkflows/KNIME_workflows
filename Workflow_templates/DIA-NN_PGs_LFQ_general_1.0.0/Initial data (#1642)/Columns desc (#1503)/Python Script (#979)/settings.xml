@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="sourceCode" type="xstring" value="import numpy%%00010import pandas%%00010%%00010# load input table%%00010input_table = input_table_1%%00010%%00010# separate string into list items%%00010def list_from_string(input):%%00010%%00009if input == &quot;none&quot;:%%00010%%00009%%00009raise Exception(&quot;Input was not provided for the requested operation, please check.&quot;)%%00010%%00009list_new = input.split(&quot;,&quot;)%%00010%%00009list_stripped = [i.strip() for i in list_new]%%00010%%00009list_stripped_cleaned = list(filter(None, list_stripped))%%00010%%00009return list_stripped_cleaned%%00010%%00010# checks if there is experiment design provided in case of grouping by replicate%%00010if (flow_variables['replicate_bool'] == 1 and flow_variables['sample_bool'] == 0):%%00010%%00009raise Exception('Experiment design needs to be provided for biological replicate summary')%%00010%%00010# creates the list with requested statistics%%00010stats_list = list_from_string(flow_variables['stats_selected'])%%00010%%00010# creates sample and replicate lists%%00010if flow_variables['sample_bool'] == 1:%%00010%%00009sample_list = list_from_string(flow_variables['sample'])%%00010%%00009%%00010if flow_variables['replicate_bool'] == 1:%%00010%%00009replicate_list = list_from_string(flow_variables['replicate'])%%00010%%00010# creates empty dataframe for the stats to be computed%%00010stats_df = pandas.DataFrame()%%00010%%00010# rename columns if experimental design and replicates are filled in%%00010if flow_variables['sample_bool'] == 1:%%00010%%00009if flow_variables['replicate_bool'] == 1:%%00010%%00009%%00009colnames = [str(sample_list[i])+'_'+str(replicate_list[i]) for i in range(len(input_table.columns))]%%00010%%00009else:%%00010%%00009%%00009colnames = [str(sample_list[i]) for i in range(len(input_table.columns))]%%00010%%00009input_table.columns = colnames%%00010%%00010# group columns based on new column names%%00010if flow_variables['sample_bool'] == 1:%%00010%%00009input_table_grouped = input_table.groupby(by=input_table.columns, axis=1)%%00010%%00009colnames_list = list(input_table_grouped.groups.keys())%%00010%%00010# iterates through the list of requested stats and adds one column with the given statistics per iteration%%00010for stat in stats_list:%%00010%%00009if flow_variables['sample_bool'] == 1:%%00010%%00009%%00009for colname in colnames_list:%%00010%%00009%%00009%%00009stats_df[flow_variables['common_name']+colname+'_'+stat] = getattr(input_table_grouped.get_group(colname), stat)(axis=1)%%00010%%00009else:%%00010%%00009%%00009stats_df[flow_variables['common_name']+stat] = getattr(input_table, stat)(axis=1)%%00010%%00010output_table_1 = stats_df"/>
+        <entry key="rowLimit" type="xint" value="1000"/>
+        <entry key="convertMissingToPython" type="xboolean" value="false"/>
+        <entry key="convertMissingFromPython" type="xboolean" value="false"/>
+        <entry key="sentinelOption" type="xstring" value="MIN_VAL"/>
+        <entry key="sentinelValue" type="xint" value="0"/>
+        <entry key="chunkSize" type="xint" value="500000"/>
+        <entry key="pythonVersionOption" type="xstring" value="python3"/>
+        <entry key="python2Command" type="xstring" value=""/>
+        <entry key="python3Command" type="xstring" value="/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="python3Command">
+                <entry key="used_variable" type="xstring" value="python3command"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="org.knime.python2.nodes.script2.Python2ScriptNodeFactory2"/>
+    <entry key="node-name" type="xstring" value="Python Script"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Python nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python2.nodes"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.5.0.v202111232310"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Python Integration"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python2.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.5.2.v202203041212"/>
+    <config key="factory_settings"/>
+    <config key="node_creation_config">
+        <config key="Input object (pickled)"/>
+        <config key="Input table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output image"/>
+        <config key="Output object (pickled)"/>
+    </config>
+    <entry key="name" type="xstring" value="Python Script"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>
