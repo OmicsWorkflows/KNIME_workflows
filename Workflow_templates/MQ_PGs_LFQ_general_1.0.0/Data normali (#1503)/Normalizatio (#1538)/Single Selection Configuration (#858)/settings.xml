@@ -1,48 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
     <entry key="node_file" type="xstring" value="settings.xml"/>
-    <config key="flow_stack">
-        <config key="Variable_0">
-            <entry key="type" type="xstring" value="variable"/>
-            <entry key="name" type="xstring" value="normalization_method (index)"/>
-            <entry key="class" type="xstring" value="INTEGER"/>
-            <entry key="value" type="xint" value="2"/>
-        </config>
-        <config key="Variable_1">
-            <entry key="type" type="xstring" value="variable"/>
-            <entry key="name" type="xstring" value="normalization_method"/>
-            <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="loess (fast)"/>
-        </config>
-        <config key="Variable_2">
-            <entry key="type" type="xstring" value="variable"/>
-            <entry key="name" type="xstring" value="normalization_method (index)"/>
-            <entry key="class" type="xstring" value="INTEGER"/>
-            <entry key="value" type="xint" value="2"/>
-        </config>
-        <config key="Variable_3">
-            <entry key="type" type="xstring" value="variable"/>
-            <entry key="name" type="xstring" value="normalization_method"/>
-            <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="loess (fast)"/>
-        </config>
-    </config>
+    <config key="flow_stack"/>
     <config key="internal_node_subsettings">
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <config key="defaultValue">
-            <config key="variable_value">
-                <entry key="array-size" type="xint" value="1"/>
-                <entry key="0" type="xstring" value="quantile"/>
-            </config>
-        </config>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
-        <entry key="parameterName" type="xstring" value="normalization_method"/>
-        <entry key="label" type="xstring" value="Normalization method"/>
-        <entry key="description" type="xstring" value="Normalization method that should be used"/>
-        <entry key="required" type="xboolean" value="true"/>
-        <entry key="flowVariableName" type="xstring" value="normalization_method"/>
         <config key="possible_choices">
             <entry key="array-size" type="xint" value="5"/>
             <entry key="0" type="xstring" value="quantile"/>
@@ -51,9 +14,21 @@
             <entry key="3" type="xstring" value="loess (pairs)"/>
             <entry key="4" type="xstring" value="loess (affy)"/>
         </config>
-        <entry key="type" type="xstring" value="Radio buttons (horizontal)"/>
+        <entry key="flowVariableName" type="xstring" value="normalization_method"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
+        <config key="defaultValue">
+            <config key="variable_value">
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="quantile"/>
+            </config>
+        </config>
         <entry key="limit_number_visible_options" type="xboolean" value="false"/>
+        <entry key="description" type="xstring" value="Normalization method that should be used"/>
+        <entry key="parameterName" type="xstring" value="normalization_method"/>
+        <entry key="label" type="xstring" value="Normalization method"/>
+        <entry key="type" type="xstring" value="Radio buttons (horizontal)"/>
         <entry key="number_visible_options" type="xint" value="10"/>
+        <entry key="required" type="xboolean" value="true"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="Normalization method"/>
@@ -85,11 +60,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.js.quickforms"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.5.0.v202112011347"/>
+    <entry key="node-bundle-version" type="xstring" value="4.6.0.v202202280849"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Quick Forms"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.js.quickforms.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.5.2.v202203171029"/>
+    <entry key="node-feature-version" type="xstring" value="4.6.0.v202209271016"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Single Selection Configuration"/>
     <entry key="hasContent" type="xboolean" value="false"/>

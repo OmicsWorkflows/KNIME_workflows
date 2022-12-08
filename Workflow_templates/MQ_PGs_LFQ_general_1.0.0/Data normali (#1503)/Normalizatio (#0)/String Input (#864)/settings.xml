@@ -6,22 +6,22 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <entry key="error_message" type="xstring" value=""/>
+        <entry key="flowvariablename" type="xstring" value="python3command"/>
+        <entry key="multilineEditorHeight" type="xint" value="5"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <entry key="string" type="xstring" value="/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"/>
         </config>
-        <entry key="label" type="xstring" value="Path to python3 executable"/>
         <entry key="description" type="xstring" value="absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container"/>
-        <entry key="hideInWizard" type="xboolean" value="false"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
-        <entry key="required" type="xboolean" value="true"/>
+        <entry key="label" type="xstring" value="Path to python3 executable"/>
         <entry key="parameterName" type="xstring" value="string-input"/>
-        <entry key="customCSS" type="xstring" value=""/>
-        <entry key="flowvariablename" type="xstring" value="python3command"/>
+        <entry key="required" type="xboolean" value="true"/>
         <entry key="regex" type="xstring" value=""/>
-        <entry key="error_message" type="xstring" value=""/>
+        <entry key="hideInWizard" type="xboolean" value="false"/>
         <entry key="editorType" type="xstring" value="Single-line"/>
         <entry key="multilineEditorWidth" type="xint" value="60"/>
-        <entry key="multilineEditorHeight" type="xint" value="5"/>
+        <entry key="customCSS" type="xstring" value=""/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="python3command"/>
@@ -53,11 +53,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.js.quickforms"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.5.0.v202112011347"/>
+    <entry key="node-bundle-version" type="xstring" value="4.6.0.v202202280849"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Quick Forms"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.js.quickforms.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.5.2.v202203171029"/>
+    <entry key="node-feature-version" type="xstring" value="4.6.0.v202209271016"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="String Input"/>
     <entry key="hasContent" type="xboolean" value="false"/>

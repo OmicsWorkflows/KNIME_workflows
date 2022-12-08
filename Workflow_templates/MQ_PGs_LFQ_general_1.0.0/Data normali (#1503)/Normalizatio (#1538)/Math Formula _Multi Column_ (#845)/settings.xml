@@ -6,12 +6,29 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="expression" type="xstring" value="$$CURRENT_COLUMN$$"/>
         <entry key="replaced_column" type="xstring" value="_suffix"/>
         <entry key="append_column" type="xboolean" value="true"/>
-        <entry key="convert_to_int" type="xboolean" value="false"/>
+        <entry key="expression" type="xstring" value="$$CURRENT_COLUMN$$"/>
         <config key="column_selection">
-            <entry key="filter-type" type="xstring" value="name_pattern"/>
+            <config key="datatype">
+                <config key="typelist">
+                    <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+                </config>
+            </config>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value="*"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+            </config>
+            <config key="excluded_names">
+                <entry key="array-size" type="xint" value="0"/>
+            </config>
             <config key="included_names">
                 <entry key="array-size" type="xint" value="29"/>
                 <entry key="0" type="xstring" value="Length"/>
@@ -44,27 +61,10 @@
                 <entry key="27" type="xstring" value="1_lowP120+Intensity_norm_log2"/>
                 <entry key="28" type="xstring" value="2_P65+Intensity_norm_log2"/>
             </config>
-            <config key="excluded_names">
-                <entry key="array-size" type="xint" value="0"/>
-            </config>
             <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
-            <config key="name_pattern">
-                <entry key="pattern" type="xstring" value="*"/>
-                <entry key="type" type="xstring" value="Wildcard"/>
-                <entry key="caseSensitive" type="xboolean" value="true"/>
-                <entry key="excludeMatching" type="xboolean" value="false"/>
-            </config>
-            <config key="datatype">
-                <config key="typelist">
-                    <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
-                </config>
-            </config>
+            <entry key="filter-type" type="xstring" value="name_pattern"/>
         </config>
+        <entry key="convert_to_int" type="xboolean" value="false"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="only converts pandas 'NaN's%%00013%%00010 to KNIME missing values"/>
@@ -87,11 +87,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Math Expression Node"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.ext.jep"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.5.0.v202107011902"/>
+    <entry key="node-bundle-version" type="xstring" value="4.6.0.v202202280848"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Math Expression (JEP)"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.ext.jep.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.5.0.v202107011902"/>
+    <entry key="node-feature-version" type="xstring" value="4.6.0.v202202280848"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Math Formula (Multi Column)"/>
     <entry key="hasContent" type="xboolean" value="false"/>

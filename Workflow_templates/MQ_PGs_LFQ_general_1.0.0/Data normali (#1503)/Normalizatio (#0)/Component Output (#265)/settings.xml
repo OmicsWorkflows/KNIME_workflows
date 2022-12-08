@@ -6,10 +6,28 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <config key="port-names">
+            <entry key="array-size" type="xint" value="2"/>
+            <entry key="0" type="xstring" value="Output table"/>
+            <entry key="1" type="xstring" value="Normalization factors"/>
+        </config>
+        <entry key="variable-prefix" type="xstring" isnull="true" value=""/>
+        <config key="port-descriptions">
+            <entry key="array-size" type="xint" value="2"/>
+            <entry key="0" type="xstring" value="Original table with normalized data or normalized columns only"/>
+            <entry key="1" type="xstring" value="Normalization factors used to normalize the data; normalization factors usage is &quot;value - norm. factor&quot;"/>
+        </config>
         <config key="variable-filter">
-            <entry key="filter-type" type="xstring" value="STANDARD"/>
             <config key="included_names">
                 <entry key="array-size" type="xint" value="0"/>
+            </config>
+            <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value=""/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
             </config>
             <config key="excluded_names">
                 <entry key="array-size" type="xint" value="8"/>
@@ -22,24 +40,6 @@
                 <entry key="6" type="xstring" value="normalization_method (index)"/>
                 <entry key="7" type="xstring" value="columns_to_process"/>
             </config>
-            <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
-            <config key="name_pattern">
-                <entry key="pattern" type="xstring" value=""/>
-                <entry key="type" type="xstring" value="Wildcard"/>
-                <entry key="caseSensitive" type="xboolean" value="true"/>
-                <entry key="excludeMatching" type="xboolean" value="false"/>
-            </config>
-        </config>
-        <entry key="variable-prefix" type="xstring" isnull="true" value=""/>
-        <config key="port-names">
-            <entry key="array-size" type="xint" value="2"/>
-            <entry key="0" type="xstring" value="Output table"/>
-            <entry key="1" type="xstring" value="Normalization factors"/>
-        </config>
-        <config key="port-descriptions">
-            <entry key="array-size" type="xint" value="2"/>
-            <entry key="0" type="xstring" value="Original table with normalized data or normalized columns only"/>
-            <entry key="1" type="xstring" value="Normalization factors used to normalize the data; normalization factors usage is &quot;value - norm. factor&quot;"/>
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
@@ -49,11 +49,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Core API"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.core"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.5.2.v202203091352"/>
+    <entry key="node-bundle-version" type="xstring" value="4.6.3.v202209271016"/>
     <entry key="node-feature-name" type="xstring" value="KNIME AP Core feature"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.core.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.5.2.v202203091352"/>
+    <entry key="node-feature-version" type="xstring" value="4.6.3.v202209271016"/>
     <config key="factory_settings">
         <config key="port_0">
             <entry key="index" type="xint" value="0"/>

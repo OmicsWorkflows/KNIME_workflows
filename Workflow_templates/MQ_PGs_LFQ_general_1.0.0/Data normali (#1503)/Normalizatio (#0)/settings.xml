@@ -6,43 +6,43 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <config key="columns_to_process-859">
-            <config key="columns">
-                <entry key="array-size" type="xint" value="0"/>
-            </config>
-            <config key="columnFilter">
-                <config key="columnFilter">
-                    <entry key="filter-type" type="xstring" value="name_pattern"/>
-                    <config key="included_names">
-                        <entry key="array-size" type="xint" value="0"/>
-                    </config>
-                    <config key="excluded_names">
-                        <entry key="array-size" type="xint" value="0"/>
-                    </config>
-                    <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
-                    <config key="name_pattern">
-                        <entry key="pattern" type="xstring" value="*"/>
-                        <entry key="type" type="xstring" value="Wildcard"/>
-                        <entry key="caseSensitive" type="xboolean" value="true"/>
-                        <entry key="excludeMatching" type="xboolean" value="false"/>
-                    </config>
-                    <config key="datatype">
-                        <config key="typelist">
-                            <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
-                        </config>
-                    </config>
-                </config>
-            </config>
-        </config>
         <config key="normalization_method-860">
             <config key="variable_value">
                 <entry key="array-size" type="xint" value="1"/>
                 <entry key="0" type="xstring" value="median"/>
+            </config>
+        </config>
+        <config key="columns_to_process-859">
+            <config key="columnFilter">
+                <config key="columnFilter">
+                    <config key="datatype">
+                        <config key="typelist">
+                            <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+                        </config>
+                    </config>
+                    <config key="name_pattern">
+                        <entry key="pattern" type="xstring" value="*"/>
+                        <entry key="excludeMatching" type="xboolean" value="false"/>
+                        <entry key="type" type="xstring" value="Wildcard"/>
+                        <entry key="caseSensitive" type="xboolean" value="true"/>
+                    </config>
+                    <config key="excluded_names">
+                        <entry key="array-size" type="xint" value="0"/>
+                    </config>
+                    <config key="included_names">
+                        <entry key="array-size" type="xint" value="0"/>
+                    </config>
+                    <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
+                    <entry key="filter-type" type="xstring" value="name_pattern"/>
+                </config>
+            </config>
+            <config key="columns">
+                <entry key="array-size" type="xint" value="0"/>
             </config>
         </config>
         <config key="normalize_to-861">

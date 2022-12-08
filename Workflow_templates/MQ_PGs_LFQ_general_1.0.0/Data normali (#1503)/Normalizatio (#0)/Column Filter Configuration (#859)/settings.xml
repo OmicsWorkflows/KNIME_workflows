@@ -6,33 +6,30 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <entry key="flowVariableName" type="xstring" value="columns_to_process"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
-            <config key="columns">
-                <entry key="array-size" type="xint" value="20"/>
-                <entry key="0" type="xstring" value="Majority protein IDs"/>
-                <entry key="1" type="xstring" value="Gene names"/>
-                <entry key="2" type="xstring" value="Intensity 1-1_1"/>
-                <entry key="3" type="xstring" value="Intensity 1-1_2"/>
-                <entry key="4" type="xstring" value="Intensity 1-1_3"/>
-                <entry key="5" type="xstring" value="Intensity 2-1_1"/>
-                <entry key="6" type="xstring" value="Intensity 2-1_2"/>
-                <entry key="7" type="xstring" value="Intensity 2-1_3"/>
-                <entry key="8" type="xstring" value="Intensity 5-1_1"/>
-                <entry key="9" type="xstring" value="Intensity 5-1_2"/>
-                <entry key="10" type="xstring" value="Intensity 5-1_3"/>
-                <entry key="11" type="xstring" value="Intensity 1-1_1_log2"/>
-                <entry key="12" type="xstring" value="Intensity 1-1_2_log2"/>
-                <entry key="13" type="xstring" value="Intensity 1-1_3_log2"/>
-                <entry key="14" type="xstring" value="Intensity 2-1_1_log2"/>
-                <entry key="15" type="xstring" value="Intensity 2-1_2_log2"/>
-                <entry key="16" type="xstring" value="Intensity 2-1_3_log2"/>
-                <entry key="17" type="xstring" value="Intensity 5-1_1_log2"/>
-                <entry key="18" type="xstring" value="Intensity 5-1_2_log2"/>
-                <entry key="19" type="xstring" value="Intensity 5-1_3_log2"/>
-            </config>
             <config key="columnFilter">
                 <config key="columnFilter">
-                    <entry key="filter-type" type="xstring" value="name_pattern"/>
+                    <config key="datatype">
+                        <config key="typelist">
+                            <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+                        </config>
+                    </config>
+                    <config key="name_pattern">
+                        <entry key="pattern" type="xstring" value=""/>
+                        <entry key="excludeMatching" type="xboolean" value="false"/>
+                        <entry key="type" type="xstring" value="Wildcard"/>
+                        <entry key="caseSensitive" type="xboolean" value="true"/>
+                    </config>
+                    <config key="excluded_names">
+                        <entry key="array-size" type="xint" value="0"/>
+                    </config>
                     <config key="included_names">
                         <entry key="array-size" type="xint" value="20"/>
                         <entry key="0" type="xstring" value="Majority protein IDs"/>
@@ -56,35 +53,47 @@
                         <entry key="18" type="xstring" value="Intensity 5-1_2_log2"/>
                         <entry key="19" type="xstring" value="Intensity 5-1_3_log2"/>
                     </config>
-                    <config key="excluded_names">
-                        <entry key="array-size" type="xint" value="0"/>
-                    </config>
                     <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
-                    <config key="name_pattern">
-                        <entry key="pattern" type="xstring" value=""/>
-                        <entry key="type" type="xstring" value="Wildcard"/>
-                        <entry key="caseSensitive" type="xboolean" value="true"/>
-                        <entry key="excludeMatching" type="xboolean" value="false"/>
-                    </config>
-                    <config key="datatype">
-                        <config key="typelist">
-                            <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
-                        </config>
-                    </config>
+                    <entry key="filter-type" type="xstring" value="name_pattern"/>
                 </config>
             </config>
+            <config key="columns">
+                <entry key="array-size" type="xint" value="20"/>
+                <entry key="0" type="xstring" value="Majority protein IDs"/>
+                <entry key="1" type="xstring" value="Gene names"/>
+                <entry key="2" type="xstring" value="Intensity 1-1_1"/>
+                <entry key="3" type="xstring" value="Intensity 1-1_2"/>
+                <entry key="4" type="xstring" value="Intensity 1-1_3"/>
+                <entry key="5" type="xstring" value="Intensity 2-1_1"/>
+                <entry key="6" type="xstring" value="Intensity 2-1_2"/>
+                <entry key="7" type="xstring" value="Intensity 2-1_3"/>
+                <entry key="8" type="xstring" value="Intensity 5-1_1"/>
+                <entry key="9" type="xstring" value="Intensity 5-1_2"/>
+                <entry key="10" type="xstring" value="Intensity 5-1_3"/>
+                <entry key="11" type="xstring" value="Intensity 1-1_1_log2"/>
+                <entry key="12" type="xstring" value="Intensity 1-1_2_log2"/>
+                <entry key="13" type="xstring" value="Intensity 1-1_3_log2"/>
+                <entry key="14" type="xstring" value="Intensity 2-1_1_log2"/>
+                <entry key="15" type="xstring" value="Intensity 2-1_2_log2"/>
+                <entry key="16" type="xstring" value="Intensity 2-1_3_log2"/>
+                <entry key="17" type="xstring" value="Intensity 5-1_1_log2"/>
+                <entry key="18" type="xstring" value="Intensity 5-1_2_log2"/>
+                <entry key="19" type="xstring" value="Intensity 5-1_3_log2"/>
+            </config>
         </config>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
-        <entry key="parameterName" type="xstring" value="columns_to_process"/>
-        <entry key="label" type="xstring" value="Columns to process"/>
+        <config key="input_filter">
+            <config key="type_filter">
+                <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.time.localdatetime.LocalDateTimeValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+            </config>
+            <entry key="allow_all_types" type="xboolean" value="true"/>
+            <entry key="filter_columns_without_domain" type="xboolean" value="false"/>
+        </config>
         <entry key="description" type="xstring" value="select colomns to be processed"/>
-        <entry key="required" type="xboolean" value="true"/>
-        <entry key="flowVariableName" type="xstring" value="columns_to_process"/>
         <config key="possibleColumns">
             <entry key="array-size" type="xint" value="20"/>
             <entry key="0" type="xstring" value="Majority protein IDs"/>
@@ -108,7 +117,10 @@
             <entry key="18" type="xstring" value="Intensity 5-1_2_log2"/>
             <entry key="19" type="xstring" value="Intensity 5-1_3_log2"/>
         </config>
+        <entry key="parameterName" type="xstring" value="columns_to_process"/>
+        <entry key="label" type="xstring" value="Columns to process"/>
         <entry key="type" type="xstring" value="Twinlist"/>
+        <entry key="required" type="xboolean" value="true"/>
         <entry key="limit_number_visible_options" type="xboolean" value="false"/>
         <entry key="number_visible_options" type="xint" value="10"/>
         <config key="validation">
@@ -116,18 +128,6 @@
                 <entry key="error_message" type="xstring" value=""/>
                 <entry key="min_num_columns" type="xint" value="0"/>
             </config>
-        </config>
-        <config key="input_filter">
-            <config key="type_filter">
-                <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
-                <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
-                <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
-                <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
-                <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
-                <entry key="org.knime.core.data.time.localdatetime.LocalDateTimeValue" type="xboolean" value="false"/>
-            </config>
-            <entry key="allow_all_types" type="xboolean" value="true"/>
-            <entry key="filter_columns_without_domain" type="xboolean" value="false"/>
         </config>
     </config>
     <config key="nodeAnnotation">
@@ -151,11 +151,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.js.quickforms"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.5.0.v202112011347"/>
+    <entry key="node-bundle-version" type="xstring" value="4.6.0.v202202280849"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Quick Forms"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.js.quickforms.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.5.2.v202203171029"/>
+    <entry key="node-feature-version" type="xstring" value="4.6.0.v202209271016"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Column Filter Configuration"/>
     <entry key="hasContent" type="xboolean" value="false"/>

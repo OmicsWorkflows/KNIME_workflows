@@ -6,17 +6,17 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <entry key="flowvariablename" type="xstring" value="remove_not_used"/>
+        <entry key="hideInWizard" type="xboolean" value="false"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
             <entry key="boolean" type="xboolean" value="false"/>
         </config>
-        <entry key="label" type="xstring" value="Remove not used columns?"/>
         <entry key="description" type="xstring" value="whether to remove not used columns or not; unchecked -&gt; original dataframe will be returned with added columns contaning normalized data; checked -&gt; dataframe of processed columns will be returned only"/>
-        <entry key="hideInWizard" type="xboolean" value="false"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
-        <entry key="required" type="xboolean" value="true"/>
+        <entry key="label" type="xstring" value="Remove not used columns?"/>
         <entry key="parameterName" type="xstring" value="boolean-input"/>
+        <entry key="required" type="xboolean" value="true"/>
         <entry key="customCSS" type="xstring" value=""/>
-        <entry key="flowvariablename" type="xstring" value="remove_not_used"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="Remove not %%00013%%00010used columns?"/>
@@ -39,11 +39,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.js.quickforms"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.5.0.v202112011347"/>
+    <entry key="node-bundle-version" type="xstring" value="4.6.0.v202202280849"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Quick Forms"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.js.quickforms.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.5.2.v202203171029"/>
+    <entry key="node-feature-version" type="xstring" value="4.6.0.v202209271016"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Boolean Input"/>
     <entry key="hasContent" type="xboolean" value="false"/>

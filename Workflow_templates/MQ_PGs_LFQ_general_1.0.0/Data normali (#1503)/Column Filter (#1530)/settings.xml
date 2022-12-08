@@ -1,31 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
     <entry key="node_file" type="xstring" value="settings.xml"/>
-    <config key="flow_stack">
-        <config key="Variable_0">
-            <entry key="type" type="xstring" value="variable"/>
-            <entry key="name" type="xstring" value="new variable"/>
-            <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="Intensity 1-1_1_log2,Intensity 1-1_2_log2,Intensity 1-1_3_log2,Intensity 10-1_1_log2,Intensity 10-1_2_log2,Intensity 10-1_3_log2,Intensity 100-1_1_log2,Intensity 100-1_2_log2,Intensity 100-1_3_log2"/>
-        </config>
-        <config key="Variable_1">
-            <entry key="type" type="xstring" value="variable"/>
-            <entry key="name" type="xstring" value="new variable"/>
-            <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="Intensity 1-1_1_log2,Intensity 1-1_2_log2,Intensity 1-1_3_log2,Intensity 10-1_1_log2,Intensity 10-1_2_log2,Intensity 10-1_3_log2,Intensity 100-1_1_log2,Intensity 100-1_2_log2,Intensity 100-1_3_log2"/>
-        </config>
-    </config>
+    <config key="flow_stack"/>
     <config key="internal_node_subsettings">
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <entry key="flowvariablename" type="xstring" value="new variable"/>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
         <config key="defaultValue">
-            <config key="columns">
-                <entry key="array-size" type="xint" value="0"/>
-            </config>
             <config key="columnFilter">
                 <config key="columnFilter">
-                    <entry key="filter-type" type="xstring" value="name_pattern"/>
+                    <config key="datatype">
+                        <config key="typelist">
+                            <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+                        </config>
+                    </config>
+                    <config key="name_pattern">
+                        <entry key="pattern" type="xstring" value="PG.Quantity+*_log2"/>
+                        <entry key="type" type="xstring" value="Wildcard"/>
+                        <entry key="caseSensitive" type="xboolean" value="true"/>
+                    </config>
+                    <config key="excluded_names">
+                        <entry key="array-size" type="xint" value="0"/>
+                    </config>
                     <config key="included_names">
                         <entry key="array-size" type="xint" value="77"/>
                         <entry key="0" type="xstring" value="PG.ID"/>
@@ -106,36 +109,15 @@
                         <entry key="75" type="xstring" value="PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"/>
                         <entry key="76" type="xstring" value="PG.Quantity_sum_log2"/>
                     </config>
-                    <config key="excluded_names">
-                        <entry key="array-size" type="xint" value="0"/>
-                    </config>
                     <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
-                    <config key="name_pattern">
-                        <entry key="pattern" type="xstring" value="PG.Quantity+*_log2"/>
-                        <entry key="type" type="xstring" value="Wildcard"/>
-                        <entry key="caseSensitive" type="xboolean" value="true"/>
-                    </config>
-                    <config key="datatype">
-                        <config key="typelist">
-                            <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
-                        </config>
-                    </config>
+                    <entry key="filter-type" type="xstring" value="name_pattern"/>
                 </config>
             </config>
+            <config key="columns">
+                <entry key="array-size" type="xint" value="0"/>
+            </config>
         </config>
-        <entry key="label" type="xstring" value="Select columns for data normalization"/>
         <entry key="description" type="xstring" value="Select columns which contain values which will be normalized. By default, all not normalized columns after log2 transformation are selected."/>
-        <entry key="hideInWizard" type="xboolean" value="false"/>
-        <entry key="hideInDialog" type="xboolean" value="false"/>
-        <entry key="required" type="xboolean" value="true"/>
-        <entry key="parameterName" type="xstring" value="column-filter"/>
-        <entry key="customCSS" type="xstring" value=""/>
-        <entry key="flowvariablename" type="xstring" value="new variable"/>
         <config key="possibleColumns">
             <entry key="array-size" type="xint" value="77"/>
             <entry key="0" type="xstring" value="PG.ID"/>
@@ -216,9 +198,14 @@
             <entry key="75" type="xstring" value="PG.Quantity+IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti_log2"/>
             <entry key="76" type="xstring" value="PG.Quantity_sum_log2"/>
         </config>
+        <entry key="label" type="xstring" value="Select columns for data normalization"/>
+        <entry key="parameterName" type="xstring" value="column-filter"/>
         <entry key="type" type="xstring" value="Twinlist"/>
+        <entry key="required" type="xboolean" value="true"/>
+        <entry key="hideInWizard" type="xboolean" value="false"/>
         <entry key="limit_number_visible_options" type="xboolean" value="false"/>
         <entry key="number_visible_options" type="xint" value="10"/>
+        <entry key="customCSS" type="xstring" value=""/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="filter columns"/>
@@ -241,11 +228,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.js.quickforms"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.5.0.v202112011347"/>
+    <entry key="node-bundle-version" type="xstring" value="4.6.0.v202202280849"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Quick Forms"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.js.quickforms.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.5.2.v202203171029"/>
+    <entry key="node-feature-version" type="xstring" value="4.6.0.v202209271016"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Column Filter"/>
     <entry key="hasContent" type="xboolean" value="false"/>
