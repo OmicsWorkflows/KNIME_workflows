@@ -1054,6 +1054,12 @@
             "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
             "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
         },
+        "boolean-input-1503:1542:993": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
         "boolean-input-1503:1533": {
             "type": "boolean",
             "default": "false",
@@ -1457,11 +1463,23 @@
             "description": "provide an information about the blocks of samples",
             "example": "none"
         },
+        "string-input-1503:1542:995": {
+            "type": "string",
+            "default": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"
+        },
         "single-line-1311:931:923": {
             "type": "string",
             "default": "s2-s1",
             "description": "provide comparisons (i.e. contrasts for limma) separated by comma; in case you would like to get ratio A and B and you provide log transformed data, comparison ('ratio' calculation) should be made as 'B-A'",
             "example": "s2-s1"
+        },
+        "string-input-1503:1542:994": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
         },
         "single-line-1311:931:921": {
             "type": "string",

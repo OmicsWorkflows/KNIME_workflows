@@ -6,7 +6,7 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="sourceCode" type="xstring" value="# create a series of if switches%%00010if flow_variables['normalization'] == 'no normalization':%%00010%%00009flow_variables['switch1'] = 'top' %%00010else:%%00010%%00009flow_variables['switch1'] = 'bottom' %%00010%%00009if flow_variables['normalization'] == 'median (linear)':%%00010%%00009%%00009flow_variables['switch2'] = 'top' %%00010%%00009else:%%00010%%00009%%00009flow_variables['switch2'] = 'bottom'%%00010%%00009%%00009if flow_variables['normalization'] == 'quantile (non-linear)':%%00010%%00009%%00009%%00009flow_variables['switch3'] = 'top'%%00010%%00009%%00009else:%%00010%%00009%%00009%%00009flow_variables['switch3'] = 'bottom'%%00010%%00010%%00010# creates variable for not used columns removal IF switch%%00010if flow_variables['remove_not_used'] == 1:%%00010    flow_variables['remove_switch'] = 'top'%%00010elif flow_variables['remove_not_used'] == 0:%%00010    flow_variables['remove_switch'] = 'bottom'%%00010%%00010# creates variable for renaming the columns%%00010flow_variables['column_suffix'] = '$1' + flow_variables['suffix']"/>
+        <entry key="sourceCode" type="xstring" value="# creates variable for not used columns removal IF switch%%00010if flow_variables['remove_not_used'] == 1:%%00010    flow_variables['remove_switch'] = 'top'%%00010elif flow_variables['remove_not_used'] == 0:%%00010    flow_variables['remove_switch'] = 'bottom'%%00010%%00010# creates variable for renaming the columns%%00010flow_variables['column_suffix'] = '$1' + flow_variables['suffix']"/>
         <entry key="rowLimit" type="xint" value="1000"/>
         <entry key="convertMissingToPython" type="xboolean" value="false"/>
         <entry key="convertMissingFromPython" type="xboolean" value="false"/>
@@ -32,11 +32,11 @@
         <entry key="x-coordinate" type="xint" value="349"/>
         <entry key="y-coordinate" type="xint" value="-81"/>
         <entry key="width" type="xint" value="142"/>
-        <entry key="height" type="xint" value="64"/>
+        <entry key="height" type="xint" value="68"/>
         <entry key="alignment" type="xstring" value="CENTER"/>
         <entry key="borderSize" type="xint" value="0"/>
         <entry key="borderColor" type="xint" value="16777215"/>
-        <entry key="defFontSize" type="xint" value="11"/>
+        <entry key="defFontSize" type="xint" value="10"/>
         <entry key="annotation-version" type="xint" value="20151123"/>
         <config key="styles"/>
     </config>
@@ -47,11 +47,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Python nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python2.nodes"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.5.0.v202111232310"/>
+    <entry key="node-bundle-version" type="xstring" value="4.6.0.v202206032030"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Python Integration"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python2.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.5.2.v202203041212"/>
+    <entry key="node-feature-version" type="xstring" value="4.6.0.v202206100850"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Python Edit Variable"/>
     <entry key="hasContent" type="xboolean" value="false"/>

@@ -31,11 +31,12 @@
         <entry key="customCSS" type="xstring" value=""/>
         <entry key="flowvariablename" type="xstring" value="normalization"/>
         <config key="possible_choices">
-            <entry key="array-size" type="xint" value="4"/>
+            <entry key="array-size" type="xint" value="5"/>
             <entry key="0" type="xstring" value="no normalization"/>
             <entry key="1" type="xstring" value="median (linear)"/>
             <entry key="2" type="xstring" value="quantile (non-linear)"/>
             <entry key="3" type="xstring" value="loessF (non-linear)"/>
+            <entry key="4" type="xstring" value="vsn (non-linear)"/>
         </config>
         <entry key="type" type="xstring" value="Radio buttons (horizontal)"/>
         <entry key="limit_number_visible_options" type="xboolean" value="false"/>
@@ -57,16 +58,20 @@
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="IDLE"/>
+    <config key="nodecontainer_message">
+        <entry key="type" type="xstring" value="WARNING"/>
+        <entry key="message" type="xstring" value="Component does not have input data, execute upstream nodes first"/>
+    </config>
     <entry key="factory" type="xstring" value="org.knime.js.base.node.quickform.selection.single.SingleSelectionQuickFormNodeFactory"/>
     <entry key="node-name" type="xstring" value="Single Selection"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.js.quickforms"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.5.0.v202112011347"/>
+    <entry key="node-bundle-version" type="xstring" value="4.6.0.v202202280849"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Quick Forms"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.js.quickforms.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.5.2.v202203171029"/>
+    <entry key="node-feature-version" type="xstring" value="4.6.0.v202209271016"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Single Selection"/>
     <entry key="hasContent" type="xboolean" value="false"/>
