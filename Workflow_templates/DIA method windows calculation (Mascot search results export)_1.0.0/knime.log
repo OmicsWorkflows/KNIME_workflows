@@ -1,0 +1,71 @@
+2023-01-17 14:35:39,797 : WARN  : main :  : Node : Path to String (Variable) : 7:1620 : No path variables selected.
+2023-01-17 14:35:39,798 : WARN  : main :  : Node : File Reader (Complex Format) : 7:1616 : Errors overwriting node settings with flow variables: Unknown variable "Path"
+2023-01-17 14:35:39,798 : WARN  : main :  : Node : Path to String (Variable) : 7:1620 : No path variables selected.
+2023-01-17 14:35:39,799 : WARN  : main :  : Node : File Reader (Complex Format) : 7:1616 : Errors overwriting node settings with flow variables: Unknown variable "Path"
+2023-01-17 14:38:47,282 : WARN  : main :  : Node : Path to String (Variable) : 7:1620 : No path variables selected.
+2023-01-17 14:38:47,285 : WARN  : main :  : Node : File Reader (Complex Format) : 7:1616 : Errors overwriting node settings with flow variables: Unknown variable "Path"
+2023-01-17 14:40:21,953 : WARN  : main :  : Node : Path to String (Variable) : 7:1620 : No path variables selected.
+2023-01-17 14:40:21,954 : WARN  : main :  : Node : File Reader (Complex Format) : 7:1616 : Errors overwriting node settings with flow variables: Unknown variable "Path"
+2023-01-17 14:40:49,045 : WARN  : main :  : Node : Path to String (Variable) : 7:1620 : No path variables selected.
+2023-01-17 14:40:49,046 : WARN  : main :  : Node : File Reader (Complex Format) : 7:1616 : Errors overwriting node settings with flow variables: Unknown variable "Path"
+2023-01-17 14:40:50,729 : ERROR : KNIME-Worker-306-List Files/Folders 7:1627 :  : Node : List Files/Folders : 7:1627 : Execute failed: The path must be relative.
+org.knime.core.node.InvalidSettingsException: The path must be relative.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:269)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:219)
+	at org.knime.filehandling.core.defaultnodesettings.ValidationUtils.validateKnimeFSPath(ValidationUtils.java:145)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getPathFromConvenienceFs(FileChooserPathAccessor.java:187)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getOutputPath(FileChooserPathAccessor.java:174)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:293)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:202)
+	at org.knime.filehandling.utility.nodes.listpaths.ListFilesAndFoldersNodeModel.writeOutput(ListFilesAndFoldersNodeModel.java:188)
+	at org.knime.filehandling.utility.nodes.listpaths.ListFilesAndFoldersNodeModel.execute(ListFilesAndFoldersNodeModel.java:136)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2023-01-17 14:40:59,680 : WARN  : main :  : Node : Path to String (Variable) : 7:1620 : No path variables selected.
+2023-01-17 14:40:59,681 : WARN  : main :  : Node : File Reader (Complex Format) : 7:1616 : Errors overwriting node settings with flow variables: Unknown variable "Path"
+2023-01-17 14:40:59,691 : ERROR : KNIME-Worker-307-List Files/Folders 7:1627 :  : Node : List Files/Folders : 7:1627 : Execute failed: The specified folder ./__inputs__ does not exist.
+org.knime.core.node.InvalidSettingsException: The specified folder ./__inputs__ does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:269)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:219)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:295)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:202)
+	at org.knime.filehandling.utility.nodes.listpaths.ListFilesAndFoldersNodeModel.writeOutput(ListFilesAndFoldersNodeModel.java:188)
+	at org.knime.filehandling.utility.nodes.listpaths.ListFilesAndFoldersNodeModel.execute(ListFilesAndFoldersNodeModel.java:136)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2023-01-17 14:41:42,140 : WARN  : main :  : Node : Path to String (Variable) : 7:1620 : No path variables selected.
+2023-01-17 14:41:42,141 : WARN  : main :  : Node : File Reader (Complex Format) : 7:1616 : Errors overwriting node settings with flow variables: Unknown variable "Path"
+2023-01-17 14:45:00,232 : WARN  : main :  : Node : Path to String (Variable) : 7:1620 : No path variables selected.
+2023-01-17 14:45:00,233 : WARN  : main :  : Node : File Reader (Complex Format) : 7:1616 : Errors overwriting node settings with flow variables: Unknown variable "Path"
+2023-01-17 14:48:16,462 : WARN  : main :  : Node : Path to String (Variable) : 7:1620 : No path variables selected.
+2023-01-17 14:48:16,463 : WARN  : main :  : Node : File Reader (Complex Format) : 7:1616 : Errors overwriting node settings with flow variables: Unknown variable "Path"
+2023-01-17 14:48:17,514 : WARN  : main :  : Node : Path to String (Variable) : 7:1620 : No path variables selected.
+2023-01-17 14:48:17,514 : WARN  : main :  : Node : File Reader (Complex Format) : 7:1616 : Errors overwriting node settings with flow variables: Unknown variable "Path"
+2023-01-17 14:48:56,150 : WARN  : main :  : Node : File Reader (Complex Format) : 7:1628:1616 : Errors overwriting node settings with flow variables: Unknown variable "Path"
+2023-01-17 14:48:56,154 : WARN  : main :  : Node : File Reader (Complex Format) : 7:1616 : Errors overwriting node settings with flow variables: Unknown variable "Path"
+2023-01-17 14:48:56,154 : WARN  : main :  : Node : File Reader (Complex Format) : 7:1628:1616 : Errors overwriting node settings with flow variables: Unknown variable "Path"
+2023-01-17 14:48:56,154 : WARN  : main :  : Node : Path to String (Variable) : 7:1628:1620 : No path variables selected.
+2023-01-17 14:50:53,823 : WARN  : ModalContext :  : Node : File Reader (Complex Format) : 7:1628:1616 : Errors overwriting node settings with flow variables: Unknown variable "Path"
+2023-01-17 14:50:53,824 : WARN  : ModalContext :  : Node : Path to String (Variable) : 7:1628:1620 : No path variables selected.

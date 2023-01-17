@@ -1,0 +1,50 @@
+
+{
+    "type": "object",
+    "properties": {
+        "column-selection-1624:306": {
+            "type": "object",
+            "properties": {
+                "column": {
+                    "type": "string",
+                    "default": "pep_exp_mz"
+                }
+            },
+            "description": "Select the column containing measured, non redundant list of m/z values",
+            "example": {
+                "column": "pep_exp_mz"
+            }
+        },
+        "string-input-1624:1527": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1624:320": {
+            "type": "string",
+            "default": "400-1000",
+            "description": "M/z range to be covered by the DIA windows (e.g. 400-1000) or percentile based on the provided m/z values (e.g. 0.9); percentile value is used to leave out the same number of observations (5% of the values in case of percentile 0.9) from both ends to define the target m/z range",
+            "example": "400-1000"
+        },
+        "int-input-1624:859": {
+            "type": "integer",
+            "default": 25,
+            "description": "Number of DIA windows to make; please note that in case of overlapping DIA windows, the number of actually generated windows will be the specified number x2 +1",
+            "example": 25
+        },
+        "single-selection-1624:319": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "overlapping"
+                }
+            },
+            "description": "Specify what DIA windows design you would like to get",
+            "example": {
+                "variable_value": "overlapping"
+            }
+        }
+    }
+}

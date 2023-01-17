@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="sourceCode" type="xstring" value="# Copy input to output%%00010#output_table = input_table.copy()%%00010import numpy as np%%00010import pandas as pd%%00010%%00010# settings%%00010windows = flow_variables['windows']%%00010mz_range = flow_variables['mz_range'].split('-')%%00010%%00010#######################################%%00010%%00010# crates list for the basic statistics%%00010statistics_list = []%%00010%%00010# drops rows with the missing values and sorts the resulting table%%00010input_table_1.dropna(how='all', axis=0, inplace=True)%%00010input_table_1.sort_values(input_table_1.columns[0], inplace=True)%%00010rows_all = len(input_table_1.index)%%00010statistics_list.append(['rows total', rows_all])%%00010%%00010# removes values outside the selected m/z interval or percentile%%00010if len(mz_range) == 2:%%00010    min = float(mz_range[0])%%00010    max = float(mz_range[1])%%00010elif len(mz_range) == 1 and float(mz_range[0]) &gt; 0 and float(mz_range[0]) &lt;= 1:%%00010    min = input_table_1[input_table_1.columns[0]].quantile((1-float(mz_range[0]))/2)%%00010    max = input_table_1[input_table_1.columns[0]].quantile(1-(1-float(mz_range[0]))/2)%%00010else:%%00010    print('Error: Unexpected format of the m/z range value ({}), please check.'.format(flow_variables['mz_range']))%%00010%%00010index_names = input_table_1[(input_table_1[input_table_1.columns[0]] &lt; min) | (input_table_1[input_table_1.columns[0]] &gt; max) ].index%%00010input_table_1.drop(index_names, inplace=True)%%00010%%00010# gets the number of rows in the filtered dataframe%%00010rows = len(input_table_1.index)%%00010statistics_list.append(['rows used', rows])%%00010statistics_list.append(['rows used (%)', round(100*rows/rows_all)])%%00010statistics_list.append(['m/z range min', min])%%00010statistics_list.append(['m/z range max', max])%%00010%%00010# creates chunks list from the input table to be looped through later on%%00010# the number of chunks is 2x number of windows so the chunks start positions will be used for %%00010# both 1st and 2nd set of windows (0,2,4,... chunks for the 1st set, 1,3,5,... chunks for the 2nd set)%%00010chunks = np.array_split(input_table_1, windows*2)%%00010%%00010# loops through the chunks of input table and extracts the starting position and creates starting positions for the 1st windows set%%00010windows_list_start1 = []%%00010for chunk in chunks[0::2]:%%00010    windows_list_start1.append(chunk.iloc[0,0])%%00010%%00010# adds the last item based on the interval end to the 1st windows set%%00010windows_list_start1.append(input_table_1.iloc[rows-1,0])%%00010%%00010# adds the 1st item based on the interval start to the 2nd windows set%%00010# start position - half of the 1st window in the 1st set width%%00010windows_list_start2 = []%%00010windows_list_start2.append(input_table_1.iloc[0,0] - (windows_list_start1[1]-windows_list_start1[0])/2)%%00010%%00010# loops through the chunks of input table and extracts the starting position and creates starting positions for the 2nd windows set%%00010for chunk in chunks[1::2]:%%00010    windows_list_start2.append(chunk.iloc[0,0])%%00010%%00010# adds the last item based on the interval end to the 2nd windows set%%00010# end position + half of the last window in the 1st windows set width%%00010windows_list_start2.append(input_table_1.iloc[rows-1,0] + (windows_list_start1[-1]-windows_list_start1[-2])/2)%%00010%%00010# creates list of lists containing start and end m/z value of the given window%%00010windows_list = [['start', 'end']]%%00010# adds windows of the 1st and 2nd set of the overlaping windows%%00010for i in range(1,windows+1):%%00010    windows_list.append([windows_list_start1[i-1], windows_list_start1[i]])%%00010for i in range(1,windows+2):%%00010    windows_list.append([windows_list_start2[i-1], windows_list_start2[i]])%%00010%%00010# writes out the headers part%%00010headers = windows_list.pop(0)%%00010%%00010# writes the list of lists into the dataframe%%00010output_table_1 = pd.DataFrame(windows_list, columns=headers)%%00010# adds center and width columns based on the start and end positions%%00010output_table_1['center'] = (output_table_1['end']+output_table_1['start'])/2%%00010output_table_1['width'] = output_table_1['end']-output_table_1['start']%%00010%%00010# outputs some basic statistics into the 2nd output table%%00010output_table_2 = pd.DataFrame(statistics_list, columns=['statistics', 'value'])"/>
+        <entry key="python2Command" type="xstring" value=""/>
+        <entry key="python3Command" type="xstring" value="/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"/>
+        <entry key="chunkSize" type="xint" value="500000"/>
+        <entry key="sentinelValue" type="xint" value="0"/>
+        <entry key="pythonVersionOption" type="xstring" value="python3"/>
+        <entry key="rowLimit" type="xint" value="1000"/>
+        <entry key="convertMissingToPython" type="xboolean" value="false"/>
+        <entry key="sentinelOption" type="xstring" value="MIN_VAL"/>
+        <entry key="convertMissingFromPython" type="xboolean" value="false"/>
+    </config>
+    <config key="variables">
+        <config key="tree">
+            <config key="python3Command">
+                <entry key="used_variable" type="xstring" value="python3command"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="windows calculation%%00010 script"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="409"/>
+        <entry key="y-coordinate" type="xint" value="599"/>
+        <entry key="width" type="xint" value="142"/>
+        <entry key="height" type="xint" value="32"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="10"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles">
+            <config key="style_0">
+                <entry key="start" type="xint" value="0"/>
+                <entry key="length" type="xint" value="27"/>
+                <entry key="fontname" type="xstring" value="Sans"/>
+                <entry key="fontstyle" type="xint" value="0"/>
+                <entry key="fontsize" type="xint" value="10"/>
+                <entry key="fgcolor" type="xint" value="0"/>
+            </config>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="org.knime.python2.nodes.script2.Python2ScriptNodeFactory2"/>
+    <entry key="node-name" type="xstring" value="Python Script"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Python nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python2.nodes"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.6.0.v202206032030"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Python Integration"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python2.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.6.0.v202206100850"/>
+    <config key="factory_settings"/>
+    <config key="node_creation_config">
+        <config key="Input object (pickled)"/>
+        <config key="Input table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+            <config key="port_1">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output image"/>
+        <config key="Output object (pickled)"/>
+    </config>
+    <entry key="name" type="xstring" value="Python Script"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+        <config key="port_2">
+            <entry key="index" type="xint" value="2"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>
