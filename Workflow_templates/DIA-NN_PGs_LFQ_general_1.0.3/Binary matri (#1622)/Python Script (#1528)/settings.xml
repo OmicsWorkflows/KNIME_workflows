@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="sourceCode" type="xstring" value="import numpy%%00010import pandas%%00010from os import linesep%%00010%%00010############%%00010# settings #%%00010############%%00010%%00010line_separator = linesep%%00010no_input = &quot;none&quot;%%00010%%00010# creates list from the string variable based on the delimiter and strips white spaces and end lines, empty items are removed as well%%00010def prepare_list_from_string_input(input):%%00010%%00009if input == no_input:%%00010%%00009%%00009raise Exception(&quot;Input was not provided for the requested operation, please check.&quot;)%%00010%%00009list_new = input.split(&quot;,&quot;)%%00010%%00009list_stripped = [i.strip() for i in list_new]%%00010%%00009list_stripped_cleaned = list(filter(None, list_stripped))%%00010%%00009return list_stripped_cleaned%%00010%%00010def add_summary_columns_to_df(target_df, source_df, column_names):%%00010%%00009#df = input.copy()%%00010%%00009source_df.columns = column_names%%00010%%00009source_df_grouped = source_df.groupby(level=(0),axis=1).sum()%%00010%%00009source_df_grouped.columns = [flow_variables['prefix_summary'] + str(col) + flow_variables['suffix_summary'] for col in source_df_grouped.columns]%%00010%%00009result = pandas.concat([target_df, source_df_grouped], axis=1, sort=False)%%00010%%00009return result%%00010%%00009#return df_grouped%%00010%%00010input_columns = len(input_table_1.columns)%%00010%%00010output_table_1 = input_table_1.copy()%%00010%%00010# add summary of all columns%%00010all_columns_sum = [&quot;all&quot; for x in input_table_1.columns]%%00010output_table_1 = add_summary_columns_to_df(output_table_1, input_table_1, all_columns_sum)%%00010%%00010# check whether the summary calculation was requested on sample type level and %%00010# appropriate variables provided in a good format and initiates the calculation%%00010if flow_variables['sample_type_summary'] == 1:%%00010%%00009design_list = prepare_list_from_string_input(flow_variables['design'])%%00010%%00009%%00010%%00009if not input_columns == len(design_list):%%00010%%00009%%00009exception_text = &quot;Number of selected columns and samples in the provided design does not match! Please inspect the input values.&quot; + \%%00010%%00009%%00009%%00009line_separator + &quot;number of columns: {columns}&quot; + \%%00010%%00009%%00009%%00009line_separator + &quot;number of items in design input: {samples}&quot;%%00010%%00009%%00009raise Exception(exception_text.format(columns = input_columns, samples = len(design_list)))%%00010%%00010%%00009output_table_1 = add_summary_columns_to_df(output_table_1, input_table_1, design_list)%%00010%%00010# check whether the summary calculation was requested on sample type level and %%00010# appropriate variables provided in a good format and initiates the calculation%%00010if flow_variables['biol_repl_summary'] == 1:%%00010%%00009biol_replicates_list = prepare_list_from_string_input(flow_variables['biol_replicates'])%%00010%%00009design_list = prepare_list_from_string_input(flow_variables['design'])%%00010%%00009if not input_columns == len(biol_replicates_list) == len(design_list):%%00010%%00009%%00009exception_text = &quot;Number of selected columns and values in the provided design or in biological replicates input does not match! Please inspect the input values.&quot; + \%%00010%%00009%%00009%%00009line_separator + &quot;number of columns: {columns}&quot; + \%%00010%%00009%%00009%%00009line_separator + &quot;number of items in design input: {samples}&quot; + \%%00010%%00009%%00009%%00009line_separator + &quot;number of items in biological replicates input: {biol_repl}&quot;%%00010%%00009%%00009raise Exception(exception_text.format(columns = input_columns, samples = len(design_list), biol_repl = len(biol_replicates_list)))%%00010%%00009%%00010%%00009column_names = [str(design_list[i]) + &quot;_&quot; + str(biol_replicates_list[i]) for i in range(len(design_list))]%%00010%%00010%%00009output_table_1 = add_summary_columns_to_df(output_table_1, input_table_1, column_names)"/>
+        <entry key="rowLimit" type="xint" value="1000"/>
+        <entry key="convertMissingToPython" type="xboolean" value="false"/>
+        <entry key="convertMissingFromPython" type="xboolean" value="false"/>
+        <entry key="sentinelOption" type="xstring" value="MIN_VAL"/>
+        <entry key="sentinelValue" type="xint" value="0"/>
+        <entry key="chunkSize" type="xint" value="500000"/>
+        <entry key="pythonVersionOption" type="xstring" value="python3"/>
+        <entry key="python2Command" type="xstring" value=""/>
+        <entry key="python3Command" type="xstring" value="unknown_flow_variable_selected"/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="python3Command">
+                <entry key="used_variable" type="xstring" value="python3command"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="adds summary columns %%00010on biological replicate level %%00010and sample type level"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="628"/>
+        <entry key="y-coordinate" type="xint" value="619"/>
+        <entry key="width" type="xint" value="184"/>
+        <entry key="height" type="xint" value="48"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="10"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles">
+            <config key="style_0">
+                <entry key="start" type="xint" value="0"/>
+                <entry key="length" type="xint" value="74"/>
+                <entry key="fontname" type="xstring" value="Sans"/>
+                <entry key="fontstyle" type="xint" value="0"/>
+                <entry key="fontsize" type="xint" value="10"/>
+                <entry key="fgcolor" type="xint" value="0"/>
+            </config>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="org.knime.python2.nodes.script2.Python2ScriptNodeFactory2"/>
+    <entry key="node-name" type="xstring" value="Python Script"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Python nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python2.nodes"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.6.0.v202206032030"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Python Integration"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python2.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.6.0.v202206100850"/>
+    <config key="factory_settings"/>
+    <config key="node_creation_config">
+        <config key="Input object (pickled)"/>
+        <config key="Input table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output image"/>
+        <config key="Output object (pickled)"/>
+    </config>
+    <entry key="name" type="xstring" value="Python Script"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>
