@@ -4,7 +4,7 @@ mass,modification_name,abbreviation,mod1,mod1_natural_modification,mod2,mod2_nat
 28.0313,Dimethyl,me2,me2,1,,0,,,under,ok,,,,,,,,,,,,,,,,,,,under,ok,,,,,,,,,,,,,,,,
 42.04695,Trimethyl,me3,me3,1,,0,,,under,ok,,,,,,,,,,,,,,,,,,,under,ok,,,,,,,,,,,,,,,,
 42.010565,Acetyl,ac,ac,1,,0,ok,,ok,,ok,,ok,,ok,,ok,,ok,,ok,,ok,,ok,,ok,,under,ok,ok,,ok,,ok,,ok,,ok,,ok,,ok,,ok,
-56.026215,Propionyl,prop,prop,0,,0,,,ok,,ok,,ok,,ok,,ok,,ok,,ok,,ok,,ok,,ok,,under,ok,ok,,ok,,ok,,ok,over,ok,over,ok,,ok,over,ok,
+56.026215,Propionyl,prop,prop,0,,0,ok,,ok,,ok,,ok,,ok,,ok,,ok,,ok,,ok,,ok,,ok,,under,ok,ok,,ok,,ok,,ok,over,ok,over,ok,,ok,over,ok,
 112.05243,diPropionyl,prop2,prop,0,prop,0,,,error,,,,,,,,,,,,,,,,,,,,ok,,,,,,,,over,,over,,,,over,,,
 98.036779,Propionyl_Acetyl,prop_ac,prop,0,ac,1,,,error,,,,,,,,,,,,,,,,,,,,ok,,,,,,,,over,,over,,,,over,,,
 70.041865,Propionyl_Methyl,prop_me1,prop,0,me1,1,,,ok,,,,,,,,,,,,,,,,,,,,ok,ok,,,,,,,,,,,,,,,,

@@ -2,12 +2,6 @@
 {
     "type": "object",
     "properties": {
-        "string-input-1385:1527": {
-            "type": "string",
-            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
-            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
-            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
-        },
         "protein_id_prefix_regex-1392:148": {
             "type": "string",
             "default": "",
@@ -38,6 +32,12 @@
             "description": "If left blank, all pairwise comparisons will be performed. If a single sample name is entered, this will be used as a control group to which all other samples will be compared. If you want to only perform certain contrasts, enter them in format \"A-B,A-C\".",
             "example": ""
         },
+        "string-input-1393:1527": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
         "single-selection-0:127": {
             "type": "object",
             "properties": {
@@ -64,11 +64,23 @@
                 "variable_value": "individual forms"
             }
         },
+        "boolean-input-1393:988": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Enables case-insensitive matching\t",
+            "example": false
+        },
         "string-input-0:1725": {
             "type": "string",
             "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
             "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
             "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "boolean-input-1393:989": {
+            "type": "boolean",
+            "default": "true",
+            "description": "When this flag is specified then the search string is treated as a sequence of literal characters. Metacharacters or escape sequences in the input sequence will be given no special meaning.",
+            "example": true
         },
         "string-input-0:1726": {
             "type": "string",
@@ -86,18 +98,6 @@
             "type": "boolean",
             "default": "false",
             "description": "Should zero areas be replaced?",
-            "example": false
-        },
-        "boolean-input-1385:989": {
-            "type": "boolean",
-            "default": "true",
-            "description": "When this flag is specified then the search string is treated as a sequence of literal characters. Metacharacters or escape sequences in the input sequence will be given no special meaning.",
-            "example": true
-        },
-        "boolean-input-1385:988": {
-            "type": "boolean",
-            "default": "false",
-            "description": "Enables case-insensitive matching\t",
             "example": false
         }
     }
