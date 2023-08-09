@@ -8,6 +8,24 @@
             "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
             "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
         },
+        "protein_id_prefix_regex-1392:148": {
+            "type": "string",
+            "default": "",
+            "description": "Type a classic regular expression, requested ID value insert to round parenthesis \"()\".\n\nExamples:\n\n- two pipes (* | * | # _*):\n[^\\|]*\\|[^\\|]*\\|([^_]*)",
+            "example": ""
+        },
+        "string-input-1392:1725": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1392:1726": {
+            "type": "string",
+            "default": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"
+        },
         "string-input-1390:1527": {
             "type": "string",
             "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
@@ -52,12 +70,6 @@
             "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
             "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
         },
-        "protein_id_prefix_regex-1391:148": {
-            "type": "string",
-            "default": "",
-            "description": "Type a classic regular expression, requested ID value insert to round parenthesis \"()\".\n\nExamples:\n\n- two pipes (* | * | # _*):\n[^\\|]*\\|[^\\|]*\\|([^_]*)",
-            "example": ""
-        },
         "string-input-0:1726": {
             "type": "string",
             "default": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R",
@@ -75,18 +87,6 @@
             "default": "false",
             "description": "Should zero areas be replaced?",
             "example": false
-        },
-        "string-input-1391:1726": {
-            "type": "string",
-            "default": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R",
-            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
-            "example": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"
-        },
-        "string-input-1391:1725": {
-            "type": "string",
-            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
-            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
-            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
         },
         "boolean-input-1385:989": {
             "type": "boolean",

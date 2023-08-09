@@ -6,7 +6,7 @@
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="context.workflow.absolute-path"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="/home/knimeuser/knime-workspace/gitfolders_personal/KNIME_workflows/Workflow_templates/Skyline_TMA_histones_derivatization_0.4"/>
+            <entry key="value" type="xstring" value="/home/knimeuser/knime-workspace/gitfolders_personal/KNIME_workflows/Workflow_templates/Skyline_TMA_histones_derivatization_0.5"/>
         </config>
     </config>
     <config key="internal_node_subsettings">
