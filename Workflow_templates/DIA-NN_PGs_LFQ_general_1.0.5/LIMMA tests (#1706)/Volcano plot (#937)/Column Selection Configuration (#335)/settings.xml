@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack">
+        <config key="Variable_0">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="p_value_column"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="LIMMA_DIA_s2-s1.adj.P.Val"/>
+        </config>
+        <config key="Variable_1">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="p_value_column"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="LIMMA_DIA_s2-s1.adj.P.Val"/>
+        </config>
+    </config>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="defaultValue">
+            <entry key="column" type="xstring" value="PG.ID"/>
+        </config>
+        <entry key="hideInDialog" type="xboolean" value="false"/>
+        <entry key="parameterName" type="xstring" value="p_value_column"/>
+        <entry key="label" type="xstring" value="P-value column"/>
+        <entry key="description" type="xstring" value="Select column with p-values or adjusted p-values"/>
+        <entry key="required" type="xboolean" value="true"/>
+        <entry key="flowVariableName" type="xstring" value="p_value_column"/>
+        <config key="possibleColumns">
+            <entry key="array-size" type="xint" value="103"/>
+            <entry key="0" type="xstring" value="PG.ID"/>
+            <entry key="1" type="xstring" value="Protein.Group"/>
+            <entry key="2" type="xstring" value="UniProt_Entry"/>
+            <entry key="3" type="xstring" value="UniProt_Entry name"/>
+            <entry key="4" type="xstring" value="UniProt_Gene names  (primary )"/>
+            <entry key="5" type="xstring" value="UniProt_Protein names"/>
+            <entry key="6" type="xstring" value="Lib.PG.Q.Value"/>
+            <entry key="7" type="xstring" value="Stripped.Sequence (Concatenate)"/>
+            <entry key="8" type="xstring" value="Stripped.Sequence (Count)"/>
+            <entry key="9" type="xstring" value="UniProt_Protein ID"/>
+            <entry key="10" type="xstring" value="UniProt_Status"/>
+            <entry key="11" type="xstring" value="UniProt_Mass"/>
+            <entry key="12" type="xstring" value="UniProt_Length"/>
+            <entry key="13" type="xstring" value="UniProt_Organism"/>
+            <entry key="14" type="xstring" value="UniProt_Gene ontology (GO)"/>
+            <entry key="15" type="xstring" value="UniProt_Gene ontology (biological process)"/>
+            <entry key="16" type="xstring" value="UniProt_Gene ontology (molecular function)"/>
+            <entry key="17" type="xstring" value="UniProt_Gene ontology (cellular component)"/>
+            <entry key="18" type="xstring" value="UniProt_Gene ontology IDs"/>
+            <entry key="19" type="xstring" value="UniProt_Subcellular location [CC]"/>
+            <entry key="20" type="xstring" value="UniProt_Protein families"/>
+            <entry key="21" type="xstring" value="UniProt_Interacts with"/>
+            <entry key="22" type="xstring" value="UniProt_Sequence"/>
+            <entry key="23" type="xstring" value="UniProt_Cross-reference (InterPro)"/>
+            <entry key="24" type="xstring" value="UniProt_Cross-reference (Pfam)"/>
+            <entry key="25" type="xstring" value="UniProt_Cross-reference (IntAct)"/>
+            <entry key="26" type="xstring" value="PG.Quantity_sum"/>
+            <entry key="27" type="xstring" value="PG.MaxLFQ+1_1"/>
+            <entry key="28" type="xstring" value="PG.MaxLFQ+1_2"/>
+            <entry key="29" type="xstring" value="PG.MaxLFQ+1_3"/>
+            <entry key="30" type="xstring" value="PG.MaxLFQ+2_1"/>
+            <entry key="31" type="xstring" value="PG.MaxLFQ+2_2"/>
+            <entry key="32" type="xstring" value="PG.MaxLFQ+2_3"/>
+            <entry key="33" type="xstring" value="PG.Normalised+1_1"/>
+            <entry key="34" type="xstring" value="PG.Normalised+1_2"/>
+            <entry key="35" type="xstring" value="PG.Normalised+1_3"/>
+            <entry key="36" type="xstring" value="PG.Normalised+2_1"/>
+            <entry key="37" type="xstring" value="PG.Normalised+2_2"/>
+            <entry key="38" type="xstring" value="PG.Normalised+2_3"/>
+            <entry key="39" type="xstring" value="PG.Quantity+1_1"/>
+            <entry key="40" type="xstring" value="PG.Quantity+1_2"/>
+            <entry key="41" type="xstring" value="PG.Quantity+1_3"/>
+            <entry key="42" type="xstring" value="PG.Quantity+2_1"/>
+            <entry key="43" type="xstring" value="PG.Quantity+2_2"/>
+            <entry key="44" type="xstring" value="PG.Quantity+2_3"/>
+            <entry key="45" type="xstring" value="Precursor.Id+1_1"/>
+            <entry key="46" type="xstring" value="Precursor.Id+1_2"/>
+            <entry key="47" type="xstring" value="Precursor.Id+1_3"/>
+            <entry key="48" type="xstring" value="Precursor.Id+2_1"/>
+            <entry key="49" type="xstring" value="Precursor.Id+2_2"/>
+            <entry key="50" type="xstring" value="Precursor.Id+2_3"/>
+            <entry key="51" type="xstring" value="Proteotypic+1_1"/>
+            <entry key="52" type="xstring" value="Proteotypic+1_2"/>
+            <entry key="53" type="xstring" value="Proteotypic+1_3"/>
+            <entry key="54" type="xstring" value="Proteotypic+2_1"/>
+            <entry key="55" type="xstring" value="Proteotypic+2_2"/>
+            <entry key="56" type="xstring" value="Proteotypic+2_3"/>
+            <entry key="57" type="xstring" value="PG.Quantity_sum_log2"/>
+            <entry key="58" type="xstring" value="PG.MaxLFQ+1_1_log2"/>
+            <entry key="59" type="xstring" value="PG.MaxLFQ+1_2_log2"/>
+            <entry key="60" type="xstring" value="PG.MaxLFQ+1_3_log2"/>
+            <entry key="61" type="xstring" value="PG.MaxLFQ+2_1_log2"/>
+            <entry key="62" type="xstring" value="PG.MaxLFQ+2_2_log2"/>
+            <entry key="63" type="xstring" value="PG.MaxLFQ+2_3_log2"/>
+            <entry key="64" type="xstring" value="PG.Normalised+1_1_log2"/>
+            <entry key="65" type="xstring" value="PG.Normalised+1_2_log2"/>
+            <entry key="66" type="xstring" value="PG.Normalised+1_3_log2"/>
+            <entry key="67" type="xstring" value="PG.Normalised+2_1_log2"/>
+            <entry key="68" type="xstring" value="PG.Normalised+2_2_log2"/>
+            <entry key="69" type="xstring" value="PG.Normalised+2_3_log2"/>
+            <entry key="70" type="xstring" value="Proteotypic_max"/>
+            <entry key="71" type="xstring" value="PG.Quantity+1_1_log2"/>
+            <entry key="72" type="xstring" value="PG.Quantity+1_2_log2"/>
+            <entry key="73" type="xstring" value="PG.Quantity+1_3_log2"/>
+            <entry key="74" type="xstring" value="PG.Quantity+2_1_log2"/>
+            <entry key="75" type="xstring" value="PG.Quantity+2_2_log2"/>
+            <entry key="76" type="xstring" value="PG.Quantity+2_3_log2"/>
+            <entry key="77" type="xstring" value="PG.MaxLFQ+1_1_log2_bin"/>
+            <entry key="78" type="xstring" value="PG.MaxLFQ+1_2_log2_bin"/>
+            <entry key="79" type="xstring" value="PG.MaxLFQ+1_3_log2_bin"/>
+            <entry key="80" type="xstring" value="PG.MaxLFQ+2_1_log2_bin"/>
+            <entry key="81" type="xstring" value="PG.MaxLFQ+2_2_log2_bin"/>
+            <entry key="82" type="xstring" value="PG.MaxLFQ+2_3_log2_bin"/>
+            <entry key="83" type="xstring" value="PG.MaxLFQ_s1_log2_bin_sum"/>
+            <entry key="84" type="xstring" value="PG.MaxLFQ_s2_log2_bin_sum"/>
+            <entry key="85" type="xstring" value="LIMMA_DIA_s2-s1.logFC"/>
+            <entry key="86" type="xstring" value="LIMMA_DIA_s2-s1.AveExpr"/>
+            <entry key="87" type="xstring" value="LIMMA_DIA_s2-s1.t"/>
+            <entry key="88" type="xstring" value="LIMMA_DIA_s2-s1.P.Value"/>
+            <entry key="89" type="xstring" value="LIMMA_DIA_s2-s1.adj.P.Val"/>
+            <entry key="90" type="xstring" value="LIMMA_DIA_s2-s1.B"/>
+            <entry key="91" type="xstring" value="LIMMA_DIA_s3-s1.logFC"/>
+            <entry key="92" type="xstring" value="LIMMA_DIA_s3-s1.AveExpr"/>
+            <entry key="93" type="xstring" value="LIMMA_DIA_s3-s1.t"/>
+            <entry key="94" type="xstring" value="LIMMA_DIA_s3-s1.P.Value"/>
+            <entry key="95" type="xstring" value="LIMMA_DIA_s3-s1.adj.P.Val"/>
+            <entry key="96" type="xstring" value="LIMMA_DIA_s3-s1.B"/>
+            <entry key="97" type="xstring" value="LIMMA_DIA_s3-s2.logFC"/>
+            <entry key="98" type="xstring" value="LIMMA_DIA_s3-s2.AveExpr"/>
+            <entry key="99" type="xstring" value="LIMMA_DIA_s3-s2.t"/>
+            <entry key="100" type="xstring" value="LIMMA_DIA_s3-s2.P.Value"/>
+            <entry key="101" type="xstring" value="LIMMA_DIA_s3-s2.adj.P.Val"/>
+            <entry key="102" type="xstring" value="LIMMA_DIA_s3-s2.B"/>
+        </config>
+        <entry key="type" type="xstring" value="Dropdown"/>
+        <entry key="limit_number_visible_options" type="xboolean" value="false"/>
+        <entry key="number_visible_options" type="xint" value="10"/>
+        <config key="input_filter">
+            <config key="type_filter">
+                <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.time.localdatetime.LocalDateTimeValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+            </config>
+            <entry key="allow_all_types" type="xboolean" value="true"/>
+            <entry key="filter_columns_without_domain" type="xboolean" value="false"/>
+        </config>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="p-value column %%00010selection"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="169"/>
+        <entry key="y-coordinate" type="xint" value="679"/>
+        <entry key="width" type="xint" value="142"/>
+        <entry key="height" type="xint" value="32"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="10"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles">
+            <config key="style_0">
+                <entry key="start" type="xint" value="0"/>
+                <entry key="length" type="xint" value="7"/>
+                <entry key="fontname" type="xstring" value="Sans"/>
+                <entry key="fontstyle" type="xint" value="0"/>
+                <entry key="fontsize" type="xint" value="10"/>
+                <entry key="fgcolor" type="xint" value="0"/>
+            </config>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="org.knime.js.base.node.configuration.selection.column.ColumnSelectionDialogNodeFactory2"/>
+    <entry key="node-name" type="xstring" value="Column Selection Configuration"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.js.quickforms"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.6.0.v202202280849"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Quick Forms"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.js.quickforms.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.6.0.v202209271016"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Column Selection Configuration"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="sample-986">
+            <entry key="string" type="xstring" value="none"/>
+        </config>
+        <config key="columns_to_process-982">
+            <config key="columnFilter">
+                <config key="columnFilter">
+                    <config key="datatype">
+                        <config key="typelist">
+                            <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+                        </config>
+                    </config>
+                    <config key="name_pattern">
+                        <entry key="pattern" type="xstring" value="Proteotypic*"/>
+                        <entry key="excludeMatching" type="xboolean" value="false"/>
+                        <entry key="type" type="xstring" value="Wildcard"/>
+                        <entry key="caseSensitive" type="xboolean" value="true"/>
+                    </config>
+                    <config key="excluded_names">
+                        <entry key="array-size" type="xint" value="288"/>
+                        <entry key="0" type="xstring" value="peptide.ID"/>
+                        <entry key="1" type="xstring" value="Stripped.Sequence"/>
+                        <entry key="2" type="xstring" value="Protein.Group"/>
+                        <entry key="3" type="xstring" value="Lib.PG.Q.Value"/>
+                        <entry key="4" type="xstring" value="UniProt_Entry"/>
+                        <entry key="5" type="xstring" value="UniProt_Protein names"/>
+                        <entry key="6" type="xstring" value="Global.Q.Value (Min*)+1-1"/>
+                        <entry key="7" type="xstring" value="Global.Q.Value (Min*)+1-2"/>
+                        <entry key="8" type="xstring" value="Global.Q.Value (Min*)+1-3"/>
+                        <entry key="9" type="xstring" value="Global.Q.Value (Min*)+1-4"/>
+                        <entry key="10" type="xstring" value="Global.Q.Value (Min*)+1-5"/>
+                        <entry key="11" type="xstring" value="Global.Q.Value (Min*)+2-1"/>
+                        <entry key="12" type="xstring" value="Global.Q.Value (Min*)+2-2"/>
+                        <entry key="13" type="xstring" value="Global.Q.Value (Min*)+2-3"/>
+                        <entry key="14" type="xstring" value="Global.Q.Value (Min*)+2-4"/>
+                        <entry key="15" type="xstring" value="Global.Q.Value (Min*)+2-5"/>
+                        <entry key="16" type="xstring" value="Global.Q.Value (Min*)+3-1"/>
+                        <entry key="17" type="xstring" value="Global.Q.Value (Min*)+3-2"/>
+                        <entry key="18" type="xstring" value="Global.Q.Value (Min*)+3-3"/>
+                        <entry key="19" type="xstring" value="Global.Q.Value (Min*)+3-4"/>
+                        <entry key="20" type="xstring" value="Global.Q.Value (Min*)+3-5"/>
+                        <entry key="21" type="xstring" value="Global.Q.Value (Min*)+4-1"/>
+                        <entry key="22" type="xstring" value="Global.Q.Value (Min*)+4-2"/>
+                        <entry key="23" type="xstring" value="Global.Q.Value (Min*)+4-3"/>
+                        <entry key="24" type="xstring" value="Global.Q.Value (Min*)+4-4"/>
+                        <entry key="25" type="xstring" value="Global.Q.Value (Min*)+4-5"/>
+                        <entry key="26" type="xstring" value="Lib.Q.Value (Min*)+1-1"/>
+                        <entry key="27" type="xstring" value="Lib.Q.Value (Min*)+1-2"/>
+                        <entry key="28" type="xstring" value="Lib.Q.Value (Min*)+1-3"/>
+                        <entry key="29" type="xstring" value="Lib.Q.Value (Min*)+1-4"/>
+                        <entry key="30" type="xstring" value="Lib.Q.Value (Min*)+1-5"/>
+                        <entry key="31" type="xstring" value="Lib.Q.Value (Min*)+2-1"/>
+                        <entry key="32" type="xstring" value="Lib.Q.Value (Min*)+2-2"/>
+                        <entry key="33" type="xstring" value="Lib.Q.Value (Min*)+2-3"/>
+                        <entry key="34" type="xstring" value="Lib.Q.Value (Min*)+2-4"/>
+                        <entry key="35" type="xstring" value="Lib.Q.Value (Min*)+2-5"/>
+                        <entry key="36" type="xstring" value="Lib.Q.Value (Min*)+3-1"/>
+                        <entry key="37" type="xstring" value="Lib.Q.Value (Min*)+3-2"/>
+                        <entry key="38" type="xstring" value="Lib.Q.Value (Min*)+3-3"/>
+                        <entry key="39" type="xstring" value="Lib.Q.Value (Min*)+3-4"/>
+                        <entry key="40" type="xstring" value="Lib.Q.Value (Min*)+3-5"/>
+                        <entry key="41" type="xstring" value="Lib.Q.Value (Min*)+4-1"/>
+                        <entry key="42" type="xstring" value="Lib.Q.Value (Min*)+4-2"/>
+                        <entry key="43" type="xstring" value="Lib.Q.Value (Min*)+4-3"/>
+                        <entry key="44" type="xstring" value="Lib.Q.Value (Min*)+4-4"/>
+                        <entry key="45" type="xstring" value="Lib.Q.Value (Min*)+4-5"/>
+                        <entry key="46" type="xstring" value="PEP (Min*)+1-1"/>
+                        <entry key="47" type="xstring" value="PEP (Min*)+1-2"/>
+                        <entry key="48" type="xstring" value="PEP (Min*)+1-3"/>
+                        <entry key="49" type="xstring" value="PEP (Min*)+1-4"/>
+                        <entry key="50" type="xstring" value="PEP (Min*)+1-5"/>
+                        <entry key="51" type="xstring" value="PEP (Min*)+2-1"/>
+                        <entry key="52" type="xstring" value="PEP (Min*)+2-2"/>
+                        <entry key="53" type="xstring" value="PEP (Min*)+2-3"/>
+                        <entry key="54" type="xstring" value="PEP (Min*)+2-4"/>
+                        <entry key="55" type="xstring" value="PEP (Min*)+2-5"/>
+                        <entry key="56" type="xstring" value="PEP (Min*)+3-1"/>
+                        <entry key="57" type="xstring" value="PEP (Min*)+3-2"/>
+                        <entry key="58" type="xstring" value="PEP (Min*)+3-3"/>
+                        <entry key="59" type="xstring" value="PEP (Min*)+3-4"/>
+                        <entry key="60" type="xstring" value="PEP (Min*)+3-5"/>
+                        <entry key="61" type="xstring" value="PEP (Min*)+4-1"/>
+                        <entry key="62" type="xstring" value="PEP (Min*)+4-2"/>
+                        <entry key="63" type="xstring" value="PEP (Min*)+4-3"/>
+                        <entry key="64" type="xstring" value="PEP (Min*)+4-4"/>
+                        <entry key="65" type="xstring" value="PEP (Min*)+4-5"/>
+                        <entry key="66" type="xstring" value="Q.Value (Min*)+1-1"/>
+                        <entry key="67" type="xstring" value="Q.Value (Min*)+1-2"/>
+                        <entry key="68" type="xstring" value="Q.Value (Min*)+1-3"/>
+                        <entry key="69" type="xstring" value="Q.Value (Min*)+1-4"/>
+                        <entry key="70" type="xstring" value="Q.Value (Min*)+1-5"/>
+                        <entry key="71" type="xstring" value="Q.Value (Min*)+2-1"/>
+                        <entry key="72" type="xstring" value="Q.Value (Min*)+2-2"/>
+                        <entry key="73" type="xstring" value="Q.Value (Min*)+2-3"/>
+                        <entry key="74" type="xstring" value="Q.Value (Min*)+2-4"/>
+                        <entry key="75" type="xstring" value="Q.Value (Min*)+2-5"/>
+                        <entry key="76" type="xstring" value="Q.Value (Min*)+3-1"/>
+                        <entry key="77" type="xstring" value="Q.Value (Min*)+3-2"/>
+                        <entry key="78" type="xstring" value="Q.Value (Min*)+3-3"/>
+                        <entry key="79" type="xstring" value="Q.Value (Min*)+3-4"/>
+                        <entry key="80" type="xstring" value="Q.Value (Min*)+3-5"/>
+                        <entry key="81" type="xstring" value="Q.Value (Min*)+4-1"/>
+                        <entry key="82" type="xstring" value="Q.Value (Min*)+4-2"/>
+                        <entry key="83" type="xstring" value="Q.Value (Min*)+4-3"/>
+                        <entry key="84" type="xstring" value="Q.Value (Min*)+4-4"/>
+                        <entry key="85" type="xstring" value="Q.Value (Min*)+4-5"/>
+                        <entry key="86" type="xstring" value="RT (Mean)+1-1"/>
+                        <entry key="87" type="xstring" value="RT (Mean)+1-2"/>
+                        <entry key="88" type="xstring" value="RT (Mean)+1-3"/>
+                        <entry key="89" type="xstring" value="RT (Mean)+1-4"/>
+                        <entry key="90" type="xstring" value="RT (Mean)+1-5"/>
+                        <entry key="91" type="xstring" value="RT (Mean)+2-1"/>
+                        <entry key="92" type="xstring" value="RT (Mean)+2-2"/>
+                        <entry key="93" type="xstring" value="RT (Mean)+2-3"/>
+                        <entry key="94" type="xstring" value="RT (Mean)+2-4"/>
+                        <entry key="95" type="xstring" value="RT (Mean)+2-5"/>
+                        <entry key="96" type="xstring" value="RT (Mean)+3-1"/>
+                        <entry key="97" type="xstring" value="RT (Mean)+3-2"/>
+                        <entry key="98" type="xstring" value="RT (Mean)+3-3"/>
+                        <entry key="99" type="xstring" value="RT (Mean)+3-4"/>
+                        <entry key="100" type="xstring" value="RT (Mean)+3-5"/>
+                        <entry key="101" type="xstring" value="RT (Mean)+4-1"/>
+                        <entry key="102" type="xstring" value="RT (Mean)+4-2"/>
+                        <entry key="103" type="xstring" value="RT (Mean)+4-3"/>
+                        <entry key="104" type="xstring" value="RT (Mean)+4-4"/>
+                        <entry key="105" type="xstring" value="RT (Mean)+4-5"/>
+                        <entry key="106" type="xstring" value="RT.Start (Mean)+1-1"/>
+                        <entry key="107" type="xstring" value="RT.Start (Mean)+1-2"/>
+                        <entry key="108" type="xstring" value="RT.Start (Mean)+1-3"/>
+                        <entry key="109" type="xstring" value="RT.Start (Mean)+1-4"/>
+                        <entry key="110" type="xstring" value="RT.Start (Mean)+1-5"/>
+                        <entry key="111" type="xstring" value="RT.Start (Mean)+2-1"/>
+                        <entry key="112" type="xstring" value="RT.Start (Mean)+2-2"/>
+                        <entry key="113" type="xstring" value="RT.Start (Mean)+2-3"/>
+                        <entry key="114" type="xstring" value="RT.Start (Mean)+2-4"/>
+                        <entry key="115" type="xstring" value="RT.Start (Mean)+2-5"/>
+                        <entry key="116" type="xstring" value="RT.Start (Mean)+3-1"/>
+                        <entry key="117" type="xstring" value="RT.Start (Mean)+3-2"/>
+                        <entry key="118" type="xstring" value="RT.Start (Mean)+3-3"/>
+                        <entry key="119" type="xstring" value="RT.Start (Mean)+3-4"/>
+                        <entry key="120" type="xstring" value="RT.Start (Mean)+3-5"/>
+                        <entry key="121" type="xstring" value="RT.Start (Mean)+4-1"/>
+                        <entry key="122" type="xstring" value="RT.Start (Mean)+4-2"/>
+                        <entry key="123" type="xstring" value="RT.Start (Mean)+4-3"/>
+                        <entry key="124" type="xstring" value="RT.Start (Mean)+4-4"/>
+                        <entry key="125" type="xstring" value="RT.Start (Mean)+4-5"/>
+                        <entry key="126" type="xstring" value="RT.Stop (Mean)+1-1"/>
+                        <entry key="127" type="xstring" value="RT.Stop (Mean)+1-2"/>
+                        <entry key="128" type="xstring" value="RT.Stop (Mean)+1-3"/>
+                        <entry key="129" type="xstring" value="RT.Stop (Mean)+1-4"/>
+                        <entry key="130" type="xstring" value="RT.Stop (Mean)+1-5"/>
+                        <entry key="131" type="xstring" value="RT.Stop (Mean)+2-1"/>
+                        <entry key="132" type="xstring" value="RT.Stop (Mean)+2-2"/>
+                        <entry key="133" type="xstring" value="RT.Stop (Mean)+2-3"/>
+                        <entry key="134" type="xstring" value="RT.Stop (Mean)+2-4"/>
+                        <entry key="135" type="xstring" value="RT.Stop (Mean)+2-5"/>
+                        <entry key="136" type="xstring" value="RT.Stop (Mean)+3-1"/>
+                        <entry key="137" type="xstring" value="RT.Stop (Mean)+3-2"/>
+                        <entry key="138" type="xstring" value="RT.Stop (Mean)+3-3"/>
+                        <entry key="139" type="xstring" value="RT.Stop (Mean)+3-4"/>
+                        <entry key="140" type="xstring" value="RT.Stop (Mean)+3-5"/>
+                        <entry key="141" type="xstring" value="RT.Stop (Mean)+4-1"/>
+                        <entry key="142" type="xstring" value="RT.Stop (Mean)+4-2"/>
+                        <entry key="143" type="xstring" value="RT.Stop (Mean)+4-3"/>
+                        <entry key="144" type="xstring" value="RT.Stop (Mean)+4-4"/>
+                        <entry key="145" type="xstring" value="RT.Stop (Mean)+4-5"/>
+                        <entry key="146" type="xstring" value="Precursor.Normalised+1-1"/>
+                        <entry key="147" type="xstring" value="Precursor.Normalised+1-2"/>
+                        <entry key="148" type="xstring" value="Precursor.Normalised+1-3"/>
+                        <entry key="149" type="xstring" value="Precursor.Normalised+1-4"/>
+                        <entry key="150" type="xstring" value="Precursor.Normalised+1-5"/>
+                        <entry key="151" type="xstring" value="Precursor.Normalised+2-1"/>
+                        <entry key="152" type="xstring" value="Precursor.Normalised+2-2"/>
+                        <entry key="153" type="xstring" value="Precursor.Normalised+2-3"/>
+                        <entry key="154" type="xstring" value="Precursor.Normalised+2-4"/>
+                        <entry key="155" type="xstring" value="Precursor.Normalised+2-5"/>
+                        <entry key="156" type="xstring" value="Precursor.Normalised+3-1"/>
+                        <entry key="157" type="xstring" value="Precursor.Normalised+3-2"/>
+                        <entry key="158" type="xstring" value="Precursor.Normalised+3-3"/>
+                        <entry key="159" type="xstring" value="Precursor.Normalised+3-4"/>
+                        <entry key="160" type="xstring" value="Precursor.Normalised+3-5"/>
+                        <entry key="161" type="xstring" value="Precursor.Normalised+4-1"/>
+                        <entry key="162" type="xstring" value="Precursor.Normalised+4-2"/>
+                        <entry key="163" type="xstring" value="Precursor.Normalised+4-3"/>
+                        <entry key="164" type="xstring" value="Precursor.Normalised+4-4"/>
+                        <entry key="165" type="xstring" value="Precursor.Normalised+4-5"/>
+                        <entry key="166" type="xstring" value="Precursor.Quantity+1-1"/>
+                        <entry key="167" type="xstring" value="Precursor.Quantity+1-2"/>
+                        <entry key="168" type="xstring" value="Precursor.Quantity+1-3"/>
+                        <entry key="169" type="xstring" value="Precursor.Quantity+1-4"/>
+                        <entry key="170" type="xstring" value="Precursor.Quantity+1-5"/>
+                        <entry key="171" type="xstring" value="Precursor.Quantity+2-1"/>
+                        <entry key="172" type="xstring" value="Precursor.Quantity+2-2"/>
+                        <entry key="173" type="xstring" value="Precursor.Quantity+2-3"/>
+                        <entry key="174" type="xstring" value="Precursor.Quantity+2-4"/>
+                        <entry key="175" type="xstring" value="Precursor.Quantity+2-5"/>
+                        <entry key="176" type="xstring" value="Precursor.Quantity+3-1"/>
+                        <entry key="177" type="xstring" value="Precursor.Quantity+3-2"/>
+                        <entry key="178" type="xstring" value="Precursor.Quantity+3-3"/>
+                        <entry key="179" type="xstring" value="Precursor.Quantity+3-4"/>
+                        <entry key="180" type="xstring" value="Precursor.Quantity+3-5"/>
+                        <entry key="181" type="xstring" value="Precursor.Quantity+4-1"/>
+                        <entry key="182" type="xstring" value="Precursor.Quantity+4-2"/>
+                        <entry key="183" type="xstring" value="Precursor.Quantity+4-3"/>
+                        <entry key="184" type="xstring" value="Precursor.Quantity+4-4"/>
+                        <entry key="185" type="xstring" value="Precursor.Quantity+4-5"/>
+                        <entry key="186" type="xstring" value="Precursor.Id+1-1"/>
+                        <entry key="187" type="xstring" value="Precursor.Id+1-2"/>
+                        <entry key="188" type="xstring" value="Precursor.Id+1-3"/>
+                        <entry key="189" type="xstring" value="Precursor.Id+1-4"/>
+                        <entry key="190" type="xstring" value="Precursor.Id+1-5"/>
+                        <entry key="191" type="xstring" value="Precursor.Id+2-1"/>
+                        <entry key="192" type="xstring" value="Precursor.Id+2-2"/>
+                        <entry key="193" type="xstring" value="Precursor.Id+2-3"/>
+                        <entry key="194" type="xstring" value="Precursor.Id+2-4"/>
+                        <entry key="195" type="xstring" value="Precursor.Id+2-5"/>
+                        <entry key="196" type="xstring" value="Precursor.Id+3-1"/>
+                        <entry key="197" type="xstring" value="Precursor.Id+3-2"/>
+                        <entry key="198" type="xstring" value="Precursor.Id+3-3"/>
+                        <entry key="199" type="xstring" value="Precursor.Id+3-4"/>
+                        <entry key="200" type="xstring" value="Precursor.Id+3-5"/>
+                        <entry key="201" type="xstring" value="Precursor.Id+4-1"/>
+                        <entry key="202" type="xstring" value="Precursor.Id+4-2"/>
+                        <entry key="203" type="xstring" value="Precursor.Id+4-3"/>
+                        <entry key="204" type="xstring" value="Precursor.Id+4-4"/>
+                        <entry key="205" type="xstring" value="Precursor.Id+4-5"/>
+                        <entry key="206" type="xstring" value="Proteotypic+1-1"/>
+                        <entry key="207" type="xstring" value="Proteotypic+1-2"/>
+                        <entry key="208" type="xstring" value="Proteotypic+1-3"/>
+                        <entry key="209" type="xstring" value="Proteotypic+1-4"/>
+                        <entry key="210" type="xstring" value="Proteotypic+1-5"/>
+                        <entry key="211" type="xstring" value="Proteotypic+2-1"/>
+                        <entry key="212" type="xstring" value="Proteotypic+2-2"/>
+                        <entry key="213" type="xstring" value="Proteotypic+2-3"/>
+                        <entry key="214" type="xstring" value="Proteotypic+2-4"/>
+                        <entry key="215" type="xstring" value="Proteotypic+2-5"/>
+                        <entry key="216" type="xstring" value="Proteotypic+3-1"/>
+                        <entry key="217" type="xstring" value="Proteotypic+3-2"/>
+                        <entry key="218" type="xstring" value="Proteotypic+3-3"/>
+                        <entry key="219" type="xstring" value="Proteotypic+3-4"/>
+                        <entry key="220" type="xstring" value="Proteotypic+3-5"/>
+                        <entry key="221" type="xstring" value="Proteotypic+4-1"/>
+                        <entry key="222" type="xstring" value="Proteotypic+4-2"/>
+                        <entry key="223" type="xstring" value="Proteotypic+4-3"/>
+                        <entry key="224" type="xstring" value="Proteotypic+4-4"/>
+                        <entry key="225" type="xstring" value="Proteotypic+4-5"/>
+                        <entry key="226" type="xstring" value="Precursor.Quantity_sum"/>
+                        <entry key="227" type="xstring" value="UniProt_Mass"/>
+                        <entry key="228" type="xstring" value="UniProt_Length"/>
+                        <entry key="229" type="xstring" value="UniProt_Sequence"/>
+                        <entry key="230" type="xstring" value="UniProt_InterPro"/>
+                        <entry key="231" type="xstring" value="UniProt_Pfam"/>
+                        <entry key="232" type="xstring" value="UniProt_IntAct"/>
+                        <entry key="233" type="xstring" value="UniProt_Protein ID"/>
+                        <entry key="234" type="xstring" value="UniProt_Entry Name"/>
+                        <entry key="235" type="xstring" value="UniProt_Reviewed"/>
+                        <entry key="236" type="xstring" value="UniProt_Gene Names (primary)"/>
+                        <entry key="237" type="xstring" value="UniProt_Organism"/>
+                        <entry key="238" type="xstring" value="UniProt_Gene Ontology (GO)"/>
+                        <entry key="239" type="xstring" value="UniProt_Gene Ontology (biological process)"/>
+                        <entry key="240" type="xstring" value="UniProt_Gene Ontology (molecular function)"/>
+                        <entry key="241" type="xstring" value="UniProt_Gene Ontology (cellular component)"/>
+                        <entry key="242" type="xstring" value="UniProt_Gene Ontology IDs"/>
+                        <entry key="243" type="xstring" value="UniProt_Subcellular location [CC]"/>
+                        <entry key="244" type="xstring" value="UniProt_Protein families"/>
+                        <entry key="245" type="xstring" value="UniProt_Interacts with"/>
+                        <entry key="246" type="xstring" value="Precursor.Normalised+1-1_log2"/>
+                        <entry key="247" type="xstring" value="Precursor.Normalised+1-2_log2"/>
+                        <entry key="248" type="xstring" value="Precursor.Normalised+1-3_log2"/>
+                        <entry key="249" type="xstring" value="Precursor.Normalised+1-4_log2"/>
+                        <entry key="250" type="xstring" value="Precursor.Normalised+1-5_log2"/>
+                        <entry key="251" type="xstring" value="Precursor.Normalised+2-1_log2"/>
+                        <entry key="252" type="xstring" value="Precursor.Normalised+2-2_log2"/>
+                        <entry key="253" type="xstring" value="Precursor.Normalised+2-3_log2"/>
+                        <entry key="254" type="xstring" value="Precursor.Normalised+2-4_log2"/>
+                        <entry key="255" type="xstring" value="Precursor.Normalised+2-5_log2"/>
+                        <entry key="256" type="xstring" value="Precursor.Normalised+3-1_log2"/>
+                        <entry key="257" type="xstring" value="Precursor.Normalised+3-2_log2"/>
+                        <entry key="258" type="xstring" value="Precursor.Normalised+3-3_log2"/>
+                        <entry key="259" type="xstring" value="Precursor.Normalised+3-4_log2"/>
+                        <entry key="260" type="xstring" value="Precursor.Normalised+3-5_log2"/>
+                        <entry key="261" type="xstring" value="Precursor.Normalised+4-1_log2"/>
+                        <entry key="262" type="xstring" value="Precursor.Normalised+4-2_log2"/>
+                        <entry key="263" type="xstring" value="Precursor.Normalised+4-3_log2"/>
+                        <entry key="264" type="xstring" value="Precursor.Normalised+4-4_log2"/>
+                        <entry key="265" type="xstring" value="Precursor.Normalised+4-5_log2"/>
+                        <entry key="266" type="xstring" value="Precursor.Quantity+1-1_log2"/>
+                        <entry key="267" type="xstring" value="Precursor.Quantity+1-2_log2"/>
+                        <entry key="268" type="xstring" value="Precursor.Quantity+1-3_log2"/>
+                        <entry key="269" type="xstring" value="Precursor.Quantity+1-4_log2"/>
+                        <entry key="270" type="xstring" value="Precursor.Quantity+1-5_log2"/>
+                        <entry key="271" type="xstring" value="Precursor.Quantity+2-1_log2"/>
+                        <entry key="272" type="xstring" value="Precursor.Quantity+2-2_log2"/>
+                        <entry key="273" type="xstring" value="Precursor.Quantity+2-3_log2"/>
+                        <entry key="274" type="xstring" value="Precursor.Quantity+2-4_log2"/>
+                        <entry key="275" type="xstring" value="Precursor.Quantity+2-5_log2"/>
+                        <entry key="276" type="xstring" value="Precursor.Quantity+3-1_log2"/>
+                        <entry key="277" type="xstring" value="Precursor.Quantity+3-2_log2"/>
+                        <entry key="278" type="xstring" value="Precursor.Quantity+3-3_log2"/>
+                        <entry key="279" type="xstring" value="Precursor.Quantity+3-4_log2"/>
+                        <entry key="280" type="xstring" value="Precursor.Quantity+3-5_log2"/>
+                        <entry key="281" type="xstring" value="Precursor.Quantity+4-1_log2"/>
+                        <entry key="282" type="xstring" value="Precursor.Quantity+4-2_log2"/>
+                        <entry key="283" type="xstring" value="Precursor.Quantity+4-3_log2"/>
+                        <entry key="284" type="xstring" value="Precursor.Quantity+4-4_log2"/>
+                        <entry key="285" type="xstring" value="Precursor.Quantity+4-5_log2"/>
+                        <entry key="286" type="xstring" value="Precursor.Quantity_sum_log2"/>
+                        <entry key="287" type="xstring" value="Lib.Q.Value_min"/>
+                    </config>
+                    <config key="included_names">
+                        <entry key="array-size" type="xint" value="141"/>
+                        <entry key="0" type="xstring" value="Proteotypic+WTA1 08D 01"/>
+                        <entry key="1" type="xstring" value="Proteotypic+WTA1 08D 03"/>
+                        <entry key="2" type="xstring" value="Proteotypic+WTA1 08D 05"/>
+                        <entry key="3" type="xstring" value="Proteotypic+WTA1 14D 10"/>
+                        <entry key="4" type="xstring" value="Proteotypic+WTA1 14D 12"/>
+                        <entry key="5" type="xstring" value="Proteotypic+WTA1 14D 14"/>
+                        <entry key="6" type="xstring" value="Proteotypic+MAVS 09D 01"/>
+                        <entry key="7" type="xstring" value="Proteotypic+MAVS 08D 03"/>
+                        <entry key="8" type="xstring" value="Proteotypic+MAVS 08D 05"/>
+                        <entry key="9" type="xstring" value="Proteotypic+MAVS 14D 10"/>
+                        <entry key="10" type="xstring" value="Proteotypic+MAVS 14D 13"/>
+                        <entry key="11" type="xstring" value="Proteotypic+MAVS 14D 14"/>
+                        <entry key="12" type="xstring" value="Proteotypic+PKR 08D 01"/>
+                        <entry key="13" type="xstring" value="Proteotypic+PKR 08D 03"/>
+                        <entry key="14" type="xstring" value="Proteotypic+PKR 08D 05"/>
+                        <entry key="15" type="xstring" value="Proteotypic+PKR 14D 10"/>
+                        <entry key="16" type="xstring" value="Proteotypic+PKR 14D 11"/>
+                        <entry key="17" type="xstring" value="Proteotypic+PKR 14D 12"/>
+                        <entry key="18" type="xstring" value="Proteotypic+MP 08D 01"/>
+                        <entry key="19" type="xstring" value="Proteotypic+MP 08D 04"/>
+                        <entry key="20" type="xstring" value="Proteotypic+MP 08D 08"/>
+                        <entry key="21" type="xstring" value="Proteotypic+MP 14D 10"/>
+                        <entry key="22" type="xstring" value="Proteotypic+MP 14D 12"/>
+                        <entry key="23" type="xstring" value="Proteotypic+MP 14D 15"/>
+                        <entry key="24" type="xstring" value="Proteotypic+A1M 08D 01"/>
+                        <entry key="25" type="xstring" value="Proteotypic+A1M 08D 02"/>
+                        <entry key="26" type="xstring" value="Proteotypic+A1M 08D 05"/>
+                        <entry key="27" type="xstring" value="Proteotypic+A1M 14D 10"/>
+                        <entry key="28" type="xstring" value="Proteotypic+A1M 14D 11"/>
+                        <entry key="29" type="xstring" value="Proteotypic+A1M 14D 14"/>
+                        <entry key="30" type="xstring" value="Proteotypic+AMP 08D 01"/>
+                        <entry key="31" type="xstring" value="Proteotypic+AMP 08D 02"/>
+                        <entry key="32" type="xstring" value="Proteotypic+AMP 08D 06"/>
+                        <entry key="33" type="xstring" value="Proteotypic+AMP 14D 10"/>
+                        <entry key="34" type="xstring" value="Proteotypic+AMP 14D 12"/>
+                        <entry key="35" type="xstring" value="Proteotypic+AMP 14D 14"/>
+                        <entry key="36" type="xstring" value="Proteotypic+WTA2 08D 03V"/>
+                        <entry key="37" type="xstring" value="Proteotypic+WTA2 08D 08V"/>
+                        <entry key="38" type="xstring" value="Proteotypic+WTA2 08D 16V"/>
+                        <entry key="39" type="xstring" value="Proteotypic+WTA2 14D 10"/>
+                        <entry key="40" type="xstring" value="Proteotypic+WTA2 14D 12"/>
+                        <entry key="41" type="xstring" value="Proteotypic+WTA2 14D 14"/>
+                        <entry key="42" type="xstring" value="Proteotypic+ADAR2 08D 02V"/>
+                        <entry key="43" type="xstring" value="Proteotypic+ADAR2 08D 07V"/>
+                        <entry key="44" type="xstring" value="Proteotypic+ADAR2 08D 14V"/>
+                        <entry key="45" type="xstring" value="Proteotypic+ADAR2 08D 15V"/>
+                        <entry key="46" type="xstring" value="Proteotypic+G 08D 01"/>
+                        <entry key="47" type="xstring" value="Proteotypic+G 08D 03"/>
+                        <entry key="48" type="xstring" value="Proteotypic+G 08D 05"/>
+                        <entry key="49" type="xstring" value="Proteotypic+G 14D 10"/>
+                        <entry key="50" type="xstring" value="Proteotypic+G 14D 12"/>
+                        <entry key="51" type="xstring" value="Proteotypic+G 14D 13"/>
+                        <entry key="52" type="xstring" value="Proteotypic+A2G 08D 01"/>
+                        <entry key="53" type="xstring" value="Proteotypic+A2G 08D 02"/>
+                        <entry key="54" type="xstring" value="Proteotypic+A2G 08D 05"/>
+                        <entry key="55" type="xstring" value="Proteotypic+A2G 14D 10"/>
+                        <entry key="56" type="xstring" value="Proteotypic+A2G 14D 12"/>
+                        <entry key="57" type="xstring" value="Proteotypic+A2G 14D 14"/>
+                        <entry key="58" type="xstring" value="Proteotypic+A2GM 08D 01"/>
+                        <entry key="59" type="xstring" value="Proteotypic+A2GM 08D 02"/>
+                        <entry key="60" type="xstring" value="Proteotypic+A2GM 08D 03"/>
+                        <entry key="61" type="xstring" value="Proteotypic+A2GM 14D 10"/>
+                        <entry key="62" type="xstring" value="Proteotypic+A2GM 14D 12"/>
+                        <entry key="63" type="xstring" value="Proteotypic+A2GM 14D 15"/>
+                        <entry key="64" type="xstring" value="Proteotypic+AAGM 08D 02"/>
+                        <entry key="65" type="xstring" value="Proteotypic+AAGM 08D 03"/>
+                        <entry key="66" type="xstring" value="Proteotypic+AAGM 08D 04"/>
+                        <entry key="67" type="xstring" value="Proteotypic+AAGM 14D 10"/>
+                        <entry key="68" type="xstring" value="Proteotypic+AAGM 14D 11"/>
+                        <entry key="69" type="xstring" value="Proteotypic+AAGM 14D 12"/>
+                        <entry key="70" type="xstring" value="Proteotypic+WTA1 08D 02"/>
+                        <entry key="71" type="xstring" value="Proteotypic+WTA1 08D 04"/>
+                        <entry key="72" type="xstring" value="Proteotypic+WTA1 08D 06"/>
+                        <entry key="73" type="xstring" value="Proteotypic+WTA1 14D 11"/>
+                        <entry key="74" type="xstring" value="Proteotypic+WTA1 14D 13"/>
+                        <entry key="75" type="xstring" value="Proteotypic+WTA1 14D 15"/>
+                        <entry key="76" type="xstring" value="Proteotypic+MAVS 09D 02"/>
+                        <entry key="77" type="xstring" value="Proteotypic+MAVS 08D 04"/>
+                        <entry key="78" type="xstring" value="Proteotypic+MAVS 08D 06"/>
+                        <entry key="79" type="xstring" value="Proteotypic+MAVS 14D 11"/>
+                        <entry key="80" type="xstring" value="Proteotypic+MAVS 14D 12"/>
+                        <entry key="81" type="xstring" value="Proteotypic+MAVS 14D 15"/>
+                        <entry key="82" type="xstring" value="Proteotypic+PKR 08D 02"/>
+                        <entry key="83" type="xstring" value="Proteotypic+PKR 08D 04"/>
+                        <entry key="84" type="xstring" value="Proteotypic+PKR 08D 06"/>
+                        <entry key="85" type="xstring" value="Proteotypic+PKR 14D 13"/>
+                        <entry key="86" type="xstring" value="Proteotypic+PKR 14D 15"/>
+                        <entry key="87" type="xstring" value="Proteotypic+PKR 14D 14"/>
+                        <entry key="88" type="xstring" value="Proteotypic+PKR 14D 16"/>
+                        <entry key="89" type="xstring" value="Proteotypic+MP 08D 03"/>
+                        <entry key="90" type="xstring" value="Proteotypic+MP 08D 05"/>
+                        <entry key="91" type="xstring" value="Proteotypic+MP 08D 07"/>
+                        <entry key="92" type="xstring" value="Proteotypic+MP 14D 11"/>
+                        <entry key="93" type="xstring" value="Proteotypic+MP 14D 13"/>
+                        <entry key="94" type="xstring" value="Proteotypic+MP 14D 14"/>
+                        <entry key="95" type="xstring" value="Proteotypic+A1M 08D 03"/>
+                        <entry key="96" type="xstring" value="Proteotypic+A1M 08D 07"/>
+                        <entry key="97" type="xstring" value="Proteotypic+A1M 08D 08"/>
+                        <entry key="98" type="xstring" value="Proteotypic+A1M 14D 12"/>
+                        <entry key="99" type="xstring" value="Proteotypic+A1M 14D 13"/>
+                        <entry key="100" type="xstring" value="Proteotypic+A1M 14D 16"/>
+                        <entry key="101" type="xstring" value="Proteotypic+AMP 08D 03"/>
+                        <entry key="102" type="xstring" value="Proteotypic+AMP 08D 04"/>
+                        <entry key="103" type="xstring" value="Proteotypic+AMP 08D 05"/>
+                        <entry key="104" type="xstring" value="Proteotypic+AMP 14D 11"/>
+                        <entry key="105" type="xstring" value="Proteotypic+AMP 14D 13"/>
+                        <entry key="106" type="xstring" value="Proteotypic+AMP 14D 15"/>
+                        <entry key="107" type="xstring" value="Proteotypic+WTA2 08D 05V"/>
+                        <entry key="108" type="xstring" value="Proteotypic+WTA2 08D 19V"/>
+                        <entry key="109" type="xstring" value="Proteotypic+WTA2 08D 20V"/>
+                        <entry key="110" type="xstring" value="Proteotypic+WTA2 14D 11"/>
+                        <entry key="111" type="xstring" value="Proteotypic+WTA2 14D 13"/>
+                        <entry key="112" type="xstring" value="Proteotypic+WTA2 14D 15"/>
+                        <entry key="113" type="xstring" value="Proteotypic+ADAR2 08D 23V"/>
+                        <entry key="114" type="xstring" value="Proteotypic+ADAR2 08D 25V"/>
+                        <entry key="115" type="xstring" value="Proteotypic+ADAR2 08D 29V"/>
+                        <entry key="116" type="xstring" value="Proteotypic+ADAR2 08D 35V"/>
+                        <entry key="117" type="xstring" value="Proteotypic+G 08D 02"/>
+                        <entry key="118" type="xstring" value="Proteotypic+G 08D 04"/>
+                        <entry key="119" type="xstring" value="Proteotypic+G 08D 06"/>
+                        <entry key="120" type="xstring" value="Proteotypic+G 14D 11"/>
+                        <entry key="121" type="xstring" value="Proteotypic+G 14D 14"/>
+                        <entry key="122" type="xstring" value="Proteotypic+G 14D 15"/>
+                        <entry key="123" type="xstring" value="Proteotypic+A2G 08D 03"/>
+                        <entry key="124" type="xstring" value="Proteotypic+A2G 08D 04"/>
+                        <entry key="125" type="xstring" value="Proteotypic+A2G 08D 06"/>
+                        <entry key="126" type="xstring" value="Proteotypic+A2G 14D 11"/>
+                        <entry key="127" type="xstring" value="Proteotypic+A2G 14D 13"/>
+                        <entry key="128" type="xstring" value="Proteotypic+A2G 14D 15"/>
+                        <entry key="129" type="xstring" value="Proteotypic+A2GM 08D 04"/>
+                        <entry key="130" type="xstring" value="Proteotypic+A2GM 08D 05"/>
+                        <entry key="131" type="xstring" value="Proteotypic+A2GM 08D 06"/>
+                        <entry key="132" type="xstring" value="Proteotypic+A2GM 14D 11"/>
+                        <entry key="133" type="xstring" value="Proteotypic+A2GM 14D 13"/>
+                        <entry key="134" type="xstring" value="Proteotypic+A2GM 14D 16"/>
+                        <entry key="135" type="xstring" value="Proteotypic+AAGM 08D 05"/>
+                        <entry key="136" type="xstring" value="Proteotypic+AAGM 08D 07"/>
+                        <entry key="137" type="xstring" value="Proteotypic+AAGM 08D 08"/>
+                        <entry key="138" type="xstring" value="Proteotypic+AAGM 14D 13"/>
+                        <entry key="139" type="xstring" value="Proteotypic+AAGM 14D 14"/>
+                        <entry key="140" type="xstring" value="Proteotypic+AAGM 14D 15"/>
+                    </config>
+                    <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
+                    <entry key="filter-type" type="xstring" value="name_pattern"/>
+                </config>
+            </config>
+            <config key="columns">
+                <entry key="array-size" type="xint" value="20"/>
+                <entry key="0" type="xstring" value="Proteotypic+1-1"/>
+                <entry key="1" type="xstring" value="Proteotypic+1-2"/>
+                <entry key="2" type="xstring" value="Proteotypic+1-3"/>
+                <entry key="3" type="xstring" value="Proteotypic+1-4"/>
+                <entry key="4" type="xstring" value="Proteotypic+1-5"/>
+                <entry key="5" type="xstring" value="Proteotypic+2-1"/>
+                <entry key="6" type="xstring" value="Proteotypic+2-2"/>
+                <entry key="7" type="xstring" value="Proteotypic+2-3"/>
+                <entry key="8" type="xstring" value="Proteotypic+2-4"/>
+                <entry key="9" type="xstring" value="Proteotypic+2-5"/>
+                <entry key="10" type="xstring" value="Proteotypic+3-1"/>
+                <entry key="11" type="xstring" value="Proteotypic+3-2"/>
+                <entry key="12" type="xstring" value="Proteotypic+3-3"/>
+                <entry key="13" type="xstring" value="Proteotypic+3-4"/>
+                <entry key="14" type="xstring" value="Proteotypic+3-5"/>
+                <entry key="15" type="xstring" value="Proteotypic+4-1"/>
+                <entry key="16" type="xstring" value="Proteotypic+4-2"/>
+                <entry key="17" type="xstring" value="Proteotypic+4-3"/>
+                <entry key="18" type="xstring" value="Proteotypic+4-4"/>
+                <entry key="19" type="xstring" value="Proteotypic+4-5"/>
+            </config>
+        </config>
+        <config key="sample_bool-985">
+            <entry key="boolean" type="xboolean" value="false"/>
+        </config>
+        <config key="replicate-988">
+            <entry key="string" type="xstring" value="none"/>
+        </config>
+        <config key="replicate_bool-987">
+            <entry key="boolean" type="xboolean" value="false"/>
+        </config>
+        <config key="common_name-989">
+            <entry key="string" type="xstring" value="Proteotypic_"/>
+        </config>
+        <config key="stats_selected-983">
+            <config key="variable_value">
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="max"/>
+            </config>
+        </config>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="Proteotypic max"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="570"/>
+        <entry key="y-coordinate" type="xint" value="459"/>
+        <entry key="width" type="xint" value="142"/>
+        <entry key="height" type="xint" value="17"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="10"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="workflow-file" type="xstring" value="workflow.knime"/>
+    <entry key="virtual-in-ID" type="xint" value="266"/>
+    <config key="inports">
+        <config key="inport_0">
+            <entry key="index" type="xint" value="0"/>
+            <config key="type">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+    </config>
+    <entry key="virtual-out-ID" type="xint" value="856"/>
+    <config key="outports">
+        <config key="outport_0">
+            <entry key="index" type="xint" value="0"/>
+            <config key="type">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+    </config>
+    <config key="metadata">
+        <entry key="description" type="xstring" value="Metanode for computation of selected descriptive statistics for selected columns.%%00010%%00010Selected descriptive statistics are:%%00010count - count of numerical values%%00010mad - median absolute deviation%%00010max - maximum%%00010min - minimum%%00010median - median%%00010mean - mean%%00010sem - standard error of the mean%%00010sum - sum%%00010std - standard deviation%%00010var - variance%%00010%%00010Statistics are calculated using pandas DataFrame statistics, more details can be found e.g. here https://pandas.pydata.org/pandas-docs/stable/reference/frame.html#computations-descriptive-stats%%00010%%00010You can select what descriptive statistics should be calculated and common base name for newly added columns. New columns will be named as &quot;base name&quot;&quot;statistics name&quot; (i.e. without any space or delimiter).%%00010%%00010=================%%00010%%00010Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.%%00010%%00010KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)%%00010Python 3 (The Python consists of the following Python 3.10 License. Licence terms are available here: https://docs.python.org/3/license.html)%%00010Python package Pandas (The Pandas consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)%%00010%%00010The metanode was created in KNIME 4.5.2 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 4.5.2a.%%00010%%00010=================%%00010%%00010This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.%%00010Version: 2.0.0 from 2022-05-10%%00010Contact person: David Potesil (david.potesil@ceitec.muni.cz)%%00010More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes."/>
+        <config key="inports">
+            <config key="inport_0">
+                <entry key="name" type="xstring" value="input table"/>
+                <entry key="description" type="xstring" value="input table (may contain also columns not to be processed)"/>
+                <entry key="index" type="xint" value="0"/>
+            </config>
+        </config>
+        <config key="outports">
+            <config key="outport_0">
+                <entry key="name" type="xstring" value="Output table"/>
+                <entry key="description" type="xstring" value="original table with added columns for descriptive statistics"/>
+                <entry key="index" type="xint" value="0"/>
+            </config>
+        </config>
+    </config>
+    <config key="workflow_template_information">
+        <entry key="role" type="xstring" value="Link"/>
+        <entry key="timestamp" type="xstring" value="2022-09-13 14:25:42 +0200"/>
+        <entry key="sourceURI" type="xstring" value="knime://LOCAL/gitfolders/KNIME_metanodes/Metanodes%20templates/Statistics/Columns%20descriptive%20statistics"/>
+    </config>
+    <entry key="layoutJSON" type="xstring" value=""/>
+    <entry key="configurationLayoutJSON" type="xstring" value="{}"/>
+    <entry key="hideInWizard" type="xboolean" value="false"/>
+    <entry key="customCSS" type="xstring" value=""/>
+</config>
