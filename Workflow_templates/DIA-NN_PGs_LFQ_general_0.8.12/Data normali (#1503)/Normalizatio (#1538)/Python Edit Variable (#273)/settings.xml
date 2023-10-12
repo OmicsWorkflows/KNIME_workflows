@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack">
+<config key="Variable_0">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="columns_suffix"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="$1"/>
+</config>
+<config key="Variable_1">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="if_switch"/>
+<entry key="class" type="xstring" value="STRING"/>
+<entry key="value" type="xstring" value="bottom"/>
+</config>
+<config key="Variable_2">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="switch1"/>
+<entry key="class" type="xstring" value="INTEGER"/>
+<entry key="value" type="xint" value="1"/>
+</config>
+<config key="Variable_3">
+<entry key="type" type="xstring" value="variable"/>
+<entry key="name" type="xstring" value="switch2"/>
+<entry key="class" type="xstring" value="INTEGER"/>
+<entry key="value" type="xint" value="0"/>
+</config>
+</config>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<entry key="sourceCode" type="xstring" value="# changes the flowvariable holding the normalized columns suffix to be compatible with regex columns renaming%%00010flow_variables['columns_suffix'] = &quot;$1&quot; + flow_variables['columns_suffix'] %%00010%%00010# creates variable for not used columns removal IF switch%%00010if flow_variables['remove_not_used'] == 1:%%00010    flow_variables['if_switch'] = 'top'%%00010elif flow_variables['remove_not_used'] == 0:%%00010    flow_variables['if_switch'] = 'bottom'%%00010%%00010# creates flow variables to all normalization metanode switches%%00010%%00010## creates dicxsionary that will hold the switches settings for each normalization technique%%00010switch_dict = {%%00010%%00009'quantile': {%%00010%%00009%%00009'switch1': 0,%%00010%%00009%%00009'switch2': 0%%00010%%00009%%00009},%%00010%%00009'vsn': {%%00010%%00009%%00009'switch1': 0,%%00010%%00009%%00009'switch2': 1%%00010%%00009%%00009},%%00010%%00009'loess (fast)': {%%00010%%00009%%00009'switch1': 1,%%00010%%00009%%00009'switch2': 0%%00010%%00009%%00009},%%00010%%00009'loess (pairs)': {%%00010%%00009%%00009'switch1': 1,%%00010%%00009%%00009'switch2': 0%%00010%%00009%%00009},%%00010%%00009'loess (affy)': {%%00010%%00009%%00009'switch1': 1,%%00010%%00009%%00009'switch2': 0%%00010%%00009%%00009},%%00010%%00009}%%00010%%00010%%00010## sets all switches values%%00010flow_variables['switch1'] = switch_dict[flow_variables['normalization_method']]['switch1']%%00010flow_variables['switch2'] = switch_dict[flow_variables['normalization_method']]['switch2']%%00010%%00010"/>
+<entry key="rowLimit" type="xint" value="1000"/>
+<entry key="pythonVersionOption" type="xstring" value="python3"/>
+<entry key="python2Command" type="xstring" value=""/>
+<entry key="python3Command" type="xstring" value=""/>
+<entry key="chunkSize" type="xint" value="500000"/>
+<entry key="convertMissingToPython" type="xboolean" value="false"/>
+<entry key="convertMissingFromPython" type="xboolean" value="false"/>
+<entry key="sentinelOption" type="xstring" value="MIN_VAL"/>
+<entry key="sentinelValue" type="xint" value="0"/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="IDLE"/>
+<entry key="factory" type="xstring" value="org.knime.python2.nodes.variables.Python2VariablesNodeFactory"/>
+<entry key="node-name" type="xstring" value="Python Edit Variable"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME Python nodes"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python2.nodes"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-bundle-version" type="xstring" value="4.1.3.v202005112253"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Python Integration"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python2.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-feature-version" type="xstring" value="4.1.3.v202005112253"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="Python Edit Variable"/>
+<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+</config>
+</config>
