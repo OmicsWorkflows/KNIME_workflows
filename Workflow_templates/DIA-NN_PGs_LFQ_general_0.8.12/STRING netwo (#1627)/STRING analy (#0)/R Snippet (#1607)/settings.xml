@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<entry key="script" type="xstring" value="# load dataframe, turn factors into strings%%00010df &lt;- knime.in%%00010df &lt;- data.frame(lapply(df, as.character), stringsAsFactors=FALSE)%%00010%%00010# map protein names to STRING identifiers with having separate table with the full map result%%00010map_list &lt;- paste(df[,1], collapse = &quot;%0d&quot;)%%00010map_query &lt;- paste(c(&quot;https://version-11-5.string-db.org/api/tsv/get_string_ids?identifiers=&quot;, map_list, &quot;&amp;species=&quot;, knime.flow.in[[&quot;organism&quot;]], &quot;&amp;limit=1&quot;, &quot;&amp;caller_identity='https://github.com/OmicsWorkflows/KNIME_metanodes'&quot;), collapse = &quot;&quot;)%%00010map &lt;- read.table(file = map_query, header = TRUE, sep = &quot;\t&quot;, quote = &quot;&quot;, fill = TRUE)%%00010map_ids &lt;- as.character(map[,2])%%00010map_ids &lt;- map_ids[map_ids != &quot;&quot;]%%00010%%00010# get a link to the STRING website based on the number of proteins found%%00010if(length(map_ids) == 0){%%00010%%00009output &lt;- &quot;no proteins found; please check other reported tables for more details&quot;%%00010} else if(length(map_ids) == 1){%%00010%%00009output &lt;- &quot;only 1 protein found, will not perform enrichment analysis; please check other reported tables for more details&quot;%%00010} else {%%00010%%00009list &lt;- paste(map_ids, collapse = &quot;%0d&quot;)%%00010%%00009query &lt;- paste(c(&quot;https://version-11-5.string-db.org/api/tsv/get_link?identifiers=&quot;, list, &quot;&amp;species=&quot;, knime.flow.in[[&quot;organism&quot;]], &quot;&amp;caller_identity='https://github.com/OmicsWorkflows/KNIME_metanodes'&quot;), collapse = &quot;&quot;)%%00010%%00009output &lt;- read.table(file = query, header = TRUE)[1,1]%%00010%%00009output &lt;- as.character(output)%%00010%%00009%%00010%%00009# open link?%%00010%%00009if(knime.flow.in[[&quot;open_link&quot;]] == 1){%%00010%%00009browseURL(output)%%00010%%00009}%%00010}%%00010# output dataframe%%00010output_df &lt;- data.frame(Analysis = knime.flow.in[[&quot;analysis_name&quot;]], Link = output)%%00010knime.out &lt;- output_df"/>
+<entry key="templateUUID" type="xstring" isnull="true" value=""/>
+<entry key="version" type="xstring" value="version 1.x"/>
+<entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
+<entry key="sendRowNames" type="xboolean" value="true"/>
+<entry key="sendBatchSize" type="xint" value="10000"/>
+<entry key="knimeInType" type="xstring" value="data.frame"/>
+</config>
+<config key="nodeAnnotation">
+<entry key="text" type="xstring" value="creates link to %%00010STRING database %%00010using the API call"/>
+<entry key="bgcolor" type="xint" value="16777215"/>
+<entry key="x-coordinate" type="xint" value="969"/>
+<entry key="y-coordinate" type="xint" value="39"/>
+<entry key="width" type="xint" value="142"/>
+<entry key="height" type="xint" value="51"/>
+<entry key="alignment" type="xstring" value="CENTER"/>
+<entry key="borderSize" type="xint" value="0"/>
+<entry key="borderColor" type="xint" value="16777215"/>
+<entry key="defFontSize" type="xint" value="10"/>
+<entry key="annotation-version" type="xint" value="20151123"/>
+<config key="styles"/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="IDLE"/>
+<entry key="factory" type="xstring" value="org.knime.r.RSnippetNodeFactory"/>
+<entry key="node-name" type="xstring" value="R Snippet"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME R-Project nodes"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.r"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-bundle-version" type="xstring" value="4.1.1.v202001312017"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Interactive R Statistics Integration"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.r.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-feature-version" type="xstring" value="4.1.1.v202001312017"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="R Snippet"/>
+<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+</config>
+</config>
