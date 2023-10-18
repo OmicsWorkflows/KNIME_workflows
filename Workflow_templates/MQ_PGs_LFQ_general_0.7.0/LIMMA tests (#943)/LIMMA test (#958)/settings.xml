@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<config key="single-line-297">
+<entry key="string" type="xstring" value="LIMMA_"/>
+</config>
+<config key="column-filter-306">
+<config key="columns">
+<entry key="array-size" type="xint" value="6"/>
+<entry key="0" type="xstring" value="Intensity 1-1_1_log2_norm"/>
+<entry key="1" type="xstring" value="Intensity 1-1_2_log2_norm"/>
+<entry key="2" type="xstring" value="Intensity 1-1_3_log2_norm"/>
+<entry key="3" type="xstring" value="Intensity 10-1_1_log2_norm"/>
+<entry key="4" type="xstring" value="Intensity 10-1_2_log2_norm"/>
+<entry key="5" type="xstring" value="Intensity 10-1_3_log2_norm"/>
+</config>
+<config key="columnFilter">
+<config key="columnFilter">
+<entry key="filter-type" type="xstring" value="STANDARD"/>
+<config key="included_names">
+<entry key="array-size" type="xint" value="6"/>
+<entry key="0" type="xstring" value="Intensity 1-1_1_log2_norm"/>
+<entry key="1" type="xstring" value="Intensity 1-1_2_log2_norm"/>
+<entry key="2" type="xstring" value="Intensity 1-1_3_log2_norm"/>
+<entry key="3" type="xstring" value="Intensity 10-1_1_log2_norm"/>
+<entry key="4" type="xstring" value="Intensity 10-1_2_log2_norm"/>
+<entry key="5" type="xstring" value="Intensity 10-1_3_log2_norm"/>
+</config>
+<config key="excluded_names">
+<entry key="array-size" type="xint" value="156"/>
+<entry key="0" type="xstring" value="Protein IDs"/>
+<entry key="1" type="xstring" value="Majority protein IDs"/>
+<entry key="2" type="xstring" value="Peptide counts (all)"/>
+<entry key="3" type="xstring" value="Peptide counts (razor+unique)"/>
+<entry key="4" type="xstring" value="Peptide counts (unique)"/>
+<entry key="5" type="xstring" value="Protein names"/>
+<entry key="6" type="xstring" value="Gene names"/>
+<entry key="7" type="xstring" value="Fasta headers"/>
+<entry key="8" type="xstring" value="Number of proteins"/>
+<entry key="9" type="xstring" value="Mol. weight [kDa]"/>
+<entry key="10" type="xstring" value="Sequence length"/>
+<entry key="11" type="xstring" value="Sequence lengths"/>
+<entry key="12" type="xstring" value="Fraction average"/>
+<entry key="13" type="xstring" value="Fraction 1"/>
+<entry key="14" type="xstring" value="Q-value"/>
+<entry key="15" type="xstring" value="Score"/>
+<entry key="16" type="xstring" value="Only identified by site"/>
+<entry key="17" type="xstring" value="Reverse"/>
+<entry key="18" type="xstring" value="Potential contaminant"/>
+<entry key="19" type="xstring" value="id"/>
+<entry key="20" type="xstring" value="Peptide IDs"/>
+<entry key="21" type="xstring" value="Peptide is razor"/>
+<entry key="22" type="xstring" value="Mod. peptide IDs"/>
+<entry key="23" type="xstring" value="Evidence IDs"/>
+<entry key="24" type="xstring" value="MS/MS IDs"/>
+<entry key="25" type="xstring" value="Best MS/MS"/>
+<entry key="26" type="xstring" value="Deamidation (NQ) site IDs"/>
+<entry key="27" type="xstring" value="Oxidation (M) site IDs"/>
+<entry key="28" type="xstring" value="Deamidation (NQ) site positions"/>
+<entry key="29" type="xstring" value="Oxidation (M) site positions"/>
+<entry key="30" type="xstring" value="Peptides"/>
+<entry key="31" type="xstring" value="Peptides 1-1_1"/>
+<entry key="32" type="xstring" value="Peptides 1-1_2"/>
+<entry key="33" type="xstring" value="Peptides 1-1_3"/>
+<entry key="34" type="xstring" value="Peptides 10-1_1"/>
+<entry key="35" type="xstring" value="Peptides 10-1_2"/>
+<entry key="36" type="xstring" value="Peptides 10-1_3"/>
+<entry key="37" type="xstring" value="Peptides 100-1_1"/>
+<entry key="38" type="xstring" value="Peptides 100-1_2"/>
+<entry key="39" type="xstring" value="Peptides 100-1_3"/>
+<entry key="40" type="xstring" value="Razor + unique peptides"/>
+<entry key="41" type="xstring" value="Razor + unique peptides 1-1_1"/>
+<entry key="42" type="xstring" value="Razor + unique peptides 1-1_2"/>
+<entry key="43" type="xstring" value="Razor + unique peptides 1-1_3"/>
+<entry key="44" type="xstring" value="Razor + unique peptides 10-1_1"/>
+<entry key="45" type="xstring" value="Razor + unique peptides 10-1_2"/>
+<entry key="46" type="xstring" value="Razor + unique peptides 10-1_3"/>
+<entry key="47" type="xstring" value="Razor + unique peptides 100-1_1"/>
+<entry key="48" type="xstring" value="Razor + unique peptides 100-1_2"/>
+<entry key="49" type="xstring" value="Razor + unique peptides 100-1_3"/>
+<entry key="50" type="xstring" value="Unique peptides"/>
+<entry key="51" type="xstring" value="Unique peptides 1-1_1"/>
+<entry key="52" type="xstring" value="Unique peptides 1-1_2"/>
+<entry key="53" type="xstring" value="Unique peptides 1-1_3"/>
+<entry key="54" type="xstring" value="Unique peptides 10-1_1"/>
+<entry key="55" type="xstring" value="Unique peptides 10-1_2"/>
+<entry key="56" type="xstring" value="Unique peptides 10-1_3"/>
+<entry key="57" type="xstring" value="Unique peptides 100-1_1"/>
+<entry key="58" type="xstring" value="Unique peptides 100-1_2"/>
+<entry key="59" type="xstring" value="Unique peptides 100-1_3"/>
+<entry key="60" type="xstring" value="Identification type 1-1_1"/>
+<entry key="61" type="xstring" value="Identification type 1-1_2"/>
+<entry key="62" type="xstring" value="Identification type 1-1_3"/>
+<entry key="63" type="xstring" value="Identification type 10-1_1"/>
+<entry key="64" type="xstring" value="Identification type 10-1_2"/>
+<entry key="65" type="xstring" value="Identification type 10-1_3"/>
+<entry key="66" type="xstring" value="Identification type 100-1_1"/>
+<entry key="67" type="xstring" value="Identification type 100-1_2"/>
+<entry key="68" type="xstring" value="Identification type 100-1_3"/>
+<entry key="69" type="xstring" value="Sequence coverage [%]"/>
+<entry key="70" type="xstring" value="Unique + razor sequence coverage [%]"/>
+<entry key="71" type="xstring" value="Unique sequence coverage [%]"/>
+<entry key="72" type="xstring" value="Sequence coverage 1-1_1 [%]"/>
+<entry key="73" type="xstring" value="Sequence coverage 1-1_2 [%]"/>
+<entry key="74" type="xstring" value="Sequence coverage 1-1_3 [%]"/>
+<entry key="75" type="xstring" value="Sequence coverage 10-1_1 [%]"/>
+<entry key="76" type="xstring" value="Sequence coverage 10-1_2 [%]"/>
+<entry key="77" type="xstring" value="Sequence coverage 10-1_3 [%]"/>
+<entry key="78" type="xstring" value="Sequence coverage 100-1_1 [%]"/>
+<entry key="79" type="xstring" value="Sequence coverage 100-1_2 [%]"/>
+<entry key="80" type="xstring" value="Sequence coverage 100-1_3 [%]"/>
+<entry key="81" type="xstring" value="Intensity"/>
+<entry key="82" type="xstring" value="Intensity 1-1_1"/>
+<entry key="83" type="xstring" value="Intensity 1-1_2"/>
+<entry key="84" type="xstring" value="Intensity 1-1_3"/>
+<entry key="85" type="xstring" value="Intensity 10-1_1"/>
+<entry key="86" type="xstring" value="Intensity 10-1_2"/>
+<entry key="87" type="xstring" value="Intensity 10-1_3"/>
+<entry key="88" type="xstring" value="Intensity 100-1_1"/>
+<entry key="89" type="xstring" value="Intensity 100-1_2"/>
+<entry key="90" type="xstring" value="Intensity 100-1_3"/>
+<entry key="91" type="xstring" value="iBAQ"/>
+<entry key="92" type="xstring" value="iBAQ 1-1_1"/>
+<entry key="93" type="xstring" value="iBAQ 1-1_2"/>
+<entry key="94" type="xstring" value="iBAQ 1-1_3"/>
+<entry key="95" type="xstring" value="iBAQ 10-1_1"/>
+<entry key="96" type="xstring" value="iBAQ 10-1_2"/>
+<entry key="97" type="xstring" value="iBAQ 10-1_3"/>
+<entry key="98" type="xstring" value="iBAQ 100-1_1"/>
+<entry key="99" type="xstring" value="iBAQ 100-1_2"/>
+<entry key="100" type="xstring" value="iBAQ 100-1_3"/>
+<entry key="101" type="xstring" value="LFQ intensity 1-1_1"/>
+<entry key="102" type="xstring" value="LFQ intensity 1-1_2"/>
+<entry key="103" type="xstring" value="LFQ intensity 1-1_3"/>
+<entry key="104" type="xstring" value="LFQ intensity 10-1_1"/>
+<entry key="105" type="xstring" value="LFQ intensity 10-1_2"/>
+<entry key="106" type="xstring" value="LFQ intensity 10-1_3"/>
+<entry key="107" type="xstring" value="LFQ intensity 100-1_1"/>
+<entry key="108" type="xstring" value="LFQ intensity 100-1_2"/>
+<entry key="109" type="xstring" value="LFQ intensity 100-1_3"/>
+<entry key="110" type="xstring" value="MS/MS count"/>
+<entry key="111" type="xstring" value="MS/MS count 1-1_1"/>
+<entry key="112" type="xstring" value="MS/MS count 1-1_2"/>
+<entry key="113" type="xstring" value="MS/MS count 1-1_3"/>
+<entry key="114" type="xstring" value="MS/MS count 10-1_1"/>
+<entry key="115" type="xstring" value="MS/MS count 10-1_2"/>
+<entry key="116" type="xstring" value="MS/MS count 10-1_3"/>
+<entry key="117" type="xstring" value="MS/MS count 100-1_1"/>
+<entry key="118" type="xstring" value="MS/MS count 100-1_2"/>
+<entry key="119" type="xstring" value="MS/MS count 100-1_3"/>
+<entry key="120" type="xstring" value="Intensity 1-1_1_log2"/>
+<entry key="121" type="xstring" value="Intensity 1-1_2_log2"/>
+<entry key="122" type="xstring" value="Intensity 1-1_3_log2"/>
+<entry key="123" type="xstring" value="Intensity 10-1_1_log2"/>
+<entry key="124" type="xstring" value="Intensity 10-1_2_log2"/>
+<entry key="125" type="xstring" value="Intensity 10-1_3_log2"/>
+<entry key="126" type="xstring" value="Intensity 100-1_1_log2"/>
+<entry key="127" type="xstring" value="Intensity 100-1_2_log2"/>
+<entry key="128" type="xstring" value="Intensity 100-1_3_log2"/>
+<entry key="129" type="xstring" value="LFQ intensity 1-1_1_log2"/>
+<entry key="130" type="xstring" value="LFQ intensity 1-1_2_log2"/>
+<entry key="131" type="xstring" value="LFQ intensity 1-1_3_log2"/>
+<entry key="132" type="xstring" value="LFQ intensity 10-1_1_log2"/>
+<entry key="133" type="xstring" value="LFQ intensity 10-1_2_log2"/>
+<entry key="134" type="xstring" value="LFQ intensity 10-1_3_log2"/>
+<entry key="135" type="xstring" value="LFQ intensity 100-1_1_log2"/>
+<entry key="136" type="xstring" value="LFQ intensity 100-1_2_log2"/>
+<entry key="137" type="xstring" value="LFQ intensity 100-1_3_log2"/>
+<entry key="138" type="xstring" value="Intensity 100-1_1_log2_norm"/>
+<entry key="139" type="xstring" value="Intensity 100-1_2_log2_norm"/>
+<entry key="140" type="xstring" value="Intensity 100-1_3_log2_norm"/>
+<entry key="141" type="xstring" value="Intensity 1-1_1_log2_norm_delog"/>
+<entry key="142" type="xstring" value="Intensity 1-1_2_log2_norm_delog"/>
+<entry key="143" type="xstring" value="Intensity 1-1_3_log2_norm_delog"/>
+<entry key="144" type="xstring" value="Intensity 10-1_1_log2_norm_delog"/>
+<entry key="145" type="xstring" value="Intensity 10-1_2_log2_norm_delog"/>
+<entry key="146" type="xstring" value="Intensity 10-1_3_log2_norm_delog"/>
+<entry key="147" type="xstring" value="Intensity 100-1_1_log2_norm_delog"/>
+<entry key="148" type="xstring" value="Intensity 100-1_2_log2_norm_delog"/>
+<entry key="149" type="xstring" value="Intensity 100-1_3_log2_norm_delog"/>
+<entry key="150" type="xstring" value="LIMMA_one-hundred.logFC"/>
+<entry key="151" type="xstring" value="LIMMA_one-hundred.AveExpr"/>
+<entry key="152" type="xstring" value="LIMMA_one-hundred.t"/>
+<entry key="153" type="xstring" value="LIMMA_one-hundred.P.Value"/>
+<entry key="154" type="xstring" value="LIMMA_one-hundred.adj.P.Val"/>
+<entry key="155" type="xstring" value="LIMMA_one-hundred.B"/>
+</config>
+<entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
+<config key="name_pattern">
+<entry key="pattern" type="xstring" value=""/>
+<entry key="type" type="xstring" value="Wildcard"/>
+<entry key="caseSensitive" type="xboolean" value="true"/>
+</config>
+<config key="datatype">
+<config key="typelist">
+<entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+</config>
+</config>
+</config>
+</config>
+</config>
+<config key="single-line-308">
+<entry key="string" type="xstring" value="one,one,one,ten,ten,ten"/>
+</config>
+<config key="single-selection-907">
+<entry key="variable_value" type="xstring" value="yes, one threshold for all samples"/>
+</config>
+<config key="string-input-908">
+<entry key="string" type="xstring" value="2"/>
+</config>
+<config key="single-line-923">
+<entry key="string" type="xstring" value="one-ten"/>
+</config>
+</config>
+<config key="nodeAnnotation">
+<entry key="text" type="xstring" value="10-1 / 1-1"/>
+<entry key="bgcolor" type="xint" value="16777215"/>
+<entry key="x-coordinate" type="xint" value="409"/>
+<entry key="y-coordinate" type="xint" value="459"/>
+<entry key="width" type="xint" value="142"/>
+<entry key="height" type="xint" value="17"/>
+<entry key="alignment" type="xstring" value="CENTER"/>
+<entry key="borderSize" type="xint" value="0"/>
+<entry key="borderColor" type="xint" value="16777215"/>
+<entry key="defFontSize" type="xint" value="10"/>
+<entry key="annotation-version" type="xint" value="20151123"/>
+<config key="styles"/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="IDLE"/>
+<entry key="virtual-in-ID" type="xint" value="173"/>
+<config key="inports">
+<config key="inport_0">
+<entry key="index" type="xint" value="0"/>
+<config key="type">
+<entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+</config>
+</config>
+</config>
+<entry key="virtual-out-ID" type="xint" value="307"/>
+<config key="outports">
+<config key="outport_0">
+<entry key="index" type="xint" value="0"/>
+<config key="type">
+<entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+</config>
+</config>
+</config>
+<config key="metadata">
+<entry key="description" type="xstring" value="LIMMA (Linear Models for Microarray Data) test for selected experimental design usecases. Expected usecase is 'single-channel' design using lmFit with least square method fitting. Only selected scenarios of experimental designs are implemented as well, namely: several groups, paired samples, one samples block design and combination of paired and single block design (yet to be fully implemented in this version).%%00010%%00010See e.g. LIMMA useguide for more details on selected settings explanation (https://www.bioconductor.org/packages/release/bioc/vignettes/limma/inst/doc/usersguide.pdf).%%00010%%00010Missing values are treated row-wise, e.g. protein group wise. In case there is no non-missing value in any sample type name (i.e. in A, B or C columns), the whole row is excluded from the statistical evaluation during lmFit step!%%00010%%00010Several more or less connected inputs are needed for proper results:%%00010- data columns:%%00010data columns to be used during the LIMMA test (e.g. columns A1,A2,A3,B1,B2,B3,C1,C2,C3); already normalized and log (any base relevant for further processing) transformed data are expected!%%00010%%00010- Use only cases quantified in at least specified number of replicates in at least one sample?%%00010option to cover only cases quantified in at least specified number of replicates in at least one sample; one can use either single threshold for all samples or separate threshold for each sample%%00010%%00010- experimental design:%%00010should be provided in the form of sample type names in the same order as data columns without replicate number specification (e.g. &quot;A,A,A,B,B,B,C,C,C&quot;)%%00010%%00010- samples pairs:%%00010information about the pairs of samples (e.g. different tissues coming from a single patient) where the pairs of samples have to be specified using identical identificator, e.g. &quot;1,2,3,1,2,3&quot; for 3 pairs of samples 1, 2 and 3%%00010%%00010- samples blocks:%%00010similarly to samples pairs you can specify also samples blocks for block design, e.g. if you want to specify batch effects between individual replicates; blocks of samples have to be specified using identical identificator, e.g. &quot;batch1,batch1,batch1,batch2,batch2,batch2,batch3,batch3,batch3&quot; for 3 blocks of samples &quot;batch1&quot;, &quot;batch2&quot; and &quot;batch3&quot;%%00010%%00010- comparisons%%00010i.e. constrasts for LIMMA test to be tested for statistical difference separated by comma, e.g. B-A, C-A%%00010Notes to the comparisons usage:%%00010- because data to be tested are log transformed, ratio of not log transformed data ('B/A') equals to subtraction of their log transformed data ('log(B)-log(A)'). Therefore the comparison should be provided in a form of subtraction of control sample type (A in the example usecase) from 'influenced' sample type (B in the example usecase).%%00010- sample pairs are not expected to be used in comparisons%%00010- sample blocks effects can be tested similarly to sample types comparisons, the first block just should not be used in the comparison specification, i.e. instead of &quot;batch2-batch1&quot; and &quot;batch1-batch3&quot; one should specify &quot;batch2&quot; and &quot;-batch3&quot;, respectively; comparisons not covering the first block are specified without any change (e.g. &quot;batch3-batch2&quot;); this stems from the LIMMA design specification within the R code, please, inspect the R snippet for more details on its implementation and consult the LIMMA manual as well%%00010%%00010- treat comparisons separately?%%00010by default it is checked, i.e. all specified comparisons (e.g. B-A and C-A mentioned above) will be tested and reported separately. If you want to test them all together as one 'factor', uncheck this option and you will get single table with statistics results like in case of one-way (one-factor) ANOVA.%%00010!!!COMMENT TO MISSING DATA HANDLING!!!%%00010Complete data matrix is considered during initial LIMMA processing (lmFit), so you may experience missing statistical evaluation results ('NaN') even if you have no missing value for concrete comparison of samples subset... This is because of missing values in all replicates of another sample (e.g. in C when A and B are compared). If you don't need to use all columns for the modeling step, perform LIMMA test for all comparisons separately not to introduce missing statistical evaluation results!%%00010%%00010- p-value adj. method%%00010method to adjust p-values on multiple hypothesis testing; p.adjust R function is used here, see its documentation for more details%%00010%%00010You can also set the name of the test to be used as newly created columns prefix.%%00010%%00010Metanode returns several statistics for each comparison including:%%00010- logFC%%00010mean values of input (log transformed) data subtracted based on the concrete comparison - e.g. average of three B column values minus average of three A column values for each row in case of B-A comparison%%00010i.e. log fold change of not log transformed data using log of the same base%%00010%%00010- P.value%%00010not adjusted raw p-value of moderated t-test statistics; this is not preferred p-value due to multiple hypothesis testing (each row represents one test) that needs to be addressed not to give to high false positive discovery rates%%00010%%00010- adj.P.Val%%00010adjusted p-value using the selected method%%00010%%00010%%00010=================%%00010%%00010Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.%%00010%%00010KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)%%00010Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3.6/license.html)%%00010R (The R consists of the following GNU General Public Licences. Licence terms are available here: https://www.r-project.org/Licenses/)%%00010R package limma (The limma consists of the following General Public License (GPL), version 2 license. Licence terms are available here: https://www.r-project.org/Licenses/GPL-2)%%00010%%00010The metanode was created in KNIME 3.7.1 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 3.7.1a.%%00010%%00010=================%%00010%%00010This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.%%00010Version: 1.1.0 from 2022-03-31%%00010Contact person: David Potesil (david.potesil@ceitec.muni.cz)%%00010More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes."/>
+<config key="inports">
+<config key="inport_0">
+<entry key="name" type="xstring" value="Input table"/>
+<entry key="description" type="xstring" value="input table containing data columns to be compared"/>
+<entry key="index" type="xint" value="0"/>
+</config>
+</config>
+<config key="outports">
+<config key="outport_0">
+<entry key="name" type="xstring" value="Output dataframe"/>
+<entry key="description" type="xstring" value="output dataframe containing input table plus newly computed columns or new columns only"/>
+<entry key="index" type="xint" value="0"/>
+</config>
+</config>
+</config>
+<config key="workflow_template_information">
+<entry key="role" type="xstring" value="Link"/>
+<entry key="timestamp" type="xstring" value="2022-03-31 15:43:27"/>
+<entry key="sourceURI" type="xstring" value="knime://LOCAL/gitfolders/KNIME_metanodes/Metanodes%20templates/Statistics/LIMMA%20test"/>
+</config>
+<entry key="layoutJSON" type="xstring" value=""/>
+<entry key="hideInWizard" type="xboolean" value="false"/>
+<entry key="customCSS" type="xstring" value=""/>
+</config>
