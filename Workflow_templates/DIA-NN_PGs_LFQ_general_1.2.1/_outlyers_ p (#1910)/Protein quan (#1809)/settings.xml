@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="column-filter-1739">
+            <config key="columns">
+                <entry key="array-size" type="xint" value="6"/>
+                <entry key="0" type="xstring" value="Precursor.Normalised+1_1_log2_norm_delog"/>
+                <entry key="1" type="xstring" value="Precursor.Normalised+1_2_log2_norm_delog"/>
+                <entry key="2" type="xstring" value="Precursor.Normalised+1_3_log2_norm_delog"/>
+                <entry key="3" type="xstring" value="Precursor.Normalised+2_1_log2_norm_delog"/>
+                <entry key="4" type="xstring" value="Precursor.Normalised+2_2_log2_norm_delog"/>
+                <entry key="5" type="xstring" value="Precursor.Normalised+2_3_log2_norm_delog"/>
+            </config>
+            <config key="columnFilter">
+                <config key="columnFilter">
+                    <entry key="filter-type" type="xstring" value="name_pattern"/>
+                    <config key="included_names">
+                        <entry key="array-size" type="xint" value="14"/>
+                        <entry key="0" type="xstring" value="Precursor.Normalised+21_CH_1"/>
+                        <entry key="1" type="xstring" value="Precursor.Normalised+22_CH_2"/>
+                        <entry key="2" type="xstring" value="Precursor.Normalised+23_CH_3"/>
+                        <entry key="3" type="xstring" value="Precursor.Normalised+24_CH_4"/>
+                        <entry key="4" type="xstring" value="Precursor.Normalised+25_CH_5"/>
+                        <entry key="5" type="xstring" value="Precursor.Normalised+26_ID86_1"/>
+                        <entry key="6" type="xstring" value="Precursor.Normalised+27_ID86_2"/>
+                        <entry key="7" type="xstring" value="Precursor.Normalised+28_ID86_3"/>
+                        <entry key="8" type="xstring" value="Precursor.Normalised+29_ID86_4"/>
+                        <entry key="9" type="xstring" value="Precursor.Normalised+30_ID86_5"/>
+                        <entry key="10" type="xstring" value="Precursor.Normalised+31_CH_AAK1_KO_1"/>
+                        <entry key="11" type="xstring" value="Precursor.Normalised+32_CH_AAK1_KO_2"/>
+                        <entry key="12" type="xstring" value="Precursor.Normalised+33_CH_AAK1_KO_3"/>
+                        <entry key="13" type="xstring" value="Precursor.Normalised+34_ID86_AAK1_KO_1"/>
+                    </config>
+                    <config key="excluded_names">
+                        <entry key="array-size" type="xint" value="134"/>
+                        <entry key="0" type="xstring" value="peptide.ID"/>
+                        <entry key="1" type="xstring" value="Stripped.Sequence"/>
+                        <entry key="2" type="xstring" value="Protein.Group"/>
+                        <entry key="3" type="xstring" value="Lib.PG.Q.Value"/>
+                        <entry key="4" type="xstring" value="UniProt_Entry"/>
+                        <entry key="5" type="xstring" value="UniProt_Protein names"/>
+                        <entry key="6" type="xstring" value="Precursor.Normalised (Sum)+1_1"/>
+                        <entry key="7" type="xstring" value="Precursor.Normalised (Sum)+1_2"/>
+                        <entry key="8" type="xstring" value="Precursor.Normalised (Sum)+1_3"/>
+                        <entry key="9" type="xstring" value="Precursor.Normalised (Sum)+2_1"/>
+                        <entry key="10" type="xstring" value="Precursor.Normalised (Sum)+2_2"/>
+                        <entry key="11" type="xstring" value="Precursor.Normalised (Sum)+2_3"/>
+                        <entry key="12" type="xstring" value="Precursor.Quantity (Sum)+1_1"/>
+                        <entry key="13" type="xstring" value="Precursor.Quantity (Sum)+1_2"/>
+                        <entry key="14" type="xstring" value="Precursor.Quantity (Sum)+1_3"/>
+                        <entry key="15" type="xstring" value="Precursor.Quantity (Sum)+2_1"/>
+                        <entry key="16" type="xstring" value="Precursor.Quantity (Sum)+2_2"/>
+                        <entry key="17" type="xstring" value="Precursor.Quantity (Sum)+2_3"/>
+                        <entry key="18" type="xstring" value="samples_sum"/>
+                        <entry key="19" type="xstring" value="RT (Mean)+1_1"/>
+                        <entry key="20" type="xstring" value="RT (Mean)+1_2"/>
+                        <entry key="21" type="xstring" value="RT (Mean)+1_3"/>
+                        <entry key="22" type="xstring" value="RT (Mean)+2_1"/>
+                        <entry key="23" type="xstring" value="RT (Mean)+2_2"/>
+                        <entry key="24" type="xstring" value="RT (Mean)+2_3"/>
+                        <entry key="25" type="xstring" value="RT.Start (Mean)+1_1"/>
+                        <entry key="26" type="xstring" value="RT.Start (Mean)+1_2"/>
+                        <entry key="27" type="xstring" value="RT.Start (Mean)+1_3"/>
+                        <entry key="28" type="xstring" value="RT.Start (Mean)+2_1"/>
+                        <entry key="29" type="xstring" value="RT.Start (Mean)+2_2"/>
+                        <entry key="30" type="xstring" value="RT.Start (Mean)+2_3"/>
+                        <entry key="31" type="xstring" value="RT.Stop (Mean)+1_1"/>
+                        <entry key="32" type="xstring" value="RT.Stop (Mean)+1_2"/>
+                        <entry key="33" type="xstring" value="RT.Stop (Mean)+1_3"/>
+                        <entry key="34" type="xstring" value="RT.Stop (Mean)+2_1"/>
+                        <entry key="35" type="xstring" value="RT.Stop (Mean)+2_2"/>
+                        <entry key="36" type="xstring" value="RT.Stop (Mean)+2_3"/>
+                        <entry key="37" type="xstring" value="PEP (Min*)+1_1"/>
+                        <entry key="38" type="xstring" value="PEP (Min*)+1_2"/>
+                        <entry key="39" type="xstring" value="PEP (Min*)+1_3"/>
+                        <entry key="40" type="xstring" value="PEP (Min*)+2_1"/>
+                        <entry key="41" type="xstring" value="PEP (Min*)+2_2"/>
+                        <entry key="42" type="xstring" value="PEP (Min*)+2_3"/>
+                        <entry key="43" type="xstring" value="Precursor.Id+1_1"/>
+                        <entry key="44" type="xstring" value="Precursor.Id+1_2"/>
+                        <entry key="45" type="xstring" value="Precursor.Id+1_3"/>
+                        <entry key="46" type="xstring" value="Precursor.Id+2_1"/>
+                        <entry key="47" type="xstring" value="Precursor.Id+2_2"/>
+                        <entry key="48" type="xstring" value="Precursor.Id+2_3"/>
+                        <entry key="49" type="xstring" value="Precursor.Normalised+1_1"/>
+                        <entry key="50" type="xstring" value="Precursor.Normalised+1_2"/>
+                        <entry key="51" type="xstring" value="Precursor.Normalised+1_3"/>
+                        <entry key="52" type="xstring" value="Precursor.Normalised+2_1"/>
+                        <entry key="53" type="xstring" value="Precursor.Normalised+2_2"/>
+                        <entry key="54" type="xstring" value="Precursor.Normalised+2_3"/>
+                        <entry key="55" type="xstring" value="Precursor.Quantity+1_1"/>
+                        <entry key="56" type="xstring" value="Precursor.Quantity+1_2"/>
+                        <entry key="57" type="xstring" value="Precursor.Quantity+1_3"/>
+                        <entry key="58" type="xstring" value="Precursor.Quantity+2_1"/>
+                        <entry key="59" type="xstring" value="Precursor.Quantity+2_2"/>
+                        <entry key="60" type="xstring" value="Precursor.Quantity+2_3"/>
+                        <entry key="61" type="xstring" value="Q.Value (Min*)+1_1"/>
+                        <entry key="62" type="xstring" value="Q.Value (Min*)+1_2"/>
+                        <entry key="63" type="xstring" value="Q.Value (Min*)+1_3"/>
+                        <entry key="64" type="xstring" value="Q.Value (Min*)+2_1"/>
+                        <entry key="65" type="xstring" value="Q.Value (Min*)+2_2"/>
+                        <entry key="66" type="xstring" value="Q.Value (Min*)+2_3"/>
+                        <entry key="67" type="xstring" value="UniProt_Mass"/>
+                        <entry key="68" type="xstring" value="UniProt_Length"/>
+                        <entry key="69" type="xstring" value="UniProt_Sequence"/>
+                        <entry key="70" type="xstring" value="UniProt_InterPro"/>
+                        <entry key="71" type="xstring" value="UniProt_Pfam"/>
+                        <entry key="72" type="xstring" value="UniProt_IntAct"/>
+                        <entry key="73" type="xstring" value="UniProt_Protein ID"/>
+                        <entry key="74" type="xstring" value="UniProt_Entry Name"/>
+                        <entry key="75" type="xstring" value="UniProt_Reviewed"/>
+                        <entry key="76" type="xstring" value="UniProt_Gene Names (primary)"/>
+                        <entry key="77" type="xstring" value="UniProt_Organism"/>
+                        <entry key="78" type="xstring" value="UniProt_Gene Ontology (GO)"/>
+                        <entry key="79" type="xstring" value="UniProt_Gene Ontology (biological process)"/>
+                        <entry key="80" type="xstring" value="UniProt_Gene Ontology (molecular function)"/>
+                        <entry key="81" type="xstring" value="UniProt_Gene Ontology (cellular component)"/>
+                        <entry key="82" type="xstring" value="UniProt_Gene Ontology IDs"/>
+                        <entry key="83" type="xstring" value="UniProt_Subcellular location [CC]"/>
+                        <entry key="84" type="xstring" value="UniProt_Protein families"/>
+                        <entry key="85" type="xstring" value="UniProt_Interacts with"/>
+                        <entry key="86" type="xstring" value="Precursor.Normalised (Sum)+1_1_log2"/>
+                        <entry key="87" type="xstring" value="Precursor.Normalised (Sum)+1_2_log2"/>
+                        <entry key="88" type="xstring" value="Precursor.Normalised (Sum)+1_3_log2"/>
+                        <entry key="89" type="xstring" value="Precursor.Normalised (Sum)+2_1_log2"/>
+                        <entry key="90" type="xstring" value="Precursor.Normalised (Sum)+2_2_log2"/>
+                        <entry key="91" type="xstring" value="Precursor.Normalised (Sum)+2_3_log2"/>
+                        <entry key="92" type="xstring" value="Precursor.Quantity (Sum)+1_1_log2"/>
+                        <entry key="93" type="xstring" value="Precursor.Quantity (Sum)+1_2_log2"/>
+                        <entry key="94" type="xstring" value="Precursor.Quantity (Sum)+1_3_log2"/>
+                        <entry key="95" type="xstring" value="Precursor.Quantity (Sum)+2_1_log2"/>
+                        <entry key="96" type="xstring" value="Precursor.Quantity (Sum)+2_2_log2"/>
+                        <entry key="97" type="xstring" value="Precursor.Quantity (Sum)+2_3_log2"/>
+                        <entry key="98" type="xstring" value="Precursor.Normalised+1_1_log2"/>
+                        <entry key="99" type="xstring" value="Precursor.Normalised+1_2_log2"/>
+                        <entry key="100" type="xstring" value="Precursor.Normalised+1_3_log2"/>
+                        <entry key="101" type="xstring" value="Precursor.Normalised+2_1_log2"/>
+                        <entry key="102" type="xstring" value="Precursor.Normalised+2_2_log2"/>
+                        <entry key="103" type="xstring" value="Precursor.Normalised+2_3_log2"/>
+                        <entry key="104" type="xstring" value="Precursor.Quantity+1_1_log2"/>
+                        <entry key="105" type="xstring" value="Precursor.Quantity+1_2_log2"/>
+                        <entry key="106" type="xstring" value="Precursor.Quantity+1_3_log2"/>
+                        <entry key="107" type="xstring" value="Precursor.Quantity+2_1_log2"/>
+                        <entry key="108" type="xstring" value="Precursor.Quantity+2_2_log2"/>
+                        <entry key="109" type="xstring" value="Precursor.Quantity+2_3_log2"/>
+                        <entry key="110" type="xstring" value="Global.Q.Value_min"/>
+                        <entry key="111" type="xstring" value="Lib.Q.Value_min"/>
+                        <entry key="112" type="xstring" value="Proteotypic_max"/>
+                        <entry key="113" type="xstring" value="Precursor.Normalised+1_1_log2_bin"/>
+                        <entry key="114" type="xstring" value="Precursor.Normalised+1_2_log2_bin"/>
+                        <entry key="115" type="xstring" value="Precursor.Normalised+1_3_log2_bin"/>
+                        <entry key="116" type="xstring" value="Precursor.Normalised+2_1_log2_bin"/>
+                        <entry key="117" type="xstring" value="Precursor.Normalised+2_2_log2_bin"/>
+                        <entry key="118" type="xstring" value="Precursor.Normalised+2_3_log2_bin"/>
+                        <entry key="119" type="xstring" value="Precursor.Normalised_all_log2_bin_sum"/>
+                        <entry key="120" type="xstring" value="Precursor.Normalised_1_log2_bin_sum"/>
+                        <entry key="121" type="xstring" value="Precursor.Normalised_2_log2_bin_sum"/>
+                        <entry key="122" type="xstring" value="Precursor.Normalised+1_1_log2_norm"/>
+                        <entry key="123" type="xstring" value="Precursor.Normalised+1_2_log2_norm"/>
+                        <entry key="124" type="xstring" value="Precursor.Normalised+1_3_log2_norm"/>
+                        <entry key="125" type="xstring" value="Precursor.Normalised+2_1_log2_norm"/>
+                        <entry key="126" type="xstring" value="Precursor.Normalised+2_2_log2_norm"/>
+                        <entry key="127" type="xstring" value="Precursor.Normalised+2_3_log2_norm"/>
+                        <entry key="128" type="xstring" value="Precursor.Normalised+1_1_log2_norm_delog"/>
+                        <entry key="129" type="xstring" value="Precursor.Normalised+1_2_log2_norm_delog"/>
+                        <entry key="130" type="xstring" value="Precursor.Normalised+1_3_log2_norm_delog"/>
+                        <entry key="131" type="xstring" value="Precursor.Normalised+2_1_log2_norm_delog"/>
+                        <entry key="132" type="xstring" value="Precursor.Normalised+2_2_log2_norm_delog"/>
+                        <entry key="133" type="xstring" value="Precursor.Normalised+2_3_log2_norm_delog"/>
+                    </config>
+                    <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
+                    <config key="name_pattern">
+                        <entry key="pattern" type="xstring" value="Precursor.Normalised+*_log2_norm_delog"/>
+                        <entry key="type" type="xstring" value="Wildcard"/>
+                        <entry key="caseSensitive" type="xboolean" value="true"/>
+                        <entry key="excludeMatching" type="xboolean" value="false"/>
+                    </config>
+                    <config key="datatype">
+                        <config key="typelist">
+                            <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+                        </config>
+                    </config>
+                </config>
+            </config>
+        </config>
+        <config key="pg_column-1913">
+            <entry key="column" type="xstring" value="Protein.Group"/>
+        </config>
+        <config key="pg_column_bottom-1914">
+            <entry key="column" type="xstring" value="Protein.Group"/>
+        </config>
+        <config key="separator-1915">
+            <entry key="string" type="xstring" value=";"/>
+        </config>
+        <config key="algorithm-1916">
+            <config key="variable_value">
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="MaxLFQ"/>
+            </config>
+        </config>
+        <config key="median_bool-1917">
+            <entry key="boolean" type="xboolean" value="false"/>
+        </config>
+        <config key="columns_to_return-1918">
+            <config key="variable_value">
+                <entry key="array-size" type="xint" value="2"/>
+                <entry key="0" type="xstring" value="absolute values"/>
+                <entry key="1" type="xstring" value="log2 of absolute values"/>
+            </config>
+        </config>
+        <config key="old_prefix-1919">
+            <entry key="string" type="xstring" value="Precursor.Normalised+"/>
+        </config>
+        <config key="old_suffix-1929">
+            <entry key="string" type="xstring" value="_log2_norm_delog"/>
+        </config>
+        <config key="prefix_tpa-1930">
+            <entry key="string" type="xstring" value="PG.DIA-TPA+"/>
+        </config>
+        <config key="prefix_maxlfq-1931">
+            <entry key="string" type="xstring" value="PG.MaxLFQ+"/>
+        </config>
+        <config key="prefix_top-1932">
+            <entry key="string" type="xstring" value="PG.Top3+"/>
+        </config>
+        <config key="suffix_to_add-1949">
+            <entry key="string" type="xstring" value=""/>
+        </config>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value=""/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="529"/>
+        <entry key="y-coordinate" type="xint" value="479"/>
+        <entry key="width" type="xint" value="142"/>
+        <entry key="height" type="xint" value="17"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="10"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="workflow-file" type="xstring" value="workflow.knime"/>
+    <entry key="virtual-in-ID" type="xint" value="1750"/>
+    <config key="inports">
+        <config key="inport_0">
+            <entry key="index" type="xint" value="0"/>
+            <config key="type">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="inport_1">
+            <entry key="index" type="xint" value="1"/>
+            <config key="type">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+    </config>
+    <entry key="virtual-out-ID" type="xint" value="1831"/>
+    <config key="outports">
+        <config key="outport_0">
+            <entry key="index" type="xint" value="0"/>
+            <config key="type">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+    </config>
+    <config key="metadata">
+        <entry key="description" type="xstring" value="Metanode for the quantification of proteins using peptide intensities. Both protein and peptide table are required to run this metanode.%%00010%%00010This metanode is using the DIA-TPA algorithm presented by He et al., 2020 (DOI: 10.1016/j.jprot.2019.03.005) and MaxLFQ and Top3 quantifications as implemented in the iq R package (Pham et al. 2020, DOI: 10.1093/bioinformatics/btz961). %%00010%%00010As the top input, use a protein table into which newly calculated protein quantities should be inserted. As the bottom input, table containing information about peptide intensities (not transformed) should be used, this table will be used for the protein quantification. To correctly insert the new values into the top table, columns with matching protein IDs need to be selected both from the top and bottom (peptide) table.%%00010%%00010Before MaxLFQ or Top3 quantification, median normalization of peptide intensities can be performed to normalize intensities between samples. In case of DIA-NN outputs, if Precursor.Normalised columns are to be used, this median normalization is not necessary.%%00010%%00010It is possible to return values in several formats, apart from the absolute values calculated by the selected algorithm, log2, ppm or percentages can be returned.%%00010%%00010=================%%00010%%00010Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.%%00010%%00010KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)%%00010Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3.6/license.html)%%00010R 4.2.0 (The R consists of the following GPL-3 License. License terms are available here: https://www.r-project.org/Licenses/GPL-3)%%00010%%00010The metanode was created in KNIME 4.7.7 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 4.7.7a.%%00010%%00010=================%%00010%%00010This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.%%00010Version: 2.3.0 from 2023-12-05%%00010Contact person: Karolina Krystofova (karolina.krystofova@ceitec.muni.cz)%%00010More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes."/>
+        <config key="inports">
+            <config key="inport_0">
+                <entry key="name" type="xstring" value="Top input table"/>
+                <entry key="description" type="xstring" value="Table containing information about identified proteins"/>
+                <entry key="index" type="xint" value="0"/>
+            </config>
+            <config key="inport_1">
+                <entry key="name" type="xstring" value="Bottom input table"/>
+                <entry key="description" type="xstring" value="Table containing intensities of detected peptides"/>
+                <entry key="index" type="xint" value="1"/>
+            </config>
+        </config>
+        <config key="outports">
+            <config key="outport_0">
+                <entry key="name" type="xstring" value="Output table"/>
+                <entry key="description" type="xstring" value="Table with appended absolute quantity columns"/>
+                <entry key="index" type="xint" value="0"/>
+            </config>
+        </config>
+    </config>
+    <config key="workflow_template_information">
+        <entry key="role" type="xstring" value="Link"/>
+        <entry key="timestamp" type="xstring" value="2023-12-05 12:32:54 +0100"/>
+        <entry key="sourceURI" type="xstring" value="knime://LOCAL/gitfolders/KNIME_metanodes/Metanodes%20templates/Data%20processing/Protein%20quantification%20from%20peptides"/>
+    </config>
+    <entry key="layoutJSON" type="xstring" value=""/>
+    <entry key="configurationLayoutJSON" type="xstring" value="{}"/>
+    <entry key="hideInWizard" type="xboolean" value="false"/>
+    <entry key="customCSS" type="xstring" value=""/>
+</config>

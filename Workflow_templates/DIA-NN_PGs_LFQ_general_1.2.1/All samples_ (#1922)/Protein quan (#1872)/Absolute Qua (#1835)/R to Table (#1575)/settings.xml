@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="script" type="xstring" value="library(dplyr)%%00010library(magrittr)%%00010library(tidyr)%%00010%%00010if(nrow(df_shared) &gt; 0) {%%00010%%00010# temporarily rename quantity column%%00010colnames(df_both)[colnames(df_both) == knime.flow.in[[&quot;currentColumnName&quot;]]] &lt;- 'quantity'%%00010colnames(df_shared)[colnames(df_shared) == knime.flow.in[[&quot;currentColumnName&quot;]]] &lt;- 'quantity'%%00010%%00010# summary of unique precursors for PGs with both types of precursors%%00010df_both &lt;- df_both %&gt;%%%00010%%00009group_by(PG) %&gt;%%%00010%%00009summarise(quantity = sum(quantity, na.rm = TRUE)) %&gt;%%%00010%%00009as.data.frame()%%00010%%00010### recalculation of shared precursors%%00010# give each PG original tag%%00010df_shared$Group.Number &lt;- 1:nrow(df_shared)%%00010df_shared$Protein &lt;- df_shared$PG%%00010df_shared &lt;- df_shared %&gt;%  select(-Protein.Group.Set, -No.Proteins)%%00010%%00010# separate by PG into rows, each Protein from PG on a separate row %%00010df_shared_sep &lt;- separate_rows(df_shared, Protein, sep = &quot;;&quot;) %&gt;%%%00010%%00009as.data.frame()%%00010%%00010# retrieve intensities of unique precursors for PGs with both types of precursors%%00010df_shared_sep$quantity_unique &lt;- unlist(lapply(df_shared_sep$Protein, function (x) {%%00010%%00009if (x %in% both_PGs) df_both$quantity[df_both$PG == x] else return(NA)}))%%00010%%00010# sum all unique precursors within a given PG%%00010shared_summary &lt;- df_shared_sep %&gt;%%%00010%%00009group_by(Group.Number) %&gt;%%%00010%%00009summarise(quantity_unique_sum = sum(quantity_unique, na.rm = TRUE)) %&gt;%%%00010%%00009as.data.frame()%%00010%%00010# retrieve sums of unique precursors intensities for PGs with both types of precursors%%00009%%00010df_shared_sep$quantity_unique_sum &lt;- unlist(lapply(df_shared_sep$Group.Number, function (x) {%%00010%%00009y &lt;- shared_summary$quantity_unique_sum[shared_summary$Group.Number == x]%%00010%%00009return(y)%%00010}))%%00010%%00010# based on the absolute quantity formula, calculate the ratio of intensities of unique precursors%%00010# of a given protein vs. unique precursors of all proteins in a given PG %%00010# divide the sum of shared precursor intensities by this ratio%%00010df_shared_final &lt;- df_shared_sep %&gt;%%%00010%%00009mutate(ratio = quantity_unique/quantity_unique_sum) %&gt;%%%00010%%00009mutate(quantity_new = quantity*ratio) %&gt;%%%00010%%00009select(Protein, quantity_new) %&gt;%%%00010%%00009rename(PG = Protein,%%00010%%00009%%00009  quantity = quantity_new) %&gt;%%%00010%%00009as.data.frame()%%00010%%00010# remove rows containing NAs%%00010df_shared_nona &lt;- na.omit(df_shared_final)%%00010%%00010# append rows with recalculated shared precursors to rows with unique precursors%%00010df_join &lt;- rbind(df_both, df_shared_nona)%%00010df_join &lt;- df_join %&gt;%%%00010%%00009group_by(PG) %&gt;%%%00010%%00009summarise(quantity = sum(quantity, na.rm = TRUE)) %&gt;%%%00010  %%00009as.data.frame()%%00010%%00010# restore original column name%%00010colnames(df_join)[colnames(df_join) == 'quantity'] &lt;- knime.flow.in[[&quot;currentColumnName&quot;]]%%00010%%00010knime.out &lt;- df_join%%00010} else {%%00010knime.out &lt;- df_shared %&gt;%%%00010%%00009select(-Protein.Group.Set, -No.Proteins)%%00010}"/>
+        <entry key="templateUUID" type="xstring" isnull="true" value=""/>
+        <entry key="version" type="xstring" value="version 1.x"/>
+        <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
+        <entry key="sendRowNames" type="xboolean" value="true"/>
+        <entry key="sendBatchSize" type="xint" value="10000"/>
+        <entry key="knimeInType" type="xstring" value="data.frame"/>
+        <entry key="overwriteRHome" type="xboolean" value="false"/>
+        <entry key="rHome" type="xstring" value="/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"/>
+        <entry key="useRPathHome" type="xboolean" value="true"/>
+        <entry key="condaVariableName" type="xstring" isnull="true" value=""/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="rHome">
+                <entry key="used_variable" type="xstring" value="Rcommand"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="shared precursors"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="829"/>
+        <entry key="y-coordinate" type="xint" value="459"/>
+        <entry key="width" type="xint" value="142"/>
+        <entry key="height" type="xint" value="17"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="10"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="org.knime.r.RToTableNodeFactory"/>
+    <entry key="node-name" type="xstring" value="R to Table"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME R-Project nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.r"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.0.v202206271529"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Interactive R Statistics Integration"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.r.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.0.v202211090002"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="R to Table"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

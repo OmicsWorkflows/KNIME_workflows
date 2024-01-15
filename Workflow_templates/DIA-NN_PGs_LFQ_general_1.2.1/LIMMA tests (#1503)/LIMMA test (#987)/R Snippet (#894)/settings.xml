@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<entry key="script" type="xstring" value="data &lt;- data.matrix(knime.in)%%00010%%00010# create separate data frame for bin columns%%00010n &lt;- ncol(data)%%00010m &lt;- n/2 + 1%%00010data_bin &lt;- as.data.frame(data[,m:n])%%00010data_intensity &lt;- as.data.frame(data[,1:(m-1)])%%00010%%00010# rename columns for easier manipulation in following steps%%00010colnames_replace &lt;- colnames(data_intensity)%%00010colnames(data_intensity) &lt;- trimws(strsplit(knime.flow.in[[&quot;limma_design&quot;]],',')[[1]])%%00010colnames(data_bin) &lt;- trimws(strsplit(knime.flow.in[[&quot;limma_design&quot;]],',')[[1]])%%00010%%00010# perform sums of rows for separate samples and adds them to the original dataframe%%00010data_bin &lt;- sapply(split.default(data_bin, names(data_bin)), rowSums, na.rm = TRUE)%%00010data_bin &lt;- as.data.frame(data_bin)%%00010%%00010# creates R variables for filtering%%00010thresholds_samples &lt;- trimws(strsplit(knime.flow.in[[&quot;thresholds_samples&quot;]],',')[[1]])%%00010thresholds_values &lt;- trimws(strsplit(knime.flow.in[[&quot;thresholds_values&quot;]],',')[[1]])%%00010thresholds &lt;- data.frame(samples = as.character(thresholds_samples),%%00010%%00009%%00009%%00009%%00009%%00009values = as.integer(thresholds_values))%%00010%%00010# reorder data_bin and thresholds dataframes to have sample names in alphabetical order%%00010data_bin &lt;- data_bin[,order(colnames(data_bin))]%%00010thresholds &lt;- thresholds[order(thresholds$samples),]%%00010%%00010# filtering of row with sums below threshold%%00010filtered_in &lt;- vector()%%00010%%00010for (x in thresholds$samples){%%00010%%00009index &lt;- which(thresholds$samples == x)%%00010%%00009threshold &lt;- thresholds$values[index]%%00010%%00009column &lt;- data_bin[,index]%%00010%%00009keep_in &lt;- which(column&gt;=threshold)%%00010%%00009filtered_in &lt;&lt;- c(filtered_in, keep_in)%%00010%%00009}%%00010%%00010filtered_in &lt;- as.integer(levels(as.factor(filtered_in)))%%00010filtered_data &lt;- data_intensity[filtered_in,]%%00010colnames(filtered_data) &lt;- colnames_replace%%00010%%00010knime.out &lt;- as.data.frame(filtered_data)"/>
+<entry key="templateUUID" type="xstring" isnull="true" value=""/>
+<entry key="version" type="xstring" value="version 1.x"/>
+<entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
+<entry key="sendRowNames" type="xboolean" value="true"/>
+<entry key="sendBatchSize" type="xint" value="10000"/>
+<entry key="knimeInType" type="xstring" value="data.frame"/>
+</config>
+<config key="nodeAnnotation">
+<entry key="text" type="xstring" value="filtering of data%%00010(separate threshold)"/>
+<entry key="bgcolor" type="xint" value="16777215"/>
+<entry key="x-coordinate" type="xint" value="750"/>
+<entry key="y-coordinate" type="xint" value="819"/>
+<entry key="width" type="xint" value="142"/>
+<entry key="height" type="xint" value="34"/>
+<entry key="alignment" type="xstring" value="CENTER"/>
+<entry key="borderSize" type="xint" value="0"/>
+<entry key="borderColor" type="xint" value="16777215"/>
+<entry key="defFontSize" type="xint" value="10"/>
+<entry key="annotation-version" type="xint" value="20151123"/>
+<config key="styles"/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="IDLE"/>
+<entry key="factory" type="xstring" value="org.knime.r.RSnippetNodeFactory"/>
+<entry key="node-name" type="xstring" value="R Snippet"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME R-Project nodes"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.r"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-bundle-version" type="xstring" value="4.1.1.v202001312017"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Interactive R Statistics Integration"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.r.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-feature-version" type="xstring" value="4.1.1.v202001312017"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="R Snippet"/>
+<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+</config>
+</config>

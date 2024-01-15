@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="script" type="xstring" value="suppressPackageStartupMessages(library(tidyverse))%%00010library(iq)%%00010%%00010df &lt;- knime.in%%00010algorithms &lt;- unlist(strsplit(knime.flow.in[[&quot;algorithm&quot;]], ','))%%00010%%00010# Prepare long table%%00010df$ID &lt;- 0:(nrow(df)-1)%%00010%%00010df_long &lt;- df |&gt;%%00010%%00009gather(-ID, -PG, key = 'Experiment', value = 'Intensity')%%00010%%00010# Normalization bool%%00010median_bool &lt;- ifelse(knime.flow.in[[&quot;median_bool&quot;]] == 1, TRUE, FALSE)%%00010%%00010# Preprocess, remove low intensity ions%%00010norm_data &lt;- iq::preprocess(df_long,%%00010%%00009%%00009%%00009%%00009%%00009   primary_id = 'PG',%%00010                            sample_id  = 'Experiment', %%00010                            secondary_id = 'ID',%%00010                            intensity_col = 'Intensity',%%00010                            median_normalization = median_bool,%%00010                            pdf_out = NULL)%%00010%%00010# Perform MaxLFQ %%00010df_final &lt;- data.frame('PG' = character(),%%00010%%00009%%00009%%00009%%00009   'sample' = character(),%%00010%%00009%%00009%%00009%%00009   'quantity' = numeric())%%00010%%00010if ('MaxLFQ' %in% algorithms) {              %%00010%%00009result &lt;- fast_MaxLFQ(norm_data)%%00010%%00009%%00010%%00009# Dfs with results%%00010%%00009result_df &lt;- as.data.frame(result$estimate)%%00010%%00009result_df_delog_maxlfq &lt;- result_df |&gt;%%00010%%00009%%00009mutate_all(function(x) 2^x)%%00010%%00010%%00009# Rename columns%%00010%%00009colnames(result_df_delog_maxlfq) &lt;- paste0(knime.flow.in[[&quot;prefix_maxlfq&quot;]], colnames(result_df_delog_maxlfq))%%00010%%00010%%00009result_df_delog_maxlfq &lt;- result_df_delog_maxlfq |&gt;%%00010%%00009%%00009rownames_to_column('PG') |&gt;%%00010%%00009%%00009gather(-PG, key = 'sample', value = 'quantity')%%00010%%00010%%00009df_final &lt;- rbind(df_final, result_df_delog_maxlfq)%%00010}%%00010%%00010if ('Top3' %in% algorithms) {%%00010%%00009peptide_list &lt;- create_protein_list(norm_data)%%00010%%00009result &lt;- create_protein_table(peptide_list, method = 'topN', N = 3)%%00010%%00010%%00009# Dfs with results%%00010%%00009result_df &lt;- as.data.frame(result$estimate)%%00010%%00009result_df_delog_top3 &lt;- result_df |&gt;%%00010%%00009%%00009mutate_all(function(x) 2^x)%%00010%%00010%%00009# Rename columns%%00010%%00009colnames(result_df_delog_top3) &lt;- paste0(knime.flow.in[[&quot;prefix_top&quot;]], colnames(result_df_delog_top3))%%00010%%00010%%00009result_df_delog_top3 &lt;- result_df_delog_top3 |&gt;%%00010%%00009%%00009rownames_to_column('PG') |&gt;%%00010%%00009%%00009gather(-PG, key = 'sample', value = 'quantity')%%00010%%00010%%00009df_final &lt;- rbind(df_final, result_df_delog_top3)%%00010}%%00010%%00010knime.out &lt;- df_final"/>
+        <entry key="templateUUID" type="xstring" isnull="true" value=""/>
+        <entry key="version" type="xstring" value="version 1.x"/>
+        <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
+        <entry key="sendRowNames" type="xboolean" value="true"/>
+        <entry key="sendBatchSize" type="xint" value="10000"/>
+        <entry key="knimeInType" type="xstring" value="data.frame"/>
+        <entry key="overwriteRHome" type="xboolean" value="false"/>
+        <entry key="rHome" type="xstring" value="/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"/>
+        <entry key="useRPathHome" type="xboolean" value="true"/>
+        <entry key="condaVariableName" type="xstring" isnull="true" value=""/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="rHome">
+                <entry key="used_variable" type="xstring" value="Rcommand"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="perform MaxLFQ"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="1589"/>
+        <entry key="y-coordinate" type="xint" value="399"/>
+        <entry key="width" type="xint" value="142"/>
+        <entry key="height" type="xint" value="17"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="10"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles">
+            <config key="style_0">
+                <entry key="start" type="xint" value="0"/>
+                <entry key="length" type="xint" value="14"/>
+                <entry key="fontname" type="xstring" value="Sans"/>
+                <entry key="fontstyle" type="xint" value="0"/>
+                <entry key="fontsize" type="xint" value="10"/>
+                <entry key="fgcolor" type="xint" value="0"/>
+            </config>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="org.knime.r.RSnippetNodeFactory"/>
+    <entry key="node-name" type="xstring" value="R Snippet"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME R-Project nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.r"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.0.v202206271529"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Interactive R Statistics Integration"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.r.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.0.v202211090002"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="R Snippet"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="sourceCode" type="xstring" value="import numpy%%00010import pandas%%00010%%00010# load input table%%00010input_table = input_table_1%%00010%%00010sample_type_sum_name = &quot;sample types summary&quot;%%00010biol_repl_sum_name = &quot;biological replicates summary&quot;%%00010all_col_sum_name = &quot;all columns summary&quot;%%00010%%00010# separate string into list items%%00010def list_from_string(input):%%00010%%00009# check of the input designs is done individualy, not at this point%%00010%%00009#if input == &quot;none&quot;:%%00010%%00009%%00009#raise Exception(&quot;Input was not provided for the requested operation, please check.&quot;)%%00010%%00009list_new = input.split(&quot;,&quot;)%%00010%%00009list_stripped = [i.strip() for i in list_new]%%00010%%00009list_stripped_cleaned = list(filter(None, list_stripped))%%00010%%00009return list_stripped_cleaned%%00010%%00010# summary types%%00010if flow_variables['summaries'] != '':%%00010%%00009sum_list = list_from_string(flow_variables['summaries'])%%00010else:%%00010%%00009sum_list = []%%00010%%00010# creates the list with requested statistics%%00010stats_list = list_from_string(flow_variables['stats_selected'])%%00010%%00010# creates sample and replicate lists%%00010if biol_repl_sum_name in sum_list:%%00010%%00009sample_list = list_from_string(flow_variables['sample'])%%00010%%00009sample_length = len(sample_list)%%00010%%00009replicate_list = list_from_string(flow_variables['replicate'])%%00010%%00009replicate_length = len(replicate_list)%%00010elif sample_type_sum_name in sum_list:%%00010%%00009sample_list = list_from_string(flow_variables['sample'])%%00010%%00009sample_length = len(sample_list)%%00010%%00010# checks if there is experiment design for sample or replicate summary of the same length as the number of columns provided%%00010## gets the length of the provided samples and replicate desing excluding the empty values%%00010#sample_length = len(list_from_string(flow_variables['sample']))%%00010#replicate_length = len(list_from_string(flow_variables['replicate']))%%00010if biol_repl_sum_name in sum_list:%%00010%%00009if (replicate_length != len(input_table.columns) or sample_length != len(input_table.columns)):%%00010%%00009%%00009raise Exception('Samples ({}) and or replicates ({}) experiment design lengths do not match the number of columns provided ({}). Please inspect the form settings'.format(sample_length, replicate_length, len(input_table.columns)))%%00010elif sample_type_sum_name in sum_list:%%00010%%00009if sample_length != len(input_table.columns):%%00010%%00009%%00009raise Exception('Samples experiment design length ({}) does not match the number of columns provided ({}). Please inspect the form settings'.format(sample_length, len(input_table.columns)))%%00010%%00010# creates empty dataframe for the stats to be computed%%00010stats_df = pandas.DataFrame()%%00010%%00010if flow_variables['summaries'] == '':%%00010%%00009raise Exception('No summary type selected. Please select at least one summary type to be returned.')%%00010%%00010group_dict = {}%%00010%%00010#print(group_dict)%%00010%%00010# rename columns if experimental design and replicates are filled in%%00010#if 'experimental design + biological replicates' in sum_list:%%00010#%%00009new = [str(sample_list[i])+'_'+str(replicate_list[i]) for i in range(len(input_table.columns))]%%00010#%%00009group_list.append(new)%%00010%%00010if all_col_sum_name in sum_list:%%00010%%00009group_dict[all_col_sum_name] = [flow_variables['common_name'] for x in input_table.columns]%%00010%%00009#group_list.append(new)%%00010#print(group_dict)%%00010%%00010if sample_type_sum_name in sum_list:%%00010%%00009group_dict[sample_type_sum_name] = [str(sample_list[i]) for i in range(len(input_table.columns))]%%00010#print(group_dict)%%00010%%00010if biol_repl_sum_name in sum_list:%%00010%%00009group_dict[biol_repl_sum_name] = [str(sample_list[i])+'_'+str(replicate_list[i]) for i in range(len(input_table.columns))]%%00010#%%00009group_list.append(new)%%00010#print(group_dict)%%00010%%00010# iterates through the dictionary of requested stats and adds one column with the given statistics per iteration%%00010for key in group_dict:%%00010%%00009temp_table = input_table.copy()%%00010%%00009temp_table.columns = group_dict[key]%%00010%%00009temp_table_grouped = temp_table.groupby(by=temp_table.columns, axis=1)%%00010%%00009colnames_list = list(temp_table_grouped.groups.keys())%%00010%%00009%%00010%%00009for stat in stats_list:%%00010%%00009%%00009if stat == &quot;sum&quot;:%%00010%%00009%%00009%%00009if key != all_col_sum_name:%%00010%%00009%%00009%%00009%%00009for colname in colnames_list:%%00010%%00009%%00009%%00009%%00009%%00009stats_df[flow_variables['common_name']+colname+'_'+stat] = getattr(temp_table_grouped.get_group(colname), stat)(min_count=1, axis=1)%%00010%%00009%%00009%%00009else:%%00010%%00009%%00009%%00009%%00009for colname in colnames_list:%%00010%%00009%%00009%%00009%%00009%%00009stats_df[flow_variables['common_name']+stat] = getattr(temp_table_grouped.get_group(colname), stat)(min_count=1, axis=1)%%00010%%00009%%00009else:%%00010%%00009%%00009%%00009if key != all_col_sum_name:%%00010%%00009%%00009%%00009%%00009for colname in colnames_list:%%00010%%00009%%00009%%00009%%00009%%00009stats_df[flow_variables['common_name']+colname+'_'+stat] = getattr(temp_table_grouped.get_group(colname), stat)(axis=1)%%00010%%00009%%00009%%00009else:%%00010%%00009%%00009%%00009%%00009for colname in colnames_list:%%00010%%00009%%00009%%00009%%00009%%00009stats_df[flow_variables['common_name']+stat] = getattr(temp_table_grouped.get_group(colname), stat)(axis=1)%%00010%%00010output_table_1 = stats_df"/>
+        <entry key="rowLimit" type="xint" value="1000"/>
+        <entry key="convertMissingToPython" type="xboolean" value="false"/>
+        <entry key="convertMissingFromPython" type="xboolean" value="false"/>
+        <entry key="sentinelOption" type="xstring" value="MIN_VAL"/>
+        <entry key="sentinelValue" type="xint" value="0"/>
+        <entry key="chunkSize" type="xint" value="500000"/>
+        <entry key="pythonVersionOption" type="xstring" value="python3"/>
+        <entry key="python2Command" type="xstring" value=""/>
+        <entry key="python3Command" type="xstring" value="unknown_flow_variable_selected"/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="python3Command">
+                <entry key="used_variable" type="xstring" value="python3command"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="org.knime.python2.nodes.script2.Python2ScriptNodeFactory2"/>
+    <entry key="node-name" type="xstring" value="Python Script (legacy)"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Python nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python2.nodes"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.0.v202211291448"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Python 2 Integration (legacy)"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python2.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.1.v202301311311"/>
+    <config key="factory_settings"/>
+    <config key="node_creation_config">
+        <config key="Input object (pickled)"/>
+        <config key="Input table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output image"/>
+        <config key="Output object (pickled)"/>
+    </config>
+    <entry key="name" type="xstring" value="Python Script (legacy)"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

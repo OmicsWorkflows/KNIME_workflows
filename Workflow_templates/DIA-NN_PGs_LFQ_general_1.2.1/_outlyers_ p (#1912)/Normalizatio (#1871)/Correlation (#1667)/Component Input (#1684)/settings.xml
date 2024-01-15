@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack">
+        <config key="Variable_0">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="kde_line"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="None"/>
+        </config>
+        <config key="Variable_1">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="plots_manual_x"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="Auto"/>
+        </config>
+        <config key="Variable_2">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="kde_size"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="Auto"/>
+        </config>
+        <config key="Variable_3">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="data_to_normalize (index)"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="3"/>
+        </config>
+        <config key="Variable_4">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="data_to_normalize"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="DIA-NN - MaxLFQ norm. data (PG.MaxLFQ columns)"/>
+        </config>
+        <config key="Variable_5">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="output_folder"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="normalization_tests"/>
+        </config>
+        <config key="Variable_6">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="output_subfolder"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="PGs.MaxLFQ_-outlyers_prec-filter060_norm_imp"/>
+        </config>
+        <config key="Variable_7">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="context.workflow.name"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="DIA-NN_PGs_LFQ_general_1.2.0"/>
+        </config>
+        <config key="Variable_8">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="context.workflow.path"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="/gitfolders/DIA-NN_PGs_LFQ_general_1.2.0"/>
+        </config>
+        <config key="Variable_9">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="context.workflow.absolute-path"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="/home/knimeuser/knime-workspace/gitfolders/DIA-NN_PGs_LFQ_general_1.2.0"/>
+        </config>
+        <config key="Variable_10">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="context.workflow.user"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="knimeuser"/>
+        </config>
+        <config key="Variable_11">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="context.workflow.temp.location"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="/tmp/knime_DIA_NN_PGs_LFQ_16477"/>
+        </config>
+        <config key="Variable_12">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="context.workflow.author.name"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="knimeuser"/>
+        </config>
+        <config key="Variable_13">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="context.workflow.last.editor.name"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="knimeuser"/>
+        </config>
+        <config key="Variable_14">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="context.workflow.creation.date"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="2021-07-22T21:49:17+02:00"/>
+        </config>
+        <config key="Variable_15">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="context.workflow.last.time.modified"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="2024-01-15T10:00:13.843067687+01:00"/>
+        </config>
+        <config key="Variable_16">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="context.job.id"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value=""/>
+        </config>
+        <config key="Variable_17">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="data_to_normalize_file_name_part"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="diann-maxlfq"/>
+        </config>
+        <config key="Variable_18">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="data_to_normalize_subtitle_part"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="PG.MaxLFQ data"/>
+        </config>
+        <config key="Variable_19">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="plot_manual_switch"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="false"/>
+        </config>
+        <config key="Variable_20">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="violin_float"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="0.5"/>
+        </config>
+        <config key="Variable_21">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="violin_kernel"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="scott"/>
+        </config>
+        <config key="Variable_22">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="plots_manual_y"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="Auto"/>
+        </config>
+        <config key="Variable_23">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="violin_size"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="Auto"/>
+        </config>
+        <config key="Variable_24">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="path"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="/home/knimeuser/knime-workspace/gitfolders/DIA-NN_PGs_LFQ_general_1.2.0/__outputs__/figures/normalization_tests/PGs.MaxLFQ_-outlyers_prec-filter060_norm_imp/"/>
+        </config>
+        <config key="Variable_25">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="exclude_switch"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_26">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="exclude_number"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="0"/>
+        </config>
+        <config key="Variable_27">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="all_samples_list"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="['1_1', '1_2', '1_3', '2_1', '2_2', '2_3']"/>
+        </config>
+        <config key="Variable_28">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="exclude"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="[]"/>
+        </config>
+        <config key="Variable_29">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="sample_list"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="['1_1', '1_2', '1_3', '2_1', '2_2', '2_3']"/>
+        </config>
+        <config key="Variable_30">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="counting_loop"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="3"/>
+        </config>
+        <config key="Variable_31">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_ma"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="top"/>
+        </config>
+        <config key="Variable_32">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_scatter"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="top"/>
+        </config>
+        <config key="Variable_33">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_hierarchy"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_34">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_correlation_automatic"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="top"/>
+        </config>
+        <config key="Variable_35">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_correlation_manual"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_36">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_density"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_37">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_boxplot"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_38">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_violin_widthsame"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_39">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_violin_widthcount"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_40">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_switch"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="top"/>
+        </config>
+        <config key="Variable_41">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="graph_ma"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_42">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="graph_scatter"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_43">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="graph_hierarchy"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_44">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="graph_correlation_automatic"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="top"/>
+        </config>
+        <config key="Variable_45">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="graph_correlation_manual"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_46">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="graph_density"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_47">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="graph_boxplot"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_48">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="graph_violin_widthsame"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="top"/>
+        </config>
+        <config key="Variable_49">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="graph_violin_widthcount"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="top"/>
+        </config>
+        <config key="Variable_50">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="methods_list"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="2,7"/>
+        </config>
+        <config key="Variable_51">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="methods_no"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="2"/>
+        </config>
+        <config key="Variable_52">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="suffix"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value=""/>
+        </config>
+        <config key="Variable_53">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="prefix"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value=""/>
+        </config>
+        <config key="Variable_54">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="graph_subtitle"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value=""/>
+        </config>
+        <config key="Variable_55">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_list"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="1,2,1+2"/>
+        </config>
+        <config key="Variable_56">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="Rcommand"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"/>
+        </config>
+        <config key="Variable_57">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="python3command"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"/>
+        </config>
+        <config key="Variable_58">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="all_suffix"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value=""/>
+        </config>
+        <config key="Variable_59">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="all_prefix"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="PG_MaxLFQ_"/>
+        </config>
+        <config key="Variable_60">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_graphs"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="correlation clustermap (automatic center),scatter plot matrix,scatter plot matrix (MA plots)"/>
+        </config>
+        <config key="Variable_61">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="graphs"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="violin plot (width based on count),violin plot (width same for all),correlation clustermap (automatic center)"/>
+        </config>
+        <config key="Variable_62">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="methods"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="selected data + loessF normalization,DIA-NN - MaxLFQ norm. data (PG.MaxLFQ columns)"/>
+        </config>
+        <config key="Variable_63">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_bool"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="1"/>
+        </config>
+        <config key="Variable_64">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="design"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="1,1,1,%%000102,2,2"/>
+        </config>
+        <config key="Variable_65">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="column_selection"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="1_1,1_2,1_3,2_1,2_2,2_3"/>
+        </config>
+        <config key="Variable_66">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="all_samples"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="1_1,1_2,1_3,2_1,2_2,2_3"/>
+        </config>
+        <config key="Variable_67">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="AggregatedValues"/>
+            <entry key="class" type="xstring" value="STRINGARRAY"/>
+            <config key="value">
+                <entry key="array-size" type="xint" value="6"/>
+                <entry key="0" type="xstring" value="1_1"/>
+                <entry key="1" type="xstring" value="1_2"/>
+                <entry key="2" type="xstring" value="1_3"/>
+                <entry key="3" type="xstring" value="2_1"/>
+                <entry key="4" type="xstring" value="2_2"/>
+                <entry key="5" type="xstring" value="2_3"/>
+            </config>
+        </config>
+        <config key="Variable_68">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="boxplot_size"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="Auto"/>
+        </config>
+        <config key="Variable_69">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="boxplot_manual_y"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="Auto"/>
+        </config>
+        <config key="Variable_70">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="boxplot_manual_switch"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="false"/>
+        </config>
+        <config key="Variable_71">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="kde_line"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="None"/>
+        </config>
+        <config key="Variable_72">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="plots_manual_x"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="Auto"/>
+        </config>
+        <config key="Variable_73">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="kde_size"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="Auto"/>
+        </config>
+        <config key="Variable_74">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="data_to_normalize (index)"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="3"/>
+        </config>
+        <config key="Variable_75">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="data_to_normalize"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="DIA-NN - MaxLFQ norm. data (PG.MaxLFQ columns)"/>
+        </config>
+        <config key="Variable_76">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="output_folder"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="normalization_tests"/>
+        </config>
+        <config key="Variable_77">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="output_subfolder"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="PGs.MaxLFQ_-outlyers_prec-filter060_norm_imp"/>
+        </config>
+        <config key="Variable_78">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="context.workflow.name"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="DIA-NN_PGs_LFQ_general_1.2.0"/>
+        </config>
+        <config key="Variable_79">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="context.workflow.path"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="/gitfolders/DIA-NN_PGs_LFQ_general_1.2.0"/>
+        </config>
+        <config key="Variable_80">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="context.workflow.absolute-path"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="/home/knimeuser/knime-workspace/gitfolders/DIA-NN_PGs_LFQ_general_1.2.0"/>
+        </config>
+        <config key="Variable_81">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="context.workflow.user"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="knimeuser"/>
+        </config>
+        <config key="Variable_82">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="context.workflow.temp.location"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="/tmp/knime_DIA_NN_PGs_LFQ_16477"/>
+        </config>
+        <config key="Variable_83">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="context.workflow.author.name"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="knimeuser"/>
+        </config>
+        <config key="Variable_84">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="context.workflow.last.editor.name"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="knimeuser"/>
+        </config>
+        <config key="Variable_85">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="context.workflow.creation.date"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="2021-07-22T21:49:17+02:00"/>
+        </config>
+        <config key="Variable_86">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="context.workflow.last.time.modified"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="2024-01-15T10:00:13.843067687+01:00"/>
+        </config>
+        <config key="Variable_87">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="context.job.id"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value=""/>
+        </config>
+        <config key="Variable_88">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="data_to_normalize_file_name_part"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="diann-maxlfq"/>
+        </config>
+        <config key="Variable_89">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="data_to_normalize_subtitle_part"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="PG.MaxLFQ data"/>
+        </config>
+        <config key="Variable_90">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="plot_manual_switch"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="false"/>
+        </config>
+        <config key="Variable_91">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="violin_float"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="0.5"/>
+        </config>
+        <config key="Variable_92">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="violin_kernel"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="scott"/>
+        </config>
+        <config key="Variable_93">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="plots_manual_y"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="Auto"/>
+        </config>
+        <config key="Variable_94">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="violin_size"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="Auto"/>
+        </config>
+        <config key="Variable_95">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="path"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="/home/knimeuser/knime-workspace/gitfolders/DIA-NN_PGs_LFQ_general_1.2.0/__outputs__/figures/normalization_tests/PGs.MaxLFQ_-outlyers_prec-filter060_norm_imp/"/>
+        </config>
+        <config key="Variable_96">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="exclude_switch"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_97">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="exclude_number"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="0"/>
+        </config>
+        <config key="Variable_98">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="all_samples_list"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="['1_1', '1_2', '1_3', '2_1', '2_2', '2_3']"/>
+        </config>
+        <config key="Variable_99">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="exclude"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="[]"/>
+        </config>
+        <config key="Variable_100">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="sample_list"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="['1_1', '1_2', '1_3', '2_1', '2_2', '2_3']"/>
+        </config>
+        <config key="Variable_101">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="counting_loop"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="3"/>
+        </config>
+        <config key="Variable_102">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_ma"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="top"/>
+        </config>
+        <config key="Variable_103">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_scatter"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="top"/>
+        </config>
+        <config key="Variable_104">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_hierarchy"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_105">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_correlation_automatic"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="top"/>
+        </config>
+        <config key="Variable_106">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_correlation_manual"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_107">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_density"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_108">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_boxplot"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_109">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_violin_widthsame"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_110">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_violin_widthcount"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_111">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_switch"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="top"/>
+        </config>
+        <config key="Variable_112">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="graph_ma"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_113">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="graph_scatter"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_114">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="graph_hierarchy"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_115">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="graph_correlation_automatic"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="top"/>
+        </config>
+        <config key="Variable_116">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="graph_correlation_manual"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_117">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="graph_density"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_118">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="graph_boxplot"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_119">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="graph_violin_widthsame"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="top"/>
+        </config>
+        <config key="Variable_120">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="graph_violin_widthcount"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="top"/>
+        </config>
+        <config key="Variable_121">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="methods_list"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="2,7"/>
+        </config>
+        <config key="Variable_122">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="methods_no"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="2"/>
+        </config>
+        <config key="Variable_123">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="suffix"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value=""/>
+        </config>
+        <config key="Variable_124">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="prefix"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value=""/>
+        </config>
+        <config key="Variable_125">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="graph_subtitle"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value=""/>
+        </config>
+        <config key="Variable_126">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_list"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="1,2,1+2"/>
+        </config>
+        <config key="Variable_127">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="Rcommand"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"/>
+        </config>
+        <config key="Variable_128">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="python3command"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"/>
+        </config>
+        <config key="Variable_129">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="all_suffix"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value=""/>
+        </config>
+        <config key="Variable_130">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="all_prefix"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="PG_MaxLFQ_"/>
+        </config>
+        <config key="Variable_131">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_graphs"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="correlation clustermap (automatic center),scatter plot matrix,scatter plot matrix (MA plots)"/>
+        </config>
+        <config key="Variable_132">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="graphs"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="violin plot (width based on count),violin plot (width same for all),correlation clustermap (automatic center)"/>
+        </config>
+        <config key="Variable_133">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="methods"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="selected data + loessF normalization,DIA-NN - MaxLFQ norm. data (PG.MaxLFQ columns)"/>
+        </config>
+        <config key="Variable_134">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="subset_bool"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="1"/>
+        </config>
+        <config key="Variable_135">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="design"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="1,1,1,%%000102,2,2"/>
+        </config>
+        <config key="Variable_136">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="column_selection"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="1_1,1_2,1_3,2_1,2_2,2_3"/>
+        </config>
+        <config key="Variable_137">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="all_samples"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="1_1,1_2,1_3,2_1,2_2,2_3"/>
+        </config>
+        <config key="Variable_138">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="AggregatedValues"/>
+            <entry key="class" type="xstring" value="STRINGARRAY"/>
+            <config key="value">
+                <entry key="array-size" type="xint" value="6"/>
+                <entry key="0" type="xstring" value="1_1"/>
+                <entry key="1" type="xstring" value="1_2"/>
+                <entry key="2" type="xstring" value="1_3"/>
+                <entry key="3" type="xstring" value="2_1"/>
+                <entry key="4" type="xstring" value="2_2"/>
+                <entry key="5" type="xstring" value="2_3"/>
+            </config>
+        </config>
+        <config key="Variable_139">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="boxplot_size"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="Auto"/>
+        </config>
+        <config key="Variable_140">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="boxplot_manual_y"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="Auto"/>
+        </config>
+        <config key="Variable_141">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="boxplot_manual_switch"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="false"/>
+        </config>
+    </config>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="variable-filter">
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
+            <config key="included_names">
+                <entry key="array-size" type="xint" value="11"/>
+                <entry key="0" type="xstring" value="boxplot_manual_switch"/>
+                <entry key="1" type="xstring" value="boxplot_manual_y"/>
+                <entry key="2" type="xstring" value="boxplot_size"/>
+                <entry key="3" type="xstring" value="violin_size"/>
+                <entry key="4" type="xstring" value="plots_manual_y"/>
+                <entry key="5" type="xstring" value="violin_kernel"/>
+                <entry key="6" type="xstring" value="violin_float"/>
+                <entry key="7" type="xstring" value="plot_manual_switch"/>
+                <entry key="8" type="xstring" value="kde_size"/>
+                <entry key="9" type="xstring" value="plots_manual_x"/>
+                <entry key="10" type="xstring" value="kde_line"/>
+            </config>
+            <config key="excluded_names">
+                <entry key="array-size" type="xint" value="0"/>
+            </config>
+            <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value=""/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+            </config>
+        </config>
+        <entry key="variable-prefix" type="xstring" isnull="true" value=""/>
+        <config key="port-names">
+            <entry key="array-size" type="xint" value="1"/>
+            <entry key="0" type="xstring" value=""/>
+        </config>
+        <config key="port-descriptions">
+            <entry key="array-size" type="xint" value="1"/>
+            <entry key="0" type="xstring" value=""/>
+        </config>
+        <entry key="sub-node-description" type="xstring" value="Custom plot settings for the correlation clustermaps."/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="isDeletable" type="xboolean" value="false"/>
+    <entry key="factory" type="xstring" value="org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Component Input"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Core API"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.core"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.7.v202308161346"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME AP Core feature"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.core.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.7.v202308161346"/>
+    <config key="factory_settings">
+        <config key="port_0">
+            <entry key="index" type="xint" value="0"/>
+            <config key="type">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.port.flowvariable.FlowVariablePortObject"/>
+            </config>
+        </config>
+    </config>
+    <entry key="name" type="xstring" value="Component Input"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

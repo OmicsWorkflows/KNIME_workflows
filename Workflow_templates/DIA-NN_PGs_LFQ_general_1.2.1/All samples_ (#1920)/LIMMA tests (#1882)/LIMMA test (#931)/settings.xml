@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="test_name-927">
+            <entry key="string" type="xstring" value="LIMMA_MaxLFQ_all samples_prec-filter060_norm_"/>
+        </config>
+        <config key="columns_to_process-936">
+            <config key="columns">
+                <entry key="array-size" type="xint" value="6"/>
+                <entry key="0" type="xstring" value="PG.MaxLFQ+1_1_log2"/>
+                <entry key="1" type="xstring" value="PG.MaxLFQ+1_2_log2"/>
+                <entry key="2" type="xstring" value="PG.MaxLFQ+1_3_log2"/>
+                <entry key="3" type="xstring" value="PG.MaxLFQ+2_1_log2"/>
+                <entry key="4" type="xstring" value="PG.MaxLFQ+2_2_log2"/>
+                <entry key="5" type="xstring" value="PG.MaxLFQ+2_3_log2"/>
+            </config>
+            <config key="columnFilter">
+                <config key="columnFilter">
+                    <entry key="filter-type" type="xstring" value="name_pattern"/>
+                    <config key="included_names">
+                        <entry key="array-size" type="xint" value="11"/>
+                        <entry key="0" type="xstring" value="PG.MaxLFQ+01_ID86_WT_1_log2"/>
+                        <entry key="1" type="xstring" value="PG.MaxLFQ+02_ID86_WT_2_log2"/>
+                        <entry key="2" type="xstring" value="PG.MaxLFQ+04_ID86_Cas9_1_log2"/>
+                        <entry key="3" type="xstring" value="PG.MaxLFQ+05_ID86_Cas9_2_log2"/>
+                        <entry key="4" type="xstring" value="PG.MaxLFQ+06_ID86_Cas9_3_log2"/>
+                        <entry key="5" type="xstring" value="PG.MaxLFQ+07_CH_WT_1_log2"/>
+                        <entry key="6" type="xstring" value="PG.MaxLFQ+08_CH_WT_2_log2"/>
+                        <entry key="7" type="xstring" value="PG.MaxLFQ+09_CH_Cas9_1_log2"/>
+                        <entry key="8" type="xstring" value="PG.MaxLFQ+11_CH_Cas9_3_log2"/>
+                        <entry key="9" type="xstring" value="PG.MaxLFQ+03_ID86_WT_3_log2"/>
+                        <entry key="10" type="xstring" value="PG.MaxLFQ+10_CH_Cas9_2_log2"/>
+                    </config>
+                    <config key="excluded_names">
+                        <entry key="array-size" type="xint" value="106"/>
+                        <entry key="0" type="xstring" value="PG.ID"/>
+                        <entry key="1" type="xstring" value="Protein.Group"/>
+                        <entry key="2" type="xstring" value="Lib.PG.Q.Value"/>
+                        <entry key="3" type="xstring" value="UniProt_Entry"/>
+                        <entry key="4" type="xstring" value="UniProt_Protein names"/>
+                        <entry key="5" type="xstring" value="PG.Prec.Norm.Sum+1_1"/>
+                        <entry key="6" type="xstring" value="PG.Prec.Norm.Sum+1_2"/>
+                        <entry key="7" type="xstring" value="PG.Prec.Norm.Sum+1_3"/>
+                        <entry key="8" type="xstring" value="PG.Prec.Norm.Sum+2_1"/>
+                        <entry key="9" type="xstring" value="PG.Prec.Norm.Sum+2_2"/>
+                        <entry key="10" type="xstring" value="PG.Prec.Norm.Sum+2_3"/>
+                        <entry key="11" type="xstring" value="PG.Q.Value+1_1"/>
+                        <entry key="12" type="xstring" value="PG.Q.Value+1_2"/>
+                        <entry key="13" type="xstring" value="PG.Q.Value+1_3"/>
+                        <entry key="14" type="xstring" value="PG.Q.Value+2_1"/>
+                        <entry key="15" type="xstring" value="PG.Q.Value+2_2"/>
+                        <entry key="16" type="xstring" value="PG.Q.Value+2_3"/>
+                        <entry key="17" type="xstring" value="Protein.Q.Value+1_1"/>
+                        <entry key="18" type="xstring" value="Protein.Q.Value+1_2"/>
+                        <entry key="19" type="xstring" value="Protein.Q.Value+1_3"/>
+                        <entry key="20" type="xstring" value="Protein.Q.Value+2_1"/>
+                        <entry key="21" type="xstring" value="Protein.Q.Value+2_2"/>
+                        <entry key="22" type="xstring" value="Protein.Q.Value+2_3"/>
+                        <entry key="23" type="xstring" value="samples_sum"/>
+                        <entry key="24" type="xstring" value="UniProt_Mass"/>
+                        <entry key="25" type="xstring" value="UniProt_Length"/>
+                        <entry key="26" type="xstring" value="UniProt_Sequence"/>
+                        <entry key="27" type="xstring" value="UniProt_InterPro"/>
+                        <entry key="28" type="xstring" value="UniProt_Pfam"/>
+                        <entry key="29" type="xstring" value="UniProt_IntAct"/>
+                        <entry key="30" type="xstring" value="Stripped.Sequence (Concatenate)"/>
+                        <entry key="31" type="xstring" value="Stripped.Sequence (Count)"/>
+                        <entry key="32" type="xstring" value="UniProt_Protein ID"/>
+                        <entry key="33" type="xstring" value="UniProt_Entry Name"/>
+                        <entry key="34" type="xstring" value="UniProt_Reviewed"/>
+                        <entry key="35" type="xstring" value="UniProt_Gene Names (primary)"/>
+                        <entry key="36" type="xstring" value="UniProt_Organism"/>
+                        <entry key="37" type="xstring" value="UniProt_Gene Ontology (GO)"/>
+                        <entry key="38" type="xstring" value="UniProt_Gene Ontology (biological process)"/>
+                        <entry key="39" type="xstring" value="UniProt_Gene Ontology (molecular function)"/>
+                        <entry key="40" type="xstring" value="UniProt_Gene Ontology (cellular component)"/>
+                        <entry key="41" type="xstring" value="UniProt_Gene Ontology IDs"/>
+                        <entry key="42" type="xstring" value="UniProt_Subcellular location [CC]"/>
+                        <entry key="43" type="xstring" value="UniProt_Protein families"/>
+                        <entry key="44" type="xstring" value="UniProt_Interacts with"/>
+                        <entry key="45" type="xstring" value="PG.Normalised+1_1"/>
+                        <entry key="46" type="xstring" value="PG.Normalised+1_2"/>
+                        <entry key="47" type="xstring" value="PG.Normalised+1_3"/>
+                        <entry key="48" type="xstring" value="PG.Normalised+2_1"/>
+                        <entry key="49" type="xstring" value="PG.Normalised+2_2"/>
+                        <entry key="50" type="xstring" value="PG.Normalised+2_3"/>
+                        <entry key="51" type="xstring" value="PG.Quantity+1_1"/>
+                        <entry key="52" type="xstring" value="PG.Quantity+1_2"/>
+                        <entry key="53" type="xstring" value="PG.Quantity+1_3"/>
+                        <entry key="54" type="xstring" value="PG.Quantity+2_1"/>
+                        <entry key="55" type="xstring" value="PG.Quantity+2_2"/>
+                        <entry key="56" type="xstring" value="PG.Quantity+2_3"/>
+                        <entry key="57" type="xstring" value="Precursor.Id+1_1"/>
+                        <entry key="58" type="xstring" value="Precursor.Id+1_2"/>
+                        <entry key="59" type="xstring" value="Precursor.Id+1_3"/>
+                        <entry key="60" type="xstring" value="Precursor.Id+2_1"/>
+                        <entry key="61" type="xstring" value="Precursor.Id+2_2"/>
+                        <entry key="62" type="xstring" value="Precursor.Id+2_3"/>
+                        <entry key="63" type="xstring" value="Proteotypic+1_1"/>
+                        <entry key="64" type="xstring" value="Proteotypic+1_2"/>
+                        <entry key="65" type="xstring" value="Proteotypic+1_3"/>
+                        <entry key="66" type="xstring" value="Proteotypic+2_1"/>
+                        <entry key="67" type="xstring" value="Proteotypic+2_2"/>
+                        <entry key="68" type="xstring" value="Proteotypic+2_3"/>
+                        <entry key="69" type="xstring" value="PG.Prec.Norm.Sum+1_1_log2"/>
+                        <entry key="70" type="xstring" value="PG.Prec.Norm.Sum+1_2_log2"/>
+                        <entry key="71" type="xstring" value="PG.Prec.Norm.Sum+1_3_log2"/>
+                        <entry key="72" type="xstring" value="PG.Prec.Norm.Sum+2_1_log2"/>
+                        <entry key="73" type="xstring" value="PG.Prec.Norm.Sum+2_2_log2"/>
+                        <entry key="74" type="xstring" value="PG.Prec.Norm.Sum+2_3_log2"/>
+                        <entry key="75" type="xstring" value="PG.Q.Value+1_1_log2"/>
+                        <entry key="76" type="xstring" value="PG.Q.Value+1_2_log2"/>
+                        <entry key="77" type="xstring" value="PG.Q.Value+1_3_log2"/>
+                        <entry key="78" type="xstring" value="PG.Q.Value+2_1_log2"/>
+                        <entry key="79" type="xstring" value="PG.Q.Value+2_2_log2"/>
+                        <entry key="80" type="xstring" value="PG.Q.Value+2_3_log2"/>
+                        <entry key="81" type="xstring" value="PG.Normalised+1_1_log2"/>
+                        <entry key="82" type="xstring" value="PG.Normalised+1_2_log2"/>
+                        <entry key="83" type="xstring" value="PG.Normalised+1_3_log2"/>
+                        <entry key="84" type="xstring" value="PG.Normalised+2_1_log2"/>
+                        <entry key="85" type="xstring" value="PG.Normalised+2_2_log2"/>
+                        <entry key="86" type="xstring" value="PG.Normalised+2_3_log2"/>
+                        <entry key="87" type="xstring" value="PG.Quantity+1_1_log2"/>
+                        <entry key="88" type="xstring" value="PG.Quantity+1_2_log2"/>
+                        <entry key="89" type="xstring" value="PG.Quantity+1_3_log2"/>
+                        <entry key="90" type="xstring" value="PG.Quantity+2_1_log2"/>
+                        <entry key="91" type="xstring" value="PG.Quantity+2_2_log2"/>
+                        <entry key="92" type="xstring" value="PG.Quantity+2_3_log2"/>
+                        <entry key="93" type="xstring" value="Proteotypic_max"/>
+                        <entry key="94" type="xstring" value="PG.MaxLFQ+1_1"/>
+                        <entry key="95" type="xstring" value="PG.MaxLFQ+1_2"/>
+                        <entry key="96" type="xstring" value="PG.MaxLFQ+1_3"/>
+                        <entry key="97" type="xstring" value="PG.MaxLFQ+2_1"/>
+                        <entry key="98" type="xstring" value="PG.MaxLFQ+2_2"/>
+                        <entry key="99" type="xstring" value="PG.MaxLFQ+2_3"/>
+                        <entry key="100" type="xstring" value="PG.MaxLFQ+1_1_log2"/>
+                        <entry key="101" type="xstring" value="PG.MaxLFQ+1_2_log2"/>
+                        <entry key="102" type="xstring" value="PG.MaxLFQ+1_3_log2"/>
+                        <entry key="103" type="xstring" value="PG.MaxLFQ+2_1_log2"/>
+                        <entry key="104" type="xstring" value="PG.MaxLFQ+2_2_log2"/>
+                        <entry key="105" type="xstring" value="PG.MaxLFQ+2_3_log2"/>
+                    </config>
+                    <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
+                    <config key="name_pattern">
+                        <entry key="pattern" type="xstring" value="PG.MaxLFQ+*_log2"/>
+                        <entry key="type" type="xstring" value="Wildcard"/>
+                        <entry key="caseSensitive" type="xboolean" value="true"/>
+                        <entry key="excludeMatching" type="xboolean" value="false"/>
+                    </config>
+                    <config key="datatype">
+                        <config key="typelist">
+                            <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+                        </config>
+                    </config>
+                </config>
+            </config>
+        </config>
+        <config key="limma_design-937">
+            <entry key="string" type="xstring" value="s1,s1,s1,%%00010s2,s2,s2"/>
+        </config>
+        <config key="row_exclusion-944">
+            <config key="variable_value">
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="no"/>
+            </config>
+        </config>
+        <config key="thresholds-946">
+            <entry key="string" type="xstring" value="1"/>
+        </config>
+        <config key="samples_pairs-947">
+            <entry key="string" type="xstring" value="none"/>
+        </config>
+        <config key="samples_blocks-948">
+            <entry key="string" type="xstring" value="none"/>
+        </config>
+        <config key="contrasts-949">
+            <entry key="string" type="xstring" value="s2-s1"/>
+        </config>
+        <config key="comparisons_separately-950">
+            <entry key="boolean" type="xboolean" value="true"/>
+        </config>
+        <config key="adjP_method-951">
+            <config key="variable_value">
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="Benjamini &amp; Hochberg"/>
+            </config>
+        </config>
+        <config key="graphs_list-1916">
+            <config key="variable_value">
+                <entry key="array-size" type="xint" value="2"/>
+                <entry key="0" type="xstring" value="Volcano plot"/>
+                <entry key="1" type="xstring" value="p-values distribution plot"/>
+            </config>
+        </config>
+        <config key="graphs_folder-1917">
+            <entry key="string" type="xstring" value="LIMMA graphs_MaxLFQ_all samples_prec-filter060_norm"/>
+        </config>
+        <config key="p_column_selection-1918">
+            <config key="variable_value">
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="adjusted p-value"/>
+            </config>
+        </config>
+        <config key="zero_p_replacement-1919">
+            <entry key="double" type="xdouble" value="0.001"/>
+        </config>
+        <config key="logFC_threshold-1920">
+            <entry key="double" type="xdouble" value="1.0"/>
+        </config>
+        <config key="p_threshold-1921">
+            <entry key="double" type="xdouble" value="0.05"/>
+        </config>
+        <config key="labelling_bool-1922">
+            <entry key="boolean" type="xboolean" value="true"/>
+        </config>
+        <config key="ID_column-1923">
+            <entry key="column" type="xstring" value="UniProt_Gene Names (primary)"/>
+        </config>
+        <config key="automatic_label-1924">
+            <config key="variable_value">
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="top N"/>
+            </config>
+        </config>
+        <config key="top_n-1925">
+            <entry key="integer" type="xint" value="20"/>
+        </config>
+        <config key="top_n_criteria-1926">
+            <config key="variable_value">
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="fold change &amp; p-value"/>
+            </config>
+        </config>
+        <config key="use_thresholds-1927">
+            <config key="variable_value">
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="ignore thresholds"/>
+            </config>
+        </config>
+        <config key="manual_label-1928">
+            <entry key="string" type="xstring" value=""/>
+        </config>
+        <config key="volcano_plot_size-1930">
+            <entry key="string" type="xstring" value=""/>
+        </config>
+        <config key="p_value_plot_size-1931">
+            <entry key="string" type="xstring" value=""/>
+        </config>
+        <config key="remove_not_used-1932">
+            <entry key="boolean" type="xboolean" value="false"/>
+        </config>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value=""/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="109"/>
+        <entry key="y-coordinate" type="xint" value="499"/>
+        <entry key="width" type="xint" value="142"/>
+        <entry key="height" type="xint" value="17"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="10"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="workflow-file" type="xstring" value="workflow.knime"/>
+    <entry key="virtual-in-ID" type="xint" value="173"/>
+    <config key="inports">
+        <config key="inport_0">
+            <entry key="index" type="xint" value="0"/>
+            <config key="type">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+    </config>
+    <entry key="virtual-out-ID" type="xint" value="307"/>
+    <config key="outports">
+        <config key="outport_0">
+            <entry key="index" type="xint" value="0"/>
+            <config key="type">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+    </config>
+    <config key="metadata">
+        <entry key="description" type="xstring" value="LIMMA (Linear Models for Microarray Data) test for selected experimental design usecases. Expected usecase is 'single-channel' design using lmFit with least square method fitting. Only selected scenarios of experimental designs are implemented as well, namely: several groups, paired samples, one samples block design and combination of paired and single block design (yet to be fully implemented in this version). This metanode also enables the automatic generation of volcano plots and p-distribution plots for all contrasts.%%00010%%00010See e.g. LIMMA useguide for more details on selected settings explanation (https://www.bioconductor.org/packages/release/bioc/vignettes/limma/inst/doc/usersguide.pdf).%%00010%%00010Missing values are treated row-wise, e.g. protein group wise. In case there is no non-missing value in any sample type name (i.e. in A, B or C columns), the whole row is excluded from the statistical evaluation during lmFit step!%%00010%%00010Several more or less connected inputs are needed for proper results:%%00010- Data columns:%%00010Data columns to be used during the LIMMA test (e.g. columns A1,A2,A3,B1,B2,B3,C1,C2,C3); already normalized and log (any base relevant for further processing) transformed data are expected!%%00010%%00010- Use only cases quantified in at least specified number of replicates in at least one sample?%%00010Option to cover only cases quantified in at least specified number of replicates in at least one sample; one can use either single threshold for all samples or separate threshold for each sample%%00010%%00010- Experimental design:%%00010Should be provided in the form of sample type names in the same order as data columns without replicate number specification (e.g. &quot;A,A,A,B,B,B,C,C,C&quot;)%%00010%%00010- Samples pairs:%%00010Information about the pairs of samples (e.g. different tissues coming from a single patient) where the pairs of samples have to be specified using identical identificator, e.g. &quot;1,2,3,1,2,3&quot; for 3 pairs of samples 1, 2 and 3%%00010%%00010- Samples blocks:%%00010Similarly to samples pairs you can specify also samples blocks for block design, e.g. if you want to specify batch effects between individual replicates; blocks of samples have to be specified using identical identificator, e.g. &quot;batch1,batch1,batch1,batch2,batch2,batch2,batch3,batch3,batch3&quot; for 3 blocks of samples &quot;batch1&quot;, &quot;batch2&quot; and &quot;batch3&quot;%%00010%%00010- Comparisons:%%00010I.e. constrasts for LIMMA test to be tested for statistical difference separated by comma, e.g. B-A, C-A%%00010Notes to the comparisons usage:%%00010- Because data to be tested are log transformed, ratio of not log transformed data ('B/A') equals to subtraction of their log transformed data ('log(B)-log(A)'). Therefore the comparison should be provided in a form of subtraction of control sample type (A in the example usecase) from 'influenced' sample type (B in the example usecase).%%00010- Sample pairs are not expected to be used in comparisons%%00010- Sample blocks effects can be tested similarly to sample types comparisons, the first block just should not be used in the comparison specification, i.e. instead of &quot;batch2-batch1&quot; and &quot;batch1-batch3&quot; one should specify &quot;batch2&quot; and &quot;-batch3&quot;, respectively; comparisons not covering the first block are specified without any change (e.g. &quot;batch3-batch2&quot;); this stems from the LIMMA design specification within the R code, please, inspect the R snippet for more details on its implementation and consult the LIMMA manual as well%%00010%%00010- Treat comparisons separately?%%00010By default it is checked, i.e. all specified comparisons (e.g. B-A and C-A mentioned above) will be tested and reported separately. If you want to test them all together as one 'factor', uncheck this option and you will get single table with statistics results like in case of one-way (one-factor) ANOVA.%%00010!!!COMMENT TO MISSING DATA HANDLING!!!%%00010Complete data matrix is considered during initial LIMMA processing (lmFit), so you may experience missing statistical evaluation results ('NaN') even if you have no missing value for concrete comparison of samples subset... This is because of missing values in all replicates of another sample (e.g. in C when A and B are compared). If you don't need to use all columns for the modeling step, perform LIMMA test for all comparisons separately not to introduce missing statistical evaluation results!%%00010%%00010- Log ratios test? %%00010whether the input datamatrix should be treated as a list of log transformed ratios to be tested for a difference from zero; no design info, including also info on batches/pairs and contrasts to be calculatd is needed in this case; you need to provide experimental design (single ratio name used) if you want to use the metande filtering feature (to test cases with at least specified number of observed values)%%00010%%00010- P-value adj. method:%%00010Method to adjust p-values on multiple hypothesis testing; p.adjust R function is used here, see its documentation for more details%%00010%%00010User can also set the name of the test to be used as newly created columns prefix.%%00010%%00010Metanode returns several statistics for each comparison including:%%00010- logFC:%%00010Mean values of input (log transformed) data subtracted based on the concrete comparison - e.g. average of three B column values minus average of three A column values for each row in case of B-A comparison, i.e. log fold change of not log transformed data using log of the same base%%00010%%00010- P.value:%%00010Not adjusted raw p-value of moderated t-test statistics. This is not preferred p-value due to multiple hypothesis testing (each row represents one test) that needs to be addressed not to give to high false positive discovery rates%%00010%%00010- adj.P.Val:%%00010Adjusted p-value using the selected method%%00010%%00010In automatically generated volcano plots, user can customize several criteria:%%00010- P-value type:%%00010Raw p-values or adjusted p-values, by default adjusted p-values are selected%%00010%%00010- Zero p-value replacement:%%00010Number that should be used instead of zero p-value to compute -log value. If 0 is chosen, cases with zero p-value will not be plotted%%00010%%00010- P-value and logFC thresholds:%%00010Used as thresholds to determine significantly changed points%%00010%%00010- Annotation column:%%00010Column from which labels will be extracted for labelling selected points%%00010%%00010- Automatic point labelling%%00010There are three main options for point labelling:%%00010--- None, manual only%%00010If this option is chosen, only points manually specified in the &quot;Manual point labelling&quot; field will be labelled. Values in this field must correspond to values in the selected annotation column%%00010--- All significant%%00010All significantly changed points will be annotated. User can choose to only label significantly changed points from one or both sides of the volcano plot in the &quot;Use thresholds to label points?&quot; selection (note: the &quot;ignore thresholds&quot; option has the same effect in this case as &quot;all changed &amp; significant&quot;). This type of labelling is compatible with manual annotation as specified in the &quot;Manual point labelling&quot; field.%%00010--- Top N%%00010Top N number of points will be annotated. The way in which are points sorted is based on the &quot;Top N ranking criteria&quot; selection. User can also choose to only label significantly changed points from one or both sides of the volcano plot in the &quot;Use thresholds to label points?&quot; selection; if there are less significantly changed points than N, only these points will be annotated. This type of labelling is compatible with manual annotation as specified in the &quot;Manual point labelling&quot; field.%%00010%%00010=================%%00010%%00010Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.%%00010%%00010KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)%%00010Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3.6/license.html)%%00010R (The R consists of the following GNU General Public Licences. Licence terms are available here: https://www.r-project.org/Licenses/)%%00010R package limma (The limma consists of the following General Public License (GPL), version 2 license. Licence terms are available here: https://www.r-project.org/Licenses/GPL-2)%%00010%%00010The metanode was created in KNIME 4.7.7 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 4.7.7a.%%00010%%00010=================%%00010%%00010This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.%%00010Version: 3.1.4 from 2024-01-14%%00010Contact person: Karolina Krystofova (karolina.krystofova@ceitec.muni.cz)%%00010More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes."/>
+        <config key="inports">
+            <config key="inport_0">
+                <entry key="name" type="xstring" value="Input table"/>
+                <entry key="description" type="xstring" value="Input table containing data columns to be compared"/>
+                <entry key="index" type="xint" value="0"/>
+            </config>
+        </config>
+        <config key="outports">
+            <config key="outport_0">
+                <entry key="name" type="xstring" value="Output dataframe"/>
+                <entry key="description" type="xstring" value="Output dataframe containing input table plus newly computed columns or new columns only"/>
+                <entry key="index" type="xint" value="0"/>
+            </config>
+        </config>
+    </config>
+    <config key="workflow_template_information">
+        <entry key="role" type="xstring" value="Link"/>
+        <entry key="timestamp" type="xstring" value="2024-01-14 00:47:04 +0100"/>
+        <entry key="sourceURI" type="xstring" value="knime://LOCAL/gitfolders/KNIME_metanodes/Metanodes%20templates/Statistics/LIMMA%20test"/>
+    </config>
+    <entry key="layoutJSON" type="xstring" value=""/>
+    <entry key="configurationLayoutJSON" type="xstring" value="{}"/>
+    <entry key="hideInWizard" type="xboolean" value="false"/>
+    <entry key="customCSS" type="xstring" value=""/>
+</config>
