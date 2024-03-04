@@ -1,0 +1,15 @@
+mass,modification_name,abbreviation,mod1,mod1_natural_modification,mod2,mod2_natural_modification,A_nterm,A_other,R_nterm,R_other,N_nterm,N_other,D_nterm,D_other,C_nterm,C_other,E_nterm,E_other,Q_nterm,Q_other,G_nterm,G_other,H_nterm,H_other,I_nterm,I_other,L_nterm,L_other,K_nterm,K_other,M_nterm,M_other,F_nterm,F_other,P_nterm,P_other,S_nterm,S_other,T_nterm,T_other,W_nterm,W_other,Y_nterm,Y_other,V_nterm,V_other
+79.966331,Phospho,ph,ph,1,,0,,,,,,,,,,,,,,,,,under,ok,,,,,,,,,,,,,under,ok,under,ok,,,under,ok,,
+14.01565,Methyl,me1,me1,1,,0,,,under,ok,,,,,,,,,,,,,,,,,,,under,ok,,,,,,,,,,,,,,,,
+28.0313,Dimethyl,me2,me2,1,,0,,,under,ok,,,,,,,,,,,,,,,,,,,under,ok,,,,,,,,,,,,,,,,
+42.04695,Trimethyl,me3,me3,1,,0,,,under,ok,,,,,,,,,,,,,,,,,,,under,ok,,,,,,,,,,,,,,,,
+42.010565,Acetyl,ac,ac,1,,0,ok,,ok,,ok,,ok,,ok,,ok,,ok,,ok,,ok,,ok,,ok,,under,ok,ok,,ok,,ok,,ok,,ok,,ok,,ok,,ok,
+56.026215,Propionyl,prop,prop,0,,0,ok,,ok,,ok,,ok,,ok,,ok,,ok,,ok,,ok,,ok,,ok,,under,ok,ok,,ok,,ok,,ok,over,ok,over,ok,,ok,over,ok,
+112.05243,diPropionyl,prop2,prop,0,prop,0,,,error,,,,,,,,,,,,,,,,,,,,ok,,,,,,,,over,,over,,,,over,,,
+98.036779,Propionyl_Acetyl,prop_ac,prop,0,ac,1,,,error,,,,,,,,,,,,,,,,,,,,ok,,,,,,,,over,,over,,,,over,,,
+70.041865,Propionyl_Methyl,prop_me1,prop,0,me1,1,,,ok,,,,,,,,,,,,,,,,,,,,ok,ok,,,,,,,,,,,,,,,,
+84.057515,Propionyl_diMethyl,prop_me2,prop,0,me2,1,,,ok,,,,,,,,,,,,,,,,,,,,ok,,,,,,,,,,,,,,,,,
+98.073165,Propionyl_triMethyl,prop_me3,prop,0,me3,1,,,ok,,,,,,,,,,,,,,,,,,,,ok,,,,,,,,,,,,,,,,,
+135.992546,Propionyl_Phospho,prop_ph,prop,0,ph,1,,,,,,,,,,,,,,,,,ok,,,,,,,,,,,,,,ok,,ok,,,,ok,,,
+0,Without modif.,,,0,,0,under,ok,under,ok,under,ok,under,ok,under,ok,under,ok,under,ok,under,ok,under,ok,under,ok,under,ok,under,under,under,ok,under,ok,under,ok,under,ok,under,ok,under,ok,under,ok,under,ok
+-1,Unknown modif.,,unknown,0,,0,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error,error

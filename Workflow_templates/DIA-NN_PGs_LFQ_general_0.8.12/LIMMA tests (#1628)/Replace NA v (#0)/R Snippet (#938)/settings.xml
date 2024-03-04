@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<entry key="script" type="xstring" value="# data input%%00010rframe &lt;- knime.in%%00010rowID_col &lt;- rownames(rframe)%%00010%%00010# define the variables%%00010d.val &lt;- knime.flow.in[[&quot;d_value&quot;]]%%00010w.val &lt;- knime.flow.in[[&quot;w_value&quot;]]%%00010imp.method &lt;- knime.flow.in[[&quot;imp_method&quot;]]%%00010%%00010# create empty dataframe%%00010df_imputed &lt;- data.frame(matrix(NA, nrow = nrow(rframe), ncol = ncol(rframe)))%%00010%%00010# set seed to make it reproducible%%00010set.seed(42)%%00010%%00010if (imp.method == &quot;column-wise&quot;) {%%00010%%00009%%00009for (i in 1:ncol(rframe)) {%%00010%%00009%%00009tmp &lt;- rframe[,i]%%00009%%00009%%00009# take i-column from dataset%%00010%%00009%%00009NA_count &lt;- sum(is.na(tmp))%%00009# count the number of missing values in the vector%%00010%%00009%%00009vec_tmp &lt;- na.omit(tmp)%%00009%%00009# create helper vector without NA values for sd+mean calculation%%00010%%00010%%00009%%00009mean_imp &lt;- mean(vec_tmp) - d.val*sd(vec_tmp)%%00009# compute mean for r-norm based on Perseus %%00010%%00009%%00009sd_imp &lt;- w.val*sd(vec_tmp)%%00009%%00009%%00009%%00009%%00009# compute standard deviation for r-norm%%00010%%00010%%00009%%00009tmp_impute &lt;- tmp%%00010%%00009%%00009# replace missing values column-wise with random draws from the distribution%%00010%%00009%%00009tmp_impute[is.na(tmp_impute)] &lt;- rnorm(NA_count, mean_imp, sd_imp)%%00010%%00010%%00009%%00009df_imputed[,i] &lt;- tmp_impute %%00009# replace original column with imputed one%%00010}} else {%%00010%%00009%%00009tmp &lt;- rframe%%00010%%00009%%00009NA_count &lt;- sum(is.na(tmp))%%00009%%00009%%00009# count the number of missing values in the vector%%00010%%00010%%00009%%00009mean_tmp &lt;- mean(na.omit(unlist(tmp))) %%00009# compute mean of whole dataframe%%00010%%00009%%00009sd_tmp &lt;- sd(na.omit(unlist(tmp)))%%00009%%00009# compute SD of whole dataframe%%00010%%00010%%00009%%00009mean_imp &lt;- mean_tmp - d.val*sd_tmp%%00009# compute mean for r-norm based on Perseus %%00010%%00009%%00009sd_imp &lt;- w.val*sd_tmp%%00009%%00009%%00009%%00009# compute standard deviation for r-norm%%00010%%00010%%00009%%00009tmp_impute &lt;- tmp%%00010%%00009%%00009tmp_impute[is.na(tmp_impute)] &lt;- rnorm(NA_count, mean_imp, sd_imp)%%00010%%00009%%00009df_imputed &lt;- tmp_impute %%00009# replace original column with imputed one%%00010%%00009%%00009}%%00010%%00010%%00010%%00010# Write out the dataframe%%00010knime.out &lt;- data.frame(df_imputed)%%00010colnames(knime.out) &lt;- colnames(rframe)%%00010knime.out$rowID_col &lt;- rowID_col"/>
+<entry key="templateUUID" type="xstring" isnull="true" value=""/>
+<entry key="version" type="xstring" value="version 1.x"/>
+<entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
+<entry key="sendRowNames" type="xboolean" value="true"/>
+<entry key="sendBatchSize" type="xint" value="10000"/>
+<entry key="knimeInType" type="xstring" value="data.frame"/>
+</config>
+<config key="nodeAnnotation">
+<entry key="text" type="xstring" value="imputation"/>
+<entry key="bgcolor" type="xint" value="16777215"/>
+<entry key="x-coordinate" type="xint" value="529"/>
+<entry key="y-coordinate" type="xint" value="459"/>
+<entry key="width" type="xint" value="142"/>
+<entry key="height" type="xint" value="17"/>
+<entry key="alignment" type="xstring" value="CENTER"/>
+<entry key="borderSize" type="xint" value="0"/>
+<entry key="borderColor" type="xint" value="16777215"/>
+<entry key="defFontSize" type="xint" value="10"/>
+<entry key="annotation-version" type="xint" value="20151123"/>
+<config key="styles"/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="IDLE"/>
+<entry key="factory" type="xstring" value="org.knime.r.RSnippetNodeFactory"/>
+<entry key="node-name" type="xstring" value="R Snippet"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME R-Project nodes"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.r"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-bundle-version" type="xstring" value="4.1.1.v202001312017"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Interactive R Statistics Integration"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.r.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-feature-version" type="xstring" value="4.1.1.v202001312017"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="R Snippet"/>
+<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+</config>
+</config>

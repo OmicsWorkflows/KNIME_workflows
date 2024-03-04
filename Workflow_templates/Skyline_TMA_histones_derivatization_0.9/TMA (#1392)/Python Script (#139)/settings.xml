@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack">
+        <config key="Variable_0">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="modification_dic"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="{79.966331: {'mass': 79.966331, 'modification_name': 'Phospho', 'abbreviation': 'ph', 'mod1': 'ph', 'mod1_natural_modification': 1, 'mod2': '', 'mod2_natural_modification': '', 'A_nterm': '', 'A_other': '', 'R_nterm': '', 'R_other': '', 'N_nterm': '', 'N_other': '', 'D_nterm': '', 'D_other': '', 'C_nterm': '', 'C_other': '', 'E_nterm': '', 'E_other': '', 'Q_nterm': '', 'Q_other': '', 'G_nterm': '', 'G_other': '', 'H_nterm': 'under', 'H_other': 'ok', 'I_nterm': '', 'I_other': '', 'L_nterm': '', 'L_other': '', 'K_nterm': '', 'K_other': '', 'M_nterm': '', 'M_other': '', 'F_nterm': '', 'F_other': '', 'P_nterm': '', 'P_other': '', 'S_nterm': 'under', 'S_other': 'ok', 'T_nterm': 'under', 'T_other': 'ok', 'W_nterm': '', 'W_other': '', 'Y_nterm': 'under', 'Y_other': 'ok', 'V_nterm': '', 'V_other': ''}, 14.01565: {'mass': 14.01565, 'modification_name': 'Methyl', 'abbreviation': 'me1', 'mod1': 'me1', 'mod1_natural_modification': 1, 'mod2': '', 'mod2_natural_modification': '', 'A_nterm': '', 'A_other': '', 'R_nterm': 'under', 'R_other': 'ok', 'N_nterm': '', 'N_other': '', 'D_nterm': '', 'D_other': '', 'C_nterm': '', 'C_other': '', 'E_nterm': '', 'E_other': '', 'Q_nterm': '', 'Q_other': '', 'G_nterm': '', 'G_other': '', 'H_nterm': '', 'H_other': '', 'I_nterm': '', 'I_other': '', 'L_nterm': '', 'L_other': '', 'K_nterm': 'under', 'K_other': 'ok', 'M_nterm': '', 'M_other': '', 'F_nterm': '', 'F_other': '', 'P_nterm': '', 'P_other': '', 'S_nterm': '', 'S_other': '', 'T_nterm': '', 'T_other': '', 'W_nterm': '', 'W_other': '', 'Y_nterm': '', 'Y_other': '', 'V_nterm': '', 'V_other': ''}, 28.0313: {'mass': 28.0313, 'modification_name': 'Dimethyl', 'abbreviation': 'me2', 'mod1': 'me2', 'mod1_natural_modification': 1, 'mod2': '', 'mod2_natural_modification': '', 'A_nterm': '', 'A_other': '', 'R_nterm': 'under', 'R_other': 'ok', 'N_nterm': '', 'N_other': '', 'D_nterm': '', 'D_other': '', 'C_nterm': '', 'C_other': '', 'E_nterm': '', 'E_other': '', 'Q_nterm': '', 'Q_other': '', 'G_nterm': '', 'G_other': '', 'H_nterm': '', 'H_other': '', 'I_nterm': '', 'I_other': '', 'L_nterm': '', 'L_other': '', 'K_nterm': 'under', 'K_other': 'ok', 'M_nterm': '', 'M_other': '', 'F_nterm': '', 'F_other': '', 'P_nterm': '', 'P_other': '', 'S_nterm': '', 'S_other': '', 'T_nterm': '', 'T_other': '', 'W_nterm': '', 'W_other': '', 'Y_nterm': '', 'Y_other': '', 'V_nterm': '', 'V_other': ''}, 42.04695: {'mass': 42.04695, 'modification_name': 'Trimethyl', 'abbreviation': 'me3', 'mod1': 'me3', 'mod1_natural_modification': 1, 'mod2': '', 'mod2_natural_modification': '', 'A_nterm': '', 'A_other': '', 'R_nterm': 'under', 'R_other': 'ok', 'N_nterm': '', 'N_other': '', 'D_nterm': '', 'D_other': '', 'C_nterm': '', 'C_other': '', 'E_nterm': '', 'E_other': '', 'Q_nterm': '', 'Q_other': '', 'G_nterm': '', 'G_other': '', 'H_nterm': '', 'H_other': '', 'I_nterm': '', 'I_other': '', 'L_nterm': '', 'L_other': '', 'K_nterm': 'under', 'K_other': 'ok', 'M_nterm': '', 'M_other': '', 'F_nterm': '', 'F_other': '', 'P_nterm': '', 'P_other': '', 'S_nterm': '', 'S_other': '', 'T_nterm': '', 'T_other': '', 'W_nterm': '', 'W_other': '', 'Y_nterm': '', 'Y_other': '', 'V_nterm': '', 'V_other': ''}, 42.010565: {'mass': 42.010565, 'modification_name': 'Acetyl', 'abbreviation': 'ac', 'mod1': 'ac', 'mod1_natural_modification': 1, 'mod2': '', 'mod2_natural_modification': '', 'A_nterm': 'ok', 'A_other': '', 'R_nterm': 'ok', 'R_other': '', 'N_nterm': 'ok', 'N_other': '', 'D_nterm': 'ok', 'D_other': '', 'C_nterm': 'ok', 'C_other': '', 'E_nterm': 'ok', 'E_other': '', 'Q_nterm': 'ok', 'Q_other': '', 'G_nterm': 'ok', 'G_other': '', 'H_nterm': 'ok', 'H_other': '', 'I_nterm': 'ok', 'I_other': '', 'L_nterm': 'ok', 'L_other': '', 'K_nterm': 'under', 'K_other': 'ok', 'M_nterm': 'ok', 'M_other': '', 'F_nterm': 'ok', 'F_other': '', 'P_nterm': 'ok', 'P_other': '', 'S_nterm': 'ok', 'S_other': '', 'T_nterm': 'ok', 'T_other': '', 'W_nterm': 'ok', 'W_other': '', 'Y_nterm': 'ok', 'Y_other': '', 'V_nterm': 'ok', 'V_other': ''}, 84.057515: {'mass': 84.057515, 'modification_name': 'TMA', 'abbreviation': 'tma', 'mod1': 'tma', 'mod1_natural_modification': '', 'mod2': '', 'mod2_natural_modification': '', 'A_nterm': 'ok', 'A_other': '', 'R_nterm': 'ok', 'R_other': '', 'N_nterm': 'ok', 'N_other': '', 'D_nterm': 'ok', 'D_other': '', 'C_nterm': 'ok', 'C_other': '', 'E_nterm': 'ok', 'E_other': '', 'Q_nterm': 'ok', 'Q_other': '', 'G_nterm': 'ok', 'G_other': '', 'H_nterm': 'ok', 'H_other': '', 'I_nterm': 'ok', 'I_other': '', 'L_nterm': 'ok', 'L_other': '', 'K_nterm': 'under', 'K_other': 'ok', 'M_nterm': 'ok', 'M_other': '', 'F_nterm': 'ok', 'F_other': '', 'P_nterm': 'ok', 'P_other': '', 'S_nterm': 'ok', 'S_other': 'over', 'T_nterm': 'ok', 'T_other': 'over', 'W_nterm': 'ok', 'W_other': '', 'Y_nterm': 'ok', 'Y_other': 'over', 'V_nterm': 'ok', 'V_other': ''}, 168.11503: {'mass': 168.11503, 'modification_name': 'diTMA', 'abbreviation': 'tma_tma', 'mod1': 'tma', 'mod1_natural_modification': '', 'mod2': 'tma', 'mod2_natural_modification': '', 'A_nterm': '', 'A_other': '', 'R_nterm': 'error', 'R_other': '', 'N_nterm': '', 'N_other': '', 'D_nterm': '', 'D_other': '', 'C_nterm': '', 'C_other': '', 'E_nterm': '', 'E_other': '', 'Q_nterm': '', 'Q_other': '', 'G_nterm': '', 'G_other': '', 'H_nterm': '', 'H_other': '', 'I_nterm': '', 'I_other': '', 'L_nterm': '', 'L_other': '', 'K_nterm': 'ok', 'K_other': '', 'M_nterm': '', 'M_other': '', 'F_nterm': '', 'F_other': '', 'P_nterm': '', 'P_other': '', 'S_nterm': 'over', 'S_other': '', 'T_nterm': 'over', 'T_other': '', 'W_nterm': '', 'W_other': '', 'Y_nterm': 'over', 'Y_other': '', 'V_nterm': '', 'V_other': ''}, 126.06808: {'mass': 126.06808, 'modification_name': 'TMA_Acetyl', 'abbreviation': 'tma_ac', 'mod1': 'tma', 'mod1_natural_modification': '', 'mod2': 'ac', 'mod2_natural_modification': 1, 'A_nterm': '', 'A_other': '', 'R_nterm': 'error', 'R_other': '', 'N_nterm': '', 'N_other': '', 'D_nterm': '', 'D_other': '', 'C_nterm': '', 'C_other': '', 'E_nterm': '', 'E_other': '', 'Q_nterm': '', 'Q_other': '', 'G_nterm': '', 'G_other': '', 'H_nterm': '', 'H_other': '', 'I_nterm': '', 'I_other': '', 'L_nterm': '', 'L_other': '', 'K_nterm': 'ok', 'K_other': '', 'M_nterm': '', 'M_other': '', 'F_nterm': '', 'F_other': '', 'P_nterm': '', 'P_other': '', 'S_nterm': 'over', 'S_other': '', 'T_nterm': 'over', 'T_other': '', 'W_nterm': '', 'W_other': '', 'Y_nterm': 'over', 'Y_other': '', 'V_nterm': '', 'V_other': ''}, 98.073165: {'mass': 98.073165, 'modification_name': 'TMA_Methyl', 'abbreviation': 'tma_me1', 'mod1': 'tma', 'mod1_natural_modification': '', 'mod2': 'me1', 'mod2_natural_modification': 1, 'A_nterm': '', 'A_other': '', 'R_nterm': 'ok', 'R_other': '', 'N_nterm': '', 'N_other': '', 'D_nterm': '', 'D_other': '', 'C_nterm': '', 'C_other': '', 'E_nterm': '', 'E_other': '', 'Q_nterm': '', 'Q_other': '', 'G_nterm': '', 'G_other': '', 'H_nterm': '', 'H_other': '', 'I_nterm': '', 'I_other': '', 'L_nterm': '', 'L_other': '', 'K_nterm': 'ok', 'K_other': '', 'M_nterm': '', 'M_other': '', 'F_nterm': '', 'F_other': '', 'P_nterm': '', 'P_other': '', 'S_nterm': '', 'S_other': '', 'T_nterm': '', 'T_other': '', 'W_nterm': '', 'W_other': '', 'Y_nterm': '', 'Y_other': '', 'V_nterm': '', 'V_other': ''}, 112.088815: {'mass': 112.088815, 'modification_name': 'TMA_diMethyl', 'abbreviation': 'prop_me2', 'mod1': 'prop', 'mod1_natural_modification': '', 'mod2': 'me2', 'mod2_natural_modification': 1, 'A_nterm': '', 'A_other': '', 'R_nterm': 'ok', 'R_other': '', 'N_nterm': '', 'N_other': '', 'D_nterm': '', 'D_other': '', 'C_nterm': '', 'C_other': '', 'E_nterm': '', 'E_other': '', 'Q_nterm': '', 'Q_other': '', 'G_nterm': '', 'G_other': '', 'H_nterm': '', 'H_other': '', 'I_nterm': '', 'I_other': '', 'L_nterm': '', 'L_other': '', 'K_nterm': 'ok', 'K_other': '', 'M_nterm': '', 'M_other': '', 'F_nterm': '', 'F_other': '', 'P_nterm': '', 'P_other': '', 'S_nterm': '', 'S_other': '', 'T_nterm': '', 'T_other': '', 'W_nterm': '', 'W_other': '', 'Y_nterm': '', 'Y_other': '', 'V_nterm': '', 'V_other': ''}, 126.104465: {'mass': 126.104465, 'modification_name': 'TMA_triMethyl', 'abbreviation': 'tma_me3', 'mod1': 'tma', 'mod1_natural_modification': '', 'mod2': 'me3', 'mod2_natural_modification': 1, 'A_nterm': '', 'A_other': '', 'R_nterm': 'ok', 'R_other': '', 'N_nterm': '', 'N_other': '', 'D_nterm': '', 'D_other': '', 'C_nterm': '', 'C_other': '', 'E_nterm': '', 'E_other': '', 'Q_nterm': '', 'Q_other': '', 'G_nterm': '', 'G_other': '', 'H_nterm': '', 'H_other': '', 'I_nterm': '', 'I_other': '', 'L_nterm': '', 'L_other': '', 'K_nterm': 'ok', 'K_other': '', 'M_nterm': '', 'M_other': '', 'F_nterm': '', 'F_other': '', 'P_nterm': '', 'P_other': '', 'S_nterm': '', 'S_other': '', 'T_nterm': '', 'T_other': '', 'W_nterm': '', 'W_other': '', 'Y_nterm': '', 'Y_other': '', 'V_nterm': '', 'V_other': ''}, 164.023846: {'mass': 164.023846, 'modification_name': 'TMA_Phospho', 'abbreviation': 'tma_ph', 'mod1': 'tma', 'mod1_natural_modification': '', 'mod2': 'ph', 'mod2_natural_modification': 1, 'A_nterm': '', 'A_other': '', 'R_nterm': '', 'R_other': '', 'N_nterm': '', 'N_other': '', 'D_nterm': '', 'D_other': '', 'C_nterm': '', 'C_other': '', 'E_nterm': '', 'E_other': '', 'Q_nterm': '', 'Q_other': '', 'G_nterm': '', 'G_other': '', 'H_nterm': 'ok', 'H_other': '', 'I_nterm': '', 'I_other': '', 'L_nterm': '', 'L_other': '', 'K_nterm': '', 'K_other': '', 'M_nterm': '', 'M_other': '', 'F_nterm': '', 'F_other': '', 'P_nterm': '', 'P_other': '', 'S_nterm': 'ok', 'S_other': '', 'T_nterm': 'ok', 'T_other': '', 'W_nterm': '', 'W_other': '', 'Y_nterm': 'ok', 'Y_other': '', 'V_nterm': '', 'V_other': ''}, 0.0: {'mass': '', 'modification_name': 'Without modif.', 'abbreviation': '', 'mod1': '', 'mod1_natural_modification': '', 'mod2': '', 'mod2_natural_modification': '', 'A_nterm': 'under', 'A_other': 'ok', 'R_nterm': 'under', 'R_other': 'ok', 'N_nterm': 'under', 'N_other': 'ok', 'D_nterm': 'under', 'D_other': 'ok', 'C_nterm': 'under', 'C_other': 'ok', 'E_nterm': 'under', 'E_other': 'ok', 'Q_nterm': 'under', 'Q_other': 'ok', 'G_nterm': 'under', 'G_other': 'ok', 'H_nterm': 'under', 'H_other': 'ok', 'I_nterm': 'under', 'I_other': 'ok', 'L_nterm': 'under', 'L_other': 'ok', 'K_nterm': 'under', 'K_other': 'under', 'M_nterm': 'under', 'M_other': 'ok', 'F_nterm': 'under', 'F_other': 'ok', 'P_nterm': 'under', 'P_other': 'ok', 'S_nterm': 'under', 'S_other': 'ok', 'T_nterm': 'under', 'T_other': 'ok', 'W_nterm': 'under', 'W_other': 'ok', 'Y_nterm': 'under', 'Y_other': 'ok', 'V_nterm': 'under', 'V_other': 'ok'}, -1.0: {'mass': -1.0, 'modification_name': 'Unknown modif.', 'abbreviation': '', 'mod1': 'unknown', 'mod1_natural_modification': '', 'mod2': '', 'mod2_natural_modification': '', 'A_nterm': 'error', 'A_other': 'error', 'R_nterm': 'error', 'R_other': 'error', 'N_nterm': 'error', 'N_other': 'error', 'D_nterm': 'error', 'D_other': 'error', 'C_nterm': 'error', 'C_other': 'error', 'E_nterm': 'error', 'E_other': 'error', 'Q_nterm': 'error', 'Q_other': 'error', 'G_nterm': 'error', 'G_other': 'error', 'H_nterm': 'error', 'H_other': 'error', 'I_nterm': 'error', 'I_other': 'error', 'L_nterm': 'error', 'L_other': 'error', 'K_nterm': 'error', 'K_other': 'error', 'M_nterm': 'error', 'M_other': 'error', 'F_nterm': 'error', 'F_other': 'error', 'P_nterm': 'error', 'P_other': 'error', 'S_nterm': 'error', 'S_other': 'error', 'T_nterm': 'error', 'T_other': 'error', 'W_nterm': 'error', 'W_other': 'error', 'Y_nterm': 'error', 'Y_other': 'error', 'V_nterm': 'error', 'V_other': 'error'}}"/>
+        </config>
+    </config>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="sourceCode" type="xstring" value="# Copy input to output%%00010output_table_1 = input_table_1.copy()%%00010%%00010modifications_dic = {}%%00010%%00010for index, row in input_table_1.iterrows():%%00010    mass = float(row[&quot;mass&quot;])%%00010    modifications_dic[mass] = {}%%00010    for col in row.keys():%%00010        modifications_dic[mass][col] = row[col] or &quot;&quot;%%00010%%00010flow_variables['modification_dic'] = modifications_dic"/>
+        <entry key="rowLimit" type="xint" value="1000"/>
+        <entry key="convertMissingToPython" type="xboolean" value="false"/>
+        <entry key="convertMissingFromPython" type="xboolean" value="false"/>
+        <entry key="sentinelOption" type="xstring" value="MIN_VAL"/>
+        <entry key="sentinelValue" type="xint" value="0"/>
+        <entry key="chunkSize" type="xint" value="500000"/>
+        <entry key="pythonVersionOption" type="xstring" value="python3"/>
+        <entry key="python2Command" type="xstring" value=""/>
+        <entry key="python3Command" type="xstring" value="/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="python3Command">
+                <entry key="used_variable" type="xstring" value="python3command"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="create%%00010modifications%%00010dictionary"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="109"/>
+        <entry key="y-coordinate" type="xint" value="719"/>
+        <entry key="width" type="xint" value="142"/>
+        <entry key="height" type="xint" value="48"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="10"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles">
+            <config key="style_0">
+                <entry key="start" type="xint" value="0"/>
+                <entry key="length" type="xint" value="31"/>
+                <entry key="fontname" type="xstring" value="Sans"/>
+                <entry key="fontstyle" type="xint" value="0"/>
+                <entry key="fontsize" type="xint" value="10"/>
+                <entry key="fgcolor" type="xint" value="0"/>
+            </config>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="org.knime.python2.nodes.script2.Python2ScriptNodeFactory2"/>
+    <entry key="node-name" type="xstring" value="Python Script (legacy)"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Python nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python2.nodes"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.0.v202211291448"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Python 2 Integration (legacy)"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python2.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.1.v202301311311"/>
+    <config key="factory_settings"/>
+    <config key="node_creation_config">
+        <config key="Input object (pickled)"/>
+        <config key="Input table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output image"/>
+        <config key="Output object (pickled)"/>
+    </config>
+    <entry key="name" type="xstring" value="Python Script (legacy)"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

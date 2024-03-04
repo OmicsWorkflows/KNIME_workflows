@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="Image width" type="xint" value="2000"/>
+        <entry key="Image height" type="xint" value="2000"/>
+        <entry key="Image resolution" type="xstring" value="100"/>
+        <entry key="Image background color" type="xstring" value="#ffffff"/>
+        <entry key="Text point size" type="xint" value="12"/>
+        <config key="R settings">
+            <entry key="script" type="xstring" value="suppressPackageStartupMessages(library(tidyr))%%00010suppressPackageStartupMessages(library(dplyr))%%00010suppressPackageStartupMessages(library(gridExtra))%%00010suppressPackageStartupMessages(library(ggplot2))%%00010suppressPackageStartupMessages(library(ggrepel))%%00010%%00010df &lt;- knime.in%%00010%%00010grouping_cols &lt;- c(knime.flow.in[[&quot;group_column&quot;]], knime.flow.in[[&quot;split_column&quot;]])%%00010df_filtered &lt;- df[,!(colnames(df) %in% grouping_cols)]%%00010%%00010if(!is.data.frame(df_filtered)) {%%00010%%00009df_filtered &lt;- as.data.frame(df_filtered)%%00010%%00009colnames(df_filtered) &lt;- colnames(df)[!(colnames(df) %in% grouping_cols)]%%00010}%%00010%%00010df_filtered &lt;- cbind(df_filtered, histone = as.character(df[,knime.flow.in[[&quot;group_column&quot;]]]))%%00010df_filtered &lt;- cbind(df_filtered, modif = as.character(df[,knime.flow.in[[&quot;split_column&quot;]]]))%%00010%%00010df_long &lt;- df_filtered |&gt;%%00010%%00009gather(-histone, -modif, key = 'sample', value = 'intensity')%%00010%%00010df_long &lt;- df_long |&gt;%%00010%%00009group_by(sample, histone, modif)%%00010%%00009%%00009%%00010df_sum &lt;- df_long |&gt;%%00010%%00009summarize(summary = sum(intensity, na.rm = TRUE)) |&gt;%%00010%%00009ungroup() |&gt;%%00010%%00009as.data.frame() |&gt;%%00010%%00009mutate(label = paste(round(summary, digits = 2), &quot;%&quot;))%%00010%%00010if (knime.flow.in[[&quot;type&quot;]] == 'grid'){%%00010%%00009df_split &lt;- split(df_sum, f = df_sum$histone)%%00010%%00010%%00009plot_list &lt;- list()%%00010%%00010%%00009plot_list[[1]] &lt;- ggplot(df_split[[1]], aes(x = sample, y = summary, fill = modif, label = label)) +%%00010%%00009%%00009ggtitle(unique(df_split[[1]]$histone)) +%%00010%%00009%%00009scale_fill_discrete(name = '') +%%00010%%00009%%00009labs(x = 'Sample', y = 'Cumulative percentage') +%%00010%%00009%%00009geom_col() +%%00010%%00009%%00009theme_bw() +%%00010%%00009%%00009theme(axis.text.x.bottom = element_text(angle = knime.flow.in[[&quot;angle&quot;]], hjust = knime.flow.in[[&quot;hjust&quot;]]))%%00010%%00010%%00009if (knime.flow.in[[&quot;show_perc&quot;]] == 1) plot_list[[1]] &lt;- plot_list[[1]] + geom_text(aes(group = modif), position = position_stack(vjust = 0.5))%%00010%%00010%%00009if (length(df_split) &gt; 1) {%%00010%%00009%%00009for (i in 2:length(df_split)) {%%00010%%00009%%00009%%00009temp &lt;- df_split[[i]]%%00010%%00009%%00009%%00009temp_p &lt;- plot_list[[1]] %+% temp + %%00010%%00009%%00009%%00009%%00009ggtitle(unique(temp$histone))%%00010%%00009%%00009%%00009plot_list[[i]] &lt;- temp_p%%00010%%00009%%00009}%%00010%%00009}%%00010%%00010%%00009if (knime.flow.in[[&quot;plot_size&quot;]] == 'Auto') {%%00010%%00009%%00009do.call(grid.arrange, c(plot_list, nrow = knime.flow.in[[&quot;plot_nrow&quot;]], top = knime.flow.in[[&quot;graph_subtitle&quot;]]))%%00010%%00009} else {%%00010%%00009%%00009do.call(grid.arrange, c(plot_list, top = knime.flow.in[[&quot;graph_subtitle&quot;]]))%%00010%%00009}%%00010} else {%%00010%%00009df_sum &lt;- df_sum[df_sum$summary &gt; 0,]%%00010%%00009p &lt;- ggplot(df_sum, aes(x = sample, y = summary, fill = modif, label = label)) +%%00010%%00009%%00009scale_fill_discrete(name = '') +%%00010%%00009%%00009labs(x = 'Sample', y = 'Cumulative percentage') +%%00010%%00009%%00009geom_col() +%%00010%%00009%%00009theme_bw() +%%00010%%00009%%00009theme(axis.text.x.bottom = element_text(angle = knime.flow.in[[&quot;angle&quot;]], hjust = knime.flow.in[[&quot;hjust&quot;]]),%%00010%%00009%%00009%%00009 strip.background = element_blank(),%%00010%%00009%%00009 %%00009 strip.text = element_text(size = 12))%%00010%%00010%%00009if (knime.flow.in[[&quot;plot_size&quot;]] == 'Auto') {%%00010%%00009%%00009p &lt;- p + facet_wrap(.~histone, nrow = knime.flow.in[[&quot;plot_nrow&quot;]]) %%00010%%00009} else {%%00010%%00009%%00009p &lt;- p + facet_wrap(.~histone) %%00010%%00009}%%00010%%00010%%00009if (knime.flow.in[[&quot;graph_subtitle&quot;]] != '') p &lt;- p + ggtitle(knime.flow.in[[&quot;graph_subtitle&quot;]]) + theme(plot.title = element_text(hjust = 0.5))%%00010%%00010%%00009if (knime.flow.in[[&quot;show_perc&quot;]] == 1) p &lt;- p + geom_text(aes(group = modif), position = position_stack(vjust = 0.5))%%00010%%00010%%00009p%%00010}"/>
+            <entry key="templateUUID" type="xstring" isnull="true" value=""/>
+            <entry key="version" type="xstring" value="version 1.x"/>
+            <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
+            <entry key="sendRowNames" type="xboolean" value="true"/>
+            <entry key="sendBatchSize" type="xint" value="10000"/>
+            <entry key="knimeInType" type="xstring" value="data.frame"/>
+            <entry key="overwriteRHome" type="xboolean" value="false"/>
+            <entry key="rHome" type="xstring" value=""/>
+            <entry key="useRPathHome" type="xboolean" value="true"/>
+            <entry key="condaVariableName" type="xstring" isnull="true" value=""/>
+        </config>
+        <entry key="Image type" type="xstring" value="PNG"/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="Image width">
+                <entry key="used_variable" type="xstring" value="plot_width"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+            <config key="Image height">
+                <entry key="used_variable" type="xstring" value="plot_height"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+            <config key="R settings">
+                <config key="rHome">
+                    <entry key="used_variable" type="xstring" value="Rcommand"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="org.knime.r.RViewNodeFactory"/>
+    <entry key="node-name" type="xstring" value="R View (Table)"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME R-Project nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.r"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.0.v202206271529"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Interactive R Statistics Integration"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.r.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.0.v202211090002"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="R View (Table)"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>
