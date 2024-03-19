@@ -104,6 +104,10 @@
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="IDLE"/>
+    <config key="nodecontainer_message">
+        <entry key="type" type="xstring" value="WARNING"/>
+        <entry key="message" type="xstring" value="Component Input 5:0:0:97: Component does not have input data, execute upstream nodes first"/>
+    </config>
     <entry key="workflow-file" type="xstring" value="workflow.knime"/>
     <entry key="virtual-in-ID" type="xint" value="97"/>
     <config key="inports">
@@ -130,7 +134,7 @@
         </config>
     </config>
     <config key="metadata">
-        <entry key="description" type="xstring" value="Reworked histone statistics metanode, built upon original script by Ivana Ihnatova.%%00010%%00010Version: 1.1.0 from 2024-03-04"/>
+        <entry key="description" type="xstring" value="Reworked histone statistics metanode, built upon original script by Ivana Ihnatova.%%00010%%00010Version: 1.1.1 from 2024-03-19"/>
         <config key="inports">
             <config key="inport_0">
                 <entry key="name" type="xstring" value="Input table"/>
