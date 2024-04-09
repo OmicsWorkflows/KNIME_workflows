@@ -21,7 +21,7 @@
                     </config>
                     <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
                     <config key="name_pattern">
-                        <entry key="pattern" type="xstring" value="PG.Quantity*"/>
+                        <entry key="pattern" type="xstring" value="PG.Quantity (Max*)*"/>
                         <entry key="type" type="xstring" value="Wildcard"/>
                         <entry key="caseSensitive" type="xboolean" value="true"/>
                         <entry key="excludeMatching" type="xboolean" value="false"/>
@@ -58,7 +58,7 @@
             <entry key="string" type="xstring" value="none"/>
         </config>
         <config key="prefix-997">
-            <entry key="string" type="xstring" value="PG.Quantity (Max)_"/>
+            <entry key="string" type="xstring" value="PG.Quantity (Max*)_"/>
         </config>
         <config key="suffix-999">
             <entry key="string" type="xstring" value="_"/>
