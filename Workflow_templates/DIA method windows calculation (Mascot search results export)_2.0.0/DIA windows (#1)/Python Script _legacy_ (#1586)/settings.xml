@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="sourceCode" type="xstring" value="import numpy as np%%00010import pandas as pd%%00010from scipy.interpolate import splev, splrep%%00010%%00010# settings%%00010windows = flow_variables['windows']%%00010mz_range = flow_variables['mz_range'].split('-')%%00010im_max = flow_variables['im_max']%%00010im_min = flow_variables['im_min']%%00010decimals_im = 3 # number of decimal places to retains during rouding the optimal ion mobility values%%00010decimals_mz = 3 # number of decimal places to retains during rouding the optimal m/z values%%00010%%00010#######################################%%00010%%00010# checks whether the requested list of windows is divisible by the number of steps%%00010if flow_variables['windows'] % flow_variables['im_steps'] != 0:%%00010%%00009print('Error: You have requested to calculate DIA windows scheme considering also the ion mobility information. But the number of windows ({}) is not divisible by the number of ion mobility steps ({}) which should be true. Please check metanode settings.'.format(flow_variables['windows'], flow_variables['im_steps']))%%00010%%00010# crates list for the basic statistics%%00010statistics_list = []%%00010%%00010# drops rows with the missing values and sorts the resulting table%%00010input_table_1.dropna(how='all', axis=0, inplace=True)%%00010input_table_1.sort_values(input_table_1.columns[0], inplace=True)%%00010rows_all = len(input_table_1.index)%%00010statistics_list.append(['rows total', rows_all])%%00010%%00010# removes values outside the selected m/z interval or percentile%%00010if len(mz_range) == 2:%%00010    min = float(mz_range[0])%%00010    max = float(mz_range[1])%%00010elif len(mz_range) == 1 and float(mz_range[0]) &gt; 0 and float(mz_range[0]) &lt;= 1:%%00010    min = input_table_1[input_table_1.columns[0]].quantile((1-float(mz_range[0]))/2)%%00010    max = input_table_1[input_table_1.columns[0]].quantile(1-(1-float(mz_range[0]))/2)%%00010else:%%00010    print('Error: Unexpected format of the m/z range value ({}), please check.'.format(flow_variables['mz_range']))%%00010%%00010index_names = input_table_1[(input_table_1[input_table_1.columns[0]] &lt; min) | (input_table_1[input_table_1.columns[0]] &gt; max) ].index%%00010input_table_1.drop(index_names, inplace=True)%%00010%%00010# gets the number of rows in the filtered dataframe%%00010rows = len(input_table_1.index)%%00010statistics_list.append(['rows used for m/z and 1/K0 range optimization', rows])%%00010statistics_list.append(['rows used for m/z and 1/K0 range optimization (%)', round(100*rows/rows_all)])%%00010statistics_list.append(['m/z range covered min', min])%%00010statistics_list.append(['m/z range covered max', max])%%00010%%00010# creates chunks list from the input table to be looped through later on%%00010# the number of chunks is equal to the requested number of windows%%00010chunks = np.array_split(input_table_1, windows)%%00010%%00010# loops through the chunks of input table and extracts the starting position and creates starting positions%%00010windows_list_start = []%%00010for chunk in chunks[0::1]:%%00010    windows_list_start.append(chunk.iloc[0,0])%%00010%%00010# adds the last item based on the interval end to the 1st windows set%%00010windows_list_start.append(input_table_1.iloc[rows-1,0])%%00010%%00010# creates list of lists containing start and end m/z value of the given window%%00010windows_list = [['mz_start', 'mz_end', 'im_start', 'im_end']]%%00010# adds individual windows statistics%%00010for i in range(1,windows+1):%%00010%%00009mz_start = windows_list_start[i-1]%%00010%%00009mz_end = windows_list_start[i]%%00010%%00009input_table_1_filtered = input_table_1.query('mz &gt; @mz_start and mz &lt; @mz_end')%%00010%%00009im_start = input_table_1_filtered.min().iloc[1]%%00010%%00009im_end = input_table_1_filtered.max().iloc[1]%%00010%%00009windows_list.append([windows_list_start[i-1] - flow_variables['overlap_mz']/2, windows_list_start[i] + flow_variables['overlap_mz']/2, im_start, im_end])%%00010%%00010# writes out the headers part%%00010headers = windows_list.pop(0)%%00010%%00010# goes through the list of mz and im ranges and generates the final list of windows to be returned%%00010# this is different based on the number of IM steps to consider%%00010if flow_variables['im_steps'] == 2:%%00010%%00009## in case of 2 im steps, the list of windows is splitted into two sets %%00010%%00009## and m/z range pairs are made to get the best possible IM ranges for them - they are checked for the im ranges overlap%%00010%%00009## and if they do overlap, the mid point is selected from all IM values in the overlapping IM interval;%%00010%%00009## in case they do not overlap, the mid point between the two ranges is set%%00010%%00009## the mz and im range 1 is meant to be the one with higher m/z value to be in line with the timsTOF Pro diaParameter file%%00010%%00009windows_list_im_optim = [['mz_start', 'mz_end', 'im_start_exp', 'im_end_exp', 'im_start_optim', 'im_end_optim']]%%00010%%00009## creates list to store info to create table for the diaParameters file writing at the end%%00010%%00009diaParameters_list = [['#MS Type', 'Cycle Id', 'Start IM [1/K0]', 'End IM [1/K0]', 'Start Mass [m/z]', 'End Mass [m/z]', 'CE [eV]']]%%00010%%00009## adds the 1st row into the diaParameters list corresponding to the MS1 scan%%00010%%00009diaParameters_list.append(['MS1', '0', '-', '-', '-', '-', '-'])%%00010%%00009step_size = flow_variables['windows']//flow_variables['im_steps']%%00010%%00009for i in range(0, step_size):%%00010%%00009%%00009# gets the start and end points of the mz ranges defined by the given DIA window and adjusts on the specified overlap%%00010%%00009%%00009mz1_start = windows_list[i+step_size][0] + flow_variables['overlap_mz']/2%%00010%%00009%%00009mz1_end = windows_list[i+step_size][1] - flow_variables['overlap_mz']/2%%00010%%00009%%00009mz2_start = windows_list[i][0] + flow_variables['overlap_mz']/2%%00010%%00009%%00009mz2_end = windows_list[i][1] - flow_variables['overlap_mz']/2%%00010%%00009%%00009# filters the input table to get only the parts corresponding to the two DIA windows%%00010%%00009%%00009input_table_1_mz1_range = input_table_1.query('mz &gt; @mz1_start and mz &lt; @mz1_end')%%00010%%00009%%00009input_table_1_mz2_range = input_table_1.query('mz &gt; @mz2_start and mz &lt; @mz2_end')%%00010%%00009%%00009# gets the start and end points of the im ranges covered by the two mz ranges defined by the given DIA window%%00010%%00009%%00009im1_start = input_table_1_mz1_range.min().iloc[1]%%00010%%00009%%00009im1_end = input_table_1_mz1_range.max().iloc[1]%%00010%%00009%%00009im2_start = input_table_1_mz2_range.min().iloc[1]%%00010%%00009%%00009im2_end = input_table_1_mz2_range.max().iloc[1]%%00010%%00009%%00009#print(i)%%00010%%00009%%00009# checks whether the two im intevals overlap%%00010%%00009%%00009if im1_start &gt;= im2_end:%%00010%%00009%%00009%%00009# if not, the found thresholds are used directly%%00010%%00009%%00009%%00009im_split = (im1_start + im2_end)/2%%00010%%00009%%00009else:%%00010%%00009%%00009%%00009# if yes, the compounds from the overlapping IM range are queried from the input data, %%00010%%00009%%00009%%00009# median IM value is calculated for both intervals and their average is used as the splitting point%%00010%%00009%%00009%%00009input_table_1_mz1_im2_range = input_table_1_mz1_range.query('im &gt; @im2_start and im &lt; @im2_end')%%00010%%00009%%00009%%00009input_table_1_mz2_im1_range = input_table_1_mz2_range.query('im &gt; @im1_start and im &lt; @im1_end')%%00010%%00009%%00009%%00009mz1_im2_overlap_mid = input_table_1_mz1_im2_range.median().iloc[1]%%00010%%00009%%00009%%00009mz2_im1_overlap_mid = input_table_1_mz2_im1_range.median().iloc[1]%%00010%%00009%%00009%%00009im_split = (mz1_im2_overlap_mid + mz2_im1_overlap_mid)/2%%00010%%00009%%00009%%00010%%00009%%00009# checks for im_max value and calculates it on the fly based on the current DIA window m/z ranges or uses the provided constant%%00010%%00009%%00009try:%%00010%%00009%%00009%%00009im_max = float(im_max)%%00010%%00009%%00009# tries to get the list of pairs for the spline calculation and im_max estimation from the actual m/z values%%00010%%00009%%00009except:%%00010%%00009%%00009%%00009try:%%00010%%00009%%00009%%00009%%00009im_max_list = [[float(xy) for xy in item.split(':')] for item in im_max.split(';')]%%00010%%00009%%00009%%00009except:%%00010%%00009%%00009%%00009%%00009print('Error: Unexpected format of the ion mobility max value ({}). There should be either single value or a list of &quot;m/z:1K0&quot; pairs separated by semicolon. Please check the metanode description for more details and examples.'.format(im_max))%%00010%%00009%%00009%%00009# gets the coordinates for the spline%%00010%%00009%%00009%%00009spl_x = [pair[0] for pair in im_max_list]%%00010%%00009%%00009%%00009spl_y = [pair[1] for pair in im_max_list]%%00010%%00009%%00009%%00009spl = splrep(spl_x, spl_y, k = 1)%%00010%%00009%%00009%%00009# calculates estimated im_max value based on the mz1 window start position using the calculated spline%%00010%%00009%%00009%%00009# to be used as the im max in the mz1 ranges%%00010%%00009%%00009%%00009im1_max = float(splev(mz1_start - flow_variables['overlap_mz']/2, spl))%%00010%%00009%%00009%%00009# calculates estimated im_max value based on the mz2 window start position using the calculated spline%%00010%%00009%%00009%%00009# to be compared to the im_split value to consider which value to use as the im max in the mz2 ranges (the smaller should be used)%%00010%%00009%%00009%%00009im2_max = float(splev(mz2_start - flow_variables['overlap_mz']/2, spl))%%00010%%00009%%00009# checkes the im_split value whether it is higher than the maximal im value at the given m/z range and adjust it to the calculated one to be used for the current DIA window%%00010%%00009%%00009if im_split &gt; im2_max:%%00010%%00009%%00009%%00009im_split = im2_max%%00010%%00009%%00009%%00009%%00010%%00009%%00009# writes info about the current DIA windows pair into the main DIA windows list%%00010%%00009%%00009## at first the info about the upper m/z range window%%00010%%00009%%00009windows_list_im_optim.append([mz1_start - flow_variables['overlap_mz']/2, mz1_end + flow_variables['overlap_mz']/2, im1_start, im1_end, im_split, im1_max])%%00010%%00009%%00009## and then the info about the lower m/z range window%%00010%%00009%%00009windows_list_im_optim.append([mz2_start - flow_variables['overlap_mz']/2, mz2_end + flow_variables['overlap_mz']/2, im2_start, im2_end, im_min, im_split])%%00010%%00010%%00009%%00009# writes info about the current DIA windows pair into the diaParameters list%%00010%%00009%%00009## at first the info about the upper m/z range window%%00010%%00009%%00009diaParameters_list.append(['PASEF', str(i+1), str(round(im_split, decimals_im)), str(round(im1_max, decimals_im)), str(round(mz1_start - flow_variables['overlap_mz']/2, decimals_mz)), str(round(mz1_end + flow_variables['overlap_mz']/2, decimals_mz)), '-'])%%00010%%00009%%00009## and then the info about the lower m/z range window%%00010%%00009%%00009diaParameters_list.append(['PASEF', str(i+1), str(round(im_min, decimals_im)), str(round(im_split, decimals_im)), str(round(mz2_start - flow_variables['overlap_mz']/2, decimals_mz)), str(round(mz2_end + flow_variables['overlap_mz']/2, decimals_mz)), '-'])%%00010%%00010# writes out the headers part%%00010headers_im_optim = windows_list_im_optim.pop(0)%%00010%%00010# writes the list of lists into the dataframe%%00010output_table_1 = pd.DataFrame(windows_list_im_optim, columns=headers_im_optim)%%00010# adds center and width columns based on the start and end positions%%00010output_table_1['mz_center'] = (output_table_1['mz_end']+output_table_1['mz_start'])/2%%00010output_table_1['mz_width'] = output_table_1['mz_end']-output_table_1['mz_start']%%00010%%00010statistics_list.append(['DIA window m/z range width min', output_table_1.min().iloc[7]])%%00010statistics_list.append(['DIA window m/z range width max', output_table_1.max().iloc[7]])%%00010%%00010# excludes all rows from the original table outside of the all specified DIA windows to calculate some summary statistics%%00010## creates empty df into which the unique data will be appended%%00010input_table_1_covered = pd.DataFrame()%%00010for window in windows_list_im_optim:%%00010%%00009im_start = window[4]%%00010%%00009im_end = window[5]%%00010%%00009mz_start = window[0]%%00010%%00009mz_end = window[1]%%00010%%00009# filters out all rows not passing all the criteria on im and mz side%%00010%%00009input_table_1_filtered = input_table_1.query('im &gt; @im_start and im &lt; @im_end and mz &gt; @mz_start and mz &lt; @mz_end')%%00010%%00009# combined the filtered dataframe with the one got from the previous iteration%%00010%%00009input_table_1_covered = pd.concat([input_table_1_covered, input_table_1_filtered]).drop_duplicates()%%00010## calculates additional statistics to be added to the second output table%%00010rows = len(input_table_1_covered.index)%%00010statistics_list.append(['rows covered by the optimized m/z and 1/K0 range', rows])%%00010statistics_list.append(['rows covered by the optimized m/z and 1/K0 range (%)', round(100*rows/rows_all)])%%00010%%00010# outputs some basic statistics into the 2nd output table%%00010output_table_2 = pd.DataFrame(statistics_list, columns=['statistics', 'value'])%%00010%%00010# writes out the headers part for the diaParameters table%%00010headers_diaParameters = diaParameters_list.pop(0)%%00010%%00010# writes the list of lists into the dataframe%%00010output_table_3 = pd.DataFrame(diaParameters_list, columns=headers_diaParameters)%%00010"/>
+        <entry key="rowLimit" type="xint" value="1000"/>
+        <entry key="convertMissingToPython" type="xboolean" value="false"/>
+        <entry key="convertMissingFromPython" type="xboolean" value="false"/>
+        <entry key="sentinelOption" type="xstring" value="MIN_VAL"/>
+        <entry key="sentinelValue" type="xint" value="0"/>
+        <entry key="chunkSize" type="xint" value="500000"/>
+        <entry key="pythonVersionOption" type="xstring" value="python3"/>
+        <entry key="python2Command" type="xstring" value=""/>
+        <entry key="python3Command" type="xstring" value="unknown_flow_variable_selected"/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="python3Command">
+                <entry key="used_variable" type="xstring" value="python3command"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="windows calculation%%00010 script%%00010%%00010standard windows design, with potential %%00010windows overlap and ion mobility usage"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="927"/>
+        <entry key="y-coordinate" type="xint" value="799"/>
+        <entry key="width" type="xint" value="267"/>
+        <entry key="height" type="xint" value="80"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="10"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles">
+            <config key="style_0">
+                <entry key="start" type="xint" value="29"/>
+                <entry key="length" type="xint" value="8"/>
+                <entry key="fontname" type="xstring" value="Sans"/>
+                <entry key="fontstyle" type="xint" value="0"/>
+                <entry key="fontsize" type="xint" value="10"/>
+                <entry key="fgcolor" type="xint" value="0"/>
+            </config>
+            <config key="style_1">
+                <entry key="start" type="xint" value="59"/>
+                <entry key="length" type="xint" value="10"/>
+                <entry key="fontname" type="xstring" value="Sans"/>
+                <entry key="fontstyle" type="xint" value="0"/>
+                <entry key="fontsize" type="xint" value="10"/>
+                <entry key="fgcolor" type="xint" value="0"/>
+            </config>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="org.knime.python2.nodes.script2.Python2ScriptNodeFactory2"/>
+    <entry key="node-name" type="xstring" value="Python Script (legacy)"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Python nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python2.nodes"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.0.v202211291448"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Python 2 Integration (legacy)"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python2.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.1.v202301311311"/>
+    <config key="factory_settings"/>
+    <config key="node_creation_config">
+        <config key="Input object (pickled)"/>
+        <config key="Input table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+            <config key="port_1">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+            <config key="port_2">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output image"/>
+        <config key="Output object (pickled)"/>
+    </config>
+    <entry key="name" type="xstring" value="Python Script (legacy)"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+        <config key="port_2">
+            <entry key="index" type="xint" value="2"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+        <config key="port_3">
+            <entry key="index" type="xint" value="3"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

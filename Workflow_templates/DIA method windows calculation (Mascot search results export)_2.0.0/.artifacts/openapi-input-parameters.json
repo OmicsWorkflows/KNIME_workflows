@@ -1,0 +1,93 @@
+
+{
+    "type": "object",
+    "properties": {
+        "column-selection-1:1569": {
+            "type": "object",
+            "properties": {
+                "column": {
+                    "type": "string",
+                    "default": "pep_exp_mz"
+                }
+            },
+            "description": "Select the column containing measured, non redundant list of m/z values",
+            "example": {
+                "column": "pep_exp_mz"
+            }
+        },
+        "string-input-1:1585": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1584": {
+            "type": "string",
+            "default": "__outputs__/tables/DIA windows list",
+            "description": "path to the file to be written containing the optimized DIA windows in the appropriate format; the extension is based on the target machine (timsTOF Pro machines: txt; Orbitrap machines: csv)",
+            "example": "__outputs__/tables/DIA windows list"
+        },
+        "int-input-1:1581": {
+            "type": "integer",
+            "default": 2,
+            "description": "number of serial ion mobility steps during the PASEF scan; please note that the number of windows has to be divisible by the numer of steps! 2 steps means that all ions will be released from the TIMS cell onto the quadrupole in two steps, splitting the ion mobility range into two not overlapping parts; the algorithm will optimize the individual DIA windows ion mobility ranges based on the provided info",
+            "example": 2
+        },
+        "double-input-1:1582": {
+            "type": "number",
+            "default": 0.6,
+            "description": "minimal value to be used for the optimized DIA windows",
+            "example": 0.6
+        },
+        "double-input-1:1580": {
+            "type": "number",
+            "default": 1.0,
+            "description": "individual DIA windows overlap on the m/z range; this value will be added to the upper m/z range limit of each DIA window; this value is ignored for overlapping (staggered) windows schemes where it should be 0",
+            "example": 1.0
+        },
+        "single-selection-1:1568": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "staggered windows design without overlap and ion mobility usage (Orbitraps)"
+                }
+            },
+            "description": "Specify what DIA windows design you would like to get",
+            "example": {
+                "variable_value": "staggered windows design without overlap and ion mobility usage (Orbitraps)"
+            }
+        },
+        "int-input-1:1572": {
+            "type": "integer",
+            "default": 30,
+            "description": "Number of DIA windows to make; please note that in case of overlapping DIA windows, the number of actually generated windows will be the specified number x2 +1",
+            "example": 30
+        },
+        "string-input-1:1570": {
+            "type": "string",
+            "default": "0.9",
+            "description": "M/z range to be covered by the DIA windows (e.g. 400-1000) or percentile based on the provided m/z values (e.g. 0.9); percentile value is used to leave out the same number of observations (5% of the values in case of percentile 0.9) from both ends to define the target m/z range",
+            "example": "0.9"
+        },
+        "string-input-1:1583": {
+            "type": "string",
+            "default": "150:0.6; 800:1.2; 1300:1.6; 2000:1.6",
+            "description": "maximal value to be used for the optimized DIA windows; use either single value or set of \"m/z:1/K0\" value pairs separated by semicolon (e.g. \"150:0.6; 800:1.2; 1300:1.6\")",
+            "example": "150:0.6; 800:1.2; 1300:1.6; 2000:1.6"
+        },
+        "column-selection-1:1579": {
+            "type": "object",
+            "properties": {
+                "column": {
+                    "type": "string",
+                    "default": "1/K0"
+                }
+            },
+            "description": "Select the column containing measured, non redundant list of 1/K0 values",
+            "example": {
+                "column": "1/K0"
+            }
+        }
+    }
+}
