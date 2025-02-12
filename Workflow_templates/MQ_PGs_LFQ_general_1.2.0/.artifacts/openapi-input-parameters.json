@@ -1,0 +1,1281 @@
+
+{
+    "type": "object",
+    "properties": {
+        "boolean-input-1513:1537:993": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "double-input-1:1657:1750:415:451": {
+            "type": "number",
+            "default": 1.5,
+            "description": "Proportion of the IQR past the low and high quartiles to extend the plot whiskers. Points outside this range will be identified as outliers.",
+            "example": 1.5
+        },
+        "string-input-1:1657:1750:415:1527": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "boolean-input-943:931:1535": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether the evaluated data are log fold changes to be tested (no dedign is needed for this type of testing, only log fold changes are tested for a difference from zero)",
+            "example": false
+        },
+        "string-input-1505:662": {
+            "type": "string",
+            "default": ";",
+            "description": "Delimiter used to divide individual IDs in Protein IDs column",
+            "example": ";"
+        },
+        "boolean-input-1:1657:1530:1538:993": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "string-input-1:1657:1749:387:1527": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "double-input-1:1657:1750:407:451": {
+            "type": "number",
+            "default": 1.5,
+            "description": "Proportion of the IQR past the low and high quartiles to extend the plot whiskers. Points outside this range will be identified as outliers.",
+            "example": 1.5
+        },
+        "string-input-1513:1555": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1657:1750:400:1527": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1657:1749:310:1525": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1657:1750:345:1528": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "double-input-943:970:961:455": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "string-input-943:970:961:1525": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "double-input-1:1662:1671": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "string-input-1:1657:1749:386:1527": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "single-selection-1:1657:1750:283:450": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "average"
+                }
+            },
+            "description": "Select the clustering method used during cluster analysis",
+            "example": {
+                "variable_value": "average"
+            }
+        },
+        "string-input-1:1657:1749:309:1525": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-943:937:377": {
+            "type": "string",
+            "default": ",",
+            "description": "Enter delimiter which will be used to separate values in the form field above",
+            "example": ","
+        },
+        "string-input-943:931:1719:377": {
+            "type": "string",
+            "default": ",",
+            "description": "Enter delimiter which will be used to separate values in the form field above",
+            "example": ","
+        },
+        "string-input-1:1657:1749:385:1527": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "single-selection-943:970:454": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "the name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        },
+        "double-input-1:1657:1749:385:451": {
+            "type": "number",
+            "default": 1.5,
+            "description": "Proportion of the IQR past the low and high quartiles to extend the plot whiskers. Points outside this range will be identified as outliers.",
+            "example": 1.5
+        },
+        "string-input-1:1657:1530:311:994": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1664:1613": {
+            "type": "string",
+            "default": "Auto",
+            "description": "Enter desired dimensions for box plots in inches (format \"width;height\")",
+            "example": "Auto"
+        },
+        "single-selection-1:1662:1670": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "The name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        },
+        "string-input-1:1657:1750:281:1525": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "double-input-1:1657:1750:411:451": {
+            "type": "number",
+            "default": 1.5,
+            "description": "Proportion of the IQR past the low and high quartiles to extend the plot whiskers. Points outside this range will be identified as outliers.",
+            "example": 1.5
+        },
+        "string-input-1:1657:1750:281:1526": {
+            "type": "string",
+            "default": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"
+        },
+        "single-selection-1:1608:1625": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "none"
+                }
+            },
+            "description": "Choose type of regression line for the scater plot, default is \"none\"",
+            "example": {
+                "variable_value": "none"
+            }
+        },
+        "string-input-1:1662:1668": {
+            "type": "string",
+            "default": "Auto",
+            "description": "Enter in format \"min;max\", default is \"Auto\"",
+            "example": "Auto"
+        },
+        "string-input-1:1657:1749:399:1527": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "boolean-input-1:1657:1530:311:993": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "double-input-943:970:455": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "string-input-1:1662:1661": {
+            "type": "string",
+            "default": "Auto",
+            "description": "Enter desired dimensions for violin plots in inches (format \"width;height\")",
+            "example": "Auto"
+        },
+        "double-input-1:1657:1750:399:451": {
+            "type": "number",
+            "default": 1.5,
+            "description": "Proportion of the IQR past the low and high quartiles to extend the plot whiskers. Points outside this range will be identified as outliers.",
+            "example": 1.5
+        },
+        "string-input-1:1664:1628": {
+            "type": "string",
+            "default": "None",
+            "description": "Enter x coordiate where vertical control (center) line should be drawn, default is \"None\" for no line",
+            "example": "None"
+        },
+        "double-input-1:1657:1749:387:451": {
+            "type": "number",
+            "default": 1.5,
+            "description": "Proportion of the IQR past the low and high quartiles to extend the plot whiskers. Points outside this range will be identified as outliers.",
+            "example": 1.5
+        },
+        "single-selection-1:1667:1680": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "average"
+                }
+            },
+            "description": "select the clustering method used during cluster analysis",
+            "example": {
+                "variable_value": "average"
+            }
+        },
+        "single-selection-1:1657:1750:309:454": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "the name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        },
+        "string-input-1:1657:1750:282:1525": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1657:1749:345:1528": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "boolean-input-1:1608:1626": {
+            "type": "boolean",
+            "default": "true",
+            "description": "If checked, a diagonal y=x line will be displayed in the graph",
+            "example": true
+        },
+        "double-input-1:1657:1749:378:455": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "string-input-943:931:1929": {
+            "type": "string",
+            "default": ",",
+            "description": "Enter delimiter which will be used to separate values in the form field above",
+            "example": ","
+        },
+        "string-input-1:1664:1623": {
+            "type": "string",
+            "default": "Auto",
+            "description": "Enter in format \"min;max\", default is \"Auto\"",
+            "example": "Auto"
+        },
+        "single-selection-1:1657:1749:283:449": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "euclidean"
+                }
+            },
+            "description": "Select the distance metric for cluster analysis",
+            "example": {
+                "variable_value": "euclidean"
+            }
+        },
+        "string-input-1:1657:1750:426:1527": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1657:1530:1538:995": {
+            "type": "string",
+            "default": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"
+        },
+        "double-input-1:1657:1749:311:1546": {
+            "type": "number",
+            "default": 1.0,
+            "description": "Factor that multiplicatively scales the value chosen using kernel bandwidth method (Scott). Increasing the number will make the curve smoother. Default value is 1. More information can be found here https://seaborn.pydata.org/tutorial/distributions.html#choosing-the-smoothing-bandwidth",
+            "example": 1.0
+        },
+        "string-input-1:1669:1668": {
+            "type": "string",
+            "default": "Auto",
+            "description": "Enter desired dimensions for hierarchical clustermaps in inches (format \"width;height\") or leave at \"Auto\" to use default size (8x6 inches)",
+            "example": "Auto"
+        },
+        "string-input-1:1657:1530:1538:994": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1657:1750:309:1525": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1663:1668": {
+            "type": "string",
+            "default": "Auto",
+            "description": "Enter in format \"min;max\", default is \"Auto\"",
+            "example": "Auto"
+        },
+        "single-selection-1:1657:1749:283:450": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "average"
+                }
+            },
+            "description": "Select the clustering method used during cluster analysis",
+            "example": {
+                "variable_value": "average"
+            }
+        },
+        "string-input-943:937:1525": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1657:1749:1527": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1657:1749:389:1527": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1657:1750:411:1527": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-943:937:1526": {
+            "type": "string",
+            "default": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"
+        },
+        "boolean-input-1513:1542:993": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "single-selection-1:1657:1749:345:450": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "average"
+                }
+            },
+            "description": "Select the clustering method used during cluster analysis",
+            "example": {
+                "variable_value": "average"
+            }
+        },
+        "string-input-1:1657:1749:401:1527": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "single-selection-1:1657:1750:283:444": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "pearson"
+                }
+            },
+            "description": "Select the method used for correlation of data columns",
+            "example": {
+                "variable_value": "pearson"
+            }
+        },
+        "single-selection-1:1667:1672": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "RdBu"
+                }
+            },
+            "description": "what colormap (palette) should be used for clustermap",
+            "example": {
+                "variable_value": "RdBu"
+            }
+        },
+        "string-input-1513:1542:994": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "double-input-1:1657:1749:389:451": {
+            "type": "number",
+            "default": 1.5,
+            "description": "Proportion of the IQR past the low and high quartiles to extend the plot whiskers. Points outside this range will be identified as outliers.",
+            "example": 1.5
+        },
+        "single-selection-1:1667:1671": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "pearson"
+                }
+            },
+            "description": "Select the method used for correlation of data columns",
+            "example": {
+                "variable_value": "pearson"
+            }
+        },
+        "single-selection-1:1657:1750:283:449": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "cityblock"
+                }
+            },
+            "description": "Select the distance metric for cluster analysis",
+            "example": {
+                "variable_value": "cityblock"
+            }
+        },
+        "double-input-1:1657:1749:451": {
+            "type": "number",
+            "default": 1.5,
+            "description": "Proportion of the IQR past the low and high quartiles to extend the plot whiskers. Points outside this range will be identified as outliers.",
+            "example": 1.5
+        },
+        "string-input-1513:1542:995": {
+            "type": "string",
+            "default": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"
+        },
+        "double-input-1:1657:1750:311:1546": {
+            "type": "number",
+            "default": 1.0,
+            "description": "Factor that multiplicatively scales the value chosen using kernel bandwidth method (Scott). Increasing the number will make the curve smoother. Default value is 1. More information can be found here https://seaborn.pydata.org/tutorial/distributions.html#choosing-the-smoothing-bandwidth",
+            "example": 1.0
+        },
+        "string-input-1:1657:1750:310:1525": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1513:1538:995": {
+            "type": "string",
+            "default": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"
+        },
+        "single-selection-1:1667:1679": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "euclidean"
+                }
+            },
+            "description": "Select the distance metric for cluster analysis",
+            "example": {
+                "variable_value": "euclidean"
+            }
+        },
+        "string-input-1513:1538:994": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1709": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1657:1749:282:1525": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-943:931:1934": {
+            "type": "string",
+            "default": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"
+        },
+        "single-selection-1:1657:1749:283:444": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "pearson"
+                }
+            },
+            "description": "Select the method used for correlation of data columns",
+            "example": {
+                "variable_value": "pearson"
+            }
+        },
+        "string-input-943:931:1933": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "double-input-1:1657:1749:401:451": {
+            "type": "number",
+            "default": 1.5,
+            "description": "Proportion of the IQR past the low and high quartiles to extend the plot whiskers. Points outside this range will be identified as outliers.",
+            "example": 1.5
+        },
+        "single-selection-1:1657:1749:345:449": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "euclidean"
+                }
+            },
+            "description": "Select the distance metric for cluster analysis",
+            "example": {
+                "variable_value": "euclidean"
+            }
+        },
+        "single-selection-1:1657:1750:345:444": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "pearson"
+                }
+            },
+            "description": "Select the method used for correlation of data columns",
+            "example": {
+                "variable_value": "pearson"
+            }
+        },
+        "single-selection-1:1657:1749:345:444": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "pearson"
+                }
+            },
+            "description": "Select the method used for correlation of data columns",
+            "example": {
+                "variable_value": "pearson"
+            }
+        },
+        "single-selection-1:1657:1750:345:449": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "cityblock"
+                }
+            },
+            "description": "Select the distance metric for cluster analysis",
+            "example": {
+                "variable_value": "cityblock"
+            }
+        },
+        "double-input-1:1667:1674": {
+            "type": "number",
+            "default": 0.0,
+            "description": "value that will be used as a center to color individual cluster data",
+            "example": 0.0
+        },
+        "boolean-input-1513:862": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "double-input-1:1657:1750:451": {
+            "type": "number",
+            "default": 1.5,
+            "description": "Proportion of the IQR past the low and high quartiles to extend the plot whiskers. Points outside this range will be identified as outliers.",
+            "example": 1.5
+        },
+        "string-input-1:1657:1750:399:1527": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "double-input-1:1657:1750:378:455": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "single-selection-1:1657:1749:378:454": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "the name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        },
+        "string-input-943:931:1719:1526": {
+            "type": "string",
+            "default": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"
+        },
+        "string-input-1:1667:1665": {
+            "type": "string",
+            "default": "Auto",
+            "description": "Enter desired dimensions for correlation clustermaps in inches (format \"width;height\"), or leave at \"Auto\" for default size (10x10 inches)",
+            "example": "Auto"
+        },
+        "boolean-input-1:1657:1530:310:993": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "double-input-1:1657:1749:402:451": {
+            "type": "number",
+            "default": 1.5,
+            "description": "Proportion of the IQR past the low and high quartiles to extend the plot whiskers. Points outside this range will be identified as outliers.",
+            "example": 1.5
+        },
+        "string-input-1:1657:1750:407:1527": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "boolean-input-1:1667:1677": {
+            "type": "boolean",
+            "default": "true",
+            "description": "Whether to show or not the raw values in each heatmap cell",
+            "example": true
+        },
+        "single-selection-1:1657:1749:309:454": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "the name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        },
+        "string-input-1:1659:1625": {
+            "type": "string",
+            "default": "250",
+            "description": "Enter desired height for a single plot in the MA plot matrix in pixels",
+            "example": "250"
+        },
+        "single-selection-1:1669:1675": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "average"
+                }
+            },
+            "description": "Select the clustering method used during cluster analysis",
+            "example": {
+                "variable_value": "average"
+            }
+        },
+        "string-input-1:1659:1628": {
+            "type": "string",
+            "default": "None",
+            "description": "Enter a value for imputation of missing values. If left blank, missing values will be omitted from the plot",
+            "example": "None"
+        },
+        "single-selection-1:1659:1626": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "lowess"
+                }
+            },
+            "description": "Choose type of regression line for the MA plot, default is \"none\"",
+            "example": {
+                "variable_value": "lowess"
+            }
+        },
+        "string-input-1:1659:1629": {
+            "type": "string",
+            "default": "Auto",
+            "description": "Enter manual x-axis limits in format \"min;max\". Default value is \"Auto\" for automatic x-axis limits.",
+            "example": "Auto"
+        },
+        "single-selection-1:1669:1674": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "cityblock"
+                }
+            },
+            "description": "Select the distance metric for cluster analysis",
+            "example": {
+                "variable_value": "cityblock"
+            }
+        },
+        "string-input-1:1710": {
+            "type": "string",
+            "default": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"
+        },
+        "single-selection-1:1657:1750:345:450": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "average"
+                }
+            },
+            "description": "Select the clustering method used during cluster analysis",
+            "example": {
+                "variable_value": "average"
+            }
+        },
+        "boolean-input-1513:1538:993": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "string-input-1504:897": {
+            "type": "string",
+            "default": ";",
+            "description": "Delimiter to be used to divide individual looked up values",
+            "example": ";"
+        },
+        "string-input-1:1657:1749:402:1527": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "double-input-1:1657:1750:422:451": {
+            "type": "number",
+            "default": 1.5,
+            "description": "Proportion of the IQR past the low and high quartiles to extend the plot whiskers. Points outside this range will be identified as outliers.",
+            "example": 1.5
+        },
+        "single-selection-1:1657:1749:310:454": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "the name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        },
+        "string-input-943:931:1719:1525": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1657:1749:378:1525": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1657:1750:422:1527": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "double-input-1:1657:1750:418:451": {
+            "type": "number",
+            "default": 1.5,
+            "description": "Proportion of the IQR past the low and high quartiles to extend the plot whiskers. Points outside this range will be identified as outliers.",
+            "example": 1.5
+        },
+        "string-input-1504:891": {
+            "type": "string",
+            "default": ";",
+            "description": "Delimiter used to divide individual IDs in top input table IDs column",
+            "example": ";"
+        },
+        "string-input-1:1608:1616": {
+            "type": "string",
+            "default": "250",
+            "description": "Enter desired height for a single scatterplot in the scatterplot matrix in pixels",
+            "example": "250"
+        },
+        "boolean-input-1:1659:1627": {
+            "type": "boolean",
+            "default": "true",
+            "description": "If checked, a diagonal y=x line will be displayed in the graph",
+            "example": true
+        },
+        "boolean-input-1513:1554": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data. Checked -> dataframe of processed columns will be returned only.",
+            "example": false
+        },
+        "string-input-1:1657:1750:284:1526": {
+            "type": "string",
+            "default": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"
+        },
+        "single-selection-1:1657:1750:310:454": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "the name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        },
+        "string-input-1:1657:1750:284:1525": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "double-input-1:1657:1749:309:455": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "string-input-1:1657:1750:311:1552": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "single-selection-1:1657:1750:378:454": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "the name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        },
+        "string-input-943:970:1525": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "double-input-1:1657:1750:309:455": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "boolean-input-1:1657:1530:309:862": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "string-input-1:1657:1530:310:995": {
+            "type": "string",
+            "default": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"
+        },
+        "string-input-1:1657:1749:281:1526": {
+            "type": "string",
+            "default": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"
+        },
+        "string-input-1:1657:1749:311:1552": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "double-input-1:1657:1749:386:451": {
+            "type": "number",
+            "default": 1.5,
+            "description": "Proportion of the IQR past the low and high quartiles to extend the plot whiskers. Points outside this range will be identified as outliers.",
+            "example": 1.5
+        },
+        "string-input-1:1657:1530:310:994": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1657:1749:281:1525": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1513:863": {
+            "type": "string",
+            "default": "",
+            "description": "suffix to add to processed column names (original data will be replaced if blank)",
+            "example": ""
+        },
+        "double-input-1:1657:1749:399:451": {
+            "type": "number",
+            "default": 1.5,
+            "description": "Proportion of the IQR past the low and high quartiles to extend the plot whiskers. Points outside this range will be identified as outliers.",
+            "example": 1.5
+        },
+        "string-input-1513:864": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "boolean-input-1504:900": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns; checked -> dataframe of processed columns will be returned only together with the input table 1 (top) IDs column",
+            "example": false
+        },
+        "string-input-1505:1532": {
+            "type": "string",
+            "default": "accession,id,reviewed,protein_name,mass,length,gene_primary,organism_name,go,go_p,go_f,go_c,go_id,cc_subcellular_location,protein_families,cc_interaction,sequence,xref_interpro,xref_pfam,xref_intact",
+            "description": "List of columns to retrieve from uniprot via their API provided as a list separated by comma \",\". Whitespaces are replaced by %20 with string replacer node",
+            "example": "accession,id,reviewed,protein_name,mass,length,gene_primary,organism_name,go,go_p,go_f,go_c,go_id,cc_subcellular_location,protein_families,cc_interaction,sequence,xref_interpro,xref_pfam,xref_intact"
+        },
+        "string-input-943:970:274:1526": {
+            "type": "string",
+            "default": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"
+        },
+        "single-selection-943:970:961:454": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "the name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        },
+        "string-input-1:1657:1530:309:864": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-943:970:274:1525": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1657:1530:309:863": {
+            "type": "string",
+            "default": "",
+            "description": "suffix to add to processed column names (original data will be replaced if blank)",
+            "example": ""
+        },
+        "string-input-1:1657:1749:284:1526": {
+            "type": "string",
+            "default": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"
+        },
+        "string-input-1:1657:1749:284:1525": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1608:1627": {
+            "type": "string",
+            "default": "5",
+            "description": "Enter a value for imputation of missing values. If left blank, missing values will be omitted from the plot",
+            "example": "5"
+        },
+        "string-input-1505:1535": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1657:1749:400:1527": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1657:1750:418:1527": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1657:1749:283:1528": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1657:1530:311:995": {
+            "type": "string",
+            "default": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"
+        },
+        "string-input-1:1608:1628": {
+            "type": "string",
+            "default": "Auto",
+            "description": "Enter manual x-axis limits in format \"min;max\". Default value is \"Auto\" for automatic x-axis limits.",
+            "example": "Auto"
+        },
+        "string-input-1:1657:1750:1527": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1608:1629": {
+            "type": "string",
+            "default": "Auto",
+            "description": "Enter manual y-axis limits in format \"min;max\". Default value is \"Auto\" for automatic y-axis limits.",
+            "example": "Auto"
+        },
+        "double-input-1:1657:1750:400:451": {
+            "type": "number",
+            "default": 1.5,
+            "description": "Proportion of the IQR past the low and high quartiles to extend the plot whiskers. Points outside this range will be identified as outliers.",
+            "example": 1.5
+        },
+        "double-input-1:1657:1749:310:455": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "boolean-input-1504:898": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to remove empty strings from the returned list of looked up values. Beware that the order of returned values will not correspond to the IDs order in the top table IDs column!",
+            "example": false
+        },
+        "string-input-1:1657:1750:283:1528": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "boolean-input-1504:899": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to return only set of unique values instead of full list of values including duplicates. Beware that the order of returned values will not correspond to the IDs order in the top table IDs column!",
+            "example": false
+        },
+        "double-input-1:1657:1749:400:451": {
+            "type": "number",
+            "default": 1.5,
+            "description": "Proportion of the IQR past the low and high quartiles to extend the plot whiskers. Points outside this range will be identified as outliers.",
+            "example": 1.5
+        },
+        "double-input-1:1657:1750:426:451": {
+            "type": "number",
+            "default": 1.5,
+            "description": "Proportion of the IQR past the low and high quartiles to extend the plot whiskers. Points outside this range will be identified as outliers.",
+            "example": 1.5
+        },
+        "string-input-1:1657:1750:378:1525": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "double-input-1:1657:1750:310:455": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "single-selection-1:1657:1750:282:446": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "cityblock"
+                }
+            },
+            "description": "Select the distance metric for cluster analysis",
+            "example": {
+                "variable_value": "cityblock"
+            }
+        },
+        "string-input-1513:1537:994": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "string-input-1:1659:1630": {
+            "type": "string",
+            "default": "-5;5",
+            "description": "Enter manual y-axis limits in format \"min;max\". Default value is \"Auto\" for automatic y-axis limits.",
+            "example": "-5;5"
+        },
+        "string-input-1:1663:1611": {
+            "type": "string",
+            "default": "Auto",
+            "description": "Enter desired dimensions for box plots in inches (format \"width;height\")",
+            "example": "Auto"
+        },
+        "single-selection-1:1657:1750:282:447": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "average"
+                }
+            },
+            "description": "Select the clustering method used during cluster analysis",
+            "example": {
+                "variable_value": "average"
+            }
+        },
+        "single-selection-1:1657:1749:282:446": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "cityblock"
+                }
+            },
+            "description": "Select the distance metric for cluster analysis",
+            "example": {
+                "variable_value": "cityblock"
+            }
+        },
+        "string-input-1504:1549": {
+            "type": "string",
+            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+        },
+        "single-selection-1:1657:1749:282:447": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "average"
+                }
+            },
+            "description": "Select the clustering method used during cluster analysis",
+            "example": {
+                "variable_value": "average"
+            }
+        },
+        "string-input-1513:1537:995": {
+            "type": "string",
+            "default": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": "/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"
+        }
+    }
+}
