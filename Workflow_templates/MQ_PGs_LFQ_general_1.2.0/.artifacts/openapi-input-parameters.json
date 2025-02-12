@@ -325,12 +325,12 @@
             "properties": {
                 "variable_value": {
                     "type": "string",
-                    "default": "euclidean"
+                    "default": "cityblock"
                 }
             },
             "description": "Select the distance metric for cluster analysis",
             "example": {
-                "variable_value": "euclidean"
+                "variable_value": "cityblock"
             }
         },
         "string-input-1:1657:1750:426:1527": {
@@ -604,12 +604,12 @@
             "properties": {
                 "variable_value": {
                     "type": "string",
-                    "default": "euclidean"
+                    "default": "cityblock"
                 }
             },
             "description": "Select the distance metric for cluster analysis",
             "example": {
-                "variable_value": "euclidean"
+                "variable_value": "cityblock"
             }
         },
         "single-selection-1:1657:1750:345:444": {

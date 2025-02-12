@@ -8,23 +8,14 @@
     <config key="model">
         <config key="column_selection-1601">
             <config key="variable_value">
-                <entry key="array-size" type="xint" value="9"/>
-                <entry key="0" type="xstring" value="1-1_1"/>
-                <entry key="1" type="xstring" value="1-1_2"/>
-                <entry key="2" type="xstring" value="1-1_3"/>
-                <entry key="3" type="xstring" value="10-1_1"/>
-                <entry key="4" type="xstring" value="10-1_2"/>
-                <entry key="5" type="xstring" value="10-1_3"/>
-                <entry key="6" type="xstring" value="100-1_1"/>
-                <entry key="7" type="xstring" value="100-1_2"/>
-                <entry key="8" type="xstring" value="100-1_3"/>
+                <entry key="array-size" type="xint" value="0"/>
             </config>
         </config>
         <config key="design-1610">
             <entry key="string" type="xstring" value="1_1,1_1,1_1,%%0001010_1,10_1,10_1,%%00010100_1,100_1,100_1"/>
         </config>
         <config key="subset_bool-1614">
-            <entry key="boolean" type="xboolean" value="false"/>
+            <entry key="boolean" type="xboolean" value="true"/>
         </config>
         <config key="subset_list-1615">
             <entry key="string" type="xstring" value="1_1,10_1,100_1,%%000101_1,+100_1"/>

@@ -78,10 +78,10 @@
                 <path d="M943 97 L1193 97 L1193 147 L943 147 L943 97 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath22">
-                <path d="M940 129 L1071 129 L1071 165 L940 165 L940 129 Z"/>
+                <path d="M939 129 L1072 129 L1072 165 L939 165 L939 129 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath23">
-                <path d="M911 145 L1196 145 L1196 250 L911 250 L911 145 Z"/>
+                <path d="M911 145 L1193 145 L1193 250 L911 250 L911 145 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath24">
                 <path d="M971 277 L1135 277 L1135 296 L971 296 L971 277 Z"/>
@@ -411,12 +411,12 @@
                   x="755" xml:space="preserve" y="191"
                   clip-path="url(#clipPath20)" stroke="none">as a flow variable</text><text x="944"
                   y="111" clip-path="url(#clipPath21)" fill="black"
-                  stroke="none" font-weight="bold" xml:space="preserve">select normalization method</text><text x="949"
+                  stroke="none" font-weight="bold" xml:space="preserve">select normalization method</text><text x="948"
                   y="127" clip-path="url(#clipPath21)" fill="black"
                   stroke="none" font-weight="bold" xml:space="preserve">for further data processing</text><text fill="black"
                   x="1050" xml:space="preserve" y="143"
                   clip-path="url(#clipPath22)" stroke="none"></text>
-            <text x="941" font-size="14px" y="159" clip-path="url(#clipPath23)"
+            <text x="940" font-size="14px" y="159" clip-path="url(#clipPath23)"
                   fill="black" stroke="none" xml:space="preserve">not normalized data and data </text><text x="912"
                   font-size="14px" y="177" clip-path="url(#clipPath23)"
                   fill="black" stroke="none" xml:space="preserve">already normalized in previously used</text><text x="931"
@@ -1186,12 +1186,12 @@ YII=" xlink:actuate="onLoad"/>
                   xml:space="preserve" y="191" clip-path="url(#clipPath20)"
                   font-weight="normal" stroke="none">as a flow variable</text><text x="944"
                   xml:space="preserve" y="111" clip-path="url(#clipPath21)"
-                  stroke="none">select normalization method</text><text x="949"
+                  stroke="none">select normalization method</text><text x="948"
                   xml:space="preserve" y="127" clip-path="url(#clipPath21)"
                   stroke="none">for further data processing</text><text x="1050"
                   xml:space="preserve" y="143" clip-path="url(#clipPath22)"
                   font-weight="normal" stroke="none"></text>
-            <text x="941" font-size="14px" y="159" clip-path="url(#clipPath23)"
+            <text x="940" font-size="14px" y="159" clip-path="url(#clipPath23)"
                   stroke="none" font-weight="normal" xml:space="preserve">not normalized data and data </text><text x="912"
                   font-size="14px" y="177" clip-path="url(#clipPath23)"
                   stroke="none" font-weight="normal" xml:space="preserve">already normalized in previously used</text><text x="931"
@@ -1812,28 +1812,10 @@ YII=" xlink:actuate="onLoad"/>
         <g fill="rgb(150,150,150)" text-rendering="optimizeLegibility"
            font-size="13px" stroke-linecap="butt" stroke="rgb(150,150,150)">
             <path fill="none"
-                  d="M1416 56 C1418 56 1422 56 1424 56 C1458 56 1503 47 1537 47 C1539 47 1543 47 1545 47"
+                  d="M1256 56 C1258 56 1262 56 1264 56 C1291 56 1330 56 1357 56 C1359 56 1363 56 1365 56"
                   fill-rule="evenodd" clip-path="url(#clipPath81)"/>
             <path fill="none"
-                  d="M1776 56 C1778 56 1782 56 1784 56 C1817 56 1864 56 1897 56 C1899 56 1903 56 1905 56"
-                  clip-path="url(#clipPath81)" fill-rule="evenodd"/>
-            <path fill="none"
-                  d="M836 56 C838 56 842 56 844 56 C895 56 966 56 1017 56 C1019 56 1023 56 1025 56"
-                  clip-path="url(#clipPath81)" fill-rule="evenodd"/>
-            <path fill="none"
-                  d="M496 56 C498 56 502 56 504 56 C531 56 570 56 597 56 C599 56 603 56 605 56"
-                  clip-path="url(#clipPath81)" fill-rule="evenodd"/>
-            <path fill="none"
-                  d="M96 56 C98 56 102 56 104 56 C125 56 156 56 177 56 C179 56 183 56 185 56"
-                  clip-path="url(#clipPath81)" fill-rule="evenodd"/>
-            <path fill="none"
-                  d="M236 47 C238 47 242 47 244 47 C260 47 281 56 297 56 C299 56 303 56 305 56"
-                  clip-path="url(#clipPath81)" fill-rule="evenodd"/>
-            <path fill="none"
                   d="M836 56 C838 56 842 56 844 56 C937 56 925 316 1018 316 C1020 316 1024 316 1026 316"
-                  clip-path="url(#clipPath81)" fill-rule="evenodd"/>
-            <path fill="none"
-                  d="M1496 207 C1498 207 1502 207 1504 207 C1547 207 1494 65 1537 65 C1539 65 1543 65 1545 65"
                   clip-path="url(#clipPath81)" fill-rule="evenodd"/>
             <path fill="none"
                   d="M356 56 C358 56 362 56 364 56 C385 56 416 56 437 56 C439 56 443 56 445 56"
@@ -1842,16 +1824,34 @@ YII=" xlink:actuate="onLoad"/>
                   d="M656 56 C658 56 662 56 664 56 C697 56 744 56 777 56 C779 56 783 56 785 56"
                   clip-path="url(#clipPath81)" fill-rule="evenodd"/>
             <path fill="none"
-                  d="M1076 56 C1078 56 1082 56 1084 56 C1117 56 1164 56 1197 56 C1199 56 1203 56 1205 56"
+                  d="M836 56 C838 56 842 56 844 56 C895 56 966 56 1017 56 C1019 56 1023 56 1025 56"
                   clip-path="url(#clipPath81)" fill-rule="evenodd"/>
             <path fill="none"
-                  d="M1256 56 C1258 56 1262 56 1264 56 C1291 56 1330 56 1357 56 C1359 56 1363 56 1365 56"
+                  d="M1416 56 C1418 56 1422 56 1424 56 C1472 56 1389 216 1437 216 C1439 216 1443 216 1445 216"
+                  clip-path="url(#clipPath81)" fill-rule="evenodd"/>
+            <path fill="none"
+                  d="M236 47 C238 47 242 47 244 47 C260 47 281 56 297 56 C299 56 303 56 305 56"
+                  clip-path="url(#clipPath81)" fill-rule="evenodd"/>
+            <path fill="none"
+                  d="M496 56 C498 56 502 56 504 56 C531 56 570 56 597 56 C599 56 603 56 605 56"
+                  clip-path="url(#clipPath81)" fill-rule="evenodd"/>
+            <path fill="none"
+                  d="M1416 56 C1418 56 1422 56 1424 56 C1458 56 1503 47 1537 47 C1539 47 1543 47 1545 47"
+                  clip-path="url(#clipPath81)" fill-rule="evenodd"/>
+            <path fill="none"
+                  d="M1496 207 C1498 207 1502 207 1504 207 C1547 207 1494 65 1537 65 C1539 65 1543 65 1545 65"
                   clip-path="url(#clipPath81)" fill-rule="evenodd"/>
             <path fill="none"
                   d="M1596 56 C1598 56 1602 56 1604 56 C1637 56 1684 56 1717 56 C1719 56 1723 56 1725 56"
                   clip-path="url(#clipPath81)" fill-rule="evenodd"/>
             <path fill="none"
-                  d="M1416 56 C1418 56 1422 56 1424 56 C1472 56 1389 216 1437 216 C1439 216 1443 216 1445 216"
+                  d="M1076 56 C1078 56 1082 56 1084 56 C1117 56 1164 56 1197 56 C1199 56 1203 56 1205 56"
+                  clip-path="url(#clipPath81)" fill-rule="evenodd"/>
+            <path fill="none"
+                  d="M96 56 C98 56 102 56 104 56 C125 56 156 56 177 56 C179 56 183 56 185 56"
+                  clip-path="url(#clipPath81)" fill-rule="evenodd"/>
+            <path fill="none"
+                  d="M1776 56 C1778 56 1782 56 1784 56 C1817 56 1864 56 1897 56 C1899 56 1903 56 1905 56"
                   clip-path="url(#clipPath81)" fill-rule="evenodd"/>
         </g>
     </g>
