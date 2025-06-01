@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="columns_to_process-1527">
+            <config key="columns">
+                <entry key="array-size" type="xint" value="24"/>
+                <entry key="0" type="xstring" value="013_M_Ctrl_7d_306"/>
+                <entry key="1" type="xstring" value="014_M_Ctrl_7d_307"/>
+                <entry key="2" type="xstring" value="015_M_Ctrl_7d_308"/>
+                <entry key="3" type="xstring" value="016_M_Ctrl_7d_309"/>
+                <entry key="4" type="xstring" value="017_M_Ctrl_7d_310"/>
+                <entry key="5" type="xstring" value="018_M_Ctrl_7d_311"/>
+                <entry key="6" type="xstring" value="019_M_Pilo_7d_312"/>
+                <entry key="7" type="xstring" value="020_M_Pilo_7d_313"/>
+                <entry key="8" type="xstring" value="021_M_Pilo_7d_314"/>
+                <entry key="9" type="xstring" value="022_M_Pilo_7d_315"/>
+                <entry key="10" type="xstring" value="023_M_Pilo_7d_316"/>
+                <entry key="11" type="xstring" value="024_M_Pilo_7d_317"/>
+                <entry key="12" type="xstring" value="049_F_Ctrl_7d_265"/>
+                <entry key="13" type="xstring" value="050_F_Ctrl_7d_266"/>
+                <entry key="14" type="xstring" value="051_F_Ctrl_7d_267"/>
+                <entry key="15" type="xstring" value="052_F_Ctrl_7d_268"/>
+                <entry key="16" type="xstring" value="053_F_Ctrl_7d_269"/>
+                <entry key="17" type="xstring" value="054_F_Ctrl_7d_270"/>
+                <entry key="18" type="xstring" value="055_F_Pilo_7d_271"/>
+                <entry key="19" type="xstring" value="056_F_Pilo_7d_272"/>
+                <entry key="20" type="xstring" value="057_F_Pilo_7d_273"/>
+                <entry key="21" type="xstring" value="058_F_Pilo_7d_274"/>
+                <entry key="22" type="xstring" value="059_F_Pilo_7d_275"/>
+                <entry key="23" type="xstring" value="060_F_Pilo_7d_276"/>
+            </config>
+            <config key="columnFilter">
+                <config key="columnFilter">
+                    <entry key="filter-type" type="xstring" value="name_pattern"/>
+                    <config key="included_names">
+                        <entry key="array-size" type="xint" value="142"/>
+                        <entry key="0" type="xstring" value="PG.MaxLFQ+001_M_Ctrl_24h_341_log2"/>
+                        <entry key="1" type="xstring" value="PG.MaxLFQ+002_M_Ctrl_24h_290_log2"/>
+                        <entry key="2" type="xstring" value="PG.MaxLFQ+003_M_Ctrl_24h_291_log2"/>
+                        <entry key="3" type="xstring" value="PG.MaxLFQ+004_M_Ctrl_24h_292_log2"/>
+                        <entry key="4" type="xstring" value="PG.MaxLFQ+005_M_Ctrl_24h_293_log2"/>
+                        <entry key="5" type="xstring" value="PG.MaxLFQ+006_M_Ctrl_24h_294_log2"/>
+                        <entry key="6" type="xstring" value="PG.MaxLFQ+007_M_Pilo_24h_298_log2"/>
+                        <entry key="7" type="xstring" value="PG.MaxLFQ+008_M_Pilo_24h_299_log2"/>
+                        <entry key="8" type="xstring" value="PG.MaxLFQ+009_M_Pilo_24h_300_log2"/>
+                        <entry key="9" type="xstring" value="PG.MaxLFQ+010_M_Pilo_24h_301_log2"/>
+                        <entry key="10" type="xstring" value="PG.MaxLFQ+011_M_Pilo_24h_302_log2"/>
+                        <entry key="11" type="xstring" value="PG.MaxLFQ+012_M_Pilo_24h_303_log2"/>
+                        <entry key="12" type="xstring" value="PG.MaxLFQ+013_M_Ctrl_7d_306_log2"/>
+                        <entry key="13" type="xstring" value="PG.MaxLFQ+014_M_Ctrl_7d_307_log2"/>
+                        <entry key="14" type="xstring" value="PG.MaxLFQ+015_M_Ctrl_7d_308_log2"/>
+                        <entry key="15" type="xstring" value="PG.MaxLFQ+016_M_Ctrl_7d_309_log2"/>
+                        <entry key="16" type="xstring" value="PG.MaxLFQ+017_M_Ctrl_7d_310_log2"/>
+                        <entry key="17" type="xstring" value="PG.MaxLFQ+018_M_Ctrl_7d_311_log2"/>
+                        <entry key="18" type="xstring" value="PG.MaxLFQ+019_M_Pilo_7d_312_log2"/>
+                        <entry key="19" type="xstring" value="PG.MaxLFQ+020_M_Pilo_7d_313_log2"/>
+                        <entry key="20" type="xstring" value="PG.MaxLFQ+021_M_Pilo_7d_314_log2"/>
+                        <entry key="21" type="xstring" value="PG.MaxLFQ+022_M_Pilo_7d_315_log2"/>
+                        <entry key="22" type="xstring" value="PG.MaxLFQ+023_M_Pilo_7d_316_log2"/>
+                        <entry key="23" type="xstring" value="PG.MaxLFQ+024_M_Pilo_7d_317_log2"/>
+                        <entry key="24" type="xstring" value="PG.MaxLFQ+025_M_Ctrl_3m_319_log2"/>
+                        <entry key="25" type="xstring" value="PG.MaxLFQ+026_M_Ctrl_3m_322_log2"/>
+                        <entry key="26" type="xstring" value="PG.MaxLFQ+027_M_Pilo_3m_324_log2"/>
+                        <entry key="27" type="xstring" value="PG.MaxLFQ+028_M_Pilo_3m_326_log2"/>
+                        <entry key="28" type="xstring" value="PG.MaxLFQ+029_M_Ctrl_3m_329_log2"/>
+                        <entry key="29" type="xstring" value="PG.MaxLFQ+030_M_Ctrl_3m_330_log2"/>
+                        <entry key="30" type="xstring" value="PG.MaxLFQ+031_M_Ctrl_3m_332_log2"/>
+                        <entry key="31" type="xstring" value="PG.MaxLFQ+032_M_Ctrl_3m_333_log2"/>
+                        <entry key="32" type="xstring" value="PG.MaxLFQ+033_M_Pilo_3m_334_log2"/>
+                        <entry key="33" type="xstring" value="PG.MaxLFQ+034_M_Pilo_3m_336_log2"/>
+                        <entry key="34" type="xstring" value="PG.MaxLFQ+035_M_Pilo_3m_339_log2"/>
+                        <entry key="35" type="xstring" value="PG.MaxLFQ+036_M_Pilo_3m_340_log2"/>
+                        <entry key="36" type="xstring" value="PG.MaxLFQ+037_F_Pilo_24h_253_log2"/>
+                        <entry key="37" type="xstring" value="PG.MaxLFQ+038_F_Pilo_24h_254_log2"/>
+                        <entry key="38" type="xstring" value="PG.MaxLFQ+039_F_Pilo_24h_255_log2"/>
+                        <entry key="39" type="xstring" value="PG.MaxLFQ+040_F_Pilo_24h_256_log2"/>
+                        <entry key="40" type="xstring" value="PG.MaxLFQ+041_F_Pilo_24h_257_log2"/>
+                        <entry key="41" type="xstring" value="PG.MaxLFQ+042_F_Pilo_24h_258_log2"/>
+                        <entry key="42" type="xstring" value="PG.MaxLFQ+043_F_Ctrl_24h_259_log2"/>
+                        <entry key="43" type="xstring" value="PG.MaxLFQ+044_F_Ctrl_24h_260_log2"/>
+                        <entry key="44" type="xstring" value="PG.MaxLFQ+045_F_Ctrl_24h_261_log2"/>
+                        <entry key="45" type="xstring" value="PG.MaxLFQ+046_F_Ctrl_24h_262_log2"/>
+                        <entry key="46" type="xstring" value="PG.MaxLFQ+047_F_Ctrl_24h_263_log2"/>
+                        <entry key="47" type="xstring" value="PG.MaxLFQ+048_F_Ctrl_24h_264_log2"/>
+                        <entry key="48" type="xstring" value="PG.MaxLFQ+049_F_Ctrl_7d_265_log2"/>
+                        <entry key="49" type="xstring" value="PG.MaxLFQ+050_F_Ctrl_7d_266_log2"/>
+                        <entry key="50" type="xstring" value="PG.MaxLFQ+051_F_Ctrl_7d_267_log2"/>
+                        <entry key="51" type="xstring" value="PG.MaxLFQ+052_F_Ctrl_7d_268_log2"/>
+                        <entry key="52" type="xstring" value="PG.MaxLFQ+053_F_Ctrl_7d_269_log2"/>
+                        <entry key="53" type="xstring" value="PG.MaxLFQ+054_F_Ctrl_7d_270_log2"/>
+                        <entry key="54" type="xstring" value="PG.MaxLFQ+055_F_Pilo_7d_271_log2"/>
+                        <entry key="55" type="xstring" value="PG.MaxLFQ+056_F_Pilo_7d_272_log2"/>
+                        <entry key="56" type="xstring" value="PG.MaxLFQ+057_F_Pilo_7d_273_log2"/>
+                        <entry key="57" type="xstring" value="PG.MaxLFQ+058_F_Pilo_7d_274_log2"/>
+                        <entry key="58" type="xstring" value="PG.MaxLFQ+059_F_Pilo_7d_275_log2"/>
+                        <entry key="59" type="xstring" value="PG.MaxLFQ+060_F_Pilo_7d_276_log2"/>
+                        <entry key="60" type="xstring" value="PG.MaxLFQ+061_F_Ctrl_3m_277_log2"/>
+                        <entry key="61" type="xstring" value="PG.MaxLFQ+062_F_Ctrl_3m_279_log2"/>
+                        <entry key="62" type="xstring" value="PG.MaxLFQ+063_F_Ctrl_3m_280_log2"/>
+                        <entry key="63" type="xstring" value="PG.MaxLFQ+064_F_Ctrl_3m_281_log2"/>
+                        <entry key="64" type="xstring" value="PG.MaxLFQ+065_F_Ctrl_3m_282_log2"/>
+                        <entry key="65" type="xstring" value="PG.MaxLFQ+066_F_Ctrl_3m_283_log2"/>
+                        <entry key="66" type="xstring" value="PG.MaxLFQ+067_F_Pilo_3m_284_log2"/>
+                        <entry key="67" type="xstring" value="PG.MaxLFQ+068_F_Pilo_3m_285_log2"/>
+                        <entry key="68" type="xstring" value="PG.MaxLFQ+069_F_Pilo_3m_286_log2"/>
+                        <entry key="69" type="xstring" value="PG.MaxLFQ+070_F_Pilo_3m_287_log2"/>
+                        <entry key="70" type="xstring" value="PG.MaxLFQ+071_F_Pilo_3m_288_log2"/>
+                        <entry key="71" type="xstring" value="PG.MaxLFQ+072_F_Pilo_3m_289_log2"/>
+                        <entry key="72" type="xstring" value="PG.MaxLFQ+073_M_Ctrl_6h_598_log2"/>
+                        <entry key="73" type="xstring" value="PG.MaxLFQ+074_M_Ctrl_6h_599_log2"/>
+                        <entry key="74" type="xstring" value="PG.MaxLFQ+075_M_Ctrl_6h_600_log2"/>
+                        <entry key="75" type="xstring" value="PG.MaxLFQ+076_M_Ctrl_6h_601_log2"/>
+                        <entry key="76" type="xstring" value="PG.MaxLFQ+077_M_Ctrl_6h_602_log2"/>
+                        <entry key="77" type="xstring" value="PG.MaxLFQ+078_M_Ctrl_6h_603_log2"/>
+                        <entry key="78" type="xstring" value="PG.MaxLFQ+079_M_Pilo_6h_604_log2"/>
+                        <entry key="79" type="xstring" value="PG.MaxLFQ+080_M_Pilo_6h_605_log2"/>
+                        <entry key="80" type="xstring" value="PG.MaxLFQ+081_M_Pilo_6h_606_log2"/>
+                        <entry key="81" type="xstring" value="PG.MaxLFQ+082_M_Pilo_6h_607_log2"/>
+                        <entry key="82" type="xstring" value="PG.MaxLFQ+083_M_Pilo_6h_608_log2"/>
+                        <entry key="83" type="xstring" value="PG.MaxLFQ+084_M_Pilo_6h_609_log2"/>
+                        <entry key="84" type="xstring" value="PG.MaxLFQ+085_F_Ctrl_6h_574_log2"/>
+                        <entry key="85" type="xstring" value="PG.MaxLFQ+086_F_Ctrl_6h_575_log2"/>
+                        <entry key="86" type="xstring" value="PG.MaxLFQ+087_F_Ctrl_6h_576_log2"/>
+                        <entry key="87" type="xstring" value="PG.MaxLFQ+088_F_Ctrl_6h_577_log2"/>
+                        <entry key="88" type="xstring" value="PG.MaxLFQ+089_F_Ctrl_6h_578_log2"/>
+                        <entry key="89" type="xstring" value="PG.MaxLFQ+090_F_Ctrl_6h_579_log2"/>
+                        <entry key="90" type="xstring" value="PG.MaxLFQ+091_F_Pilo_6h_580_log2"/>
+                        <entry key="91" type="xstring" value="PG.MaxLFQ+092_F_Pilo_6h_581_log2"/>
+                        <entry key="92" type="xstring" value="PG.MaxLFQ+093_F_Pilo_6h_582_log2"/>
+                        <entry key="93" type="xstring" value="PG.MaxLFQ+094_F_Pilo_6h_583_log2"/>
+                        <entry key="94" type="xstring" value="PG.MaxLFQ+095_F_Pilo_6h_584_log2"/>
+                        <entry key="95" type="xstring" value="PG.MaxLFQ+096_F_Pilo_6h_585_log2"/>
+                        <entry key="96" type="xstring" value="PG.MaxLFQ+097_M_Ctrl_24h_341_log2"/>
+                        <entry key="97" type="xstring" value="PG.MaxLFQ+098_M_Ctrl_24h_290_log2"/>
+                        <entry key="98" type="xstring" value="PG.MaxLFQ+099_M_Ctrl_24h_291_log2"/>
+                        <entry key="99" type="xstring" value="PG.MaxLFQ+100_M_Ctrl_24h_292_log2"/>
+                        <entry key="100" type="xstring" value="PG.MaxLFQ+101_M_Ctrl_24h_293_log2"/>
+                        <entry key="101" type="xstring" value="PG.MaxLFQ+102_M_Ctrl_24h_294_log2"/>
+                        <entry key="102" type="xstring" value="PG.MaxLFQ+103_M_Pilo_24h_298_log2"/>
+                        <entry key="103" type="xstring" value="PG.MaxLFQ+104_M_Pilo_24h_299_log2"/>
+                        <entry key="104" type="xstring" value="PG.MaxLFQ+105_M_Pilo_24h_300_log2"/>
+                        <entry key="105" type="xstring" value="PG.MaxLFQ+106_M_Pilo_24h_301_log2"/>
+                        <entry key="106" type="xstring" value="PG.MaxLFQ+107_M_Pilo_24h_302_log2"/>
+                        <entry key="107" type="xstring" value="PG.MaxLFQ+108_M_Pilo_24h_303_log2"/>
+                        <entry key="108" type="xstring" value="PG.MaxLFQ+109_F_Ctrl_24h_253_log2"/>
+                        <entry key="109" type="xstring" value="PG.MaxLFQ+110_F_Ctrl_24h_254_log2"/>
+                        <entry key="110" type="xstring" value="PG.MaxLFQ+111_F_Ctrl_24h_255_log2"/>
+                        <entry key="111" type="xstring" value="PG.MaxLFQ+112_F_Ctrl_24h_256_log2"/>
+                        <entry key="112" type="xstring" value="PG.MaxLFQ+113_F_Ctrl_24h_257_log2"/>
+                        <entry key="113" type="xstring" value="PG.MaxLFQ+114_F_Ctrl_24h_258_log2"/>
+                        <entry key="114" type="xstring" value="PG.MaxLFQ+115_F_Pilo_24h_259_log2"/>
+                        <entry key="115" type="xstring" value="PG.MaxLFQ+116_F_Pilo_24h_260_log2"/>
+                        <entry key="116" type="xstring" value="PG.MaxLFQ+117_F_Pilo_24h_261_log2"/>
+                        <entry key="117" type="xstring" value="PG.MaxLFQ+118_F_Pilo_24h_262_log2"/>
+                        <entry key="118" type="xstring" value="PG.MaxLFQ+119_F_Pilo_24h_263_log2"/>
+                        <entry key="119" type="xstring" value="PG.MaxLFQ+120_F_Pilo_24h_264_log2"/>
+                        <entry key="120" type="xstring" value="PG.MaxLFQ+121_F_Ctrl_3d_586_log2"/>
+                        <entry key="121" type="xstring" value="PG.MaxLFQ+122_F_Ctrl_3d_587_log2"/>
+                        <entry key="122" type="xstring" value="PG.MaxLFQ+123_F_Ctrl_3d_588_log2"/>
+                        <entry key="123" type="xstring" value="PG.MaxLFQ+124_F_Ctrl_3d_589_log2"/>
+                        <entry key="124" type="xstring" value="PG.MaxLFQ+125_F_Ctrl_3d_590_log2"/>
+                        <entry key="125" type="xstring" value="PG.MaxLFQ+126_F_Ctrl_3d_591_log2"/>
+                        <entry key="126" type="xstring" value="PG.MaxLFQ+127_F_Pilo_3d_592_log2"/>
+                        <entry key="127" type="xstring" value="PG.MaxLFQ+128_F_Pilo_3d_593_log2"/>
+                        <entry key="128" type="xstring" value="PG.MaxLFQ+129_F_Pilo_3d_594_log2"/>
+                        <entry key="129" type="xstring" value="PG.MaxLFQ+130_F_Pilo_3d_595_log2"/>
+                        <entry key="130" type="xstring" value="PG.MaxLFQ+131_F_Pilo_3d_596_log2"/>
+                        <entry key="131" type="xstring" value="PG.MaxLFQ+132_F_Pilo_3d_597_log2"/>
+                        <entry key="132" type="xstring" value="PG.MaxLFQ+133_M_Ctrl_3d_610_log2"/>
+                        <entry key="133" type="xstring" value="PG.MaxLFQ+134_M_Ctrl_3d_611_log2"/>
+                        <entry key="134" type="xstring" value="PG.MaxLFQ+135_M_Ctrl_3d_612_log2"/>
+                        <entry key="135" type="xstring" value="PG.MaxLFQ+136_M_Ctrl_3d_613_log2"/>
+                        <entry key="136" type="xstring" value="PG.MaxLFQ+137_M_Ctrl_3d_614_log2"/>
+                        <entry key="137" type="xstring" value="PG.MaxLFQ+138_M_Ctrl_3d_615_log2"/>
+                        <entry key="138" type="xstring" value="PG.MaxLFQ+140_M_Pilo_3d_617_log2"/>
+                        <entry key="139" type="xstring" value="PG.MaxLFQ+142_M_Pilo_3d_619_log2"/>
+                        <entry key="140" type="xstring" value="PG.MaxLFQ+143_M_Pilo_3d_620_log2"/>
+                        <entry key="141" type="xstring" value="PG.MaxLFQ+144_M_Pilo_3d_621_log2"/>
+                    </config>
+                    <config key="excluded_names">
+                        <entry key="array-size" type="xint" value="24"/>
+                        <entry key="0" type="xstring" value="013_M_Ctrl_7d_306"/>
+                        <entry key="1" type="xstring" value="014_M_Ctrl_7d_307"/>
+                        <entry key="2" type="xstring" value="015_M_Ctrl_7d_308"/>
+                        <entry key="3" type="xstring" value="016_M_Ctrl_7d_309"/>
+                        <entry key="4" type="xstring" value="017_M_Ctrl_7d_310"/>
+                        <entry key="5" type="xstring" value="018_M_Ctrl_7d_311"/>
+                        <entry key="6" type="xstring" value="019_M_Pilo_7d_312"/>
+                        <entry key="7" type="xstring" value="020_M_Pilo_7d_313"/>
+                        <entry key="8" type="xstring" value="021_M_Pilo_7d_314"/>
+                        <entry key="9" type="xstring" value="022_M_Pilo_7d_315"/>
+                        <entry key="10" type="xstring" value="023_M_Pilo_7d_316"/>
+                        <entry key="11" type="xstring" value="024_M_Pilo_7d_317"/>
+                        <entry key="12" type="xstring" value="049_F_Ctrl_7d_265"/>
+                        <entry key="13" type="xstring" value="050_F_Ctrl_7d_266"/>
+                        <entry key="14" type="xstring" value="051_F_Ctrl_7d_267"/>
+                        <entry key="15" type="xstring" value="052_F_Ctrl_7d_268"/>
+                        <entry key="16" type="xstring" value="053_F_Ctrl_7d_269"/>
+                        <entry key="17" type="xstring" value="054_F_Ctrl_7d_270"/>
+                        <entry key="18" type="xstring" value="055_F_Pilo_7d_271"/>
+                        <entry key="19" type="xstring" value="056_F_Pilo_7d_272"/>
+                        <entry key="20" type="xstring" value="057_F_Pilo_7d_273"/>
+                        <entry key="21" type="xstring" value="058_F_Pilo_7d_274"/>
+                        <entry key="22" type="xstring" value="059_F_Pilo_7d_275"/>
+                        <entry key="23" type="xstring" value="060_F_Pilo_7d_276"/>
+                    </config>
+                    <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
+                    <config key="name_pattern">
+                        <entry key="pattern" type="xstring" value="*"/>
+                        <entry key="type" type="xstring" value="Wildcard"/>
+                        <entry key="caseSensitive" type="xboolean" value="true"/>
+                        <entry key="excludeMatching" type="xboolean" value="false"/>
+                    </config>
+                    <config key="datatype">
+                        <config key="typelist">
+                            <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+                        </config>
+                    </config>
+                </config>
+            </config>
+        </config>
+        <config key="title-1544">
+            <entry key="string" type="xstring" value="UpSet plot"/>
+        </config>
+        <config key="subtitle-1545">
+            <entry key="string" type="xstring" value=""/>
+        </config>
+        <config key="upset_order-1546">
+            <config key="variable_value">
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="number of intersections"/>
+            </config>
+        </config>
+        <config key="operator-1547">
+            <config key="variable_value">
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="&gt;="/>
+            </config>
+        </config>
+        <config key="binary_threshold-1548">
+            <entry key="double" type="xdouble" value="0.1"/>
+        </config>
+        <config key="lower_binary_matrix_threshold-1549">
+            <entry key="integer" type="xint" value="0"/>
+        </config>
+        <config key="upset_nsets-1550">
+            <entry key="integer" type="xint" value="0"/>
+        </config>
+        <config key="upset_numberint-1551">
+            <entry key="integer" type="xint" value="30"/>
+        </config>
+        <config key="upset_empint-1552">
+            <entry key="boolean" type="xboolean" value="false"/>
+        </config>
+        <config key="prefix_to_remove-1553">
+            <entry key="string" type="xstring" value=""/>
+        </config>
+        <config key="suffix_to_remove-1554">
+            <entry key="string" type="xstring" value=""/>
+        </config>
+        <config key="text_size-1570">
+            <entry key="double" type="xdouble" value="2.0"/>
+        </config>
+        <config key="label_angle-1571">
+            <entry key="integer" type="xint" value="0"/>
+        </config>
+        <config key="main_bar_color-1572">
+            <config key="variable_value">
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="blue"/>
+            </config>
+        </config>
+        <config key="set_bar_color-1573">
+            <config key="variable_value">
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="red"/>
+            </config>
+        </config>
+        <config key="plot_size-1576">
+            <entry key="string" type="xstring" value=""/>
+        </config>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="subtitle-1545">
+                <config key="string">
+                    <entry key="used_variable" type="xstring" value="graph_subtitle"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
+            <config key="upset_order-1546">
+                <config key="variable_value">
+                    <entry key="used_variable" type="xstring" value="upset_order"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
+            <config key="operator-1547">
+                <config key="variable_value">
+                    <entry key="used_variable" type="xstring" value="upset_operator"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
+            <config key="binary_threshold-1548">
+                <config key="double">
+                    <entry key="used_variable" type="xstring" value="upset_binary_threshold"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
+            <config key="lower_binary_matrix_threshold-1549">
+                <config key="integer">
+                    <entry key="used_variable" type="xstring" value="upset_lower_binary_matrix_threshold"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
+            <config key="upset_nsets-1550">
+                <config key="integer">
+                    <entry key="used_variable" type="xstring" value="upset_upset_nsets"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
+            <config key="upset_numberint-1551">
+                <config key="integer">
+                    <entry key="used_variable" type="xstring" value="upset_numberint"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
+            <config key="upset_empint-1552">
+                <config key="boolean">
+                    <entry key="used_variable" type="xstring" value="upset_empint"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
+            <config key="text_size-1570">
+                <config key="double">
+                    <entry key="used_variable" type="xstring" value="upset_text_size"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
+            <config key="label_angle-1571">
+                <config key="integer">
+                    <entry key="used_variable" type="xstring" value="upset_label_angle"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
+            <config key="main_bar_color-1572">
+                <config key="variable_value">
+                    <entry key="used_variable" type="xstring" value="upset_main_bar_color"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
+            <config key="set_bar_color-1573">
+                <config key="variable_value">
+                    <entry key="used_variable" type="xstring" value="upset_set_bar_color"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
+            <config key="plot_size-1576">
+                <config key="string">
+                    <entry key="used_variable" type="xstring" value="upset_plot_size"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
+        </config>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value=""/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="1289"/>
+        <entry key="y-coordinate" type="xint" value="2041"/>
+        <entry key="width" type="xint" value="142"/>
+        <entry key="height" type="xint" value="17"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="10"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="workflow-file" type="xstring" value="workflow.knime"/>
+    <entry key="virtual-in-ID" type="xint" value="447"/>
+    <config key="inports">
+        <config key="inport_0">
+            <entry key="index" type="xint" value="0"/>
+            <config key="type">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+    </config>
+    <entry key="virtual-out-ID" type="xint" value="955"/>
+    <config key="outports">
+        <config key="outport_0">
+            <entry key="index" type="xint" value="0"/>
+            <config key="type">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.port.image.ImagePortObject"/>
+            </config>
+        </config>
+        <config key="outport_1">
+            <entry key="index" type="xint" value="1"/>
+            <config key="type">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+    </config>
+    <config key="metadata">
+        <entry key="description" type="xstring" value="Metanode generates a static UpSet plot from selected columns of the input table. %%00010%%00010UpSet plot is a tool for the visualization of dataset intersection. In contrast to Venn diagrams, UpSet plot allows displaying the intersections also for more than 6 datasets. %%00010%%00010During the metanode processing a binary matrix based on the user provided threshold and operator is computed. There is also a possility of setting a lower threshold which the rowsums will be compared to and then based on passing the threshold the particular rows will be filtered out.%%00010%%00010The vertical columns in a graph represent number of intersections, horizontal columns represent the size of particular dataset. The cells provide an information whether the particular dataset is a part of intersection (black color) or not (light grey color). %%00010%%00010Further details about the UpSet technique can be found here: https://caleydo.org/tools/upset/%%00010=================%%00010%%00010Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.%%00010%%00010KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)%%00010R 3.6.3 (The R consists of the following GNU General Public Licences. Licence terms are available here: https://www.r-project.org/Licenses/)%%00010R library UpSetR (The UpSetR consists of the following MIT license. Licence terms are available here: https://cran.r-project.org/web/licenses/MIT)%%00010Python 3 (The Python consists of the following Python 3 License. Licence terms are available here: https://docs.python.org/3/license.html)%%00010%%00010The metanode was created in KNIME 4.7.7 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 4.7.7a.%%00010%%00010=================%%00010%%00010This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.%%00010Version: 2.2.3 from 2024-10-11%%00010Contact person: Karolina Krystofova (karolina.krystofova@ceitec.muni.cz)%%00010More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes"/>
+        <config key="inports">
+            <config key="inport_0">
+                <entry key="name" type="xstring" value="Input table"/>
+                <entry key="description" type="xstring" value="Input table containing columns to be processed"/>
+                <entry key="index" type="xint" value="0"/>
+            </config>
+        </config>
+        <config key="outports">
+            <config key="outport_0">
+                <entry key="name" type="xstring" value="UpSet plot (static)"/>
+                <entry key="description" type="xstring" value="UpSet plot for the visualization of intersections between selected columns"/>
+                <entry key="index" type="xint" value="0"/>
+            </config>
+            <config key="outport_1">
+                <entry key="name" type="xstring" value="Binary matrix"/>
+                <entry key="description" type="xstring" value="Binary matrix used for the creation of the upset plot."/>
+                <entry key="index" type="xint" value="1"/>
+            </config>
+        </config>
+    </config>
+    <config key="workflow_template_information">
+        <entry key="role" type="xstring" value="Link"/>
+        <entry key="timestamp" type="xstring" value="2024-10-12 01:08:59 +0200"/>
+        <entry key="sourceURI" type="xstring" value="knime://LOCAL/gitfolders/KNIME_metanodes/Metanodes%20templates/Graphs/UpSet%20plot%20(static)"/>
+    </config>
+    <entry key="layoutJSON" type="xstring" value=""/>
+    <entry key="configurationLayoutJSON" type="xstring" value="{}"/>
+    <entry key="hideInWizard" type="xboolean" value="false"/>
+    <entry key="customCSS" type="xstring" value=""/>
+</config>
