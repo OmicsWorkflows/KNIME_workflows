@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack">
+        <config key="Variable_0">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="columns_to_process"/>
+            <entry key="class" type="xstring" value="STRINGARRAY"/>
+            <config key="value">
+                <entry key="array-size" type="xint" value="6"/>
+                <entry key="0" type="xstring" value="Lib.Q.Value (Min)+1_1"/>
+                <entry key="1" type="xstring" value="Lib.Q.Value (Min)+2_1"/>
+                <entry key="2" type="xstring" value="Lib.Q.Value (Min)+1_2"/>
+                <entry key="3" type="xstring" value="Lib.Q.Value (Min)+2_2"/>
+                <entry key="4" type="xstring" value="Lib.Q.Value (Min)+1_3"/>
+                <entry key="5" type="xstring" value="Lib.Q.Value (Min)+2_3"/>
+            </config>
+        </config>
+    </config>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="script" type="xstring" value="import knime.scripting.io as knio%%00010%%00010import numpy%%00010import pandas%%00010# This example script simply outputs the node's input table.%%00010%%00010# load input table%%00010input_table = knio.input_tables[0].to_pandas()%%00010%%00010sample_type_sum_name = &quot;sample types summary&quot;%%00010biol_repl_sum_name = &quot;biological replicates summary&quot;%%00010all_col_sum_name = &quot;all columns summary&quot;%%00010%%00010# separate string into list items%%00010def list_from_string(input):%%00010    # check of the input designs is done individualy, not at this point%%00010    #if input == &quot;none&quot;:%%00010        #raise Exception(&quot;Input was not provided for the requested operation, please check.&quot;)%%00010    list_new = input.split(&quot;,&quot;)%%00010    list_stripped = [i.strip() for i in list_new]%%00010    list_stripped_cleaned = list(filter(None, list_stripped))%%00010    return list_stripped_cleaned%%00010%%00010# replaces empty suffix by &quot;_&quot; to separate sample and statistics name%%00010if knio.flow_variables['suffix'] == '':%%00010    knio.flow_variables['suffix'] = '_'%%00010%%00010# summary types%%00010if knio.flow_variables['summaries'] != '':%%00010    sum_list = list_from_string(knio.flow_variables['summaries'])%%00010else:%%00010    sum_list = []%%00010%%00010# creates the list with requested statistics%%00010stats_list = list_from_string(knio.flow_variables['stats_selected'])%%00010%%00010# creates sample and replicate lists%%00010if biol_repl_sum_name in sum_list:%%00010    sample_list = list_from_string(knio.flow_variables['sample'])%%00010    sample_length = len(sample_list)%%00010    replicate_list = list_from_string(knio.flow_variables['replicate'])%%00010    replicate_length = len(replicate_list)%%00010elif sample_type_sum_name in sum_list:%%00010    sample_list = list_from_string(knio.flow_variables['sample'])%%00010    sample_length = len(sample_list)%%00010%%00010# checks if there is experiment design for sample or replicate summary of the same length as the number of columns provided%%00010## gets the length of the provided samples and replicate desing excluding the empty values%%00010#sample_length = len(list_from_string(knio.flow_variables['sample']))%%00010#replicate_length = len(list_from_string(knio.flow_variables['replicate']))%%00010if biol_repl_sum_name in sum_list:%%00010    if (replicate_length != len(input_table.columns) or sample_length != len(input_table.columns)):%%00010        raise Exception('Samples ({}) and or replicates ({}) experiment design lengths do not match the number of columns provided ({}). Please inspect the form settings'.format(sample_length, replicate_length, len(input_table.columns)))%%00010elif sample_type_sum_name in sum_list:%%00010    if sample_length != len(input_table.columns):%%00010        raise Exception('Samples experiment design length ({}) does not match the number of columns provided ({}). Please inspect the form settings'.format(sample_length, len(input_table.columns)))%%00010%%00010# creates empty dataframe for the stats to be computed%%00010stats_df = pandas.DataFrame()%%00010%%00010if knio.flow_variables['summaries'] == '':%%00010    raise Exception('No summary type selected. Please select at least one summary type to be returned.')%%00010%%00010group_dict = {}%%00010%%00010if all_col_sum_name in sum_list:%%00010    group_dict[all_col_sum_name] = [knio.flow_variables['prefix'] for x in input_table.columns]%%00010%%00010if sample_type_sum_name in sum_list:%%00010    group_dict[sample_type_sum_name] = [str(sample_list[i]) for i in range(len(input_table.columns))]%%00010#print(group_dict)%%00010%%00010if biol_repl_sum_name in sum_list:%%00010    group_dict[biol_repl_sum_name] = [str(sample_list[i])+'_'+str(replicate_list[i]) for i in range(len(input_table.columns))]%%00010#print(group_dict)%%00010%%00010# iterates through the dictionary of requested stats and adds one column with the given statistics per iteration%%00010for key in group_dict:%%00010    temp_table = input_table.copy()%%00010    temp_table.columns = group_dict[key]%%00010    temp_table_grouped = temp_table.groupby(by=temp_table.columns, axis=1)%%00010    colnames_list = list(temp_table_grouped.groups.keys())%%00010    %%00010    for stat in stats_list:%%00010        if stat == &quot;sum&quot;:%%00010            if key != all_col_sum_name:%%00010                for colname in colnames_list:%%00010                    stats_df[knio.flow_variables['prefix']+colname+knio.flow_variables['suffix']+stat] = getattr(temp_table_grouped.get_group(colname), stat)(min_count=1, axis=1)%%00010            else:%%00010                for colname in colnames_list:%%00010                    stats_df[knio.flow_variables['prefix']+'all'+knio.flow_variables['suffix']+stat] = getattr(temp_table_grouped.get_group(colname), stat)(min_count=1, axis=1)%%00010        else:%%00010            if key != all_col_sum_name:%%00010                for colname in colnames_list:%%00010                    stats_df[knio.flow_variables['prefix']+colname+knio.flow_variables['suffix']+stat] = getattr(temp_table_grouped.get_group(colname), stat)(axis=1)%%00010            else:%%00010                for colname in colnames_list:%%00010                    stats_df[knio.flow_variables['prefix']+'all'+knio.flow_variables['suffix']+stat] = getattr(temp_table_grouped.get_group(colname), stat)(axis=1)%%00010%%00010knio.output_tables[0] = knio.Table.from_pandas(stats_df)%%00010"/>
+        <entry key="python3_command" type="xstring" value=""/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="org.knime.python3.scripting.nodes.script.PythonScriptNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Python Script"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Python 3 - Scripting Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python3.scripting.nodes"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.1.v202301311311"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Python Integration"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python3.scripting.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.3.v202305111430"/>
+    <config key="factory_settings"/>
+    <config key="node_creation_config">
+        <config key="Input object (pickled)"/>
+        <config key="Input table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output image"/>
+        <config key="Output object (pickled)"/>
+    </config>
+    <entry key="name" type="xstring" value="Python Script"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>
