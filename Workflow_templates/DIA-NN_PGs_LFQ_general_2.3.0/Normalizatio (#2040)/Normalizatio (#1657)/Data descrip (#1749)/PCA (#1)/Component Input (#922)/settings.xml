@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="variable-filter">
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
+            <config key="included_names">
+                <entry key="array-size" type="xint" value="0"/>
+            </config>
+            <config key="excluded_names">
+                <entry key="array-size" type="xint" value="0"/>
+            </config>
+            <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value=""/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+            </config>
+        </config>
+        <entry key="variable-prefix" type="xstring" isnull="true" value=""/>
+        <config key="port-names">
+            <entry key="array-size" type="xint" value="1"/>
+            <entry key="0" type="xstring" value="Data"/>
+        </config>
+        <config key="port-descriptions">
+            <entry key="array-size" type="xint" value="1"/>
+            <entry key="0" type="xstring" value="Data containing columns for PCA plotting"/>
+        </config>
+        <entry key="sub-node-description" type="xstring" value="Metanode use principle component analysis (PCA) to data dimension reduction. It could be used to identify outliers and clusters and for description and vizualization of variables relations.%%00010%%00010Metanode creates PCA plot on selected columns by default, using n rows with the most variable values in individual columns (default n=500). Most variable rows are considered based on the standard deviation (SD).%%00010%%00010WARNING: PCA needs data without missing values, so all rows (or columns in case of PCA on rows) with one or more missing values are removed! You can use imputation step if applicable prior the PCA metanode.%%00010%%00010It is possible to set data standardization (standardization needs data without missing values and zeros) prior to PCA. Standardization will scale data so as to have mean of 0 and unit variance and is recommended for cases where variables might have different units.%%00010%%00010PCA can be done on rows or columns (rows represent proteins/genes/peptides...; columns represent samples). PCA on rows require you to select also annotation column in the form (annotations column should contain unique value in all rows, without any missing value). Column header is used for annotation in case of the PCA on columns. Annotations are possible to be switched off in the form as well.%%00010%%00010Points can be grouped so as to be coloured by the same colour. In case of PCA on columns, the groups need to be set manually in format &quot;A, A, B, B&quot;. In case of PCA on rows, it is necessary to select a column containing information about groups.%%00010%%00010Note: any data preprocessing (e.g. normalization, missing values imputation) should be done prior the metanode usage!%%00010%%00010=================%%00010%%00010Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.%%00010%%00010KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html) %%00010%%00010Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3.6/license.html) %%00010%%00010R 4.2.0 (The R consists of the following GNU General Public Licence. Licence terms are available here: https://www.r-project.org/Licenses/)%%00010%%00010R library factoextra (consists of the following  GNU General Public Licence.  Licence terms are available here: https://cran.r-project.org/web/licenses/GPL-2%%00010%%00010R library ggplot2 (consists of the following GNU General Public Licence. Licence terms are available here: https://ggplot2.tidyverse.org/LICENSE-text.html)%%00010%%00010R library ggrepel (consists of the following GNU General Public Licence Licence terms are available here: . Licence terms are available here: https://cran.r-project.org/web/packages/ggrepel/LICENSE)%%00010%%00010The metanode was created in KNIME 4.7.7 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 4.7.7a%%00010%%00010=================%%00010%%00010This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.%%00010Version: 3.2.0 from 2024-11-13%%00010Contact person: Karolina Krystofova (karolina.krystofova@ceitec.muni.cz)%%00010More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="isDeletable" type="xboolean" value="false"/>
+    <entry key="factory" type="xstring" value="org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Component Input"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Core API"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.core"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.7.v202308161346"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME AP Core feature"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.core.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.7.v202308161346"/>
+    <config key="factory_settings">
+        <config key="port_0">
+            <entry key="index" type="xint" value="0"/>
+            <config key="type">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+    </config>
+    <entry key="name" type="xstring" value="Component Input"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="true"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.node.port.inactive.InactiveBranchPortObjectSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.port.inactive.InactiveBranchPortObject"/>
+            <entry key="port_object_summary" type="xstring" value="Inactive Port Object"/>
+            <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
+            <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

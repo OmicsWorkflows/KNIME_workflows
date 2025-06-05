@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack">
+        <config key="Variable_0">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="columns_to_group_with"/>
+            <entry key="class" type="xstring" value="STRINGARRAY"/>
+            <config key="value">
+                <entry key="array-size" type="xint" value="4"/>
+                <entry key="0" type="xstring" value="Stripped.Sequence"/>
+                <entry key="1" type="xstring" value="Protein.Ids"/>
+                <entry key="2" type="xstring" value="Protein.Group"/>
+                <entry key="3" type="xstring" value="Lib.PG.Q.Value"/>
+            </config>
+        </config>
+        <config key="Variable_1">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="design_sample_names_list"/>
+            <entry key="class" type="xstring" value="STRINGARRAY"/>
+            <config key="value">
+                <entry key="array-size" type="xint" value="6"/>
+                <entry key="0" type="xstring" value="1_1"/>
+                <entry key="1" type="xstring" value="2_1"/>
+                <entry key="2" type="xstring" value="1_2"/>
+                <entry key="3" type="xstring" value="2_2"/>
+                <entry key="4" type="xstring" value="1_3"/>
+                <entry key="5" type="xstring" value="2_3"/>
+            </config>
+        </config>
+        <config key="Variable_2">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="python3command"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"/>
+        </config>
+        <config key="Variable_3">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="comp_names_peptide_norm"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="s1,s2,s1+s2"/>
+        </config>
+        <config key="Variable_4">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="comp_names_LIMMA"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="s2-s1,s1-s2"/>
+        </config>
+        <config key="Variable_5">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="comp_names_ratio"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="2_1/1_1,2_2/1_2,2_3/1_3"/>
+        </config>
+        <config key="Variable_6">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="comp_names_protein_norm"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="s1,s2,s1+s2"/>
+        </config>
+        <config key="Variable_7">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="design_run_names"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti,IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti,IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti,IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti,IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti,IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti"/>
+        </config>
+        <config key="Variable_8">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="design_sample_names"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="1_1,2_1,1_2,2_2,1_3,2_3"/>
+        </config>
+        <config key="Variable_9">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="design_sample_group_names"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="s1,s2,s1,s2,s1,s2"/>
+        </config>
+        <config key="Variable_10">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="design_sample_prep_batch_names"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="1,1,2,2,3,3"/>
+        </config>
+        <config key="Variable_11">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="Number Rows"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="2"/>
+        </config>
+        <config key="Variable_12">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="Number Columns"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="7"/>
+        </config>
+        <config key="Variable_13">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="remove_runs_switch"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="1"/>
+        </config>
+        <config key="Variable_14">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="used_mod_counter"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="0"/>
+        </config>
+        <config key="Variable_15">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="modifications_count"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="0"/>
+        </config>
+        <config key="Variable_16">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="sequence_mods_switch"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="0"/>
+        </config>
+        <config key="Variable_17">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="mbr (index)"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="0"/>
+        </config>
+        <config key="Variable_18">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="mbr"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="MBR on"/>
+        </config>
+        <config key="Variable_19">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="threshold_prec_global_q"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="0.01"/>
+        </config>
+        <config key="Variable_20">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="threshold_prec_run_q"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="1.0"/>
+        </config>
+        <config key="Variable_21">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="threshold_prec_run_pep"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="1.0"/>
+        </config>
+        <config key="Variable_22">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="threshold_pg_global_q"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="0.01"/>
+        </config>
+        <config key="Variable_23">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="threshold_pg_run_q"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="1.0"/>
+        </config>
+        <config key="Variable_24">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="threshold_quantity_quality"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="0.0"/>
+        </config>
+        <config key="Variable_25">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="threshold_pgmaxlfq_quality"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="0.0"/>
+        </config>
+        <config key="Variable_26">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="modifications"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value=""/>
+        </config>
+        <config key="Variable_27">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="use_threshold_pg_run_q"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="1"/>
+        </config>
+        <config key="Variable_28">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="use_threshold_pg_global_q"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="0"/>
+        </config>
+        <config key="Variable_29">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="use_threshold_prec_run_pep"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="1"/>
+        </config>
+        <config key="Variable_30">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="use_threshold_prec_run_q"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="1"/>
+        </config>
+        <config key="Variable_31">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="use_threshold_prec_global_q"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="0"/>
+        </config>
+        <config key="Variable_32">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="use_threshold_quantity_quality"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="1"/>
+        </config>
+        <config key="Variable_33">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="use_threshold_pgmaxlfq_quality"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="1"/>
+        </config>
+        <config key="Variable_34">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="columns_to_group_with"/>
+            <entry key="class" type="xstring" value="STRINGARRAY"/>
+            <config key="value">
+                <entry key="array-size" type="xint" value="4"/>
+                <entry key="0" type="xstring" value="Stripped.Sequence"/>
+                <entry key="1" type="xstring" value="Protein.Ids"/>
+                <entry key="2" type="xstring" value="Protein.Group"/>
+                <entry key="3" type="xstring" value="Lib.PG.Q.Value"/>
+            </config>
+        </config>
+        <config key="Variable_35">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="design_sample_names_list"/>
+            <entry key="class" type="xstring" value="STRINGARRAY"/>
+            <config key="value">
+                <entry key="array-size" type="xint" value="6"/>
+                <entry key="0" type="xstring" value="1_1"/>
+                <entry key="1" type="xstring" value="2_1"/>
+                <entry key="2" type="xstring" value="1_2"/>
+                <entry key="3" type="xstring" value="2_2"/>
+                <entry key="4" type="xstring" value="1_3"/>
+                <entry key="5" type="xstring" value="2_3"/>
+            </config>
+        </config>
+        <config key="Variable_36">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="python3command"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"/>
+        </config>
+        <config key="Variable_37">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="comp_names_peptide_norm"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="s1,s2,s1+s2"/>
+        </config>
+        <config key="Variable_38">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="comp_names_LIMMA"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="s2-s1,s1-s2"/>
+        </config>
+        <config key="Variable_39">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="comp_names_ratio"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="2_1/1_1,2_2/1_2,2_3/1_3"/>
+        </config>
+        <config key="Variable_40">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="comp_names_protein_norm"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="s1,s2,s1+s2"/>
+        </config>
+        <config key="Variable_41">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="design_run_names"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti,IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti,IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti,IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti,IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti,IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti"/>
+        </config>
+        <config key="Variable_42">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="design_sample_names"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="1_1,2_1,1_2,2_2,1_3,2_3"/>
+        </config>
+        <config key="Variable_43">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="design_sample_group_names"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="s1,s2,s1,s2,s1,s2"/>
+        </config>
+        <config key="Variable_44">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="design_sample_prep_batch_names"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="1,1,2,2,3,3"/>
+        </config>
+        <config key="Variable_45">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="Number Rows"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="2"/>
+        </config>
+        <config key="Variable_46">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="Number Columns"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="7"/>
+        </config>
+        <config key="Variable_47">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="remove_runs_switch"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="1"/>
+        </config>
+        <config key="Variable_48">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="used_mod_counter"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="0"/>
+        </config>
+        <config key="Variable_49">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="modifications_count"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="0"/>
+        </config>
+        <config key="Variable_50">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="sequence_mods_switch"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="0"/>
+        </config>
+        <config key="Variable_51">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="mbr (index)"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="0"/>
+        </config>
+        <config key="Variable_52">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="mbr"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="MBR on"/>
+        </config>
+        <config key="Variable_53">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="threshold_prec_global_q"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="0.01"/>
+        </config>
+        <config key="Variable_54">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="threshold_prec_run_q"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="1.0"/>
+        </config>
+        <config key="Variable_55">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="threshold_prec_run_pep"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="1.0"/>
+        </config>
+        <config key="Variable_56">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="threshold_pg_global_q"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="0.01"/>
+        </config>
+        <config key="Variable_57">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="threshold_pg_run_q"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="1.0"/>
+        </config>
+        <config key="Variable_58">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="threshold_quantity_quality"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="0.0"/>
+        </config>
+        <config key="Variable_59">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="threshold_pgmaxlfq_quality"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="0.0"/>
+        </config>
+        <config key="Variable_60">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="modifications"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value=""/>
+        </config>
+        <config key="Variable_61">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="use_threshold_pg_run_q"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="1"/>
+        </config>
+        <config key="Variable_62">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="use_threshold_pg_global_q"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="0"/>
+        </config>
+        <config key="Variable_63">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="use_threshold_prec_run_pep"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="1"/>
+        </config>
+        <config key="Variable_64">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="use_threshold_prec_run_q"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="1"/>
+        </config>
+        <config key="Variable_65">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="use_threshold_prec_global_q"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="0"/>
+        </config>
+        <config key="Variable_66">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="use_threshold_quantity_quality"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="1"/>
+        </config>
+        <config key="Variable_67">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="use_threshold_pgmaxlfq_quality"/>
+            <entry key="class" type="xstring" value="INTEGER"/>
+            <entry key="value" type="xint" value="1"/>
+        </config>
+    </config>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="variable-filter">
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
+            <config key="included_names">
+                <entry key="array-size" type="xint" value="21"/>
+                <entry key="0" type="xstring" value="comp_names_peptide_norm"/>
+                <entry key="1" type="xstring" value="comp_names_LIMMA"/>
+                <entry key="2" type="xstring" value="comp_names_ratio"/>
+                <entry key="3" type="xstring" value="comp_names_protein_norm"/>
+                <entry key="4" type="xstring" value="design_sample_names_list"/>
+                <entry key="5" type="xstring" value="design_run_names"/>
+                <entry key="6" type="xstring" value="design_sample_names"/>
+                <entry key="7" type="xstring" value="design_sample_group_names"/>
+                <entry key="8" type="xstring" value="design_sample_prep_batch_names"/>
+                <entry key="9" type="xstring" value="mbr (index)"/>
+                <entry key="10" type="xstring" value="mbr"/>
+                <entry key="11" type="xstring" value="threshold_prec_global_q"/>
+                <entry key="12" type="xstring" value="threshold_prec_run_q"/>
+                <entry key="13" type="xstring" value="threshold_prec_run_pep"/>
+                <entry key="14" type="xstring" value="threshold_pg_global_q"/>
+                <entry key="15" type="xstring" value="threshold_pg_run_q"/>
+                <entry key="16" type="xstring" value="use_threshold_pg_run_q"/>
+                <entry key="17" type="xstring" value="use_threshold_pg_global_q"/>
+                <entry key="18" type="xstring" value="use_threshold_prec_run_pep"/>
+                <entry key="19" type="xstring" value="use_threshold_prec_run_q"/>
+                <entry key="20" type="xstring" value="use_threshold_prec_global_q"/>
+            </config>
+            <config key="excluded_names">
+                <entry key="array-size" type="xint" value="0"/>
+            </config>
+            <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value=""/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+            </config>
+        </config>
+        <entry key="variable-prefix" type="xstring" isnull="true" value=""/>
+        <config key="port-names">
+            <entry key="array-size" type="xint" value="1"/>
+            <entry key="0" type="xstring" value=""/>
+        </config>
+        <config key="port-descriptions">
+            <entry key="array-size" type="xint" value="1"/>
+            <entry key="0" type="xstring" value=""/>
+        </config>
+        <entry key="sub-node-description" type="xstring" value="Metanode for the update/creation of the flow variables holding e.g. experimental design and or comparisons to be made.%%00010%%00010Check the box prior the given flow variable setting if you want to get the value updated by the metanode!%%00010%%00010Connect the metanode using the input and 1st outputtable connections. Second and third output tables presenting flow variables are mainly for easier validation of the metanode output.%%00010%%00010================= %%00010%%00010Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms. %%00010%%00010KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html) %%00010Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3.6/license.html) %%00010%%00010The metanode was created in KNIME 4.7.7 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 4.7.7a.%%00010%%00010================= %%00010%%00010This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html. %%00010Version: 1.0.0 from 2025-06-01%%00010Contact person: David Potesil (david.potesil@ceitec.muni.cz) %%00010More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes."/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="isDeletable" type="xboolean" value="false"/>
+    <entry key="factory" type="xstring" value="org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Component Input"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Core API"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.core"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.7.v202308161346"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME AP Core feature"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.core.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.7.v202308161346"/>
+    <config key="factory_settings">
+        <config key="port_0">
+            <entry key="index" type="xint" value="0"/>
+            <config key="type">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+    </config>
+    <entry key="name" type="xstring" value="Component Input"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 324, Cols: 139"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="bb3888c1-2621-4dce-a6e8-3b71f5aa8255"/>
+    </config>
+</config>
