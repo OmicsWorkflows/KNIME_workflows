@@ -103,7 +103,7 @@
         </config>
     </config>
     <config key="metadata">
-        <entry key="description" type="xstring" value="Reworked histone statistics metanode, built upon original script by Ivana Ihnatova.%%00010%%00010Version: 1.2.2 from 2025-07-30"/>
+        <entry key="description" type="xstring" value="Reworked histone statistics metanode, built upon original script by Ivana Ihnatova.%%00010%%00010Version: 1.2.3 from 2025-08-04"/>
         <config key="inports">
             <config key="inport_0">
                 <entry key="name" type="xstring" value="Input table"/>
@@ -126,7 +126,7 @@
     </config>
     <config key="workflow_template_information">
         <entry key="role" type="xstring" value="Link"/>
-        <entry key="timestamp" type="xstring" value="2025-07-30 15:45:46 +0200"/>
+        <entry key="timestamp" type="xstring" value="2025-08-04 14:09:36 +0200"/>
         <entry key="sourceURI" type="xstring" value="knime://LOCAL/gitfolders/KNIME_metanodes/Metanodes%20templates/Statistics/Relative%20data%20statistics"/>
     </config>
     <entry key="layoutJSON" type="xstring" value=""/>

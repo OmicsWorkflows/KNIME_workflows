@@ -5173,7 +5173,27 @@ YII=" xlink:actuate="onLoad"/>
             <polygon fill="black" clip-path="url(#clipPath234)"
                      points=" 1696 794 1705 798 1696 803" stroke="none"/>
             <path fill="none"
-                  d="M2224 317 C2226 317 2230 317 2232 317 C2253 317 2283 317 2304 317 C2306 317 2310 317 2312 317"
+                  d="M2484 306 C2486 306 2490 306 2492 306 C2604 306 2733 436 2845 436 C2847 436 2851 436 2853 436"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M1803 317 C1805 317 1809 317 1811 317 C1838 317 1877 317 1904 317 C1906 317 1910 317 1912 317"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M203 836 C205 836 209 836 211 836 C246 836 250 745 285 745 C287 745 291 745 293 745"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M385 306 C387 306 391 306 393 306 C523 306 155 727 285 727 C287 727 291 727 293 727"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M463 1236 C465 1236 469 1236 471 1236 C505 1236 551 1236 585 1236 C587 1236 591 1236 593 1236"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M2582 166 C2584 166 2588 166 2590 166 C2623 166 2491 77 2524 77 C2526 77 2530 77 2532 77"
                   stroke-width="1" clip-path="url(#clipPath235)"
                   fill-rule="evenodd" stroke="rgb(150,150,150)"/>
             <path fill="none"
@@ -5181,19 +5201,27 @@ YII=" xlink:actuate="onLoad"/>
                   stroke-width="1" clip-path="url(#clipPath235)"
                   fill-rule="evenodd" stroke="rgb(150,150,150)"/>
             <path fill="none"
-                  d="M463 1477 C465 1477 469 1477 471 1477 C505 1477 551 1477 585 1477 C587 1477 591 1477 593 1477"
+                  d="M2903 166 C2905 166 2909 166 2911 166 C2944 166 2812 77 2845 77 C2847 77 2851 77 2853 77"
                   stroke-width="1" clip-path="url(#clipPath235)"
                   fill-rule="evenodd" stroke="rgb(150,150,150)"/>
             <path fill="none"
-                  d="M544 836 C546 836 550 836 552 836 C755 836 -58 1377 145 1377 C147 1377 151 1377 153 1377"
+                  d="M2085 787 C2087 787 2091 787 2093 787 C2126 787 2171 797 2204 797 C2206 797 2210 797 2212 797"
                   stroke-width="1" clip-path="url(#clipPath235)"
                   fill-rule="evenodd" stroke="rgb(150,150,150)"/>
             <path fill="none"
-                  d="M2484 306 C2486 306 2490 306 2492 306 C2531 306 2485 177 2524 177 C2526 177 2530 177 2532 177"
+                  d="M124 257 C126 257 130 257 132 257 C191 257 266 297 325 297 C327 297 331 297 333 297"
                   stroke-width="1" clip-path="url(#clipPath235)"
                   fill-rule="evenodd" stroke="rgb(150,150,150)"/>
             <path fill="none"
-                  d="M1544 317 C1546 317 1550 317 1552 317 C1573 317 1603 317 1624 317 C1626 317 1630 317 1632 317"
+                  d="M1963 317 C1965 317 1969 317 1971 317 C1993 317 2023 306 2045 306 C2047 306 2051 306 2053 306"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M124 117 C126 117 130 117 132 117 C149 117 174 118 191 118 C193 118 197 118 199 118"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M2742 166 C2744 166 2748 166 2750 166 C2783 166 2652 77 2685 77 C2687 77 2691 77 2693 77"
                   stroke-width="1" clip-path="url(#clipPath235)"
                   fill-rule="evenodd" stroke="rgb(150,150,150)"/>
             <path fill="none"
@@ -5205,15 +5233,7 @@ YII=" xlink:actuate="onLoad"/>
                   stroke-width="1" clip-path="url(#clipPath235)"
                   fill-rule="evenodd" stroke="rgb(150,150,150)"/>
             <path fill="none"
-                  d="M124 257 C126 257 130 257 132 257 C191 257 266 297 325 297 C327 297 331 297 333 297"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M124 117 C126 117 130 117 132 117 C149 117 174 118 191 118 C193 118 197 118 199 118"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M2085 787 C2087 787 2091 787 2093 787 C2126 787 2171 797 2204 797 C2206 797 2210 797 2212 797"
+                  d="M2484 306 C2486 306 2490 306 2492 306 C2532 306 2484 436 2524 436 C2526 436 2530 436 2532 436"
                   stroke-width="1" clip-path="url(#clipPath235)"
                   fill-rule="evenodd" stroke="rgb(150,150,150)"/>
             <path fill="none"
@@ -5221,131 +5241,7 @@ YII=" xlink:actuate="onLoad"/>
                   stroke-width="1" clip-path="url(#clipPath235)"
                   fill-rule="evenodd" stroke="rgb(150,150,150)"/>
             <path fill="none"
-                  d="M203 1145 C205 1145 209 1145 211 1145 C268 1145 347 1145 404 1145 C406 1145 410 1145 412 1145"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M2363 317 C2365 317 2369 317 2371 317 C2386 317 2409 317 2424 317 C2426 317 2430 317 2432 317"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M203 836 C205 836 209 836 211 836 C246 836 250 745 285 745 C287 745 291 745 293 745"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M124 377 C126 377 130 377 132 377 C193 377 264 306 325 306 C327 306 331 306 333 306"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M203 1126 C205 1126 209 1126 211 1126 C251 1126 245 1238 285 1238 C320 1238 369 1236 404 1236 C406 1236 410 1236 412 1236"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M2060 518 C2062 518 2066 518 2068 518 C2126 518 1987 326 2045 326 C2047 326 2051 326 2053 326"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M1803 957 C1805 957 1809 957 1811 957 C1857 957 1799 806 1845 806 C1847 806 1851 806 1853 806"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M2484 306 C2486 306 2490 306 2492 306 C2532 306 2484 436 2524 436 C2526 436 2530 436 2532 436"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M363 117 C365 117 369 117 371 117 C398 117 437 117 464 117 C466 117 470 117 472 117"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M544 836 C546 836 550 836 552 836 C703 836 -6 1136 145 1136 C147 1136 151 1136 153 1136"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M203 1126 C205 1126 209 1126 211 1126 C268 1126 347 1127 404 1127 C406 1127 410 1127 412 1127"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M385 287 C387 287 391 287 393 287 C426 287 471 297 504 297 C506 297 510 297 512 297"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M463 1236 C465 1236 469 1236 471 1236 C505 1236 551 1236 585 1236 C587 1236 591 1236 593 1236"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M124 497 C126 497 130 497 132 497 C211 497 246 317 325 317 C327 317 331 317 333 317"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M1803 317 C1805 317 1809 317 1811 317 C1838 317 1877 317 1904 317 C1906 317 1910 317 1912 317"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M385 306 C387 306 391 306 393 306 C523 306 155 727 285 727 C287 727 291 727 293 727"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M2582 166 C2584 166 2588 166 2590 166 C2623 166 2491 77 2524 77 C2526 77 2530 77 2532 77"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M1703 797 C1705 797 1709 797 1711 797 C1751 797 1805 787 1845 787 C1847 787 1851 787 1853 787"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M544 836 C546 836 550 836 552 836 C616 836 700 806 764 806 C766 806 770 806 772 806"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M2903 166 C2905 166 2909 166 2911 166 C2944 166 2812 77 2845 77 C2847 77 2851 77 2853 77"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M1905 797 C1907 797 1911 797 1913 797 C1946 797 1992 797 2025 797 C2027 797 2031 797 2033 797"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M2484 306 C2486 306 2490 306 2492 306 C2561 306 2614 177 2683 177 C2685 177 2689 177 2691 177"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M203 836 C205 836 209 836 211 836 C332 836 483 745 604 745 C606 745 610 745 612 745"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
                   d="M563 297 C565 297 569 297 571 297 C700 297 475 727 604 727 C606 727 610 727 612 727"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M2484 306 C2486 306 2490 306 2492 306 C2561 306 2614 436 2683 436 C2685 436 2689 436 2691 436"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M2742 427 C2744 427 2748 427 2750 427 C2799 427 2636 577 2685 577 C2687 577 2691 577 2693 577"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M203 1385 C205 1385 209 1385 211 1385 C268 1385 347 1385 404 1385 C406 1385 410 1385 412 1385"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M2484 306 C2486 306 2490 306 2492 306 C2604 306 2733 436 2845 436 C2847 436 2851 436 2853 436"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M524 117 C526 117 530 117 532 117 C612 117 245 287 325 287 C327 287 331 287 333 287"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M203 1366 C205 1366 209 1366 211 1366 C268 1366 347 1366 404 1366 C406 1366 410 1366 412 1366"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M403 836 C405 836 409 836 411 836 C433 836 463 845 485 845 C487 845 491 845 493 845"
-                  stroke-width="1" clip-path="url(#clipPath235)"
-                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
-            <path fill="none"
-                  d="M2103 317 C2105 317 2109 317 2111 317 C2126 317 2149 317 2164 317 C2166 317 2170 317 2172 317"
                   stroke-width="1" clip-path="url(#clipPath235)"
                   fill-rule="evenodd" stroke="rgb(150,150,150)"/>
             <path fill="none"
@@ -5353,23 +5249,35 @@ YII=" xlink:actuate="onLoad"/>
                   stroke-width="1" clip-path="url(#clipPath235)"
                   fill-rule="evenodd" stroke="rgb(150,150,150)"/>
             <path fill="none"
-                  d="M663 736 C665 736 669 736 671 736 C766 736 884 652 979 652 C1057 652 1161 652 1239 652 C1363 652 1361 317 1485 317 C1487 317 1491 317 1493 317"
+                  d="M544 836 C546 836 550 836 552 836 C616 836 700 806 764 806 C766 806 770 806 772 806"
                   stroke-width="1" clip-path="url(#clipPath235)"
                   fill-rule="evenodd" stroke="rgb(150,150,150)"/>
             <path fill="none"
-                  d="M2903 427 C2905 427 2909 427 2911 427 C2960 427 2796 577 2845 577 C2847 577 2851 577 2853 577"
+                  d="M203 1385 C205 1385 209 1385 211 1385 C268 1385 347 1385 404 1385 C406 1385 410 1385 412 1385"
                   stroke-width="1" clip-path="url(#clipPath235)"
                   fill-rule="evenodd" stroke="rgb(150,150,150)"/>
             <path fill="none"
-                  d="M2742 166 C2744 166 2748 166 2750 166 C2783 166 2652 77 2685 77 C2687 77 2691 77 2693 77"
+                  d="M1803 957 C1805 957 1809 957 1811 957 C1857 957 1799 806 1845 806 C1847 806 1851 806 1853 806"
                   stroke-width="1" clip-path="url(#clipPath235)"
                   fill-rule="evenodd" stroke="rgb(150,150,150)"/>
             <path fill="none"
-                  d="M1963 317 C1965 317 1969 317 1971 317 C1993 317 2023 306 2045 306 C2047 306 2051 306 2053 306"
+                  d="M1905 797 C1907 797 1911 797 1913 797 C1946 797 1992 797 2025 797 C2027 797 2031 797 2033 797"
                   stroke-width="1" clip-path="url(#clipPath235)"
                   fill-rule="evenodd" stroke="rgb(150,150,150)"/>
             <path fill="none"
-                  d="M251 109 C253 109 257 109 259 109 C272 109 291 117 304 117 C306 117 310 117 312 117"
+                  d="M403 836 C405 836 409 836 411 836 C433 836 463 845 485 845 C487 845 491 845 493 845"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M2363 317 C2365 317 2369 317 2371 317 C2386 317 2409 317 2424 317 C2426 317 2430 317 2432 317"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M2742 427 C2744 427 2748 427 2750 427 C2799 427 2636 577 2685 577 C2687 577 2691 577 2693 577"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M203 1126 C205 1126 209 1126 211 1126 C268 1126 347 1127 404 1127 C406 1127 410 1127 412 1127"
                   stroke-width="1" clip-path="url(#clipPath235)"
                   fill-rule="evenodd" stroke="rgb(150,150,150)"/>
             <path fill="none"
@@ -5377,7 +5285,99 @@ YII=" xlink:actuate="onLoad"/>
                   stroke-width="1" clip-path="url(#clipPath235)"
                   fill-rule="evenodd" stroke="rgb(150,150,150)"/>
             <path fill="none"
+                  d="M2224 317 C2226 317 2230 317 2232 317 C2253 317 2283 317 2304 317 C2306 317 2310 317 2312 317"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M251 109 C253 109 257 109 259 109 C272 109 291 117 304 117 C306 117 310 117 312 117"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M2903 427 C2905 427 2909 427 2911 427 C2960 427 2796 577 2845 577 C2847 577 2851 577 2853 577"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M1544 317 C1546 317 1550 317 1552 317 C1573 317 1603 317 1624 317 C1626 317 1630 317 1632 317"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M2484 306 C2486 306 2490 306 2492 306 C2561 306 2614 436 2683 436 C2685 436 2689 436 2691 436"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M663 736 C665 736 669 736 671 736 C766 736 884 652 979 652 C1057 652 1161 652 1239 652 C1363 652 1361 317 1485 317 C1487 317 1491 317 1493 317"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M2484 306 C2486 306 2490 306 2492 306 C2531 306 2485 177 2524 177 C2526 177 2530 177 2532 177"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M203 836 C205 836 209 836 211 836 C332 836 483 745 604 745 C606 745 610 745 612 745"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M124 497 C126 497 130 497 132 497 C211 497 246 317 325 317 C327 317 331 317 333 317"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M544 836 C546 836 550 836 552 836 C755 836 -58 1377 145 1377 C147 1377 151 1377 153 1377"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M544 836 C546 836 550 836 552 836 C703 836 -6 1136 145 1136 C147 1136 151 1136 153 1136"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M2103 317 C2105 317 2109 317 2111 317 C2126 317 2149 317 2164 317 C2166 317 2170 317 2172 317"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M463 1477 C465 1477 469 1477 471 1477 C505 1477 551 1477 585 1477 C587 1477 591 1477 593 1477"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M124 377 C126 377 130 377 132 377 C193 377 264 306 325 306 C327 306 331 306 333 306"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M363 117 C365 117 369 117 371 117 C398 117 437 117 464 117 C466 117 470 117 472 117"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M203 1126 C205 1126 209 1126 211 1126 C251 1126 245 1238 285 1238 C320 1238 369 1236 404 1236 C406 1236 410 1236 412 1236"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M203 1366 C205 1366 209 1366 211 1366 C268 1366 347 1366 404 1366 C406 1366 410 1366 412 1366"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M2060 518 C2062 518 2066 518 2068 518 C2126 518 1987 326 2045 326 C2047 326 2051 326 2053 326"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
                   d="M1684 317 C1686 317 1690 317 1692 317 C1707 317 1730 317 1745 317 C1747 317 1751 317 1753 317"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M385 287 C387 287 391 287 393 287 C426 287 471 297 504 297 C506 297 510 297 512 297"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M1703 797 C1705 797 1709 797 1711 797 C1751 797 1805 787 1845 787 C1847 787 1851 787 1853 787"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M203 1145 C205 1145 209 1145 211 1145 C268 1145 347 1145 404 1145 C406 1145 410 1145 412 1145"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M2484 306 C2486 306 2490 306 2492 306 C2561 306 2614 177 2683 177 C2685 177 2689 177 2691 177"
+                  stroke-width="1" clip-path="url(#clipPath235)"
+                  fill-rule="evenodd" stroke="rgb(150,150,150)"/>
+            <path fill="none"
+                  d="M524 117 C526 117 530 117 532 117 C612 117 245 287 325 287 C327 287 331 287 333 287"
                   stroke-width="1" clip-path="url(#clipPath235)"
                   fill-rule="evenodd" stroke="rgb(150,150,150)"/>
         </g>
