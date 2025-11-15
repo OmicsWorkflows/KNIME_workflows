@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack">
+        <config key="Variable_0">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="column-filter"/>
+            <entry key="class" type="xstring" value="STRINGARRAY"/>
+            <config key="value">
+                <entry key="array-size" type="xint" value="12"/>
+                <entry key="0" type="xstring" value="Precursor.Normalised+mock_326_1_log2_norm_delog"/>
+                <entry key="1" type="xstring" value="Precursor.Normalised+mock_326_2_log2_norm_delog"/>
+                <entry key="2" type="xstring" value="Precursor.Normalised+mock_327_1_log2_norm_delog"/>
+                <entry key="3" type="xstring" value="Precursor.Normalised+mock_327_2_log2_norm_delog"/>
+                <entry key="4" type="xstring" value="Precursor.Normalised+mock_328_1_log2_norm_delog"/>
+                <entry key="5" type="xstring" value="Precursor.Normalised+mock_328_2_log2_norm_delog"/>
+                <entry key="6" type="xstring" value="Precursor.Normalised+Trop2UP_329_1_log2_norm_delog"/>
+                <entry key="7" type="xstring" value="Precursor.Normalised+Trop2UP_329_2_log2_norm_delog"/>
+                <entry key="8" type="xstring" value="Precursor.Normalised+Trop2UP_331_1_log2_norm_delog"/>
+                <entry key="9" type="xstring" value="Precursor.Normalised+Trop2UP_331_2_log2_norm_delog"/>
+                <entry key="10" type="xstring" value="Precursor.Normalised+Trop2UP_332_1_log2_norm_delog"/>
+                <entry key="11" type="xstring" value="Precursor.Normalised+Trop2UP_332_2_log2_norm_delog"/>
+            </config>
+        </config>
+    </config>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="script" type="xstring" value="import knime.scripting.io as knio%%00010import pandas as pd%%00010%%00010def get_column_names(prefix):%%00010    base = [prefix + x + knio.flow_variables['suffix_to_add'] for x in sample_order]%%00010    cols = []%%00010    if 'absolute values' in coltypes:%%00010        cols += base%%00010    if 'log2 of absolute values' in coltypes:%%00010        cols += [x + '_log2' for x in base]%%00010    if 'ppm' in coltypes:%%00010        cols += [x + '_ppm' for x in base]%%00010    if 'log2 of ppm' in coltypes:%%00010        cols += [x + '_ppm_log2' for x in base]%%00010    if 'percentages' in coltypes:%%00010        cols += [x + '_perc' for x in base]%%00010    return cols%%00010    %%00010# load table%%00010df = knio.input_tables[0].to_pandas()%%00010%%00010# columns that have been returned%%00010algorithms = [x.strip() for x in knio.flow_variables['algorithm'].split(',')]%%00010coltypes = [x.strip() for x in knio.flow_variables['columns_to_return'].split(',')]%%00010%%00010# create list with final column order%%00010sample_order = knio.flow_variables['columns'].split(',')%%00010sample_order = [x.strip() for x in sample_order]%%00010%%00010column_order = ['PG']%%00010%%00010if 'DIA-TPA' in algorithms:%%00010    column_order = column_order + get_column_names(knio.flow_variables['prefix_tpa'])%%00010        %%00010if 'MaxLFQ' in algorithms:%%00010    column_order = column_order + get_column_names(knio.flow_variables['prefix_maxlfq'])%%00010        %%00010if 'Top3' in algorithms:%%00010    column_order = column_order + get_column_names(knio.flow_variables['prefix_top'])%%00010%%00010# reorder column%%00010df = df.loc[:, column_order]%%00010%%00010knio.output_tables[0] = knio.Table.from_pandas(df)"/>
+        <entry key="python3_command" type="xstring" value="/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="python3_command">
+                <entry key="used_variable" type="xstring" value="python3command"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="reorder columns%%00010based on original%%00010sample order"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="2889"/>
+        <entry key="y-coordinate" type="xint" value="259"/>
+        <entry key="width" type="xint" value="142"/>
+        <entry key="height" type="xint" value="48"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="10"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles">
+            <config key="style_0">
+                <entry key="start" type="xint" value="0"/>
+                <entry key="length" type="xint" value="46"/>
+                <entry key="fontname" type="xstring" value="Sans"/>
+                <entry key="fontstyle" type="xint" value="0"/>
+                <entry key="fontsize" type="xint" value="10"/>
+                <entry key="fgcolor" type="xint" value="0"/>
+            </config>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="org.knime.python3.scripting.nodes.script.PythonScriptNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Python Script"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Python 3 - Scripting Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python3.scripting.nodes"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.1.v202301311311"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Python Integration"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python3.scripting.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.3.v202305111430"/>
+    <config key="factory_settings"/>
+    <config key="node_creation_config">
+        <config key="Input object (pickled)"/>
+        <config key="Input table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output image"/>
+        <config key="Output object (pickled)"/>
+    </config>
+    <entry key="name" type="xstring" value="Python Script"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>
