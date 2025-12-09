@@ -118,7 +118,7 @@
             <entry key="string" type="xstring" value=""/>
         </config>
         <config key="scatter_x_prefix-2033">
-            <entry key="string" type="xstring" value="LIMMA_MaxLFQ_all samples_prec-filter_norm_imp_"/>
+            <entry key="string" type="xstring" value=""/>
         </config>
         <config key="scatter_x_suffix-2034">
             <entry key="string" type="xstring" value=".logFC"/>
@@ -127,7 +127,7 @@
             <entry key="string" type="xstring" value=".logFC"/>
         </config>
         <config key="scatter_y_prefix-2036">
-            <entry key="string" type="xstring" value="LIMMA_MaxLFQ_all samples_prec-filter_norm_imp_"/>
+            <entry key="string" type="xstring" value=""/>
         </config>
         <config key="selected_annotations-2041">
             <entry key="boolean" type="xboolean" value="true"/>
