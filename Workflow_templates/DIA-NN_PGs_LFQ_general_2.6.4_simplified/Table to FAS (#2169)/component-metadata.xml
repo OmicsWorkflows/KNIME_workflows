@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <last-modified>2026-04-07T15:52:06.141+02:00</last-modified>
+    <description>Metanode for creation of FASTA file based on the two specified columns containing header and sequence.
+
+Sequences strings are wrapped to have 60 letters on single sequence line.
+
+The input table is processed by chunks (Chunk size parameter) and written into the single database file.
+
+Please note, that if you leave the Overwrite checkbox unchecked and the database file will be existing already, the metanode will fail to execute, returning error that the file to be written to already exists.
+
+=================
+
+Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.
+
+KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)
+Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3.6/license.html)
+Python package Pandas (The Pandas consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)
+
+The metanode was created in KNIME 4.6.3 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 4.6.3a.
+
+=================
+
+This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
+Version: 1.1.0 from 2023-04-25
+Contact person: Michal Cupak (michal.cupak@ceitec.muni.cz)
+More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes.</description>
+    <in-ports>
+        <port name="Input table">Input table containing header and sequence columns</port>
+    </in-ports>
+    <out-ports>
+        <port name="File output">Path to the output FASTA file</port>
+    </out-ports>
+</component-metadata>

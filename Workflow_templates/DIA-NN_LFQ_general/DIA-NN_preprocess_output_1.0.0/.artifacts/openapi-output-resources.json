@@ -1,0 +1,23 @@
+{
+    "schema": {
+        "type": "object",
+        "properties": {
+            "output-parameter-2161": {
+                "type": "string",
+                "format": "binary"
+            },
+            "output-parameter-2160": {
+                "type": "string",
+                "format": "binary"
+            }
+        }
+    },
+    "encoding": {
+        "output-parameter-2161": {
+            "contentType": "knime-port/org.knime.core.node.BufferedDataTable"
+        },
+        "output-parameter-2160": {
+            "contentType": "knime-port/org.knime.core.node.BufferedDataTable"
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "schema": {
+        "type": "object",
+        "properties": {
+            "main_data": {
+                "type": "string",
+                "format": "binary"
+            },
+            "experimental_design": {
+                "type": "string",
+                "format": "binary"
+            },
+            "comparisons_table": {
+                "type": "string",
+                "format": "binary"
+            }
+        }
+    },
+    "encoding": {
+        "main_data": {
+            "contentType": "knime-port/org.knime.core.node.BufferedDataTable"
+        },
+        "experimental_design": {
+            "contentType": "knime-port/org.knime.core.node.BufferedDataTable"
+        },
+        "comparisons_table": {
+            "contentType": "knime-port/org.knime.core.node.BufferedDataTable"
+        }
+    }
+}

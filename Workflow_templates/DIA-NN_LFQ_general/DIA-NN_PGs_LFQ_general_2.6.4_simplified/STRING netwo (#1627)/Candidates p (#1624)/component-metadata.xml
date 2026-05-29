@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>knimeuser</author>
+    <created>2026-03-16T13:06:40.026+01:00</created>
+    <last-modified>2026-03-16T15:41:03.305+01:00</last-modified>
+    <description>The metanode is used for filtering upregulated and downregulated proteins after performing a statistical test (e. g. LIMMA). The input data table should contain columns containing p-values (adjusted p-values) and logFC values.
+First output port contains only upregulated proteins, second one only downregulated proteins, the third combined list of down and upregulated proteins and the fourth output port contains the original dataset with appended column with the expression change information. All lists but the last one are sorted (up - descending; down and down+up - ascending).
+
+You can also limit the generated up/down lists; the list will be shortened leaving the cases with higher (up) or lower (down) logFC values.
+
+In case you want to select the candidates only based on the log fold change value, check the appropriate check box to ignore the P value column.
+
+=================
+
+Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.
+
+KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)
+Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3.6/license.html)
+R 3.6.3 (The R consists of the following GPL-3 License. License terms are available here: https://www.r-project.org/Licenses/GPL-3)
+
+The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+
+=================
+
+This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
+Version: 1.2.0 from 2026-03-16
+Contact person: Karolina Krystofova (karolina.krystofova@ceitec.muni.cz)
+More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes</description>
+    <in-ports>
+        <port name="Input table">Input table with statistical test results</port>
+    </in-ports>
+    <out-ports>
+        <port name="Upregulated proteins">Only upregulated protein list</port>
+        <port name="Downregulated proteins">Only downregulated protein list</port>
+        <port name="Both upregulated and downregulated proteins">Both upregulated and downregulated protein list</port>
+        <port name="Original table with appended column">Original table containing columns containing information about expression change</port>
+    </out-ports>
+</component-metadata>

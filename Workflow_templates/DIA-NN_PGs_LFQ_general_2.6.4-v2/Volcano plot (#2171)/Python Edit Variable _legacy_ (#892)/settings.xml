@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="sourceCode" type="xstring" value="# Create JSON file for UpSet%%00010%%00010import os.path%%00010from os import chdir, remove%%00010import glob%%00010import time%%00010##########################################################################%%00010time.sleep(1)%%00010# Parameter inputs%%00010csvFileRelPath = flow_variables['csv_rel_file_path']%%00010%%00010#datasetName = &quot;knime_dataset&quot;%%00010volcanoPath = flow_variables['volcano_path']%%00010%%00010#port_number = flow_variables['web_server_port']%%00010%%00010# older version%%00010#addOnlyThisDataset = True%%00010#removeActualDatasetAfterOpen = True%%00010##########################################################################%%00010%%00010# remove the dataset? 1 = yes; 0 = no%%00010#removeActualDatasetAfterOpen = flow_variables['removeActualDatasetAfterOpen']%%00010%%00010# Other parameters%%00010#datasetsFileName = &quot;datasets.json&quot;%%00010timeToWait = 30%%00009%%00009# time to wait before removing actual dataset files (csv, json)%%00010%%00010# Computed constants from parameters%%00010csvFileAbsPath = os.path.join(volcanoPath, csvFileRelPath)%%00010%%00010# Open UpSet in Firefox%%00010import webbrowser%%00010url = &quot;http://localhost:&quot; + '8050'%%00010print(url)%%00010webbrowser.open(url)%%00010%%00010%%00010%%00010# Remove actual csv and json file%%00010#if removeActualDatasetAfterOpen == 1:%%00010#%%00009print(&quot;Sleep before removing actual dataset files for &quot; + str(timeToWait) + &quot;s&quot;)%%00010#%%00009for x in range(timeToWait):%%00010#%%00009%%00009time.sleep(1)%%00010#%%00009%%00009print(&quot;.&quot;, end=&quot;&quot;)%%00010#%%00009print()%%00010#%%00009if os.path.exists(csvFileAbsPath):%%00010#%%00009%%00009remove(csvFileAbsPath)%%00010%%00009%%00010%%00009# End%%00010%%00009#print(&quot;True&quot;)"/>
+        <entry key="rowLimit" type="xint" value="1000"/>
+        <entry key="convertMissingToPython" type="xboolean" value="false"/>
+        <entry key="convertMissingFromPython" type="xboolean" value="false"/>
+        <entry key="sentinelOption" type="xstring" value="MIN_VAL"/>
+        <entry key="sentinelValue" type="xint" value="0"/>
+        <entry key="chunkSize" type="xint" value="500000"/>
+        <entry key="pythonVersionOption" type="xstring" value="python3"/>
+        <entry key="python2Command" type="xstring" value=""/>
+        <entry key="python3Command" type="xstring" value=""/>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="opens the browser with %%00010Volcano plot application"/>
+        <entry key="contentType" type="xstring" value="text/plain"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="822"/>
+        <entry key="y-coordinate" type="xint" value="339"/>
+        <entry key="width" type="xint" value="156"/>
+        <entry key="height" type="xint" value="32"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="10"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles">
+            <config key="style_0">
+                <entry key="start" type="xint" value="24"/>
+                <entry key="length" type="xint" value="12"/>
+                <entry key="fontname" type="xstring" value="Sans"/>
+                <entry key="fontstyle" type="xint" value="0"/>
+                <entry key="fontsize" type="xint" value="10"/>
+                <entry key="fgcolor" type="xint" value="0"/>
+            </config>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="org.knime.python2.nodes.variables.Python2VariablesNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Python Edit Variable (legacy)"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Python nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python2.nodes"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.9.0.v202511130856"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Python 2 Integration (legacy)"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python2.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511132128"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Python Edit Variable (legacy)"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

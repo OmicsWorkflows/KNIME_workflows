@@ -1,0 +1,383 @@
+{
+    "type": "object",
+    "properties": {
+        "boolean-input-1620:1251:988": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Enables case-insensitive matching\t",
+            "example": false
+        },
+        "boolean-input-1664:1248:988": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Enables case-insensitive matching\t",
+            "example": false
+        },
+        "boolean-input-1664:1248:989": {
+            "type": "boolean",
+            "default": "true",
+            "description": "When this flag is specified then the search string is treated as a sequence of literal characters. Metacharacters or escape sequences in the input sequence will be given no special meaning.",
+            "example": true
+        },
+        "boolean-input-1620:1251:989": {
+            "type": "boolean",
+            "default": "true",
+            "description": "When this flag is specified then the search string is treated as a sequence of literal characters. Metacharacters or escape sequences in the input sequence will be given no special meaning.",
+            "example": true
+        },
+        "string-input-1664:1246:1527": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-1538:897": {
+            "type": "string",
+            "default": ";",
+            "description": "Delimiter to be used to divide individual looked up values",
+            "example": ";"
+        },
+        "string-input-1620:1253:1527": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-1640:898": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to remove empty strings from the returned list of looked up values. Beware that the order of returned values will not correspond to the IDs order in the top table IDs column!",
+            "example": false
+        },
+        "boolean-input-1640:899": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to return only set of unique values instead of full list of values including duplicates. Beware that the order of returned values will not correspond to the IDs order in the top table IDs column!",
+            "example": false
+        },
+        "boolean-input-1244:989": {
+            "type": "boolean",
+            "default": "true",
+            "description": "When this flag is specified then the search string is treated as a sequence of literal characters. Metacharacters or escape sequences in the input sequence will be given no special meaning.",
+            "example": true
+        },
+        "boolean-input-1244:988": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Enables case-insensitive matching\t",
+            "example": false
+        },
+        "string-input-2037:1503:1000": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-1664:1246:988": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Enables case-insensitive matching\t",
+            "example": false
+        },
+        "boolean-input-1664:1246:989": {
+            "type": "boolean",
+            "default": "true",
+            "description": "When this flag is specified then the search string is treated as a sequence of literal characters. Metacharacters or escape sequences in the input sequence will be given no special meaning.",
+            "example": true
+        },
+        "string-input-1620:1245:1527": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-1620:1253:989": {
+            "type": "boolean",
+            "default": "true",
+            "description": "When this flag is specified then the search string is treated as a sequence of literal characters. Metacharacters or escape sequences in the input sequence will be given no special meaning.",
+            "example": true
+        },
+        "boolean-input-1620:1253:988": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Enables case-insensitive matching\t",
+            "example": false
+        },
+        "string-input-1664:1255:1527": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-2037:1531": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-1664:1245:988": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Enables case-insensitive matching\t",
+            "example": false
+        },
+        "boolean-input-1664:1245:989": {
+            "type": "boolean",
+            "default": "true",
+            "description": "When this flag is specified then the search string is treated as a sequence of literal characters. Metacharacters or escape sequences in the input sequence will be given no special meaning.",
+            "example": true
+        },
+        "boolean-input-1620:1254:988": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Enables case-insensitive matching\t",
+            "example": false
+        },
+        "boolean-input-1620:1254:989": {
+            "type": "boolean",
+            "default": "true",
+            "description": "When this flag is specified then the search string is treated as a sequence of literal characters. Metacharacters or escape sequences in the input sequence will be given no special meaning.",
+            "example": true
+        },
+        "string-input-1665:1527": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-1538:1549": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-1664:1250:988": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Enables case-insensitive matching\t",
+            "example": false
+        },
+        "boolean-input-1664:1250:989": {
+            "type": "boolean",
+            "default": "true",
+            "description": "When this flag is specified then the search string is treated as a sequence of literal characters. Metacharacters or escape sequences in the input sequence will be given no special meaning.",
+            "example": true
+        },
+        "boolean-input-1620:1248:989": {
+            "type": "boolean",
+            "default": "true",
+            "description": "When this flag is specified then the search string is treated as a sequence of literal characters. Metacharacters or escape sequences in the input sequence will be given no special meaning.",
+            "example": true
+        },
+        "boolean-input-1620:1248:988": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Enables case-insensitive matching\t",
+            "example": false
+        },
+        "string-input-1640:1549": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-1538:898": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to remove empty strings from the returned list of looked up values. Beware that the order of returned values will not correspond to the IDs order in the top table IDs column!",
+            "example": false
+        },
+        "boolean-input-1538:899": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to return only set of unique values instead of full list of values including duplicates. Beware that the order of returned values will not correspond to the IDs order in the top table IDs column!",
+            "example": false
+        },
+        "string-input-0:1532": {
+            "type": "string",
+            "default": "accession,id,reviewed,protein_name,mass,length,gene_primary,organism_name,go,go_p,go_f,go_c,go_id,cc_subcellular_location,protein_families,cc_interaction,sequence,xref_interpro,xref_pfam,xref_intact,xref_geneid",
+            "description": "List of columns to retrieve from uniprot via their API provided as a list separated by comma \",\". Whitespaces are replaced by %20 with string replacer node",
+            "example": "accession,id,reviewed,protein_name,mass,length,gene_primary,organism_name,go,go_p,go_f,go_c,go_id,cc_subcellular_location,protein_families,cc_interaction,sequence,xref_interpro,xref_pfam,xref_intact,xref_geneid"
+        },
+        "string-input-2037:1000": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-0:1535": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-1664:1253:989": {
+            "type": "boolean",
+            "default": "true",
+            "description": "When this flag is specified then the search string is treated as a sequence of literal characters. Metacharacters or escape sequences in the input sequence will be given no special meaning.",
+            "example": true
+        },
+        "boolean-input-1664:1253:988": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Enables case-insensitive matching\t",
+            "example": false
+        },
+        "string-input-1244:1527": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-2155:1525": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-2159:1525": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-1620:1248:1527": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-1640:891": {
+            "type": "string",
+            "default": ";",
+            "description": "Delimiter used to divide individual IDs in top input table IDs column",
+            "example": ";"
+        },
+        "string-input-2037:2006:1000": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-1620:1246:989": {
+            "type": "boolean",
+            "default": "true",
+            "description": "When this flag is specified then the search string is treated as a sequence of literal characters. Metacharacters or escape sequences in the input sequence will be given no special meaning.",
+            "example": true
+        },
+        "boolean-input-1665:988": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Enables case-insensitive matching\t",
+            "example": false
+        },
+        "boolean-input-1620:1246:988": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Enables case-insensitive matching\t",
+            "example": false
+        },
+        "boolean-input-1664:1255:989": {
+            "type": "boolean",
+            "default": "true",
+            "description": "When this flag is specified then the search string is treated as a sequence of literal characters. Metacharacters or escape sequences in the input sequence will be given no special meaning.",
+            "example": true
+        },
+        "string-input-1640:897": {
+            "type": "string",
+            "default": ";",
+            "description": "Delimiter to be used to divide individual looked up values",
+            "example": ";"
+        },
+        "string-input-0:662": {
+            "type": "string",
+            "default": ";",
+            "description": "Delimiter used to divide individual IDs in Protein IDs column",
+            "example": ";"
+        },
+        "boolean-input-1665:989": {
+            "type": "boolean",
+            "default": "true",
+            "description": "When this flag is specified then the search string is treated as a sequence of literal characters. Metacharacters or escape sequences in the input sequence will be given no special meaning.",
+            "example": true
+        },
+        "string-input-1538:891": {
+            "type": "string",
+            "default": ";",
+            "description": "Delimiter used to divide individual IDs in top input table IDs column",
+            "example": ";"
+        },
+        "string-input-1664:1245:1527": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-1664:1255:988": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Enables case-insensitive matching\t",
+            "example": false
+        },
+        "string-input-1664:1250:1527": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-1538:900": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns; checked -> dataframe of processed columns will be returned only together with the input table 1 (top) IDs column",
+            "example": false
+        },
+        "string-input-1620:1254:1527": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-1620:1251:1527": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-1640:900": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns; checked -> dataframe of processed columns will be returned only together with the input table 1 (top) IDs column",
+            "example": false
+        },
+        "string-input-1664:1253:1527": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-1620:1245:989": {
+            "type": "boolean",
+            "default": "true",
+            "description": "When this flag is specified then the search string is treated as a sequence of literal characters. Metacharacters or escape sequences in the input sequence will be given no special meaning.",
+            "example": true
+        },
+        "boolean-input-1620:1245:988": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Enables case-insensitive matching\t",
+            "example": false
+        },
+        "string-input-1620:1246:1527": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-1664:1248:1527": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        }
+    }
+}

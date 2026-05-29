@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>knimeuser</author>
+    <created>2026-03-24T10:40:27.505+01:00</created>
+    <last-modified>2026-03-24T10:41:35.712+01:00</last-modified>
+    <description>Metanode for imputation of selected values using several techniques.
+
+Metanode enables selection of data columns to be processed, no need to preselect them in advance.
+
+Imputation can be done using whole table minimum/quantile or using column specific minimum/quantile values. Grouping column(s) can be selected to apply global minimum imputation method groupwise. If a dataset should be processed and missing values imputed "per partes", user can specify the groups of columns that should be processed together under Experimental design. Design should be provided in format "A, A, B, B". The order of groups is based on their order of appearance in the Experimental design field.
+
+Value for imputation is at first replaced by string and then replaced by specified number to enable different values imputation.
+
+Multiplying factor is used to multiply the calculated number (e.g. global median) to be used for the imputation in all selected imputation types.
+
+You can select the metanode behavior when all values within a single row will be equal to the one to be imputed. By default these rows will be removed prior the imputation step, but you can set the metanode to impute also these rows instead.
+
+Metanode returns full data matrix with imputed values or processed columns only.
+
+ATTENTION!: if you select blank normalized column suffix and not used columns will be returned, original data in processed columns will be rewritten by the normalized ones! This is desired behavior.
+
+=================
+
+Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.
+
+KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)
+Python 3 (The Python consists of the following Python 3 License. Licence terms are available here: https://docs.python.org/3/license.html)
+Python package Pandas (The Pandas consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)
+Python package Numpy (The Numpy consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)
+
+The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+
+=================
+
+This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
+Version: 1.4.0 from 2026-03-24
+Contact person: David Potesil (david.potesil@ceitec.muni.cz)
+More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes.</description>
+    <in-ports>
+        <port name="Input data table">Input data table containing columns to be processed including e.g. grouping columns</port>
+    </in-ports>
+    <out-ports>
+        <port name="Output data table">Original datatable with imputed values or processed columns if specified</port>
+        <port name="Missing data matrix">Boolean matrix containing information on the imputed values</port>
+    </out-ports>
+</component-metadata>

@@ -1,0 +1,23 @@
+{
+    "schema": {
+        "type": "object",
+        "properties": {
+            "variable-input": {
+                "type": "string",
+                "format": "binary"
+            },
+            "data-input": {
+                "type": "string",
+                "format": "binary"
+            }
+        }
+    },
+    "encoding": {
+        "variable-input": {
+            "contentType": "knime-port/org.knime.core.node.port.flowvariable.FlowVariablePortObject"
+        },
+        "data-input": {
+            "contentType": "knime-port/org.knime.core.node.BufferedDataTable"
+        }
+    }
+}

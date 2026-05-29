@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>knimeuser</author>
+    <created>2026-04-07T12:12:12.686+02:00</created>
+    <last-modified>2026-04-07T12:13:33.085+02:00</last-modified>
+    <description>Metanode for application of linear normalization factors.
+
+Normalization factor type can be selected (column or row based normalization is supported). Normalization factors are expected in the last row/column of the provided dataframe. Columns or rows order is not important for columns or rows based normalization, respectively, but their names has to be equal in normalization factors dataframe and in selected columns from input table.
+
+Next to the normalization factor type you should select also mathematial operation that should be done with concrete datamatrix value and normalization factor, e.g. multiplication.
+
+Please note that column or row names in both tables have to match so they can be mapped correctly! The metanode will raise an error in case they will not be matching.
+
+=================
+
+Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.
+
+KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)
+Python 3 (The Python consists of the following Python 3 License. Licence terms are available here: https://docs.python.org/3/license.html)
+Python package Pandas (The Pandas consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)
+
+The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+
+=================
+
+This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
+Version: 1.0.1 from 2026-04-07
+Contact person: David Potesil (david.potesil@ceitec.muni.cz)
+More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes.</description>
+    <in-ports>
+        <port name="Input table">Input table containing not normalized data</port>
+        <port name="Normalization factors">Normalization factors to be applied on data columns</port>
+    </in-ports>
+    <out-ports>
+        <port name="Normalized data">Data after the application of normalization factors</port>
+    </out-ports>
+</component-metadata>

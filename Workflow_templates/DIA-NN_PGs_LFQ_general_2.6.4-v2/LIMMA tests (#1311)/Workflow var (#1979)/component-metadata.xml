@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>knimeuser</author>
+    <created>2026-03-16T16:23:50.033+01:00</created>
+    <last-modified>2026-03-16T16:24:58.928+01:00</last-modified>
+    <description>Metanode for the update/creation of the flow variables holding e.g. experimental design and or comparisons to be made.
+
+Check the box prior the given flow variable setting if you want to get the value updated by the metanode!
+
+Connect the metanode using the input and 1st outputtable connections. Second and third output tables presenting flow variables are mainly for easier validation of the metanode output.
+
+================= 
+
+Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms. 
+
+KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html) 
+Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3.6/license.html) 
+
+The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+
+================= 
+
+This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html. 
+Version: 1.4.0 from 2026-03-16
+Contact person: David Potesil (david.potesil@ceitec.muni.cz) 
+More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes.</description>
+    <in-ports>
+        <port name=""/>
+    </in-ports>
+    <out-ports>
+        <port name="data table"/>
+        <port name="variables row">all variables in one row</port>
+        <port name="variables column">all variables in one column</port>
+    </out-ports>
+</component-metadata>

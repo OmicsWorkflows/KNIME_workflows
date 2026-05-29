@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack">
+        <config key="Variable_0">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="design_sample_names_list"/>
+            <entry key="class" type="xstring" value="STRINGARRAY"/>
+            <config key="value">
+                <entry key="array-size" type="xint" value="6"/>
+                <entry key="0" type="xstring" value="1_1"/>
+                <entry key="1" type="xstring" value="2_3"/>
+                <entry key="2" type="xstring" value="1"/>
+                <entry key="3" type="xstring" value="2"/>
+                <entry key="4" type="xstring" value="1_3"/>
+                <entry key="5" type="xstring" value="2_1"/>
+            </config>
+        </config>
+        <config key="Variable_1">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="columns_to_group_with"/>
+            <entry key="class" type="xstring" value="STRINGARRAY"/>
+            <config key="value">
+                <entry key="array-size" type="xint" value="4"/>
+                <entry key="0" type="xstring" value="Stripped.Sequence"/>
+                <entry key="1" type="xstring" value="Protein.Ids"/>
+                <entry key="2" type="xstring" value="Protein.Group"/>
+                <entry key="3" type="xstring" value="Lib.PG.Q.Value"/>
+            </config>
+        </config>
+        <config key="Variable_2">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="design_run_names"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="IS229_Exp1_74IS_DIA_400-0800_1_1_01_demulti,%%00010IS229_Exp1_74IS_DIA_400-0800_2_3_01_demulti,%%00010IS229_Exp1_74IS_DIA_400-0800_1_2_01_demulti,%%00010IS229_Exp1_74IS_DIA_400-0800_2_2_01_demulti,%%00010IS229_Exp1_74IS_DIA_400-0800_1_3_01_demulti,%%00010IS229_Exp1_74IS_DIA_400-0800_2_1_01_demulti"/>
+        </config>
+        <config key="Variable_3">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="design_sample_names"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="1_1,2_3,1,2,1_3,2_1"/>
+        </config>
+        <config key="Variable_4">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="design_sample_group_names"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="s1,s2,s1,s2,s1,s2"/>
+        </config>
+        <config key="Variable_5">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="design_sample_prep_batch_names"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="b1,b3,b2,b2,b3,b1"/>
+        </config>
+    </config>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="script" type="xstring" value="import knime.scripting.io as knio%%00010import re%%00010#from collections import Counter%%00010%%00010# reads the input table into the dataframe%%00010input_table = knio.input_tables[0].to_pandas()%%00010max_row_len = knio.flow_variables['max_row_length']%%00010%%00010def make_valid_r_name(name: str) -&gt; str:%%00010    name_old = name%%00010    # Replace invalid characters with dots%%00010    name = re.sub(r'[^0-9A-Za-z._]', '.', name)%%00010    %%00010    # If it starts with a number, prepend 'X' (R does this for invalid starts)%%00010    if re.match(r'^[0-9]', name):%%00010        name = 'X' + name%%00010    %%00010    # Ensure it doesn't start with '.' followed by a number%%00010    if re.match(r'^\.[0-9]', name):%%00010        name = 'X' + name%%00010%%00010    # Collapse multiple dots into one%%00010    name = re.sub(r'\.+', '.', name)%%00010%%00010    # Strip trailing dots%%00010    name = name.strip('.')%%00010    if knio.flow_variables['design_names_autocorrect'] == 0:%%00010        if name_old != name:%%00010            raise RuntimeError(&quot;Name correction needed for '{}' but autocorrection to '{}' is disabled. Please inspect the experimental design table and rerun or allow autocorrection.&quot;.format(name_old, name))%%00010    %%00010    return name%%00010%%00010def make_valid_r_name_num_start_ok(name: str) -&gt; str:%%00010    name_old = name%%00010    # Replace invalid characters with dots%%00010    name = re.sub(r'[^0-9A-Za-z._]', '.', name)%%00010    %%00010    # Ensure it doesn't start with '.' followed by a number%%00010    if re.match(r'^\.[0-9]', name):%%00010        name = 'X' + name%%00010%%00010    # Collapse multiple dots into one%%00010    name = re.sub(r'\.+', '.', name)%%00010%%00010    # Strip trailing dots%%00010    name = name.strip('.')%%00010    if knio.flow_variables['design_names_autocorrect'] == 0:%%00010        if name_old != name:%%00010            raise RuntimeError(&quot;Name correction needed for '{}' but autocorrection to '{}' is disabled. Please inspect the experimental design table and rerun or allow autocorrection.&quot;.format(name_old, name))%%00010    %%00010    return name%%00010%%00010def join_with_limit(strings, max_len=max_row_len):%%00010    lines = []%%00010    current = &quot;&quot;%%00010%%00010    for s in strings:%%00010        # +2 for &quot;, &quot; that will be added%%00010        if len(current) + len(s) + (2 if current else 0) &gt; max_len:%%00010            lines.append(current)%%00010            current = s%%00010        else:%%00010            current = s if not current else f&quot;{current},{s}&quot;%%00010%%00010    if current:%%00010        lines.append(current)%%00010%%00010    return &quot;,\n&quot;.join(lines)%%00010%%00010knio.flow_variables['design_sample_names_list'] = [make_valid_r_name_num_start_ok(x) for x in knio.flow_variables['design_sample_names_list']]%%00010%%00010# skips also 'sample name' column since there the number at the beginning is ok for us unlike in R%%00010#skip_cols = [&quot;run name in DIA-NN report&quot;, &quot;rowID&quot;, &quot;sample name&quot;, &quot;order ID for KNIME&quot;, &quot;remove at load&quot;, &quot;comment&quot;]%%00010#print(skip_cols)%%00010proc_cols = [&quot;sample group&quot;, &quot;preparation batch&quot;]%%00010for col in input_table.columns:%%00010    if col in proc_cols:%%00010        input_table[col] = input_table[col].astype(str).apply(make_valid_r_name)%%00010    elif col == &quot;sample name&quot;:%%00010        input_table[col] = input_table[col].astype(str).apply(make_valid_r_name_num_start_ok)%%00010%%00010# writes the flow variables based on the selected columns%%00010knio.flow_variables['design_run_names'] = join_with_limit(input_table[&quot;run name in DIA-NN report&quot;].map(str))%%00010%%00010knio.flow_variables['design_sample_names'] = join_with_limit(input_table[&quot;sample name&quot;].map(str))%%00010%%00010knio.flow_variables['design_sample_group_names'] = join_with_limit(input_table[&quot;sample group&quot;].map(str))%%00010%%00010knio.flow_variables['design_sample_prep_batch_names'] = join_with_limit(input_table[&quot;preparation batch&quot;].map(str))%%00010%%00010# just writes %%00010knio.output_tables[0] = knio.Table.from_pandas(input_table)"/>
+        <entry key="python3_command" type="xstring" value="/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="python3_command">
+                <entry key="used_variable" type="xstring" value="python3command"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="adds the flow variables %%00010based on the exp. design"/>
+        <entry key="contentType" type="xstring" value="text/plain"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="1019"/>
+        <entry key="y-coordinate" type="xint" value="799"/>
+        <entry key="width" type="xint" value="163"/>
+        <entry key="height" type="xint" value="34"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="10"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
+    <config key="nodecontainer_message">
+        <entry key="type" type="xstring" value="ERROR"/>
+        <entry key="message" type="xstring" value="I/O error while saving internals: /home/knimeuser/knime-workspace/gitfolders/KNIME_workflows/Workflow_templates/DIA-NN_PGs_LFQ_general_2.6.4-v2/Experiment d (#2155)/Python Script (#1982)/internal/console_b.arrow"/>
+    </config>
+    <entry key="factory" type="xstring" value="org.knime.python3.scripting.nodes2.script.PythonScriptNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Python Script"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Python 3 - Scripting Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python3.scripting.nodes"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.9.0.v202511131614"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Python Integration"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python3.scripting.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511131614"/>
+    <config key="factory_settings"/>
+    <config key="node_creation_config">
+        <config key="Input object (pickled)"/>
+        <config key="Input table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output image"/>
+        <config key="Output object (pickled)"/>
+    </config>
+    <entry key="name" type="xstring" value="Python Script"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 6, Cols: 10"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="1bf7a277-0443-4ac9-8b2c-efc655c567f7"/>
+    </config>
+</config>

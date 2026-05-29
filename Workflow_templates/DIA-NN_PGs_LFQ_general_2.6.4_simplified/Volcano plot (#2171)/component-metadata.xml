@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>knimeuser</author>
+    <created>2026-04-07T15:24:25.395+02:00</created>
+    <last-modified>2026-04-07T15:25:19.208+02:00</last-modified>
+    <description>Metanode to create input data for interactive Volcano plot using Volcano plot application in Python. Volcano plot application needs to be located e.g. in KNIME workspace, please check the path in the metanode settings (default is "gitfolders/KNIME_metanodes/Applications/Volcano_plot/" folder inside your KNIME workspace).
+
+You have to provide data columns for p-value and log fold change. Rows with missing value in any of these two columns are removed. P-value column is -log10 transformed prior plotting. In Case of p-value=0, the minimal value in the given dataset is used for the zero value replacement prior -log10 transformation or it is possible specify the replacement value in the application.
+
+You can also specify other columns for annotations.
+
+Dataset is exported by the metanode into the Volcano plot application ("data/knime_data" subfolder). The metanode then starts the simple python webserver inside the Volcano plot application folder and opens browser with the interactive Volcano plot application. 
+
+The metanode will be shown as still running to indicate that the webserver is running from that concrete metanode. You can cancel the metanode or close the workflow with the running metanode to stop the webserver.
+
+The application contains form for setting input data of appliacation, interactive Volcano plot itself, summary table showing the number of rows passing the selected thresholds of logFC and p-value, table of selected proteins from graph and table with dataset, which could be filtered - the Volcano plot shows only the data passing the filters used in the last table (no filter set by default, i.e. showing all rows).
+
+=================
+
+Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.
+
+KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)
+Python 3 (The Python consists of the following Python 3 License. Licence terms are available here: https://docs.python.org/3/license.html)
+Dash (The Dash consists of the following MIT License. Licence terms are available here: https://github.com/plotly/dash/blob/master/LICENSE)
+Dash-bio (The dash-bio consists of the following MIT License. Licence terms are available here: https://github.com/plotly/dash-bio/blob/master/LICENSE
+
+The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+
+=================
+
+This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
+Version: 2.0.1 from 2026-04-07
+Contact person: Karolina Krystofova (karolina.krystofova@ceitec.muni.cz)
+More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes</description>
+    <in-ports>
+        <port name="Input table">Dataframe containing p-values (or adjusted p-values), logFC values and metadata for point annotation</port>
+    </in-ports>
+    <out-ports/>
+</component-metadata>
