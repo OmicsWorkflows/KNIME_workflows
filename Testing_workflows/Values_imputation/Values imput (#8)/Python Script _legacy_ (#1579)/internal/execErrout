@@ -1,0 +1,2 @@
+[WARN]/home/knimeuser/.pyenv/versions/5-9-0a/lib/python3.11/site-packages/numpy/lib/nanfunctions.py:1545: RuntimeWarning: All-NaN slice encountered
+  return _nanquantile_unchecked(

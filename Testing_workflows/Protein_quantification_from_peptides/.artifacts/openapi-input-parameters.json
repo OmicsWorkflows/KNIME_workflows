@@ -1,0 +1,29 @@
+{
+    "type": "object",
+    "properties": {
+        "string-input-4:1950": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-4:1951": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-1:1950": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-1:1951": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": ""
+        }
+    }
+}

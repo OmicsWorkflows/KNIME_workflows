@@ -1,0 +1,23 @@
+{
+    "type": "object",
+    "properties": {
+        "string-input-7:1561": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-1:1561": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-5:1561": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        }
+    }
+}

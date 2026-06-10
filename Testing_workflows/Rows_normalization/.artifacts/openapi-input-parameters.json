@@ -1,0 +1,80 @@
+{
+    "type": "object",
+    "properties": {
+        "boolean-input-3:855": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "string-input-4:1007": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-1:1007": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-1:855": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "single-selection-1:853": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "value - factor"
+                }
+            },
+            "description": "Way how the normalization factors should be used; this selection also changes their calculation",
+            "example": {
+                "variable_value": "value - factor"
+            }
+        },
+        "boolean-input-4:855": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "single-selection-3:853": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "value - factor"
+                }
+            },
+            "description": "Way how the normalization factors should be used; this selection also changes their calculation",
+            "example": {
+                "variable_value": "value - factor"
+            }
+        },
+        "string-input-3:1007": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "single-selection-4:853": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "value / factor"
+                }
+            },
+            "description": "Way how the normalization factors should be used; this selection also changes their calculation",
+            "example": {
+                "variable_value": "value / factor"
+            }
+        }
+    }
+}

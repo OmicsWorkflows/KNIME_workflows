@@ -1,0 +1,167 @@
+{
+    "type": "object",
+    "properties": {
+        "string-input-17:1525": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-14:1525": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-17:1526": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-6:994": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-10:994": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-10:995": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-6:995": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-10:993": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "boolean-input-1:993": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "boolean-input-6:993": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "string-input-16:1525": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-16:1526": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-1:995": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-1:994": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-13:994": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-8:995": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-8:994": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-8:993": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "string-input-13:995": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-15:1526": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-15:1525": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-4:1525": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-4:1526": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-13:993": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "string-input-14:1526": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-7:1526": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-7:1525": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        }
+    }
+}

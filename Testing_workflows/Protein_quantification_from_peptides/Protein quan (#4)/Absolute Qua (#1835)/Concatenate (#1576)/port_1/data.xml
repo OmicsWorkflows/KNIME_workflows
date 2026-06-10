@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="table_meta_info">
+    <entry key="table_ID" type="xint" value="1623"/>
+    <entry key="table_type" type="xstring" value="extension_table"/>
+    <config key="table_references">
+        <entry key="array-size" type="xint" value="1"/>
+        <entry key="0" type="xstring" value="r0"/>
+    </config>
+    <entry key="table_implementation" type="xstring" value="org.knime.core.data.columnar.table.VirtualTableExtensionTable"/>
+    <config key="table_derived_settings">
+        <config key="schema"/>
+        <config key="REF_TABLES">
+            <entry key="array-size" type="xint" value="3"/>
+            <entry key="0" type="xint" value="1619"/>
+            <entry key="1" type="xint" value="1618"/>
+            <entry key="2" type="xint" value="1621"/>
+        </config>
+        <entry key="size" type="xlong" value="3"/>
+        <config key="REF_TABLE_IDS">
+            <entry key="array-size" type="xint" value="3"/>
+            <entry key="0" type="xstring" value="fbd077b2-242e-47cc-9449-fd554f135b47"/>
+            <entry key="1" type="xstring" value="0d10a894-6692-4454-906d-ad8126931f41"/>
+            <entry key="2" type="xstring" value="67004262-a5ce-4369-bbe0-59475319c31c"/>
+        </config>
+        <config key="virtual_table_fragment_5_1">
+            <entry key="version" type="xint" value="1"/>
+            <config key="transforms">
+                <config key="0">
+                    <entry key="type" type="xstring" value="SOURCE"/>
+                    <config key="internal">
+                        <entry key="identifier" type="xstring" value="0d10a894-6692-4454-906d-ad8126931f41"/>
+                    </config>
+                </config>
+                <config key="1">
+                    <entry key="type" type="xstring" value="SELECT"/>
+                    <config key="internal">
+                        <config key="included_columns">
+                            <entry key="array-size" type="xint" value="2"/>
+                            <entry key="0" type="xint" value="1"/>
+                            <entry key="1" type="xint" value="2"/>
+                        </config>
+                    </config>
+                </config>
+                <config key="2">
+                    <entry key="type" type="xstring" value="SOURCE"/>
+                    <config key="internal">
+                        <entry key="identifier" type="xstring" value="67004262-a5ce-4369-bbe0-59475319c31c"/>
+                    </config>
+                </config>
+                <config key="3">
+                    <entry key="type" type="xstring" value="APPEND"/>
+                    <config key="internal"/>
+                </config>
+                <config key="4">
+                    <entry key="type" type="xstring" value="SELECT"/>
+                    <config key="internal">
+                        <config key="included_columns">
+                            <entry key="array-size" type="xint" value="3"/>
+                            <entry key="0" type="xint" value="0"/>
+                            <entry key="1" type="xint" value="1"/>
+                            <entry key="2" type="xint" value="2"/>
+                        </config>
+                    </config>
+                </config>
+                <config key="5">
+                    <entry key="type" type="xstring" value="SOURCE"/>
+                    <config key="internal">
+                        <entry key="identifier" type="xstring" value="fbd077b2-242e-47cc-9449-fd554f135b47"/>
+                    </config>
+                </config>
+                <config key="6">
+                    <entry key="type" type="xstring" value="SELECT"/>
+                    <config key="internal">
+                        <config key="included_columns">
+                            <entry key="array-size" type="xint" value="3"/>
+                            <entry key="0" type="xint" value="0"/>
+                            <entry key="1" type="xint" value="1"/>
+                            <entry key="2" type="xint" value="2"/>
+                        </config>
+                    </config>
+                </config>
+                <config key="7">
+                    <entry key="type" type="xstring" value="CONCATENATE"/>
+                    <config key="internal"/>
+                </config>
+            </config>
+            <config key="connections">
+                <config key="0">
+                    <config key="from">
+                        <entry key="transform" type="xint" value="0"/>
+                    </config>
+                    <config key="to">
+                        <entry key="transform" type="xint" value="1"/>
+                        <entry key="port" type="xint" value="0"/>
+                    </config>
+                </config>
+                <config key="1">
+                    <config key="from">
+                        <entry key="transform" type="xint" value="2"/>
+                    </config>
+                    <config key="to">
+                        <entry key="transform" type="xint" value="3"/>
+                        <entry key="port" type="xint" value="0"/>
+                    </config>
+                </config>
+                <config key="2">
+                    <config key="from">
+                        <entry key="transform" type="xint" value="1"/>
+                    </config>
+                    <config key="to">
+                        <entry key="transform" type="xint" value="3"/>
+                        <entry key="port" type="xint" value="1"/>
+                    </config>
+                </config>
+                <config key="3">
+                    <config key="from">
+                        <entry key="transform" type="xint" value="3"/>
+                    </config>
+                    <config key="to">
+                        <entry key="transform" type="xint" value="4"/>
+                        <entry key="port" type="xint" value="0"/>
+                    </config>
+                </config>
+                <config key="4">
+                    <config key="from">
+                        <entry key="transform" type="xint" value="5"/>
+                    </config>
+                    <config key="to">
+                        <entry key="transform" type="xint" value="6"/>
+                        <entry key="port" type="xint" value="0"/>
+                    </config>
+                </config>
+                <config key="5">
+                    <config key="from">
+                        <entry key="transform" type="xint" value="6"/>
+                    </config>
+                    <config key="to">
+                        <entry key="transform" type="xint" value="7"/>
+                        <entry key="port" type="xint" value="0"/>
+                    </config>
+                </config>
+                <config key="6">
+                    <config key="from">
+                        <entry key="transform" type="xint" value="4"/>
+                    </config>
+                    <config key="to">
+                        <entry key="transform" type="xint" value="7"/>
+                        <entry key="port" type="xint" value="1"/>
+                    </config>
+                </config>
+            </config>
+        </config>
+    </config>
+    <entry key="table_file_name" type="xstring" isnull="true" value=""/>
+</config>

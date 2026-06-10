@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>knimeuser</author>
+    <created>2026-04-07T12:50:27.836+02:00</created>
+    <last-modified>2026-06-03T17:03:04.688+02:00</last-modified>
+    <description>Rows normalization metanode using selected linear normalization methods. Individual rows are normalized separately based on the selection technique.
+
+Normalized data are computed this way:
+- at first selected descriptive statistics that should be used for the normalization ("Normalize on" option) like median is calculated for each row (value A)
+- overall statisics onto which the data should be normalized is computed based on your selection ("Normalize to" option), e.g. mean value of all rows medians (value B)
+- normalization factor for each row is calculated using "value A" and "value B" based on your selection, using division (value A / value B) or subtraction (value A - value B)
+- normalization factors are then used either to divide the original value or to be subtracted from individual values in the respective row; the way in which the normalization factors will be used is dependent on your selection
+
+Normalization factors are returned as well next to the normalized data. They have the same orientation and name as selected data columns and the way in which the normalization factors should be used is dependent on your selection (see the normalization procedure above).
+
+ATTENTION!: if you select blank normalized column suffix and not used columns will be returned, original data in processed columns will be rewritten by te normalized ones! This is desired behavior.
+
+
+=================
+
+Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.
+
+KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)
+Python 3 (The Python consists of the following Python 3 License. Licence terms are available here: https://docs.python.org/3/license.html)
+Python package Pandas (The Pandas consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)
+
+The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+
+=================
+
+This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
+Version: 1.0.2 from 2026-06-03
+Contact person: David Potesil (david.potesil@ceitec.muni.cz)
+More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes.</description>
+    <in-ports>
+        <port name="Input table">Input table (may contain also columns not to be normalized)</port>
+    </in-ports>
+    <out-ports>
+        <port name="Output table">Original table with normalized data or normalized columns only</port>
+        <port name="Normalization factors">Normalization factors used to normalize the data rows</port>
+    </out-ports>
+</component-metadata>

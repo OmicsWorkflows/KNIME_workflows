@@ -1,0 +1,59 @@
+{
+    "type": "object",
+    "properties": {
+        "string-input-5:1527": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-8:988": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Enables case-insensitive matching\t",
+            "example": false
+        },
+        "string-input-8:1527": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-5:989": {
+            "type": "boolean",
+            "default": "true",
+            "description": "When this flag is specified then the search string is treated as a sequence of literal characters. Metacharacters or escape sequences in the input sequence will be given no special meaning.",
+            "example": true
+        },
+        "boolean-input-5:988": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Enables case-insensitive matching\t",
+            "example": false
+        },
+        "string-input-9:1527": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-9:989": {
+            "type": "boolean",
+            "default": "true",
+            "description": "When this flag is specified then the search string is treated as a sequence of literal characters. Metacharacters or escape sequences in the input sequence will be given no special meaning.",
+            "example": true
+        },
+        "boolean-input-9:988": {
+            "type": "boolean",
+            "default": "true",
+            "description": "Enables case-insensitive matching\t",
+            "example": true
+        },
+        "boolean-input-8:989": {
+            "type": "boolean",
+            "default": "false",
+            "description": "When this flag is specified then the search string is treated as a sequence of literal characters. Metacharacters or escape sequences in the input sequence will be given no special meaning.",
+            "example": false
+        }
+    }
+}

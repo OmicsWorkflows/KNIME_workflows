@@ -1,0 +1,104 @@
+{
+    "type": "object",
+    "properties": {
+        "string-input-5:1525": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-1:952": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning normalized data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "double-input-3:455": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "string-input-1:1526": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-3:1525": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "single-selection-3:454": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "the name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        },
+        "double-input-5:455": {
+            "type": "number",
+            "default": 0.5,
+            "description": "Provide the value for the float kernel bandwidth, the smaller number the lumpier plot (ie reduced smoothing of a plot)",
+            "example": 0.5
+        },
+        "string-input-1:1525": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "single-selection-5:454": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "scott"
+                }
+            },
+            "description": "the name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)",
+            "example": {
+                "variable_value": "scott"
+            }
+        },
+        "double-input-1:949": {
+            "type": "number",
+            "default": 0.3,
+            "description": "a standard deviation equal to w times the standard deviation of the observed data",
+            "example": 0.3
+        },
+        "string-input-1:951": {
+            "type": "string",
+            "default": "_imp",
+            "description": "suffix to add to processed column names (original data will be replaced if blank)",
+            "example": "_imp"
+        },
+        "double-input-1:948": {
+            "type": "number",
+            "default": 1.8,
+            "description": "downshifted mean equal to the average of all the observed data minus d times the standard deviation of the observed data",
+            "example": 1.8
+        },
+        "single-selection-1:950": {
+            "type": "object",
+            "properties": {
+                "variable_value": {
+                    "type": "string",
+                    "default": "column-wise"
+                }
+            },
+            "description": "apply the imputation column-wise (default in Perseus) or dataset-wise",
+            "example": {
+                "variable_value": "column-wise"
+            }
+        }
+    }
+}

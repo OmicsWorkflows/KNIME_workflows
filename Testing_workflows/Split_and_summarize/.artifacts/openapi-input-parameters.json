@@ -1,0 +1,77 @@
+{
+    "type": "object",
+    "properties": {
+        "string-input-1:858": {
+            "type": "string",
+            "default": ";",
+            "description": "Delimiter that seperates numbers in the cells",
+            "example": ";"
+        },
+        "boolean-input-5:860": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning changed data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "string-input-5:1527": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-4:860": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning changed data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "string-input-4:1527": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-1:1527": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-3:858": {
+            "type": "string",
+            "default": ";",
+            "description": "Delimiter that seperates numbers in the cells",
+            "example": ";"
+        },
+        "boolean-input-3:860": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning changed data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "string-input-4:858": {
+            "type": "string",
+            "default": ";",
+            "description": "Delimiter that seperates numbers in the cells",
+            "example": ";"
+        },
+        "boolean-input-1:860": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning changed data; checked -> dataframe of processed columns will be returned only",
+            "example": false
+        },
+        "string-input-3:1527": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-5:858": {
+            "type": "string",
+            "default": ";",
+            "description": "Delimiter that seperates numbers in the cells",
+            "example": ";"
+        }
+    }
+}

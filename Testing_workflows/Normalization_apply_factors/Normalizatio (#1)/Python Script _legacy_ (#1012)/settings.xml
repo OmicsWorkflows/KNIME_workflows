@@ -6,7 +6,7 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="sourceCode" type="xstring" value="# performs data normalization of original dataset using provided normalization factors%%00010%%00010import pandas%%00010## data import for KNIME version%%00010data = input_table_1%%00010%%00010# saves the initial order of columns to be normalized %%00010# so they can be written in the same order for more convience%%00010data_columns = data.columns%%00010%%00010# creates empty dataframe to be filled by norm. factors%%00010normalization_factors = input_table_2%%00010%%00010# normalization factors dataframe index%%00010normalization_factors_columns = normalization_factors.columns%%00010%%00010# checks that column indexes are equal in both dataframes and raises exception if not%%00010if not sorted(list(data_columns.values)) == sorted(list(normalization_factors_columns.values)):%%00010%%00009raise ValueError(&quot;Names of the columns to be processed and normalization factors columns do not match! Please inspect the column names.&quot;)%%00010%%00010# normalize the data using the calculated normalization factors and using the way it has been requested%%00010# (factors are extracted as the last row in the provided dataframe - row index (.iloc) = -1)%%00010%%00010if flow_variables['normalize_operation'] == 'value x factor':%%00010%%00009data_normalized = data * normalization_factors.iloc[-1]%%00010elif flow_variables['normalize_operation'] == 'value / factor':%%00010%%00009data_normalized = data / normalization_factors.iloc[-1]%%00010elif flow_variables['normalize_operation'] == 'factor / value':%%00010%%00009data_normalized = normalization_factors.iloc[-1] / data%%00010elif flow_variables['normalize_operation'] == 'value - factor':%%00010%%00009data_normalized = data - normalization_factors.iloc[-1]%%00010elif flow_variables['normalize_operation'] == 'value + factor':%%00010%%00009data_normalized = data + normalization_factors.iloc[-1]%%00010%%00010# reindexes the columns to be in the same order as in the beginning%%00010# (e.g. in case norm. factors are in different order and columns are mapped and resorted automatically...)%%00010data_normalized_reindexed = data_normalized.reindex(data_columns, axis = 1)%%00010%%00010## outputs normalized data%%00010output_table_1 = data_normalized_reindexed"/>
+        <entry key="sourceCode" type="xstring" value="# performs data normalization of original dataset using provided normalization factors%%00010%%00010import pandas%%00010## data import for KNIME version%%00010data = input_table_1%%00010%%00010# saves the initial order of columns to be normalized %%00010# so they can be written in the same order for more convience%%00010data_columns = data.columns%%00010%%00010# creates empty dataframe to be filled by norm. factors%%00010normalization_factors = input_table_2%%00010%%00010# normalization factors dataframe index%%00010normalization_factors_columns = normalization_factors.columns%%00010%%00010# checks that column indexes are equal in both dataframes and raises exception if not%%00010if not sorted(list(data_columns.values)) == sorted(list(normalization_factors_columns.values)):%%00010%%00009raise ValueError(&quot;Names of the columns to be processed and normalization factors columns do not match! Please inspect the column names.&quot;)%%00010%%00010# normalize the data using the calculated normalization factors and using the way it has been requested%%00010# (factors are extracted as the last row in the provided dataframe - row index (.iloc) = -1)%%00010%%00010if flow_variables['normalize_operation'] == 'value x factor':%%00010%%00009data_normalized = data * normalization_factors.iloc[-1]%%00010elif flow_variables['normalize_operation'] == 'value / factor':%%00010%%00009data_normalized = data / normalization_factors.iloc[-1].replace(0, float('nan'))%%00010elif flow_variables['normalize_operation'] == 'factor / value':%%00010%%00009data_normalized = normalization_factors.iloc[-1] / data.replace(0, float('nan'))%%00010elif flow_variables['normalize_operation'] == 'value - factor':%%00010%%00009data_normalized = data - normalization_factors.iloc[-1]%%00010elif flow_variables['normalize_operation'] == 'value + factor':%%00010%%00009data_normalized = data + normalization_factors.iloc[-1]%%00010%%00010# reindexes the columns to be in the same order as in the beginning%%00010# (e.g. in case norm. factors are in different order and columns are mapped and resorted automatically...)%%00010data_normalized_reindexed = data_normalized.reindex(data_columns, axis = 1)%%00010%%00010## outputs normalized data%%00010output_table_1 = data_normalized_reindexed"/>
         <entry key="rowLimit" type="xint" value="1000"/>
         <entry key="convertMissingToPython" type="xboolean" value="false"/>
         <entry key="convertMissingFromPython" type="xboolean" value="false"/>
@@ -15,7 +15,7 @@
         <entry key="chunkSize" type="xint" value="500000"/>
         <entry key="pythonVersionOption" type="xstring" value="python3"/>
         <entry key="python2Command" type="xstring" value=""/>
-        <entry key="python3Command" type="xstring" value="/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"/>
+        <entry key="python3Command" type="xstring" value="unknown_flow_variable_selected"/>
     </config>
     <config key="variables">
         <entry key="version" type="xstring" value="V_2019_09_13"/>
@@ -33,7 +33,7 @@
         <entry key="x-coordinate" type="xint" value="549"/>
         <entry key="y-coordinate" type="xint" value="359"/>
         <entry key="width" type="xint" value="143"/>
-        <entry key="height" type="xint" value="48"/>
+        <entry key="height" type="xint" value="51"/>
         <entry key="alignment" type="xstring" value="CENTER"/>
         <entry key="borderSize" type="xint" value="0"/>
         <entry key="borderColor" type="xint" value="16777215"/>
@@ -82,21 +82,19 @@
         <config key="Output object (pickled)"/>
     </config>
     <entry key="name" type="xstring" value="Python Script (legacy)"/>
-    <entry key="hasContent" type="xboolean" value="false"/>
-    <entry key="isInactive" type="xboolean" value="true"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">
         <config key="port_1">
             <entry key="index" type="xint" value="1"/>
-            <entry key="port_spec_class" type="xstring" value="org.knime.core.node.port.inactive.InactiveBranchPortObjectSpec"/>
-            <entry key="port_object_class" type="xstring" value="org.knime.core.node.port.inactive.InactiveBranchPortObject"/>
-            <entry key="port_object_summary" type="xstring" value="Inactive Port Object"/>
-            <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
-            <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 9, Cols: 2"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="43ec01ee-6e99-4020-b1f1-a082b32a2517"/>
     </config>
 </config>

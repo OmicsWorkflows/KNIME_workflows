@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>knimeuser</author>
+    <created>2026-03-16T13:56:57.047+01:00</created>
+    <last-modified>2026-06-03T16:17:45.284+02:00</last-modified>
+    <description>Metanode to filter input data frame using selected column values based on the column specified percentile.
+
+Numerical and text (string) columns can be both selected for filtration.
+
+At first, values in the selected column are ranked and rank percentile is computed within the given column. Ranking is from the lowest to highest value (numbers) or alphabetically (text column), i.e. in ascending order and missing values are ignored. The values ranks and percentiles are returned as new columns ("filtering column_rank" and "filtering column_percentile"). 'Ranking method' settings can be used to define how to treat same values groups ranking with these options:
+- average: average rank of group
+- min: lowest rank in group
+- max: highest rank in group
+- first: ranks assigned in order they appear in the array
+- dense: like 'min', but rank always increases by 1 between groups.
+
+pandas.DataFrame.rank is used for rank and percentile calculations, see http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.rank.html for its full documentation.
+
+Percentile values are used for a rows based filtering of the input table. During the rows filtering step these two metanode settings are considered:
+- percentile threshold - from 0 to 1; e.g. 0.9 = 90%
+- operator - e.g. is greater than ('>')
+
+Rows having rank percentile passing the specified threshold and operator (e.g. greater than 0.9) will appear in the top output table, otherwise they will be in the bottom one. Rows with missing value are returned in the bottom output table as well.
+
+Example:
+goal - to get rows having the 10 % of the highest values in the specified column (i.e. rank percentage should be equal or higher to 0.9)
+percentile threshold - 0.9 
+operator - '>='
+ranking method - 'average'
+
+=================
+
+Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.
+
+KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)
+Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3.6/license.html)
+
+The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+
+=================
+
+This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
+Version: 1.1.1 from 2026-03-16
+Contact person: David Potesil (david.potesil@ceitec.muni.cz)
+More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes.</description>
+    <in-ports>
+        <port name="Input data frame">Table to be processed</port>
+    </in-ports>
+    <out-ports>
+        <port name="Filtered data frame">Data frame containing rows passing the filtration criteria</port>
+        <port name="Filtered out data">Data frame containing rows do not passing the filtration criteria and rows with not numerical value in filtering column</port>
+    </out-ports>
+</component-metadata>

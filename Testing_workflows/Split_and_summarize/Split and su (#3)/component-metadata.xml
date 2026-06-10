@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>knimeuser</author>
+    <created>2026-04-07T12:55:59.411+02:00</created>
+    <last-modified>2026-04-07T12:56:44.484+02:00</last-modified>
+    <description>Metanode for processing content of individual column cells containing one or several numerical values separated by delimiter.
+
+Individual values from a single column cell are extracted using the provided delimiter and converted to numbers (text and missing values are ignored). Selected descriptive statistics (e.g. median) is calculated in the end for each column cell, ignoring any NaN value.
+
+These decriptive statistics are implemented using numpy (https://docs.scipy.org/doc/numpy/reference/routines.statistics.html):
+max - maximal value
+mean - average value
+median - median
+min - minimal value
+sdt - standard deviation
+sum - sum
+var - variance
+
+Please note that all methods are implemented in their "nan" variant (e.g. nanmax), i.e. ignoring any NaNs.
+
+=================
+
+Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.
+
+KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)
+Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3.6/license.html)
+Python package numpy (The numpy consists of the following BSD/3clause license. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)
+Python package Pandas (The Pandas consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)
+
+The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+
+=================
+
+This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
+Version: 2.0.1 from 2026-04-07
+Contact person: David Potesil (david.potesil@ceitec.muni.cz)
+More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes.</description>
+    <in-ports>
+        <port name="Input table">Input dataframe to be processed</port>
+    </in-ports>
+    <out-ports>
+        <port name="Output table">Dataframe with added summary columns</port>
+    </out-ports>
+</component-metadata>

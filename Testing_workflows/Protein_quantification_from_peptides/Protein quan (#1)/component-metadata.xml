@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>knimeuser</author>
+    <created>2026-03-23T14:13:20.849+01:00</created>
+    <last-modified>2026-06-08T14:34:11.535+02:00</last-modified>
+    <description>Metanode for the quantification of proteins using peptide intensities. Both protein and peptide table are required to run this metanode.
+
+This metanode is using the DIA-TPA algorithm presented by He et al., 2020 (DOI: 10.1016/j.jprot.2019.03.005) and MaxLFQ and Top3 quantifications as implemented in the iq R package (Pham et al. 2020, DOI: 10.1093/bioinformatics/btz961). 
+
+As the top input, use a protein table into which newly calculated protein quantities should be inserted. As the bottom input, table containing information about peptide intensities (not transformed) should be used, this table will be used for the protein quantification. To correctly insert the new values into the top table, columns with matching protein IDs need to be selected both from the top and bottom (peptide) table.
+
+Before MaxLFQ or Top3 quantification, median normalization of peptide intensities can be performed to normalize intensities between samples. In case of DIA-NN outputs, if Precursor.Normalised columns are to be used, this median normalization is not necessary.
+
+It is possible to return values in several formats, apart from the absolute values calculated by the selected algorithm, log2, ppm or percentages can be returned.
+
+=================
+
+Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.
+
+KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)
+Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3.6/license.html)
+R 4.5.1 (The R consists of the following GPL-3 License. License terms are available here: https://www.r-project.org/Licenses/GPL-3)
+
+The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+
+=================
+
+This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
+Version: 2.10.1 from 2026-06-08
+Contact person: Karolina Krystofova (karolina.krystofova@ceitec.muni.cz)
+More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes.</description>
+    <in-ports>
+        <port name="Top input table">Table containing information about identified proteins</port>
+        <port name="Bottom input table">Table containing intensities of detected peptides</port>
+    </in-ports>
+    <out-ports>
+        <port name="Output table">Table with appended absolute quantity columns</port>
+    </out-ports>
+</component-metadata>

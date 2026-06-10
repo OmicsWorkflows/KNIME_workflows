@@ -1,0 +1,95 @@
+{
+    "type": "object",
+    "properties": {
+        "string-input-5:992": {
+            "type": "string",
+            "default": "_bin",
+            "description": "Common data columns suffix to be appended to the binary matrix columns",
+            "example": "_bin"
+        },
+        "string-input-5:1525": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-6:994": {
+            "type": "string",
+            "default": "",
+            "description": "Common summary columns prefix to be appended prior the sample name based on the design, e.g. \"Peptides \"",
+            "example": ""
+        },
+        "boolean-input-7:996": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning binary matrix; checked -> dataframe of processed columns will be returned only (ie the binary matrix itself)",
+            "example": false
+        },
+        "string-input-6:995": {
+            "type": "string",
+            "default": "_bin_sum",
+            "description": "Common summary columns suffix to be appended after the sample name based on the design and suffix appended to the binary table",
+            "example": "_bin_sum"
+        },
+        "string-input-6:1525": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-5:996": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning binary matrix; checked -> dataframe of processed columns will be returned only (ie the binary matrix itself)",
+            "example": false
+        },
+        "string-input-6:992": {
+            "type": "string",
+            "default": "_bin",
+            "description": "Common data columns suffix to be appended to the binary matrix columns",
+            "example": "_bin"
+        },
+        "string-input-7:992": {
+            "type": "string",
+            "default": "_bin",
+            "description": "Common data columns suffix to be appended to the binary matrix columns",
+            "example": "_bin"
+        },
+        "boolean-input-6:996": {
+            "type": "boolean",
+            "default": "false",
+            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning binary matrix; checked -> dataframe of processed columns will be returned only (ie the binary matrix itself)",
+            "example": false
+        },
+        "string-input-5:995": {
+            "type": "string",
+            "default": "_bin_sum",
+            "description": "Common summary columns suffix to be appended after the sample name based on the design and suffix appended to the binary table",
+            "example": "_bin_sum"
+        },
+        "string-input-7:994": {
+            "type": "string",
+            "default": "",
+            "description": "Common summary columns prefix to be appended prior the sample name based on the design, e.g. \"Peptides \"",
+            "example": ""
+        },
+        "string-input-5:994": {
+            "type": "string",
+            "default": "",
+            "description": "Common summary columns prefix to be appended prior the sample name based on the design, e.g. \"Peptides \"",
+            "example": ""
+        },
+        "string-input-7:995": {
+            "type": "string",
+            "default": "_bin_sum",
+            "description": "Common summary columns suffix to be appended after the sample name based on the design and suffix appended to the binary table",
+            "example": "_bin_sum"
+        },
+        "string-input-7:1525": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        }
+    }
+}

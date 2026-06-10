@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>knimeuser</author>
+    <created>2026-04-01T09:46:12.733+02:00</created>
+    <last-modified>2026-04-01T09:46:43.458+02:00</last-modified>
+    <description>Changes values in a selected column. Replacements need to be inserted as a table with one column containing the original names and another table containing their desired replacements. 
+
+The "Lookup string modifiers" form field enables further specification of string replacement. If "full word" is selected, only full words (i.e. strings surrounded by whitespace) which match the lookup string will be replaced. If "regex" is selected, the lookup string will be interpreted and processed as a regular expression.
+
+NOTE: Selected column will be always returned at original position in the table but column type will be converted to string.
+
+================= 
+
+Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms. 
+
+KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)
+
+The metanode was created in KNIME 4.7.7 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 4.7.7a. 
+
+================= 
+
+This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html. 
+Version: 1.4.0 from 2026-04-01
+Contact person: Karolina Krystofova (karolina.krystofova@ceitec.muni.cz) 
+More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes.</description>
+    <in-ports>
+        <port name="Top table">Table to alter</port>
+        <port name="Bottom table">Table containing original string-replacement pairs</port>
+    </in-ports>
+    <out-ports>
+        <port name="Output table">Top table with renamed values in selected column</port>
+    </out-ports>
+</component-metadata>

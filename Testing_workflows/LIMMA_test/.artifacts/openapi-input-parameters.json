@@ -1,0 +1,221 @@
+{
+    "type": "object",
+    "properties": {
+        "string-input-1:1954:1947:1525": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-11:1719:377": {
+            "type": "string",
+            "default": ",",
+            "description": "Enter delimiter which will be used to separate values in the form field above",
+            "example": ","
+        },
+        "string-input-11:1954:1:1000": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-11:1961": {
+            "type": "string",
+            "default": "quant,qual_up,qual_down,missing",
+            "description": "provide texts separated by comma to be used for the categorical comparisons evaluation if requested; order and the default values for the A-B comparison is as follows:\nquant - in both A and B\nqual_up - only in A\nqual_down - only in B\nmissing - nor in A or B\n\nplease note the strings separated by values are not stripped of e.g. leading or trailing spaces",
+            "example": "quant,qual_up,qual_down,missing"
+        },
+        "string-input-12:1590": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-1:1954:1947:994": {
+            "type": "string",
+            "default": "",
+            "description": "Common summary columns prefix to be appended prior the sample name based on the design, e.g. \"Peptides \"",
+            "example": ""
+        },
+        "string-input-1:1954:1947:995": {
+            "type": "string",
+            "default": "_bin_sum",
+            "description": "Common summary columns suffix to be appended after the sample name based on the design and suffix appended to the binary table",
+            "example": "_bin_sum"
+        },
+        "string-input-14:1589": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-1:1934": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-1:1933": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-1:1719:1525": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-1:1949": {
+            "type": "boolean",
+            "default": "true",
+            "description": "whether to calculate columns for categorical evaluation of the LIMMA results namely number of numerical values for each sample group and their categorical evaluation; the columns are calculated only when there are two sample groups compared and the log ratio test is not performed",
+            "example": true
+        },
+        "boolean-input-11:1535": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether the evaluated data are log fold changes to be tested (no dedign is needed for this type of testing, only log fold changes are tested for a difference from zero)",
+            "example": false
+        },
+        "string-input-1:1719:1526": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-11:1719:1525": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-11:1719:1526": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-1:1954:1947:996": {
+            "type": "boolean",
+            "default": "true",
+            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning binary matrix; checked -> dataframe of processed columns will be returned only (ie the binary matrix itself)",
+            "example": true
+        },
+        "string-input-1:1954:1947:992": {
+            "type": "string",
+            "default": "_bin",
+            "description": "Common data columns suffix to be appended to the binary matrix columns",
+            "example": "_bin"
+        },
+        "string-input-11:1933": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-11:1954:1957:1525": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-11:1934": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-1:1535": {
+            "type": "boolean",
+            "default": "false",
+            "description": "whether the evaluated data are log fold changes to be tested (no dedign is needed for this type of testing, only log fold changes are tested for a difference from zero)",
+            "example": false
+        },
+        "string-input-11:1954:1947:992": {
+            "type": "string",
+            "default": "_bin",
+            "description": "Common data columns suffix to be appended to the binary matrix columns",
+            "example": "_bin"
+        },
+        "string-input-14:1590": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the R executable; do not change unless you want to use your own R environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "boolean-input-11:1949": {
+            "type": "boolean",
+            "default": "true",
+            "description": "whether to calculate columns for categorical evaluation of the LIMMA results namely number of numerical values for each sample group and their categorical evaluation; the columns are calculated only when there are two sample groups compared and the log ratio test is not performed",
+            "example": true
+        },
+        "boolean-input-11:1954:1947:996": {
+            "type": "boolean",
+            "default": "true",
+            "description": "Whether to remove not used columns or not; unchecked -> original dataframe will be returned with added columns contaning binary matrix; checked -> dataframe of processed columns will be returned only (ie the binary matrix itself)",
+            "example": true
+        },
+        "string-input-11:1954:1947:995": {
+            "type": "string",
+            "default": "_bin_sum",
+            "description": "Common summary columns suffix to be appended after the sample name based on the design and suffix appended to the binary table",
+            "example": "_bin_sum"
+        },
+        "string-input-1:1929": {
+            "type": "string",
+            "default": ",",
+            "description": "Enter delimiter which will be used to separate values in the form field above",
+            "example": ","
+        },
+        "string-input-11:1954:1947:994": {
+            "type": "string",
+            "default": "",
+            "description": "Common summary columns prefix to be appended prior the sample name based on the design, e.g. \"Peptides \"",
+            "example": ""
+        },
+        "string-input-12:1589": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-11:1929": {
+            "type": "string",
+            "default": ",",
+            "description": "Enter delimiter which will be used to separate values in the form field above",
+            "example": ","
+        },
+        "string-input-1:1961": {
+            "type": "string",
+            "default": "quant,qual_up,qual_down,missing",
+            "description": "provide texts separated by comma to be used for the categorical comparisons evaluation if requested; order and the default values for the A-B comparison is as follows:\nquant - in both A and B\nqual_up - only in A\nqual_down - only in B\nmissing - nor in A or B\n\nplease note the strings separated by values are not stripped of e.g. leading or trailing spaces",
+            "example": "quant,qual_up,qual_down,missing"
+        },
+        "string-input-1:1954:1:1000": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-1:1719:377": {
+            "type": "string",
+            "default": ",",
+            "description": "Enter delimiter which will be used to separate values in the form field above",
+            "example": ","
+        },
+        "string-input-1:1954:1957:1525": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        },
+        "string-input-11:1954:1947:1525": {
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "type": "object",
+    "properties": {
+        "string-input-6:864": {
+            "type": "string",
+            "default": "",
+            "description": "absolute path to the python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
+            "example": ""
+        }
+    }
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="script" type="xstring" value="set.seed(128)%%00010%%00010df &lt;- data.frame(pep = paste0('A', 1:100),%%00010                 A = rnorm(100, mean = 15, sd = 2),%%00010                 fact = rnorm(100, mean = 1, sd = 0.1))%%00010df$B &lt;- df$A * df$fact%%00010df$C &lt;- df$A - 5%%00010df$D &lt;- df$A%%00010df$D[sample(1:100, 30)] &lt;- NA%%00010%%00010knime.out &lt;- df"/>
+        <entry key="templateUUID" type="xstring" isnull="true" value=""/>
+        <entry key="version" type="xstring" value="version 1.x"/>
+        <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
+        <entry key="sendRowNames" type="xboolean" value="true"/>
+        <entry key="sendBatchSize" type="xint" value="10000"/>
+        <entry key="knimeInType" type="xstring" value="data.frame"/>
+        <entry key="overwriteRHome" type="xboolean" value="false"/>
+        <entry key="rHome" type="xstring" value=""/>
+        <entry key="useRPathHome" type="xboolean" value="true"/>
+        <entry key="condaVariableName" type="xstring" isnull="true" value=""/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="factory" type="xstring" value="org.knime.r.RReaderTableNodeFactory"/>
+    <entry key="node-name" type="xstring" value="R Source (Table)"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME R-Project nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.r"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.9.0.v202511130856"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Interactive R Statistics Integration"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.r.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511132128"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="R Source (Table)"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 100, Cols: 6"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="8e86c946-b638-4f9f-8c20-8b8fb69da6d1"/>
+    </config>
+</config>

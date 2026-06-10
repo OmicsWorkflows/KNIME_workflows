@@ -6,25 +6,25 @@
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="normalization_factors_type (index)"/>
             <entry key="class" type="xstring" value="INTEGER"/>
-            <entry key="value" type="xint" value="1"/>
+            <entry key="value" type="xint" value="0"/>
         </config>
         <config key="Variable_1">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="normalization_factors_type"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="rows based"/>
+            <entry key="value" type="xstring" value="columns based"/>
         </config>
         <config key="Variable_2">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="normalization_factors_type (index)"/>
             <entry key="class" type="xstring" value="INTEGER"/>
-            <entry key="value" type="xint" value="1"/>
+            <entry key="value" type="xint" value="0"/>
         </config>
         <config key="Variable_3">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="normalization_factors_type"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="rows based"/>
+            <entry key="value" type="xstring" value="columns based"/>
         </config>
     </config>
     <config key="internal_node_subsettings">
@@ -105,6 +105,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="253efe7e-ca40-4aea-b885-70375e79458c"/>
+        <entry key="file_store_id" type="xstring" value="303d038e-69d0-4faf-87a7-3fecdd4d6636"/>
     </config>
 </config>
