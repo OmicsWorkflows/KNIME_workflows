@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
     <entry key="node_file" type="xstring" value="settings.xml"/>
-    <config key="flow_stack">
-        <config key="Variable_0">
-            <entry key="type" type="xstring" value="variable"/>
-            <entry key="name" type="xstring" value="column-filter"/>
-            <entry key="class" type="xstring" value="STRINGARRAY"/>
-            <config key="value">
-                <entry key="array-size" type="xint" value="6"/>
-                <entry key="0" type="xstring" value="PG.DIA-NN-MaxLFQ+1_1_log2"/>
-                <entry key="1" type="xstring" value="PG.DIA-NN-MaxLFQ+2_3_log2"/>
-                <entry key="2" type="xstring" value="PG.DIA-NN-MaxLFQ+1_log2"/>
-                <entry key="3" type="xstring" value="PG.DIA-NN-MaxLFQ+2_log2"/>
-                <entry key="4" type="xstring" value="PG.DIA-NN-MaxLFQ+1_3_log2"/>
-                <entry key="5" type="xstring" value="PG.DIA-NN-MaxLFQ+2_1_log2"/>
-            </config>
-        </config>
-    </config>
+    <config key="flow_stack"/>
     <config key="internal_node_subsettings">
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
@@ -110,7 +95,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="state" type="xstring" value="IDLE"/>
     <entry key="factory" type="xstring" value="org.knime.js.base.node.configuration.filter.column.ColumnFilterDialogNodeFactory2"/>
     <entry key="node-name" type="xstring" value="Column Filter Configuration"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
