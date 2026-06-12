@@ -5933,9 +5933,9 @@
         },
         "string-input-2022:1549": {
             "type": "string",
-            "default": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3",
+            "default": "",
             "description": "Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container",
-            "example": "/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"
+            "example": ""
         },
         "string-input-2157:1663:1668": {
             "type": "string",
