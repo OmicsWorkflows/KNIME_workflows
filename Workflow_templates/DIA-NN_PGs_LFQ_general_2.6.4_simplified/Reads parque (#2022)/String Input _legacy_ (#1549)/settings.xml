@@ -6,7 +6,7 @@
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="python3command"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"/>
+            <entry key="value" type="xstring" value=""/>
         </config>
     </config>
     <config key="internal_node_subsettings">
@@ -14,7 +14,7 @@
     </config>
     <config key="model">
         <config key="defaultValue">
-            <entry key="string" type="xstring" value="/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"/>
+            <entry key="string" type="xstring" value=""/>
         </config>
         <entry key="label" type="xstring" value="Path to Python3 executable"/>
         <entry key="description" type="xstring" value="Absolute path to the Python3 executable; do not change unless you want to use your own python environment outside the KNIME_docker_vnc container"/>

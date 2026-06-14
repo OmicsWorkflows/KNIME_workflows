@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
     <entry key="node_file" type="xstring" value="settings.xml"/>
-    <config key="flow_stack">
-        <config key="Variable_0">
-            <entry key="type" type="xstring" value="variable"/>
-            <entry key="name" type="xstring" value="design_sample_names_list"/>
-            <entry key="class" type="xstring" value="STRINGARRAY"/>
-            <config key="value">
-                <entry key="array-size" type="xint" value="6"/>
-                <entry key="0" type="xstring" value="1_1"/>
-                <entry key="1" type="xstring" value="2_3"/>
-                <entry key="2" type="xstring" value="1"/>
-                <entry key="3" type="xstring" value="2"/>
-                <entry key="4" type="xstring" value="1_3"/>
-                <entry key="5" type="xstring" value="2_1"/>
-            </config>
-        </config>
-        <config key="Variable_1">
-            <entry key="type" type="xstring" value="variable"/>
-            <entry key="name" type="xstring" value="columns_to_group_with"/>
-            <entry key="class" type="xstring" value="STRINGARRAY"/>
-            <config key="value">
-                <entry key="array-size" type="xint" value="4"/>
-                <entry key="0" type="xstring" value="Stripped.Sequence"/>
-                <entry key="1" type="xstring" value="Protein.Ids"/>
-                <entry key="2" type="xstring" value="Protein.Group"/>
-                <entry key="3" type="xstring" value="Lib.PG.Q.Value"/>
-            </config>
-        </config>
-    </config>
+    <config key="flow_stack"/>
     <config key="internal_node_subsettings">
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
@@ -70,11 +43,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="EXECUTED"/>
-    <config key="nodecontainer_message">
-        <entry key="type" type="xstring" value="ERROR"/>
-        <entry key="message" type="xstring" value="I/O error while saving internals: /home/knimeuser/knime-workspace/gitfolders/KNIME_workflows/Workflow_templates/DIA-NN_PGs_LFQ_general_2.6.4-v2/Workflow var (#2006)/Python Script (#1997)/internal/console_b.arrow"/>
-    </config>
+    <entry key="state" type="xstring" value="IDLE"/>
     <entry key="factory" type="xstring" value="org.knime.python3.scripting.nodes2.script.PythonScriptNodeFactory"/>
     <entry key="node-name" type="xstring" value="Python Script"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Python 3 - Scripting Nodes"/>
@@ -94,11 +63,11 @@
         <config key="Output object (pickled)"/>
     </config>
     <entry key="name" type="xstring" value="Python Script"/>
-    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports"/>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="b6ad877a-6526-46d1-96cd-dabe556ba16a"/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
     </config>
 </config>

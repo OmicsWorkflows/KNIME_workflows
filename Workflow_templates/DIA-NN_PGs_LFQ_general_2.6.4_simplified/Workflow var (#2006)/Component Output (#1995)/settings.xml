@@ -69,7 +69,7 @@
         <entry key="allowOutputNodeToCompleteBeforeContent" type="xboolean" value="true"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="state" type="xstring" value="IDLE"/>
     <entry key="isDeletable" type="xboolean" value="false"/>
     <entry key="factory" type="xstring" value="org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeOutputNodeFactory"/>
     <entry key="node-name" type="xstring" value="Component Output"/>
@@ -103,31 +103,11 @@
         </config>
     </config>
     <entry key="name" type="xstring" value="Component Output"/>
-    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports"/>
-    <config key="internalObjects">
-        <entry key="location" type="xstring" value="internalTables"/>
-        <config key="content">
-            <config key="object_0">
-                <entry key="index" type="xint" value="0"/>
-                <entry key="type" type="xstring" value="table"/>
-                <entry key="table_dir_location" type="xstring" value="object_0"/>
-            </config>
-            <config key="object_1">
-                <entry key="index" type="xint" value="1"/>
-                <entry key="type" type="xstring" value="table"/>
-                <entry key="table_dir_location" type="xstring" value="object_1"/>
-            </config>
-            <config key="object_2">
-                <entry key="index" type="xint" value="2"/>
-                <entry key="type" type="xstring" value="table"/>
-                <entry key="table_dir_location" type="xstring" value="object_2"/>
-            </config>
-        </config>
-    </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="c5b9a54b-c405-40bb-b3f4-9444afe1f390"/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
     </config>
 </config>
