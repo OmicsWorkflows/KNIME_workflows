@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="script" type="xstring" value="import knime.scripting.io as knio%%00010import pandas as pd%%00010import itertools%%00010%%00010# start of the graph name displayed prior the LIMMA comparison name%%00010graph_base_prefix = knio.flow_variables['graph_name_prefix']%%00010graph_base_suffix = knio.flow_variables['graph_name_suffix']%%00010logFC_column_suffix = knio.flow_variables['volcano_logfc_suffix']%%00010Pval_column_suffix = knio.flow_variables['volcano_pval_suffix']%%00010%%00010x_title = knio.flow_variables['volcano_x_title']%%00010y_title = knio.flow_variables['volcano_y_title']%%00010logFC_threshold = knio.flow_variables['volcano_logFC_threshold']%%00010p_value_threshold = knio.flow_variables['volcano_p_value_threshold']%%00010text_column = knio.flow_variables['text_column']%%00010apply_log10 = &quot;TRUE&quot;%%00010show_filtered_out_data = str(knio.flow_variables['show_filtered_out_data']).upper()%%00010selected_annotations = str(knio.flow_variables['selected_annotations']).upper()%%00010%%00010input_table = knio.input_tables[0].to_pandas()%%00010%%00010if knio.flow_variables['volcano_comparisons'] != &quot;&quot;:%%00010    comparisons_LIMMA_list = [item.strip(' \n\t') for item in knio.flow_variables['volcano_comparisons'].split(&quot;,&quot;)]%%00010    columns = input_table.columns.tolist()%%00010%%00010# in case the flow variable with the volcano columns prefix is empty, the prefix is guessed, otherwise it is used directly as provided%%00010if knio.flow_variables['volcano_prefix'] == &quot;&quot;:%%00010    prefix_comp_list = []%%00010    for column in columns:%%00010        #print(column)%%00010        for comparison in comparisons_LIMMA_list:%%00010            #print(comparison)%%00010            if comparison in column:%%00010                #print(comparison)%%00010                prefix, _, suffix = column.partition(comparison)%%00010                #print(prefix)%%00010                #print(_)%%00010                #print(suffix)%%00010                #suffix = rest[len(comparison):]  # remove the substring itself from the rest%%00010                # checks whether the suffix is what it's expected%%00010                if suffix == Pval_column_suffix:%%00010                    prefix_comp_list.append([prefix, comparison])%%00010                #break  # assumes only one known substring per string%%00010else:%%00010    prefix_comp_list = []%%00010    for comparison in comparisons_LIMMA_list:%%00010        prefix_comp_list.append([knio.flow_variables['volcano_prefix'], comparison]) #* len(columns)%%00010        #print(len(prefix_comp_list))%%00010%%00010graph_names = []%%00010graph_short_names = []%%00010x_column = []%%00010y_column = []%%00010%%00010for item in prefix_comp_list:%%00010    new_name = graph_base_prefix + item[1]+ graph_base_suffix%%00010    # checks whether the graph name to be added is already in the list of graph names and adds counter if it is the case%%00010    if new_name not in graph_names:%%00010        graph_names.append(new_name)%%00010        graph_short_names.append(new_name)%%00010    else:%%00010        i = 2%%00010        new_name_int = new_name + &quot; (&quot; + str(i) + &quot;)&quot;%%00010        while new_name_int in graph_names:%%00010            i = i + 1%%00010            new_name_int = new_name + &quot; (&quot; + str(i) + &quot;)&quot;%%00010        graph_names.append(new_name_int)%%00010        graph_short_names.append(new_name_int)%%00010    x_column.append(item[0] + item[1] + logFC_column_suffix)%%00010    y_column.append(item[0] + item[1] + Pval_column_suffix)%%00010%%00010plots_df = pd.DataFrame()%%00010%%00010plots_df[&quot;name&quot;] = graph_names%%00010plots_df[&quot;short_name&quot;] = graph_short_names%%00010plots_df[&quot;comment&quot;] = knio.flow_variables['graph_comment']%%00010plots_df[&quot;type&quot;] = &quot;volcano&quot;%%00010plots_df[&quot;table_id&quot;] = knio.flow_variables['table']%%00010plots_df[&quot;columns_with_multiple&quot;] = &quot;[]&quot;%%00010plots_df[&quot;logFC_threshold&quot;] = logFC_threshold%%00010plots_df[&quot;p_value_threshold&quot;] = p_value_threshold%%00010plots_df[&quot;apply_log10&quot;] = apply_log10%%00010plots_df[&quot;selected_annotations&quot;] = selected_annotations%%00010plots_df[&quot;common_prefix&quot;] = &quot;&quot;%%00010plots_df[&quot;common_suffix&quot;] = &quot;&quot;%%00010plots_df[&quot;x_title&quot;] = x_title%%00010plots_df[&quot;y_title&quot;] = y_title%%00010plots_df[&quot;text&quot;] = text_column%%00010plots_df[&quot;x&quot;] = x_column%%00010plots_df[&quot;y&quot;] = y_column%%00010plots_df[&quot;show_filtered_out_data&quot;] = show_filtered_out_data%%00010%%00010knio.output_tables[0] = knio.Table.from_pandas(plots_df)"/>
+        <entry key="python3_command" type="xstring" value="/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="python3_command">
+                <entry key="used_variable" type="xstring" value="python3command"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="creates table containing %%00010Volcano plots to be %%00010imported into the PV app"/>
+        <entry key="contentType" type="xstring" value="text/plain"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="999"/>
+        <entry key="y-coordinate" type="xint" value="639"/>
+        <entry key="width" type="xint" value="162"/>
+        <entry key="height" type="xint" value="48"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="10"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles">
+            <config key="style_0">
+                <entry key="start" type="xint" value="26"/>
+                <entry key="length" type="xint" value="45"/>
+                <entry key="fontname" type="xstring" value="Sans"/>
+                <entry key="fontstyle" type="xint" value="0"/>
+                <entry key="fontsize" type="xint" value="10"/>
+                <entry key="fgcolor" type="xint" value="0"/>
+            </config>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="org.knime.python3.scripting.nodes2.script.PythonScriptNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Python Script"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Python 3 - Scripting Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python3.scripting.nodes"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.11.0.v202602211520"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Python Integration"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python3.scripting.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.11.0.v202602211520"/>
+    <config key="factory_settings"/>
+    <config key="node_creation_config">
+        <config key="Python environment"/>
+        <config key="Input object (pickled)"/>
+        <config key="Input table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output image"/>
+        <config key="Output object (pickled)"/>
+    </config>
+    <entry key="name" type="xstring" value="Python Script"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

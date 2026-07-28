@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <last-modified>2026-07-27T13:09:06.678+02:00</last-modified>
+    <description>Basic component for setting up the flow variables to be used for the automatic filenaming of tables to be exported using defined prefixes and automatically assessed date related tag.</description>
+    <in-ports/>
+    <out-ports>
+        <port name=""/>
+    </out-ports>
+</component-metadata>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="script" type="xstring" value="import knime.scripting.io as knio%%00010import numpy as np%%00010import pandas as pd%%00010%%00010# ---------- inputs ----------%%00010df = knio.input_tables[0].to_pandas()%%00010fv = knio.flow_variables%%00010%%00010if fv['input_data_format'] == &quot;log2 transformed&quot;:%%00010    df = df.apply(lambda x: np.power(2, x) if np.issubdtype(x.dtype, np.number) else x)%%00010elif fv['input_data_format'] == &quot;log10 transformed&quot;:%%00010    df = df.apply(lambda x: np.power(10, x) if np.issubdtype(x.dtype, np.number) else x)%%00010elif fv['input_data_format'] == &quot;not transformed (delogged)&quot;:%%00010    df = df%%00010else:%%00010    raise ValueError(&quot;Unexpected type of data format.&quot;)%%00010%%00010# parse lists of numerator/denominator indices%%00010numerators = [int(x) for x in fv['numerators'].split(',')]%%00010denominators = [int(x) for x in fv['denominators'].split(',')]%%00010if len(numerators) != len(denominators):%%00010    raise ValueError(&quot;The number of numerators and denominators must match.&quot;)%%00010%%00010# &quot;no value&quot; for both-missing case%%00010if fv['no_value'] == '':%%00010    no_value = np.NaN%%00010else:%%00010    try:%%00010        no_value = float(fv['no_value'])%%00010    except ValueError:%%00010        raise ValueError('Value for missing numerator and denominator is not a number')%%00010%%00010# name templates%%00010use_original_names = (fv['original_names'] == 1)%%00010ratio_prefix = fv['ratio_prefix']%%00010ratio_suffix = fv['ratio_suffix']%%00010if not use_original_names:%%00010    ratio_names = [x.strip() for x in fv['ratios'].split(',')]%%00010    if len(ratio_names) != len(numerators):%%00010        raise ValueError(&quot;The number of custom ratio names must equal the number of numerator/denominator pairs.&quot;)%%00010%%00010# missing-value policies%%00010qual_format = fv['qual_format']  # one of: 'number', 'text', 'NaN', 'use minimum'%%00010qual_up = {%%00010    'number': fv['qual_up_double'],%%00010    'text': fv['qual_up_text'],%%00010    'NaN'  : np.NaN,%%00010    'use minimum': 'use minimum',%%00010}%%00010qual_down = {%%00010    'number': fv['qual_down_double'],%%00010    'text': fv['qual_down_text'],%%00010    'NaN'  : np.NaN,%%00010    'use minimum': 'use minimum',%%00010}%%00010missing_num_ratio = qual_down[qual_format]   # when numerator is missing%%00010missing_den_ratio = qual_up[qual_format]     # when denominator is missing%%00010missing_both_ratio = no_value                # when both are missing%%00010%%00010# ---------- helper to build column names ----------%%00010def make_ratio_name(n_idx, d_idx, i):%%00010    if use_original_names:%%00010        n_name = df.columns[n_idx]%%00010        d_name = df.columns[d_idx]%%00010        base = f&quot;{ratio_prefix}{n_name}-{d_name}{ratio_suffix}&quot;%%00010    else:%%00010        base = f&quot;{ratio_prefix}{ratio_names[i]}{ratio_suffix}&quot;%%00010    return base%%00010%%00010# ---------- core calculator (vectorized) ----------%%00010def compute_ratio_pair(n_col: pd.Series, d_col: pd.Series,%%00010                       qual_format: str,%%00010                       missing_num_ratio, missing_den_ratio, missing_both_ratio):%%00010    &quot;&quot;&quot;%%00010    Returns (raw_ratio, final_ratio) as two Series.%%00010    - Zeros are treated as NaN before the raw ratio is computed.%%00010    - final_ratio applies imputation rules.%%00010    &quot;&quot;&quot;%%00010    # keep originals to compute &quot;use minimum&quot; on original values%%00010    n_orig = n_col.copy()%%00010    d_orig = d_col.copy()%%00010%%00010    # treat zeros as missing for the raw division%%00010    n = n_col.replace(0, np.NaN)%%00010    d = d_col.replace(0, np.NaN)%%00010%%00010    raw = n / d  # pandas will yield NaN where n or d is NaN%%00010%%00010    # masks%%00010    n_nan = n.isna()%%00010    d_nan = d.isna()%%00010    both_nan = n_nan &amp; d_nan%%00010%%00010    # start from raw and fill according to policy%%00010    final = raw.copy()%%00010%%00010    if qual_format == 'use minimum':%%00010        # compute minima on the original data%%00010        n_min = n_orig.min()%%00010        d_min = d_orig.min()%%00010%%00010        # numerator missing only: use n_min / d%%00010        final = final.where(~(n_nan &amp; ~d_nan), n_min / d)%%00010%%00010        # denominator missing only: use n / d_min%%00010        final = final.where(~(~n_nan &amp; d_nan), n / d_min)%%00010    else:%%00010        # fill with configured constants / NaN / text%%00010        if (qual_format not in ('number', 'text', 'NaN')):%%00010            raise ValueError(&quot;Unsupported qual_format. Expected 'number', 'text', 'NaN', or 'use minimum'.&quot;)%%00010        final = final.where(~(n_nan &amp; ~d_nan), missing_num_ratio)%%00010        final = final.where(~(~n_nan &amp; d_nan), missing_den_ratio)%%00010%%00010    # both missing%%00010    final = final.where(~both_nan, missing_both_ratio)%%00010%%00010    return raw, final%%00010%%00010# ---------- build all ratios ----------%%00010out_parts = []%%00010%%00010for i, (n_idx, d_idx) in enumerate(zip(numerators, denominators)):%%00010    base_name = make_ratio_name(n_idx, d_idx, i)%%00010    n_col = df.iloc[:, n_idx]%%00010    d_col = df.iloc[:, d_idx]%%00010%%00010    raw, final_all = compute_ratio_pair(%%00010        n_col, d_col,%%00010        qual_format=qual_format,%%00010        missing_num_ratio=missing_num_ratio,%%00010        missing_den_ratio=missing_den_ratio,%%00010        missing_both_ratio=missing_both_ratio%%00010    )%%00010%%00010    tmp = pd.DataFrame({%%00010        base_name: raw,%%00010        f&quot;{base_name}_all&quot;: final_all%%00010    })%%00010%%00010    if qual_format == 'text':%%00010        # only the *_all column becomes text per your original behavior%%00010        tmp[f&quot;{base_name}_all&quot;] = tmp[f&quot;{base_name}_all&quot;].astype('str')%%00010%%00010    out_parts.append(tmp)%%00010%%00010# concatenate all ratio columns side by side (order preserved)%%00010output = pd.concat(out_parts, axis=1)%%00010%%00010%%00010# add log-transformed ratios if requested%%00010ratio_transform = fv['ratios_transform']%%00010%%00010# --- numeric-only log transform: numbers -&gt; log, text/invalid -&gt; NaN ---%%00010def _safe_log_cell(x, base=2):%%00010    # return float(log_base(x)) if x is a valid positive number, else np.nan%%00010    try:%%00010        val = float(x)%%00010    except (TypeError, ValueError):%%00010        return x%%00010    if not np.isfinite(val) or val &lt;= 0:%%00010        return np.nan%%00010    if base == 2:%%00010        result = np.log2(val)%%00010    elif base == 10:%%00010        result = np.log10(val)%%00010    return result%%00010%%00010if ratio_transform in ('log2 transformation', 'log2', 'log 2'):%%00010    for col in output.columns:%%00010        if not col.endswith('_all'):  # transform both raw and final%%00010            output[col + '_log2'] = np.log2(output[col].astype(float))%%00010        else:%%00010            output[col + '_log2'] = output[col].map(lambda v: _safe_log_cell(v, base=2)).astype(&quot;string&quot;)%%00010#            output[col + '_log2'] = output[col].map(%%00010#                lambda x: np.log2(x) if pd.api.types.is_number(x) else x%%00010#            ).astype(&quot;string&quot;)%%00010elif ratio_transform in ('log10 transformation', 'log10', 'log 10'):%%00010    for col in output.columns:%%00010        if not col.endswith('_all'):%%00010            output[col + '_log10'] = np.log10(output[col].astype(float))%%00010        else:%%00010            output[col + '_log10'] = output[col].map(lambda v: _safe_log_cell(v, base=10)).astype(&quot;string&quot;)%%00010elif ratio_transform in ('no transformation', 'none'):%%00010    pass%%00010else:%%00010    raise ValueError(%%00010        &quot;Unexpected ratio_transform value. Use one of the options using the select box.&quot;%%00010    )%%00010%%00010# ---------- KNIME output ----------%%00010knio.output_tables[0] = knio.Table.from_pandas(output)%%00010"/>
+        <entry key="python3_command" type="xstring" value="/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="python3_command">
+                <entry key="used_variable" type="xstring" value="python3command"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="all ratios calculated at once%%00010using vectorized approach"/>
+        <entry key="contentType" type="xstring" value="text/plain"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="330"/>
+        <entry key="y-coordinate" type="xint" value="359"/>
+        <entry key="width" type="xint" value="180"/>
+        <entry key="height" type="xint" value="32"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="10"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="org.knime.python3.scripting.nodes2.script.PythonScriptNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Python Script"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Python 3 - Scripting Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python3.scripting.nodes"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.11.0.v202602211520"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Python Integration"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python3.scripting.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.11.0.v202602211520"/>
+    <config key="factory_settings"/>
+    <config key="node_creation_config">
+        <config key="Python environment"/>
+        <config key="Input object (pickled)"/>
+        <config key="Input table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output image"/>
+        <config key="Output object (pickled)"/>
+    </config>
+    <entry key="name" type="xstring" value="Python Script"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="parquetReaderParameters">
+            <config key="multiFileSelectionParams">
+                <config key="source">
+                    <entry key="filterMode" type="xstring" value="FILE"/>
+                    <config key="path">
+                        <entry key="location_present" type="xboolean" value="true"/>
+                        <entry key="file_system_type" type="xstring" value="LOCAL"/>
+                        <entry key="path" type="xstring" value=""/>
+                    </config>
+                    <entry key="includeSubfolders" type="xboolean" value="false"/>
+                    <config key="filters">
+                        <entry key="filterFilesExtension" type="xboolean" value="false"/>
+                        <entry key="filesExtensionExpression" type="xstring" value=""/>
+                        <entry key="filesExtensionCaseSensitive" type="xboolean" value="false"/>
+                        <entry key="filterFilesName" type="xboolean" value="false"/>
+                        <entry key="filesNameExpression" type="xstring" value="*"/>
+                        <entry key="filesNameFilterType" type="xstring" value="WILDCARD"/>
+                        <entry key="filesNameCaseSensitive" type="xboolean" value="false"/>
+                        <entry key="includeHiddenFiles" type="xboolean" value="true"/>
+                        <entry key="includeSpecialFiles" type="xboolean" value="true"/>
+                        <entry key="filterFoldersName" type="xboolean" value="false"/>
+                        <entry key="foldersNameExpression" type="xstring" value="*"/>
+                        <entry key="foldersNameFilterType" type="xstring" value="WILDCARD"/>
+                        <entry key="foldersNameCaseSensitive" type="xboolean" value="false"/>
+                        <entry key="includeHiddenFolders" type="xboolean" value="true"/>
+                        <entry key="followSymlinks" type="xboolean" value="false"/>
+                    </config>
+                </config>
+            </config>
+            <config key="ifSchemaChangesParams">
+                <entry key="ignoreSchemaChange" type="xboolean" value="false"/>
+                <entry key="ifSchemaChangesOption" type="xstring" value="FAIL"/>
+            </config>
+            <config key="multiFileReaderParams">
+                <entry key="appendPathColumn" type="xstring" isnull="true" value=""/>
+                <entry key="appendPathColumn_is_present" type="xboolean" value="false"/>
+                <entry key="howToCombineColumns" type="xstring" value="FAIL"/>
+            </config>
+            <config key="unsupportedTypesParams">
+                <entry key="onUnsupportedColumnType" type="xstring" value="FAIL"/>
+            </config>
+        </config>
+        <config key="configId_Internals">
+            <config key="big_data_reader"/>
+        </config>
+        <entry key="sourceId_Internals" type="xstring" value="knime://knime.workflow/__inputs__/DIANN_folder/report.parquet"/>
+        <config key="transformationParameters">
+            <config key="specs">
+                <entry key="is_null" type="xboolean" value="true"/>
+            </config>
+            <entry key="enforceTypes" type="xboolean" value="true"/>
+            <config key="columnTransformation">
+                <config key="0">
+                    <entry key="columnName" type="xstring" isnull="true" value=""/>
+                    <entry key="originalTypeLabel" type="xstring" value="Default columntype"/>
+                    <entry key="includeInOutput" type="xboolean" value="true"/>
+                    <entry key="columnRename" type="xstring" isnull="true" value=""/>
+                    <entry key="unknownsColumnDataType" type="xstring" value="&lt;default-columntype&gt;"/>
+                </config>
+            </config>
+        </config>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="parquetReaderParameters">
+                <config key="multiFileSelectionParams">
+                    <config key="source">
+                        <config key="path">
+                            <entry key="used_variable" type="xstring" value="path_full_location"/>
+                            <entry key="used_variable_flawed" type="xboolean" value="false"/>
+                            <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                        </config>
+                    </config>
+                </config>
+            </config>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <config key="nodecontainer_message">
+        <entry key="type" type="xstring" value="WARNING"/>
+        <entry key="message" type="xstring" value="Errors loading flow variables into node : Errors overwriting node settings with flow variables: Unknown variable &quot;path_full_location&quot;"/>
+    </config>
+    <entry key="factory" type="xstring" value="org.knime.bigdata.fileformats.filehandling.reader.parquet.ParquetTableReaderNodeFactory2"/>
+    <entry key="node-name" type="xstring" value="Parquet Reader"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME BigData File Format Extension"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.bigdata.fileformats"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.11.0.v202602211509"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Extension for Big Data File Formats"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.bigdata.fileformats.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.11.0.v202602211509"/>
+    <config key="factory_settings"/>
+    <config key="node_creation_config">
+        <config key="File System Connection"/>
+        <config key="Data Table"/>
+    </config>
+    <entry key="name" type="xstring" value="Parquet Reader"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

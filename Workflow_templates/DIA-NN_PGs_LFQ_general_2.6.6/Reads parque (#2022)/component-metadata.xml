@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <last-modified>2026-07-27T13:09:04.377+02:00</last-modified>
+    <description>Reads the parquet file into the pandas dataframe and presents it in the standard KNIME table format
+
+Provide workflow relative path to the file.
+
+================= 
+
+Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms. 
+
+KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html) 
+Python 3 (The Python consists of the following Python 3.10 License. Licence terms are available here: https://docs.python.org/3.10/license.html) 
+
+The metanode was created in KNIME 4.7.7 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 4.7.7a. 
+
+================= 
+
+This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html. 
+Version: 0.0.1 from 2025-04-23
+Contact person: David Potesil (david.potesil@ceitec.muni.cz) 
+More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes.</description>
+    <in-ports/>
+    <out-ports>
+        <port name=""/>
+    </out-ports>
+</component-metadata>

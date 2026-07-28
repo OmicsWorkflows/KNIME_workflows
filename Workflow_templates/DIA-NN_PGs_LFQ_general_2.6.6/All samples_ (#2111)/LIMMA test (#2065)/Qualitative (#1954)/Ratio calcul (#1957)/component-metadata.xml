@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>knimeuser</author>
+    <created>2026-03-18T09:54:50.722+01:00</created>
+    <last-modified>2026-03-18T09:56:35.352+01:00</last-modified>
+    <description>Metanode for ratio calculation. After selecting a set of columns, ratios of interest are specified in a respective form field.
+
+Missing values are supported and you can specify what value the ratio should be when one of the values or both of them are missing. In case the 'text' format is selected, the column containing all ratios will be written in text format due to compatibility reasons.
+
+Two ratio columns are reported - column containing ratios coming only from not missing values and column containing also ratio values when one or both cells used for ratio calculation are missing, depending on the settings (names of these columns have the prefix '_all').
+
+=================
+
+Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.
+
+KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)
+Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3.6/license.html)
+Python package Pandas (The Pandas consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)
+Python package Numpy (The Numpy consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)
+
+The metanode was created in KNIME 4.5.2 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 4.5.2a.
+
+=================
+
+This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
+Version: 2.2.0 from 2026-03-17
+Contact person: David Potesil (david.potesil@ceitec.muni.cz)
+More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes.</description>
+    <in-ports>
+        <port name="Input table">Input table containing the columns to be used for ratio calculation</port>
+    </in-ports>
+    <out-ports>
+        <port name="Output table">Output table with calulated ratio columns; table can either contain only columns used for ratio calculation or whole input table based on the metanode setting</port>
+        <port name="Missing data matrix">Boolean matrix containing information on the originally missing values. The matrix has the same dimensions as data columns. Missing values = 'True', not missing value = 'False'.</port>
+    </out-ports>
+</component-metadata>

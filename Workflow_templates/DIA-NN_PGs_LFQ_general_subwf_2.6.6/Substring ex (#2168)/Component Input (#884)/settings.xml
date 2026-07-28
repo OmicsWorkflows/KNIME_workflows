@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="variable-filter">
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
+            <config key="included_names">
+                <entry key="array-size" type="xint" value="0"/>
+            </config>
+            <config key="excluded_names">
+                <entry key="array-size" type="xint" value="0"/>
+            </config>
+            <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value=""/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+            </config>
+        </config>
+        <entry key="variable-prefix" type="xstring" isnull="true" value=""/>
+        <config key="port-names">
+            <entry key="array-size" type="xint" value="1"/>
+            <entry key="0" type="xstring" value="Input table"/>
+        </config>
+        <config key="port-descriptions">
+            <entry key="array-size" type="xint" value="1"/>
+            <entry key="0" type="xstring" value="Input table containing the column to be processed"/>
+        </config>
+        <entry key="sub-node-description" type="xstring" value="Metanode for extraction of substring from specified column cells.%%00010%%00010%%00010The metanode process the &quot;column to process&quot; this way (&quot;sp|P68133|ACTS_HUMAN;sp|P68032|ACTC_HUMAN;sp|P63267|ACTH_HUMAN&quot; is used as an example below)%%000101) splits the content of the column to process based on the specified delimiter so each part can be processed separately %%00010(example string will be splitted using &quot;;&quot; into 3 texts: &quot;sp|P68133|ACTS_HUMAN&quot;, &quot;sp|P68032|ACTC_HUMAN&quot; and &quot;sp|P63267|ACTH_HUMAN&quot;)%%00010%%000102) removes left side of the string up to the specified leftside extraction string - operation is done on each part of the string got using the delimiter in the step 1:%%00010(this would result in the following texts in our example when &quot;|&quot; would be the lefside extraction string: &quot;P68133|ACTS_HUMAN&quot;, &quot;P68032|ACTC_HUMAN&quot; and &quot;P63267|ACTH_HUMAN&quot;; i.e. 3 first letters would be removed)%%00010%%000103) removes right side of the string from the specified rightside extraction string - operation is done on each part of the string got using the delimiter in the step 1:%%00010(this would result in the following texts in our example when &quot;|&quot; would be the lefside extraction string: &quot;P68133&quot;, &quot;P68032&quot; and &quot;P63267&quot;; i.e. everything after &quot;|&quot; would be removed)%%00010%%000104) combines text parts got in the step 1 into one text again using the same delimiter:%%00010(this would result in the following text in our example: &quot;P68133;P68032;P63267&quot;)%%00010%%00010Name of the new column can be modified using specified prefix/suffix. If you will not change the colum name, it will be replaced!%%00010%%00010=================%%00010%%00010Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.%%00010%%00010KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)%%00010Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3/license.html)%%00010%%00010The metanode was created in KNIME 4.5.2 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 4.5.2a.%%00010%%00010=================%%00010%%00010This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.%%00010Version: 1.0.0 from 2022-07-11%%00010Contact person: David Potesil (david.potesil@ceitec.muni.cz)%%00010More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes."/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="isDeletable" type="xboolean" value="false"/>
+    <entry key="factory" type="xstring" value="org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Component Input"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Core API"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.core"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.9.0.v202512101359"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME AP Core feature"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.core.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.9.0.v202512101359"/>
+    <entry key="factory-id-uniquifier" type="xstring" isnull="true" value=""/>
+    <config key="factory_settings">
+        <config key="port_0">
+            <entry key="index" type="xint" value="0"/>
+            <config key="type">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+    </config>
+    <entry key="name" type="xstring" value="Component Input"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 324, Cols: 97"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="e904348f-8aee-46f8-a3e6-dd8f7555f056"/>
+    </config>
+</config>

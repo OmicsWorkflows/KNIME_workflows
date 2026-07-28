@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <last-modified>2026-07-27T13:09:04.437+02:00</last-modified>
+    <description>The metanode takes in the experimental design tables and converts them into the flowvariables and also pre-process the input data table as requested:
+1) removes data to be removed
+2) resorts the data columns based on the design
+
+Experimental design names are checked for compatibility with R and can be automatically converted if requested (exception is raised otherwise).
+
+=================
+
+Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.
+
+KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)
+Python 3 (The Python consists of the following Python 3 License. Licence terms are available here: https://docs.python.org/3/license.html)
+Python package Pandas (The Pandas consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)
+
+The metanode was created in KNIME 4.7.7 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 4.7.7a.
+
+=================
+
+This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
+Version 0.2.0 from 2025-10-12
+Contact person: Karolina Krystofova (karolina.krystofova@ceitec.muni.cz)</description>
+    <in-ports>
+        <port name="Input table">DIA-NN base data table</port>
+        <port name="experimental design">experimetnal design</port>
+        <port name="comparisons table">table of comparisons for the normalization tests, LIMMA or ratios calculation</port>
+    </in-ports>
+    <out-ports>
+        <port name="Output protein groups table">DIA-NN output table after initial quality filtering and grouping on the Protein Group level</port>
+        <port name="Experimental design">experimental design with resorted rows and extra columns removed</port>
+    </out-ports>
+</component-metadata>

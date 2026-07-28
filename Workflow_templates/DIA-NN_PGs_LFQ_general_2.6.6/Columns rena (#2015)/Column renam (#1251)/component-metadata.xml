@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>knimeuser</author>
+    <created>2026-03-16T13:21:40.344+01:00</created>
+    <last-modified>2026-06-08T16:19:40.304+02:00</last-modified>
+    <description>Metanode renames columns in the upper table using the builtin KNIME node Column Rename (Regex).
+
+The bottom table (two specified columns from it) is used to define what should be searched ("Search string (regex)") and what should be used as Replacement to set up the internal Column Rename (Regex) node. The bottom table is used row-wise from the 1st row to the last one and all selected columns from the top table are passed to the Column Rename (Regex) node each time.
+
+The bottom table can be created e.g. by KNIME builtin node Table Creator.
+
+You can select, identically to the KNIME inbuilt "Column Rename (Regex)" node whether the searched value is of literal type and or whether the searched value should be treated case insensitevely.
+
+Please note:
+- "$" is used as special character here (fpr regular expressions) and needs to be escaped by (i.e. "\$") if it should be used as part of the Replacement text. If you want to search and replace this character, it should not be escaped though (i.e. use "$" only)
+- Columns order in the top table is not preserved if not all columns were selected to pass the renaming process. Not selected columns are present in the beginning of the resulting table, followed by the columns where the renamaning was done
+- extra column name suffix (e.g. " (#1)") is used in case the new column name is the same as already present column. This may happen in two scenarios - 1) when the renamed columns are appended to the columns not selected from the top table, and 2) during renaming step based on any row of the bottom table - i.e. new column name is the same as the name of other column selected from the top table. The latter case means the new column with extra column name suffix will be used for the following renaming steps.
+
+Please see builtin Column Rename (Regex) KNIME node for more information.
+
+=================
+
+Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.
+
+KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)
+Python 3 (The Python consists of the following Python 3 License. Licence terms are available here: https://docs.python.org/3/license.html)
+
+The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+
+=================
+
+This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
+Version: 1.3.1 from 2026-06-08
+Contact person: David Potesil (david.potesil@ceitec.muni.cz)
+More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes.</description>
+    <in-ports>
+        <port name="Data to be processed">Table containing columns to be renamed</port>
+        <port name="Mapping table">Table containing two columns with the searched and replacement value in each row</port>
+    </in-ports>
+    <out-ports>
+        <port name="Input with renamed columns">Input table with renamed columns according to configuration parameters.</port>
+    </out-ports>
+</component-metadata>
