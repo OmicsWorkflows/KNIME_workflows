@@ -51,7 +51,7 @@
         <config key="configId_Internals">
             <config key="big_data_reader"/>
         </config>
-        <entry key="sourceId_Internals" type="xstring" value="knime://knime.workflow/__inputs__/DIANN_folder/report.parquet"/>
+        <entry key="sourceId_Internals" type="xstring" value="file:/tmp/knime_DIA_NN_PGs_LFQ_14206/report2387186193851066634.parquet"/>
         <config key="transformationParameters">
             <config key="specs">
                 <entry key="is_null" type="xboolean" value="true"/>
@@ -75,7 +75,7 @@
                 <config key="multiFileSelectionParams">
                     <config key="source">
                         <config key="path">
-                            <entry key="used_variable" type="xstring" value="path_full_location"/>
+                            <entry key="used_variable" type="xstring" value="file_path (Path)"/>
                             <entry key="used_variable_flawed" type="xboolean" value="false"/>
                             <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
                         </config>
@@ -85,11 +85,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
-    <config key="nodecontainer_message">
-        <entry key="type" type="xstring" value="WARNING"/>
-        <entry key="message" type="xstring" value="Errors loading flow variables into node : Errors overwriting node settings with flow variables: Unknown variable &quot;path_full_location&quot;"/>
-    </config>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
     <entry key="factory" type="xstring" value="org.knime.bigdata.fileformats.filehandling.reader.parquet.ParquetTableReaderNodeFactory2"/>
     <entry key="node-name" type="xstring" value="Parquet Reader"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME BigData File Format Extension"/>

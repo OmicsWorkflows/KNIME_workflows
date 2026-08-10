@@ -3,7 +3,7 @@
     <entry key="created_by" type="xstring" value="5.11.0.v202603030810"/>
     <entry key="created_by_nightly" type="xboolean" value="false"/>
     <entry key="version" type="xstring" value="5.1.0"/>
-    <entry key="name" type="xstring" value="-outlyers, prec-filter100, norm, imputation, MaxLFQ, LIMMA"/>
+    <entry key="name" type="xstring" value="-outliers, prec-filter100, norm, imputation, MaxLFQ, LIMMA"/>
     <config key="authorInformation">
         <entry key="authored-by" type="xstring" isnull="true" value=""/>
         <entry key="authored-when" type="xstring" isnull="true" value=""/>

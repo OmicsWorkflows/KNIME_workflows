@@ -36,11 +36,6 @@
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="IDLE"/>
-    <config key="nodecontainer_message">
-        <entry key="type" type="xstring" value="WARNING"/>
-        <entry key="message" type="xstring" value="One node with warning (Parquet Reader #2025)"/>
-        <entry key="issue" type="xstring" value="Parquet Reader #2025: Errors loading flow variables into node : Errors overwriting node settings with flow variables: Unknown variable &quot;path_full_location&quot;"/>
-    </config>
     <entry key="workflow-file" type="xstring" value="workflow.knime"/>
     <entry key="virtual-in-ID" type="xint" value="2022"/>
     <config key="inports"/>

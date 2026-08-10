@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>knimeuser</author>
+    <created>2026-08-07T13:50:07.118+02:00</created>
+    <last-modified>2026-08-07T13:51:14.609+02:00</last-modified>
+    <description/>
+    <in-ports/>
+    <out-ports>
+        <port name="Output"/>
+    </out-ports>
+</component-metadata>
