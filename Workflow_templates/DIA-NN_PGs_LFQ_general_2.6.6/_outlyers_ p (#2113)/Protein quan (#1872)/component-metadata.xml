@@ -2,14 +2,16 @@
 <component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
     <author>knimeuser</author>
     <created>2026-03-23T14:13:20.849+01:00</created>
-    <last-modified>2026-06-10T13:29:35.168+02:00</last-modified>
+    <last-modified>2026-08-20T11:56:44.513+02:00</last-modified>
     <description>Metanode for the quantification of proteins using peptide intensities. Both protein and peptide table are required to run this metanode.
 
-This metanode is using the DIA-TPA algorithm presented by He et al., 2020 (DOI: 10.1016/j.jprot.2019.03.005) and MaxLFQ and Top3 quantifications as implemented in the iq R package (Pham et al. 2020, DOI: 10.1093/bioinformatics/btz961). 
+This metanode is using the DIA-TPA algorithm presented by He et al., 2020 (DOI: 10.1016/j.jprot.2019.03.005), MaxLFQ and Top3 quantifications as implemented in the iq R package (Pham et al. 2020, DOI: 10.1093/bioinformatics/btz961) and the DPC algorithm as implemented in the limpa R package (Li et al., 2026, DOI: 10.1101/2025.04.28.651125).
 
 As the top input, use a protein table into which newly calculated protein quantities should be inserted. As the bottom input, table containing information about peptide intensities (not transformed) should be used, this table will be used for the protein quantification. To correctly insert the new values into the top table, columns with matching protein IDs need to be selected both from the top and bottom (peptide) table.
 
 Before MaxLFQ or Top3 quantification, median normalization of peptide intensities can be performed to normalize intensities between samples. In case of DIA-NN outputs, if Precursor.Normalised columns are to be used, this median normalization is not necessary.
+
+For the DPC algorithm, it is necessary to use data where no previous imputation of missing data has been performed.
 
 It is possible to return values in several formats, apart from the absolute values calculated by the selected algorithm, log2, ppm or percentages can be returned.
 
@@ -21,12 +23,12 @@ KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Lice
 Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3.6/license.html)
 R 4.5.1 (The R consists of the following GPL-3 License. License terms are available here: https://www.r-project.org/Licenses/GPL-3)
 
-The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+The metanode was created in KNIME 5.11.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.11.0a.
 
 =================
 
 This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
-Version: 2.10.1 from 2026-06-10
+Version: 2.11.0 from 2026-08-20
 Contact person: Karolina Krystofova (karolina.krystofova@ceitec.muni.cz)
 More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes.</description>
     <in-ports>

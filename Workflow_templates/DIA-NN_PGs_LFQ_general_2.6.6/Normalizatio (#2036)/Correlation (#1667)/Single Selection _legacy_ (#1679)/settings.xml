@@ -18,9 +18,13 @@
         <entry key="customCSS" type="xstring" value=""/>
         <entry key="flowvariablename" type="xstring" value="distance_metric_correlation"/>
         <config key="possible_choices">
-            <entry key="array-size" type="xint" value="2"/>
-            <entry key="0" type="xstring" value="cityblock"/>
-            <entry key="1" type="xstring" value="euclidean"/>
+            <entry key="array-size" type="xint" value="6"/>
+            <entry key="0" type="xstring" value="euclidean"/>
+            <entry key="1" type="xstring" value="maximum"/>
+            <entry key="2" type="xstring" value="manhattan"/>
+            <entry key="3" type="xstring" value="canberra"/>
+            <entry key="4" type="xstring" value="binary"/>
+            <entry key="5" type="xstring" value="minkowski"/>
         </config>
         <entry key="type" type="xstring" value="Dropdown"/>
         <entry key="limit_number_visible_options" type="xboolean" value="false"/>

@@ -7,7 +7,7 @@
     </config>
     <config key="model">
         <config key="defaultValue">
-            <entry key="variable_value" type="xstring" value="scott"/>
+            <entry key="variable_value" type="xstring" value="gaussian"/>
         </config>
         <entry key="label" type="xstring" value="Kernel bandwidth"/>
         <entry key="description" type="xstring" value="The name of a reference rule or the scale factor to use when computing the kernel bandwidth (ie smoothing parameter)"/>
@@ -18,10 +18,14 @@
         <entry key="customCSS" type="xstring" value=""/>
         <entry key="flowvariablename" type="xstring" value="violin_kernel"/>
         <config key="possible_choices">
-            <entry key="array-size" type="xint" value="3"/>
-            <entry key="0" type="xstring" value="scott"/>
-            <entry key="1" type="xstring" value="silverman"/>
-            <entry key="2" type="xstring" value="float"/>
+            <entry key="array-size" type="xint" value="7"/>
+            <entry key="0" type="xstring" value="gaussian"/>
+            <entry key="1" type="xstring" value="rectangular"/>
+            <entry key="2" type="xstring" value="triangular"/>
+            <entry key="3" type="xstring" value="epanechnikov"/>
+            <entry key="4" type="xstring" value="biweight"/>
+            <entry key="5" type="xstring" value="cosine"/>
+            <entry key="6" type="xstring" value="optcosine"/>
         </config>
         <entry key="type" type="xstring" value="Dropdown"/>
         <entry key="limit_number_visible_options" type="xboolean" value="false"/>

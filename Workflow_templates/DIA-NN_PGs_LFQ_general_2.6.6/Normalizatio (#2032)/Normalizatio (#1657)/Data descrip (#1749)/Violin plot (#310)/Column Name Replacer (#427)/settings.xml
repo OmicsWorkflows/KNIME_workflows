@@ -7,9 +7,9 @@
     </config>
     <config key="model">
         <entry key="searchString" type="xstring" value=""/>
+        <entry key="replaceString" type="xstring" value=""/>
         <entry key="isCaseInsensitive" type="xboolean" value="true"/>
         <entry key="isLiteral" type="xboolean" value="true"/>
-        <entry key="replaceString" type="xstring" value=""/>
     </config>
     <config key="variables">
         <config key="searchString">

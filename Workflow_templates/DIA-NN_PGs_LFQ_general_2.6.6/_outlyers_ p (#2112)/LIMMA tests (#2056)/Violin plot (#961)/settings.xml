@@ -662,7 +662,7 @@
     </config>
     <config key="workflow_template_information">
         <entry key="role" type="xstring" value="Link"/>
-        <entry key="timestamp" type="xstring" value="2026-03-16 15:36:47 +0000"/>
+        <entry key="timestamp" type="xstring" value="2026-08-11 23:17:46 +0000"/>
         <entry key="sourceURI" type="xstring" value="knime://LOCAL/gitfolders/KNIME_metanodes/Metanodes%20templates/Graphs/Violin%20plot"/>
     </config>
     <entry key="layoutJSON" type="xstring" value=""/>

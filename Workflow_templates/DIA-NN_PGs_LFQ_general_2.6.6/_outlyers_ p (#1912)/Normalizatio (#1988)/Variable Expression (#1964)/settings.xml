@@ -17,6 +17,13 @@
                 <entry key="replacedFlowVariable" type="xstring" value="Rreplace"/>
                 <entry key="flowVariableReturnType" type="xstring" value="Boolean"/>
             </config>
+            <config key="1">
+                <entry key="script" type="xstring" value="if(strip($$[&quot;design&quot;]) = '', FALSE, TRUE)"/>
+                <entry key="outputMode" type="xstring" value="APPEND"/>
+                <entry key="createdFlowVariable" type="xstring" value="color_by_group"/>
+                <entry key="replacedFlowVariable" type="xstring" value=""/>
+                <entry key="flowVariableReturnType" type="xstring" value="Boolean"/>
+            </config>
         </config>
     </config>
     <config key="variables"/>

@@ -8,13 +8,49 @@
     <config key="model">
         <config key="columns_to_process-442">
             <config key="columns">
-                <entry key="array-size" type="xint" value="0"/>
+                <entry key="array-size" type="xint" value="18"/>
+                <entry key="0" type="xstring" value="WT_m_1"/>
+                <entry key="1" type="xstring" value="WT_p_1"/>
+                <entry key="2" type="xstring" value="WT_pp_1"/>
+                <entry key="3" type="xstring" value="WT_m_2"/>
+                <entry key="4" type="xstring" value="WT_p_2"/>
+                <entry key="5" type="xstring" value="WT_pp_2"/>
+                <entry key="6" type="xstring" value="WT_m_3"/>
+                <entry key="7" type="xstring" value="WT_p_3"/>
+                <entry key="8" type="xstring" value="WT_pp_3"/>
+                <entry key="9" type="xstring" value="KO_m_1"/>
+                <entry key="10" type="xstring" value="KO_p_1"/>
+                <entry key="11" type="xstring" value="KO_pp_1"/>
+                <entry key="12" type="xstring" value="KO_m_2"/>
+                <entry key="13" type="xstring" value="KO_p_2"/>
+                <entry key="14" type="xstring" value="KO_pp_2"/>
+                <entry key="15" type="xstring" value="KO_m_3"/>
+                <entry key="16" type="xstring" value="KO_p_3"/>
+                <entry key="17" type="xstring" value="KO_pp_3"/>
             </config>
             <config key="columnFilter">
                 <config key="columnFilter">
                     <entry key="filter-type" type="xstring" value="name_pattern"/>
                     <config key="included_names">
-                        <entry key="array-size" type="xint" value="0"/>
+                        <entry key="array-size" type="xint" value="18"/>
+                        <entry key="0" type="xstring" value="WT_m_1"/>
+                        <entry key="1" type="xstring" value="WT_p_1"/>
+                        <entry key="2" type="xstring" value="WT_pp_1"/>
+                        <entry key="3" type="xstring" value="WT_m_2"/>
+                        <entry key="4" type="xstring" value="WT_p_2"/>
+                        <entry key="5" type="xstring" value="WT_pp_2"/>
+                        <entry key="6" type="xstring" value="WT_m_3"/>
+                        <entry key="7" type="xstring" value="WT_p_3"/>
+                        <entry key="8" type="xstring" value="WT_pp_3"/>
+                        <entry key="9" type="xstring" value="KO_m_1"/>
+                        <entry key="10" type="xstring" value="KO_p_1"/>
+                        <entry key="11" type="xstring" value="KO_pp_1"/>
+                        <entry key="12" type="xstring" value="KO_m_2"/>
+                        <entry key="13" type="xstring" value="KO_p_2"/>
+                        <entry key="14" type="xstring" value="KO_pp_2"/>
+                        <entry key="15" type="xstring" value="KO_m_3"/>
+                        <entry key="16" type="xstring" value="KO_p_3"/>
+                        <entry key="17" type="xstring" value="KO_pp_3"/>
                     </config>
                     <config key="excluded_names">
                         <entry key="array-size" type="xint" value="0"/>
@@ -28,9 +64,9 @@
                     </config>
                     <config key="datatype">
                         <config key="typelist">
+                            <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
                             <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
                             <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
-                            <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
                             <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
                             <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
                             <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
@@ -39,40 +75,58 @@
                 </config>
             </config>
         </config>
-        <config key="x_axis_label-443">
+        <config key="group_col_bool-2036">
+            <entry key="boolean" type="xboolean" value="false"/>
+        </config>
+        <config key="color_groups-2037">
+            <entry key="string" type="xstring" value="defined by variable %%00010design"/>
+        </config>
+        <config key="x_axis_label-2039">
             <entry key="string" type="xstring" value=""/>
         </config>
-        <config key="y_axis_label-446">
+        <config key="y_axis_label-2040">
             <entry key="string" type="xstring" value=""/>
         </config>
-        <config key="graph_subtitle-447">
+        <config key="graph_subtitle-2041">
             <entry key="string" type="xstring" value="FAILED violin figure - check the data"/>
         </config>
-        <config key="y_axis_limits-448">
+        <config key="y_axis_limits-2042">
             <entry key="string" type="xstring" value="Auto"/>
         </config>
-        <config key="prefix_to_remove-449">
+        <config key="prefix_to_remove-2045">
             <entry key="string" type="xstring" value=""/>
         </config>
-        <config key="suffix_to_remove-450">
+        <config key="suffix_to_remove-2046">
             <entry key="string" type="xstring" value=""/>
         </config>
-        <config key="plot_size-1526">
+        <config key="plot_size-2047">
             <entry key="string" type="xstring" value="Auto"/>
         </config>
     </config>
     <config key="variables">
         <entry key="version" type="xstring" value="V_2019_09_13"/>
         <config key="tree">
-            <config key="prefix_to_remove-449">
+            <config key="color_groups-2037">
+                <config key="string">
+                    <entry key="used_variable" type="xstring" value="design"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
+            <config key="prefix_to_remove-2045">
                 <config key="string">
                     <entry key="used_variable" type="xstring" value="prefix"/>
                     <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
                 </config>
             </config>
-            <config key="suffix_to_remove-450">
+            <config key="suffix_to_remove-2046">
                 <config key="string">
                     <entry key="used_variable" type="xstring" value="suffix"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
+            <config key="plot_size-2047">
+                <config key="string">
+                    <entry key="used_variable" type="xstring" value="boxplot_size"/>
                     <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
                 </config>
             </config>
@@ -85,7 +139,7 @@
         <entry key="x-coordinate" type="xint" value="338"/>
         <entry key="y-coordinate" type="xint" value="-81"/>
         <entry key="width" type="xint" value="165"/>
-        <entry key="height" type="xint" value="32"/>
+        <entry key="height" type="xint" value="34"/>
         <entry key="alignment" type="xstring" value="CENTER"/>
         <entry key="borderSize" type="xint" value="0"/>
         <entry key="borderColor" type="xint" value="16777215"/>
@@ -116,7 +170,7 @@
     </config>
     <config key="workflow_template_information">
         <entry key="role" type="xstring" value="Link"/>
-        <entry key="timestamp" type="xstring" value="2026-03-16 15:32:39 +0000"/>
+        <entry key="timestamp" type="xstring" value="2026-08-11 22:33:34 +0000"/>
         <entry key="sourceURI" type="xstring" value="knime://LOCAL/gitfolders/KNIME_metanodes/Metanodes%20templates/Graphs/Box%20plot"/>
     </config>
     <entry key="layoutJSON" type="xstring" value=""/>

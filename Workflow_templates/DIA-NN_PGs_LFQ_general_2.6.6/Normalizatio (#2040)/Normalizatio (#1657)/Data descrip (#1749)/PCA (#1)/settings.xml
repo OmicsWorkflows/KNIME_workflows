@@ -11,31 +11,7 @@
         </config>
         <config key="columns_to_process-962">
             <config key="columns">
-                <entry key="array-size" type="xint" value="24"/>
-                <entry key="0" type="xstring" value="013_M_Ctrl_7d_306"/>
-                <entry key="1" type="xstring" value="014_M_Ctrl_7d_307"/>
-                <entry key="2" type="xstring" value="015_M_Ctrl_7d_308"/>
-                <entry key="3" type="xstring" value="016_M_Ctrl_7d_309"/>
-                <entry key="4" type="xstring" value="017_M_Ctrl_7d_310"/>
-                <entry key="5" type="xstring" value="018_M_Ctrl_7d_311"/>
-                <entry key="6" type="xstring" value="019_M_Pilo_7d_312"/>
-                <entry key="7" type="xstring" value="020_M_Pilo_7d_313"/>
-                <entry key="8" type="xstring" value="021_M_Pilo_7d_314"/>
-                <entry key="9" type="xstring" value="022_M_Pilo_7d_315"/>
-                <entry key="10" type="xstring" value="023_M_Pilo_7d_316"/>
-                <entry key="11" type="xstring" value="024_M_Pilo_7d_317"/>
-                <entry key="12" type="xstring" value="049_F_Ctrl_7d_265"/>
-                <entry key="13" type="xstring" value="050_F_Ctrl_7d_266"/>
-                <entry key="14" type="xstring" value="051_F_Ctrl_7d_267"/>
-                <entry key="15" type="xstring" value="052_F_Ctrl_7d_268"/>
-                <entry key="16" type="xstring" value="053_F_Ctrl_7d_269"/>
-                <entry key="17" type="xstring" value="054_F_Ctrl_7d_270"/>
-                <entry key="18" type="xstring" value="055_F_Pilo_7d_271"/>
-                <entry key="19" type="xstring" value="056_F_Pilo_7d_272"/>
-                <entry key="20" type="xstring" value="057_F_Pilo_7d_273"/>
-                <entry key="21" type="xstring" value="058_F_Pilo_7d_274"/>
-                <entry key="22" type="xstring" value="059_F_Pilo_7d_275"/>
-                <entry key="23" type="xstring" value="060_F_Pilo_7d_276"/>
+                <entry key="array-size" type="xint" value="0"/>
             </config>
             <config key="columnFilter">
                 <config key="columnFilter">
@@ -44,31 +20,7 @@
                         <entry key="array-size" type="xint" value="0"/>
                     </config>
                     <config key="excluded_names">
-                        <entry key="array-size" type="xint" value="24"/>
-                        <entry key="0" type="xstring" value="013_M_Ctrl_7d_306"/>
-                        <entry key="1" type="xstring" value="014_M_Ctrl_7d_307"/>
-                        <entry key="2" type="xstring" value="015_M_Ctrl_7d_308"/>
-                        <entry key="3" type="xstring" value="016_M_Ctrl_7d_309"/>
-                        <entry key="4" type="xstring" value="017_M_Ctrl_7d_310"/>
-                        <entry key="5" type="xstring" value="018_M_Ctrl_7d_311"/>
-                        <entry key="6" type="xstring" value="019_M_Pilo_7d_312"/>
-                        <entry key="7" type="xstring" value="020_M_Pilo_7d_313"/>
-                        <entry key="8" type="xstring" value="021_M_Pilo_7d_314"/>
-                        <entry key="9" type="xstring" value="022_M_Pilo_7d_315"/>
-                        <entry key="10" type="xstring" value="023_M_Pilo_7d_316"/>
-                        <entry key="11" type="xstring" value="024_M_Pilo_7d_317"/>
-                        <entry key="12" type="xstring" value="049_F_Ctrl_7d_265"/>
-                        <entry key="13" type="xstring" value="050_F_Ctrl_7d_266"/>
-                        <entry key="14" type="xstring" value="051_F_Ctrl_7d_267"/>
-                        <entry key="15" type="xstring" value="052_F_Ctrl_7d_268"/>
-                        <entry key="16" type="xstring" value="053_F_Ctrl_7d_269"/>
-                        <entry key="17" type="xstring" value="054_F_Ctrl_7d_270"/>
-                        <entry key="18" type="xstring" value="055_F_Pilo_7d_271"/>
-                        <entry key="19" type="xstring" value="056_F_Pilo_7d_272"/>
-                        <entry key="20" type="xstring" value="057_F_Pilo_7d_273"/>
-                        <entry key="21" type="xstring" value="058_F_Pilo_7d_274"/>
-                        <entry key="22" type="xstring" value="059_F_Pilo_7d_275"/>
-                        <entry key="23" type="xstring" value="060_F_Pilo_7d_276"/>
+                        <entry key="array-size" type="xint" value="0"/>
                     </config>
                     <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
                     <config key="name_pattern">
@@ -79,9 +31,9 @@
                     </config>
                     <config key="datatype">
                         <config key="typelist">
-                            <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
                             <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
                             <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                            <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
                             <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
                             <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
                             <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
@@ -97,7 +49,7 @@
             </config>
         </config>
         <config key="annotation_column-973">
-            <entry key="column" type="xstring" value="013_M_Ctrl_7d_306"/>
+            <entry key="column" type="xstring" value="PG.ID"/>
         </config>
         <config key="group_bool-2040">
             <entry key="boolean" type="xboolean" value="true"/>
@@ -106,7 +58,7 @@
             <entry key="string" type="xstring" value=""/>
         </config>
         <config key="groups_column-2042">
-            <entry key="column" type="xstring" value="013_M_Ctrl_7d_306"/>
+            <entry key="column" type="xstring" value="PG.ID"/>
         </config>
         <config key="ellipse_bool-2043">
             <entry key="boolean" type="xboolean" value="true"/>
@@ -126,6 +78,9 @@
         <config key="subtitle-2053">
             <entry key="string" type="xstring" value=""/>
         </config>
+        <config key="plot_size-2065">
+            <entry key="string" type="xstring" value="Auto"/>
+        </config>
     </config>
     <config key="variables">
         <entry key="version" type="xstring" value="V_2019_09_13"/>
@@ -144,6 +99,12 @@
             </config>
             <config key="groups_string-2041">
                 <config key="string">
+                    <entry key="used_variable" type="xstring" value="design"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
+            <config key="groups_column-2042">
+                <config key="column">
                     <entry key="used_variable" type="xstring" value="design"/>
                     <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
                 </config>

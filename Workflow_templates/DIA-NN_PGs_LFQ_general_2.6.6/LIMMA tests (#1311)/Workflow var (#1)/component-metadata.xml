@@ -2,7 +2,7 @@
 <component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
     <author>knimeuser</author>
     <created>2026-03-16T16:23:50.033+01:00</created>
-    <last-modified>2026-03-16T16:24:58.928+01:00</last-modified>
+    <last-modified>2026-08-19T18:42:42.980+02:00</last-modified>
     <description>Metanode for the update/creation of the flow variables holding e.g. experimental design and or comparisons to be made.
 
 Check the box prior the given flow variable setting if you want to get the value updated by the metanode!
@@ -16,7 +16,7 @@ Used programs and tools and their respective licenses at the time of the metanod
 KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html) 
 Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3.6/license.html) 
 
-The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+The metanode was created in KNIME 5.11.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.11.0a.
 
 ================= 
 

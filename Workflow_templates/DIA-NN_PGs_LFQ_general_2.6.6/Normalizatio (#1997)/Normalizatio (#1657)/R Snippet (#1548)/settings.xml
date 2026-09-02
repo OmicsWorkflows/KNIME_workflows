@@ -14,13 +14,17 @@
         <entry key="sendBatchSize" type="xint" value="10000"/>
         <entry key="knimeInType" type="xstring" value="data.frame"/>
         <entry key="overwriteRHome" type="xboolean" value="false"/>
-        <entry key="rHome" type="xstring" value="/home/knimeuser/.Renv/4.2.0/4.5.2a/lib/R"/>
+        <entry key="rHome" type="xstring" value=""/>
         <entry key="useRPathHome" type="xboolean" value="true"/>
         <entry key="condaVariableName" type="xstring" isnull="true" value=""/>
     </config>
     <config key="variables">
         <entry key="version" type="xstring" value="V_2019_09_13"/>
         <config key="tree">
+            <config key="overwriteRHome">
+                <entry key="used_variable" type="xstring" value="Rreplace"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
             <config key="rHome">
                 <entry key="used_variable" type="xstring" value="Rcommand"/>
                 <entry key="exposed_variable" type="xstring" isnull="true" value=""/>

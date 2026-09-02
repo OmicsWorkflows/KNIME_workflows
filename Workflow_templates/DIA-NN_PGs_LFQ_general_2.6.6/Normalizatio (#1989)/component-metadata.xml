@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
-    <last-modified>2026-03-18T10:33:00.943+01:00</last-modified>
+    <author>knimeuser</author>
+    <created>2026-08-31T15:34:29.782+02:00</created>
+    <last-modified>2026-08-31T15:53:57.216+02:00</last-modified>
     <description>Comparison of different normalization methods on data of your selection. The metanode generates set of figures selected that should be than inspected manually and optimal normalization technique selected a applied on the data outise the metanode. The figures are written into the __outputs__/figures subfolder in the KNIME workflow and you can select two more subfolders level in the metanode form.
 
 You need to specify what samples to test the normalization method(s) on first - for this you need to run the Sample name extraction metanode to get a list of samples from which you can choose in this metanode. It is also possible to visualize only a subset(s) of the data, e. g. only replicates of a given sample, and their combination.
@@ -11,9 +13,7 @@ Data to be processed using different normalization methods can be selected speci
 
 Please inspect individual parameters comments for more detailed help on them.
 
-
 Within the metanode (access it e.g. by double clicking on the metanode while holding the Ctrl key), it is also possible to change certain plot parameters for all types of plots. The metanode needs to be disconnected before changing these parameters (right click on the metanode and select "Disconnect Link" in the Component menu).
-
 
 The main purpose of this metanode is to assist with the automated generation of figures used for the different normalization approaches quality control and selection of an appropriate normalization method. The selected normalization approach should be selected in the Data normalization metanode.
 
@@ -22,18 +22,18 @@ The main purpose of this metanode is to assist with the automated generation of 
 Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms.
 
 KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)
-Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3/license.html)
+Python 3 (The Python consists of the following Python 3.11 License. Licence terms are available here: https://docs.python.org/3/license.html)
 Python package Pandas (The Pandas consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)
 Python package Seaborn (The Seaborn consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)
 Python package Matplotlib (The Matplotlib consists of the following Python Software Foundation License (BSD compatible. Licence terms are available here: https://matplotlib.org/users/license.html)
-R 3.6.3 (The R consists of the following GPL-3 License. License terms are available here: https://www.r-project.org/Licenses/GPL-3)
+R 4.5.1 (The R consists of the following GPL-3 License. License terms are available here: https://www.r-project.org/Licenses/GPL-3)
 
-The metanode was created in KNIME 4.7.7 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 4.7.7a.
+The metanode was created in KNIME 5.11.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.11.0a.
 
 =================
 
 This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
-Version: 1.3.1 from 2025-11-17
+Version: 1.3.2 from 2026-08-31
 Contact person: Karolina Krystofova (karolina.krystofova@ceitec.muni.cz)</description>
     <in-ports>
         <port name="Input data">Data frame containing values before normalization</port>
