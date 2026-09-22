@@ -7,9 +7,9 @@
     </config>
     <config key="model">
         <config key="file_location-2158">
-            <entry key="path" type="xstring" value="knime://knime.workflow/__inputs__/experimental_design_example.xlsx"/>
+            <entry key="path" type="xstring" value="knime://knime.workflow/__inputs__/experimental_design.xlsx"/>
             <entry key="pathValid" type="xboolean" value="true"/>
-            <entry key="fileName" type="xstring" value="experimental_design_example.xlsx"/>
+            <entry key="fileName" type="xstring" value="experimental_design.xlsx"/>
             <entry key="localUpload" type="xboolean" value="false"/>
         </config>
         <config key="sheet-2159">
@@ -32,7 +32,7 @@
         <config key="styles"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="state" type="xstring" value="IDLE"/>
     <entry key="workflow-file" type="xstring" value="workflow.knime"/>
     <entry key="virtual-in-ID" type="xint" value="1"/>
     <config key="inports"/>
