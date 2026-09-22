@@ -19,6 +19,7 @@
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="prefix removal"/>
+        <entry key="contentType" type="xstring" value="text/plain"/>
         <entry key="bgcolor" type="xint" value="16777215"/>
         <entry key="x-coordinate" type="xint" value="329"/>
         <entry key="y-coordinate" type="xint" value="559"/>
@@ -34,17 +35,17 @@
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="IDLE"/>
     <entry key="factory" type="xstring" value="org.knime.base.node.preproc.columnrenameregex.ColumnRenameRegexNodeFactory"/>
-    <entry key="node-name" type="xstring" value="Column Rename (Regex)"/>
+    <entry key="node-name" type="xstring" value="Column Name Replacer"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.7.7.v202308021457"/>
+    <entry key="node-bundle-version" type="xstring" value="5.11.0.v202602201626"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.7.7.v202308161346"/>
+    <entry key="node-feature-version" type="xstring" value="5.11.0.v202602211509"/>
     <config key="factory_settings"/>
-    <entry key="name" type="xstring" value="Column Rename (Regex)"/>
+    <entry key="name" type="xstring" value="Column Name Replacer"/>
     <entry key="hasContent" type="xboolean" value="false"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <last-modified>2026-09-02T12:51:40.117+02:00</last-modified>
+    <description>Custom plot settings for the MA-plot matrices.</description>
+    <in-ports>
+        <port name=""/>
+    </in-ports>
+    <out-ports>
+        <port name="Port 1"/>
+    </out-ports>
+</component-metadata>
