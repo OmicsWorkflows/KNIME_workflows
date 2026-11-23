@@ -41,12 +41,12 @@
         <entry key="x-coordinate" type="xint" value="189"/>
         <entry key="y-coordinate" type="xint" value="239"/>
         <entry key="width" type="xint" value="142"/>
-        <entry key="height" type="xint" value="32"/>
+        <entry key="height" type="xint" value="34"/>
         <entry key="alignment" type="xstring" value="CENTER"/>
         <entry key="borderSize" type="xint" value="0"/>
         <entry key="borderColor" type="xint" value="16777215"/>
         <entry key="defFontSize" type="xint" value="10"/>
-        <entry key="annotation-version" type="xint" value="20230412"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
         <config key="styles">
             <config key="style_0">
                 <entry key="start" type="xint" value="0"/>
@@ -65,11 +65,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.js.quickforms"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="5.9.0.v202511130855"/>
+    <entry key="node-bundle-version" type="xstring" value="5.11.0.v202602211511"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Quick Forms"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.js.quickforms.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511131621"/>
+    <entry key="node-feature-version" type="xstring" value="5.11.0.v202602231433"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="String Configuration"/>
     <entry key="hasContent" type="xboolean" value="true"/>
@@ -87,6 +87,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="139ed961-0225-4a33-bec2-bfc6d03aaaba"/>
+        <entry key="file_store_id" type="xstring" value="ecc7b5aa-e02b-41b7-b89e-2735ffd4460a"/>
     </config>
 </config>

@@ -2,7 +2,7 @@
 <component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
     <author>knimeuser</author>
     <created>2026-04-07T12:12:12.686+02:00</created>
-    <last-modified>2026-06-02T16:33:29.637+02:00</last-modified>
+    <last-modified>2026-11-16T15:07:51.151+01:00</last-modified>
     <description>Metanode for application of linear normalization factors.
 
 Normalization factor type can be selected (column or row based normalization is supported). Normalization factors are expected in the last row/column of the provided dataframe. Columns or rows order is not important for columns or rows based normalization, respectively, but their names has to be equal in normalization factors dataframe and in selected columns from input table.
@@ -19,7 +19,7 @@ KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Lice
 Python 3 (The Python consists of the following Python 3 License. Licence terms are available here: https://docs.python.org/3/license.html)
 Python package Pandas (The Pandas consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)
 
-The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+The metanode was created in KNIME 5.11.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.11.0a.
 
 =================
 

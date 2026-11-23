@@ -2,7 +2,7 @@
 <component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
     <author>knimeuser</author>
     <created>2026-04-07T15:57:45.450+02:00</created>
-    <last-modified>2026-04-07T16:32:44.459+02:00</last-modified>
+    <last-modified>2026-11-16T15:03:46.705+01:00</last-modified>
     <description>LIMMA (Linear Models for Microarray Data) test for selected experimental design usecases. Expected usecase is 'single-channel' design using lmFit with least square method fitting. Only selected scenarios of experimental designs are implemented as well, namely: several groups, paired samples, one samples block design and combination of paired and single block design (yet to be fully implemented in this version). This metanode also enables the automatic generation of volcano plots and p-distribution plots for all contrasts.
 
 See e.g. LIMMA useguide for more details on selected settings explanation (https://www.bioconductor.org/packages/release/bioc/vignettes/limma/inst/doc/usersguide.pdf).
@@ -89,7 +89,7 @@ Python 3 (The Python consists of the following Python 3.6 License. Licence terms
 R (The R consists of the following GNU General Public Licences. Licence terms are available here: https://www.r-project.org/Licenses/)
 R package limma (The limma consists of the following General Public License (GPL), version 2 license. Licence terms are available here: https://www.r-project.org/Licenses/GPL-2)
 
-The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+The metanode was created in KNIME 5.11.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.11.0a.
 
 =================
 

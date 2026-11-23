@@ -41,7 +41,7 @@
         <entry key="x-coordinate" type="xint" value="189"/>
         <entry key="y-coordinate" type="xint" value="239"/>
         <entry key="width" type="xint" value="142"/>
-        <entry key="height" type="xint" value="32"/>
+        <entry key="height" type="xint" value="34"/>
         <entry key="alignment" type="xstring" value="CENTER"/>
         <entry key="borderSize" type="xint" value="0"/>
         <entry key="borderColor" type="xint" value="16777215"/>
@@ -65,11 +65,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Quick Form Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.js.quickforms"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="5.9.0.v202511130855"/>
+    <entry key="node-bundle-version" type="xstring" value="5.11.0.v202602211511"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Quick Forms"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.js.quickforms.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511131621"/>
+    <entry key="node-feature-version" type="xstring" value="5.11.0.v202602231433"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="String Configuration"/>
     <entry key="hasContent" type="xboolean" value="true"/>
@@ -87,6 +87,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="4b4b74e9-c57c-4dcd-b362-7ca01f6ae40c"/>
+        <entry key="file_store_id" type="xstring" value="74da8663-8bfc-4ecb-af52-9125392f3b34"/>
     </config>
 </config>

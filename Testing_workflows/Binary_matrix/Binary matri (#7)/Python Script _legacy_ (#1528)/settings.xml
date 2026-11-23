@@ -68,7 +68,7 @@
     <entry key="node-feature-name" type="xstring" value="KNIME Python 2 Integration (legacy)"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python2.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511132128"/>
+    <entry key="node-feature-version" type="xstring" value="5.11.0.v202602010958"/>
     <config key="factory_settings"/>
     <config key="node_creation_config">
         <config key="Input object (pickled)"/>
@@ -99,6 +99,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="9329687e-8722-4e16-9da0-25a09b47a8b9"/>
+        <entry key="file_store_id" type="xstring" value="3dc51e87-c1c8-4818-a1ce-52b9b5009903"/>
     </config>
 </config>

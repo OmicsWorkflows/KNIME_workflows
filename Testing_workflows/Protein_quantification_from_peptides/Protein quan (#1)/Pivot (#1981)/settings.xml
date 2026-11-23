@@ -136,11 +136,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="5.9.0.v202511140634"/>
+    <entry key="node-bundle-version" type="xstring" value="5.11.0.v202602201626"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511140634"/>
+    <entry key="node-feature-version" type="xstring" value="5.11.0.v202602211509"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Pivot"/>
     <entry key="hasContent" type="xboolean" value="true"/>
@@ -170,6 +170,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="6ec82787-7755-48d8-a172-7229323fa1f8"/>
+        <entry key="file_store_id" type="xstring" value="d69556e0-1f74-452f-b857-9f6d8f09ee77"/>
     </config>
 </config>

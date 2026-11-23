@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="table_meta_info">
-    <entry key="table_ID" type="xint" value="88"/>
+    <entry key="table_ID" type="xint" value="373"/>
     <entry key="table_type" type="xstring" value="extension_table"/>
     <config key="table_references">
         <entry key="array-size" type="xint" value="0"/>
@@ -10,12 +10,12 @@
         <config key="schema"/>
         <config key="REF_TABLES">
             <entry key="array-size" type="xint" value="1"/>
-            <entry key="0" type="xint" value="86"/>
+            <entry key="0" type="xint" value="369"/>
         </config>
         <entry key="size" type="xlong" value="7"/>
         <config key="REF_TABLE_IDS">
             <entry key="array-size" type="xint" value="1"/>
-            <entry key="0" type="xstring" value="b7a290f0-8ae1-4383-b50f-38595e924a86"/>
+            <entry key="0" type="xstring" value="2a014e6c-a680-450c-9dca-b1b4e7070b0e"/>
         </config>
         <config key="virtual_table_fragment_5_1">
             <entry key="version" type="xint" value="1"/>
@@ -23,7 +23,7 @@
                 <config key="0">
                     <entry key="type" type="xstring" value="SOURCE"/>
                     <config key="internal">
-                        <entry key="identifier" type="xstring" value="b7a290f0-8ae1-4383-b50f-38595e924a86"/>
+                        <entry key="identifier" type="xstring" value="2a014e6c-a680-450c-9dca-b1b4e7070b0e"/>
                     </config>
                 </config>
                 <config key="1">

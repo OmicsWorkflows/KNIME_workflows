@@ -58,11 +58,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Expressions"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base.expressions"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="5.9.0.v202511130853"/>
+    <entry key="node-bundle-version" type="xstring" value="5.11.0.v202602211516"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Expressions"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.expressions.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511130853"/>
+    <entry key="node-feature-version" type="xstring" value="5.11.0.v202602211516"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Variable Expression"/>
     <entry key="hasContent" type="xboolean" value="true"/>
@@ -80,6 +80,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="56d9d07f-7e97-4eea-b359-3e0134261414"/>
+        <entry key="file_store_id" type="xstring" value="e7fa2d64-1c11-4d74-8660-575fb5a2a790"/>
     </config>
 </config>

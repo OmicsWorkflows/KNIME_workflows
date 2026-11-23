@@ -2415,11 +2415,11 @@
     <entry key="node-bundle-name" type="xstring" value="Test-Node extension for KNIME Workbench"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.testing"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="5.9.0.v202511131542"/>
+    <entry key="node-bundle-version" type="xstring" value="5.10.0.v202512051515"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Testing Framework UI"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.testing.application.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511131558"/>
+    <entry key="node-feature-version" type="xstring" value="5.10.0.v202512051515"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Table Difference Checker"/>
     <entry key="hasContent" type="xboolean" value="true"/>
@@ -2427,6 +2427,6 @@
     <config key="ports"/>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="1f993540-4f54-43d6-99e1-592a44e08684"/>
+        <entry key="file_store_id" type="xstring" value="76602740-cc8f-4cf2-ae3b-b7f8b2403de3"/>
     </config>
 </config>

@@ -43,7 +43,7 @@
         <entry key="borderSize" type="xint" value="0"/>
         <entry key="borderColor" type="xint" value="16777215"/>
         <entry key="defFontSize" type="xint" value="9"/>
-        <entry key="annotation-version" type="xint" value="20230412"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
         <config key="styles"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
@@ -73,6 +73,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="8f7c0e24-b90a-43b1-994b-05b8e473879d"/>
+        <entry key="file_store_id" type="xstring" value="d099e641-f8a6-4647-8058-03574bbf9d3c"/>
     </config>
 </config>

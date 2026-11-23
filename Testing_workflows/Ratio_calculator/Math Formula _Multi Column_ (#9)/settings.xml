@@ -74,11 +74,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Math Expression Node"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.ext.jep"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="5.9.0.v202511130855"/>
+    <entry key="node-bundle-version" type="xstring" value="5.11.0.v202602211511"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Math Expression (JEP)"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.ext.jep.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511130855"/>
+    <entry key="node-feature-version" type="xstring" value="5.11.0.v202602211511"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Math Formula (Multi Column)"/>
     <entry key="hasContent" type="xboolean" value="true"/>
@@ -94,6 +94,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="069c6d44-17ee-48cd-a48f-ee4a52ee798b"/>
+        <entry key="file_store_id" type="xstring" value="e194159c-c6a0-433c-8974-5b8f996c9040"/>
     </config>
 </config>

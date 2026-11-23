@@ -45,7 +45,7 @@
         <entry key="borderSize" type="xint" value="0"/>
         <entry key="borderColor" type="xint" value="16777215"/>
         <entry key="defFontSize" type="xint" value="10"/>
-        <entry key="annotation-version" type="xint" value="20151123"/>
+        <entry key="annotation-version" type="xint" value="20230412"/>
         <config key="styles">
             <config key="style_0">
                 <entry key="start" type="xint" value="0"/>
@@ -68,7 +68,7 @@
     <entry key="node-feature-name" type="xstring" value="KNIME Python 2 Integration (legacy)"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python2.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511132128"/>
+    <entry key="node-feature-version" type="xstring" value="5.11.0.v202602010958"/>
     <config key="factory_settings"/>
     <config key="node_creation_config">
         <config key="Input object (pickled)"/>
@@ -99,6 +99,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="3b07fdcb-417c-48d9-ad78-4859e6da132e"/>
+        <entry key="file_store_id" type="xstring" value="0c9620bc-d0ee-4239-9489-bac2c191288a"/>
     </config>
 </config>

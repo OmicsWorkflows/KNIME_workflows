@@ -78,7 +78,7 @@
         <entry key="borderSize" type="xint" value="0"/>
         <entry key="borderColor" type="xint" value="16777215"/>
         <entry key="defFontSize" type="xint" value="9"/>
-        <entry key="annotation-version" type="xint" value="20230412"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
         <config key="styles"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
@@ -88,11 +88,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Math Expression Node"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.ext.jep"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="5.9.0.v202511130855"/>
+    <entry key="node-bundle-version" type="xstring" value="5.11.0.v202602211511"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Math Expression (JEP)"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.ext.jep.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511130855"/>
+    <entry key="node-feature-version" type="xstring" value="5.11.0.v202602211511"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Math Formula (Multi Column)"/>
     <entry key="hasContent" type="xboolean" value="true"/>
@@ -108,6 +108,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="16887fcb-cf30-4a07-a026-971a26943510"/>
+        <entry key="file_store_id" type="xstring" value="038e7800-e4bd-472b-9398-7bd8284b7be6"/>
     </config>
 </config>

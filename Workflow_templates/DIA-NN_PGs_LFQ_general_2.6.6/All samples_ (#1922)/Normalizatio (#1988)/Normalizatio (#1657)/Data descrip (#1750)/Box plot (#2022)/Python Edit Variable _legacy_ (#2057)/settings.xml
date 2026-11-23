@@ -6,7 +6,7 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="sourceCode" type="xstring" value="if flow_variables['plot_size'].strip() == 'Auto':%%00010%%00009if flow_variables['Number Columns'] * 60] &lt; 640:%%00010%%00009%%00009flow_variables['width'] = 640%%00010%%00009else:%%00010%%00009%%00009flow_variables['width'] = flow_variables['Number Columns'] * 60%%00010%%00009flow_variables['height'] = 640%%00010else:%%00010%%00009flow_variables['width'], flow_variables['height'] = flow_variables['plot_size'].split(';')"/>
+        <entry key="sourceCode" type="xstring" value="if flow_variables['plot_size'].strip() == 'Auto':%%00010%%00009if (flow_variables['Number Columns'] * 60) &lt; 640:%%00010%%00009%%00009flow_variables['width'] = 640%%00010%%00009else:%%00010%%00009%%00009flow_variables['width'] = flow_variables['Number Columns'] * 60%%00010%%00009flow_variables['height'] = 640%%00010else:%%00010%%00009flow_variables['width'], flow_variables['height'] = flow_variables['plot_size'].split(';')"/>
         <entry key="rowLimit" type="xint" value="1000"/>
         <entry key="convertMissingToPython" type="xboolean" value="false"/>
         <entry key="convertMissingFromPython" type="xboolean" value="false"/>

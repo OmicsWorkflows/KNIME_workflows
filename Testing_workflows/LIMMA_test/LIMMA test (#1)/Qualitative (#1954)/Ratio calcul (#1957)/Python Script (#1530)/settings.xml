@@ -36,12 +36,12 @@
         <entry key="x-coordinate" type="xint" value="345"/>
         <entry key="y-coordinate" type="xint" value="659"/>
         <entry key="width" type="xint" value="190"/>
-        <entry key="height" type="xint" value="32"/>
+        <entry key="height" type="xint" value="34"/>
         <entry key="alignment" type="xstring" value="CENTER"/>
         <entry key="borderSize" type="xint" value="0"/>
         <entry key="borderColor" type="xint" value="16777215"/>
         <entry key="defFontSize" type="xint" value="10"/>
-        <entry key="annotation-version" type="xint" value="20151123"/>
+        <entry key="annotation-version" type="xint" value="20230412"/>
         <config key="styles"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
@@ -51,13 +51,14 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Python 3 - Scripting Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python3.scripting.nodes"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="5.9.0.v202511131614"/>
+    <entry key="node-bundle-version" type="xstring" value="5.11.0.v202602211520"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Python Integration"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python3.scripting.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511131614"/>
+    <entry key="node-feature-version" type="xstring" value="5.11.0.v202602211520"/>
     <config key="factory_settings"/>
     <config key="node_creation_config">
+        <config key="Python environment"/>
         <config key="Input object (pickled)"/>
         <config key="Input table">
             <config key="port_0">
@@ -86,6 +87,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="fa1a27c0-e937-4aac-b58a-90908064e6ec"/>
+        <entry key="file_store_id" type="xstring" value="2d60aa5f-9c3c-43f0-84e5-3f66b69e38fa"/>
     </config>
 </config>

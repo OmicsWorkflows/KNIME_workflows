@@ -2,7 +2,7 @@
 <component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
     <author>knimeuser</author>
     <created>2026-03-17T10:31:46.542+01:00</created>
-    <last-modified>2026-03-17T10:37:29.836+01:00</last-modified>
+    <last-modified>2026-10-22T17:06:54.992+02:00</last-modified>
     <description>Metanode use principle component analysis (PCA) to data dimension reduction. It could be used to identify outliers and clusters and for description and vizualization of variables relations.
 
 Metanode creates PCA plot on selected columns by default, using n rows with the most variable values in individual columns (default n=500). Most variable rows are considered based on the standard deviation (SD).
@@ -33,12 +33,12 @@ R library ggplot2 (consists of the following GNU General Public Licence. Licence
 
 R library ggrepel (consists of the following GNU General Public Licence Licence terms are available here: . Licence terms are available here: https://cran.r-project.org/web/packages/ggrepel/LICENSE)
 
-The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a
+The metanode was created in KNIME 5.11.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.11.0a
 
 =================
 
 This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
-Version: 3.3.0 from 2025-03-17
+Version: 3.3.1 from 2026-10-22
 Contact person: Karolina Krystofova (karolina.krystofova@ceitec.muni.cz)
 More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes</description>
     <in-ports>

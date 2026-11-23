@@ -2,7 +2,7 @@
 <component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
     <author>knimeuser</author>
     <created>2026-04-07T12:24:00.151+02:00</created>
-    <last-modified>2026-04-07T12:33:14.432+02:00</last-modified>
+    <last-modified>2026-11-16T15:15:16.985+01:00</last-modified>
     <description>Node for the imputation of missing values in proteomic data using the standard imputation approach from Perseus computational platform, where missing values are imputed by random draws from normal distribution (http://www.coxdocs.org/doku.php?id=perseus:user:activities:matrixprocessing:imputation:replacemissingfromgaussian).
 
 On the input user is expected to provide:
@@ -20,7 +20,7 @@ KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Lice
 Python 3 (The Python consists of the following Python 3.6 License. Licence terms are available here: https://docs.python.org/3.6/license.html)
 R (The R consists of the following GNU General Public Licences. Licence terms are available here: https://www.r-project.org/Licenses/)
 
-The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+The metanode was created in KNIME 5.11.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.11.0a.
 
 =================
 

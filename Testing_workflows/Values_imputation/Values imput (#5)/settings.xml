@@ -31,8 +31,9 @@
                         <entry key="6" type="xstring" value="D_2"/>
                     </config>
                     <config key="excluded_names">
-                        <entry key="array-size" type="xint" value="1"/>
+                        <entry key="array-size" type="xint" value="2"/>
                         <entry key="0" type="xstring" value="id"/>
+                        <entry key="1" type="xstring" value="group"/>
                     </config>
                     <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
                     <config key="name_pattern">
@@ -65,7 +66,7 @@
                         <entry key="array-size" type="xint" value="0"/>
                     </config>
                     <config key="excluded_names">
-                        <entry key="array-size" type="xint" value="8"/>
+                        <entry key="array-size" type="xint" value="9"/>
                         <entry key="0" type="xstring" value="id"/>
                         <entry key="1" type="xstring" value="A_1"/>
                         <entry key="2" type="xstring" value="A_2"/>
@@ -74,6 +75,7 @@
                         <entry key="5" type="xstring" value="C_1"/>
                         <entry key="6" type="xstring" value="D_1"/>
                         <entry key="7" type="xstring" value="D_2"/>
+                        <entry key="8" type="xstring" value="group"/>
                     </config>
                     <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
                     <config key="name_pattern">
@@ -179,7 +181,7 @@
     </config>
     <config key="workflow_template_information">
         <entry key="role" type="xstring" value="Link"/>
-        <entry key="timestamp" type="xstring" value="2026-06-08 10:40:15 +0000"/>
+        <entry key="timestamp" type="xstring" value="2026-11-23 10:03:28 +0000"/>
         <entry key="sourceURI" type="xstring" value="knime://LOCAL/gitfolders/KNIME_metanodes/Metanodes%20templates/Data%20processing/Values%20imputation"/>
     </config>
     <entry key="layoutJSON" type="xstring" value=""/>

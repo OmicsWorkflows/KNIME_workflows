@@ -86,7 +86,7 @@
     <entry key="node-feature-name" type="xstring" value="KNIME Python 2 Integration (legacy)"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python2.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511132128"/>
+    <entry key="node-feature-version" type="xstring" value="5.11.0.v202602010958"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Python Edit Variable (legacy)"/>
     <entry key="hasContent" type="xboolean" value="true"/>
@@ -104,6 +104,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="7c8f47da-88cd-499d-8fc5-3081c83e4518"/>
+        <entry key="file_store_id" type="xstring" value="26259e4c-c93f-4a42-aaa5-1a898f1ae677"/>
     </config>
 </config>

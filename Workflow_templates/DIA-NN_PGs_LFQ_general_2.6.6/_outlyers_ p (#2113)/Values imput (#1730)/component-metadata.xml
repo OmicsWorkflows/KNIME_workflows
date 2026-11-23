@@ -2,7 +2,7 @@
 <component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
     <author>knimeuser</author>
     <created>2026-03-24T10:40:27.505+01:00</created>
-    <last-modified>2026-06-04T15:11:36.456+02:00</last-modified>
+    <last-modified>2026-10-11T22:56:03.278+02:00</last-modified>
     <description>Metanode for imputation of selected values using several techniques.
 
 Metanode enables selection of data columns to be processed, no need to preselect them in advance.
@@ -28,12 +28,12 @@ Python 3 (The Python consists of the following Python 3 License. Licence terms a
 Python package Pandas (The Pandas consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)
 Python package Numpy (The Numpy consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)
 
-The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+The metanode was created in KNIME 5.11.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.11.0a.
 
 =================
 
 This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
-Version: 1.4.1 from 2026-06-03
+Version: 1.5.0 from 2026-10-11
 Contact person: David Potesil (david.potesil@ceitec.muni.cz)
 More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes.</description>
     <in-ports>

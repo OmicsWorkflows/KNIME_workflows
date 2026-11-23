@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="table_meta_info">
-    <entry key="table_ID" type="xint" value="1594"/>
+    <entry key="table_ID" type="xint" value="2079"/>
     <entry key="table_type" type="xstring" value="extension_table"/>
     <config key="table_references">
         <entry key="array-size" type="xint" value="1"/>
@@ -11,14 +11,14 @@
         <config key="schema"/>
         <config key="REF_TABLES">
             <entry key="array-size" type="xint" value="2"/>
-            <entry key="0" type="xint" value="1590"/>
-            <entry key="1" type="xint" value="1592"/>
+            <entry key="0" type="xint" value="2075"/>
+            <entry key="1" type="xint" value="2077"/>
         </config>
         <entry key="size" type="xlong" value="6"/>
         <config key="REF_TABLE_IDS">
             <entry key="array-size" type="xint" value="2"/>
-            <entry key="0" type="xstring" value="38717e0b-b790-4c8e-a608-8dd09a16a6d6"/>
-            <entry key="1" type="xstring" value="8d2caf87-6585-4d38-8fd3-f913ed2c70a8"/>
+            <entry key="0" type="xstring" value="9e92f084-c91a-4ba1-966b-71e5b6efdc75"/>
+            <entry key="1" type="xstring" value="f801a54b-0515-4bc7-97ba-b0505eea8a6d"/>
         </config>
         <config key="virtual_table_fragment_5_1">
             <entry key="version" type="xint" value="1"/>
@@ -26,7 +26,7 @@
                 <config key="0">
                     <entry key="type" type="xstring" value="SOURCE"/>
                     <config key="internal">
-                        <entry key="identifier" type="xstring" value="8d2caf87-6585-4d38-8fd3-f913ed2c70a8"/>
+                        <entry key="identifier" type="xstring" value="f801a54b-0515-4bc7-97ba-b0505eea8a6d"/>
                     </config>
                 </config>
                 <config key="1">
@@ -41,7 +41,7 @@
                 <config key="2">
                     <entry key="type" type="xstring" value="SOURCE"/>
                     <config key="internal">
-                        <entry key="identifier" type="xstring" value="38717e0b-b790-4c8e-a608-8dd09a16a6d6"/>
+                        <entry key="identifier" type="xstring" value="9e92f084-c91a-4ba1-966b-71e5b6efdc75"/>
                     </config>
                 </config>
                 <config key="3">

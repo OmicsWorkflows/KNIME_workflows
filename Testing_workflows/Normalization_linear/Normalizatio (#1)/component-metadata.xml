@@ -2,7 +2,7 @@
 <component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
     <author>knimeuser</author>
     <created>2026-03-17T14:58:34.236+01:00</created>
-    <last-modified>2026-03-17T15:02:37.215+01:00</last-modified>
+    <last-modified>2026-11-16T15:07:18.258+01:00</last-modified>
     <description>Data normalization metanode using linear normalization methods (on median/mean/sum).
 
 You can select what columns should be processed by the metanode, no need to preselect them before the node.
@@ -27,7 +27,7 @@ KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Lice
 Python 3 (The Python consists of the following Python 3 License. Licence terms are available here: https://docs.python.org/3/license.html)
 Python package Pandas (The Pandas consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)
 
-The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+The metanode was created in KNIME 5.11.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.11.0a.
 
 =================
 

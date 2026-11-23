@@ -2,7 +2,7 @@
 <component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
     <author>knimeuser</author>
     <created>2026-08-12T00:29:21.650+02:00</created>
-    <last-modified>2026-09-22T13:07:35.984+02:00</last-modified>
+    <last-modified>2026-09-23T16:33:41.447+02:00</last-modified>
     <description>Metanode to create box plot (or box-and-whisker plot) from selected columns of input table.
 
 Note: any data preprocessing (like transformation, normalization) should be done prior the metanode usage!
@@ -20,7 +20,7 @@ The metanode was created in KNIME 5.11.0 running inside the docker image (https:
 =================
 
 This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
-Version: 1.2.1 from 2026-09-22
+Version: 1.2.2 from 2026-09-23
 Contact person: David Potesil (david.potesil@ceitec.muni.cz)
 More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes</description>
     <in-ports>

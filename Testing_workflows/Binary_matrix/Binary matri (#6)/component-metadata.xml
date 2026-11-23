@@ -2,7 +2,7 @@
 <component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
     <author>knimeuser</author>
     <created>2026-03-16T11:58:25.779+01:00</created>
-    <last-modified>2026-06-03T12:27:09.952+02:00</last-modified>
+    <last-modified>2026-11-16T14:44:59.438+01:00</last-modified>
     <description>This metanode calculates the binary matrix from selected columns based on the threshold and operator and appends transformed columns to the end of the dataframe with user-defined suffix.
 
 On top of the binary matrix columns there are also summary columns added if requested.
@@ -23,12 +23,12 @@ Used programs and tools and their respective licenses at the time of the metanod
 KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)
 Python 3 (The Python consists of the following Python 3 License. Licence terms are available here: https://docs.python.org/3.6/license.html)
 
-The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+The metanode was created in KNIME 5.11.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.11.0a.
 
 =================
 
 This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
-Version: 2.4.1 from 2026-06-03
+Version: 2.4.2 from 2026-06-19
 Contact person: Karolina Krystofova (karolina.krystofova@ceitec.muni.cz)
 More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes.</description>
     <in-ports>

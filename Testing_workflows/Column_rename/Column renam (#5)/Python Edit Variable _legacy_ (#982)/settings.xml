@@ -14,12 +14,24 @@
             <entry key="class" type="xstring" value="STRING"/>
             <entry key="value" type="xstring" value="False"/>
         </config>
+        <config key="Variable_2">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="case_insensitive_mod"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value=""/>
+        </config>
+        <config key="Variable_3">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="literal_switch"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="top"/>
+        </config>
     </config>
     <config key="internal_node_subsettings">
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="sourceCode" type="xstring" value="# create flow variable named random with 0 &lt;= value &lt;= 100%%00010dict = {%%00010%%000090: False,%%00010%%000091: True,%%00010}%%00010%%00010flow_variables['literal_bool'] = dict[flow_variables['literal']]%%00010flow_variables['case_insensitive_bool'] = dict[flow_variables['case_insensitive']]"/>
+        <entry key="sourceCode" type="xstring" value="# create flow variable named random with 0 &lt;= value &lt;= 100%%00010dict = {%%00010%%000090: False,%%00010%%000091: True,%%00010}%%00010%%00010flow_variables['literal_bool'] = dict[flow_variables['literal']]%%00010flow_variables['case_insensitive_bool'] = dict[flow_variables['case_insensitive']]%%00010%%00010if flow_variables['case_insensitive'] == 1:%%00010%%00009flow_variables['case_insensitive_mod'] = &quot;i&quot;%%00010else:%%00010%%00009flow_variables['case_insensitive_mod'] = &quot;&quot;%%00010%%00010if flow_variables['literal'] == 1:%%00010%%00009flow_variables['literal_switch'] = 'top'%%00010else:%%00010%%00009flow_variables['literal_switch'] = 'bottom'"/>
         <entry key="rowLimit" type="xint" value="1000"/>
         <entry key="convertMissingToPython" type="xboolean" value="false"/>
         <entry key="convertMissingFromPython" type="xboolean" value="false"/>
@@ -28,16 +40,16 @@
         <entry key="chunkSize" type="xint" value="500000"/>
         <entry key="pythonVersionOption" type="xstring" value="python3"/>
         <entry key="python2Command" type="xstring" value=""/>
-        <entry key="python3Command" type="xstring" value="/home/knimeuser/.pyenv/versions/4-1-3a/bin/python3"/>
+        <entry key="python3Command" type="xstring" value=""/>
     </config>
     <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
         <config key="tree">
             <config key="python3Command">
                 <entry key="used_variable" type="xstring" value="python3command"/>
                 <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
             </config>
         </config>
-        <entry key="version" type="xstring" value="V_2019_09_13"/>
     </config>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="modifies boolean%%00010variables"/>
@@ -51,7 +63,7 @@
         <entry key="borderSize" type="xint" value="0"/>
         <entry key="borderColor" type="xint" value="16777215"/>
         <entry key="defFontSize" type="xint" value="10"/>
-        <entry key="annotation-version" type="xint" value="20151123"/>
+        <entry key="annotation-version" type="xint" value="20230412"/>
         <config key="styles"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
@@ -65,7 +77,7 @@
     <entry key="node-feature-name" type="xstring" value="KNIME Python 2 Integration (legacy)"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python2.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511132128"/>
+    <entry key="node-feature-version" type="xstring" value="5.11.0.v202602010958"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Python Edit Variable (legacy)"/>
     <entry key="hasContent" type="xboolean" value="true"/>
@@ -83,6 +95,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="0c3fe789-68e7-44ae-a4fe-23cd2fdb42ed"/>
+        <entry key="file_store_id" type="xstring" value="1346487c-313a-41d4-aff5-260d7ac5441d"/>
     </config>
 </config>

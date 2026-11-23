@@ -32,7 +32,7 @@
         <entry key="contentType" type="xstring" value="text/plain"/>
         <entry key="bgcolor" type="xint" value="16777215"/>
         <entry key="x-coordinate" type="xint" value="3369"/>
-        <entry key="y-coordinate" type="xint" value="-1"/>
+        <entry key="y-coordinate" type="xint" value="99"/>
         <entry key="width" type="xint" value="142"/>
         <entry key="height" type="xint" value="34"/>
         <entry key="alignment" type="xstring" value="CENTER"/>
@@ -69,6 +69,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="67c0d557-70e1-47e1-b894-14d733ad6457"/>
+        <entry key="file_store_id" type="xstring" value="728472e4-2451-497f-9dd4-9005e6527d23"/>
     </config>
 </config>

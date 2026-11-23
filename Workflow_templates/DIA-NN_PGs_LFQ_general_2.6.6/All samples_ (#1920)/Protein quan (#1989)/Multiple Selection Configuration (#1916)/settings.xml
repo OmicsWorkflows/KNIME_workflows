@@ -18,11 +18,10 @@
         <entry key="required" type="xboolean" value="true"/>
         <entry key="flowVariableName" type="xstring" value="algorithm"/>
         <config key="possible_choices">
-            <entry key="array-size" type="xint" value="4"/>
+            <entry key="array-size" type="xint" value="3"/>
             <entry key="0" type="xstring" value="DIA-TPA"/>
             <entry key="1" type="xstring" value="MaxLFQ"/>
             <entry key="2" type="xstring" value="Top3"/>
-            <entry key="3" type="xstring" value="DPC"/>
         </config>
         <entry key="type" type="xstring" value="Check boxes (horizontal)"/>
         <entry key="limit_number_visible_options" type="xboolean" value="false"/>

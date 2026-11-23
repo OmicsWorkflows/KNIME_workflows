@@ -17,14 +17,15 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="script" type="xstring" value="import knime.scripting.io as knio%%00010import pandas as pd%%00010%%00010def get_column_names(prefix):%%00010    base = [prefix + x + knio.flow_variables['suffix_to_add'] for x in sample_order]%%00010    cols = []%%00010    if 'absolute values' in coltypes:%%00010        cols += base%%00010    if 'log2 of absolute values' in coltypes:%%00010        cols += [x + '_log2' for x in base]%%00010    if 'ppm' in coltypes:%%00010        cols += [x + '_ppm' for x in base]%%00010    if 'log10 of ppm' in coltypes:%%00010        cols += [x + '_ppm_log10' for x in base]%%00010    if 'percentages' in coltypes:%%00010        cols += [x + '_perc' for x in base]%%00010    return cols%%00010    %%00010# load table%%00010df = knio.input_tables[0].to_pandas()%%00010%%00010# columns that have been returned%%00010algorithms = [x.strip() for x in knio.flow_variables['algorithm'].split(',')]%%00010coltypes = [x.strip() for x in knio.flow_variables['columns_to_return'].split(',')]%%00010%%00010# create list with final column order%%00010sample_order = knio.flow_variables['columns'].split(',')%%00010sample_order = [x.strip() for x in sample_order]%%00010%%00010column_order = ['PG']%%00010%%00010if 'DIA-TPA' in algorithms:%%00010    column_order = column_order + get_column_names(knio.flow_variables['prefix_tpa'])%%00010        %%00010if 'MaxLFQ' in algorithms:%%00010    column_order = column_order + get_column_names(knio.flow_variables['prefix_maxlfq'])%%00010        %%00010if 'Top3' in algorithms:%%00010    column_order = column_order + get_column_names(knio.flow_variables['prefix_top'])%%00010%%00010# reorder column%%00010df = df.loc[:, column_order]%%00010%%00010knio.output_tables[0] = knio.Table.from_pandas(df)"/>
         <entry key="python3_command" type="xstring" value="/home/knimeuser/.pyenv/versions/4-5-2a/bin/python3"/>
+        <entry key="script" type="xstring" value="import knime.scripting.io as knio%%00010import pandas as pd%%00010%%00010def get_column_names(prefix):%%00010    base = [prefix + x + knio.flow_variables['suffix_to_add'] for x in sample_order]%%00010    cols = []%%00010    if 'absolute values' in coltypes:%%00010        cols += base%%00010    if 'log2 of absolute values' in coltypes:%%00010        cols += [x + '_log2' for x in base]%%00010    if 'ppm' in coltypes:%%00010        cols += [x + '_ppm' for x in base]%%00010    if 'log10 of ppm' in coltypes:%%00010        cols += [x + '_ppm_log10' for x in base]%%00010    if 'percentages' in coltypes:%%00010        cols += [x + '_perc' for x in base]%%00010    return cols%%00010    %%00010# load table%%00010df = knio.input_tables[0].to_pandas()%%00010%%00010# columns that have been returned%%00010algorithms = [x.strip() for x in knio.flow_variables['algorithm'].split(',')]%%00010coltypes = [x.strip() for x in knio.flow_variables['columns_to_return'].split(',')]%%00010%%00010# create list with final column order%%00010sample_order = knio.flow_variables['columns'].split(',')%%00010sample_order = [x.strip() for x in sample_order]%%00010%%00010column_order = ['PG']%%00010%%00010if 'DIA-TPA' in algorithms:%%00010    column_order = column_order + get_column_names(knio.flow_variables['prefix_tpa'])%%00010        %%00010if 'MaxLFQ' in algorithms:%%00010    column_order = column_order + get_column_names(knio.flow_variables['prefix_maxlfq'])%%00010        %%00010if 'Top3' in algorithms:%%00010    column_order = column_order + get_column_names(knio.flow_variables['prefix_top'])%%00010%%00010if 'DPC' in algorithms:%%00010    column_order = column_order + get_column_names(knio.flow_variables['prefix_dpc'])%%00010%%00010%%00010# reorder column%%00010df = df.loc[:, column_order]%%00010%%00010knio.output_tables[0] = knio.Table.from_pandas(df)"/>
     </config>
     <config key="variables">
         <entry key="version" type="xstring" value="V_2019_09_13"/>
         <config key="tree">
             <config key="python3_command">
                 <entry key="used_variable" type="xstring" value="python3command"/>
+                <entry key="used_variable_flawed" type="xboolean" value="false"/>
                 <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
             </config>
         </config>
@@ -60,13 +61,14 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Python 3 - Scripting Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python3.scripting.nodes"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="5.9.0.v202511131614"/>
+    <entry key="node-bundle-version" type="xstring" value="5.11.0.v202602211520"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Python Integration"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python3.scripting.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511131614"/>
+    <entry key="node-feature-version" type="xstring" value="5.11.0.v202602211520"/>
     <config key="factory_settings"/>
     <config key="node_creation_config">
+        <config key="Python environment"/>
         <config key="Input object (pickled)"/>
         <config key="Input table">
             <config key="port_0">
@@ -95,6 +97,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="86e60211-dd66-4549-a06f-c45523a997bb"/>
+        <entry key="file_store_id" type="xstring" value="0fa22d83-c329-4548-be1f-3937466168f6"/>
     </config>
 </config>

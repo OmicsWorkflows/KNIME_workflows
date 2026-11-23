@@ -16,6 +16,12 @@
         </config>
         <config key="Variable_2">
             <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="dpc_switch"/>
+            <entry key="class" type="xstring" value="STRING"/>
+            <entry key="value" type="xstring" value="bottom"/>
+        </config>
+        <config key="Variable_3">
+            <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="no_iter"/>
             <entry key="class" type="xstring" value="INTEGER"/>
             <entry key="value" type="xint" value="1"/>
@@ -25,7 +31,7 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="sourceCode" type="xstring" value="# raise error if no algorithm is selected%%00010if flow_variables['algorithm'] == '':%%00010%%00009raise ValueError('At least 1 algorithm must be selected')%%00010%%00010%%00010algorithms = flow_variables['algorithm'].split(',')%%00010%%00010# algorithm switch table%%00010if 'DIA-TPA' in algorithms:%%00010%%00009flow_variables['tpa_switch'] = 'top'%%00010else:%%00010%%00009flow_variables['tpa_switch'] = 'bottom'%%00010%%00010if 'MaxLFQ' in algorithms or 'Top3' in algorithms:%%00010%%00009flow_variables['iq_switch'] = 'top'%%00010else:%%00010%%00009flow_variables['iq_switch'] = 'bottom'%%00010%%00010%%00010# modify loop variable%%00010if flow_variables['design_bool'] == 1:%%00010%%00009design_list = [x.strip() for x in flow_variables['design'].split(',')]%%00010%%00009flow_variables['design'] = ','.join(design_list)%%00010%%00010%%00009design_unique = list(set(design_list))%%00010%%00009flow_variables['groups'] = ','.join(design_unique)%%00010%%00009%%00010%%00009flow_variables['no_iter'] = len(set(design_list))%%00010else:%%00010%%00009flow_variables['no_iter'] = 1"/>
+        <entry key="sourceCode" type="xstring" value="# raise error if no algorithm is selected%%00010if flow_variables['algorithm'] == '':%%00010%%00009raise ValueError('At least 1 algorithm must be selected')%%00010%%00010%%00010algorithms = flow_variables['algorithm'].split(',')%%00010%%00010# algorithm switch table%%00010if 'DIA-TPA' in algorithms:%%00010%%00009flow_variables['tpa_switch'] = 'top'%%00010else:%%00010%%00009flow_variables['tpa_switch'] = 'bottom'%%00010%%00010if 'MaxLFQ' in algorithms or 'Top3' in algorithms:%%00010%%00009flow_variables['iq_switch'] = 'top'%%00010else:%%00010%%00009flow_variables['iq_switch'] = 'bottom'%%00010%%00010if 'DPC' in algorithms:%%00010%%00009flow_variables['dpc_switch'] = 'top'%%00010else:%%00010%%00009flow_variables['dpc_switch'] = 'bottom'%%00010%%00010# modify loop variable%%00010if flow_variables['design_bool'] == 1:%%00010%%00009design_list = [x.strip() for x in flow_variables['design'].split(',')]%%00010%%00009flow_variables['design'] = ','.join(design_list)%%00010%%00010%%00009design_unique = list(set(design_list))%%00010%%00009flow_variables['groups'] = ','.join(design_unique)%%00010%%00009%%00010%%00009flow_variables['no_iter'] = len(set(design_list))%%00010else:%%00010%%00009flow_variables['no_iter'] = 1"/>
         <entry key="rowLimit" type="xint" value="1000"/>
         <entry key="convertMissingToPython" type="xboolean" value="false"/>
         <entry key="convertMissingFromPython" type="xboolean" value="false"/>
@@ -34,7 +40,7 @@
         <entry key="chunkSize" type="xint" value="500000"/>
         <entry key="pythonVersionOption" type="xstring" value="python3"/>
         <entry key="python2Command" type="xstring" value=""/>
-        <entry key="python3Command" type="xstring" value="unknown_flow_variable_selected"/>
+        <entry key="python3Command" type="xstring" value=""/>
     </config>
     <config key="variables">
         <entry key="version" type="xstring" value="V_2019_09_13"/>
@@ -80,7 +86,7 @@
     <entry key="node-feature-name" type="xstring" value="KNIME Python 2 Integration (legacy)"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python2.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511132128"/>
+    <entry key="node-feature-version" type="xstring" value="5.11.0.v202602010958"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Python Edit Variable (legacy)"/>
     <entry key="hasContent" type="xboolean" value="true"/>
@@ -98,6 +104,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="4b254e9a-09ff-4d6c-8a2b-8f4ca89cd82f"/>
+        <entry key="file_store_id" type="xstring" value="ea3907b4-b917-4857-a693-f41a8b2f8975"/>
     </config>
 </config>

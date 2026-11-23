@@ -114,11 +114,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Time Series Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.timeseries"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="5.9.0.v202511140907"/>
+    <entry key="node-bundle-version" type="xstring" value="5.10.0.v202512181107"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Timeseries nodes"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.timeseries.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511140907"/>
+    <entry key="node-feature-version" type="xstring" value="5.10.0.v202512181107"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Moving Aggregator"/>
     <entry key="hasContent" type="xboolean" value="true"/>

@@ -2,7 +2,7 @@
 <component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
     <author>knimeuser</author>
     <created>2026-03-16T13:21:40.344+01:00</created>
-    <last-modified>2026-06-08T16:19:40.304+02:00</last-modified>
+    <last-modified>2026-11-16T14:46:51.012+01:00</last-modified>
     <description>Metanode renames columns in the upper table using the builtin KNIME node Column Rename (Regex).
 
 The bottom table (two specified columns from it) is used to define what should be searched ("Search string (regex)") and what should be used as Replacement to set up the internal Column Rename (Regex) node. The bottom table is used row-wise from the 1st row to the last one and all selected columns from the top table are passed to the Column Rename (Regex) node each time.
@@ -25,7 +25,7 @@ Used programs and tools and their respective licenses at the time of the metanod
 KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html)
 Python 3 (The Python consists of the following Python 3 License. Licence terms are available here: https://docs.python.org/3/license.html)
 
-The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+The metanode was created in KNIME 5.11.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.11.0a.
 
 =================
 

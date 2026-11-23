@@ -2,7 +2,7 @@
 <component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
     <author>knimeuser</author>
     <created>2026-03-17T14:38:31.800+01:00</created>
-    <last-modified>2026-03-17T14:39:00.797+01:00</last-modified>
+    <last-modified>2026-11-16T15:07:02.525+01:00</last-modified>
     <description>Data normalization metanode using nonlinear normalization techniques.
 
 Currently implements quantile, vsn and loess (with 3 different methods) techniques. Consult e.g. limma R package for details on each normalization technique.
@@ -21,7 +21,7 @@ R (The R consists of the following GNU General Public Licences. Licence terms ar
 R package preprocessCore (The preprocessCore consists of the following GNU Library General Public (LGPL) License, version 2 (or higher) license. Licence terms are available here: https://www.r-project.org/Licenses/LGPL-2)
 R package limma (The limma consists of the following General Public License (GPL), version 2 license. Licence terms are available here: https://www.r-project.org/Licenses/GPL-2)
 
-The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+The metanode was created in KNIME 5.11.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.11.0a.
 
 =================
 

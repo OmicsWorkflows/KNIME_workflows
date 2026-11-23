@@ -2,7 +2,7 @@
 <component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
     <author>knimeuser</author>
     <created>2026-03-18T09:54:50.722+01:00</created>
-    <last-modified>2026-03-18T09:56:35.352+01:00</last-modified>
+    <last-modified>2026-07-31T13:42:08.620+02:00</last-modified>
     <description>Metanode for ratio calculation. After selecting a set of columns, ratios of interest are specified in a respective form field.
 
 Missing values are supported and you can specify what value the ratio should be when one of the values or both of them are missing. In case the 'text' format is selected, the column containing all ratios will be written in text format due to compatibility reasons.
@@ -18,12 +18,12 @@ Python 3 (The Python consists of the following Python 3.6 License. Licence terms
 Python package Pandas (The Pandas consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)
 Python package Numpy (The Numpy consists of the following BSD License. Licence terms are available here: https://opensource.org/licenses/BSD-3-Clause)
 
-The metanode was created in KNIME 4.5.2 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 4.5.2a.
+The metanode was created in KNIME 5.11.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.11.0a.
 
 =================
 
 This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html.
-Version: 2.2.0 from 2026-03-17
+Version: 2.2.1 from 2026-07-31
 Contact person: David Potesil (david.potesil@ceitec.muni.cz)
 More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes.</description>
     <in-ports>

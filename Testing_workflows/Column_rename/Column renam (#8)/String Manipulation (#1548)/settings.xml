@@ -35,11 +35,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Java Snippet Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.jsnippets"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="5.9.0.v202511130855"/>
+    <entry key="node-bundle-version" type="xstring" value="5.11.0.v202602191748"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Javasnippet"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.javasnippet.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511130855"/>
+    <entry key="node-feature-version" type="xstring" value="5.11.0.v202602191748"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="String Manipulation"/>
     <entry key="hasContent" type="xboolean" value="true"/>
@@ -55,6 +55,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="39744d67-7525-4ff8-85f0-fa702a20944c"/>
+        <entry key="file_store_id" type="xstring" value="9fcd7441-49b1-4e6c-92cb-a89f029ea234"/>
     </config>
 </config>

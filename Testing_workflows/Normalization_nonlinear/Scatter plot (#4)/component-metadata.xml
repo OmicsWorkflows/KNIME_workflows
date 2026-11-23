@@ -2,7 +2,7 @@
 <component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
     <author>knimeuser</author>
     <created>2026-03-17T12:32:32.765+01:00</created>
-    <last-modified>2026-03-17T13:21:33.110+01:00</last-modified>
+    <last-modified>2026-11-16T15:09:29.009+01:00</last-modified>
     <description>Metanode to create scatter plot matrix from selected columns of input table.
 
 Scatterplot matrix can show either standard 'y' on 'x' correlation or MA plot like correlation ('y-x' on '(x+y)/2').
@@ -19,7 +19,7 @@ KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Lice
 Python 3 (The Python consists of the following Python 3.6 License. License terms are available here: https://docs.python.org/3.6/license.html)
 R 3.6.3 (The R consists of the following GPL-3 License. License terms are available here: https://www.r-project.org/Licenses/GPL-3)
 
-The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a.
+The metanode was created in KNIME 5.11.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.11.0a.
 
 =================
 

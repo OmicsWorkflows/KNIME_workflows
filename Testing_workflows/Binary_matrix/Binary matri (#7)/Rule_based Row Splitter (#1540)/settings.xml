@@ -39,11 +39,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Java Snippet Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.jsnippets"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="5.9.0.v202511130855"/>
+    <entry key="node-bundle-version" type="xstring" value="5.11.0.v202602191748"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Javasnippet"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.javasnippet.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511130855"/>
+    <entry key="node-feature-version" type="xstring" value="5.11.0.v202602191748"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Rule-based Row Splitter"/>
     <entry key="hasContent" type="xboolean" value="true"/>
@@ -66,6 +66,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="5be21f49-03ee-4f07-b03d-b6f65849467e"/>
+        <entry key="file_store_id" type="xstring" value="eb19859f-98d9-4a06-9572-74f72705993b"/>
     </config>
 </config>
