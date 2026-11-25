@@ -10,7 +10,7 @@ To use the KNIME workflow please follow these steps:
 1)	download the actual version of all workflows (folder 'Workflows templates') or just individual workflow folder
 2)	move workflow(s) copy into your KNIME workspace folder (e.g. 'D:\knime-workspace\' on Windows or '/home/user/knime-workspace' on linux)
 3)	start KNIME; in case the KNIME is already running, refresh the KNIME workspace to refresh the workspace content (right click on the workspace in the KNIME Explorer sub-window and select Refresh)
-4)	double click on the workflow you want to use to open it
+4)	double click on the workflow you want to use to open it, or use the File>Import KNIME Workflow function if workflow is in compressed .knwf format 
 5)	save the workflow under the new name
 6)	double click on the particular node/metanode to get form window, adjust individual settings and run it.
 7)	use additional nodes/metanodes to adjust the workflow to meet your and dataset requirements.
