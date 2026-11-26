@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>knimeuser</author>
+    <created>2026-03-30T13:51:31.783+02:00</created>
+    <last-modified>2026-03-30T13:51:46.722+02:00</last-modified>
+    <description>Reworked histone statistics metanode, built upon original script by Ivana Ihnatova.
+
+Version: 1.2.2 from 2026-03-30</description>
+    <in-ports>
+        <port name="Input table"/>
+    </in-ports>
+    <out-ports>
+        <port name="Histone form percentages">Table containing percentages of individual histone peptide forms</port>
+        <port name="Statistics results">Table containing p-values from the selected type of statistical comparison</port>
+    </out-ports>
+</component-metadata>

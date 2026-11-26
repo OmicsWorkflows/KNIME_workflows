@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>knimeuser</author>
+    <created>2026-04-07T15:37:57.779+02:00</created>
+    <last-modified>2026-04-07T15:39:16.636+02:00</last-modified>
+    <description>Metanode for processing Skyline outputs from histone analysis with TMA derivatization. Several inputs are necessary, see input port descriptions.
+
+================= 
+
+Used programs and tools and their respective licenses at the time of the metanode creation. Version numbers and the licenses might differ based on your local installation. Please inspect your local installation and contact us if you can not locate your local version and or license terms. 
+
+KNIME nodes (The KNIME nodes consists of the following GNU GPL 3.0 License. Licence terms are available here: https://www.gnu.org/licenses/gpl.html) 
+Python 3 (The Python consists of the following Python 3 License. Licence terms are available here: https://docs.python.org/3/license.html) 
+R 4.2.0 (The R consists of the following GPL-3 License. License terms are available here: https://www.r-project.org/Licenses/GPL-3) 
+
+The metanode was created in KNIME 5.9.0 running inside the docker image (https://hub.docker.com/r/cfprot/knime/), tag 5.9.0a. 
+
+================= 
+
+This version of metanode is available under the GNU GPL 3.0 License, unless stated otherwise. The full version of the license terms is available at https://www.gnu.org/licenses/gpl.html. 
+Version: 1.0.1 from 2026-04-07
+Contact person: Karolina Krystofova (karolina.krystofova@ceitec.muni.cz) 
+More information can be found at https://github.com/OmicsWorkflows/KNIME_metanodes.
+
+</description>
+    <in-ports>
+        <port name="Skyline export">Table exported from Skyline containing data to be processed</port>
+        <port name="FASTA">Imported FASTA file containing full sequences and other information about histone proteins</port>
+        <port name="Modifications">Information about possible protein modifications and their expected mass</port>
+        <port name="Enabled sequences">Enabled sequences for histone peptides</port>
+    </in-ports>
+    <out-ports>
+        <port name="Aggregated table">Table containing only aggregated inputs</port>
+        <port name="Area sums table">Table with summed areas for individual modifications</port>
+    </out-ports>
+</component-metadata>
